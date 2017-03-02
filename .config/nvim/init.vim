@@ -24,11 +24,6 @@ set softtabstop=4   " number of spaces per tab
 set shiftwidth=4    " number of auto-indent spaces
 set shiftround      " indent to next multiple of 'shiftwidth'
 
-"" Line break
-set linebreak	    " break lines at word (requires Wrap lines)
-set showbreak=++    " wrap-broken line prefix
-set textwidth=100   " line wrap (number of cols)
-
 "" Line number
 set number	    " show line numbers
 set relativenumber  " line number is relative to current line
@@ -46,6 +41,12 @@ set incsearch   " highlight while searching
 set hlsearch    " keep matches highlighted
 set smartcase	" enable smart-case search
 set ignorecase	" always case-insensitive
+"
+"" Wrapping
+set wrap            " enable visual wrapping
+set textwidth=0     " turn off automatic linebreak
+set wrapmargin=0    " turn off automatic wrapping
+set showbreak=++    " wrap-broken line prefix
 
 "" Syntax
 syntax on   " turn on syntax highlighting
@@ -79,7 +80,7 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
-nnoremap <leader>a :Ack!<space>
+nnoremap <leader>f :Ack!<space>
 nnoremap <leader>g :HardTimeToggle<CR>:Goyo<CR>
  
 noremap <leader>y "+y
@@ -95,7 +96,6 @@ noremap ^ 0
 noremap Y y$
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
-nnoremap <space><space> a<space>
 
 """"""""""""
 "" Plugin ""
@@ -125,7 +125,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'neomake/neomake'
 
     "" navigation
-    Plug 'takac/vim-hardtime'
     Plug 'justinmk/vim-sneak'
     Plug 'christoomey/vim-tmux-navigator'
 
@@ -168,11 +167,6 @@ inoremap <silent> <esc> <ESC>:pclose<CR>
 "" Deoplete Clang
 let g:deoplete#sources#clang#libclang_path='/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
-
-"" Hard Time
-let g:hardtime_default_on=1
-let g:hardtime_allow_different_key=1    " allow a key if different from the previous key
-let g:hardtime_timout=500               " timeout allowed between keypresses
 
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
