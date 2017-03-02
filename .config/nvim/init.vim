@@ -58,6 +58,11 @@ set undodir=~/.local/share/nvim/undo/   " directory to save undo file
 "" Misc ""
 """"""""""
 
+"" Fish
+if &shell =~# 'fish$'
+  set shell=/bin/bash
+endif
+
 "" Function
 function! IndentedI() " i is indented on empty lines
     if len(getline('.')) == 0
@@ -193,6 +198,7 @@ colorscheme nova    " nova colorscheme
 
 "" Vim Sneak
 let g:sneak#use_ic_scs=1    " sneaking case-insensitively
+let g:sneak#streak=1        " label hints on two letters to jump two
 
 "" Vim Tmux Navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
