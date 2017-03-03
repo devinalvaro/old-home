@@ -81,7 +81,7 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>f :Ack!<space>
-nnoremap <leader>g :HardTimeToggle<CR>:Goyo<CR>
+nnoremap <leader>g :Goyo<CR>
  
 noremap <leader>y "+y
 noremap <leader>Y "+Y
