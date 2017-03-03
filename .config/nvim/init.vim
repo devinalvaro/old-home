@@ -92,7 +92,6 @@ noremap <leader>P "+P
 
 "" Rebind
 noremap 0 ^
-noremap ^ 0
 noremap Y y$
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
@@ -145,6 +144,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'zanglg/nova.vim'
     Plug 'sheerun/vim-polyglot'
+    Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
