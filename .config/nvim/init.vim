@@ -115,7 +115,6 @@ call plug#begin('~/.config/nvim/plugged')
     "" file management
     Plug 'mileszs/ack.vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/fzf.vim'
 
     "" git
     Plug 'tpope/vim-fugitive'
@@ -146,7 +145,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'zanglg/nova.vim'
     Plug 'sheerun/vim-polyglot'
-    Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
