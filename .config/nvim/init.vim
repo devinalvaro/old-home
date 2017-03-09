@@ -169,16 +169,6 @@ let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
-"" Lightline
-let g:lightline = {
-    \ 'colorscheme': 'default',
-    \ 'component': {
-    \   'readonly': '%{&readonly?"":""}',
-    \ },
-    \ 'separator': { 'left': '', 'right': '' },
-    \ 'subseparator': { 'left': '', 'right': '' }
-    \ }
-
 "" Neopairs
 let g:neopairs#enable=1
 
