@@ -7,6 +7,7 @@ set nobackup    " disable making backups
 set noswapfile  " disable making swp files
 
 "" Buffer
+set hidden      " hide buffers instead of closing them
 set splitright  " open new windows right of the current window
 set splitbelow  " open new windows below the current window
 
@@ -23,6 +24,7 @@ set expandtab 	    " set tab as spaces
 set softtabstop=4   " number of spaces per tab
 set shiftwidth=4    " number of auto-indent spaces
 set shiftround      " indent to next multiple of 'shiftwidth'
+set tabstop=4       " number of visual spaces per tab
 
 "" Line number
 set number	    " show line numbers
@@ -47,9 +49,6 @@ set wrap            " enable visual wrapping
 set textwidth=0     " turn off automatic linebreak
 set wrapmargin=0    " turn off automatic wrapping
 set showbreak=++    " wrap-broken line prefix
-
-"" Syntax
-syntax on   " turn on syntax highlighting
 
 "" Undo
 set undofile                            " save undo in a file
@@ -108,7 +107,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'zchee/deoplete-jedi'
     Plug 'artur-shaik/vim-javacomplete2'
     Plug 'shougo/neoinclude.vim'
-    Plug 'shougo/neopairs.vim'
     Plug 'wellle/tmux-complete.vim'
 
     "" file management
@@ -169,9 +167,6 @@ let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
-"" Neopairs
-let g:neopairs#enable=1
-
 "" Neomake
 autocmd! BufWritePost * Neomake
 
@@ -179,7 +174,6 @@ autocmd! BufWritePost * Neomake
 colorscheme nova    " nova colorscheme
 
 "" Vim Sneak
-let g:sneak#use_ic_scs=1    " sneaking case-insensitively
 let g:sneak#streak=1        " label hints on two letters to jump two
 
 "" Vim Tmux Navigator
