@@ -168,7 +168,7 @@ let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" Neomake
-autocmd! BufWritePost * Neomake
+autocmd InsertLeave,TextChanged * update | Neomake
 
 "" Nova
 colorscheme nova    " nova colorscheme
