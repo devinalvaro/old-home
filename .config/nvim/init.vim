@@ -167,6 +167,9 @@ inoremap <silent> <esc> <ESC>:pclose<CR>
 let g:deoplete#sources#clang#libclang_path='/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 
+"" Gitgutter
+let g:gitgutter_max_signs=2000 " maximum number of change signs
+
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
