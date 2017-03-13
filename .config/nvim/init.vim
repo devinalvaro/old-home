@@ -107,7 +107,7 @@ call plug#begin('~/.config/nvim/plugged')
     "" completion
     Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-clang'
-    Plug 'zchee/deoplete-jedi'
+    Plug 'davidhalter/jedi-vim'
     Plug 'artur-shaik/vim-javacomplete2'
     Plug 'shougo/neoinclude.vim'
     Plug 'wellle/tmux-complete.vim'
@@ -174,10 +174,10 @@ let g:gitgutter_max_signs=2000 " maximum number of change signs
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" Neopairs
-let g:neopairs#enable=1
+" let g:neopairs#enable=1
 
 "" Neomake
-autocmd! BufWritePost * Neomake
+autocmd InsertLeave,TextChanged * update | Neomake
 
 "" Nova
 colorscheme nova    " nova colorscheme
