@@ -58,6 +58,9 @@ set undodir=~/.local/share/nvim/undo/   " directory to save undo file
 "" Misc ""
 """"""""""
 
+"" Cursor Shape
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
+
 "" Fish
 if &shell =~# 'fish$'
   set shell=/bin/bash
@@ -167,8 +170,11 @@ let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
+"" Neopairs
+let g:neopairs#enable=1
+
 "" Neomake
-autocmd InsertLeave,TextChanged * update | Neomake
+autocmd! BufWritePost * Neomake
 
 "" Nova
 colorscheme nova    " nova colorscheme
