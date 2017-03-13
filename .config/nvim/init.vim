@@ -82,7 +82,7 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
-nnoremap <leader>f :Ack!<space>
+nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>g :Goyo<CR>
  
 noremap <leader>y "+y
@@ -113,7 +113,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'wellle/tmux-complete.vim'
 
     "" file management
-    Plug 'mileszs/ack.vim'
+    Plug 'mhinz/vim-grepper'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
     "" git
@@ -149,11 +149,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 call plug#end()
 
-"" Ack.vim
-if executable('rg')
-  let g:ackprg = 'rg --vimgrep'
-endif
-
 "" Auto Pairs
 let g:AutoPairsCenterLine=0     " disable centering line at the bottom 1/3 of the window
 let g:AutoPairsMultilineClose=0 " jump to a closing pair on the same line only
@@ -169,6 +164,10 @@ let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 
 "" Gitgutter
 let g:gitgutter_max_signs=2000 " maximum number of change signs
+
+"" Grepper
+let g:grepper={}
+let g:grepper.tools=['rg', 'grep', 'ag', 'ack', 'findstr', 'pt', 'sift', 'git']
 
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
