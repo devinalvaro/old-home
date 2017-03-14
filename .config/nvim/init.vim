@@ -27,7 +27,7 @@ set shiftround      " indent to next multiple of 'shiftwidth'
 set tabstop=4       " number of visual spaces per tab
 
 "" Line number
-set number	    " show line numbers
+" set number	    " show line numbers
 set relativenumber  " line number is relative to current line
 
 "" Matching
@@ -84,6 +84,8 @@ nnoremap <leader>o :FZF<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>g :Goyo<CR>
+nnoremap <leader>k :ALEPreviousWrap<CR>
+nnoremap <leader>j :ALENextWrap<CR>
  
 noremap <leader>y "+y
 noremap <leader>Y "+Y
@@ -121,7 +123,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'airblade/vim-gitgutter'
 
     "" lint
-    Plug 'neomake/neomake'
+    Plug 'w0rp/ale'
 
     "" navigation
     Plug 'justinmk/vim-sneak'
@@ -149,6 +151,10 @@ call plug#begin('~/.config/nvim/plugged')
 
 call plug#end()
 
+"" Ale
+let g:ale_lint_on_text_changed=0                                    " disable lint on every text change
+autocmd InsertLeave,TextChanged * call ale#Queue(g:ale_lint_delay)  " lint on normal mode only
+
 "" Auto Pairs
 let g:AutoPairsCenterLine=0     " disable centering line at the bottom 1/3 of the window
 let g:AutoPairsMultilineClose=0 " jump to a closing pair on the same line only
@@ -171,12 +177,6 @@ let g:grepper.tools=['rg', 'grep', 'ag', 'ack', 'findstr', 'pt', 'sift', 'git']
 
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
-
-"" Neopairs
-" let g:neopairs#enable=1
-
-"" Neomake
-autocmd InsertLeave,TextChanged * update | Neomake
 
 "" Nova
 colorscheme nova    " nova colorscheme
