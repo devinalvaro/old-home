@@ -84,8 +84,7 @@ nnoremap <leader>o :FZF<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>g :Goyo<CR>
-nnoremap <leader>k :ALEPreviousWrap<CR>
-nnoremap <leader>j :ALENextWrap<CR>
+nnoremap <leader>a :Autoformat<CR>
 
 noremap <leader>y "+y
 noremap <leader>Y "+Y
@@ -96,6 +95,7 @@ noremap <leader>P "+P
 
 "" Rebind
 noremap 0 ^
+noremap ^ 0
 noremap Y y$
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
@@ -123,7 +123,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 "" lint
-Plug 'w0rp/ale'
+Plug 'neomake/neomake'
+Plug 'dojoteef/neomake-autolint'
 
 "" navigation
 Plug 'justinmk/vim-sneak'
@@ -152,10 +153,6 @@ Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
-"" Ale
-let g:ale_lint_on_text_changed=0                                    " disable lint on every text change
-autocmd InsertLeave,TextChanged * call ale#Queue(g:ale_lint_delay)  " lint on normal mode only
-
 "" Auto Pairs
 let g:AutoPairsCenterLine=0     " disable centering line at the bottom 1/3 of the window
 let g:AutoPairsMultilineClose=0 " jump to a closing pair on the same line only
@@ -170,14 +167,20 @@ let g:deoplete#sources#clang#libclang_path='/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 
 "" Gitgutter
-let g:gitgutter_max_signs=2000 " maximum number of change signs
+let g:gitgutter_max_signs=2000  " maximum number of change signs
 
 "" Grepper
-let g:grepper={}
+let g:grepper={}  " order of grep tools to use
 let g:grepper.tools=['rg', 'grep', 'ag', 'ack', 'findstr', 'pt', 'sift', 'git']
 
 "" Javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+"" Neomake
+let g:neomake_autolint_events = {
+            \ 'InsertLeave': {'delay': 0},
+            \ 'TextChanged': {},
+            \ }
 
 "" Nova
 colorscheme nova    " nova colorscheme
