@@ -20,18 +20,18 @@ set confirm     " asking to confirm instead of failing commands
 
 "" Indentation
 set autoindent      " indent according to previous line
-set expandtab 	    " set tab as spaces
+set expandtab       " set tab as spaces
 set softtabstop=4   " number of spaces per tab
 set shiftwidth=4    " number of auto-indent spaces
 set shiftround      " indent to next multiple of 'shiftwidth'
 set tabstop=4       " number of visual spaces per tab
 
 "" Line number
-" set number	    " show line numbers
+" set number        " show line numbers
 set relativenumber  " line number is relative to current line
 
 "" Matching
-set showmatch	    " highlight matching brace
+set showmatch       " highlight matching brace
 set matchpairs+=<:> " highlight angle brackets
 
 "" Redrawing
@@ -41,8 +41,8 @@ set lazyredraw  " only redraw when necessary
 "" Search
 set incsearch   " highlight while searching
 set hlsearch    " keep matches highlighted
-set smartcase	" enable smart-case search
-set ignorecase	" always case-insensitive
+set smartcase   " enable smart-case search
+set ignorecase  " always case-insensitive
 "
 "" Wrapping
 set wrap            " enable visual wrapping
@@ -63,7 +63,7 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
 
 "" Fish
 if &shell =~# 'fish$'
-  set shell=/bin/bash
+    set shell=/bin/bash
 endif
 
 "" Function
@@ -86,7 +86,7 @@ nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>g :Goyo<CR>
 nnoremap <leader>k :ALEPreviousWrap<CR>
 nnoremap <leader>j :ALENextWrap<CR>
- 
+
 noremap <leader>y "+y
 noremap <leader>Y "+Y
 noremap <leader>d "+d
@@ -106,48 +106,49 @@ nnoremap <expr> i IndentedI()
 
 call plug#begin('~/.config/nvim/plugged')
 
-    "" completion
-    Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'zchee/deoplete-clang'
-    Plug 'davidhalter/jedi-vim'
-    Plug 'artur-shaik/vim-javacomplete2'
-    Plug 'shougo/neoinclude.vim'
-    Plug 'wellle/tmux-complete.vim'
+"" completion
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-clang'
+Plug 'davidhalter/jedi-vim'
+Plug 'artur-shaik/vim-javacomplete2'
+Plug 'shougo/neoinclude.vim'
+Plug 'wellle/tmux-complete.vim'
 
-    "" file management
-    Plug 'mhinz/vim-grepper'
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"" file management
+Plug 'mhinz/vim-grepper'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-    "" git
-    Plug 'tpope/vim-fugitive'
-    Plug 'airblade/vim-gitgutter'
+"" git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
-    "" lint
-    Plug 'w0rp/ale'
+"" lint
+Plug 'w0rp/ale'
 
-    "" navigation
-    Plug 'justinmk/vim-sneak'
-    Plug 'christoomey/vim-tmux-navigator'
+"" navigation
+Plug 'justinmk/vim-sneak'
+Plug 'christoomey/vim-tmux-navigator'
 
-    "" snippet
-    Plug 'sirver/ultisnips'
-    Plug 'honza/vim-snippets'
+"" snippet
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
 
-    "" text editing
-    Plug 'tpope/vim-abolish'
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'tpope/vim-commentary'
-    Plug 'junegunn/goyo.vim'
-    Plug 'tpope/vim-repeat'
-    Plug 'tpope/vim-surround'
-    Plug 'mbbill/undotree'
+"" text editing
+Plug 'tpope/vim-abolish'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'mbbill/undotree'
+Plug 'Chiel92/vim-autoformat'
 
-    "" visual
-    Plug 'yggdroot/indentLine'
-    Plug 'itchyny/lightline.vim'
-    Plug 'zanglg/nova.vim'
-    Plug 'sheerun/vim-polyglot'
-    Plug 'jszakmeister/vim-togglecursor'
+"" visual
+Plug 'yggdroot/indentLine'
+Plug 'itchyny/lightline.vim'
+Plug 'zanglg/nova.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
