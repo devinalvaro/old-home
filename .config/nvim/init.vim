@@ -138,6 +138,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-abolish'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -166,6 +167,10 @@ inoremap <silent> <esc> <ESC>:pclose<CR>
 let g:deoplete#sources#clang#libclang_path='/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 
+"" Easy Align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
 "" Gitgutter
 let g:gitgutter_max_signs=2000  " maximum number of change signs
 
@@ -190,3 +195,4 @@ let g:sneak#streak=1        " label hints on two letters to jump two
 
 "" Vim Tmux Navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
+
