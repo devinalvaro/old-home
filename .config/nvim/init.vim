@@ -181,6 +181,9 @@ let g:grepper.tools = ['rg', 'grep', 'ag', 'ack', 'findstr', 'pt', 'sift', 'git'
 autocmd FileType java setlocal omnifunc = javacomplete#Complete
 
 "" Neomake
+let g:neomake_c_gcc_args = ['-fsyntax-only', '-Wall']
+
+"" Neomake Autolint
 let g:neomake_autolint_events = {
             \ 'InsertLeave': {'delay': 0},
             \ 'TextChanged': {},
