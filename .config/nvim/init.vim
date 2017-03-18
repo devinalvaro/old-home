@@ -19,7 +19,6 @@ set background=dark " dark background
 set confirm " ask confirmation instead of failing commands
 
 "" Indentation
-set autoindent    " indent according to previous line
 set expandtab     " set tab as spaces
 set softtabstop=4 " number of spaces per tab
 set shiftwidth=4  " number of auto-indent spaces
@@ -38,8 +37,6 @@ set ttyfast    " faster redrawing
 set lazyredraw " only redraw when necessary
 
 "" Search
-set incsearch  " highlight while searching
-set hlsearch   " keep matches highlighted
 set smartcase  " enable smart-case search
 set ignorecase " always case-insensitive
 "
