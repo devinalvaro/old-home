@@ -33,7 +33,6 @@ set showmatch       " highlight matching brace
 set matchpairs+=<:> " highlight angle brackets
 
 "" Redrawing
-set ttyfast    " faster redrawing
 set lazyredraw " only redraw when necessary
 
 "" Search
@@ -54,9 +53,6 @@ set undodir=~/.local/share/nvim/undo/ " directory to save undo file
 "" Misc ""
 """"""""""
 
-"" Cursor Shape
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
-
 "" Fish
 if &shell =~# 'fish$'
     set shell=/bin/bash
@@ -74,20 +70,22 @@ endfunction
 "" Leader
 let mapleader="\<space>"
 
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>o :FZF<CR>
-nnoremap <leader>u :UndotreeToggle<CR>
-nnoremap <leader>f :Grepper<CR>
-nnoremap <leader>g :Goyo<CR>
-nnoremap <leader>a :Autoformat<CR>
-
 noremap <leader>y "+y
 noremap <leader>Y "+Y
 noremap <leader>d "+d
 noremap <leader>D "+D
 noremap <leader>p "+p
 noremap <leader>P "+P
+
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+
+nnoremap <leader>a :Autoformat<CR>
+nnoremap <leader>e :ToggleBufExplorer<CR>
+nnoremap <leader>o :FZF<CR>
+nnoremap <leader>g :Goyo<CR>
+nnoremap <leader>f :Grepper<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 
 "" Rebind
 noremap 0 ^
@@ -111,6 +109,7 @@ Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
 "" file management
+Plug 'tpope/vim-eunuch'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mhinz/vim-grepper'
 
@@ -125,6 +124,9 @@ Plug 'dojoteef/neomake-autolint'
 "" navigation
 Plug 'justinmk/vim-sneak'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-unimpaired'
+Plug 'wellle/targets.vim'
+Plug 'jlanzarotta/bufexplorer'
 
 "" snippet
 Plug 'sirver/ultisnips'
@@ -134,8 +136,8 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-abolish'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/goyo.vim'
+Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'mbbill/undotree'
@@ -162,10 +164,6 @@ inoremap <silent> <esc> <ESC>:pclose<CR>
 "" Deoplete Clang
 let g:deoplete#sources#clang#libclang_path = '/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header = '/usr/lib64/clang'
-
-"" Easy Align
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
 
 "" Gitgutter
 let g:gitgutter_max_signs = 2000 " maximum number of change signs
