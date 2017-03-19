@@ -53,11 +53,6 @@ set undodir=~/.local/share/nvim/undo/ " directory to save undo file
 "" Misc ""
 """"""""""
 
-"" Fish
-if &shell =~# 'fish$'
-    set shell=/bin/bash
-endif
-
 "" Function
 function! IndentedI() " i is indented on empty lines
     if len(getline('.')) == 0
@@ -81,7 +76,6 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
 nnoremap <leader>a :Autoformat<CR>
-nnoremap <leader>e :ToggleBufExplorer<CR>
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>g :Goyo<CR>
 nnoremap <leader>f :Grepper<CR>
@@ -103,7 +97,6 @@ call plug#begin('~/.config/nvim/plugged')
 "" completion
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
-Plug 'artur-shaik/vim-javacomplete2'
 Plug 'davidhalter/jedi-vim'
 Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
@@ -122,11 +115,11 @@ Plug 'neomake/neomake'
 Plug 'dojoteef/neomake-autolint'
 
 "" navigation
+Plug 'jlanzarotta/bufexplorer'
 Plug 'justinmk/vim-sneak'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-unimpaired'
 Plug 'wellle/targets.vim'
-Plug 'jlanzarotta/bufexplorer'
 
 "" snippet
 Plug 'sirver/ultisnips'
@@ -134,16 +127,16 @@ Plug 'honza/vim-snippets'
 
 "" text editing
 Plug 'tpope/vim-abolish'
+Plug 'chiel92/vim-autoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/goyo.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'mbbill/undotree'
-Plug 'chiel92/vim-autoformat'
 
 "" visual
+Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
 Plug 'zanglg/nova.vim'
@@ -166,14 +159,11 @@ let g:deoplete#sources#clang#libclang_path = '/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header = '/usr/lib64/clang'
 
 "" Gitgutter
-let g:gitgutter_max_signs = 2000 " maximum number of change signs
+let g:gitgutter_max_signs = 1000 " maximum number of change signs
 
 "" Grepper
-let g:grepper = {} " order of grep tools to use
-let g:grepper.tools = ['rg', 'grep', 'ag', 'ack', 'findstr', 'pt', 'sift', 'git']
-
-"" Javacomplete2
-autocmd FileType java setlocal omnifunc = javacomplete#Complete
+let g:grepper = {}                   " initialize g:grepper with empy dictionary
+let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 
 "" Neomake Autolint
 let g:neomake_autolint_events = {
@@ -186,7 +176,7 @@ let g:neomake_autolint_events = {
 colorscheme nova
 
 "" Vim Sneak
-let g:sneak#streak = 1 " label hints on two letters to jump two
+let g:sneak#label = 1 " label hints on two letters to jump two
 
 "" Vim Tmux Navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
