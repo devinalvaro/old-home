@@ -1,1 +1,0 @@
-/home/devin/.config/fisherman/getopts/getopts.fish

@@ -1,1 +1,0 @@
-/home/devin/.config/fisherman/await/functions/await.fish
