@@ -116,16 +116,15 @@ Plug 'dojoteef/neomake-autolint'
 
 "" navigation
 Plug 'jlanzarotta/bufexplorer'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'romainl/vim-qlist'
-Plug 'justinmk/vim-sneak'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'tpope/vim-unimpaired'
-Plug 'wellle/targets.vim'
 
 "" snippet
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
+
+"" tags
+Plug 'ludovicchabant/vim-gutentags'
 
 "" text editing
 Plug 'tpope/vim-abolish'
@@ -136,6 +135,11 @@ Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'mbbill/undotree'
+
+"" text navigation
+Plug 'justinmk/vim-sneak'
+Plug 'wellle/targets.vim'
+Plug 'tpope/vim-unimpaired'
 
 "" visual
 Plug 'junegunn/goyo.vim'
