@@ -142,10 +142,10 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-unimpaired'
 
 "" visual
+Plug 'chriskempson/base16-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
-Plug 'zanglg/nova.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jszakmeister/vim-togglecursor'
 
@@ -154,6 +154,9 @@ call plug#end()
 "" Auto Pairs
 let g:AutoPairsCenterLine = 0     " disable centering line at the bottom 1/3 of the window
 let g:AutoPairsMultilineClose = 0 " jump to a closing pair on the same line only
+
+"" Base16
+colorscheme base16-tomorrow-night
 
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -171,15 +174,17 @@ let g:gitgutter_max_signs = 1000 " maximum number of change signs
 let g:grepper = {}                   " initialize g:grepper with empy dictionary
 let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 
+"" Lightline
+let g:lightline = {
+\   'colorscheme': 'Tomorrow_Night'
+\ }
+
 "" Neomake Autolint
 let g:neomake_autolint_events = {
             \ 'BufWinEnter': {'delay': 0},
             \ 'InsertLeave': {'delay': 0},
             \ 'TextChanged': {},
             \ }
-
-"" Nova
-colorscheme nova
 
 "" Vim Sneak
 let g:sneak#label = 1 " label hints on two letters to jump two
