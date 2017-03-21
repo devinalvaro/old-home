@@ -1,0 +1,745 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+HEADER_FILES	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^HEADER_FILES := \\$/;"	m
+HTTParty	/home/devin/.oh-my-zsh/plugins/cloudapp/cloudapp.rb	/^class HTTParty::Response$/;"	c
+PIPE	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^from subprocess import Popen, PIPE, check_output$/;"	i
+PLUGIN_TARGET	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^PLUGIN_TARGET := zsh-autosuggestions.zsh$/;"	m
+Popen	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^from subprocess import Popen, PIPE, check_output$/;"	i
+SHUNIT2	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^SHUNIT2 := $(VENDOR_DIR)\/shunit2\/2.1.6$/;"	m
+SRC_DIR	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^SRC_DIR    := .\/src$/;"	m
+SRC_FILES	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^SRC_FILES := \\$/;"	m
+STUB_SH	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^STUB_SH := $(VENDOR_DIR)\/stub.sh\/stub.sh$/;"	m
+TEST_PREREQS	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^TEST_PREREQS := \\$/;"	m
+TRAPWINCH	/home/devin/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh	/^TRAPWINCH() {$/;"	f
+VENDOR_DIR	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^VENDOR_DIR := .\/vendor$/;"	m
+__git_aliased_command	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_aliased_command ()$/;"	f
+__git_aliases	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_aliases ()$/;"	f
+__git_branch_names	/home/devin/.oh-my-zsh/plugins/git-flow-avh/git-flow-avh.plugin.zsh	/^__git_branch_names () {$/;"	f
+__git_branch_names	/home/devin/.oh-my-zsh/plugins/git-flow/git-flow.plugin.zsh	/^__git_branch_names () {$/;"	f
+__git_branch_names	/home/devin/.oh-my-zsh/plugins/git-hubflow/git-hubflow.plugin.zsh	/^__git_branch_names () {$/;"	f
+__git_command_successful	/home/devin/.oh-my-zsh/plugins/git-flow-avh/git-flow-avh.plugin.zsh	/^__git_command_successful () {$/;"	f
+__git_command_successful	/home/devin/.oh-my-zsh/plugins/git-flow/git-flow.plugin.zsh	/^__git_command_successful () {$/;"	f
+__git_command_successful	/home/devin/.oh-my-zsh/plugins/git-hubflow/git-hubflow.plugin.zsh	/^__git_command_successful () {$/;"	f
+__git_commands	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_commands () {$/;"	f
+__git_complete	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete ()$/;"	f
+__git_complete_file	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete_file ()$/;"	f
+__git_complete_force_with_lease	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete_force_with_lease ()$/;"	f
+__git_complete_index_file	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete_index_file ()$/;"	f
+__git_complete_remote_or_refspec	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete_remote_or_refspec ()$/;"	f
+__git_complete_revlist	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete_revlist ()$/;"	f
+__git_complete_revlist_file	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete_revlist_file ()$/;"	f
+__git_complete_strategy	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_complete_strategy ()$/;"	f
+__git_compute_all_commands	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_compute_all_commands ()$/;"	f
+__git_compute_merge_strategies	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_compute_merge_strategies ()$/;"	f
+__git_compute_porcelain_commands	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_compute_porcelain_commands ()$/;"	f
+__git_config_get_set_variables	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_config_get_set_variables ()$/;"	f
+__git_count_arguments	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_count_arguments ()$/;"	f
+__git_eread	/home/devin/.oh-my-zsh/plugins/gitfast/git-prompt.sh	/^__git_eread ()$/;"	f
+__git_find_on_cmdline	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_find_on_cmdline ()$/;"	f
+__git_flow_feature_list	/home/devin/.oh-my-zsh/plugins/git-flow-avh/git-flow-avh.plugin.zsh	/^__git_flow_feature_list ()$/;"	f
+__git_flow_feature_list	/home/devin/.oh-my-zsh/plugins/git-flow/git-flow.plugin.zsh	/^__git_flow_feature_list ()$/;"	f
+__git_flow_hotfix_list	/home/devin/.oh-my-zsh/plugins/git-flow-avh/git-flow-avh.plugin.zsh	/^__git_flow_hotfix_list ()$/;"	f
+__git_flow_hotfix_list	/home/devin/.oh-my-zsh/plugins/git-flow/git-flow.plugin.zsh	/^__git_flow_hotfix_list ()$/;"	f
+__git_flow_version_list	/home/devin/.oh-my-zsh/plugins/git-flow-avh/git-flow-avh.plugin.zsh	/^__git_flow_version_list ()$/;"	f
+__git_flow_version_list	/home/devin/.oh-my-zsh/plugins/git-flow/git-flow.plugin.zsh	/^__git_flow_version_list ()$/;"	f
+__git_func_wrap	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_func_wrap ()$/;"	f
+__git_get_config_variables	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_get_config_variables ()$/;"	f
+__git_has_doubledash	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_has_doubledash ()$/;"	f
+__git_heads	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_heads ()$/;"	f
+__git_hf_feature_list	/home/devin/.oh-my-zsh/plugins/git-hubflow/git-hubflow.plugin.zsh	/^__git_hf_feature_list ()$/;"	f
+__git_hf_hotfix_list	/home/devin/.oh-my-zsh/plugins/git-hubflow/git-hubflow.plugin.zsh	/^__git_hf_hotfix_list ()$/;"	f
+__git_hf_version_list	/home/devin/.oh-my-zsh/plugins/git-hubflow/git-hubflow.plugin.zsh	/^__git_hf_version_list ()$/;"	f
+__git_index_files	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_index_files ()$/;"	f
+__git_list_all_commands	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_list_all_commands ()$/;"	f
+__git_list_merge_strategies	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_list_merge_strategies ()$/;"	f
+__git_list_porcelain_commands	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_list_porcelain_commands ()$/;"	f
+__git_ls_files_helper	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_ls_files_helper ()$/;"	f
+__git_main	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_main ()$/;"	f
+__git_match_ctag	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_match_ctag() {$/;"	f
+__git_pretty_aliases	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_pretty_aliases ()$/;"	f
+__git_ps1	/home/devin/.oh-my-zsh/plugins/gitfast/git-prompt.sh	/^__git_ps1 ()$/;"	f
+__git_ps1_colorize_gitstring	/home/devin/.oh-my-zsh/plugins/gitfast/git-prompt.sh	/^__git_ps1_colorize_gitstring ()$/;"	f
+__git_ps1_show_upstream	/home/devin/.oh-my-zsh/plugins/gitfast/git-prompt.sh	/^__git_ps1_show_upstream ()$/;"	f
+__git_reassemble_comp_words_by_ref	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_reassemble_comp_words_by_ref()$/;"	f
+__git_refs	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_refs ()$/;"	f
+__git_refs2	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_refs2 ()$/;"	f
+__git_refs_remotes	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_refs_remotes ()$/;"	f
+__git_remotes	/home/devin/.oh-my-zsh/plugins/git-flow-avh/git-flow-avh.plugin.zsh	/^__git_remotes () {$/;"	f
+__git_remotes	/home/devin/.oh-my-zsh/plugins/git-flow/git-flow.plugin.zsh	/^__git_remotes () {$/;"	f
+__git_remotes	/home/devin/.oh-my-zsh/plugins/git-hubflow/git-hubflow.plugin.zsh	/^__git_remotes () {$/;"	f
+__git_remotes	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_remotes ()$/;"	f
+__git_tags	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__git_tags ()$/;"	f
+__gitcomp	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^	__gitcomp ()$/;"	f
+__gitcomp	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitcomp ()$/;"	f
+__gitcomp_file	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^	__gitcomp_file ()$/;"	f
+__gitcomp_file	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitcomp_file ()$/;"	f
+__gitcomp_nl	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^	__gitcomp_nl ()$/;"	f
+__gitcomp_nl	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitcomp_nl ()$/;"	f
+__gitcomp_nl_append	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitcomp_nl_append ()$/;"	f
+__gitcompadd	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitcompadd ()$/;"	f
+__gitcompappend	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitcompappend ()$/;"	f
+__gitdir	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitdir ()$/;"	f
+__gitex_author_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_author_names() {$/;"	f
+__gitex_branch_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_branch_names() {$/;"	f
+__gitex_bug_branch_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_bug_branch_names() {$/;"	f
+__gitex_command_successful	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_command_successful () {$/;"	f
+__gitex_commits	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_commits() {$/;"	f
+__gitex_feature_branch_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_feature_branch_names() {$/;"	f
+__gitex_refactor_branch_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_refactor_branch_names() {$/;"	f
+__gitex_specific_branch_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_specific_branch_names() {$/;"	f
+__gitex_submodule_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_submodule_names() {$/;"	f
+__gitex_tag_names	/home/devin/.oh-my-zsh/plugins/git-extras/git-extras.plugin.zsh	/^__gitex_tag_names() {$/;"	f
+__gitk_main	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^__gitk_main ()$/;"	f
+__gnu_utils	/home/devin/.oh-my-zsh/plugins/gnu-utils/gnu-utils.plugin.zsh	/^  __gnu_utils() {$/;"	f
+__go_identifiers	/home/devin/.oh-my-zsh/plugins/go/go.plugin.zsh	/^  __go_identifiers() {$/;"	f
+__go_identifiers	/home/devin/.oh-my-zsh/plugins/golang/golang.plugin.zsh	/^  __go_identifiers() {$/;"	f
+__go_packages	/home/devin/.oh-my-zsh/plugins/go/go.plugin.zsh	/^  __go_packages() {$/;"	f
+__go_packages	/home/devin/.oh-my-zsh/plugins/golang/golang.plugin.zsh	/^  __go_packages() {$/;"	f
+__go_tool_complete	/home/devin/.oh-my-zsh/plugins/go/go.plugin.zsh	/^__go_tool_complete() {$/;"	f
+__go_tool_complete	/home/devin/.oh-my-zsh/plugins/golang/golang.plugin.zsh	/^__go_tool_complete() {$/;"	f
+__grunt	/home/devin/.oh-my-zsh/plugins/grunt/grunt.plugin.zsh	/^function __grunt() {$/;"	f
+__grunt_caching_policy	/home/devin/.oh-my-zsh/plugins/grunt/grunt.plugin.zsh	/^function __grunt_caching_policy() {$/;"	f
+__grunt_get_gruntfile	/home/devin/.oh-my-zsh/plugins/grunt/grunt.plugin.zsh	/^function __grunt_get_gruntfile() {$/;"	f
+__grunt_get_opts	/home/devin/.oh-my-zsh/plugins/grunt/grunt.plugin.zsh	/^function __grunt_get_opts() {$/;"	f
+__grunt_get_tasks	/home/devin/.oh-my-zsh/plugins/grunt/grunt.plugin.zsh	/^function __grunt_get_tasks() {$/;"	f
+__grunt_update_cache	/home/devin/.oh-my-zsh/plugins/grunt/grunt.plugin.zsh	/^function __grunt_update_cache() {$/;"	f
+__require_tool_fatal	/home/devin/.oh-my-zsh/tools/require_tool.sh	/^__require_tool_fatal ()$/;"	f
+__require_tool_version_compare	/home/devin/.oh-my-zsh/tools/require_tool.sh	/^__require_tool_version_compare ()$/;"	f
+_ant	/home/devin/.oh-my-zsh/plugins/ant/ant.plugin.zsh	/^_ant () {$/;"	f
+_ant_does_target_list_need_generating	/home/devin/.oh-my-zsh/plugins/ant/ant.plugin.zsh	/^_ant_does_target_list_need_generating () {$/;"	f
+_applist	/home/devin/.oh-my-zsh/plugins/django/django.plugin.zsh	/^_applist() {$/;"	f
+_binstubbed	/home/devin/.oh-my-zsh/plugins/bundler/bundler.plugin.zsh	/^_binstubbed() {$/;"	f
+_bower	/home/devin/.oh-my-zsh/plugins/bower/bower.plugin.zsh	/^_bower ()$/;"	f
+_bower_installed_packages	/home/devin/.oh-my-zsh/plugins/bower/bower.plugin.zsh	/^_bower_installed_packages () {$/;"	f
+_cab_commands	/home/devin/.oh-my-zsh/plugins/cabal/cabal.plugin.zsh	/^function _cab_commands() {$/;"	f
+_cabal_commands	/home/devin/.oh-my-zsh/plugins/cabal/cabal.plugin.zsh	/^function _cabal_commands() {$/;"	f
+_cake	/home/devin/.oh-my-zsh/plugins/cake/cake.plugin.zsh	/^_cake () {$/;"	f
+_cake_does_target_list_need_generating	/home/devin/.oh-my-zsh/plugins/cake/cake.plugin.zsh	/^_cake_does_target_list_need_generating () {$/;"	f
+_cake_get_target_list	/home/devin/.oh-my-zsh/plugins/cake/cake.plugin.zsh	/^_cake_get_target_list () {$/;"	f
+_cakephp3	/home/devin/.oh-my-zsh/plugins/cakephp3/cakephp3.plugin.zsh	/^_cakephp3 () {$/;"	f
+_cakephp3_get_3rd_argument	/home/devin/.oh-my-zsh/plugins/cakephp3/cakephp3.plugin.zsh	/^_cakephp3_get_3rd_argument () {$/;"	f
+_cakephp3_get_command_list	/home/devin/.oh-my-zsh/plugins/cakephp3/cakephp3.plugin.zsh	/^_cakephp3_get_command_list () {$/;"	f
+_cakephp3_get_sub_command_list	/home/devin/.oh-my-zsh/plugins/cakephp3/cakephp3.plugin.zsh	/^_cakephp3_get_sub_command_list () {$/;"	f
+_chruby	/home/devin/.oh-my-zsh/plugins/chruby/chruby.plugin.zsh	/^_chruby() { compadd $(chruby | tr -d '* ') }$/;"	f
+_chruby_dirs	/home/devin/.oh-my-zsh/plugins/chruby/chruby.plugin.zsh	/^_chruby_dirs() {$/;"	f
+_completemarks	/home/devin/.oh-my-zsh/plugins/jump/jump.plugin.zsh	/^_completemarks() {$/;"	f
+_composer	/home/devin/.oh-my-zsh/plugins/composer/composer.plugin.zsh	/^_composer () {$/;"	f
+_composer_get_command_list	/home/devin/.oh-my-zsh/plugins/composer/composer.plugin.zsh	/^_composer_get_command_list () {$/;"	f
+_composer_get_required_list	/home/devin/.oh-my-zsh/plugins/composer/composer.plugin.zsh	/^_composer_get_required_list () {$/;"	f
+_current_epoch	/home/devin/.oh-my-zsh/tools/check_for_upgrade.sh	/^function _current_epoch() {$/;"	f
+_emacsfun	/home/devin/.oh-my-zsh/plugins/emacs/emacsclient.sh	/^_emacsfun()$/;"	f
+_end_paste	/home/devin/.oh-my-zsh/plugins/safe-paste/safe-paste.plugin.zsh	/^function _end_paste() {$/;"	f
+_enumerateGrailsScripts	/home/devin/.oh-my-zsh/plugins/grails/grails.plugin.zsh	/^_enumerateGrailsScripts() {$/;"	f
+_fossil	/home/devin/.oh-my-zsh/plugins/fossil/fossil.plugin.zsh	/^function _fossil () {$/;"	f
+_fossil_get_command_list	/home/devin/.oh-my-zsh/plugins/fossil/fossil.plugin.zsh	/^function _fossil_get_command_list () {$/;"	f
+_fossil_prompt	/home/devin/.oh-my-zsh/plugins/fossil/fossil.plugin.zsh	/^function _fossil_prompt () {$/;"	f
+_frontend	/home/devin/.oh-my-zsh/plugins/frontend-search/_frontend-search.sh	/^function _frontend() {$/;"	f
+_get_comp_words_by_ref	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_get_comp_words_by_ref ()$/;"	f
+_git	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^	_git ()$/;"	f
+_git	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git ()$/;"	f
+_git_add	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_add ()$/;"	f
+_git_am	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_am ()$/;"	f
+_git_apply	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_apply ()$/;"	f
+_git_archive	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_archive ()$/;"	f
+_git_bisect	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_bisect ()$/;"	f
+_git_branch	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_branch ()$/;"	f
+_git_bundle	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_bundle ()$/;"	f
+_git_checkout	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_checkout ()$/;"	f
+_git_cherry	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_cherry ()$/;"	f
+_git_cherry_pick	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_cherry_pick ()$/;"	f
+_git_clean	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_clean ()$/;"	f
+_git_clone	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_clone ()$/;"	f
+_git_commit	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_commit ()$/;"	f
+_git_config	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_config ()$/;"	f
+_git_describe	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_describe ()$/;"	f
+_git_diff	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_diff ()$/;"	f
+_git_difftool	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_difftool ()$/;"	f
+_git_fetch	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_fetch ()$/;"	f
+_git_format_patch	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_format_patch ()$/;"	f
+_git_fsck	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_fsck ()$/;"	f
+_git_gc	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_gc ()$/;"	f
+_git_gitk	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_gitk ()$/;"	f
+_git_grep	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_grep ()$/;"	f
+_git_help	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_help ()$/;"	f
+_git_init	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_init ()$/;"	f
+_git_log	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_log ()$/;"	f
+_git_log_prettily	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^function _git_log_prettily(){$/;"	f
+_git_ls_files	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_ls_files ()$/;"	f
+_git_ls_remote	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_ls_remote ()$/;"	f
+_git_ls_tree	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_ls_tree ()$/;"	f
+_git_merge	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_merge ()$/;"	f
+_git_merge_base	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_merge_base ()$/;"	f
+_git_mergetool	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_mergetool ()$/;"	f
+_git_mv	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_mv ()$/;"	f
+_git_name_rev	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_name_rev ()$/;"	f
+_git_notes	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_notes ()$/;"	f
+_git_pull	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_pull ()$/;"	f
+_git_push	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_push ()$/;"	f
+_git_rebase	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_rebase ()$/;"	f
+_git_reflog	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_reflog ()$/;"	f
+_git_remote	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_remote ()$/;"	f
+_git_remote_branch	/home/devin/.oh-my-zsh/plugins/git-remote-branch/git-remote-branch.plugin.zsh	/^_git_remote_branch() {$/;"	f
+_git_replace	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_replace ()$/;"	f
+_git_reset	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_reset ()$/;"	f
+_git_revert	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_revert ()$/;"	f
+_git_rm	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_rm ()$/;"	f
+_git_send_email	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_send_email ()$/;"	f
+_git_shortlog	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_shortlog ()$/;"	f
+_git_show	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_show ()$/;"	f
+_git_show_branch	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_show_branch ()$/;"	f
+_git_stage	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_stage ()$/;"	f
+_git_stash	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_stash ()$/;"	f
+_git_submodule	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_submodule ()$/;"	f
+_git_svn	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_svn ()$/;"	f
+_git_tag	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_tag ()$/;"	f
+_git_whatchanged	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_git_whatchanged ()$/;"	f
+_gitignoreio	/home/devin/.oh-my-zsh/plugins/gitignore/gitignore.plugin.zsh	/^_gitignoreio () {$/;"	f
+_gitignoreio_get_command_list	/home/devin/.oh-my-zsh/plugins/gitignore/gitignore.plugin.zsh	/^_gitignoreio_get_command_list() {$/;"	f
+_gitk	/home/devin/.oh-my-zsh/plugins/gitfast/git-completion.bash	/^_gitk ()$/;"	f
+_gradle_arguments	/home/devin/.oh-my-zsh/plugins/gradle/gradle.plugin.zsh	/^function _gradle_arguments() {$/;"	f
+_gradle_core_commands	/home/devin/.oh-my-zsh/plugins/gradle/gradle.plugin.zsh	/^function _gradle_core_commands() {$/;"	f
+_gradle_does_task_list_need_generating	/home/devin/.oh-my-zsh/plugins/gradle/gradle.plugin.zsh	/^_gradle_does_task_list_need_generating () {$/;"	f
+_gradle_parse_and_extract_tasks	/home/devin/.oh-my-zsh/plugins/gradle/gradle.plugin.zsh	/^_gradle_parse_and_extract_tasks () {$/;"	f
+_gradle_parse_tasks	/home/devin/.oh-my-zsh/plugins/gradle/gradle.plugin.zsh	/^_gradle_parse_tasks () {$/;"	f
+_gradle_tasks	/home/devin/.oh-my-zsh/plugins/gradle/gradle.plugin.zsh	/^_gradle_tasks () {$/;"	f
+_gradlew_tasks	/home/devin/.oh-my-zsh/plugins/gradle/gradle.plugin.zsh	/^_gradlew_tasks () {$/;"	f
+_grails	/home/devin/.oh-my-zsh/plugins/grails/grails.plugin.zsh	/^_grails() {$/;"	f
+_httpie_completion	/home/devin/.oh-my-zsh/plugins/httpie/httpie.plugin.zsh	/^function _httpie_completion() {$/;"	f
+_is_rails_app	/home/devin/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_is_rails_app () {$/;"	f
+_jake	/home/devin/.oh-my-zsh/plugins/jake-node/jake-node.plugin.zsh	/^function _jake () {$/;"	f
+_jira_query	/home/devin/.oh-my-zsh/plugins/jira/jira.plugin.zsh	/^function _jira_query() {$/;"	f
+_jira_url_help	/home/devin/.oh-my-zsh/plugins/jira/jira.plugin.zsh	/^function _jira_url_help() {$/;"	f
+_knife_ssh	/home/devin/.oh-my-zsh/plugins/knife_ssh/knife_ssh.plugin.zsh	/^_knife_ssh() {$/;"	f
+_laravel4	/home/devin/.oh-my-zsh/plugins/laravel4/laravel4.plugin.zsh	/^_laravel4 () {$/;"	f
+_laravel4_get_command_list	/home/devin/.oh-my-zsh/plugins/laravel4/laravel4.plugin.zsh	/^_laravel4_get_command_list () {$/;"	f
+_laravel5	/home/devin/.oh-my-zsh/plugins/laravel5/laravel5.plugin.zsh	/^_laravel5 () {$/;"	f
+_laravel5_get_command_list	/home/devin/.oh-my-zsh/plugins/laravel5/laravel5.plugin.zsh	/^_laravel5_get_command_list () {$/;"	f
+_lein_commands	/home/devin/.oh-my-zsh/plugins/lein/lein.plugin.zsh	/^function _lein_commands() {$/;"	f
+_managepy	/home/devin/.oh-my-zsh/plugins/django/django.plugin.zsh	/^_managepy() {$/;"	f
+_managepy_cmds	/home/devin/.oh-my-zsh/plugins/django/django.plugin.zsh	/^_managepy_cmds(){$/;"	f
+_mark_expansion	/home/devin/.oh-my-zsh/plugins/jump/jump.plugin.zsh	/^_mark_expansion() {$/;"	f
+_mix	/home/devin/.oh-my-zsh/plugins/mix-fast/mix-fast.plugin.zsh	/^_mix () {$/;"	f
+_mix_does_task_list_need_generating	/home/devin/.oh-my-zsh/plugins/mix-fast/mix-fast.plugin.zsh	/^_mix_does_task_list_need_generating () {$/;"	f
+_mix_generate	/home/devin/.oh-my-zsh/plugins/mix-fast/mix-fast.plugin.zsh	/^_mix_generate () {$/;"	f
+_mix_refresh	/home/devin/.oh-my-zsh/plugins/mix-fast/mix-fast.plugin.zsh	/^_mix_refresh () {$/;"	f
+_n98_magerun	/home/devin/.oh-my-zsh/plugins/n98-magerun/n98-magerun.plugin.zsh	/^_n98_magerun () {$/;"	f
+_n98_magerun_get_command_list	/home/devin/.oh-my-zsh/plugins/n98-magerun/n98-magerun.plugin.zsh	/^_n98_magerun_get_command_list () {$/;"	f
+_ng_completion	/home/devin/.oh-my-zsh/plugins/ng/ng.plugin.zsh	/^_ng_completion () {$/;"	f
+_omz_diag_dump_check_core_commands	/home/devin/.oh-my-zsh/lib/diagnostics.zsh	/^function _omz_diag_dump_check_core_commands() {$/;"	f
+_omz_diag_dump_echo_file_w_header	/home/devin/.oh-my-zsh/lib/diagnostics.zsh	/^function _omz_diag_dump_echo_file_w_header() {$/;"	f
+_omz_diag_dump_one_big_text	/home/devin/.oh-my-zsh/lib/diagnostics.zsh	/^function _omz_diag_dump_one_big_text() {$/;"	f
+_omz_diag_dump_os_specific_version	/home/devin/.oh-my-zsh/lib/diagnostics.zsh	/^function _omz_diag_dump_os_specific_version() {$/;"	f
+_omz_osx_get_frontmost_app	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function _omz_osx_get_frontmost_app() {$/;"	f
+_omz_xcode_list_versions	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function _omz_xcode_list_versions {$/;"	f
+_omz_xcode_locate_versions	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function _omz_xcode_locate_versions {$/;"	f
+_omz_xcode_parse_versioned_file	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function _omz_xcode_parse_versioned_file {$/;"	f
+_omz_xcode_print_active_version	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function _omz_xcode_print_active_version {$/;"	f
+_omz_xcode_print_xcselv_usage	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function _omz_xcode_print_xcselv_usage {$/;"	f
+_paste_insert	/home/devin/.oh-my-zsh/plugins/safe-paste/safe-paste.plugin.zsh	/^function _paste_insert() {$/;"	f
+_paver	/home/devin/.oh-my-zsh/plugins/paver/paver.plugin.zsh	/^_paver () {$/;"	f
+_paver_does_target_list_need_generating	/home/devin/.oh-my-zsh/plugins/paver/paver.plugin.zsh	/^_paver_does_target_list_need_generating () {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh	/^function _per-directory-history-addhistory() {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh	/^function _per-directory-history-change-directory() {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh	/^function _per-directory-history-set-directory-history() {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh	/^function _per-directory-history-set-global-history() {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.zsh	/^function _per-directory-history-addhistory() {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.zsh	/^function _per-directory-history-change-directory() {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.zsh	/^function _per-directory-history-set-directory-history() {$/;"	f
+_per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.zsh	/^function _per-directory-history-set-global-history() {$/;"	f
+_phing	/home/devin/.oh-my-zsh/plugins/phing/phing.plugin.zsh	/^_phing () {$/;"	f
+_pj	/home/devin/.oh-my-zsh/plugins/pj/pj.plugin.zsh	/^_pj () {$/;"	f
+_rails_command	/home/devin/.oh-my-zsh/plugins/rails/rails.plugin.zsh	/^function _rails_command () {$/;"	f
+_rake	/home/devin/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake () {$/;"	f
+_rake_command	/home/devin/.oh-my-zsh/plugins/rails/rails.plugin.zsh	/^function _rake_command () {$/;"	f
+_rake_does_task_list_need_generating	/home/devin/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake_does_task_list_need_generating () {$/;"	f
+_rake_generate	/home/devin/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake_generate () {$/;"	f
+_rb18	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^_rb18() {compadd `ls -1 $rvm_path\/gems | grep "^$ruby18@" | sed -e "s\/^$ruby18@\/\/" | awk '{print $1}'`}$/;"	f
+_rb19	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^_rb19() {compadd `ls -1 $rvm_path\/gems | grep "^$ruby19@" | sed -e "s\/^$ruby19@\/\/" | awk '{print $1}'`}$/;"	f
+_rb20	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^_rb20() {compadd `ls -1 $rvm_path\/gems | grep "^$ruby20@" | sed -e "s\/^$ruby20@\/\/" | awk '{print $1}'`}$/;"	f
+_rb21	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^_rb21() {compadd `ls -1 $rvm_path\/gems | grep "^$ruby21@" | sed -e "s\/^$ruby21@\/\/" | awk '{print $1}'`}$/;"	f
+_rbfu_rubies_print	/home/devin/.oh-my-zsh/plugins/rbfu/rbfu.plugin.zsh	/^  function _rbfu_rubies_print() {$/;"	f
+_rvm_completion	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^function _rvm_completion {$/;"	f
+_scd_Y19oug_abspath	/home/devin/.oh-my-zsh/plugins/scd/scd	/^_scd_Y19oug_abspath() {$/;"	f
+_scd_Y19oug_action	/home/devin/.oh-my-zsh/plugins/scd/scd	/^_scd_Y19oug_action() {$/;"	f
+_scd_Y19oug_compress	/home/devin/.oh-my-zsh/plugins/scd/scd	/^_scd_Y19oug_compress() {$/;"	f
+_scd_Y19oug_match	/home/devin/.oh-my-zsh/plugins/scd/scd	/^_scd_Y19oug_match() {$/;"	f
+_scd_Y19oug_record	/home/devin/.oh-my-zsh/plugins/scd/scd	/^_scd_Y19oug_record() {$/;"	f
+_source_from_omz_settings	/home/devin/.oh-my-zsh/plugins/chruby/chruby.plugin.zsh	/^_source_from_omz_settings() {$/;"	f
+_stack_commands	/home/devin/.oh-my-zsh/plugins/stack/stack.plugin.zsh	/^function _stack_commands() {$/;"	f
+_start_agent	/home/devin/.oh-my-zsh/plugins/ssh-agent/ssh-agent.plugin.zsh	/^function _start_agent() {$/;"	f
+_start_paste	/home/devin/.oh-my-zsh/plugins/safe-paste/safe-paste.plugin.zsh	/^function _start_paste() {$/;"	f
+_symfony	/home/devin/.oh-my-zsh/plugins/symfony/symfony.plugin.zsh	/^_symfony () {$/;"	f
+_symfony2	/home/devin/.oh-my-zsh/plugins/symfony2/symfony2.plugin.zsh	/^_symfony2 () {$/;"	f
+_symfony2_get_command_list	/home/devin/.oh-my-zsh/plugins/symfony2/symfony2.plugin.zsh	/^_symfony2_get_command_list () {$/;"	f
+_symfony_console	/home/devin/.oh-my-zsh/plugins/symfony2/symfony2.plugin.zsh	/^_symfony_console () {$/;"	f
+_symfony_get_command_list	/home/devin/.oh-my-zsh/plugins/symfony/symfony.plugin.zsh	/^_symfony_get_command_list () {$/;"	f
+_tasks_changed	/home/devin/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_tasks_changed () {$/;"	f
+_update_zsh_update	/home/devin/.oh-my-zsh/tools/check_for_upgrade.sh	/^function _update_zsh_update() {$/;"	f
+_upgrade_zsh	/home/devin/.oh-my-zsh/tools/check_for_upgrade.sh	/^function _upgrade_zsh() {$/;"	f
+_wd	/home/devin/.oh-my-zsh/plugins/wd/_wd.sh	/^function _wd() {$/;"	f
+_wp_complete	/home/devin/.oh-my-zsh/plugins/wp-cli/wp-cli.plugin.zsh	/^_wp_complete() {$/;"	f
+_yarn	/home/devin/.oh-my-zsh/plugins/yarn/yarn.plugin.zsh	/^_yarn ()$/;"	f
+_yii	/home/devin/.oh-my-zsh/plugins/yii/yii.plugin.zsh	/^_yii () {$/;"	f
+_yii2	/home/devin/.oh-my-zsh/plugins/yii2/yii2.plugin.zsh	/^_yii2 () {$/;"	f
+_yii2_format_command	/home/devin/.oh-my-zsh/plugins/yii2/yii2.plugin.zsh	/^_yii2_format_command () {$/;"	f
+_yii_get_command_list	/home/devin/.oh-my-zsh/plugins/yii/yii.plugin.zsh	/^_yii_get_command_list () {$/;"	f
+_z	/home/devin/.oh-my-zsh/plugins/z/z.sh	/^_z() {$/;"	f
+_z_precmd	/home/devin/.oh-my-zsh/plugins/z/z.sh	/^            _z_precmd() {$/;"	f
+_z_zsh_tab_completion	/home/devin/.oh-my-zsh/plugins/z/z.sh	/^    _z_zsh_tab_completion() {$/;"	f
+_zle_line_finish	/home/devin/.oh-my-zsh/plugins/safe-paste/safe-paste.plugin.zsh	/^function _zle_line_finish() {$/;"	f
+_zle_line_init	/home/devin/.oh-my-zsh/plugins/safe-paste/safe-paste.plugin.zsh	/^function _zle_line_init() {$/;"	f
+_zsh_autosuggest_accept	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_accept() {$/;"	f
+_zsh_autosuggest_accept	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_accept() {$/;"	f
+_zsh_autosuggest_bind_widget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/bind.zsh	/^_zsh_autosuggest_bind_widget() {$/;"	f
+_zsh_autosuggest_bind_widget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_bind_widget() {$/;"	f
+_zsh_autosuggest_bind_widgets	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/bind.zsh	/^_zsh_autosuggest_bind_widgets() {$/;"	f
+_zsh_autosuggest_bind_widgets	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_bind_widgets() {$/;"	f
+_zsh_autosuggest_check_deprecated_config	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/deprecated.zsh	/^_zsh_autosuggest_check_deprecated_config() {$/;"	f
+_zsh_autosuggest_check_deprecated_config	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_check_deprecated_config() {$/;"	f
+_zsh_autosuggest_clear	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_clear() {$/;"	f
+_zsh_autosuggest_clear	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_clear() {$/;"	f
+_zsh_autosuggest_deprecated_start_widget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/deprecated.zsh	/^_zsh_autosuggest_deprecated_start_widget() {$/;"	f
+_zsh_autosuggest_deprecated_start_widget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_deprecated_start_widget() {$/;"	f
+_zsh_autosuggest_deprecated_warning	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/deprecated.zsh	/^_zsh_autosuggest_deprecated_warning() {$/;"	f
+_zsh_autosuggest_deprecated_warning	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_deprecated_warning() {$/;"	f
+_zsh_autosuggest_escape_command	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/suggestion.zsh	/^_zsh_autosuggest_escape_command() {$/;"	f
+_zsh_autosuggest_escape_command	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_escape_command() {$/;"	f
+_zsh_autosuggest_execute	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_execute() {$/;"	f
+_zsh_autosuggest_execute	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_execute() {$/;"	f
+_zsh_autosuggest_highlight_apply	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/highlight.zsh	/^_zsh_autosuggest_highlight_apply() {$/;"	f
+_zsh_autosuggest_highlight_apply	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_highlight_apply() {$/;"	f
+_zsh_autosuggest_highlight_reset	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/highlight.zsh	/^_zsh_autosuggest_highlight_reset() {$/;"	f
+_zsh_autosuggest_highlight_reset	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_highlight_reset() {$/;"	f
+_zsh_autosuggest_invoke_original_widget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/bind.zsh	/^_zsh_autosuggest_invoke_original_widget() {$/;"	f
+_zsh_autosuggest_invoke_original_widget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_invoke_original_widget() {$/;"	f
+_zsh_autosuggest_modify	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_modify() {$/;"	f
+_zsh_autosuggest_modify	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_modify() {$/;"	f
+_zsh_autosuggest_partial_accept	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_partial_accept() {$/;"	f
+_zsh_autosuggest_partial_accept	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_partial_accept() {$/;"	f
+_zsh_autosuggest_start	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/start.zsh	/^_zsh_autosuggest_start() {$/;"	f
+_zsh_autosuggest_start	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_start() {$/;"	f
+_zsh_autosuggest_strategy_default	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/strategies/default.zsh	/^_zsh_autosuggest_strategy_default() {$/;"	f
+_zsh_autosuggest_strategy_default	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_strategy_default() {$/;"	f
+_zsh_autosuggest_strategy_match_prev_cmd	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/strategies/match_prev_cmd.zsh	/^_zsh_autosuggest_strategy_match_prev_cmd() {$/;"	f
+_zsh_autosuggest_strategy_match_prev_cmd	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_strategy_match_prev_cmd() {$/;"	f
+_zsh_autosuggest_suggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/suggestion.zsh	/^_zsh_autosuggest_suggestion() {$/;"	f
+_zsh_autosuggest_suggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_suggestion() {$/;"	f
+_zsh_highlight	/home/devin/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh	/^  _zsh_highlight() {$/;"	f
+_zsh_highlight_bind_widgets	/home/devin/.oh-my-zsh/plugins/history-substring-search/history-substring-search.zsh	/^  _zsh_highlight_bind_widgets()$/;"	f
+_zsh_tmux_plugin_run	/home/devin/.oh-my-zsh/plugins/tmux/tmux.plugin.zsh	/^	function _zsh_tmux_plugin_run()$/;"	f
+aar	/home/devin/.oh-my-zsh/plugins/ubuntu/ubuntu.plugin.zsh	/^aar() {$/;"	f
+abd	/home/devin/.oh-my-zsh/plugins/debian/debian.plugin.zsh	/^    abd() {$/;"	f
+accessip10	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^accessip10() {$/;"	f
+acss	/home/devin/.oh-my-zsh/plugins/sfffe/sfffe.plugin.zsh	/^acss() {$/;"	f
+agp	/home/devin/.oh-my-zsh/plugins/aws/aws.plugin.zsh	/^function agp {$/;"	f
+ahead	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^                        ahead = int(div[len('ahead '):].strip())$/;"	v
+ai	/home/devin/.oh-my-zsh/plugins/debian/debian.plugin.zsh	/^    ai() {$/;"	f
+ajs	/home/devin/.oh-my-zsh/plugins/sfffe/sfffe.plugin.zsh	/^ajs() {$/;"	f
+alias_value	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function alias_value() {$/;"	f
+ap	/home/devin/.oh-my-zsh/plugins/debian/debian.plugin.zsh	/^    ap() {$/;"	f
+apt	/home/devin/.oh-my-zsh/plugins/debian/debian.plugin.zsh	/^function apt-list-packages {$/;"	f
+apt	/home/devin/.oh-my-zsh/plugins/ubuntu/ubuntu.plugin.zsh	/^function apt-list-packages {$/;"	f
+apt_pref_compdef	/home/devin/.oh-my-zsh/plugins/debian/debian.plugin.zsh	/^apt_pref_compdef() {$/;"	f
+ar	/home/devin/.oh-my-zsh/plugins/debian/debian.plugin.zsh	/^    ar() {$/;"	f
+asp	/home/devin/.oh-my-zsh/plugins/aws/aws.plugin.zsh	/^function asp {$/;"	f
+assertBackslashSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^assertBackslashSuggestion() {$/;"	f
+assertDoubleBackslashSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^assertDoubleBackslashSuggestion() {$/;"	f
+assertHashSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^assertHashSuggestion() {$/;"	f
+assertParenthesesSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^assertParenthesesSuggestion() {$/;"	f
+assertSquareBracketsSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^assertSquareBracketsSuggestion() {$/;"	f
+assertSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/test_helper.zsh	/^assertSuggestion() {$/;"	f
+assertTildeSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^assertTildeSuggestion() {$/;"	f
+assertTildeSuggestionWithExtendedGlob	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^assertTildeSuggestionWithExtendedGlob() {$/;"	f
+aws_profiles	/home/devin/.oh-my-zsh/plugins/aws/aws.plugin.zsh	/^function aws_profiles {$/;"	f
+banner	/home/devin/.oh-my-zsh/tools/theme_chooser.sh	/^function banner() {$/;"	f
+battery_is_charging	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_is_charging() {$/;"	f
+battery_level_gauge	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^function battery_level_gauge() {$/;"	f
+battery_pct	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_pct() {$/;"	f
+battery_pct_prompt	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_pct_prompt () {$/;"	f
+battery_pct_prompt	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_pct_prompt() {$/;"	f
+battery_pct_remaining	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_pct_remaining() {$/;"	f
+battery_time_remaining	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_time_remaining() {$/;"	f
+bb	/home/devin/.oh-my-zsh/plugins/bbedit/bbedit.plugin.zsh	/^function bb() {$/;"	f
+behind	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^                        behind = int(div[len('behind '):].strip())$/;"	v
+bgnotify	/home/devin/.oh-my-zsh/plugins/bgnotify/bgnotify.plugin.zsh	/^bgnotify () { ## args: (title, subtitle)$/;"	f
+bgnotify_begin	/home/devin/.oh-my-zsh/plugins/bgnotify/bgnotify.plugin.zsh	/^bgnotify_begin() {$/;"	f
+bgnotify_end	/home/devin/.oh-my-zsh/plugins/bgnotify/bgnotify.plugin.zsh	/^bgnotify_end() {$/;"	f
+bgnotify_formatted	/home/devin/.oh-my-zsh/plugins/bgnotify/bgnotify.plugin.zsh	/^  function bgnotify_formatted { ## args: (exit_status, command, elapsed_seconds)$/;"	f
+branch	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^            branch = get_tagname_or_hash()$/;"	v
+branch	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^            branch = st[2].split(' ')[-1]$/;"	v
+branch	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^            branch = st[2].strip()$/;"	v
+branch_prompt_info	/home/devin/.oh-my-zsh/plugins/branch/branch.plugin.zsh	/^function branch_prompt_info() {$/;"	f
+bundle_install	/home/devin/.oh-my-zsh/plugins/bundler/bundler.plugin.zsh	/^bundle_install() {$/;"	f
+bzr_prompt_info	/home/devin/.oh-my-zsh/lib/bzr.zsh	/^function bzr_prompt_info() {$/;"	f
+c404	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^c404() {$/;"	f
+cabal_sandbox_info	/home/devin/.oh-my-zsh/plugins/cabal/cabal.plugin.zsh	/^function cabal_sandbox_info() {$/;"	f
+callvim	/home/devin/.oh-my-zsh/plugins/vim-interaction/vim-interaction.plugin.zsh	/^function callvim$/;"	f
+catimg	/home/devin/.oh-my-zsh/plugins/catimg/catimg.plugin.zsh	/^function catimg() {$/;"	f
+cdf	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function cdf() {$/;"	f
+cecho	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^  cecho(){$/;"	f
+cf	/home/devin/.oh-my-zsh/plugins/coffee/coffee.plugin.zsh	/^cf () {$/;"	f
+cfc	/home/devin/.oh-my-zsh/plugins/coffee/coffee.plugin.zsh	/^cfc () {$/;"	f
+check_output	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^from subprocess import Popen, PIPE, check_output$/;"	i
+chpwd_dirhistory	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function chpwd_dirhistory() {$/;"	f
+chpwd_dirpersist	/home/devin/.oh-my-zsh/plugins/dirpersist/dirpersist.plugin.zsh	/^chpwd_dirpersist() {$/;"	f
+chpwd_last_working_dir	/home/devin/.oh-my-zsh/plugins/last-working-dir/last-working-dir.plugin.zsh	/^chpwd_last_working_dir() {$/;"	f
+chpwd_update_git_vars	/home/devin/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh	/^function chpwd_update_git_vars() {$/;"	f
+chruby_prompt_info	/home/devin/.oh-my-zsh/lib/prompt_info_functions.zsh	/^function chruby_prompt_info hg_prompt_info pyenv_prompt_info \\$/;"	f
+chruby_prompt_info	/home/devin/.oh-my-zsh/plugins/chruby/chruby.plugin.zsh	/^function chruby_prompt_info() {$/;"	f
+clipcopy	/home/devin/.oh-my-zsh/lib/clipboard.zsh	/^function clipcopy() {$/;"	f
+clippaste	/home/devin/.oh-my-zsh/lib/clipboard.zsh	/^function clippaste() {$/;"	f
+clrz	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^clrz() {$/;"	f
+colorize_via_pygmentize	/home/devin/.oh-my-zsh/plugins/colorize/colorize.plugin.zsh	/^colorize_via_pygmentize() {$/;"	f
+command_not_found_handler	/home/devin/.oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh	/^    command_not_found_handler () {$/;"	f
+common	/home/devin/.oh-my-zsh/plugins/z/z.sh	/^            function common(matches) {$/;"	f
+con80	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^con80() {$/;"	f
+conssec	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^conssec() {$/;"	f
+consume100	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^consume100() {$/;"	f
+copybuffer	/home/devin/.oh-my-zsh/plugins/copybuffer/copybuffer.plugin.zsh	/^copybuffer () {$/;"	f
+copydir	/home/devin/.oh-my-zsh/plugins/copydir/copydir.plugin.zsh	/^function copydir {$/;"	f
+copyfile	/home/devin/.oh-my-zsh/plugins/copyfile/copyfile.plugin.zsh	/^function copyfile {$/;"	f
+cpv	/home/devin/.oh-my-zsh/plugins/cp/cp.plugin.zsh	/^cpv() {$/;"	f
+currentWindowId	/home/devin/.oh-my-zsh/plugins/bgnotify/bgnotify.plugin.zsh	/^currentWindowId () {$/;"	f
+current_branch	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^function current_branch() {$/;"	f
+current_gemset	/home/devin/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^    function current_gemset() {$/;"	f
+current_repository	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^function current_repository() {$/;"	f
+current_ruby	/home/devin/.oh-my-zsh/plugins/chruby/chruby.plugin.zsh	/^function current_ruby() {$/;"	f
+current_ruby	/home/devin/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^    function current_ruby() {$/;"	f
+d0	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^d0() {$/;"	f
+decode64	/home/devin/.oh-my-zsh/plugins/encode64/encode64.plugin.zsh	/^decode64() {$/;"	f
+default	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function default() {$/;"	f
+description	/home/devin/.oh-my-zsh/plugins/sprunge/sprunge.plugin.zsh	/^description() {$/;"	f
+dirhistory_back	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function dirhistory_back() {$/;"	f
+dirhistory_cd	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function dirhistory_cd(){$/;"	f
+dirhistory_forward	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function dirhistory_forward() {$/;"	f
+dirhistory_zle_dirhistory_back	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function dirhistory_zle_dirhistory_back() {$/;"	f
+dirhistory_zle_dirhistory_future	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function dirhistory_zle_dirhistory_future() {$/;"	f
+display_emoji	/home/devin/.oh-my-zsh/plugins/emoji/emoji.plugin.zsh	/^function display_emoji() {$/;"	f
+display_emotty	/home/devin/.oh-my-zsh/plugins/emotty/emotty.plugin.zsh	/^function display_emotty() {$/;"	f
+divergence	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^                divergence = ' '.join(rest.split(' ')[1:])$/;"	v
+divergence	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^                divergence = divergence.lstrip('[').rstrip(']')$/;"	v
+dls	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^dls () {$/;"	f
+droplr	/home/devin/.oh-my-zsh/plugins/droplr/droplr.plugin.zsh	/^droplr() {$/;"	f
+ecd	/home/devin/.oh-my-zsh/plugins/emacs/emacs.plugin.zsh	/^    function ecd {$/;"	f
+efile	/home/devin/.oh-my-zsh/plugins/emacs/emacs.plugin.zsh	/^    function efile {$/;"	f
+emoji	/home/devin/.oh-my-zsh/plugins/emoji-clock/emoji-clock.plugin.zsh	/^function emoji-clock() {$/;"	f
+emotty	/home/devin/.oh-my-zsh/plugins/emotty/emotty.plugin.zsh	/^function emotty() {$/;"	f
+empty_gh	/home/devin/.oh-my-zsh/plugins/github/github.plugin.zsh	/^empty_gh() { # [NAME_OF_REPO]$/;"	f
+encode64	/home/devin/.oh-my-zsh/plugins/encode64/encode64.plugin.zsh	/^encode64() {$/;"	f
+ensure_chruby	/home/devin/.oh-my-zsh/plugins/chruby/chruby.plugin.zsh	/^function ensure_chruby() {$/;"	f
+env_default	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function env_default() {$/;"	f
+exist_gh	/home/devin/.oh-my-zsh/plugins/github/github.plugin.zsh	/^exist_gh() { # [DIRECTORY]$/;"	f
+extract	/home/devin/.oh-my-zsh/plugins/extract/extract.plugin.zsh	/^extract() {$/;"	f
+fastfile	/home/devin/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^function fastfile() {$/;"	f
+fastfile_get	/home/devin/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^function fastfile_get() {$/;"	f
+fastfile_ls	/home/devin/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^function fastfile_ls() {$/;"	f
+fastfile_print	/home/devin/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^function fastfile_print() {$/;"	f
+fastfile_resolv	/home/devin/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^function fastfile_resolv() {$/;"	f
+fastfile_rm	/home/devin/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^function fastfile_rm() {$/;"	f
+fastfile_sync	/home/devin/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^function fastfile_sync() {$/;"	f
+fcss	/home/devin/.oh-my-zsh/plugins/sfffe/sfffe.plugin.zsh	/^fcss() {$/;"	f
+find_project	/home/devin/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh	/^find_project()$/;"	f
+fixperms	/home/devin/.oh-my-zsh/plugins/perms/perms.plugin.zsh	/^fixperms () {$/;"	f
+fjs	/home/devin/.oh-my-zsh/plugins/sfffe/sfffe.plugin.zsh	/^fjs() {$/;"	f
+fl	/home/devin/.oh-my-zsh/plugins/forklift/forklift.plugin.zsh	/^function fl {$/;"	f
+fossil_prompt_info	/home/devin/.oh-my-zsh/plugins/fossil/fossil.plugin.zsh	/^function fossil_prompt_info () {$/;"	f
+frecent	/home/devin/.oh-my-zsh/plugins/z/z.sh	/^            function frecent(rank, time) {$/;"	f
+frontend	/home/devin/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^function frontend() {$/;"	f
+fwl	/home/devin/.oh-my-zsh/plugins/firewalld/firewalld.plugin.zsh	/^function fwl () {$/;"	f
+gdv	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^gdv() { git diff -w "$@" | view - }$/;"	f
+gems	/home/devin/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^    function gems {$/;"	f
+gems	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^function gems {$/;"	f
+gemsets	/home/devin/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^  function gemsets() { echo 'not supported' }$/;"	f
+gemy	/home/devin/.oh-my-zsh/plugins/gem/gem.plugin.zsh	/^function gemy {$/;"	f
+get_tagname_or_hash	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^def get_tagname_or_hash():$/;"	f
+geteip	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^geteip() {$/;"	f
+getip	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^getip() {$/;"	f
+gfg	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^function gfg() { git ls-files | grep $@ }$/;"	f
+ggf	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^ggf() {$/;"	f
+ggl	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^ggl() {$/;"	f
+ggp	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^ggp() {$/;"	f
+ggpnp	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^ggpnp() {$/;"	f
+ggu	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^ggu() {$/;"	f
+gi	/home/devin/.oh-my-zsh/plugins/gitignore/gitignore.plugin.zsh	/^function gi() { curl -sL https:\/\/www.gitignore.io\/api\/${(j:,:)@} }$/;"	f
+git_commits_ahead	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_commits_ahead() {$/;"	f
+git_commits_behind	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_commits_behind() {$/;"	f
+git_compare_version	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_compare_version() {$/;"	f
+git_current_branch	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_current_branch() {$/;"	f
+git_current_user_email	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_current_user_email() {$/;"	f
+git_current_user_name	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_current_user_name() {$/;"	f
+git_prompt_ahead	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_prompt_ahead() {$/;"	f
+git_prompt_behind	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_prompt_behind() {$/;"	f
+git_prompt_info	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_prompt_info() {$/;"	f
+git_prompt_info	/home/devin/.oh-my-zsh/plugins/gitfast/gitfast.plugin.zsh	/^function git_prompt_info() {$/;"	f
+git_prompt_long_sha	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_prompt_long_sha() {$/;"	f
+git_prompt_remote	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_prompt_remote() {$/;"	f
+git_prompt_short_sha	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_prompt_short_sha() {$/;"	f
+git_prompt_status	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_prompt_status() {$/;"	f
+git_remote_status	/home/devin/.oh-my-zsh/lib/git.zsh	/^function git_remote_status() {$/;"	f
+git_super_status	/home/devin/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh	/^git_super_status() {$/;"	f
+globalias	/home/devin/.oh-my-zsh/plugins/globalias/globalias.plugin.zsh	/^globalias() {$/;"	f
+handle_completion_insecurities	/home/devin/.oh-my-zsh/lib/compfix.zsh	/^function handle_completion_insecurities() {$/;"	f
+hash	/home/devin/.oh-my-zsh/plugins/gnu-utils/gnu-utils.plugin.zsh	/^  function hash() {$/;"	f
+header	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/script/test_runner.zsh	/^header() {$/;"	f
+help	/home/devin/.oh-my-zsh/plugins/catimg/catimg.sh	/^function help() {$/;"	f
+hg_dirty	/home/devin/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function hg_dirty {$/;"	f
+hg_dirty_choose	/home/devin/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function hg_dirty_choose {$/;"	f
+hg_get_branch_name	/home/devin/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function hg_get_branch_name() {$/;"	f
+hg_prompt_info	/home/devin/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function hg_prompt_info {$/;"	f
+hgic	/home/devin/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function hgic() {$/;"	f
+hgoc	/home/devin/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function hgoc() {$/;"	f
+hs	/home/devin/.oh-my-zsh/plugins/history/history.plugin.zsh	/^function hs$/;"	f
+http20	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^http20() {$/;"	f
+httpstatus	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^httpstatus() {$/;"	f
+in_hg	/home/devin/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function in_hg() {$/;"	f
+in_svn	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^in_svn() {$/;"	f
+insert_favlist	/home/devin/.oh-my-zsh/tools/theme_chooser.sh	/^function insert_favlist() {$/;"	f
+is_plugin	/home/devin/.oh-my-zsh/oh-my-zsh.sh	/^is_plugin() {$/;"	f
+itunes	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function itunes() {$/;"	f
+iwhois	/home/devin/.oh-my-zsh/plugins/iwhois/iwhois.plugin.zsh	/^function iwhois() {$/;"	f
+jira	/home/devin/.oh-my-zsh/plugins/jira/jira.plugin.zsh	/^function jira() {$/;"	f
+jump	/home/devin/.oh-my-zsh/plugins/jump/jump.plugin.zsh	/^jump() {$/;"	f
+kapow	/home/devin/.oh-my-zsh/plugins/pow/pow.plugin.zsh	/^kapow(){$/;"	f
+kerndeb	/home/devin/.oh-my-zsh/plugins/debian/debian.plugin.zsh	/^kerndeb () {$/;"	f
+kerndeb	/home/devin/.oh-my-zsh/plugins/ubuntu/ubuntu.plugin.zsh	/^kerndeb () {$/;"	f
+killit	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^killit() {$/;"	f
+knife_ssh	/home/devin/.oh-my-zsh/plugins/knife_ssh/knife_ssh.plugin.zsh	/^function knife_ssh() {$/;"	f
+kt	/home/devin/.oh-my-zsh/plugins/kate/kate.plugin.zsh	/^function kt () {$/;"	f
+listMavenCompletions	/home/devin/.oh-my-zsh/plugins/mvn/mvn.plugin.zsh	/^function listMavenCompletions { $/;"	f
+list_themes	/home/devin/.oh-my-zsh/tools/theme_chooser.sh	/^function list_themes() {$/;"	f
+lstheme	/home/devin/.oh-my-zsh/plugins/themes/themes.plugin.zsh	/^function lstheme$/;"	f
+lwd	/home/devin/.oh-my-zsh/plugins/last-working-dir/last-working-dir.plugin.zsh	/^lwd() {$/;"	f
+magnet_to_torrent	/home/devin/.oh-my-zsh/plugins/torrent/torrent.plugin.zsh	/^function magnet_to_torrent() {$/;"	f
+main	/home/devin/.oh-my-zsh/tools/install.sh	/^main() {$/;"	f
+man	/home/devin/.oh-my-zsh/plugins/bwana/bwana.plugin.zsh	/^  function man() {$/;"	f
+man	/home/devin/.oh-my-zsh/plugins/colored-man-pages/colored-man-pages.plugin.zsh	/^man() {$/;"	f
+man	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function man-preview() {$/;"	f
+mark	/home/devin/.oh-my-zsh/plugins/jump/jump.plugin.zsh	/^mark() {$/;"	f
+marked	/home/devin/.oh-my-zsh/plugins/marked2/marked2.plugin.zsh	/^function marked() {$/;"	f
+marks	/home/devin/.oh-my-zsh/plugins/jump/jump.plugin.zsh	/^marks() {$/;"	f
+new_gh	/home/devin/.oh-my-zsh/plugins/github/github.plugin.zsh	/^new_gh() { # [DIRECTORY]$/;"	f
+newpl	/home/devin/.oh-my-zsh/plugins/perl/perl.plugin.zsh	/^newpl () {$/;"	f
+node	/home/devin/.oh-my-zsh/plugins/node/node.plugin.zsh	/^function node-docs {$/;"	f
+noyes	/home/devin/.oh-my-zsh/tools/theme_chooser.sh	/^function noyes() {$/;"	f
+nvm_prompt_info	/home/devin/.oh-my-zsh/lib/nvm.zsh	/^function nvm_prompt_info() {$/;"	f
+ok?	/home/devin/.oh-my-zsh/plugins/cloudapp/cloudapp.rb	/^  def ok? ; true end$/;"	f	class:HTTParty
+omz_diagnostic_dump	/home/devin/.oh-my-zsh/lib/diagnostics.zsh	/^function omz_diagnostic_dump() {$/;"	f
+omz_termsupport_precmd	/home/devin/.oh-my-zsh/lib/termsupport.zsh	/^function omz_termsupport_precmd {$/;"	f
+omz_termsupport_preexec	/home/devin/.oh-my-zsh/lib/termsupport.zsh	/^function omz_termsupport_preexec {$/;"	f
+omz_urldecode	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function omz_urldecode {$/;"	f
+omz_urlencode	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function omz_urlencode() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/bind_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/highlight_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/default_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/match_prev_cmd_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/suggestion_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/clear_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/execute_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/modify_test.zsh	/^oneTimeSetUp() {$/;"	f
+oneTimeSetUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/partial_accept_test.zsh	/^oneTimeSetUp() {$/;"	f
+open_command	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function open_command() {$/;"	f
+open_lighthouse_ticket	/home/devin/.oh-my-zsh/plugins/lighthouse/lighthouse.plugin.zsh	/^open_lighthouse_ticket () {$/;"	f
+out	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^out = ' '.join([$/;"	v
+output	/home/devin/.oh-my-zsh/plugins/z/z.sh	/^            function output(files, out, common) {$/;"	f
+pacdisowned	/home/devin/.oh-my-zsh/plugins/archlinux/archlinux.plugin.zsh	/^pacdisowned() {$/;"	f
+paclist	/home/devin/.oh-my-zsh/plugins/archlinux/archlinux.plugin.zsh	/^paclist() {$/;"	f
+pacmanallkeys	/home/devin/.oh-my-zsh/plugins/archlinux/archlinux.plugin.zsh	/^pacmanallkeys() {$/;"	f
+pacmansignkeys	/home/devin/.oh-my-zsh/plugins/archlinux/archlinux.plugin.zsh	/^pacmansignkeys() {$/;"	f
+parse_git_dirty	/home/devin/.oh-my-zsh/lib/git.zsh	/^function parse_git_dirty() {$/;"	f
+per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.plugin.zsh	/^function per-directory-history-toggle-history() {$/;"	f
+per	/home/devin/.oh-my-zsh/plugins/per-directory-history/per-directory-history.zsh	/^function per-directory-history-toggle-history() {$/;"	f
+pfd	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function pfd() {$/;"	f
+pfs	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function pfs() {$/;"	f
+pgs	/home/devin/.oh-my-zsh/plugins/perl/perl.plugin.zsh	/^pgs() { # [find] [replace] [filename]$/;"	f
+pj	/home/devin/.oh-my-zsh/plugins/pj/pj.plugin.zsh	/^pj () {$/;"	f
+plugged_in	/home/devin/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function plugged_in() {$/;"	f
+po	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^po = Popen(['git', 'status', '--porcelain', '--branch'], stdout=PIPE, stderr=PIPE)$/;"	v
+pop_future	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function pop_future() {$/;"	f
+pop_past	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function pop_past() {$/;"	f
+port_pro	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^port_pro() {$/;"	f
+powed	/home/devin/.oh-my-zsh/plugins/pow/pow.plugin.zsh	/^powed(){$/;"	f
+powit	/home/devin/.oh-my-zsh/plugins/pow/pow.plugin.zsh	/^powit(){$/;"	f
+precmd	/home/devin/.oh-my-zsh/plugins/screen/screen.plugin.zsh	/^  function precmd()$/;"	f
+precmd_update_git_vars	/home/devin/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh	/^function precmd_update_git_vars() {$/;"	f
+preexec	/home/devin/.oh-my-zsh/plugins/screen/screen.plugin.zsh	/^  function preexec()$/;"	f
+preexec_update_git_vars	/home/devin/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh	/^function preexec_update_git_vars() {$/;"	f
+prep	/home/devin/.oh-my-zsh/plugins/perl/perl.plugin.zsh	/^prep() { # [pattern] [filename unless STDOUT]$/;"	f
+print_function	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^from __future__ import print_function$/;"	i
+process_emoji_data_file	/home/devin/.oh-my-zsh/plugins/emoji/update_emoji.pl	/^sub process_emoji_data_file {$/;"	s
+psgrep	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^psgrep() {$/;"	f
+push_future	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function push_future() {$/;"	f
+push_past	/home/devin/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function push_past() {$/;"	f
+pushdf	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function pushdf() {$/;"	f
+pyclean	/home/devin/.oh-my-zsh/plugins/python/python.plugin.zsh	/^function pyclean() {$/;"	f
+pyenv_prompt_info	/home/devin/.oh-my-zsh/plugins/pyenv/pyenv.plugin.zsh	/^        function pyenv_prompt_info() {$/;"	f
+pyenv_prompt_info	/home/devin/.oh-my-zsh/plugins/pyenv/pyenv.plugin.zsh	/^    function pyenv_prompt_info() { echo "system: $(python -V 2>&1 | cut -f 2 -d ' ')" }$/;"	f
+quick	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function quick-look() {$/;"	f
+quote	/home/devin/.oh-my-zsh/plugins/rand-quote/rand-quote.plugin.zsh	/^    function quote()$/;"	f
+rack_root	/home/devin/.oh-my-zsh/plugins/pow/pow.plugin.zsh	/^rack_root(){$/;"	f
+rack_root_detect	/home/devin/.oh-my-zsh/plugins/pow/pow.plugin.zsh	/^rack_root_detect(){$/;"	f
+rake_refresh	/home/devin/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^rake_refresh () {$/;"	f
+random_emoji	/home/devin/.oh-my-zsh/plugins/emoji/emoji.plugin.zsh	/^function random_emoji() {$/;"	f
+rb18	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^function rb18 {$/;"	f
+rb19	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^function rb19 {$/;"	f
+rb20	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^function rb20 {$/;"	f
+rb21	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^function rb21 {$/;"	f
+rbenv_prompt_info	/home/devin/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^    function rbenv_prompt_info() {$/;"	f
+rbenv_prompt_info	/home/devin/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^  function rbenv_prompt_info() { echo "system: $(ruby -v | cut -f-2 -d ' ')" }$/;"	f
+rbfu	/home/devin/.oh-my-zsh/plugins/rbfu/rbfu.plugin.zsh	/^  function rbfu-rubies() {$/;"	f
+re	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^import re$/;"	i
+rehash	/home/devin/.oh-my-zsh/plugins/gnu-utils/gnu-utils.plugin.zsh	/^  function rehash() {$/;"	f
+remote_console	/home/devin/.oh-my-zsh/plugins/rails/rails.plugin.zsh	/^function remote_console() {$/;"	f
+repow	/home/devin/.oh-my-zsh/plugins/pow/pow.plugin.zsh	/^repow(){$/;"	f
+req20	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^req20() {$/;"	f
+require_tool	/home/devin/.oh-my-zsh/tools/require_tool.sh	/^require_tool ()$/;"	f
+retlog	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^function retlog() {$/;"	f
+retval	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^function retval() {$/;"	f
+ruby_prompt_info	/home/devin/.oh-my-zsh/lib/prompt_info_functions.zsh	/^function ruby_prompt_info() {$/;"	f
+run_tests	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/test_helper.zsh	/^run_tests() {$/;"	f
+rvm	/home/devin/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^function rvm-update {$/;"	f
+rvm_prompt_info	/home/devin/.oh-my-zsh/lib/prompt_info_functions.zsh	/^function rvm_prompt_info() {$/;"	f
+scd_chpwd_hook	/home/devin/.oh-my-zsh/plugins/scd/scd.plugin.zsh	/^    scd_chpwd_hook() { scd --add $PWD }$/;"	f
+screen_set	/home/devin/.oh-my-zsh/plugins/screen/screen.plugin.zsh	/^  function screen_set()$/;"	f
+searchAndPlay	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^          searchAndPlay() {$/;"	f
+setUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^setUp() {$/;"	f
+setUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/clear_test.zsh	/^setUp() {$/;"	f
+setUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/modify_test.zsh	/^setUp() {$/;"	f
+setUp	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/partial_accept_test.zsh	/^setUp() {$/;"	f
+set_history	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/test_helper.zsh	/^set_history() {$/;"	f
+shlex	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^import shlex$/;"	i
+showHelp	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^  showHelp () {$/;"	f
+showStatus	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^  showStatus () {$/;"	f
+shrink_path	/home/devin/.oh-my-zsh/plugins/shrink-path/shrink-path.plugin.zsh	/^shrink_path () {$/;"	f
+simulator	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function simulator {$/;"	f
+sortconip	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^sortconip() {$/;"	f
+sortcons	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^sortcons() {$/;"	f
+source_autosuggestions	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/test_helper.zsh	/^source_autosuggestions() {$/;"	f
+source_env	/home/devin/.oh-my-zsh/plugins/dotenv/dotenv.plugin.zsh	/^source_env() {$/;"	f
+spectrum_bls	/home/devin/.oh-my-zsh/lib/spectrum.zsh	/^function spectrum_bls() {$/;"	f
+spectrum_ls	/home/devin/.oh-my-zsh/lib/spectrum.zsh	/^function spectrum_ls() {$/;"	f
+split_tab	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function split_tab() {$/;"	f
+spotify	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function spotify() {$/;"	f
+sprunge	/home/devin/.oh-my-zsh/plugins/sprunge/sprunge.plugin.zsh	/^sprunge() {$/;"	f
+src	/home/devin/.oh-my-zsh/plugins/zsh_reload/zsh_reload.plugin.zsh	/^function src()$/;"	f
+st_run	/home/devin/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh	/^            st_run() { $_sublime_path $@ >\/dev\/null 2>&1 &| }$/;"	f
+st_run_sudo	/home/devin/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh	/^            st_run_sudo() {sudo $_sublime_path $@ >\/dev\/null 2>&1}$/;"	f
+start_agent_nossh	/home/devin/.oh-my-zsh/plugins/gpg-agent/gpg-agent.plugin.zsh	/^function start_agent_nossh {$/;"	f
+start_agent_withssh	/home/devin/.oh-my-zsh/plugins/gpg-agent/gpg-agent.plugin.zsh	/^function start_agent_withssh {$/;"	f
+status	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^status = [(line[0], line[1], line[2:]) for line in stdout.decode('utf-8').splitlines()]$/;"	v
+subl	/home/devin/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh	/^            subl () { "$_sublime_path" $* }$/;"	f
+svn_current_branch_name	/home/devin/.oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh	/^function svn_current_branch_name() {$/;"	f
+svn_current_revision	/home/devin/.oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh	/^function svn_current_revision() {$/;"	f
+svn_dirty	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_dirty() {$/;"	f
+svn_dirty_choose	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_dirty_choose() {$/;"	f
+svn_dirty_choose_pwd	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_dirty_choose_pwd () {$/;"	f
+svn_dirty_pwd	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_dirty_pwd () {$/;"	f
+svn_get_branch_name	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_get_branch_name() {$/;"	f
+svn_get_repo_name	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_get_repo_name() {$/;"	f
+svn_get_rev_nr	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_get_rev_nr() {$/;"	f
+svn_prompt_info	/home/devin/.oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh	/^function svn_prompt_info() {$/;"	f
+svn_prompt_info	/home/devin/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^svn_prompt_info() {$/;"	f
+svn_repo_need_upgrade	/home/devin/.oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh	/^function svn_repo_need_upgrade() {$/;"	f
+svn_repo_root_name	/home/devin/.oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh	/^function svn_repo_root_name() {$/;"	f
+svn_status_info	/home/devin/.oh-my-zsh/plugins/svn-fast-info/svn-fast-info.plugin.zsh	/^function svn_status_info() {$/;"	f
+syn20	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^syn20() {$/;"	f
+sys	/home/devin/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^import sys$/;"	i
+tab	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function tab() {$/;"	f
+take	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function take() {$/;"	f
+tearDown	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^tearDown() {$/;"	f
+tearDown	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/clear_test.zsh	/^tearDown() {$/;"	f
+tearDown	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/execute_test.zsh	/^tearDown() {$/;"	f
+tearDown	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/modify_test.zsh	/^tearDown() {$/;"	f
+tearDown	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/partial_accept_test.zsh	/^tearDown() {$/;"	f
+testBasicMatches	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/default_test.zsh	/^testBasicMatches() {$/;"	f
+testBasicMatches	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/match_prev_cmd_test.zsh	/^testBasicMatches() {$/;"	f
+testClear	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/clear_test.zsh	/^testClear() {$/;"	f
+testCursorAtEnd	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^testCursorAtEnd() {$/;"	f
+testCursorMovesOutOfBuffer	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/partial_accept_test.zsh	/^testCursorMovesOutOfBuffer() {$/;"	f
+testCursorNotAtEnd	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^testCursorNotAtEnd() {$/;"	f
+testCursorStaysInBuffer	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/partial_accept_test.zsh	/^testCursorStaysInBuffer() {$/;"	f
+testEscapeCommand	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/suggestion_test.zsh	/^testEscapeCommand() {$/;"	f
+testHighlightApplyWithSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/highlight_test.zsh	/^testHighlightApplyWithSuggestion() {$/;"	f
+testHighlightApplyWithoutSuggestion	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/highlight_test.zsh	/^testHighlightApplyWithoutSuggestion() {$/;"	f
+testHighlightDefaultStyle	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/highlight_test.zsh	/^testHighlightDefaultStyle() {$/;"	f
+testHighlightReset	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/highlight_test.zsh	/^testHighlightReset() {$/;"	f
+testInvokeOriginalWidgetDefined	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/bind_test.zsh	/^testInvokeOriginalWidgetDefined() {$/;"	f
+testInvokeOriginalWidgetUndefined	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/bind_test.zsh	/^testInvokeOriginalWidgetUndefined() {$/;"	f
+testMatchMostRecentAfterPreviousCmd	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/match_prev_cmd_test.zsh	/^testMatchMostRecentAfterPreviousCmd() {$/;"	f
+testModify	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/modify_test.zsh	/^testModify() {$/;"	f
+testModifyBufferTooLarge	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/modify_test.zsh	/^testModifyBufferTooLarge() {$/;"	f
+testMostRecentMatch	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/default_test.zsh	/^testMostRecentMatch() {$/;"	f
+testMostRecentMatch	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/match_prev_cmd_test.zsh	/^testMostRecentMatch() {$/;"	f
+testNoMatch	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/default_test.zsh	/^testNoMatch() {$/;"	f
+testNoMatch	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies/match_prev_cmd_test.zsh	/^testNoMatch() {$/;"	f
+testRetval	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^testRetval() {$/;"	f
+testRetval	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/clear_test.zsh	/^testRetval() {$/;"	f
+testRetval	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/execute_test.zsh	/^testRetval() {$/;"	f
+testRetval	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/modify_test.zsh	/^testRetval() {$/;"	f
+testRetval	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/partial_accept_test.zsh	/^testRetval() {$/;"	f
+testSpecialCharsForAllStrategies	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/strategies_test.zsh	/^testSpecialCharsForAllStrategies() {$/;"	f
+testViCursorAtEnd	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^testViCursorAtEnd() {$/;"	f
+testViCursorNotAtEnd	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^testViCursorNotAtEnd() {$/;"	f
+testWidget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/accept_test.zsh	/^testWidget() {$/;"	f
+testWidget	/home/devin/.oh-my-zsh/custom/plugins/zsh-autosuggestions/test/widgets/clear_test.zsh	/^testWidget() {$/;"	f
+theme	/home/devin/.oh-my-zsh/plugins/themes/themes.plugin.zsh	/^function theme$/;"	f
+theme_chooser	/home/devin/.oh-my-zsh/tools/theme_chooser.sh	/^function theme_chooser() {$/;"	f
+theme_preview	/home/devin/.oh-my-zsh/tools/theme_chooser.sh	/^function theme_preview() {$/;"	f
+timewait20	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^timewait20() {$/;"	f
+title	/home/devin/.oh-my-zsh/lib/termsupport.zsh	/^function title {$/;"	f
+tm	/home/devin/.oh-my-zsh/plugins/textmate/textmate.plugin.zsh	/^function tm() {$/;"	f
+tree	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^  tree () {$/;"	f
+try_alias_value	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function try_alias_value() {$/;"	f
+tt	/home/devin/.oh-my-zsh/plugins/textastic/textastic.plugin.zsh	/^function tt() {$/;"	f
+uninstall_oh_my_zsh	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function uninstall_oh_my_zsh() {$/;"	f
+unmark	/home/devin/.oh-my-zsh/plugins/jump/jump.plugin.zsh	/^unmark() {$/;"	f
+update_current_git_vars	/home/devin/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh	/^function update_current_git_vars() {$/;"	f
+update_terminalapp_cwd	/home/devin/.oh-my-zsh/lib/termsupport.zsh	/^  function update_terminalapp_cwd() {$/;"	f
+upgrade	/home/devin/.oh-my-zsh/plugins/archlinux/archlinux.plugin.zsh	/^  upgrade() {$/;"	f
+upgrade_oh_my_zsh	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function upgrade_oh_my_zsh() {$/;"	f
+urldecode	/home/devin/.oh-my-zsh/plugins/urltools/urltools.plugin.zsh	/^    function urldecode() {printf $(echo -n $@ | sed 's\/\\\\\/\\\\\\\\\/g;s\/\\(%\\)\\([0-9a-fA-F][0-9a-fA-F]\\)\/\\\\x\\2\/g')"\\n"}$/;"	f
+urlencode	/home/devin/.oh-my-zsh/plugins/urltools/urltools.plugin.zsh	/^    function urlencode() {echo $@ | tr -d "\\n" | xxd -plain | sed "s\/\\(..\\)\/%\\1\/g"}$/;"	f
+usage	/home/devin/.oh-my-zsh/plugins/sprunge/sprunge.plugin.zsh	/^usage() {$/;"	f
+usage	/home/devin/.oh-my-zsh/tools/require_tool.sh	/^usage() {$/;"	f
+usage	/home/devin/.oh-my-zsh/tools/theme_chooser.sh	/^function usage() {$/;"	f
+use_env	/home/devin/.oh-my-zsh/plugins/autoenv/autoenv.plugin.zsh	/^use_env() {$/;"	f
+vi_mode_prompt_info	/home/devin/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh	/^function vi_mode_prompt_info() {$/;"	f
+virtualenv_prompt_info	/home/devin/.oh-my-zsh/plugins/virtualenv/virtualenv.plugin.zsh	/^function virtualenv_prompt_info(){$/;"	f
+visitpage20	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^visitpage20() {$/;"	f
+vncviewer	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function vncviewer() {$/;"	f
+vsplit_tab	/home/devin/.oh-my-zsh/plugins/osx/osx.plugin.zsh	/^function vsplit_tab() {$/;"	f
+vundle	/home/devin/.oh-my-zsh/plugins/vundle/vundle.plugin.zsh	/^function vundle () {$/;"	f
+vundle	/home/devin/.oh-my-zsh/plugins/vundle/vundle.plugin.zsh	/^function vundle-clean () {$/;"	f
+vundle	/home/devin/.oh-my-zsh/plugins/vundle/vundle.plugin.zsh	/^function vundle-init () {$/;"	f
+vundle	/home/devin/.oh-my-zsh/plugins/vundle/vundle.plugin.zsh	/^function vundle-update () {$/;"	f
+wake	/home/devin/.oh-my-zsh/plugins/wakeonlan/wakeonlan.plugin.zsh	/^function wake() {$/;"	f
+wd	/home/devin/.oh-my-zsh/plugins/wd/wd.plugin.zsh	/^wd() {$/;"	f
+wd_add	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_add()$/;"	f
+wd_clean	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_clean() {$/;"	f
+wd_exit_fail	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_exit_fail()$/;"	f
+wd_exit_warn	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_exit_warn()$/;"	f
+wd_getdir	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_getdir()$/;"	f
+wd_list_all	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_list_all()$/;"	f
+wd_ls	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_ls()$/;"	f
+wd_path	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_path()$/;"	f
+wd_print_msg	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_print_msg()$/;"	f
+wd_print_usage	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_print_usage()$/;"	f
+wd_remove	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_remove()$/;"	f
+wd_show	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_show()$/;"	f
+wd_warp	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_warp()$/;"	f
+wd_yesorno	/home/devin/.oh-my-zsh/plugins/wd/wd.sh	/^wd_yesorno()$/;"	f
+web_search	/home/devin/.oh-my-zsh/plugins/web-search/web-search.plugin.zsh	/^function web_search() {$/;"	f
+webtraffic	/home/devin/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^webtraffic() {$/;"	f
+work_in_progress	/home/devin/.oh-my-zsh/plugins/git/git.plugin.zsh	/^function work_in_progress() {$/;"	f
+workon_cwd	/home/devin/.oh-my-zsh/plugins/virtualenvwrapper/virtualenvwrapper.plugin.zsh	/^  function workon_cwd {$/;"	f
+xc	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function xc {$/;"	f
+xcselv	/home/devin/.oh-my-zsh/plugins/xcode/xcode.plugin.zsh	/^function xcselv {$/;"	f
+zle	/home/devin/.oh-my-zsh/lib/key-bindings.zsh	/^  function zle-line-finish() {$/;"	f
+zle	/home/devin/.oh-my-zsh/lib/key-bindings.zsh	/^  function zle-line-init() {$/;"	f
+zle	/home/devin/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh	/^function zle-keymap-select() {$/;"	f
+zsh_stats	/home/devin/.oh-my-zsh/lib/functions.zsh	/^function zsh_stats() {$/;"	f
