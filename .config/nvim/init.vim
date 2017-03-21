@@ -123,9 +123,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 
-"" tags
-Plug 'ludovicchabant/vim-gutentags'
-
 "" text editing
 Plug 'tpope/vim-abolish'
 Plug 'chiel92/vim-autoformat'
@@ -142,7 +139,7 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-unimpaired'
 
 "" visual
-Plug 'chriskempson/base16-vim'
+Plug 'joshdick/onedark.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
@@ -156,7 +153,7 @@ let g:AutoPairsCenterLine = 0     " disable centering line at the bottom 1/3 of 
 let g:AutoPairsMultilineClose = 0 " jump to a closing pair on the same line only
 
 "" Base16
-colorscheme base16-tomorrow-night
+colorscheme onedark
 
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -175,9 +172,7 @@ let g:grepper = {}                   " initialize g:grepper with empy dictionary
 let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 
 "" Lightline
-let g:lightline = {
-\   'colorscheme': 'Tomorrow_Night'
-\ }
+let g:lightline = { 'colorscheme': 'onedark' }
 
 "" Neomake Autolint
 let g:neomake_autolint_events = {
