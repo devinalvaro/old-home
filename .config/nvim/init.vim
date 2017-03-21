@@ -116,6 +116,8 @@ Plug 'dojoteef/neomake-autolint'
 
 "" navigation
 Plug 'jlanzarotta/bufexplorer'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'romainl/vim-qlist'
 Plug 'justinmk/vim-sneak'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-unimpaired'
