@@ -26,7 +26,7 @@ set shiftround    " indent to next multiple of 'shiftwidth'
 set tabstop=4     " number of visual spaces per tab
 
 "" Line number
-set relativenumber " line number is relative to current line
+" set relativenumber " line number is relative to current line
 
 "" Matching
 set showmatch       " highlight matching brace
@@ -139,7 +139,7 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-unimpaired'
 
 "" visual
-Plug 'joshdick/onedark.vim'
+Plug 'chriskempson/base16-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
@@ -153,7 +153,7 @@ let g:AutoPairsCenterLine = 0     " disable centering line at the bottom 1/3 of 
 let g:AutoPairsMultilineClose = 0 " jump to a closing pair on the same line only
 
 "" Base16
-colorscheme onedark
+colorscheme base16-tomorrow-night
 
 "" Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -172,7 +172,7 @@ let g:grepper = {}                   " initialize g:grepper with empy dictionary
 let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 
 "" Lightline
-let g:lightline = { 'colorscheme': 'onedark' }
+let g:lightline = { 'colorscheme': 'Tomorrow_Night' }
 
 "" Neomake Autolint
 let g:neomake_autolint_events = {
