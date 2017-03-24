@@ -16,9 +16,6 @@ sudo dnf install python3-pip
 sudo pip install --upgrade pip
 sudo pip2 install --upgrade pip
 
-# tldr
-sudo pip install tldr
-
 # neovim
 sudo dnf install neovim
 sudo pip install neovim
@@ -37,12 +34,14 @@ sudo dnf install tmux
 #   tmux new-session -A -s "0"
 # in terminal custom command
 
+# ranger
+sudo dnf install ranger
+
+# tldr
+sudo pip install tldr
+
 # xclip
 sudo dnf install xclip
-
-# base16-shell
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-source ~/.config/base16-shell/scripts/base16-tomorrow-night.sh
 
 # arc-theme
 sudo dnf install autoconf
