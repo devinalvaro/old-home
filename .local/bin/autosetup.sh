@@ -16,6 +16,9 @@ sudo dnf install python3-pip
 sudo pip install --upgrade pip
 sudo pip2 install --upgrade pip
 
+# clang
+sudo dnf install clang
+
 # neovim
 sudo dnf install neovim
 sudo pip install neovim
@@ -36,6 +39,9 @@ sudo dnf install tmux
 
 # ranger
 sudo dnf install ranger
+
+# tig
+sudo dnf install tig
 
 # tldr
 sudo pip install tldr
@@ -63,3 +69,6 @@ git clone https://github.com/keeferrourke/la-capitaine-icon-theme.git ~/.icons/l
 git clone https://github.com/keeferrourke/capitaine-cursors.git
 cp -pr capitaine-cursors/bin/xcursor ~/.icons/capitaine-cursors
 rm -rf capitaine-cursors
+
+# gogh
+wget -O xt https://git.io/vKOB6 && chmod +x xt && ./xt
