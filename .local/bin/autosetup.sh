@@ -30,6 +30,7 @@ chsh -s $(which zsh)
 
 # oh-my-zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
 
 # tmux
 sudo dnf install tmux
