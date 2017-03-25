@@ -25,9 +25,6 @@ set shiftwidth=4  " number of auto-indent spaces
 set shiftround    " indent to next multiple of 'shiftwidth'
 set tabstop=4     " number of visual spaces per tab
 
-"" Line number
-" set relativenumber " line number is relative to current line
-
 "" Matching
 set showmatch       " highlight matching brace
 set matchpairs+=<:> " highlight angle brackets
@@ -65,13 +62,12 @@ endfunction
 "" Leader
 let mapleader="\<space>"
 
-noremap <leader>y "+y
-noremap <leader>Y "+Y
-noremap <leader>d "+d
-noremap <leader>D "+D
-noremap <leader>p "+p
-noremap <leader>P "+P
-
+noremap  <leader>y "+y
+noremap  <leader>Y "+Y
+noremap  <leader>d "+d
+noremap  <leader>D "+D
+noremap  <leader>p "+p
+noremap  <leader>P "+P
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
