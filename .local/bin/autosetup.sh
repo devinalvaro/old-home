@@ -32,10 +32,11 @@ chsh -s $(which zsh)
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
 
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
 # tmux
 sudo dnf install tmux
-# put:
-#   tmux new-session -A -s "0"
+# put: tmux new-session -A -s "0"
 # in terminal custom command
 
 # ranger
