@@ -75,9 +75,10 @@ noremap <leader>P "+P
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
+nnoremap <leader>k :ALEPreviousWrap<CR>
+nnoremap <leader>j :ALENextWrap<CR>
 nnoremap <leader>a :Autoformat<CR>
 nnoremap <leader>o :FZF<CR>
-nnoremap <leader>g :Goyo<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
@@ -87,6 +88,7 @@ noremap ^ 0
 noremap Y y$
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
+cnoremap w!! w !sudo tee > /dev/null %
 
 """"""""""""
 "" Plugin ""
@@ -102,7 +104,6 @@ Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
 "" file management
-Plug 'tpope/vim-eunuch'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mhinz/vim-grepper'
 
@@ -111,8 +112,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 "" lint
-Plug 'neomake/neomake'
-Plug 'dojoteef/neomake-autolint'
+Plug 'w0rp/ale'
 
 "" navigation
 Plug 'jlanzarotta/bufexplorer'
@@ -140,13 +140,16 @@ Plug 'tpope/vim-unimpaired'
 
 "" visual
 Plug 'chriskempson/base16-vim'
-Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
+
+"" Ale
+let g:ale_lint_on_text_changed = 0                                 " disable lint on every text change
+autocmd InsertLeave,TextChanged * call ale#Queue(g:ale_lint_delay) " lint on normal mode only
 
 "" Auto Pairs
 let g:AutoPairsCenterLine = 0     " disable centering line at the bottom 1/3 of the window
@@ -173,13 +176,6 @@ let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 
 "" Lightline
 let g:lightline = { 'colorscheme': 'Tomorrow_Night' }
-
-"" Neomake Autolint
-let g:neomake_autolint_events = {
-            \ 'BufWinEnter': {'delay': 0},
-            \ 'InsertLeave': {'delay': 0},
-            \ 'TextChanged': {},
-            \ }
 
 "" Vim Sneak
 let g:sneak#label = 1 " label hints on two letters to jump two
