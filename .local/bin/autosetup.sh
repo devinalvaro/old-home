@@ -45,11 +45,11 @@ sudo dnf install ranger
 # tig
 sudo dnf install tig
 
-# tldr
-sudo pip install tldr
-
 # xclip
 sudo dnf install xclip
+
+# zathura
+sudo dnf install zathura
 
 # arc-theme
 sudo dnf install autoconf
