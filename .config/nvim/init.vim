@@ -73,7 +73,7 @@ nnoremap <leader>q :q<CR>
 
 nnoremap <leader>k :ALEPreviousWrap<CR>
 nnoremap <leader>j :ALENextWrap<CR>
-nnoremap <leader>a :Autoformat<CR>
+nnoremap <expr> <leader>a Autoformat()
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
@@ -121,7 +121,6 @@ Plug 'honza/vim-snippets'
 
 "" text editing
 Plug 'tpope/vim-abolish'
-Plug 'chiel92/vim-autoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'tommcdo/vim-lion'
