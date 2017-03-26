@@ -80,6 +80,7 @@ alias ra="ranger"
 alias py="python3"
 alias py2="python2"
 alias vim="nvim"
+alias xb="xbacklight"
 
 alias autosetup="~/.local/bin/autosetup.sh"
 alias gitignore="~/.local/bin/gitignore.sh"

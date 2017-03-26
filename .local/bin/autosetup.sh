@@ -48,9 +48,6 @@ sudo dnf install tig
 # xclip
 sudo dnf install xclip
 
-# zathura
-sudo dnf install zathura
-
 # arc-theme
 sudo dnf install autoconf
 sudo dnf install automake
