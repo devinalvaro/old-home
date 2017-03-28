@@ -2,47 +2,47 @@
 "" Native ""
 """"""""""""
 
-"" Backup
+"" backup
 set nobackup   " disable making backups
 set noswapfile " disable making swp files
 
-"" Buffer
+"" buffer
 set hidden     " hide buffers instead of closing them
 set splitright " open new windows right of the current window
 set splitbelow " open new windows below the current window
 
-"" Color
+"" color
 set termguicolors   " always true color
 set background=dark " dark background
 
-"" Confirmation
+"" confirmation
 set confirm " ask confirmation instead of failing commands
 
-"" Indentation
+"" indentation
 set expandtab     " set tab as spaces
 set softtabstop=4 " number of spaces per tab
 set shiftwidth=4  " number of auto-indent spaces
 set shiftround    " indent to next multiple of 'shiftwidth'
 set tabstop=4     " number of visual spaces per tab
 
-"" Matching
+"" matching
 set showmatch       " highlight matching brace
 set matchpairs+=<:> " highlight angle brackets
 
-"" Redrawing
+"" redrawing
 set lazyredraw " only redraw when necessary
 
-"" Search
+"" search
 set smartcase  " enable smart-case search
 set ignorecase " always case-insensitive
 "
-"" Wrapping
+"" wrapping
 set wrap         " enable visual wrapping
 set textwidth=0  " turn off automatic linebreak
 set wrapmargin=0 " turn off automatic wrapping
 set showbreak=++ " wrap-broken line prefix
 
-"" Undo
+"" undo
 set undofile                          " save undo in a file
 set undodir=~/.local/share/nvim/undo/ " directory to save undo file
 
@@ -50,7 +50,7 @@ set undodir=~/.local/share/nvim/undo/ " directory to save undo file
 "" Misc ""
 """"""""""
 
-"" Function
+"" function
 function! IndentedI() " i is indented on empty lines
     if len(getline('.')) == 0
         return "\"_cc"
@@ -59,9 +59,10 @@ function! IndentedI() " i is indented on empty lines
     endif
 endfunction
 
-"" Leader
+"" leader
 let mapleader="\<space>"
 
+"" leader Remaps
 noremap  <leader>y "+y
 noremap  <leader>Y "+Y
 noremap  <leader>d "+d
@@ -71,6 +72,7 @@ noremap  <leader>P "+P
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
+"" plugin Calls
 nnoremap <leader>k :ALEPreviousWrap<CR>
 nnoremap <leader>j :ALENextWrap<CR>
 nnoremap <expr> <leader>a Autoformat()
@@ -78,7 +80,7 @@ nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
-"" Rebind
+"" other Remaps
 noremap 0 ^
 noremap ^ 0
 noremap Y y$
@@ -142,38 +144,53 @@ Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
-"" Ale
+"" ale
 let g:ale_lint_on_text_changed = 0                                 " disable lint on every text change
 autocmd InsertLeave,TextChanged * call ale#Queue(g:ale_lint_delay) " lint on normal mode only
 
-"" Auto Pairs
+"" auto-pairs
 let g:AutoPairsCenterLine = 0     " disable centering line at the bottom 1/3 of the window
 let g:AutoPairsMultilineClose = 0 " jump to a closing pair on the same line only
 
-"" Base16
+"" base16
 colorscheme base16-tomorrow-night
 
-"" Deoplete
+"" deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_start_length = 1 " the number of input needed to provide completion
+
 inoremap <silent> <esc> <ESC>:pclose<CR>
 
-"" Deoplete Clang
+"" deoplete-clang
 let g:deoplete#sources#clang#libclang_path = '/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header = '/usr/lib64/clang'
 
-"" Gitgutter
+"" gitgutter
 let g:gitgutter_max_signs = 1000 " maximum number of change signs
 
-"" Grepper
+"" grepper
 let g:grepper = {}                   " initialize g:grepper with empy dictionary
 let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 
-"" Lightline
+"" lightline
 let g:lightline = { 'colorscheme': 'Tomorrow_Night' }
 
-"" Vim Sneak
+"" vim-sneak
 let g:sneak#label = 1 " label hints on two letters to jump two
 
-"" Vim Tmux Navigator
+" replace 'f' and 't' with 1-char Sneak
+nmap f <Plug>Sneak_f
+nmap F <Plug>Sneak_F
+xmap f <Plug>Sneak_f
+xmap F <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
+nmap t <Plug>Sneak_t
+nmap T <Plug>Sneak_T
+xmap t <Plug>Sneak_t
+xmap T <Plug>Sneak_T
+omap t <Plug>Sneak_t
+omap T <Plug>Sneak_T
+
+"" vim-tmux-navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
