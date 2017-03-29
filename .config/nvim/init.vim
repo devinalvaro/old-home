@@ -20,10 +20,10 @@ set confirm " ask confirmation instead of failing commands
 
 "" indentation
 set expandtab     " set tab as spaces
-set softtabstop=4 " number of spaces per tab
-set shiftwidth=4  " number of auto-indent spaces
+set softtabstop=2 " number of spaces per tab
+set shiftwidth=2  " number of auto-indent spaces
 set shiftround    " indent to next multiple of 'shiftwidth'
-set tabstop=4     " number of visual spaces per tab
+set tabstop=2     " number of visual spaces per tab
 
 "" matching
 set showmatch       " highlight matching brace
@@ -51,7 +51,7 @@ set undodir=~/.local/share/nvim/undo/ " directory to save undo file
 """"""""""
 
 "" function
-function! IndentedI() " i is indented on empty lines
+function! IndentedI() " indent i on empty lines
     if len(getline('.')) == 0
         return "\"_cc"
     else
@@ -62,25 +62,26 @@ endfunction
 "" leader
 let mapleader="\<space>"
 
-"" leader Remaps
+"" leader remaps
 noremap  <leader>y "+y
 noremap  <leader>Y "+Y
-noremap  <leader>d "+d
-noremap  <leader>D "+D
 noremap  <leader>p "+p
 noremap  <leader>P "+P
+noremap  <leader>d "+d
+noremap  <leader>D "+D
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
-"" plugin Calls
+"" plugin calls
+nnoremap <leader>a :Asyncrun 
 nnoremap <leader>k :ALEPreviousWrap<CR>
 nnoremap <leader>j :ALENextWrap<CR>
-nnoremap <expr> <leader>a Autoformat()
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
+nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
-"" other Remaps
+"" other remaps
 noremap 0 ^
 noremap ^ 0
 noremap Y y$
@@ -95,14 +96,14 @@ cnoremap w!! w !sudo tee > /dev/null %
 call plug#begin('~/.config/nvim/plugged')
 
 "" completion
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'zchee/deoplete-clang'
 Plug 'davidhalter/jedi-vim'
 Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
 "" file management
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'mhinz/vim-grepper'
 
 "" git
@@ -114,8 +115,10 @@ Plug 'w0rp/ale'
 
 "" navigation
 Plug 'jlanzarotta/bufexplorer'
-Plug 'romainl/vim-qlist'
 Plug 'christoomey/vim-tmux-navigator'
+
+"" shell
+Plug 'skywind3000/asyncrun.vim'
 
 "" snippet
 Plug 'sirver/ultisnips'
@@ -125,7 +128,9 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-abolish'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
+Plug 'brooth/far.vim'
 Plug 'tommcdo/vim-lion'
+Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'mbbill/undotree'
@@ -159,7 +164,8 @@ colorscheme base16-tomorrow-night
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_start_length = 1 " the number of input needed to provide completion
 
-inoremap <silent> <esc> <ESC>:pclose<CR>
+" press escape to close completion hint
+inoremap <silent> <esc> <esc> :pclose<CR>
 
 "" deoplete-clang
 let g:deoplete#sources#clang#libclang_path = '/usr/lib64/libclang.so'
@@ -169,28 +175,14 @@ let g:deoplete#sources#clang#clang_header = '/usr/lib64/clang'
 let g:gitgutter_max_signs = 1000 " maximum number of change signs
 
 "" grepper
-let g:grepper = {}                   " initialize g:grepper with empy dictionary
+let g:grepper = {}                   " initialize g:grepper with empty dictionary
 let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 
 "" lightline
-let g:lightline = { 'colorscheme': 'Tomorrow_Night' }
+let g:lightline = {'colorscheme': 'Tomorrow_Night'}
 
 "" vim-sneak
-let g:sneak#label = 1 " label hints on two letters to jump two
-
-" replace 'f' and 't' with 1-char Sneak
-nmap f <Plug>Sneak_f
-nmap F <Plug>Sneak_F
-xmap f <Plug>Sneak_f
-xmap F <Plug>Sneak_F
-omap f <Plug>Sneak_f
-omap F <Plug>Sneak_F
-nmap t <Plug>Sneak_t
-nmap T <Plug>Sneak_T
-xmap t <Plug>Sneak_t
-xmap T <Plug>Sneak_T
-omap t <Plug>Sneak_t
-omap T <Plug>Sneak_T
+let g:sneak#label = 1 " label hints on two letters to jump to
 
 "" vim-tmux-navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
