@@ -114,7 +114,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 
 "" navigation
-Plug 'jlanzarotta/bufexplorer'
 Plug 'christoomey/vim-tmux-navigator'
 
 "" shell
@@ -182,7 +181,8 @@ let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
 let g:lightline = {'colorscheme': 'Tomorrow_Night'}
 
 "" vim-sneak
-let g:sneak#label = 1 " label hints on two letters to jump to
+let g:sneak#label = 1      " label hints on two letters to jump to
+let g:sneak#use_ic_scs = 1 " set sneak to be case insensitive
 
 "" vim-tmux-navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
