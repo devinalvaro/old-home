@@ -67,18 +67,14 @@ noremap  <leader>y "+y
 noremap  <leader>Y "+Y
 noremap  <leader>p "+p
 noremap  <leader>P "+P
-noremap  <leader>d "+d
-noremap  <leader>D "+D
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
 "" plugin calls
-nnoremap <leader>a :Asyncrun 
 nnoremap <leader>k :ALEPreviousWrap<CR>
 nnoremap <leader>j :ALENextWrap<CR>
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
-nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
 "" other remaps
@@ -147,10 +143,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
-
-"" ale
-let g:ale_lint_on_text_changed = 0                                 " disable lint on every text change
-autocmd InsertLeave,TextChanged * call ale#Queue(g:ale_lint_delay) " lint on normal mode only
 
 "" auto-pairs
 let g:AutoPairsCenterLine = 0     " disable centering line at the bottom 1/3 of the window
