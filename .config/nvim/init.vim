@@ -71,8 +71,6 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 
 "" plugin calls
-nnoremap <leader>k :ALEPreviousWrap<CR>
-nnoremap <leader>j :ALENextWrap<CR>
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
@@ -109,9 +107,6 @@ Plug 'airblade/vim-gitgutter'
 "" lint
 Plug 'w0rp/ale'
 
-"" navigation
-Plug 'christoomey/vim-tmux-navigator'
-
 "" shell
 Plug 'skywind3000/asyncrun.vim'
 
@@ -134,6 +129,9 @@ Plug 'mbbill/undotree'
 Plug 'justinmk/vim-sneak'
 Plug 'wellle/targets.vim'
 Plug 'tpope/vim-unimpaired'
+
+"" tmux
+Plug 'christoomey/vim-tmux-navigator'
 
 "" visual
 Plug 'chriskempson/base16-vim'
