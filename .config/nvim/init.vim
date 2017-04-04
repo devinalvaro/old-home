@@ -73,12 +73,12 @@ nnoremap <leader>q :q<CR>
 "" plugin calls
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
+nnoremap <leader>n :Neoformat<CR>:e<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
 "" other remaps
 noremap 0 ^
 noremap ^ 0
-noremap Y y$
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
 cnoremap w!! w !sudo tee > /dev/null %
@@ -90,9 +90,9 @@ cnoremap w!! w !sudo tee > /dev/null %
 call plug#begin('~/.config/nvim/plugged')
 
 "" completion
+Plug 'rip-rip/clang_complete'
 Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-Plug 'zchee/deoplete-clang'
-Plug 'davidhalter/jedi-vim'
+Plug 'zchee/deoplete-jedi'
 Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
@@ -107,16 +107,13 @@ Plug 'airblade/vim-gitgutter'
 "" lint
 Plug 'w0rp/ale'
 
-"" shell
-Plug 'skywind3000/asyncrun.vim'
-
 "" snippet
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" text editing
 Plug 'tpope/vim-abolish'
-Plug 'jiangmiao/auto-pairs'
+Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-commentary'
 Plug 'brooth/far.vim'
 Plug 'tommcdo/vim-lion'
@@ -142,37 +139,34 @@ Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
-"" auto-pairs
-let g:AutoPairsCenterLine = 0     " disable centering line at the bottom 1/3 of the window
-let g:AutoPairsMultilineClose = 0 " jump to a closing pair on the same line only
+"" ale
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
 
 "" base16
 colorscheme base16-tomorrow-night
 
 "" deoplete
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_complete_start_length = 1 " the number of input needed to provide completion
-
-" press escape to close completion hint
 inoremap <silent> <esc> <esc> :pclose<CR>
 
-"" deoplete-clang
-let g:deoplete#sources#clang#libclang_path = '/usr/lib64/libclang.so'
-let g:deoplete#sources#clang#clang_header = '/usr/lib64/clang'
+"" clang_complete
+let g:clang_library_path='/usr/lib64/libclang.so'
+
+"" delimitmate
+let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+let g:delimitMate_matchpairs = "(:),[:],{:}"
 
 "" gitgutter
-let g:gitgutter_max_signs = 1000 " maximum number of change signs
+let g:gitgutter_max_signs = 1000
 
 "" grepper
-let g:grepper = {}                   " initialize g:grepper with empty dictionary
-let g:grepper.tools = ['rg', 'grep'] " set order of tools to grepper
+let g:grepper = {}
+let g:grepper.tools = ['rg', 'grep']
 
 "" lightline
 let g:lightline = {'colorscheme': 'Tomorrow_Night'}
-
-"" vim-sneak
-let g:sneak#label = 1      " label hints on two letters to jump to
-let g:sneak#use_ic_scs = 1 " set sneak to be case insensitive
 
 "" vim-tmux-navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>

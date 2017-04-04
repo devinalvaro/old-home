@@ -10,19 +10,28 @@ git remote add origin https://github.com/devinalvaro/home
 git fetch
 git checkout -t origin/master
 
+# clang
+sudo dnf install clang
+sudo dnf install clang-format
+
 # pip
 sudo dnf install python-pip
 sudo dnf install python3-pip
-sudo pip install --upgrade pip
 sudo pip2 install --upgrade pip
+sudo pip3 install --upgrade pip
 
-# clang
-sudo dnf install clang
+# python
+sudo pip2 install mypy
+sudo pip2 install flake8
+sudo pip3 install mypy
+sudo pip3 install flake8
+sudo pip2 install jedi
+sudo pip3 install jedi
 
 # neovim
 sudo dnf install neovim
-sudo pip install neovim
 sudo pip2 install neovim
+sudo pip3 install neovim
 
 # zsh
 sudo dnf install zsh
@@ -45,5 +54,5 @@ sudo dnf install ranger
 # tig
 sudo dnf install tig
 
-# xclip
-sudo dnf install xclip
+# xsel
+sudo dnf install xsel
