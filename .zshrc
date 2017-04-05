@@ -1,6 +1,9 @@
 # oh-my-zsh
 export ZSH=/home/devin/.oh-my-zsh
 
+# history
+setopt histignorespace
+
 # theme
 ZSH_THEME="spaceship"
 

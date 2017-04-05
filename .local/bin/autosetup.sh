@@ -21,10 +21,8 @@ sudo pip2 install --upgrade pip
 sudo pip3 install --upgrade pip
 
 # python
-sudo pip2 install mypy
-sudo pip2 install flake8
-sudo pip3 install mypy
-sudo pip3 install flake8
+sudo pip2 install pylint
+sudo pip3 install pylint
 sudo pip2 install jedi
 sudo pip3 install jedi
 
