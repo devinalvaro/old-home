@@ -27,16 +27,12 @@ alias py2="python2"
 alias vim="nvim"
 alias xb="xbacklight"
 
-# shell alias
-alias gitignore="~/.local/bin/gitignore.sh"
-alias makegen="~/.local/bin/makegen.sh"
-alias truecolor="~/.local/bin/truecolor.sh"
-
-# fedora alias
-alias dnfu="sudo dnf upgrade"
-alias dnfi="sudo dnf install"
-alias dnfr="sudo dnf remove"
-alias dnfa="sudo dnf autoremove"
+# package alias
+alias aptu="sudo apt update"
+alias aptg="sudo apt upgrade"
+alias apti="sudo apt install"
+alias aptr="sudo apt remove"
+alias apta="sudo apt autoremove"
 
 # git alias
 alias gcl="git clone"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # git
-sudo dnf install git
+sudo apt -y install git
 
 # home
 cd ~
@@ -11,46 +11,50 @@ git fetch
 git checkout -t origin/master
 
 # clang
-sudo dnf install clang
-sudo dnf install clang-format
+sudo apt -y install clang
+sudo apt -y install clang-format
 
 # pip
-sudo dnf install python-pip
-sudo dnf install python3-pip
+sudo apt -y install python-pip
+sudo apt -y install python3-pip
 sudo pip2 install --upgrade pip
 sudo pip3 install --upgrade pip
+pip2 install --user --upgrade pip
+pip3 install --user --upgrade pip
 
 # python
-sudo pip2 install pylint
-sudo pip3 install pylint
-sudo pip2 install jedi
-sudo pip3 install jedi
+pip2 install --user pylint
+pip3 install --user pylint
+pip2 install --user jedi
+pip3 install --user jedi
 
 # neovim
-sudo dnf install neovim
-sudo pip2 install neovim
-sudo pip3 install neovim
+sudo add-apt-repository -y ppa:neovim-ppa/stable
+sudo apt -y update
+sudo apt -y install neovim
+pip2 install --user neovim
+pip3 install --user neovim
 
 # zsh
-sudo dnf install zsh
+sudo apt -y install zsh
 chsh -s $(which zsh)
 
 # oh-my-zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
 
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions .oh-my-zsh/plugins/zsh-autosuggestions
 
 # tmux
-sudo dnf install tmux
+sudo apt -y install tmux
 # put: tmux new-session -A -s "0"
 # in terminal custom command
 
 # ranger
-sudo dnf install ranger
+sudo apt -y install ranger
 
 # tig
-sudo dnf install tig
+sudo apt -y install tig
 
 # xsel
-sudo dnf install xsel
+sudo apt -y install xsel
