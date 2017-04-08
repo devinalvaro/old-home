@@ -3,3 +3,5 @@
 	name = Devin Alvaro
 [core]
 	editor = nvim
+[push]
+	default = simple
