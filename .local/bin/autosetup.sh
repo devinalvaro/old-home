@@ -29,7 +29,7 @@ pip2 install --user jedi
 pip3 install --user jedi
 
 # neovim
-sudo add-apt-repository -y ppa:neovim-ppa/stable
+sudo add-apt-repository -y ppa:neovim-ppa/unstable
 sudo apt -y update
 sudo apt -y install neovim
 pip2 install --user neovim
@@ -41,7 +41,7 @@ chsh -s $(which zsh)
 
 # oh-my-zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
+wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
 
 git clone git://github.com/zsh-users/zsh-autosuggestions .oh-my-zsh/plugins/zsh-autosuggestions
 
