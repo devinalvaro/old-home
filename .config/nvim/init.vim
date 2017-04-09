@@ -37,10 +37,8 @@ set smartcase  " enable smart-case search
 set ignorecase " always case-insensitive
 "
 "" wrapping
-set wrap         " enable visual wrapping
 set textwidth=0  " turn off automatic linebreak
 set wrapmargin=0 " turn off automatic wrapping
-set showbreak=++ " wrap-broken line prefix
 
 "" undo
 set undofile                          " save undo in a file
