@@ -28,11 +28,10 @@ alias vim="nvim"
 alias xb="xbacklight"
 
 # package alias
-alias aptu="sudo apt update"
-alias aptg="sudo apt upgrade"
-alias apti="sudo apt install"
-alias aptr="sudo apt remove"
-alias apta="sudo apt autoremove"
+alias dnfu="sudo dnf upgrade"
+alias dnfi="sudo dnf install"
+alias dnfr="sudo dnf remove"
+alias dnfa="sudo dnf autoremove"
 
 # git alias
 alias gcl="git clone"

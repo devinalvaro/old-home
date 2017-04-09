@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # arc-theme
-sudo apt -y install autoconf
-sudo apt -y install automake
-sudo apt -y install pkg-config # pkgconfig in Debian
-sudo apt -y install libgtk-3-dev # gtk3-devel in Debian
+sudo dnf -y install autoconf
+sudo dnf -y install automake
+sudo dnf -y install pkgconfig # pkg-config in Debian
+sudo dnf -y install gtk3-devel # libgtk-3-dev in Debian
 
 git clone https://github.com/horst3180/arc-theme --depth 1
 cd arc-theme
