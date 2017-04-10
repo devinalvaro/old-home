@@ -25,6 +25,9 @@ set shiftwidth=2  " number of auto-indent spaces
 set shiftround    " indent to next multiple of 'shiftwidth'
 set tabstop=2     " number of visual spaces per tab
 
+"" number
+set relativenumber " show distance of line relative to current line
+
 "" matching
 set showmatch       " highlight matching brace
 set matchpairs+=<:> " highlight angle brackets
@@ -77,6 +80,7 @@ nnoremap <leader>u :UndotreeToggle<CR>
 "" other remaps
 noremap 0 ^
 noremap ^ 0
+noremap Y y$
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
 cnoremap w!! w !sudo tee > /dev/null %
