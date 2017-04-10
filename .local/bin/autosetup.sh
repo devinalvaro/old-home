@@ -36,12 +36,6 @@ sudo dnf -y install tmux
 # put: tmux new-session -A -s "0"
 # in terminal custom command
 
-# ranger
-sudo dnf -y install ranger
-
-# tig
-sudo dnf -y install tig
-
 # xsel
 sudo dnf -y install xsel
 
