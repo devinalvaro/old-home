@@ -1,3 +1,6 @@
+# path
+export PATH=$HOME/.local/bin/:$PATH
+
 # oh-my-zsh
 export ZSH=/home/devin/.oh-my-zsh
 
