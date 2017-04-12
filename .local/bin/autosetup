@@ -31,6 +31,9 @@ sudo dnf -y install neovim
 pip2 install --user neovim
 pip3 install --user neovim
 
+# gnome-terminal
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|tr -d \')/ cursor-blink-mode off
+
 # tmux
 sudo dnf -y install tmux
 # put: tmux new-session -A -s "0"
