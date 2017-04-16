@@ -16,20 +16,15 @@ sudo dnf -y install clang-format
 
 # pip
 sudo dnf -y install python-pip
-sudo dnf -y install python3-pip
-sudo pip2 install --upgrade pip
-sudo pip3 install --upgrade pip
+sudo pip install --upgrade pip
 
 # python
-pip2 install --user pylint
-pip3 install --user pylint
-pip2 install --user jedi
-pip3 install --user jedi
+pip install --user pylint
+pip install --user jedi
 
 # neovim
 sudo dnf -y install neovim
-pip2 install --user neovim
-pip3 install --user neovim
+pip install --user neovim
 
 # gnome-terminal
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|tr -d \')/ cursor-blink-mode off
@@ -46,9 +41,8 @@ sudo dnf -y install xsel
 sudo dnf -y install zsh
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
-
 git clone git://github.com/zsh-users/zsh-autosuggestions .oh-my-zsh/plugins/zsh-autosuggestions
+wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
 
 sudo dnf install util-linux-user
 chsh -s $(which zsh)

@@ -29,7 +29,6 @@ alias na="nautilus ."
 alias ra="ranger"
 alias py="python3"
 alias py2="python2"
-alias vim="nvim"
 alias xb="xbacklight"
 
 # package alias

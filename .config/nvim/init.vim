@@ -27,6 +27,7 @@ set tabstop=2     " number of visual spaces per tab
 
 "" number
 set relativenumber " show distance of line relative to current line
+set numberwidth=2  " maximal number of columsn to use for line number
 
 "" matching
 set showmatch       " highlight matching brace
@@ -60,30 +61,29 @@ function! IndentedI() " indent i on empty lines
     endif
 endfunction
 
-"" leader
+"" leader remap
 let mapleader="\<space>"
 
-"" leader remaps
-noremap  <leader>y "+y
-noremap  <leader>Y "+Y
-noremap  <leader>p "+p
-noremap  <leader>P "+P
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-
-"" plugin calls
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>n :Neoformat<CR>:e<CR>
+nnoremap <leader>\ :NERDTreeToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
-"" other remaps
-noremap 0 ^
-noremap ^ 0
-noremap Y y$
+"" ctrl remap
+nnoremap <C-c> "+y
+nnoremap <C-v> "+p
+nnoremap <C-s> :w<CR>
+
+"" command remap
+cnoremap w!! w !sudo tee > /dev/null %
+
+"" other remap
+nnoremap 0 ^
+nnoremap ^ 0
+nnoremap Y y$
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
-cnoremap w!! w !sudo tee > /dev/null %
 
 """"""""""""
 "" Plugin ""
@@ -95,12 +95,15 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'rip-rip/clang_complete'
 Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'zchee/deoplete-jedi'
+Plug 'vim-javacomplete2'
 Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
 "" file management
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'mhinz/vim-grepper'
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 
 "" git
 Plug 'tpope/vim-fugitive'
@@ -109,24 +112,17 @@ Plug 'airblade/vim-gitgutter'
 "" lint
 Plug 'w0rp/ale'
 
-"" snippet
-Plug 'sirver/ultisnips'
-Plug 'honza/vim-snippets'
-
 "" text editing
 Plug 'tpope/vim-abolish'
-Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-commentary'
-Plug 'brooth/far.vim'
+Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'mbbill/undotree'
 
 "" text navigation
-Plug 'justinmk/vim-sneak'
-Plug 'wellle/targets.vim'
+Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-unimpaired'
 
 "" tmux
@@ -148,10 +144,6 @@ let g:ale_lint_on_insert_leave = 1
 "" base16
 colorscheme base16-tomorrow-night
 
-"" deoplete
-let g:deoplete#enable_at_startup = 1
-inoremap <silent> <esc> <esc> :pclose<CR>
-
 "" clang_complete
 let g:clang_library_path='/usr/lib64/libclang.so'
 
@@ -160,12 +152,16 @@ let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 let g:delimitMate_matchpairs = "(:),[:],{:}"
 
-"" gitgutter
-let g:gitgutter_max_signs = 1000
+"" deoplete
+let g:deoplete#enable_at_startup = 1
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 "" grepper
 let g:grepper = {}
 let g:grepper.tools = ['rg', 'grep']
+
+"" javacomplete2
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" lightline
 let g:lightline = {'colorscheme': 'Tomorrow_Night'}
