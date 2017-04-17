@@ -20,14 +20,14 @@ set confirm " ask confirmation instead of failing commands
 
 "" indentation
 set expandtab     " set tab as spaces
-set softtabstop=2 " number of spaces per tab
-set shiftwidth=2  " number of auto-indent spaces
+set softtabstop=4 " number of spaces per tab
+set shiftwidth=4  " number of auto-indent spaces
 set shiftround    " indent to next multiple of 'shiftwidth'
-set tabstop=2     " number of visual spaces per tab
+set tabstop=4     " number of visual spaces per tab
 
 "" number
 set relativenumber " show distance of line relative to current line
-set numberwidth=2  " maximal number of columsn to use for line number
+set numberwidth=2  " maximal number of column to use for line number
 
 "" matching
 set showmatch       " highlight matching brace

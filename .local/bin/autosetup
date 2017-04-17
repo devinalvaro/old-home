@@ -26,6 +26,10 @@ pip install --user jedi
 sudo dnf -y install neovim
 pip install --user neovim
 
+#ripgrep
+sudo dnf -y copr enable carlgeorge/ripgrep
+sudo dnf -y install ripgrep
+
 # gnome-terminal
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|tr -d \')/ cursor-blink-mode off
 
@@ -44,5 +48,5 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone git://github.com/zsh-users/zsh-autosuggestions .oh-my-zsh/plugins/zsh-autosuggestions
 wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
 
-sudo dnf install util-linux-user
+sudo dnf -y install util-linux-user
 chsh -s $(which zsh)

@@ -4,3 +4,6 @@ rm ~/.local/share/nvim/shada/main.shada
 rm -f ~/.local/share/nvim/undo/*
 rm ~/.lesshst
 rm ~/.zsh_history
+
+touch ~/.lesshst
+touch ~/.zsh_history
