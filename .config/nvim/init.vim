@@ -66,8 +66,9 @@ let mapleader="\<space>"
 
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
-nnoremap <leader>n :Neoformat<CR>:e<CR>
+nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>\ :NERDTreeToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
 "" ctrl remap
@@ -92,8 +93,8 @@ nnoremap <expr> i IndentedI()
 call plug#begin('~/.config/nvim/plugged')
 
 "" completion
-Plug 'rip-rip/clang_complete'
 Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
 Plug 'vim-javacomplete2'
 Plug 'shougo/neoinclude.vim'
@@ -121,6 +122,9 @@ Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
+"" tags
+Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+
 "" text navigation
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-unimpaired'
@@ -130,7 +134,6 @@ Plug 'christoomey/vim-tmux-navigator'
 
 "" visual
 Plug 'chriskempson/base16-vim'
-Plug 'yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jszakmeister/vim-togglecursor'
@@ -144,24 +147,27 @@ let g:ale_lint_on_insert_leave = 1
 "" base16
 colorscheme base16-tomorrow-night
 
-"" clang_complete
-let g:clang_library_path='/usr/lib64/libclang.so'
 
 "" delimitmate
-let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
+let g:delimitMate_balance_matchpairs = 1
 let g:delimitMate_matchpairs = "(:),[:],{:}"
 
 "" deoplete
 let g:deoplete#enable_at_startup = 1
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
+
+"" deoplete-clang
+let g:deoplete#sources#clang#libclang_path='/usr/lib64/libclang.so'
+let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 
 "" grepper
 let g:grepper = {}
 let g:grepper.tools = ['rg', 'grep']
 
 "" javacomplete2
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
+autocmd FileType java setlocal omnifunc = javacomplete#Complete
 
 "" lightline
 let g:lightline = {'colorscheme': 'Tomorrow_Night'}
