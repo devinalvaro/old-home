@@ -39,7 +39,7 @@ set lazyredraw " only redraw when necessary
 "" search
 set smartcase  " enable smart-case search
 set ignorecase " always case-insensitive
-"
+
 "" wrapping
 set textwidth=0  " turn off automatic linebreak
 set wrapmargin=0 " turn off automatic wrapping
@@ -72,9 +72,10 @@ nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
 "" ctrl remap
-nnoremap <C-c> "+y
-nnoremap <C-v> "+p
-nnoremap <C-s> :w<CR>
+noremap <C-c> "+y
+noremap <C-v> "+p
+noremap <C-s> :w<CR>
+noremap <C-x> :q<CR>
 
 "" command remap
 cnoremap w!! w !sudo tee > /dev/null %
@@ -117,10 +118,12 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
+Plug 'brooth/far.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'wellle/targets.vim'
 
 "" tags
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
@@ -156,6 +159,7 @@ let g:delimitMate_matchpairs = "(:),[:],{:}"
 
 "" deoplete
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_complete_start_length = 1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 "" deoplete-clang
