@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=unclutter-hide
+Exec=/usr/bin/unclutter -idle 2
+
