@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=xrandr-hidpi
-Exec=/usr/bin/xrandr --output eDP1 --panning 2995x1685 --scale 1.56x1.56
-
