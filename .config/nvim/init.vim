@@ -40,10 +40,6 @@ set lazyredraw " only redraw when necessary
 set smartcase  " enable smart-case search
 set ignorecase " always case-insensitive
 
-"" wrapping
-set textwidth=0  " turn off automatic linebreak
-set wrapmargin=0 " turn off automatic wrapping
-
 "" undo
 set undofile                          " save undo in a file
 set undodir=~/.local/share/nvim/undo/ " directory to save undo file
@@ -97,7 +93,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
-Plug 'vim-javacomplete2'
+Plug 'artur-shaik/vim-javacomplete2'
 Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
@@ -144,22 +140,22 @@ Plug 'jszakmeister/vim-togglecursor'
 call plug#end()
 
 "" ale
-let g:ale_lint_on_text_changed = 'normal'
-let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_text_changed='normal'
+let g:ale_lint_on_insert_leave=1
 
 "" base16
 colorscheme base16-tomorrow-night
 
 
 "" delimitmate
-let g:delimitMate_expand_cr = 2
-let g:delimitMate_expand_space = 1
-let g:delimitMate_balance_matchpairs = 1
-let g:delimitMate_matchpairs = "(:),[:],{:}"
+let g:delimitMate_expand_cr=2
+let g:delimitMate_expand_space=1
+let g:delimitMate_balance_matchpairs=1
+let g:delimitMate_matchpairs="(:),[:],{:}"
 
 "" deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_complete_start_length = 1
+let g:deoplete#enable_at_startup=1
+let g:deoplete#auto_complete_start_length=1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 "" deoplete-clang
@@ -167,14 +163,14 @@ let g:deoplete#sources#clang#libclang_path='/usr/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
 
 "" grepper
-let g:grepper = {}
-let g:grepper.tools = ['rg', 'grep']
+let g:grepper={}
+let g:grepper.tools=['rg', 'grep']
 
 "" javacomplete2
-autocmd FileType java setlocal omnifunc = javacomplete#Complete
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" lightline
-let g:lightline = {'colorscheme': 'Tomorrow_Night'}
+let g:lightline={'colorscheme': 'Tomorrow_Night'}
 
 "" vim-tmux-navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
