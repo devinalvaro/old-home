@@ -26,7 +26,6 @@ set shiftround    " indent to next multiple of 'shiftwidth'
 set tabstop=4     " number of visual spaces per tab
 
 "" number
-set relativenumber " show distance of line relative to current line
 set numberwidth=2  " maximal number of column to use for line number
 
 "" matching
@@ -100,7 +99,6 @@ Plug 'wellle/tmux-complete.vim'
 "" file management
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'mhinz/vim-grepper'
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 
 "" git
@@ -132,7 +130,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator'
 
 "" visual
-Plug 'chriskempson/base16-vim'
+Plug 'w0ng/vim-hybrid'
+Plug 'yggdroot/indentline'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jszakmeister/vim-togglecursor'
@@ -144,8 +143,9 @@ let g:ale_lint_on_text_changed='normal'
 let g:ale_lint_on_insert_leave=1
 
 "" base16
-colorscheme base16-tomorrow-night
-
+let g:hybrid_custom_term_colors= 1
+let g:hybrid_reduced_contrast=1
+colorscheme hybrid
 
 "" delimitmate
 let g:delimitMate_expand_cr=2

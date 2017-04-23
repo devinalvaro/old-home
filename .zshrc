@@ -1,7 +1,7 @@
 # path
 export PATH=$HOME/.local/bin/:$PATH
 export GOPATH=$HOME/.gopath
-export PATH=$GOPATH:$GOPATH/bin:$PATH
+export PATH=$GOPATH:$GOPATH/bin/:$PATH
 
 # oh-my-zsh
 export ZSH=/home/devin/.oh-my-zsh
