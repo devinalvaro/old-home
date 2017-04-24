@@ -3,11 +3,13 @@
 rm ~/.local/share/nvim/shada/main.shada
 rm -f ~/.local/share/nvim/undo/*
 rm ~/.lesshst
+rm ~/.bash_history
 rm ~/.zsh_history
 rm ~/.python_history
 rm ~/.mysql_history
 
 touch ~/.lesshst
+touch ~/.bash_history
 touch ~/.zsh_history
 touch ~/.python_history
 touch ~/.mysql_history
