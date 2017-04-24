@@ -27,6 +27,13 @@ pip install --user jedi
 sudo dnf -y install neovim
 pip install --user neovim
 
+# vim plugins
+vim -c 'PlugInstall' \
+    -c 'qa!'
+
+# fzf
+.fzf/install
+
 #ripgrep
 sudo dnf -y copr enable carlgeorge/ripgrep
 sudo dnf -y install ripgrep

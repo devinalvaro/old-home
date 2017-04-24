@@ -52,5 +52,7 @@ alias gp="git push"
 alias gpl="git pull"
 alias gct="git commit"
 alias gcm="git commit -m"
+alias grt"git remote"
+alias gsm="git submodule"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
