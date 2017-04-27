@@ -56,17 +56,9 @@ function gen_base ()
 	local host auth is_a base
 
 	host="$(ask_host)"
+    auth="$(ask_auth)"
 
-	read -n1 -p "Authenticate? [Y/N] " is_a
-	echo > /dev/stderr
-
-	if [ "${is_a^^}" == "Y" ]
-	then
-		auth="$(ask_auth)"
-		base="$auth@$host"
-	else
-		base="$host"
-	fi
+    base="$auth@$host"
 
 	echo "$base"
 }
