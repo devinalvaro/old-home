@@ -29,13 +29,14 @@ alias na="nautilus ."
 alias ra="ranger"
 alias py="python3"
 alias py2="python2"
+alias vim="nvim"
 alias xb="xbacklight"
 
 # package alias
-alias dnfu="sudo dnf upgrade"
-alias dnfi="sudo dnf install"
-alias dnfr="sudo dnf remove"
-alias dnfa="sudo dnf autoremove"
+alias pacu="sudo pacman -Syu"
+alias paci="sudo pacman -S"
+alias pacr="sudo pacman -R"
+alias dnfa="sudo pacman -Rs $(pacman -Qtdq)"
 
 # git alias
 alias gcl="git clone"

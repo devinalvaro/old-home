@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# gnome-terminal
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|tr -d \')/ cursor-blink-mode off
+
 # git
-sudo dnf -y install git
+sudo pacman -S --noconfirm git
 
 # home
 cd ~
@@ -11,11 +14,11 @@ git fetch
 git checkout -t origin/master
 
 # clang
-sudo dnf -y install clang
-sudo dnf -y install ctags
+sudo pacman -S --noconfirm clang
+sudo pacman -S --noconfirm ctags
 
 # pip
-sudo dnf -y install python-pip
+sudo pacman -S --noconfirm python-pip
 sudo pip install --upgrade pip
 
 # python
@@ -23,37 +26,39 @@ pip install --user pylint
 pip install --user jedi
 
 # neovim
-sudo dnf -y install neovim
+sudo pacman -S --noconfirm neovim
 pip install --user neovim
 
 # vim plugins
-vim -c 'PlugInstall' \
+nvim -c 'PlugInstall' \
     -c 'qa!'
 
 # fzf
 .fzf/install --all
 rm ~/install.sh
 
-#ripgrep
-sudo dnf -y copr enable carlgeorge/ripgrep
-sudo dnf -y install ripgrep
 
-# gnome-terminal
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|tr -d \')/ cursor-blink-mode off
+# ripgrep
+sudo pacman -S --noconfirm ripgrep
 
 # tmux
-sudo dnf -y install tmux
-# put in terminal custom command: tmux new-session -A -s "0"
+sudo pacman -S --noconfirm tmux
+# put in terminal custom command: tmux new-session -A -s '0'
 
 # xsel
-sudo dnf -y install xsel
+sudo pacman -S --noconfirm xsel
+
+# go
+sudo pacman -S --noconfirm go
+
+# drive
+go get -u github.com/odeke-em/drive/cmd/drive
 
 # zsh
-sudo dnf -y install zsh
+sudo pacman -S --noconfirm zsh
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
 
-sudo dnf -y install util-linux-user
 chsh -s $(which zsh)

@@ -2,9 +2,9 @@
 
 # osx-arc
 mkdir ~/.themes
-gcl https://github.com/LinxGem33/OSX-Arc-White ~/.themes/OSX-Arc-White
-gcl https://github.com/LinxGem33/OSX-Arc-Darker ~/.themes/OSX-Arc-Darker
-gcl https://github.com/LinxGem33/OSX-Arc-Dark ~/.themes/OSX-Arc-Dark
+git clone https://github.com/LinxGem33/OSX-Arc-White ~/.themes/OSX-Arc-White
+git clone https://github.com/LinxGem33/OSX-Arc-Darker ~/.themes/OSX-Arc-Darker
+git clone https://github.com/LinxGem33/OSX-Arc-Shadow ~/.themes/OSX-Arc-Dark
 
 # la-capitaine
 git clone https://github.com/keeferrourke/la-capitaine-icon-theme.git ~/.icons/la-capitaine
@@ -15,5 +15,5 @@ cp -pr capitaine-cursors/bin/xcursor ~/.icons/capitaine-cursors
 rm -rf capitaine-cursors
 
 # gogh
-wget -O xt https://git.io/vKOB6 && chmod +x xt && ./xt
+wget -O xt https://git.io/vKOB6 && chmod +x xt && ./xt && rm xt
 # background: #1C1F27, text: #D6D6D6, color 8 and 9: #9E9E9E
