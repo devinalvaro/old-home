@@ -41,7 +41,7 @@ alias xb="xbacklight"
 alias pacu="sudo pacman -Syu"
 alias paci="sudo pacman -S"
 alias pacr="sudo pacman -R"
-alias dnfa="sudo pacman -Rs $(pacman -Qtdq)"
+alias paca="sudo pacman -Rns $(pacman -Qtdq)"
 
 # git alias
 alias gcl="git clone"
