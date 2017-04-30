@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# gnome-terminal
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|tr -d \')/ cursor-blink-mode off
-
 # git
 sudo pacman -S --noconfirm git
 
@@ -19,7 +16,7 @@ sudo pacman -S --noconfirm ctags
 
 # pip
 sudo pacman -S --noconfirm python-pip
-sudo pip install --upgrade pip
+sudo pacman -S --noconfirm python2-pip
 
 # python
 pip install --user pylint
@@ -28,6 +25,7 @@ pip install --user jedi
 # neovim
 sudo pacman -S --noconfirm neovim
 pip install --user neovim
+pip2 install --user neovim
 
 # vim plugins
 nvim -c 'PlugInstall' \
@@ -37,22 +35,17 @@ nvim -c 'PlugInstall' \
 .fzf/install --all
 rm ~/install.sh
 
-
 # ripgrep
 sudo pacman -S --noconfirm ripgrep
 
 # tmux
 sudo pacman -S --noconfirm tmux
-# put in terminal custom command: tmux new-session -A -s '0'
 
 # xsel
 sudo pacman -S --noconfirm xsel
 
-# go
-sudo pacman -S --noconfirm go
-
-# drive
-go get -u github.com/odeke-em/drive/cmd/drive
+# wget
+sudo pacman -S --noconfirm wget
 
 # zsh
 sudo pacman -S --noconfirm zsh

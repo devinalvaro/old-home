@@ -1,3 +1,12 @@
+# tmux
+if which tmux >/dev/null 2>&1; then
+    test -z "$TMUX" && (tmux attach || tmux new-session)
+
+    while test -z "$TMUX"; do
+        exit
+    done
+fi
+
 # path
 export PATH=$HOME/.local/bin/:$PATH
 export GOPATH=$HOME/.gopath
@@ -18,11 +27,7 @@ plugins=(wd zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # editor
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vi'
-else
-  export EDITOR='nvim'
-fi
+export EDITOR='nvim'
 
 # program alias
 alias na="nautilus ."

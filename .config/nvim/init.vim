@@ -1,88 +1,4 @@
 """"""""""""
-"" Native ""
-""""""""""""
-
-"" backup
-set nobackup   " disable making backups
-set noswapfile " disable making swp files
-
-"" buffer
-set hidden     " hide buffers instead of closing them
-set splitright " open new windows right of the current window
-set splitbelow " open new windows below the current window
-
-"" color
-set termguicolors   " always true color
-set background=dark " dark background
-
-"" confirmation
-set confirm " ask confirmation instead of failing commands
-
-"" indentation
-set expandtab     " set tab as spaces
-set softtabstop=4 " number of spaces per tab
-set shiftwidth=4  " number of auto-indent spaces
-set shiftround    " indent to next multiple of 'shiftwidth'
-set tabstop=4     " number of visual spaces per tab
-
-"" number
-set numberwidth=2  " maximal number of column to use for line number
-
-"" matching
-set showmatch       " highlight matching brace
-set matchpairs+=<:> " highlight angle brackets
-
-"" redrawing
-set lazyredraw " only redraw when necessary
-
-"" search
-set smartcase  " enable smart-case search
-set ignorecase " always case-insensitive
-
-"" undo
-set undofile                          " save undo in a file
-set undodir=~/.local/share/nvim/undo/ " directory to save undo file
-
-""""""""""
-"" Misc ""
-""""""""""
-
-"" function
-function! IndentedI() " indent i on empty lines
-    if len(getline('.')) == 0
-        return "\"_cc"
-    else
-        return "i"
-    endif
-endfunction
-
-"" leader remap
-let mapleader="\<space>"
-
-nnoremap <leader>o :FZF<CR>
-nnoremap <leader>f :Grepper<CR>
-nnoremap <leader>n :Neoformat<CR>
-nnoremap <leader>\ :NERDTreeToggle<CR>
-nnoremap <leader>t :TagbarToggle<CR>
-nnoremap <leader>u :UndotreeToggle<CR>
-
-"" ctrl remap
-noremap <C-c> "+y
-noremap <C-v> "+p
-noremap <C-s> :w<CR>
-noremap <C-x> :q<CR>
-
-"" command remap
-cnoremap w!! w !sudo tee > /dev/null %
-
-"" other remap
-nnoremap 0 ^
-nnoremap ^ 0
-nnoremap Y y$
-nnoremap <silent> <esc> :noh<CR>
-nnoremap <expr> i IndentedI()
-
-""""""""""""
 "" Plugin ""
 """"""""""""
 
@@ -130,7 +46,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator'
 
 "" visual
-Plug 'w0ng/vim-hybrid'
+Plug 'joshdick/onedark.vim'
 Plug 'yggdroot/indentline'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
@@ -141,11 +57,6 @@ call plug#end()
 "" ale
 let g:ale_lint_on_text_changed='normal'
 let g:ale_lint_on_insert_leave=1
-
-"" base16
-let g:hybrid_custom_term_colors= 1
-let g:hybrid_reduced_contrast=1
-colorscheme hybrid
 
 "" delimitmate
 let g:delimitMate_expand_cr=2
@@ -159,8 +70,8 @@ let g:deoplete#auto_complete_start_length=1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 "" deoplete-clang
-let g:deoplete#sources#clang#libclang_path='/usr/lib64/libclang.so'
-let g:deoplete#sources#clang#clang_header='/usr/lib64/clang'
+let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
 "" grepper
 let g:grepper={}
@@ -170,7 +81,92 @@ let g:grepper.tools=['rg', 'grep']
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" lightline
-let g:lightline={'colorscheme': 'Tomorrow_Night'}
+let g:lightline={'colorscheme': 'onedark'}
 
 "" vim-tmux-navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
+
+""""""""""""
+"" Native ""
+""""""""""""
+
+"" backup
+set nobackup   " disable making backups
+set noswapfile " disable making swp files
+
+"" buffer
+set hidden     " hide buffers instead of closing them
+set splitright " open new windows right of the current window
+set splitbelow " open new windows below the current window
+
+"" color
+set termguicolors   " always true color
+colorscheme onedark " set colorscheme
+highlight Normal guibg=none guifg=#d6d6d6
+highlight Comment guifg=#99a0ab
+
+"" confirmation
+set confirm " ask confirmation instead of failing commands
+
+"" indentation
+set expandtab     " set tab as spaces
+set softtabstop=4 " number of spaces per tab
+set shiftwidth=4  " number of auto-indent spaces
+set shiftround    " indent to next multiple of 'shiftwidth'
+
+"" number
+set numberwidth=2  " maximal number of column to use for line number
+
+"" matching
+set showmatch       " highlight matching brace
+set matchpairs+=<:> " highlight angle brackets
+
+"" redrawing
+set lazyredraw " only redraw when necessary
+
+"" search
+set smartcase  " enable smart-case search
+set ignorecase " always case-insensitive
+
+"" undo
+set undofile                          " save undo in a file
+set undodir=~/.local/share/nvim/undo/ " directory to save undo file
+
+""""""""""
+"" Misc ""
+""""""""""
+
+"" functions
+function! IndentedI() " indent i on empty lines
+    if len(getline('.')) == 0
+        return "\"_cc"
+    else
+        return "i"
+    endif
+endfunction
+
+"" leader remaps
+let mapleader="\<space>"
+
+nnoremap <leader>o :FZF<CR>
+nnoremap <leader>f :Grepper<CR>
+nnoremap <leader>n :Neoformat<CR>
+nnoremap <leader>\ :NERDTreeToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
+
+"" ctrl remaps
+noremap <C-c> "+y
+noremap <C-v> "+p
+noremap <C-s> :w<CR>
+noremap <C-x> :q<CR>
+
+"" command remap
+cnoremap w!! w !sudo tee > /dev/null %
+
+"" other remaps
+nnoremap 0 ^
+nnoremap ^ 0
+nnoremap Y y$
+nnoremap <silent> <esc> :noh<CR>
+nnoremap <expr> i IndentedI()

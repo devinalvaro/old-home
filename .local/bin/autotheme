@@ -13,7 +13,3 @@ git clone https://github.com/keeferrourke/la-capitaine-icon-theme.git ~/.icons/l
 git clone https://github.com/keeferrourke/capitaine-cursors.git
 cp -pr capitaine-cursors/bin/xcursor ~/.icons/capitaine-cursors
 rm -rf capitaine-cursors
-
-# gogh
-wget -O xt https://git.io/vKOB6 && chmod +x xt && ./xt && rm xt
-# background: #1C1F27, text: #D6D6D6, color 8 and 9: #9E9E9E
