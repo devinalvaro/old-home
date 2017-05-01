@@ -30,17 +30,19 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 
 # program alias
-alias na="nautilus ."
-alias ra="ranger"
-alias py="python3"
+alias lp="dolphin ."
+alias ng="ranger"
+alias py="python"
 alias py2="python2"
+alias py3="python3"
 alias vim="nvim"
 alias xb="xbacklight"
 
 # package alias
-alias pacu="sudo pacman -Syu"
 alias paci="sudo pacman -S"
 alias pacr="sudo pacman -R"
+alias pacs="sudo pacman -Syy"
+alias pacu="sudo pacman -Syu"
 alias paca="sudo pacman -Rns $(pacman -Qtdq)"
 
 # git alias
