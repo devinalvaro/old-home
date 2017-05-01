@@ -10,23 +10,6 @@ git remote add origin https://github.com/devinalvaro/home
 git fetch
 git checkout -t origin/master
 
-# clang
-sudo pacman -S --noconfirm clang
-sudo pacman -S --noconfirm ctags
-
-# pip
-sudo pacman -S --noconfirm python-pip
-sudo pacman -S --noconfirm python2-pip
-
-# python
-pip install --user pylint
-pip install --user jedi
-
-# neovim
-sudo pacman -S --noconfirm neovim
-pip install --user neovim
-pip2 install --user neovim
-
 # ripgrep
 sudo pacman -S --noconfirm ripgrep
 
@@ -46,12 +29,35 @@ sudo pacman -S --noconfirm mpv
 sudo pacman -S --noconfirm zathura
 sudo pacman -S --noconfirm zathura-pdf-mupdf
 
-# vim plugins
+# clang
+sudo pacman -S --noconfirm clang
+sudo pacman -S --noconfirm ctags
+
+# pip
+sudo pacman -S --noconfirm python-pip
+sudo pacman -S --noconfirm python2-pip
+
+# python
+pip install --user pylint
+pip install --user jedi
+
+# neovim
+sudo pacman -S --noconfirm neovim
+pip install --user neovim
+pip2 install --user neovim
+
 nvim -c 'PlugInstall' \
     -c 'qa!'
 
 # fzf
 .fzf/install --all
+
+# go
+sudo pacman -S --noconfirm go
+
+# drive
+go get -u github.com/odeke-em/drive/cmd/drive
+drive init ~/.drive
 
 # wget
 sudo pacman -S --noconfirm wget
