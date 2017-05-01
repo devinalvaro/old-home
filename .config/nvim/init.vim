@@ -33,22 +33,22 @@ Plug 'tommcdo/vim-lion'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'wellle/targets.vim'
 
 "" tags
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 
 "" text navigation
 Plug 'tpope/vim-rsi'
+Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
 
 "" tmux
 Plug 'christoomey/vim-tmux-navigator'
 
 "" visual
-Plug 'joshdick/onedark.vim'
 Plug 'yggdroot/indentline'
 Plug 'itchyny/lightline.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jszakmeister/vim-togglecursor'
 
