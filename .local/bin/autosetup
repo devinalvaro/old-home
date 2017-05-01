@@ -27,14 +27,6 @@ sudo pacman -S --noconfirm neovim
 pip install --user neovim
 pip2 install --user neovim
 
-# vim plugins
-nvim -c 'PlugInstall' \
-    -c 'qa!'
-
-# fzf
-.fzf/install --all
-rm ~/install.sh
-
 # ripgrep
 sudo pacman -S --noconfirm ripgrep
 
@@ -44,6 +36,23 @@ sudo pacman -S --noconfirm tmux
 # xsel
 sudo pacman -S --noconfirm xsel
 
+# ranger
+sudo pacman -S --noconfirm ranger
+
+# mpv
+sudo pacman -S --noconfirm mpv
+
+# zathura
+sudo pacman -S --noconfirm zathura
+sudo pacman -S --noconfirm zathura-pdf-mupdf
+
+# vim plugins
+nvim -c 'PlugInstall' \
+    -c 'qa!'
+
+# fzf
+.fzf/install --all
+
 # wget
 sudo pacman -S --noconfirm wget
 
@@ -52,6 +61,10 @@ sudo pacman -S --noconfirm zsh
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
-wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh | zsh
+
+wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh ~
+chmod +x ~/install.sh
+~/install.sh
+rm ~/install.sh
 
 chsh -s $(which zsh)
