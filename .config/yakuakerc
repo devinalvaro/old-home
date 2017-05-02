@@ -1,0 +1,20 @@
+[Animation]
+Frames=0
+
+[Appearance]
+Skin=legacy
+
+[Behavior]
+OpenAfterStart=true
+
+[DownloadDialog Settings]
+Height 900=536
+Width 1600=700
+
+[Favorite Profiles]
+Favorites=
+
+[Window]
+Height=95
+ShowTabBar=false
+Width=95
