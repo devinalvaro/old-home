@@ -146,11 +146,13 @@ Size=32
 [General]
 ColorScheme=Breeze
 Name=Breeze
-XftAntialias=true
-XftHintStyle=hintmedium
-XftSubPixel=none
 dbfile=/home/devin/.mozilla/firefox/9np3reht.default/places.sqlite
+fixed=DejaVu Sans Mono,11,-1,5,50,0,0,0,0,0,Book
+font=Cantarell,11,-1,5,50,0,0,0,0,0,Regular
+menuFont=Cantarell,11,-1,5,50,0,0,0,0,0,Regular
 shadeSortColumn=true
+smallestReadableFont=Cantarell,9,-1,5,50,0,0,0,0,0,Regular
+toolBarFont=Cantarell,10,-1,5,50,0,0,0,0,0,Regular
 
 [Icons]
 Theme=breeze
@@ -241,6 +243,7 @@ Size=22
 [WM]
 activeBackground=71,80,87
 activeBlend=255,255,255
+activeFont=Cantarell,11,-1,5,50,0,0,0,0,0,Regular
 activeForeground=239,240,241
 inactiveBackground=239,240,241
 inactiveBlend=75,71,67
