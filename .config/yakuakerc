@@ -2,7 +2,7 @@
 Frames=0
 
 [Appearance]
-Skin=legacy
+Skin=tabsonly
 
 [Behavior]
 OpenAfterStart=true
@@ -13,6 +13,9 @@ Width 1600=700
 
 [Favorite Profiles]
 Favorites=
+
+[KFileDialog Settings]
+Recent Files[$e]=146212-tabsonly.tar.gz,file:$HOME/146212-tabsonly.tar.gz
 
 [Window]
 Height=95
