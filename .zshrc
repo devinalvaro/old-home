@@ -39,11 +39,12 @@ alias vim="nvim"
 alias xb="xbacklight"
 
 # package alias
-alias paci="sudo pacman -S"
-alias pacr="sudo pacman -R"
-alias pacs="sudo pacman -Syy"
-alias pacu="sudo pacman -Syu"
-alias paca="sudo pacman -Rns $(pacman -Qtdq)"
+alias paci="pacaur -S"
+alias pacr="pacaur -R"
+alias pacs="pacaur -Syy"
+alias pacu="pacaur -Syu"
+alias pacc="pacaur -Sc"
+alias paca="pacaur -Rns $(pacaur -Qtdq)"
 
 # git alias
 alias gcl="git clone"
