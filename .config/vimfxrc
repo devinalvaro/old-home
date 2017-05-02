@@ -3,7 +3,7 @@
   "mode.caret.exit": "<escape> <c-[>",
   "mode.hints.exit": "<escape> <c-[>",
   "mode.hints.activate_highlighted": "<enter> <c-enter> <a-enter>",
-  "mode.ignore.exit": "<c-[>",
+  "mode.ignore.exit": "i <escape> <c-[>",
   "mode.ignore.unquote": "I",
   "mode.find.exit": "<escape> <enter> <c-[>",
   "mode.marks.exit": "<escape> <c-[>"
