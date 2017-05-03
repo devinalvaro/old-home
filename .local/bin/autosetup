@@ -42,8 +42,7 @@ sudo pacman -S --noconfirm --needed neovim
 pip install --user neovim
 pip2 install --user neovim
 
-nvim -c 'PlugInstall' \
-    -c 'qa!'
+nvim -c 'PlugInstall' -c 'qa!'
 
 # fzf
 .fzf/install --all
@@ -55,10 +54,10 @@ rm $TERM.ti
 
 # go
 sudo pacman -S --noconfirm --needed go
+rm -rf ~/go
 
 # drive
 go get -u github.com/odeke-em/drive/cmd/drive
-drive init ~/.drive
 
 # wget
 sudo pacman -S --noconfirm --needed wget
@@ -72,7 +71,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zs
 wget -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.sh ~
 chmod +x ~/install.sh
 ~/install.sh
-rm ~/install.sh
+rm ~/install.sh*
 
 chsh -s $(which zsh)
 
