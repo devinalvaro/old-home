@@ -7,13 +7,15 @@ if which tmux >/dev/null 2>&1; then
     done
 fi
 
-# path
-export PATH=$HOME/.local/bin/:$PATH
-export GOPATH=$HOME/.gopath
-export PATH=$GOPATH:$GOPATH/bin/:$PATH
+# shortcuts
+bindkey -s '\ed' ' dolphin .\n'
+bindkey -s '\er' ' ranger\n'
+bindkey -s '\ev' ' vim\n'
 
-# oh-my-zsh
+# path
 export ZSH=/home/devin/.oh-my-zsh
+export GOPATH=$HOME/.gopath/
+export PATH=$HOME/.local/bin/:$GOPATH:$GOPATH/bin/:$PATH
 
 # history
 setopt histignorespace
@@ -22,7 +24,7 @@ setopt histignorespace
 ZSH_THEME="spaceship"
 
 # plugin
-plugins=(wd zsh-autosuggestions)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -30,8 +32,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 
 # program alias
-alias lp="dolphin ."
-alias ng="ranger"
 alias py="python"
 alias py2="python2"
 alias py3="python3"
