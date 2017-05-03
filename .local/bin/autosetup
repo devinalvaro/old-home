@@ -25,10 +25,6 @@ sudo pacman -S --noconfirm --needed ranger
 # mpv
 sudo pacman -S --noconfirm --needed mpv
 
-# zathura
-sudo pacman -S --noconfirm --needed zathura
-sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
-
 # clang
 sudo pacman -S --noconfirm --needed clang
 sudo pacman -S --noconfirm --needed ctags
