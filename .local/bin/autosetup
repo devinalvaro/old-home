@@ -22,9 +22,6 @@ sudo pacman -S --noconfirm --needed xsel
 # ranger
 sudo pacman -S --noconfirm --needed ranger
 
-# mpv
-sudo pacman -S --noconfirm --needed mpv
-
 # clang
 sudo pacman -S --noconfirm --needed clang
 sudo pacman -S --noconfirm --needed ctags
