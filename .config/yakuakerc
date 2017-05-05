@@ -18,6 +18,6 @@ Favorites=
 Recent Files[$e]=146212-tabsonly.tar.gz,file:$HOME/146212-tabsonly.tar.gz
 
 [Window]
-Height=95
+Height=100
 ShowTabBar=false
-Width=95
+Width=100
