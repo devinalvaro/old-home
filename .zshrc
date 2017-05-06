@@ -40,7 +40,7 @@ alias xb="xbacklight"
 
 # package alias
 alias paci="pacaur -S"
-alias pacr="pacaur -R"
+alias pacr="pacaur -Rs"
 alias pacs="pacaur -Syy"
 alias pacu="pacaur -Syu"
 alias pacc="pacaur -Sc"
