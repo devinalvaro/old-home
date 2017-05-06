@@ -10,5 +10,8 @@ TerminalRows=24
 
 [Scrolling]
 HistoryMode=1
-HistorySize=10000
+HistorySize=50000
 ScrollBarPosition=2
+
+[Terminal Features]
+FlowControlEnabled=false
