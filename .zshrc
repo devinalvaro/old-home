@@ -11,6 +11,8 @@ fi
 bindkey -s '\ed' ' dolphin .\n'
 bindkey -s '\er' ' ranger\n'
 bindkey -s '\ev' ' vim\n'
+bindkey -s '\ei' ' xb -inc 1\n'
+bindkey -s '\eo' ' xb -dec 1\n'
 
 # path
 export ZSH=/home/devin/.oh-my-zsh
