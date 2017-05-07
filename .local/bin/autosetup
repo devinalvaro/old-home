@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -v
 
 # git
 sudo pacman -S --noconfirm --needed git
