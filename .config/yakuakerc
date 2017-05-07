@@ -7,6 +7,9 @@ Skin=tabsonly
 [Behavior]
 OpenAfterStart=true
 
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
 [DownloadDialog Settings]
 Height 900=536
 Width 1600=700
