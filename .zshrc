@@ -8,7 +8,7 @@ if which tmux >/dev/null 2>&1; then
 fi
 
 # shortcuts
-bindkey -s '\ed' ' dolphin .\n'
+bindkey -s '\en' ' dolphin .\n'
 bindkey -s '\er' ' ranger\n'
 bindkey -s '\ev' ' vim\n'
 bindkey -s '\ei' ' xb -inc 1\n'
