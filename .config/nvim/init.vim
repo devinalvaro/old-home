@@ -148,18 +148,22 @@ endfunction
 "" leader remaps
 let mapleader="\<space>"
 
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>d "+d
+nnoremap <leader>Y "+Y
+nnoremap <leader>P "+P
+nnoremap <leader>D "+D
+
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>\ :NERDTreeToggle<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
-
-"" ctrl remaps
-noremap <C-c> "+y
-noremap <C-v> "+p
-noremap <C-s> :w<CR>
-noremap <C-x> :q<CR>
 
 "" command remap
 cnoremap w!! w !sudo tee > /dev/null %
