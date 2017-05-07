@@ -15,7 +15,6 @@ Plug 'wellle/tmux-complete.vim'
 "" file management
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'mhinz/vim-grepper'
-Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 
 "" git
 Plug 'tpope/vim-fugitive'
@@ -38,19 +37,20 @@ Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 
 "" text navigation
-Plug 'tpope/vim-rsi'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
 
 "" tmux
 Plug 'christoomey/vim-tmux-navigator'
 
+"" undo
+Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
+
 "" visual
 Plug 'yggdroot/indentline'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
@@ -108,6 +108,11 @@ highlight Comment guifg=#99a0ab
 "" confirmation
 set confirm " ask confirmation instead of failing commands
 
+"" cursor
+set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+            \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+            \,sm:block-blinkwait175-blinkoff150-blinkon175
+
 "" indentation
 set expandtab     " set tab as spaces
 set softtabstop=4 " number of spaces per tab
@@ -150,7 +155,6 @@ let mapleader="\<space>"
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-
 nnoremap <leader>y "+y
 nnoremap <leader>p "+p
 nnoremap <leader>d "+d
