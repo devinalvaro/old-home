@@ -10,7 +10,7 @@ fi
 # shortcuts
 bindkey -s '\en' ' dolphin .\n'
 bindkey -s '\er' ' ranger\n'
-bindkey -s '\ev' ' vim\n'
+bindkey -s '\ev' ' nvim\n'
 
 # path
 export ZSH=/home/devin/.oh-my-zsh
