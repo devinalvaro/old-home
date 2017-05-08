@@ -81,7 +81,12 @@ let g:grepper.tools=['rg', 'grep']
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" lightline
-let g:lightline={'colorscheme': 'onedark'}
+let g:lightline={
+            \ 'colorscheme': 'onedark'
+            \ }
+
+"" sneak
+let g:sneak#label=1
 
 "" vim-tmux-navigator
 nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
@@ -118,9 +123,6 @@ set expandtab     " set tab as spaces
 set softtabstop=4 " number of spaces per tab
 set shiftwidth=4  " number of auto-indent spaces
 set shiftround    " indent to next multiple of 'shiftwidth'
-
-"" number
-set numberwidth=2  " maximal number of column to use for line number
 
 "" matching
 set showmatch       " highlight matching brace
