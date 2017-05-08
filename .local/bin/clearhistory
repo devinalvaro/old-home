@@ -1,11 +1,11 @@
 #!/bin/bash
 
-rm ~/.local/share/nvim/shada/main.shada
+rm -f ~/.local/share/nvim/shada/main.shada
 rm -f ~/.local/share/nvim/undo/*
 
-rm ~/.lesshst && touch $_
-rm ~/.bash_history && touch $_
-rm ~/.zsh_history && touch $_
-rm ~/.python_history && touch $_
-rm ~/.mysql_history && touch $_
-rm ~/.config/nvim/.netrwhist && touch $_
+rm ~/.lesshst; touch $_
+rm ~/.bash_history; touch $_
+rm ~/.zsh_history; touch $_
+rm ~/.python_history; touch $_
+rm ~/.mysql_history; touch $_
+rm ~/.config/nvim/.netrwhist; touch $_
