@@ -55,6 +55,7 @@ rm -rf ~/go
 
 # drive
 go get -u github.com/odeke-em/drive/cmd/drive
+drive init ~/.drive
 
 # wget
 sudo pacman -S --noconfirm --needed wget
