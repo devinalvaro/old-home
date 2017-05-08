@@ -4,7 +4,7 @@ ShowMenuBarByDefault=false
 
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABcYAAAMaAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAtIAAAHWAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [Notification Messages]
 CloseAllTabs=true

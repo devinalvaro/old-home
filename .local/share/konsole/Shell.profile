@@ -3,8 +3,10 @@ ColorScheme=OneDark
 Font=DejaVu Sans Mono,11,-1,5,50,0,0,0,0,0,Book
 
 [General]
+LocalTabTitleFormat=%d : %n
 Name=Shell
 Parent=FALLBACK/
+RemoteTabTitleFormat=(%u) %H
 TerminalColumns=80
 TerminalRows=24
 
