@@ -5,7 +5,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 "" completion
-Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
 Plug 'artur-shaik/vim-javacomplete2'
@@ -13,7 +13,7 @@ Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
 "" file management
-Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mhinz/vim-grepper'
 
 "" git
@@ -34,7 +34,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
 "" tags
-Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 "" text navigation
 Plug 'justinmk/vim-sneak'
@@ -44,7 +44,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'christoomey/vim-tmux-navigator'
 
 "" undo
-Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
+Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 "" visual
 Plug 'yggdroot/indentline'
@@ -75,15 +75,13 @@ let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
 "" grepper
 let g:grepper={}
-let g:grepper.tools=['rg', 'grep']
+let g:grepper.tools=[ 'rg', 'grep' ]
 
 "" javacomplete2
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" lightline
-let g:lightline={
-            \ 'colorscheme': 'onedark'
-            \ }
+let g:lightline={ 'colorscheme': 'onedark' }
 
 "" sneak
 let g:sneak#label=1
@@ -157,17 +155,17 @@ let mapleader="\<space>"
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>y "+y
-nnoremap <leader>p "+p
-nnoremap <leader>d "+d
-nnoremap <leader>Y "+Y
-nnoremap <leader>P "+P
-nnoremap <leader>D "+D
+
+noremap <leader>y "+y
+noremap <leader>p "+p
+noremap <leader>d "+d
+noremap <leader>Y "+Y
+noremap <leader>P "+P
+noremap <leader>D "+D
 
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>n :Neoformat<CR>
-nnoremap <leader>\ :NERDTreeToggle<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
