@@ -31,6 +31,8 @@ Plug 'brooth/far.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rsi'
+Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
 "" tags
