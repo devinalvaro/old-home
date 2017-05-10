@@ -8,10 +8,10 @@ if which tmux >/dev/null 2>&1; then
 fi
 
 # shortcuts
-bindkey -s '\en' ' dolphin .\n'
-bindkey -s '\er' ' ranger\n'
-bindkey -s '\ev' ' vim\n'
-bindkey -s '\eh' ' cd\n'
+bindkey -s '\en' 'dolphin .\n'
+bindkey -s '\er' 'ranger\n'
+bindkey -s '\ev' 'vim\n'
+bindkey -s '\eh' 'cd\n'
 
 # path
 export ZSH=/home/devin/.oh-my-zsh
