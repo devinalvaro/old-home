@@ -49,7 +49,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 "" visual
-Plug 'yggdroot/indentline'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
@@ -127,6 +126,9 @@ set shiftround    " indent to next multiple of 'shiftwidth'
 "" matching
 set showmatch       " highlight matching brace
 set matchpairs+=<:> " highlight angle brackets
+
+"" mouse
+set mouse=a " enable mouse
 
 "" redrawing
 set lazyredraw " only redraw when necessary
