@@ -10,7 +10,8 @@ fi
 # shortcuts
 bindkey -s '\en' ' dolphin .\n'
 bindkey -s '\er' ' ranger\n'
-bindkey -s '\ev' ' nvim\n'
+bindkey -s '\ev' ' vim\n'
+bindkey -s '\eh' ' cd\n'
 
 # path
 export ZSH=/home/devin/.oh-my-zsh
@@ -61,7 +62,7 @@ alias gp="git push"
 alias gpl="git pull"
 alias gct="git commit"
 alias gcm="git commit -m"
-alias grt"git remote"
+alias gte="git remote"
 alias gsm="git submodule"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
