@@ -14,6 +14,7 @@ Plug 'wellle/tmux-complete.vim'
 
 "" file management
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
 "" git
