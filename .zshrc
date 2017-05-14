@@ -7,6 +7,9 @@ if which tmux >/dev/null 2>&1; then
     done
 fi
 
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
 # shortcuts
 bindkey -s '\en' 'dolphin .\n'
 bindkey -s '\er' 'ranger\n'
