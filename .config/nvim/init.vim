@@ -75,6 +75,9 @@ autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
+"" gitgutter
+let g:gitgutter_grep_command='rg'
+
 "" grepper
 let g:grepper={}
 let g:grepper.tools=[ 'rg', 'grep' ]
