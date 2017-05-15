@@ -14,7 +14,6 @@ Plug 'wellle/tmux-complete.vim'
 
 "" file management
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
 "" git
@@ -28,6 +27,7 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
+Plug 'mattn/emmet-vim'
 Plug 'brooth/far.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'sbdchd/neoformat'
