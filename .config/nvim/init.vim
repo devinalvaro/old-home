@@ -29,12 +29,14 @@ Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
 Plug 'mattn/emmet-vim'
 Plug 'brooth/far.vim'
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'tommcdo/vim-lion'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
+Plug 'wellle/targets.vim'
 
 "" tags
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
