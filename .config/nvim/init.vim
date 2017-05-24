@@ -36,7 +36,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
-Plug 'wellle/targets.vim'
+Plug 'ap/vim-you-keep-using-that-word'
 
 "" tags
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
