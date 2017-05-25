@@ -212,8 +212,10 @@ nnoremap <leader>u :UndotreeToggle<CR>
 cnoremap w!! w !sudo tee > /dev/null %
 
 "" other remaps
+nnoremap Y y$
 nnoremap 0 ^
 nnoremap ^ 0
-nnoremap Y y$
+nnoremap gr gd:%s/<C-r>///gc<left><left><left>
+nnoremap gR gD:%s/<C-r>///gc<left><left><left>
 nnoremap <silent> <esc> :noh<CR>
 nnoremap <expr> i IndentedI()
