@@ -8,7 +8,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
-Plug 'artur-shaik/vim-javacomplete2'
 Plug 'shougo/neoinclude.vim'
 Plug 'wellle/tmux-complete.vim'
 
@@ -83,9 +82,6 @@ let g:gitgutter_grep_command='rg'
 "" grepper
 let g:grepper={}
 let g:grepper.tools=[ 'rg', 'grep' ]
-
-"" javacomplete2
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "" lightline
 let g:lightline = {
