@@ -9,7 +9,6 @@ Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
 Plug 'shougo/neoinclude.vim'
-Plug 'wellle/tmux-complete.vim'
 
 "" file management
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -17,7 +16,7 @@ Plug 'mhinz/vim-grepper'
 
 "" git
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 
 "" lint
 Plug 'w0rp/ale'
@@ -26,10 +25,9 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
-Plug 'mattn/emmet-vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'brooth/far.vim'
 Plug 'michaeljsmith/vim-indent-object'
-Plug 'tommcdo/vim-lion'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
@@ -45,6 +43,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
 
 "" tmux
+Plug 'wellle/tmux-complete.vim'
 Plug 'christoomey/vim-tmux-navigator'
 
 "" undo
@@ -75,6 +74,9 @@ autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 "" deoplete-clang
 let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
+
+"" easy-align
+map gl <Plug>(EasyAlign)
 
 "" gitgutter
 let g:gitgutter_grep_command='rg'
@@ -119,33 +121,37 @@ function! LightlineFilename()
        \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
 endfunction
 
+"" signify
+let g:signify_vcs_list=[ 'git' ]
+let g:signify_realtime=1
+let g:signify_sign_change='~'
+let g:signify_sign_show_count=0
+
 "" sneak
 let g:sneak#label=1
-
-"" vim-tmux-navigator
-nnoremap <silent> <bs> :TmuxNavigateLeft<CR>
 
 """"""""""""
 "" Native ""
 """"""""""""
 
 "" backup
-set nobackup   " disable making backups
-set noswapfile " disable making swp files
+set nobackup
+set noswapfile
 
 "" buffer
-set hidden     " hide buffers instead of closing them
-set splitright " open new windows right of the current window
-set splitbelow " open new windows below the current window
+set hidden
+set splitright
+set splitbelow
 
 "" color
-set termguicolors   " always true color
-colorscheme onedark " set colorscheme
+set termguicolors
+colorscheme onedark
 highlight Normal guibg=none guifg=#d6d6d6
-highlight Comment guifg=#99a0ab
+highlight Comment guifg=#899099
+highlight LineNr guifg=#7a8088
 
 "" confirmation
-set confirm " ask confirmation instead of failing commands
+set confirm
 
 "" cursor
 set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
@@ -153,58 +159,54 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
             \,sm:block-blinkwait175-blinkoff150-blinkon175
 
 "" indentation
-set expandtab     " set tab as spaces
-set softtabstop=4 " number of spaces per tab
-set shiftwidth=4  " number of auto-indent spaces
-set shiftround    " indent to next multiple of 'shiftwidth'
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set shiftround
 
 "" matching
-set showmatch       " highlight matching brace
-set matchpairs+=<:> " highlight angle brackets
+set showmatch
+set matchpairs+=<:>
 
 "" mouse
-set mouse=a " enable mouse
+set mouse=a
+
+"" number
+set relativenumber
+set numberwidth=2
 
 "" redrawing
-set lazyredraw " only redraw when necessary
+set lazyredraw
 
 "" search
-set smartcase  " enable smart-case search
-set ignorecase " always case-insensitive
+set smartcase
+set ignorecase
 
 "" undo
-set undofile                          " save undo in a file
-set undodir=~/.local/share/nvim/undo/ " directory to save undo file
+set undofile
+set undodir=~/.local/share/nvim/undo/
 
 """"""""""
 "" Misc ""
 """"""""""
 
-"" functions
-function! IndentedI() " indent i on empty lines
-    if len(getline('.')) == 0
-        return "\"_cc"
-    else
-        return "i"
-    endif
-endfunction
-
 "" leader remaps
 let mapleader="\<space>"
 
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
+noremap <leader>w :w<CR>
+noremap <leader>q :q<CR>
 
-noremap <leader>y "+y
-noremap <leader>p "+p
 noremap <leader>d "+d
-noremap <leader>Y "+Y
-noremap <leader>P "+P
+noremap <leader>p "+p
+noremap <leader>y "+y
 noremap <leader>D "+D
+noremap <leader>P "+P
+noremap <leader>Y "+Y
 
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>n :Neoformat<CR>
+nnoremap <leader>r :source $VIMRC<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
@@ -215,7 +217,9 @@ cnoremap w!! w !sudo tee > /dev/null %
 nnoremap Y y$
 nnoremap 0 ^
 nnoremap ^ 0
-nnoremap gr gd:%s/<C-r>///gc<left><left><left>
-nnoremap gR gD:%s/<C-r>///gc<left><left><left>
-nnoremap <silent> <esc> :noh<CR>
-nnoremap <expr> i IndentedI()
+
+nnoremap <silent> <ESC> :noh<CR>
+
+nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
+nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
+nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'

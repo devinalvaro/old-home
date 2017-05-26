@@ -18,6 +18,7 @@ bindkey -s '\eh' 'cd\n'
 
 # path
 export ZSH=/home/devin/.oh-my-zsh
+export VIMRC=/home/devin/.config/nvim/init.vim
 export GOPATH=$HOME/.gopath/
 export PATH=$HOME/.local/bin/:$GOPATH:$GOPATH/bin/:$PATH
 
