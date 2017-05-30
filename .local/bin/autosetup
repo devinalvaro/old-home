@@ -23,6 +23,13 @@ sudo pacman -S --noconfirm --needed tmux
 # xsel
 sudo pacman -S --noconfirm --needed xsel
 
+# go
+sudo pacman -S --noconfirm --needed go
+
+# drive
+# go get -u -v github.com/odeke-em/drive/cmd/drive
+# drive init ~/.drive
+
 # c
 sudo pacman -S --noconfirm --needed clang
 sudo pacman -S --noconfirm --needed ctags
@@ -35,8 +42,11 @@ pip install --user yapf
 pip install --user pylint
 pip install --user jedi
 
-# go
-sudo pacman -S --noconfirm --needed go
+# npm
+sudo pacman -S --noconfirm --needed npm
+
+sudo npm install -g js-beautify
+sudo npm install -g tldr
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
@@ -55,10 +65,6 @@ nvim -c 'PlugInstall' -c 'qa!'
 
 # fzf
 .fzf/install --all
-
-# drive
-# go get -u -v github.com/odeke-em/drive/cmd/drive
-# drive init ~/.drive
 
 # zsh
 sudo pacman -S --noconfirm --needed zsh
