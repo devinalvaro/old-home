@@ -79,6 +79,10 @@ chsh -s $(which zsh)
 # pacaur
 curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | $SHELL
 
+# redshift
+pacaur -S --noconfirm --needed redshift-git
+pacaur -S --noconfirm --needed redshift-gtk-git
+
 # vimfx
 # {
 #   "mode.normal.esc": "<force><escape> <force><c-[>",
