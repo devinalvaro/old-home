@@ -77,7 +77,7 @@ curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/mast
 chsh -s $(which zsh)
 
 # pacaur
-curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | $SHELL
+curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash
 
 # redshift
 pacaur -S --noconfirm --needed redshift-git
