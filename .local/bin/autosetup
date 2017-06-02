@@ -94,3 +94,6 @@ pacaur -S --noconfirm --needed redshift-gtk-git
 #   "mode.find.exit": "<escape> <enter> <c-[>",
 #   "mode.marks.exit": "<escape> <c-[>"
 # }
+
+# adblock
+# google.co.il##.gb_ga.gb_g
