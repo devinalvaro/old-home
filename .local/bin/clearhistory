@@ -9,3 +9,4 @@ rm ~/.zsh_history; touch $_
 rm ~/.python_history; touch $_
 rm ~/.mysql_history; touch $_
 rm ~/.config/nvim/.netrwhist; touch $_
+rm ~/.octave_hist; touch $_
