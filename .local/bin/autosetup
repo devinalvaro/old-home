@@ -96,4 +96,4 @@ pacaur -S --noconfirm --needed redshift-gtk-git
 # }
 
 # adblock
-# google.co.il##.gb_ga.gb_g
+# gstatic.com^$third-party
