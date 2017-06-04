@@ -203,10 +203,11 @@ noremap <leader>D "+D
 noremap <leader>P "+P
 noremap <leader>Y "+Y
 
+nnoremap <leader>r :source $VIMRC<CR>
+
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
 nnoremap <leader>n :Neoformat<CR>
-nnoremap <leader>r :source $VIMRC<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
