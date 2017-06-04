@@ -10,9 +10,20 @@ fi
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+# functions
+function ranger-cd {
+    tempfile="$(mktemp -t tmp.XXXXXX)"
+    /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+    test -f "$tempfile" &&
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+        cd -- "$(cat "$tempfile")"
+    fi
+    rm -f -- "$tempfile"
+}
+
 # shortcuts
 bindkey -s '\en' 'dolphin .\n'
-bindkey -s '\er' 'ranger\n'
+bindkey -s '\er' 'ranger-cd\n'
 bindkey -s '\ev' 'vim\n'
 bindkey -s '\eh' 'cd\n'
 
@@ -68,5 +79,6 @@ alias gct="git commit"
 alias gcm="git commit -m"
 alias gte="git remote"
 alias gsm="git submodule"
+alias gbr="git branch"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
