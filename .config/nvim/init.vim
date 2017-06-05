@@ -21,13 +21,14 @@ Plug 'mhinz/vim-signify'
 "" lint
 Plug 'w0rp/ale'
 
+"" tags
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+
 "" text editing
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
 Plug 'junegunn/vim-easy-align'
-Plug 'brooth/far.vim'
-Plug 'michaeljsmith/vim-indent-object'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
@@ -35,12 +36,15 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'ap/vim-you-keep-using-that-word'
 
-"" tags
-Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
-
 "" text navigation
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
+
+"" text objects
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'kana/vim-textobj-function'
+Plug 'bps/vim-textobj-python'
+Plug 'kana/vim-textobj-user'
 
 "" tmux
 Plug 'wellle/tmux-complete.vim'
