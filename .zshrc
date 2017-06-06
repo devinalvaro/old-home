@@ -11,7 +11,7 @@ fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # functions
-function ranger-cd {
+function ranger {
     tempfile="$(mktemp -t tmp.XXXXXX)"
     /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
@@ -23,7 +23,7 @@ function ranger-cd {
 
 # shortcuts
 bindkey -s '\en' 'dolphin .\n'
-bindkey -s '\er' 'ranger-cd\n'
+bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 bindkey -s '\eh' 'cd\n'
 
