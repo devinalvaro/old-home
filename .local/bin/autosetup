@@ -11,7 +11,7 @@ fi
 
 # ppa
 if [ $distro == "Ubuntu" ]; then
-    sudo add-apt-repository ppa:neovim-ppa/stable
+    sudo add-apt-repository -y ppa:neovim-ppa/stable
 
     sudo apt update
 fi 
