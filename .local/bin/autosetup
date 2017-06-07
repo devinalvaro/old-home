@@ -1,49 +1,75 @@
 #!/bin/bash -v
 
-cd ~
+# package manager
+if type "apt" > /dev/null 2>&1; then
+    install="apt install -y"
+    distro="Ubuntu"
+elif type "pacman" > /dev/null 2>&1; then
+    install="pacman -S --noconfirm --needed"
+    distro="Arch"
+fi
+
+# ppa
+if [ $distro == "Ubuntu" ]; then
+    sudo add-apt-repository ppa:neovim-ppa/stable
+
+    sudo apt update
+fi 
 
 # git
-sudo pacman -S --noconfirm --needed git
+sudo $install git
 
-# home
 git init
 git remote add origin https://github.com/devinalvaro/home
 git fetch
 git checkout -t origin/master
 
 # ranger
-sudo pacman -S --noconfirm --needed ranger
+sudo $install ranger
 
-# ripgrep
-sudo pacman -S --noconfirm --needed ripgrep
+# grep
+if [ $distro == "Ubuntu" ]; then
+    sudo $install silversearcher-ag
+else
+    sudo $install ripgrep
+fi
 
 # tmux
-sudo pacman -S --noconfirm --needed tmux
+sudo $install tmux
 
 # xsel
-sudo pacman -S --noconfirm --needed xsel
+sudo $install xsel
 
 # go
-sudo pacman -S --noconfirm --needed go
+if [ $distro == "Ubuntu" ]; then
+    sudo $install golang-go
+else
+    sudo $install go
+fi
 
 # drive
 # go get -u -v github.com/odeke-em/drive/cmd/drive
 # drive init ~/.drive
 
 # c
-sudo pacman -S --noconfirm --needed clang
-sudo pacman -S --noconfirm --needed ctags
+sudo $install clang
+if [ $distro == "Ubuntu" ]; then
+    sudo $install exuberant-ctags
+else
+    sudo $install ctags
+fi
 
 # python
-sudo pacman -S --noconfirm --needed python-pip
-sudo pacman -S --noconfirm --needed python2-pip
+sudo $install python-pip
+sudo $install python2-pip
+sudo $install python3-pip
 
 pip install --user yapf
 pip install --user pylint
 pip install --user jedi
 
 # npm
-sudo pacman -S --noconfirm --needed npm
+sudo $install npm
 
 sudo npm install -g js-beautify
 sudo npm install -g tldr
@@ -54,20 +80,18 @@ tic $TERM.ti
 rm $TERM.ti
 
 # neovim
-sudo pacman -S --noconfirm --needed neovim
+sudo $install neovim
 pip install --user neovim
-pip2 install --user neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 nvim -c 'PlugInstall' -c 'qa!'
 
 # fzf
 .fzf/install --all
 
 # zsh
-sudo pacman -S --noconfirm --needed zsh
+sudo $install zsh
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
@@ -77,23 +101,14 @@ curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/mast
 chsh -s $(which zsh)
 
 # pacaur
-curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash
+if [ $distro == "Arch" ]; then
+    curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash
+    install="pacaur -S --noconfirm --needed"
+fi
 
 # redshift
-pacaur -S --noconfirm --needed redshift-git
-pacaur -S --noconfirm --needed redshift-gtk-git
-
-# vimfx
-# {
-#   "mode.normal.esc": "<force><escape> <force><c-[>",
-#   "mode.caret.exit": "<escape> <c-[>",
-#   "mode.hints.exit": "<escape> <c-[>",
-#   "mode.hints.activate_highlighted": "<enter> <c-enter> <a-enter>",
-#   "mode.ignore.exit": "i <escape> <c-[>",
-#   "mode.ignore.unquote": "I",
-#   "mode.find.exit": "<escape> <enter> <c-[>",
-#   "mode.marks.exit": "<escape> <c-[>"
-# }
-
-# adblock
-# gstatic.com^$third-party
+if [ $distro == "Arch" ]; then
+    sudo $install redshift-gtk-git
+else
+    sudo $install redshift-gtk
+fi
