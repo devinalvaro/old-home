@@ -21,6 +21,10 @@ Plug 'mhinz/vim-signify'
 "" lint
 Plug 'w0rp/ale'
 
+"" snippet
+Plug 'honza/vim-snippets'
+Plug 'sirver/ultisnips'
+
 "" tags
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
@@ -133,6 +137,10 @@ let g:signify_sign_show_count=0
 
 "" sneak
 let g:sneak#label=1
+
+"" ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsEditSplit="horizontal"
 
 """"""""""""
 "" Native ""
