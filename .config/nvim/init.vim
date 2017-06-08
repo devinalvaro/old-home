@@ -204,7 +204,7 @@ set undodir=~/.local/share/nvim/undo/
 "" Misc ""
 """"""""""
 
-"" leader remaps
+"" leader remap
 let mapleader="\<space>"
 
 noremap <leader>w :w<CR>
@@ -223,14 +223,14 @@ nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
-"" normal/visual remaps
+"" normal/visual remap
 noremap d "_d
 noremap D "_D
 
 noremap x d
 noremap X D
 
-"" normal remaps
+"" normal remap
 nnoremap dd "_dd
 
 nnoremap Y y$
@@ -244,7 +244,17 @@ nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
 "" visual remap
-vnoremap <expr> // 'y/\V'.escape(@",'\').'<CR>'
+vnoremap <silent> * :<C-U>
+  \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \ gvy/<C-R><C-R>=substitute(
+  \ escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \ gV:call setreg('"', old_reg, old_regtype)<CR>
+
+vnoremap <silent> # :<C-U>
+  \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \ gvy?<C-R><C-R>=substitute(
+  \ escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \ gV:call setreg('"', old_reg, old_regtype)<CR>
 
 "" command remap
 cnoremap w!! w !sudo tee > /dev/null %
