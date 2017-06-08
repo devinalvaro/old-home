@@ -1,0 +1,140 @@
+## Main
+snippet main
+int main(void)
+{
+	${0}
+
+	return 0;
+}
+endsnippet
+
+## Preprocessor
+snippet inc
+#include <${1:stdio}.h>
+endsnippet
+
+snippet incf
+#include "${1:`vim_snippets#Filename("$1.h")`}"
+endsnippet
+
+snippet def
+#define
+endsnippet
+
+snippet ifndef
+#ifndef $1
+#define ${1:SYMBOL} ${2:value}
+
+#endif /* ifndef $1 */
+endsnippet
+
+##
+## Control Statements
+# if
+snippet if
+if (${1:true}) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet ife
+if (${1:true}) {
+	${2:${VISUAL}}
+} else {
+	${0}
+}
+endsnippet
+
+snippet el
+else {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet elif
+else if (${1:true}) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet tr
+${1:/* condition */} ? ${2:a} : ${3:b}
+endsnippet
+
+snippet switch
+switch (${1:/* variable */}) {
+	case ${2:/* variable case */}:
+		${3}
+		${4:break;}${5}
+	default:
+		${6}
+}
+endsnippet
+
+# case
+snippet case
+case ${1:/* variable case */}:
+	${2}
+	${3:break;}
+endsnippet
+
+snippet ret
+return ${0};
+endsnippet
+
+## Loops
+snippet for
+for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+	${3}
+}
+endsnippet
+
+snippet wh
+while (${1:/* condition */}) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet do
+do {
+	${0:${VISUAL}}
+} while (${1:/* condition */});
+endsnippet
+
+## Functions
+snippet fun
+${1:void} ${2:function_name}()
+{
+	${3}
+}
+endsnippet
+
+snippet fun1
+${1:void} ${2:function_name}(${3:Type} ${4:Parameter})
+{
+	${5}
+}
+endsnippet
+
+snippet fun2
+${1:void} ${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter})
+{
+	${7}
+}
+endsnippet
+
+snippet fun3
+${1:void} ${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter}, ${7:Type} ${8:Parameter})
+{
+	${9}
+}
+endsnippet
+
+## Input/Output
+snippet pr
+printf("${1:%s}\n"${2});
+endsnippet
+
+snippet sc
+scanf("${1:%s}"${2});
+endsnippet

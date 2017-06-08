@@ -22,14 +22,12 @@ Plug 'mhinz/vim-signify'
 Plug 'w0rp/ale'
 
 "" snippet
-Plug 'honza/vim-snippets'
 Plug 'sirver/ultisnips'
 
 "" tags
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 "" text editing
-Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
 Plug 'junegunn/vim-easy-align'
@@ -141,6 +139,10 @@ let g:sneak#label=1
 "" ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsEditSplit="horizontal"
+let g:UltiSnipsJumpForwardTrigger="<a-f>"
+let g:UltiSnipsJumpBackwardTrigger="<a-b>"
+let g:UltiSnipsSnippetsDir="~/.config/nvim/snips"
+let g:UltiSnipsSnippetDirectories=[ "snips" ]
 
 """"""""""""
 "" Native ""
