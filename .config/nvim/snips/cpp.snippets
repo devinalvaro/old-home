@@ -84,12 +84,6 @@ cin >> ${1};
 endsnippet
 
 ## Iteration
-snippet fori
-for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
-	${4}
-}
-endsnippet
-
 snippet fore
 for (${1:auto} ${2:i} : ${3:container}) {
 	${4}
@@ -122,6 +116,10 @@ int main() {
 }
 endsnippet
 
+snippet ll
+long long ${1}
+endsnippet
+
 snippet vi
 vector<int> ${1}
 endsnippet
@@ -136,8 +134,4 @@ endsnippet
 
 snippet iii
 pair<int, pair<int, int>> ${1}
-endsnippet
-
-snippet ll
-long long ${1}
 endsnippet
