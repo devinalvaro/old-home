@@ -210,11 +210,9 @@ let mapleader="\<space>"
 noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
 
-noremap <leader>d "+d
 noremap <leader>p "+p
-noremap <leader>y "+y
-noremap <leader>D "+D
 noremap <leader>P "+P
+noremap <leader>y "+y
 noremap <leader>Y "+Y
 
 nnoremap <leader>r :source $VIMRC<CR>
@@ -225,10 +223,16 @@ nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
-"" command remap
-cnoremap w!! w !sudo tee > /dev/null %
+"" normal/visual remaps
+noremap d "_d
+noremap D "_D
 
-"" other remaps
+noremap x d
+noremap X D
+
+"" normal remaps
+nnoremap dd "_dd
+
 nnoremap Y y$
 nnoremap 0 ^
 nnoremap ^ 0
@@ -238,3 +242,9 @@ nnoremap <silent> <ESC> :noh<CR>
 nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
+
+"" visual remap
+vnoremap <expr> // 'y/\V'.escape(@",'\').'<CR>'
+
+"" command remap
+cnoremap w!! w !sudo tee > /dev/null %
