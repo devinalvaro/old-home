@@ -28,11 +28,7 @@ git checkout -t origin/master
 sudo $install ranger
 
 # grep
-if [ $distro == "Ubuntu" ]; then
-    sudo $install silversearcher-ag
-else
-    sudo $install ripgrep
-fi
+sudo $install ripgrep
 
 # tmux
 sudo $install tmux

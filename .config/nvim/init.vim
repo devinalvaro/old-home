@@ -89,7 +89,7 @@ let g:gitgutter_grep_command='rg'
 
 "" grepper
 let g:grepper={}
-let g:grepper.tools=[ 'rg', 'ag', 'grep' ]
+let g:grepper.tools=[ 'rg', 'grep' ]
 
 "" lightline
 let g:lightline = {
