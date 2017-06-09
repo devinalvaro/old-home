@@ -1,12 +1,12 @@
 #!/bin/bash -v
 
 # package manager
-if type "apt" > /dev/null 2>&1; then
-    install="apt install -y"
-    distro="Ubuntu"
-elif type "pacman" > /dev/null 2>&1; then
+if type "pacman" > /dev/null 2>&1; then
     install="pacman -S --noconfirm --needed"
     distro="Arch"
+elif type "apt" > /dev/null 2>&1; then
+    install="apt install -y"
+    distro="Ubuntu"
 fi
 
 # ppa

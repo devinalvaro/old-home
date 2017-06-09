@@ -54,13 +54,22 @@ alias py3="python3"
 alias vim="nvim"
 alias xb="xbacklight"
 
-# package alias
-alias paci="pacaur -S"
-alias pacr="pacaur -Rs"
-alias pacs="pacaur -Syy"
-alias pacu="pacaur -Syu"
-alias pacc="pacaur -Sc"
-alias paca="pacaur -Rns $(pacaur -Qtdq)"
+# package manager alias
+if type "pacman" > /dev/null 2>&1; then
+    alias paci="pacaur -S"
+    alias pacr="pacaur -Rs"
+    alias pacs="pacaur -Syy"
+    alias pacu="pacaur -Syu"
+    alias pacc="pacaur -Sc"
+    alias paca="pacaur -Rns $(pacaur -Qtdq)"
+elif type "apt" > /dev/null 2>&1; then
+    alias apti="sudo apt install"
+    alias aptr="sudo apt remove"
+    alias apts="sudo apt update"
+    alias aptu="sudo apt update; sudo apt upgrade"
+    alias aptc="sudo apt-get clean"
+    alias apta="sudo apt autoremove"
+fi
 
 # git alias
 alias gcl="git clone"
