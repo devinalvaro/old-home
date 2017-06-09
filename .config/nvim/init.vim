@@ -168,9 +168,8 @@ highlight LineNr guifg=#7a8088
 set confirm
 
 "" cursor
-set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-            \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
-            \,sm:block-blinkwait175-blinkoff150-blinkon175
+set guicursor=n-v-c:block,i-ci-ve:ver100,r-cr:hor100,o:hor100
+      \,a:blinkwait0-blinkoff0-blinkon100
 
 "" indentation
 set expandtab
@@ -200,9 +199,9 @@ set ignorecase
 set undofile
 set undodir=~/.local/share/nvim/undo/
 
-""""""""""
-"" Misc ""
-""""""""""
+"""""""""""
+"" Remap ""
+"""""""""""
 
 "" leader remap
 let mapleader="\<space>"
@@ -249,7 +248,6 @@ vnoremap <silent> * :<C-U>
   \ gvy/<C-R><C-R>=substitute(
   \ escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \ gV:call setreg('"', old_reg, old_regtype)<CR>
-
 vnoremap <silent> # :<C-U>
   \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
   \ gvy?<C-R><C-R>=substitute(
