@@ -90,6 +90,13 @@ nvim -c 'PlugInstall' -c 'qa!'
 # fzf
 .fzf/install --all
 
+# fonts
+if [ $distro == "Arch" ]; then
+    sudo $install powerline-fonts
+elif [ $distro == "Ubuntu" ]; then
+    sudo $install fonts-powerline
+fi
+
 # zsh
 sudo $install zsh
 
