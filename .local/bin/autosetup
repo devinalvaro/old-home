@@ -25,6 +25,9 @@ git fetch
 git checkout -t origin/master
 
 # ranger
+sudo $install yakuake
+
+# ranger
 sudo $install ranger
 
 # grep
