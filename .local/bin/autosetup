@@ -52,6 +52,7 @@ fi
 
 # c
 sudo $install clang
+sudo $install clang-format
 if [ $distro == "Ubuntu" ]; then
     sudo $install exuberant-ctags
 else
