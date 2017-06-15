@@ -78,7 +78,7 @@ let g:deoplete#auto_complete_start_length=1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 "" deoplete-clang
-let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
+let g:deoplete#sources#clang#libclang_path='/usr/lib/llvm-4.0/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
 "" easy-align
