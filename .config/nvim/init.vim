@@ -28,15 +28,16 @@ Plug 'sirver/ultisnips'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 "" text editing
+Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
 Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-endwise'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
-Plug 'ap/vim-you-keep-using-that-word'
 
 "" text navigation
 Plug 'justinmk/vim-sneak'
@@ -44,6 +45,7 @@ Plug 'tpope/vim-unimpaired'
 
 "" text objects
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'wellle/targets.vim'
 Plug 'kana/vim-textobj-function'
 Plug 'bps/vim-textobj-python'
 Plug 'kana/vim-textobj-user'
@@ -223,6 +225,8 @@ nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
 "" normal/visual remap
+noremap c "_c
+noremap C "_C
 noremap d "_d
 noremap D "_D
 
