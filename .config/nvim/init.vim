@@ -166,6 +166,9 @@ highlight Normal guibg=none guifg=#d6d6d6
 highlight Comment guifg=#899099
 highlight LineNr guifg=#7a8088
 
+"" command
+set noshowcmd
+
 "" confirmation
 set confirm
 
@@ -229,7 +232,6 @@ noremap c "_c
 noremap C "_C
 noremap d "_d
 noremap D "_D
-
 noremap x d
 noremap X D
 
