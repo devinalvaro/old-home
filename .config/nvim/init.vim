@@ -168,6 +168,7 @@ highlight LineNr guifg=#7a8088
 
 "" command
 set noshowcmd
+set noshowmode
 
 "" confirmation
 set confirm
@@ -232,6 +233,7 @@ noremap c "_c
 noremap C "_C
 noremap d "_d
 noremap D "_D
+
 noremap x d
 noremap X D
 
