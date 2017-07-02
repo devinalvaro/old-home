@@ -19,7 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
 "" lint
-Plug 'w0rp/ale'
+Plug 'neomake/neomake'
 
 "" snippet
 Plug 'sirver/ultisnips'
@@ -63,10 +63,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
-
-"" ale
-let g:ale_lint_on_text_changed='normal'
-let g:ale_lint_on_insert_leave=1
 
 "" delimitmate
 let g:delimitMate_expand_cr=2
@@ -125,9 +121,13 @@ endfunction
 
 function! LightlineFilename()
   return ('' != LightlineReadonly() ? LightlineReadonly() . ' ' : '') .
-       \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
-       \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
+        \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
+        \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
 endfunction
+
+"" neomake
+autocmd BufEnter * Neomake
+autocmd BufWritePost * Neomake
 
 "" signify
 let g:signify_vcs_list=[ 'git' ]
@@ -262,15 +262,15 @@ nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
 "" visual remap
 vnoremap <silent> * :<C-U>
-  \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-  \ gvy/<C-R><C-R>=substitute(
-  \ escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-  \ gV:call setreg('"', old_reg, old_regtype)<CR>
+            \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+            \ gvy/<C-R><C-R>=substitute(
+            \ escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+            \ gV:call setreg('"', old_reg, old_regtype)<CR>
 vnoremap <silent> # :<C-U>
-  \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-  \ gvy?<C-R><C-R>=substitute(
-  \ escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-  \ gV:call setreg('"', old_reg, old_regtype)<CR>
+            \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+            \ gvy?<C-R><C-R>=substitute(
+            \ escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+            \ gV:call setreg('"', old_reg, old_regtype)<CR>
 
 "" command remap
 cnoremap w!! w !sudo tee > /dev/null %
