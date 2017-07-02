@@ -84,7 +84,7 @@ let g:deoplete#sources#clang#libclang_path='/usr/lib/llvm-4.0/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
 "" easy-align
-map gl <Plug>(EasyAlign)
+noremap gl <Plug>(EasyAlign)
 
 "" gitgutter
 let g:gitgutter_grep_command='rg'
@@ -158,9 +158,12 @@ set noswapfile
 set hidden
 set splitright
 set splitbelow
+autocmd VimResized * wincmd =
 
 "" color
 set termguicolors
+set synmaxcol=200
+
 colorscheme onedark
 highlight Normal guibg=none guifg=#d6d6d6
 highlight Comment guifg=#899099
@@ -205,6 +208,9 @@ set ignorecase
 set undofile
 set undodir=~/.local/share/nvim/undo/
 
+"" wrapping
+set breakindent
+
 """""""""""
 "" Remap ""
 """""""""""
@@ -238,11 +244,15 @@ noremap x d
 noremap X D
 
 "" normal remap
-nnoremap dd "_dd
-
 nnoremap Y y$
 nnoremap 0 ^
 nnoremap ^ 0
+
+nnoremap cc "_cc
+nnoremap dd "_dd
+
+nnoremap c* *Ncgn
+nnoremap c# #Ncgn
 
 nnoremap <silent> <ESC> :noh<CR>
 
