@@ -30,8 +30,10 @@ bindkey -s '\eh' 'cd\n'
 # path
 export ZSH=/home/devin/.oh-my-zsh
 export VIMRC=/home/devin/.config/nvim/init.vim
+
 export GOPATH=$HOME/.gopath/
-export PATH=$HOME/.local/bin/:$GOPATH:$GOPATH/bin/:$PATH
+export CARGOPATH=$HOME/.cargo/
+export PATH=$PATH:$HOME/.local/bin/:$GOPATH:$GOPATH/bin/:$CARGOPATH/bin/
 
 # history
 setopt histignorespace

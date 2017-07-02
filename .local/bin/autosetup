@@ -59,7 +59,7 @@ else
     sudo $install ctags
 fi
 
-# python
+# pip
 sudo $install python-pip
 sudo $install python2-pip
 sudo $install python3-pip
@@ -73,6 +73,11 @@ sudo $install npm
 
 sudo npm install -g js-beautify
 sudo npm install -g tldr
+
+# cargo
+sudo $install cargo
+
+cargo install ripgrep
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
