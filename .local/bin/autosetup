@@ -47,8 +47,8 @@ else
 fi
 
 # drive
-# go get -u -v github.com/odeke-em/drive/cmd/drive
-# drive init ~/.drive
+go get -u -v github.com/odeke-em/drive/cmd/drive
+drive init ~/.drive
 
 # c
 sudo $install clang
