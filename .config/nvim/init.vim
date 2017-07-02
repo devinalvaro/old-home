@@ -203,6 +203,7 @@ set lazyredraw
 "" search
 set smartcase
 set ignorecase
+set inccommand=nosplit
 
 "" undo
 set undofile
