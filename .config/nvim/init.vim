@@ -252,9 +252,6 @@ nnoremap ^ 0
 nnoremap cc "_cc
 nnoremap dd "_dd
 
-nnoremap c* *Ncgn
-nnoremap c# #Ncgn
-
 nnoremap <silent> <ESC> :noh<CR>
 
 nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
