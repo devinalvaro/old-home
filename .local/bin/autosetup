@@ -24,7 +24,7 @@ git remote add origin https://github.com/devinalvaro/home
 git fetch
 git checkout -t origin/master
 
-# ranger
+# yakuake
 sudo $install yakuake
 
 # ranger
