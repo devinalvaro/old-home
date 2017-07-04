@@ -16,41 +16,29 @@ if [ $distro == "Ubuntu" ]; then
     sudo apt update
 fi 
 
-# git
-sudo $install git
+# git sudo $install git
 
 git init
 git remote add origin https://github.com/devinalvaro/home
 git fetch
 git checkout -t origin/master
 
-# yakuake
-sudo $install yakuake
-
 # ranger
 sudo $install ranger
-
-# grep
-sudo $install ripgrep
 
 # tmux
 sudo $install tmux
 
+# ripgrep
+sudo $install ripgrep
+
 # xsel
 sudo $install xsel
 
-# go
-if [ $distro == "Ubuntu" ]; then
-    sudo $install golang-go
-else
-    sudo $install go
-fi
+# yakuake
+sudo $install yakuake
 
-# drive
-go get -u -v github.com/odeke-em/drive/cmd/drive
-drive init ~/.drive
-
-# c
+# clang
 sudo $install clang
 sudo $install clang-format
 if [ $distro == "Ubuntu" ]; then
@@ -72,12 +60,17 @@ pip install --user jedi
 sudo $install npm
 
 sudo npm install -g js-beautify
-sudo npm install -g tldr
 
-# cargo
-sudo $install cargo
+# go
+if [ $distro == "Ubuntu" ]; then
+    sudo $install golang-go
+else
+    sudo $install go
+fi
 
-cargo install ripgrep
+# drive
+go get -u -v github.com/odeke-em/drive/cmd/drive
+drive init ~/.drive
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
