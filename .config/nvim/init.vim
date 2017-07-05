@@ -126,7 +126,7 @@ function! LightlineFilename()
 endfunction
 
 "" neomake
-autocmd BufEnter * Neomake
+autocmd BufEnter * Neomake!
 autocmd BufWritePost * Neomake
 
 "" signify
