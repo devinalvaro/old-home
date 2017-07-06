@@ -32,8 +32,7 @@ export ZSH=/home/devin/.oh-my-zsh
 export VIMRC=/home/devin/.config/nvim/init.vim
 
 export GOPATH=$HOME/.gopath/
-export CARGOPATH=$HOME/.cargo/
-export PATH=$PATH:$HOME/.local/bin/:$GOPATH:$GOPATH/bin/:$CARGOPATH/bin/
+export PATH=$PATH:$HOME/.local/bin/:$GOPATH:$GOPATH/bin/
 
 # history
 setopt histignorespace
