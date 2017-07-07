@@ -126,7 +126,6 @@ function! LightlineFilename()
 endfunction
 
 "" neomake
-autocmd BufEnter * Neomake!
 autocmd BufWritePost * Neomake
 
 "" signify
@@ -194,7 +193,6 @@ set matchpairs+=<:>
 set mouse=a
 
 "" number
-set relativenumber
 set numberwidth=2
 
 "" redrawing
