@@ -126,6 +126,7 @@ function! LightlineFilename()
 endfunction
 
 "" neomake
+let g:neomake_cpp_enabled_makers = [ 'gcc' ]
 autocmd BufWritePost * Neomake
 
 "" signify
