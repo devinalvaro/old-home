@@ -66,9 +66,9 @@ if type "pacman" > /dev/null 2>&1; then
 elif type "apt" > /dev/null 2>&1; then
     alias apti="sudo apt install"
     alias aptr="sudo apt remove"
+    alias aptp="sudo apt purge"
     alias apts="sudo apt update"
     alias aptu="sudo apt update; sudo apt upgrade"
-    alias aptc="sudo apt-get clean"
     alias apta="sudo apt autoremove"
 fi
 
