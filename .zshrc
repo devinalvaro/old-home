@@ -68,7 +68,7 @@ elif type "apt" > /dev/null 2>&1; then
     alias aptr="sudo apt remove"
     alias aptp="sudo apt purge"
     alias apts="sudo apt update"
-    alias aptu="sudo apt update; sudo apt upgrade"
+    alias aptu="sudo apt upgrade"
     alias apta="sudo apt autoremove"
 fi
 
