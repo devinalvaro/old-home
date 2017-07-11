@@ -1,6 +1,9 @@
 ﻿---
+BasedOnStyle: WebKit
+
 IndentWidth: 4
 ColumnLimit: '80'
-BasedOnStyle: WebKit
+
 AllowShortFunctionsOnASingleLine: None
+PointerAlignment: Right
 ...
