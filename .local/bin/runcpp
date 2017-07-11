@@ -1,4 +1,4 @@
 #!/bin/bash
 
-g++ $1".cpp"
+g++ $1
 ./a.out < a.in
