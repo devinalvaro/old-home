@@ -1,76 +1,34 @@
 #!/bin/bash -v
 
-# package manager
-if type "pacman" > /dev/null 2>&1; then
-    install="pacman -S --noconfirm --needed"
-    distro="Arch"
-elif type "apt" > /dev/null 2>&1; then
-    install="apt install -y"
-    distro="Ubuntu"
-fi
-
-# ppa
-if [ $distro == "Ubuntu" ]; then
-    sudo add-apt-repository -y ppa:neovim-ppa/stable
-
-    sudo apt update
-fi 
-
-# git sudo $install git
+# git
+sudo apt install -y git
 
 git init
 git remote add origin https://github.com/devinalvaro/home
 git fetch
 git checkout -t origin/master
 
-# ranger
-sudo $install ranger
-
-# tmux
-sudo $install tmux
-
-# ripgrep
-sudo $install ripgrep
-
-# xsel
-sudo $install xsel
-
-# yakuake
-sudo $install yakuake
-
 # clang
-sudo $install clang
-sudo $install clang-format
-if [ $distro == "Ubuntu" ]; then
-    sudo $install exuberant-ctags
-else
-    sudo $install ctags
-fi
+sudo apt install -y clang
+sudo apt install -y clang-format
+sudo apt install -y exuberant-ctags
 
 # pip
-sudo $install python-pip
-sudo $install python2-pip
-sudo $install python3-pip
+sudo apt install -y python-pip
+sudo apt install -y python2-pip
+sudo apt install -y python3-pip
 
 pip install --user yapf
 pip install --user pylint
 pip install --user jedi
 
 # npm
-sudo $install npm
+sudo apt install -y npm
 
 sudo npm install -g js-beautify
 
 # go
-if [ $distro == "Ubuntu" ]; then
-    sudo $install golang-go
-else
-    sudo $install go
-fi
-
-# drive
-go get -u -v github.com/odeke-em/drive/cmd/drive
-drive init ~/.drive
+sudo apt install -y golang-go
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
@@ -78,24 +36,37 @@ tic $TERM.ti
 rm $TERM.ti
 
 # neovim
-sudo $install neovim
+sudo apt install -y neovim
 pip install --user neovim
 
+sudo cp /usr/local/bin/nvim /usr/local/bin/vim
+
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-nvim -c 'PlugInstall' -c 'qa!'
+nvim -u NONE -U NONE -N -i NONE -c 'source .config/nvim/init.vim' -c 'PlugInstall' -c 'qa!'
 
 # fzf
 .fzf/install --all
 
+# xsel
+sudo apt install -y xsel
+
+# ranger
+sudo apt install -y ranger
+
+# tmux
+sudo apt install -y tmux
+
 # fonts
-if [ $distro == "Arch" ]; then
-    sudo $install powerline-fonts
-elif [ $distro == "Ubuntu" ]; then
-    sudo $install fonts-powerline
-fi
+sudo apt install -y fonts-powerline
+
+# yakuake
+sudo apt install -y yakuake
+
+# redshift
+sudo apt install -y redshift-gtk
 
 # zsh
-sudo $install zsh
+sudo apt install -y zsh
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
@@ -104,15 +75,6 @@ curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/mast
 
 chsh -s $(which zsh)
 
-# pacaur
-if [ $distro == "Arch" ]; then
-    curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash
-    install="pacaur -S --noconfirm --needed"
-fi
-
-# redshift
-if [ $distro == "Arch" ]; then
-    sudo $install redshift-gtk-git
-else
-    sudo $install redshift-gtk
-fi
+# drive
+go get -u -v github.com/odeke-em/drive/cmd/drive
+drive init ~/.drive
