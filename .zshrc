@@ -29,7 +29,6 @@ bindkey -s '\eh' 'cd\n'
 
 # path
 export ZSH=/home/devin/.oh-my-zsh
-export VIMRC=/home/devin/.config/nvim/init.vim
 
 export GOPATH=$HOME/.gopath/
 export PATH=$PATH:$HOME/.local/bin/:$GOPATH:$GOPATH/bin/
@@ -52,7 +51,6 @@ export EDITOR='nvim'
 alias py="python"
 alias py2="python2"
 alias py3="python3"
-alias vim="nvim"
 alias xb="xbacklight"
 
 # package manager alias
