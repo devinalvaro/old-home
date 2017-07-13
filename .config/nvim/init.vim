@@ -226,7 +226,7 @@ noremap <leader>P "+P
 noremap <leader>y "+y
 noremap <leader>Y "+Y
 
-nnoremap <leader>r :source $VIMRC<CR>
+nnoremap <leader>r :source $MYVIMRC<CR>
 
 nnoremap <leader>o :FZF<CR>
 nnoremap <leader>f :Grepper<CR>
