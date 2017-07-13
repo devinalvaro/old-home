@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=OneDark
-Font=DejaVu Sans Mono,15,-1,5,50,0,0,0,0,0
+Font=DejaVu Sans Mono,16,-1,5,50,0,0,0,0,0
 
 [General]
 LocalTabTitleFormat=%d : %n
