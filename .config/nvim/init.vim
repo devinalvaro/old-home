@@ -271,4 +271,4 @@ vnoremap <silent> # :<C-U>
 
 "" command remap
 cnoremap w!! w !sudo tee > /dev/null %
-cnoremap sg s//g<left><left>
+cnoremap sg s///g<left><left><left>
