@@ -54,21 +54,12 @@ alias py3="python3"
 alias xb="xbacklight"
 
 # package manager alias
-if type "pacman" > /dev/null 2>&1; then
-    alias paci="pacaur -S"
-    alias pacr="pacaur -Rs"
-    alias pacs="pacaur -Syy"
-    alias pacu="pacaur -Syu"
-    alias pacc="pacaur -Sc"
-    alias paca="pacaur -Rns $(pacaur -Qtdq)"
-elif type "apt" > /dev/null 2>&1; then
-    alias apti="sudo apt install"
-    alias aptr="sudo apt remove"
-    alias aptp="sudo apt purge"
-    alias apts="sudo apt update"
-    alias aptu="sudo apt upgrade"
-    alias apta="sudo apt autoremove"
-fi
+alias apti="sudo apt install"
+alias aptr="sudo apt remove"
+alias aptp="sudo apt purge"
+alias apts="sudo apt update"
+alias aptu="sudo apt upgrade"
+alias apta="sudo apt autoremove"
 
 # git alias
 alias gcl="git clone"
