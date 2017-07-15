@@ -199,6 +199,9 @@ set numberwidth=2
 "" redrawing
 set lazyredraw
 
+"" scroll
+set scrolljump=-50
+
 "" search
 set smartcase
 set ignorecase
