@@ -191,9 +191,6 @@ set shiftround
 set showmatch
 set matchpairs+=<:>
 
-"" mouse
-set mouse=a
-
 "" number
 set numberwidth=2
 
@@ -211,7 +208,6 @@ set inccommand=nosplit
 
 "" undo
 set undofile
-set undodir=~/.local/share/nvim/undo/
 
 "" wrapping
 set breakindent
