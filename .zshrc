@@ -22,7 +22,6 @@ function ranger {
 }
 
 # shortcuts
-bindkey -s '\en' 'dolphin .\n'
 bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 bindkey -s '\eh' 'cd\n'
