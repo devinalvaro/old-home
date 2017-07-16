@@ -164,6 +164,7 @@ autocmd VimResized * wincmd =
 set termguicolors
 set synmaxcol=200
 
+"" colorscheme
 colorscheme onedark
 highlight Normal guibg=none guifg=#d6d6d6
 highlight Comment guifg=#899099
@@ -205,6 +206,7 @@ set scrolljump=-50
 "" search
 set smartcase
 set ignorecase
+set gdefault
 set inccommand=nosplit
 
 "" undo
@@ -274,4 +276,3 @@ vnoremap <silent> # :<C-U>
 
 "" command remap
 cnoremap w!! w !sudo tee > /dev/null %
-cnoremap sg s///g<left><left><left>
