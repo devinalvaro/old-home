@@ -47,11 +47,10 @@ source $ZSH/oh-my-zsh.sh
 # editor
 export EDITOR='nvim'
 
-# program alias
+# python alias
 alias py="python"
 alias py2="python2"
 alias py3="python3"
-alias xb="xbacklight"
 
 # package manager alias
 alias apti="sudo apt install"
@@ -64,7 +63,7 @@ alias apta="sudo apt autoremove"
 # git alias
 alias gcl="git clone"
 alias gst="git status"
-alias gs="git status -sb"
+alias gss="git status -s"
 alias glg="git log"
 alias grs="git reset"
 alias gco="git checkout"
@@ -80,4 +79,5 @@ alias gte="git remote"
 alias gsm="git submodule"
 alias gbr="git branch"
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
