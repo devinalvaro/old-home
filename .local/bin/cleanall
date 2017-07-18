@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# check if Sunday
+if [ $(date +%u) -ne 7 ]; then
+   echo "Today's not Sunday yet. Have a good day and be productive!"
+   exit 1
+fi
+
+# remove orphan packages
+sudo apt autoremove
+
+# clean archive package files
+sudo apt-get clean
+sudo apt-get autoclean
+
+# clean unused config files
+sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
+
+# uninstall vim plugins
+nvim -c 'PlugClean' -c 'qa!'
