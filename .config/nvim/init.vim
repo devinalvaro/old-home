@@ -46,9 +46,6 @@ Plug 'tpope/vim-unimpaired'
 "" text objects
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'wellle/targets.vim'
-Plug 'kana/vim-textobj-function'
-Plug 'bps/vim-textobj-python'
-Plug 'kana/vim-textobj-user'
 
 "" tmux
 Plug 'wellle/tmux-complete.vim'
@@ -58,7 +55,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 "" visual
-Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
@@ -93,42 +89,6 @@ let g:gitgutter_grep_command='rg'
 "" grepper
 let g:grepper={}
 let g:grepper.tools=[ 'rg', 'grep' ]
-
-"" lightline
-let g:lightline = {
-      \ 'colorscheme': 'onedark',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'filename' ] ]
-      \ },
-      \ 'component_function': {
-      \   'fugitive': 'LightlineFugitive',
-      \   'readonly': 'LightlineReadonly',
-      \   'modified': 'LightlineModified',
-      \   'filename': 'LightlineFilename'
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
-      \ }
-
-function! LightlineModified()
-  return &modified ? '+' : ''
-endfunction
-
-function! LightlineReadonly()
-  return &readonly ? '' : ''
-endfunction
-
-function! LightlineFugitive()
-  return exists("*fugitive#head") && fugitive#head() !=# '' ? 
-        \ ' '.fugitive#head() : ''
-endfunction
-
-function! LightlineFilename()
-  return ('' != LightlineReadonly() ? LightlineReadonly() . ' ' : '') .
-        \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
-        \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
-endfunction
 
 "" signify
 let g:signify_vcs_list=[ 'git' ]
@@ -170,8 +130,10 @@ colorscheme onedark
 highlight Normal guibg=none guifg=#d6d6d6
 highlight Comment guifg=#899099
 highlight LineNr guifg=#7a8088
+highlight StatusLine guifg=#d6d6d6
+highlight VertSplit guifg=#abb2bf
 
-"" command
+"" command line
 set noshowcmd
 set noshowmode
 
@@ -206,6 +168,9 @@ set smartcase
 set ignorecase
 set gdefault
 set inccommand=nosplit
+
+"" status
+set statusline=%F\ %m%=[%{fugitive#head()}]\ [%{&ff}]\ %y\ [%l:%v]
 
 "" undo
 set undofile
