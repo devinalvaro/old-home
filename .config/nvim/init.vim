@@ -19,7 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
 "" lint
-Plug 'neomake/neomake'
+Plug 'w0rp/ale'
 
 "" snippet
 Plug 'sirver/ultisnips'
@@ -63,6 +63,11 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
+
+"" ale
+let g:ale_cpp_clang_options='-std=c++14 -Wall'
+let g:ale_lint_on_text_changed="normal"
+autocmd InsertLeave * ALELint
 
 "" delimitmate
 let g:delimitMate_expand_cr=2
@@ -124,10 +129,6 @@ function! LightlineFilename()
         \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
         \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
 endfunction
-
-"" neomake
-let g:neomake_cpp_enabled_makers = [ 'gcc' ]
-autocmd BufWritePost * Neomake
 
 "" signify
 let g:signify_vcs_list=[ 'git' ]
