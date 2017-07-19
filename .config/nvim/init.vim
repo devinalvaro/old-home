@@ -170,7 +170,7 @@ set gdefault
 set inccommand=nosplit
 
 "" status
-set statusline=%F\ %m%=[%{fugitive#head()}]\ [%{&ff}]\ %y\ [%l:%v]
+set statusline=%f\ %M\ %=\ %{fugitive#head()}\ 🐧\ %l:%v
 
 "" undo
 set undofile
