@@ -21,11 +21,6 @@ function ranger {
     rm -f -- "$tempfile"
 }
 
-# shortcuts
-bindkey -s '\er' 'ranger\n'
-bindkey -s '\ev' 'vim\n'
-bindkey -s '\eh' 'cd\n'
-
 # path
 export ZSH=/home/devin/.oh-my-zsh
 
