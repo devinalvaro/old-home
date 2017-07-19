@@ -5,7 +5,7 @@ Frames=0
 Skin=tabsonly
 
 [Behavior]
-OpenAfterStart=true
+OpenAfterStart=false
 
 [Desktop Entry]
 DefaultProfile=Shell.profile
@@ -51,5 +51,6 @@ view-full-screen=Ctrl+Shift+F11
 
 [Window]
 Height=100
+KeepOpen=false
 ShowTabBar=false
 Width=100
