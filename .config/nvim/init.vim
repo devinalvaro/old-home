@@ -139,7 +139,7 @@ let g:signify_sign_show_count=0
 let g:sneak#label=1
 
 "" ultisnips
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-f>"
 let g:UltiSnipsEditSplit="horizontal"
 let g:UltiSnipsJumpForwardTrigger="<a-f>"
 let g:UltiSnipsJumpBackwardTrigger="<a-b>"
