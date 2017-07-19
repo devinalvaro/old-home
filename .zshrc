@@ -10,7 +10,7 @@ fi
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-# functions
+# function
 function ranger {
     tempfile="$(mktemp -t tmp.XXXXXX)"
     /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
@@ -20,6 +20,11 @@ function ranger {
     fi
     rm -f -- "$tempfile"
 }
+
+# key binding
+bindkey -s '\er' 'ranger\n'
+bindkey -s '\ev' 'vim\n'
+bindkey -s '\eh' 'cd\n'
 
 # path
 export ZSH=/home/devin/.oh-my-zsh
