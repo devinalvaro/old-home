@@ -63,7 +63,6 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 "" ale
-let g:ale_cpp_clang_options='-std=c++14 -Wall'
 let g:ale_lint_on_text_changed="normal"
 autocmd InsertLeave * ALELint
 
@@ -111,6 +110,15 @@ let g:UltiSnipsJumpForwardTrigger="<a-f>"
 let g:UltiSnipsJumpBackwardTrigger="<a-b>"
 let g:UltiSnipsSnippetsDir="~/.config/nvim/snips"
 let g:UltiSnipsSnippetDirectories=[ "snips" ]
+
+""""""""""""""""""""
+"" Documentation """
+""""""""""""""""""""
+
+autocmd FileType cpp setlocal keywordprg=:term\ cppman
+autocmd FileType matlab setlocal keywordprg=:term\ info\ octave\ --index-search
+autocmd FileType python setlocal keywordprg=:term\ pydoc
+autocmd FileType vim setlocal keywordprg=:help
 
 """"""""""""
 "" Native ""
@@ -217,6 +225,7 @@ noremap X D
 
 "" normal remap
 nnoremap Y y$
+
 nnoremap 0 ^
 nnoremap ^ 0
 
