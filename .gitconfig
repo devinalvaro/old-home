@@ -3,6 +3,7 @@
 	name = Devin Alvaro
 [core]
 	editor = nvim
+	excludesfile = /home/devin/.gitignore_global
 [push]
 	default = simple
 [credential]
