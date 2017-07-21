@@ -82,6 +82,9 @@ autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 let g:deoplete#sources#clang#libclang_path='/usr/lib/llvm-4.0/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
+"" deoplete-jedi
+let g:deoplete#sources#jedi#show_docstring=1
+
 "" easy-align
 noremap gl <Plug>(EasyAlign)
 
