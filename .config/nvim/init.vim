@@ -11,7 +11,8 @@ Plug 'zchee/deoplete-jedi'
 Plug 'shougo/neoinclude.vim'
 
 "" file management
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
+Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
 "" git
@@ -25,6 +26,7 @@ Plug 'w0rp/ale'
 Plug 'sirver/ultisnips'
 
 "" tags
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 "" text editing
@@ -195,8 +197,8 @@ noremap <leader>Y "+Y
 
 nnoremap <leader>r :source $MYVIMRC<CR>
 
-nnoremap <leader>o :FZF<CR>
-nnoremap <leader>f :Grepper<CR>
+nnoremap <leader>f :FZF<CR>
+nnoremap <leader>g :Grepper<CR>
 nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
