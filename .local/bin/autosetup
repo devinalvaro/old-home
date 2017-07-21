@@ -1,5 +1,8 @@
 #!/bin/bash -v
 
+# begin
+cd ~
+
 # git
 sudo apt install -y git
 
@@ -11,6 +14,8 @@ git checkout -t origin/master
 # clang
 sudo apt install -y clang
 sudo apt install -y clang-format
+
+sudo apt install -y cppman
 
 # pip
 sudo apt install -y python-pip
@@ -84,3 +89,6 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zs
 curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/spaceship.zsh > ~/.oh-my-zsh/themes/spaceship.zsh-theme
 
 chsh -s $(which zsh)
+
+# end
+cd ~
