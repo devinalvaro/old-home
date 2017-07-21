@@ -63,6 +63,7 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 "" ale
+let g:ale_cpp_clangcheck_executable=''
 let g:ale_lint_on_text_changed="normal"
 autocmd InsertLeave * ALELint
 
@@ -136,7 +137,6 @@ autocmd VimResized * wincmd =
 
 "" color
 set termguicolors
-set synmaxcol=200
 
 "" colorscheme
 colorscheme onedark
