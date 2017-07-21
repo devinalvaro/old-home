@@ -63,54 +63,54 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 "" ale
-let g:ale_cpp_clangcheck_executable=''
-let g:ale_lint_on_text_changed="normal"
+let g:ale_cpp_clangcheck_executable = ''
+let g:ale_lint_on_text_changed = "normal"
 autocmd InsertLeave * ALELint
 
 "" delimitmate
-let g:delimitMate_expand_cr=2
-let g:delimitMate_expand_space=1
-let g:delimitMate_balance_matchpairs=1
-let g:delimitMate_matchpairs="(:),[:],{:}"
+let g:delimitMate_expand_cr = 2
+let g:delimitMate_expand_space = 1
+let g:delimitMate_balance_matchpairs = 1
+let g:delimitMate_matchpairs = "(:),[:],{:}"
 
 "" deoplete
-let g:deoplete#enable_at_startup=1
-let g:deoplete#auto_complete_start_length=1
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_complete_start_length = 1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 "" deoplete-clang
-let g:deoplete#sources#clang#libclang_path='/usr/lib/llvm-4.0/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-4.0/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header = '/usr/lib/clang'
 
 "" deoplete-jedi
-let g:deoplete#sources#jedi#show_docstring=1
+let g:deoplete#sources#jedi#show_docstring = 1
 
 "" easy-align
 noremap gl <Plug>(EasyAlign)
 
 "" gitgutter
-let g:gitgutter_grep_command='rg'
+let g:gitgutter_grep_command = 'rg'
 
 "" grepper
-let g:grepper={}
-let g:grepper.tools=[ 'rg', 'grep' ]
+let g:grepper = {}
+let g:grepper.tools = [ 'rg', 'grep' ]
 
 "" signify
-let g:signify_vcs_list=[ 'git' ]
-let g:signify_realtime=1
-let g:signify_sign_change='~'
-let g:signify_sign_show_count=0
+let g:signify_vcs_list = [ 'git' ]
+let g:signify_realtime = 1
+let g:signify_sign_change = '~'
+let g:signify_sign_show_count = 0
 
 "" sneak
-let g:sneak#label=1
+let g:sneak#label = 1
 
 "" ultisnips
-let g:UltiSnipsExpandTrigger="<c-f>"
-let g:UltiSnipsEditSplit="horizontal"
-let g:UltiSnipsJumpForwardTrigger="<a-f>"
-let g:UltiSnipsJumpBackwardTrigger="<a-b>"
-let g:UltiSnipsSnippetsDir="~/.config/nvim/snips"
-let g:UltiSnipsSnippetDirectories=[ "snips" ]
+let g:UltiSnipsExpandTrigger = "<c-f>"
+let g:UltiSnipsEditSplit = "horizontal"
+let g:UltiSnipsJumpForwardTrigger = "<a-f>"
+let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
+let g:UltiSnipsSnippetsDir = "~/.config/nvim/snips"
+let g:UltiSnipsSnippetDirectories = [ "snips" ]
 
 """"""""""""""""""""
 "" Documentation """
@@ -196,7 +196,7 @@ set breakindent
 """""""""""
 
 "" leader remap
-let mapleader="\<space>"
+let mapleader = "\<space>"
 
 noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
