@@ -23,11 +23,6 @@ pip install --user yapf
 pip install --user pylint
 pip install --user jedi
 
-# npm
-sudo apt install -y npm
-
-sudo npm install -g js-beautify
-
 # go
 sudo apt install -y golang-go
 
