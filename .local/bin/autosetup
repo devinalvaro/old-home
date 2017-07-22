@@ -1,8 +1,5 @@
 #!/bin/bash -v
 
-# begin
-cd ~
-
 # git
 sudo apt install -y git
 
@@ -75,10 +72,14 @@ go get -u -v github.com/odeke-em/drive/cmd/drive
 # universal-tags
 git clone https://github.com/universal-ctags/ctags.git
 cd ctags
+
 ./autogen.sh 
 ./configure
 make
 sudo make install
+
+cd ..
+rm -rf ctags
 
 # zsh
 sudo apt install -y zsh
@@ -89,6 +90,3 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zs
 curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/spaceship.zsh > ~/.oh-my-zsh/themes/spaceship.zsh-theme
 
 chsh -s $(which zsh)
-
-# end
-cd ~
