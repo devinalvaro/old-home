@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -v
 
 # check if Sunday
 if [ $(date +%u) -ne 7 ]; then
@@ -7,13 +7,7 @@ if [ $(date +%u) -ne 7 ]; then
 fi
 
 # package manager
-if type "pacaur" > /dev/null 2>&1; then
-   sudo pacaur -Syu
-elif type "pacman" > /dev/null 2>&1; then
-   sudo pacman -Syu
-elif type "apt" > /dev/null 2>&1; then
-   sudo apt update; sudo apt upgrade
-fi
+sudo apt update -y; sudo apt upgrade -y
 
 # zsh
 upgrade_oh_my_zsh

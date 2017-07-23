@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -v
 
 # check if Sunday
 if [ $(date +%u) -ne 7 ]; then
@@ -7,11 +7,11 @@ if [ $(date +%u) -ne 7 ]; then
 fi
 
 # remove orphan packages
-sudo apt autoremove
+sudo apt autoremove -y
 
 # clean archive package files
-sudo apt-get clean
-sudo apt-get autoclean
+sudo apt-get clean -y
+sudo apt-get autoclean -y
 
 # clean unused config files
 sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
