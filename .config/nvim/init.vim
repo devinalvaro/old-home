@@ -33,11 +33,9 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
-Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
@@ -63,7 +61,7 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 "" ale
-let g:ale_cpp_clangcheck_executable = ''
+let g:ale_cpp_clangcheck_executable = ""
 let g:ale_lint_on_text_changed = "normal"
 autocmd InsertLeave * ALELint
 
@@ -79,26 +77,23 @@ let g:deoplete#auto_complete_start_length = 1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 "" deoplete-clang
-let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-4.0/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header = '/usr/lib/clang'
+let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-4.0/lib/libclang.so"
+let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
 
 "" deoplete-jedi
 let g:deoplete#sources#jedi#show_docstring = 1
 
-"" easy-align
-noremap gl <Plug>(EasyAlign)
-
 "" gitgutter
-let g:gitgutter_grep_command = 'rg'
+let g:gitgutter_grep_command = "rg"
 
 "" grepper
 let g:grepper = {}
-let g:grepper.tools = [ 'rg', 'grep' ]
+let g:grepper.tools = [ "rg", "grep" ]
 
 "" signify
-let g:signify_vcs_list = [ 'git' ]
+let g:signify_vcs_list = [ "git" ]
 let g:signify_realtime = 1
-let g:signify_sign_change = '~'
+let g:signify_sign_change = "~"
 let g:signify_sign_show_count = 0
 
 "" sneak
@@ -208,11 +203,13 @@ noremap <leader>Y "+Y
 
 nnoremap <leader>r :source $MYVIMRC<CR>
 
-nnoremap <leader>f :FZF<CR>
-nnoremap <leader>g :Grepper<CR>
-nnoremap <leader>n :Neoformat<CR>
-nnoremap <leader>t :TagbarToggle<CR>
-nnoremap <leader>u :UndotreeToggle<CR>
+nnoremap <leader>fi :Files<CR>
+nnoremap <leader>ft :Tags<CR>
+nnoremap <leader>gr :Grepper<CR>
+nnoremap <leader>gb :Grepper-buffers<CR>
+nnoremap <leader>ne :Neoformat<CR>
+nnoremap <leader>tt :TagbarToggle<CR>
+nnoremap <leader>ut :UndotreeToggle<CR>
 
 "" normal/visual remap
 noremap c "_c
@@ -232,9 +229,10 @@ nnoremap ^ 0
 nnoremap cc "_cc
 nnoremap dd "_dd
 
-nnoremap <silent> <ESC> :noh<CR>
+nnoremap <silent> <ESC> :nohlsearch<CR>
 
 nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
+
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
