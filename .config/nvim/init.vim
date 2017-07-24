@@ -213,7 +213,7 @@ nnoremap <leader>fi :Files<CR>
 nnoremap <leader>ft :Tags<CR>
 nnoremap <leader>gr :Grepper<CR>
 nnoremap <leader>gb :Grepper-buffers<CR>
-nnoremap <leader>ne :Neoformat<CR>
+nnoremap <leader>nf :Neoformat<CR>
 nnoremap <leader>tt :TagbarToggle<CR>
 nnoremap <leader>ut :UndotreeToggle<CR>
 
