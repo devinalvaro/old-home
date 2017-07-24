@@ -22,6 +22,9 @@ Plug 'mhinz/vim-signify'
 "" lint
 Plug 'w0rp/ale'
 
+"" quickfix
+Plug 'romainl/vim-qf'
+
 "" snippet
 Plug 'sirver/ultisnips'
 
@@ -45,7 +48,6 @@ Plug 'tpope/vim-unimpaired'
 
 "" text objects
 Plug 'michaeljsmith/vim-indent-object'
-Plug 'wellle/targets.vim'
 
 "" tmux
 Plug 'wellle/tmux-complete.vim'
@@ -89,6 +91,10 @@ let g:gitgutter_grep_command = "rg"
 "" grepper
 let g:grepper = {}
 let g:grepper.tools = [ "rg", "grep" ]
+
+"" qf
+let g:qf_window_bottom = 0
+let g:qf_loclist_window_bottom = 0
 
 "" signify
 let g:signify_vcs_list = [ "git" ]
