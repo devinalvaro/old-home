@@ -92,6 +92,9 @@ let g:gitgutter_grep_command = "rg"
 let g:grepper = {}
 let g:grepper.tools = [ "rg", "grep" ]
 
+"" gutentags
+let g:gutentags_project_root = [ ".betags" ]
+
 "" qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
@@ -211,6 +214,7 @@ nnoremap <leader>r :source $MYVIMRC<CR>
 
 nnoremap <leader>fi :Files<CR>
 nnoremap <leader>ft :Tags<CR>
+nnoremap <leader>fb :BTags<CR>
 nnoremap <leader>gr :Grepper<CR>
 nnoremap <leader>gb :Grepper-buffers<CR>
 nnoremap <leader>nf :Neoformat<CR>
