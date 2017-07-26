@@ -90,13 +90,6 @@ let g:deoplete#sources#jedi#show_docstring = 1
 "" easy-align
 noremap gl <Plug>(EasyAlign)
 
-"" gitgutter
-let g:gitgutter_grep_command = "rg"
-
-"" grepper
-let g:grepper = {}
-let g:grepper.tools = [ "rg", "grep" ]
-
 "" gutentags
 let g:gutentags_project_root = [ ".betags" ]
 
