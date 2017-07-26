@@ -36,9 +36,11 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
+Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
@@ -84,6 +86,9 @@ let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
 
 "" deoplete-jedi
 let g:deoplete#sources#jedi#show_docstring = 1
+
+"" easy-align
+noremap gl <Plug>(EasyAlign)
 
 "" gitgutter
 let g:gitgutter_grep_command = "rg"
