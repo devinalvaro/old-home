@@ -7,9 +7,6 @@ if which tmux >/dev/null 2>&1; then
     done
 fi
 
-# pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
 # function
 function ranger {
     tempfile="$(mktemp -t tmp.XXXXXX)"
