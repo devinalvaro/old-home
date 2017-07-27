@@ -114,15 +114,6 @@ let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 let g:UltiSnipsSnippetsDir = "~/.config/nvim/snips"
 let g:UltiSnipsSnippetDirectories = [ "snips" ]
 
-""""""""""""""""""""
-"" Documentation """
-""""""""""""""""""""
-
-autocmd FileType cpp setlocal keywordprg=:term\ cppman
-autocmd FileType matlab setlocal keywordprg=:term\ info\ octave\ --index-search
-autocmd FileType python setlocal keywordprg=:term\ pydoc
-autocmd FileType vim setlocal keywordprg=:help
-
 """"""""""""
 "" Native ""
 """"""""""""
@@ -156,7 +147,10 @@ set noshowmode
 set confirm
 
 "" cursor
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+set guicursor=a:blinkon100
+
+"" documentation
+autocmd FileType vim setlocal keywordprg=:help
 
 "" indentation
 set expandtab
