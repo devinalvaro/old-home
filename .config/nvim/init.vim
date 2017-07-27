@@ -156,8 +156,7 @@ set noshowmode
 set confirm
 
 "" cursor
-set guicursor=n-v-c:block,i-ci-ve:ver100,r-cr:hor100,o:hor100
-      \,a:blinkwait0-blinkoff0-blinkon100
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 "" indentation
 set expandtab
@@ -168,6 +167,9 @@ set shiftround
 "" matching
 set showmatch
 set matchpairs+=<:>
+
+"" motion
+set cpoptions-=_
 
 "" number
 set numberwidth=2
