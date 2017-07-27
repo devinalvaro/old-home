@@ -1,20 +1,32 @@
 #!/bin/bash -v
 
 # check if Sunday
-if [ $(date +%u) -ne 7 ]; then
-   echo "Today's not Sunday yet. Have a good day and be productive!"
-   exit 1
+# if [ $(date +%u) -ne 7 ]; then
+#    echo "Today's not Sunday yet. Have a good day and be productive!"
+#    exit 1
+# fi
+
+# package managers
+if type "apt" > /dev/null 2>&1; then
+	manager="apt"
+elif type "dnf" > /dev/null 2>&1; then
+	manager="dnf"
 fi
 
 # remove orphan packages
-sudo apt autoremove -y
+if [ $manager == "apt" ]; then sudo apt -y autoremove; fi
+if [ $manager == "dnf" ]; then sudo dnf -y autoremove; fi
 
 # clean archive package files
-sudo apt-get clean -y
-sudo apt-get autoclean -y
+if [ $manager == "apt" ]; then
+   sudo apt-get -y clean
+   sudo apt-get -y autoclean
+elif [ $manager == "dnf" ]; then
+   sudo dnf -y clean all
+fi
 
 # clean unused config files
-sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
+if [ $manager == "apt" ]; then sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2); fi
 
 # uninstall vim plugins
 nvim -c 'PlugClean' -c 'qa!'

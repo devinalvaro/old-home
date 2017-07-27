@@ -1,13 +1,21 @@
 #!/bin/bash -v
 
 # check if Sunday
-if [ $(date +%u) -ne 7 ]; then
-   echo "Today's not Sunday yet. Have a good day and be productive!"
-   exit 1
+# if [ $(date +%u) -ne 7 ]; then
+#    echo "Today's not Sunday yet. Have a good day and be productive!"
+#    exit 1
+# fi
+
+# package managers
+if type "apt" > /dev/null 2>&1; then
+	manager="apt"
+elif type "dnf" > /dev/null 2>&1; then
+	manager="dnf"
 fi
 
-# package manager
-sudo apt update -y; sudo apt upgrade -y
+# system
+if [ $manager == "apt" ]; then sudo apt -y update; sudo apt upgrade; fi
+if [ $manager == "dnf" ]; then sudo dnf -y upgrade; fi
 
 # zsh
 upgrade_oh_my_zsh
@@ -21,12 +29,6 @@ pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 
 # go
 go get -u -v all
-
-# calibre
-sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
-
-# papirus
-wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install-papirus-home-kde.sh | sh
 
 # universal-ctags
 git clone https://github.com/universal-ctags/ctags.git
