@@ -185,7 +185,7 @@ set gdefault
 set inccommand=nosplit
 
 "" status
-set statusline=%f\ %M\ %=\ %{fugitive#head()}\ 🐧\ %l:%v
+set statusline=%f\ %M\ %=\ %{gutentags#statusline('tags')}\ %{fugitive#head()}\ %l:%v
 
 "" undo
 set undofile
