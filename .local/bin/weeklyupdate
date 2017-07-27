@@ -1,10 +1,10 @@
 #!/bin/bash -v
 
 # check if Sunday
-# if [ $(date +%u) -ne 7 ]; then
-#    echo "Today's not Sunday yet. Have a good day and be productive!"
-#    exit 1
-# fi
+if [ $(date +%u) -ne 7 ]; then
+   echo "Today's not Sunday yet. Have a good day and be productive!"
+   exit 1
+fi
 
 # package managers
 if type "apt" > /dev/null 2>&1; then
