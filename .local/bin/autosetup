@@ -23,6 +23,9 @@ git checkout -t origin/master
 # build
 sudo $install autoconf
 sudo $install automake
+sudo $install cmake
+sudo $install libtool
+sudo $install libtool-bin
 
 # clang
 sudo $install clang
@@ -47,14 +50,16 @@ tic $TERM.ti
 rm $TERM.ti
 
 # neovim
+if [ $manager == "apt" ]; then
+	sudo add-apt-repository -y ppa:neovim-ppa/stable
+	sudo apt update -y 
+fi
+
 sudo $install neovim
 pip install --user neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim -u NONE -U NONE -N -i NONE -c 'source .config/nvim/init.vim' -c 'PlugInstall' -c 'qa!'
-
-# fzf
-.fzf/install --all
 
 # xsel
 sudo $install xsel
