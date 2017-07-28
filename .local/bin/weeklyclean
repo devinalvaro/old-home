@@ -14,15 +14,15 @@ elif type "dnf" > /dev/null 2>&1; then
 fi
 
 # remove orphan packages
-if [ $manager == "apt" ]; then sudo apt -y autoremove; fi
-if [ $manager == "dnf" ]; then sudo dnf -y autoremove; fi
+if [ $manager == "apt" ]; then sudo apt autoremove -y; fi
+if [ $manager == "dnf" ]; then sudo dnf autoremove -y; fi
 
 # clean archive package files
 if [ $manager == "apt" ]; then
-   sudo apt-get -y clean
-   sudo apt-get -y autoclean
+   sudo apt-get clean -y
+   sudo apt-get autoclean -y
 elif [ $manager == "dnf" ]; then
-   sudo dnf -y clean all
+   sudo dnf clean -y all
 fi
 
 # clean unused config files
