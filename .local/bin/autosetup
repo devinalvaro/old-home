@@ -24,6 +24,13 @@ git checkout -t origin/master
 sudo $install autoconf
 sudo $install automake
 sudo $install cmake
+
+# libs
+sudo $install libevent-dev
+
+sudo $install libncurses5-dev
+sudo $install libncursesw5-dev
+
 sudo $install libtool
 sudo $install libtool-bin
 
