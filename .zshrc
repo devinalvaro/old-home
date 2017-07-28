@@ -26,8 +26,8 @@ bindkey -s '\ev' 'vim\n'
 # path
 export ZSH=/home/devin/.oh-my-zsh
 
-export GOPATH=$HOME/.gopath/
-export PATH=$PATH:$HOME/.local/bin/:$GOPATH:$GOPATH/bin/
+export GOPATH=$HOME/.gopath
+export PATH=$HOME/.local/bin:$GOPATH:$GOPATH/bin:$PATH
 
 # history
 setopt histignorespace
