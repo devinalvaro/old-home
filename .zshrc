@@ -41,7 +41,7 @@ plugins=(zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # editor
-export EDITOR='nvim'
+export EDITOR='vi'
 
 # python alias
 alias py="python"
