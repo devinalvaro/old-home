@@ -1,6 +1,9 @@
 [Appearance]
+AntiAliasFonts=true
+BoldIntense=true
 ColorScheme=OneDark
-Font=DejaVu Sans Mono,16,-1,5,50,0,0,0,0,0
+Font=Monospace,16,-1,5,50,0,0,0,0,0,Regular
+UseFontLineChararacters=false
 
 [General]
 LocalTabTitleFormat=%d : %n

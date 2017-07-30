@@ -1,38 +1,38 @@
-""""""""""""
-"" Plugin ""
-""""""""""""
+""""""""""
+" Plugin "
+""""""""""
 
 call plug#begin('~/.config/nvim/plugged')
 
-"" completion
+" completion
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
 Plug 'shougo/neoinclude.vim'
 
-"" file management
+" file management
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
-"" git
+" git
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
-"" lint
+" lint
 Plug 'w0rp/ale'
 
-"" quickfix
+" quickfix
 Plug 'romainl/vim-qf'
 
-"" snippet
+" snippet
 Plug 'sirver/ultisnips'
 
-"" tags
+" tags
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
-"" text editing
+" text editing
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
@@ -44,69 +44,69 @@ Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
-"" text navigation
+" text navigation
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
 
-"" text objects
+" text objects
 Plug 'michaeljsmith/vim-indent-object'
 
-"" tmux
+" tmux
 Plug 'wellle/tmux-complete.vim'
 Plug 'christoomey/vim-tmux-navigator'
 
-"" undo
+" undo
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
-"" visual
-Plug 'joshdick/onedark.vim'
+" visual
+Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
-"" ale
+" ale
 let g:ale_cpp_clangcheck_executable = ""
 let g:ale_lint_on_text_changed = "normal"
 autocmd InsertLeave * ALELint
 
-"" delimitmate
+" delimitmate
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 let g:delimitMate_matchpairs = "(:),[:],{:}"
 
-"" deoplete
+" deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_start_length = 1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
-"" deoplete-clang
+" deoplete-clang
 let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-3.8/lib/libclang.so.1"
 let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
 
-"" deoplete-jedi
+" deoplete-jedi
 let g:deoplete#sources#jedi#show_docstring = 1
 
-"" easy-align
+" easy-align
 noremap gl <Plug>(EasyAlign)
 
-"" gutentags
+" gutentags
 let g:gutentags_project_root = [ ".betags" ]
 
-"" qf
+" qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
 
-"" signify
+" signify
 let g:signify_vcs_list = [ "git" ]
 let g:signify_realtime = 1
 let g:signify_sign_change = "~"
 let g:signify_sign_show_count = 0
 
-"" sneak
+" sneak
 let g:sneak#label = 1
 
-"" ultisnips
+" ultisnips
 let g:UltiSnipsExpandTrigger = "<c-f>"
 let g:UltiSnipsEditSplit = "horizontal"
 let g:UltiSnipsJumpForwardTrigger = "<a-f>"
@@ -114,86 +114,88 @@ let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 let g:UltiSnipsSnippetsDir = "~/.config/nvim/snips"
 let g:UltiSnipsSnippetDirectories = [ "snips" ]
 
-""""""""""""
-"" Native ""
-""""""""""""
+""""""""""
+" Native "
+""""""""""
 
-"" backup
+" backup
 set nobackup
 set noswapfile
 
-"" buffer
+" buffer
 set hidden
 set splitright
 set splitbelow
 autocmd VimResized * wincmd =
 
-"" color
+" color
 set termguicolors
+set background=dark
 
-"" colorscheme
-colorscheme onedark
-highlight Normal guibg=none guifg=#d6d6d6
-highlight Comment guifg=#899099
-highlight LineNr guifg=#7a8088
-highlight StatusLine guifg=#d6d6d6
-highlight VertSplit guifg=#abb2bf
+colorscheme one
+call one#highlight('Normal', 'none', 'none', '')
+call one#highlight('Comment', '8e94a1', '', '')
+call one#highlight('vimLineComment', '8e94a1', '', '')
+call one#highlight('vertSplit', '828997', '', '')
+call one#highlight('StatusLine', '', '353940', '')
+call one#highlight('StatusLineNC', '353940', 'abb2bf', '')
+call one#highlight('LineNr', '828997', '', '')
 
-"" command line
+" command line
 set noshowcmd
 set noshowmode
 
-"" confirmation
+" confirmation
 set confirm
 
-"" cursor
+" cursor
 set guicursor=a:blinkon100
 
-"" documentation
+" documentation
 autocmd FileType vim setlocal keywordprg=:help
 
-"" indentation
+" indentation
 set expandtab
 set softtabstop=4
 set shiftwidth=4
 set shiftround
 
-"" matching
+" matching
 set showmatch
 set matchpairs+=<:>
 
-"" motion
+" motion
 set cpoptions-=_
 
-"" number
+" number
 set numberwidth=2
 
-"" redrawing
+" redrawing
 set lazyredraw
 
-"" scroll
+" scroll
 set scrolljump=-50
 
-"" search
+" search
 set smartcase
 set ignorecase
 set gdefault
 set inccommand=nosplit
 
-"" status
+" status
 set statusline=%f\ %M\ %=\ %{gutentags#statusline('tags')}\ %{fugitive#head()}\ %l:%v
 
-"" undo
+" undo
 set undofile
 
-"" wrapping
+" wrapping
 set breakindent
 
-"""""""""""
-"" Remap ""
-"""""""""""
+"""""""""
+" Remap "
+"""""""""
 
-"" leader remap
+" leader remap
 let mapleader = "\<space>"
 
 noremap <leader>w :w<CR>
@@ -215,7 +217,7 @@ nnoremap <leader>nf :Neoformat<CR>
 nnoremap <leader>tt :TagbarToggle<CR>
 nnoremap <leader>ut :UndotreeToggle<CR>
 
-"" normal/visual remap
+" normal/visual remap
 noremap c "_c
 noremap C "_C
 noremap d "_d
@@ -224,7 +226,7 @@ noremap D "_D
 noremap x d
 noremap X D
 
-"" normal remap
+" normal remap
 nnoremap Y y$
 
 nnoremap 0 ^
@@ -240,7 +242,7 @@ nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
 nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
-"" visual remap
+" visual remap
 vnoremap <silent> * :<C-U>
             \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
             \ gvy/<C-R><C-R>=substitute(
@@ -252,5 +254,5 @@ vnoremap <silent> # :<C-U>
             \ escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
             \ gV:call setreg('"', old_reg, old_regtype)<CR>
 
-"" command remap
+" command remap
 cnoremap w!! w !sudo tee > /dev/null %
