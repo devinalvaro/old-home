@@ -84,9 +84,6 @@ if [ $manager == "dnf" ]; then sudo $install powerline-fonts; fi
 # yakuake
 sudo $install yakuake
 
-# redshift
-sudo $install redshift-gtk
-
 # drive
 if [ $manager == "apt" ]; then
 	sudo add-apt-repository ppa:twodopeshaggy/drive
