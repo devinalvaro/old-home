@@ -65,19 +65,19 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " ale
-let g:ale_cpp_clangcheck_executable = ""
 let g:ale_lint_on_text_changed = "normal"
-autocmd InsertLeave * ALELint
+let g:ale_lint_on_insert_leave = 1
+let g:ale_cpp_clangcheck_executable = ""
 
 " delimitmate
+let g:delimitMate_matchpairs = "(:),[:],{:}"
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
-let g:delimitMate_matchpairs = "(:),[:],{:}"
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_complete_start_length = 1
+let g:deoplete#enable_buffer_path = 1
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 " deoplete-clang
@@ -99,9 +99,7 @@ let g:qf_loclist_window_bottom = 0
 
 " signify
 let g:signify_vcs_list = [ "git" ]
-let g:signify_realtime = 1
 let g:signify_sign_change = "~"
-let g:signify_sign_show_count = 0
 
 " sneak
 let g:sneak#label = 1
@@ -112,12 +110,12 @@ let g:tagbar_width = 30
 let g:tagbar_autofocus = 1
 
 " ultisnips
-let g:UltiSnipsExpandTrigger = "<c-f>"
 let g:UltiSnipsEditSplit = "horizontal"
-let g:UltiSnipsJumpForwardTrigger = "<a-f>"
-let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 let g:UltiSnipsSnippetsDir = "~/.config/nvim/snips"
 let g:UltiSnipsSnippetDirectories = [ "snips" ]
+let g:UltiSnipsExpandTrigger = "<c-f>"
+let g:UltiSnipsJumpForwardTrigger = "<a-f>"
+let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
