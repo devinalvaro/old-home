@@ -106,6 +106,11 @@ let g:signify_sign_show_count = 0
 " sneak
 let g:sneak#label = 1
 
+" tagbar
+let g:tagbar_left = 1
+let g:tagbar_width = 30
+let g:tagbar_autofocus = 1
+
 " ultisnips
 let g:UltiSnipsExpandTrigger = "<c-f>"
 let g:UltiSnipsEditSplit = "horizontal"
@@ -113,6 +118,9 @@ let g:UltiSnipsJumpForwardTrigger = "<a-f>"
 let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 let g:UltiSnipsSnippetsDir = "~/.config/nvim/snips"
 let g:UltiSnipsSnippetDirectories = [ "snips" ]
+
+" undotree
+let g:undotree_SetFocusWhenToggle = 1
 
 """"""""""
 " Native "
@@ -132,7 +140,9 @@ autocmd VimResized * wincmd =
 set termguicolors
 set background=dark
 
+" colorscheme
 colorscheme one
+
 call one#highlight('Normal', 'none', 'none', '')
 call one#highlight('Comment', '8e94a1', '', '')
 call one#highlight('vimLineComment', '8e94a1', '', '')
@@ -140,6 +150,8 @@ call one#highlight('vertSplit', '828997', '', '')
 call one#highlight('StatusLine', '', '353940', '')
 call one#highlight('StatusLineNC', '353940', 'abb2bf', '')
 call one#highlight('LineNr', '828997', '', '')
+
+highlight TagbarSignature guifg=#8e94a1
 
 " command line
 set noshowcmd
