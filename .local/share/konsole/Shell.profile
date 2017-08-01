@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=OneDark
-Font=Monospace,16,-1,5,50,0,0,0,0,0,Regular
+Font=Monospace,17,-1,5,50,0,0,0,0,0,Regular
 UseFontLineChararacters=false
 
 [General]
