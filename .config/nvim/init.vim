@@ -11,8 +11,6 @@ Plug 'zchee/deoplete-jedi'
 Plug 'shougo/neoinclude.vim'
 
 " file management
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
-Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
 " git
@@ -100,6 +98,7 @@ let g:qf_loclist_window_bottom = 0
 " signify
 let g:signify_vcs_list = [ "git" ]
 let g:signify_sign_change = "~"
+let g:signify_sign_show_count = 0
 
 " sneak
 let g:sneak#label = 1
@@ -218,9 +217,6 @@ noremap <leader>Y "+Y
 
 nnoremap <leader>r :source $MYVIMRC<CR>
 
-nnoremap <leader>fi :Files<CR>
-nnoremap <leader>ft :Tags<CR>
-nnoremap <leader>fb :BTags<CR>
 nnoremap <leader>gr :Grepper<CR>
 nnoremap <leader>gb :Grepper-buffers<CR>
 nnoremap <leader>nf :Neoformat<CR>

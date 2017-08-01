@@ -83,6 +83,3 @@ alias gcm="git commit -m"
 alias gte="git remote"
 alias gsm="git submodule"
 alias gbr="git branch"
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
