@@ -48,6 +48,9 @@ alias py="python"
 alias py2="python2"
 alias py3="python3"
 
+# xdg alias
+alias xdgo="xdg-open"
+
 # package manager alias
 alias apti="sudo apt install"
 alias apts="sudo apt update"
