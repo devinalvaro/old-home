@@ -81,6 +81,9 @@ sudo $install tmux
 if [ $manager == "apt" ]; then sudo $install fonts-powerline; fi
 if [ $manager == "dnf" ]; then sudo $install powerline-fonts; fi
 
+# konsole
+sed -i -e 's/,Regular//g' .config/kdeglobals
+
 # yakuake
 sudo $install yakuake
 
