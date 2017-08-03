@@ -23,11 +23,9 @@ bindkey -s '\eh' 'cd\n'
 bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 
-# path
+# environment variables
+export PATH=$HOME/.local/bin:$PATH
 export ZSH=/home/devin/.oh-my-zsh
-
-export GOPATH=$HOME/.gopath
-export PATH=$HOME/.local/bin:$GOPATH:$GOPATH/bin:$PATH
 
 # history
 setopt histignorespace
