@@ -38,8 +38,6 @@ sudo $install libtool-bin
 sudo $install clang
 if [ $manager == "apt" ]; then sudo $install clang-format; fi
 
-if [ $manager == "apt" ]; then sudo $install cppman; fi
-
 # pip
 sudo $install python-pip
 sudo $install python2-pip
