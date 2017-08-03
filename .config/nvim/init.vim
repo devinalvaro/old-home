@@ -143,7 +143,6 @@ autocmd VimResized * wincmd =
 " color
 set termguicolors
 set background=dark
-
 colorscheme one
 
 call one#highlight('Normal', 'none', 'none', '')
@@ -172,11 +171,6 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set shiftround
-
-" keywordprg
-autocmd FileType cpp setlocal keywordprg=:term\ cppman
-autocmd FileType python setlocal keywordprg=:term\ pydoc
-autocmd FileType vim setlocal keywordprg=:help
 
 " matching
 set showmatch
