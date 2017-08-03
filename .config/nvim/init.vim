@@ -65,7 +65,11 @@ call plug#end()
 " ale
 let g:ale_lint_on_text_changed = "normal"
 let g:ale_lint_on_insert_leave = 1
-let g:ale_cpp_clangcheck_executable = ""
+let g:ale_linters = {
+            \ "c": [ "clang" ],
+            \ "cpp": [ "clang" ],
+            \ "py": [ "pylint" ]
+            \ }
 
 " delimitmate
 let g:delimitMate_matchpairs = "(:),[:],{:}"
@@ -99,6 +103,9 @@ let g:qf_loclist_window_bottom = 0
 let g:signify_vcs_list = [ "git" ]
 let g:signify_sign_change = "~"
 let g:signify_sign_show_count = 0
+
+" sleuth
+let g:sleuth_automatic = 0
 
 " sneak
 let g:sneak#label = 1
