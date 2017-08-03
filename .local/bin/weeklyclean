@@ -17,16 +17,12 @@ fi
 if [ $manager == "apt" ]; then sudo apt autoremove -y; fi
 if [ $manager == "dnf" ]; then sudo dnf autoremove -y; fi
 
-# clean archive package files
-if [ $manager == "apt" ]; then
-   sudo apt-get clean -y
-   sudo apt-get autoclean -y
-elif [ $manager == "dnf" ]; then
-   sudo dnf clean -y all
-fi
+# clean package archives
+if [ $manager == "apt" ]; then sudo apt-get clean -y; sudo apt-get autoclean -y; fi
+if [ $manager == "dnf" ]; then sudo dnf clean -y all; fi
 
-# clean unused config files
+# remove unused config files
 if [ $manager == "apt" ]; then sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2); fi
 
-# uninstall vim plugins
+# clean vim plugins
 nvim -c 'PlugClean' -c 'qa!'
