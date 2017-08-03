@@ -167,14 +167,16 @@ set confirm
 set guicursor=n-v-c-ci-sm:block,i-ve:ver100,r-cr-o:hor100
             \,a:blinkwait100-blinkoff100-blinkon100
 
-" documentation
-autocmd FileType vim setlocal keywordprg=:help
-
 " indentation
 set expandtab
 set softtabstop=4
 set shiftwidth=4
 set shiftround
+
+" keywordprg
+autocmd FileType cpp setlocal keywordprg=:term\ cppman
+autocmd FileType python setlocal keywordprg=:term\ pydoc
+autocmd FileType vim setlocal keywordprg=:help
 
 " matching
 set showmatch
