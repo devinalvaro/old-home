@@ -45,9 +45,9 @@ sudo $install python-pip
 sudo $install python2-pip
 sudo $install python3-pip
 
-pip install --user yapf
-pip install --user pylint
-pip install --user jedi
+pip2 install --user yapf; pip3 install --user yapf;
+pip2 install --user pylint; pip3 install --user pylint;
+pip2 install --user jedi; pip3 install --user jedi;
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
@@ -61,7 +61,7 @@ if [ $manager == "apt" ]; then
 fi
 
 sudo $install neovim
-pip install --user neovim
+pip2 install --user neovim; pip3 install --user neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim -u NONE -U NONE -N -i NONE -c 'source .config/nvim/init.vim' -c 'PlugInstall' -c 'qa!'
