@@ -144,7 +144,6 @@ autocmd VimResized * wincmd =
 set termguicolors
 set background=dark
 
-" colorscheme
 colorscheme one
 
 call one#highlight('Normal', 'none', 'none', '')
@@ -194,13 +193,16 @@ set lazyredraw
 set scrolljump=-50
 
 " search
-set smartcase
 set ignorecase
+set smartcase
 set gdefault
 set inccommand=nosplit
 
-" status
+" statusline
 set statusline=%f\ %M\ %=\ %{gutentags#statusline('tags')}\ %{fugitive#head()}\ %l:%v
+
+" tags
+set tagcase=match
 
 " undo
 set undofile
