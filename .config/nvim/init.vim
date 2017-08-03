@@ -165,7 +165,8 @@ set noshowmode
 set confirm
 
 " cursor
-set guicursor=a:blinkon100
+set guicursor=n-v-c-ci-sm:block,i-ve:ver100,r-cr-o:hor100
+            \,a:blinkwait100-blinkoff100-blinkon100
 
 " documentation
 autocmd FileType vim setlocal keywordprg=:help
