@@ -10,7 +10,7 @@ Plug 'zchee/deoplete-clang'
 Plug 'zchee/deoplete-jedi'
 Plug 'shougo/neoinclude.vim'
 
-" file management
+" file search
 Plug 'mhinz/vim-grepper'
 
 " git
@@ -25,6 +25,7 @@ Plug 'romainl/vim-qf'
 
 " snippet
 Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
 
 " tags
 Plug 'ludovicchabant/vim-gutentags'
@@ -117,7 +118,6 @@ let g:tagbar_autofocus = 1
 
 " ultisnips
 let g:UltiSnipsEditSplit = "horizontal"
-let g:UltiSnipsSnippetsDir = "~/.config/nvim/snips"
 let g:UltiSnipsSnippetDirectories = [ "snips" ]
 let g:UltiSnipsExpandTrigger = "<c-f>"
 let g:UltiSnipsJumpForwardTrigger = "<a-f>"
