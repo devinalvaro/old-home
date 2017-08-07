@@ -7,7 +7,7 @@ if which tmux >/dev/null 2>&1; then
     done
 fi
 
-# function
+# ranger
 function ranger {
     tempfile="$(mktemp -t tmp.XXXXXX)"
     /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
@@ -37,6 +37,12 @@ ZSH_THEME="spaceship"
 plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+# fzf
+FZF_DEFAULT_OPTS="--reverse"
+FZF_TMUX=1
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # editor
 export EDITOR='vi'

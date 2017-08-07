@@ -11,6 +11,8 @@ Plug 'zchee/deoplete-jedi'
 Plug 'shougo/neoinclude.vim'
 
 " file search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
+Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
 " git
@@ -92,6 +94,9 @@ let g:deoplete#sources#jedi#show_docstring = 1
 
 " easy-align
 noremap gl <Plug>(EasyAlign)
+
+" fzf
+let g:fzf_history_dir = '~/.local/share/nvim/fzf'
 
 " gutentags
 let g:gutentags_project_root = [ ".betags" ]
@@ -223,11 +228,14 @@ noremap <leader>Y "+Y
 
 nnoremap <leader>r :source $MYVIMRC<CR>
 
-nnoremap <leader>gr :Grepper<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>fb :BTags<CR>
+nnoremap <leader>ft :Tags<CR>
+nnoremap <leader>g :Grepper<CR>
 nnoremap <leader>gb :Grepper-buffers<CR>
-nnoremap <leader>nf :Neoformat<CR>
-nnoremap <leader>tt :TagbarToggle<CR>
-nnoremap <leader>ut :UndotreeToggle<CR>
+nnoremap <leader>n :Neoformat<CR>
+nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 
 " normal/visual remap
 noremap c "_c
