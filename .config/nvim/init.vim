@@ -5,10 +5,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " completion
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-clang'
-Plug 'zchee/deoplete-jedi'
-Plug 'shougo/neoinclude.vim'
+Plug 'roxma/clang_complete'
+Plug 'roxma/nvim-completion-manager'
 
 " file search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
@@ -53,7 +51,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'michaeljsmith/vim-indent-object'
 
 " tmux
-Plug 'wellle/tmux-complete.vim'
 Plug 'christoomey/vim-tmux-navigator'
 
 " undo
@@ -80,23 +77,11 @@ let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_buffer_path = 1
-autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
-
-" deoplete-clang
-let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-3.8/lib/libclang.so.1"
-let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
-
-" deoplete-jedi
-let g:deoplete#sources#jedi#show_docstring = 1
-
 " easy-align
 noremap gl <Plug>(EasyAlign)
 
 " fzf
-let g:fzf_history_dir = '~/.local/share/nvim/fzf'
+let g:fzf_history_dir = "~/.local/share/nvim/fzf"
 
 " gutentags
 let g:gutentags_project_root = [ ".betags" ]
@@ -104,6 +89,11 @@ let g:gutentags_project_root = [ ".betags" ]
 " qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
+
+" nvim-completion-manager
+let g:cm_refresh_length = [ [ 1, 3 ], [7, 2] ]
+
+let g:clang_library_path = "/usr/lib/llvm-3.8/lib"
 
 " signify
 let g:signify_vcs_list = [ "git" ]
@@ -146,23 +136,23 @@ set splitbelow
 autocmd VimResized * wincmd =
 
 " color
-set termguicolors
 set background=dark
+set termguicolors
+
 colorscheme one
 
 call one#highlight('Normal', 'none', 'none', '')
 call one#highlight('Comment', '8e94a1', '', '')
-call one#highlight('vimLineComment', '8e94a1', '', '')
-call one#highlight('vertSplit', '828997', '', '')
+call one#highlight('LineNr', '828997', '', '')
 call one#highlight('StatusLine', '', '353940', '')
 call one#highlight('StatusLineNC', '353940', 'abb2bf', '')
-call one#highlight('LineNr', '828997', '', '')
+call one#highlight('vertSplit', '828997', '', '')
+call one#highlight('vimLineComment', '8e94a1', '', '')
 
 highlight TagbarSignature guifg=#8e94a1
 
-" command line
-set noshowcmd
-set noshowmode
+" compatible
+set cpoptions-=_
 
 " confirmation
 set confirm
@@ -173,16 +163,18 @@ set guicursor=n-v-c-ci-sm:block,i-ve:ver100,r-cr-o:hor100
 
 " indentation
 set expandtab
-set softtabstop=4
-set shiftwidth=4
 set shiftround
+set shiftwidth=4
+set softtabstop=4
 
 " matching
-set showmatch
 set matchpairs+=<:>
+set showmatch
 
-" motion
-set cpoptions-=_
+" messages
+set noshowcmd
+set noshowmode
+set shortmess+=cF
 
 " number
 set numberwidth=2
@@ -194,10 +186,10 @@ set lazyredraw
 set scrolljump=-50
 
 " search
-set ignorecase
-set smartcase
 set gdefault
 set inccommand=nosplit
+set ignorecase
+set smartcase
 
 " statusline
 set statusline=%f\ %M\ %=\ %{gutentags#statusline('tags')}\ %{fugitive#head()}\ %l:%v
@@ -210,6 +202,8 @@ set undofile
 
 " wrapping
 set breakindent
+set linebreak
+let &showbreak = "↳ "
 
 """""""""
 " Remap "
