@@ -1,8 +1,9 @@
 #!/bin/bash
 
-rm -f ~/.local/share/nvim/shada/main.shada
 rm -f ~/.local/share/nvim/undo/*
+rm -f ~/.local/share/nvim/fzf/*
 
+rm ~/.local/share/nvim/shada/main.shada; touch $_
 rm ~/.lesshst; touch $_
 rm ~/.bash_history; touch $_
 rm ~/.zsh_history; touch $_
