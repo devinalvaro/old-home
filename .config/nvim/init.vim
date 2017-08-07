@@ -67,8 +67,8 @@ call plug#end()
 let g:ale_lint_on_text_changed = "normal"
 let g:ale_lint_on_insert_leave = 1
 let g:ale_linters = {
-            \ "c": [ "clang" ],
-            \ "cpp": [ "clang" ],
+            \ "c": [ "gcc" ],
+            \ "cpp": [ "g++" ],
             \ "py": [ "pylint" ]
             \ }
 
