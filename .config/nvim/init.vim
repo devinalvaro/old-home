@@ -225,7 +225,7 @@ nnoremap <leader>r :source $MYVIMRC<CR>
 nnoremap <leader>fi :Files<CR>
 nnoremap <leader>fb :BTags<CR>
 nnoremap <leader>ft :Tags<CR>
-nnoremap <leader>gi :Grepper<CR>
+nnoremap <leader>gr :Grepper<CR>
 nnoremap <leader>gb :Grepper-buffers<CR>
 nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
