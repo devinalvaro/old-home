@@ -39,8 +39,7 @@ plugins=(zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # fzf
-FZF_DEFAULT_OPTS="--reverse"
-FZF_TMUX=1
+FZF_DEFAULT_OPTS="--reverse --inline-info"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
