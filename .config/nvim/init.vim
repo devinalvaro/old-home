@@ -91,7 +91,7 @@ let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
 
 " nvim-completion-manager
-let g:cm_refresh_length = [ [ 1, 3 ], [7, 2] ]
+let g:cm_refresh_length = [ [ 1, 4 ], [7, 2] ]
 
 let g:clang_library_path = "/usr/lib/llvm-3.8/lib"
 
