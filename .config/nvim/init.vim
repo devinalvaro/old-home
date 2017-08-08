@@ -9,7 +9,7 @@ Plug 'roxma/clang_complete'
 Plug 'roxma/nvim-completion-manager'
 
 " file search
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-update-rc' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-key-bindings --completion --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
