@@ -77,6 +77,9 @@ let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
+" clang_complete
+let g:clang_library_path = "/usr/lib/llvm-3.8/lib"
+
 " easy-align
 noremap gl <Plug>(EasyAlign)
 
@@ -90,10 +93,13 @@ let g:gutentags_project_root = [ ".betags" ]
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
 
+" neoformat
+let g:neoformat_enabled_c = [ "clangformat" ]
+let g:neoformat_enabled_cpp = [ "clangformat" ]
+let g:neoformat_enabled_python = [ "yapf" ]
+
 " nvim-completion-manager
 let g:cm_refresh_length = [ [ 1, 4 ], [7, 2] ]
-
-let g:clang_library_path = "/usr/lib/llvm-3.8/lib"
 
 " signify
 let g:signify_vcs_list = [ "git" ]
