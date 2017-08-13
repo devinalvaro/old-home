@@ -25,6 +25,8 @@ bindkey -s '\ev' 'vim\n'
 
 # environment variables
 export PATH=$HOME/.local/bin:$PATH
+
+export NLTK_DATA=/home/devin/.nltk-data
 export ZSH=/home/devin/.oh-my-zsh
 
 # history
