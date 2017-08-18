@@ -193,7 +193,6 @@ set scrolljump=-50
 
 " search
 set gdefault
-set inccommand=nosplit
 set ignorecase
 set smartcase
 
