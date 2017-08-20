@@ -39,6 +39,15 @@ sudo $install libtool-bin
 sudo $install clang
 if [ $manager == "apt" ]; then sudo $install clang-format; fi
 
+# java
+if [ $manager == "apt" ]; then sudo $install openjdk-8-jdk; fi
+if [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
+
+# npm
+sudo $install npm
+
+sudo npm install -g js-beautify
+
 # pip
 sudo $install python-pip
 sudo $install python2-pip
@@ -47,10 +56,6 @@ sudo $install python3-pip
 pip2 install --user yapf; pip3 install --user yapf;
 pip2 install --user pylint; pip3 install --user pylint;
 pip2 install --user jedi; pip3 install --user jedi;
-
-# java
-if [ $manager == "apt" ]; then sudo $install openjdk-8-jdk; fi
-if [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti

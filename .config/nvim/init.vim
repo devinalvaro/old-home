@@ -96,6 +96,9 @@ let g:qf_loclist_window_bottom = 0
 " neoformat
 let g:neoformat_enabled_c = [ "clangformat" ]
 let g:neoformat_enabled_cpp = [ "clangformat" ]
+let g:neoformat_enabled_css = [ "cssbeautify" ]
+let g:neoformat_enabled_html = [ "htmlbeautify" ]
+let g:neoformat_enabled_javascript = [ "jsbeautify" ]
 let g:neoformat_enabled_python = [ "yapf" ]
 
 " nvim-completion-manager
