@@ -28,10 +28,8 @@ sudo $install pkg-config
 
 # libs
 sudo $install libevent-dev
-
 sudo $install libncurses5-dev
 sudo $install libncursesw5-dev
-
 sudo $install libtool
 sudo $install libtool-bin
 
@@ -46,16 +44,19 @@ if [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
 # npm
 sudo $install npm
 
+sudo npm install -g eslint
+sudo npm install -g htmlhint
 sudo npm install -g js-beautify
+sudo npm install -g stylelint
 
 # pip
 sudo $install python-pip
 sudo $install python2-pip
 sudo $install python3-pip
 
-pip2 install --user yapf; pip3 install --user yapf;
-pip2 install --user pylint; pip3 install --user pylint;
 pip2 install --user jedi; pip3 install --user jedi;
+pip2 install --user pylint; pip3 install --user pylint;
+pip2 install --user yapf; pip3 install --user yapf;
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
