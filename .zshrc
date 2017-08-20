@@ -19,6 +19,7 @@ function ranger {
 }
 
 # key binding
+bindkey -s '\ea' '; echo -e \"\\a\"\n'
 bindkey -s '\eh' 'cd\n'
 bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
