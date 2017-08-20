@@ -24,6 +24,7 @@ git checkout -t origin/master
 sudo $install autoconf
 sudo $install automake
 sudo $install cmake
+sudo $install pkg-config
 
 # libs
 sudo $install libevent-dev
