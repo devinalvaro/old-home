@@ -24,7 +24,7 @@ bindkey -s '\eh' 'cd\n'
 bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 
-# environment variables
+# env variables
 export PATH=$HOME/.local/bin:$PATH
 
 export NLTK_DATA=/home/devin/.nltk-data
@@ -33,10 +33,12 @@ export ZSH=/home/devin/.oh-my-zsh
 # history
 setopt histignorespace
 
-# theme
+# zsh theme
 ZSH_THEME="spaceship"
 
-# plugin
+export SPACESHIP_PACKAGE_SHOW='false'
+
+# zsh plugin
 plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
@@ -57,7 +59,7 @@ alias py3="python3"
 # xdg alias
 alias xo="xdg-open"
 
-# package manager alias
+# apt alias
 alias apti="sudo apt install"
 alias apts="sudo apt update"
 alias aptu="sudo apt upgrade"
@@ -65,6 +67,7 @@ alias aptr="sudo apt remove"
 alias aptp="sudo apt purge"
 alias apta="sudo apt autoremove"
 
+# dnf alias
 alias dnfs="sudo dnf search"
 alias dnfi="sudo dnf install"
 alias dnfu="sudo dnf upgrade"
