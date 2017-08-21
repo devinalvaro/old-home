@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " completion
 Plug 'roxma/clang_complete'
+Plug 'roxma/nvim-cm-tern', { 'do': 'npm install' }
 Plug 'roxma/nvim-completion-manager'
 
 " file search
