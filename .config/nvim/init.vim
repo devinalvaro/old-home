@@ -69,7 +69,7 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_linters = {
             \ "c": [ "gcc" ],
             \ "cpp": [ "g++" ],
-            \ "css": [ "stylehint" ],
+            \ "css": [ "stylelint" ],
             \ "html": [ "htmlhint" ],
             \ "javascript": [ "eslint" ],
             \ "py": [ "pylint" ]
