@@ -45,9 +45,11 @@ if [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
 sudo $install npm
 
 sudo npm install -g eslint
+sudo npm install -g eslint-config-airbnb-base
+sudo npm install -g eslint-plugin-import
+
 sudo npm install -g htmlhint
 sudo npm install -g js-beautify
-sudo npm install -g stylelint
 
 # pip
 sudo $install python-pip
