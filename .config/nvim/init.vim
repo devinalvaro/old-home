@@ -36,7 +36,6 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
-Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-endwise'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
@@ -83,9 +82,6 @@ let g:delimitMate_balance_matchpairs = 1
 
 " clang_complete
 let g:clang_library_path = "/usr/lib/llvm-3.8/lib"
-
-" easy-align
-noremap gl <Plug>(EasyAlign)
 
 " fzf
 let g:fzf_history_dir = "~/.local/share/nvim/fzf"
