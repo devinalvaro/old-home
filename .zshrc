@@ -32,7 +32,7 @@ export NLTK_DATA=/home/devin/.nltk-data
 export ZSH=/home/devin/.oh-my-zsh
 
 # editor
-export EDITOR="vi"
+export EDITOR="vim"
 
 # fzf
 export FZF_DEFAULT_OPTS="--reverse --inline-info"
