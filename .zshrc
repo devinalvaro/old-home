@@ -24,32 +24,30 @@ bindkey -s '\eh' 'cd\n'
 bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 
-# env variables
+# path
 export PATH=$HOME/.local/bin:$PATH
 
+# env variables
 export NLTK_DATA=/home/devin/.nltk-data
 export ZSH=/home/devin/.oh-my-zsh
 
-# history
-setopt histignorespace
+# editor
+export EDITOR="vi"
 
-# zsh theme
-ZSH_THEME="spaceship"
+# fzf
+export FZF_DEFAULT_OPTS="--reverse --inline-info"
 
-export SPACESHIP_PACKAGE_SHOW='false'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # zsh plugin
 plugins=(zsh-autosuggestions)
 
+# zsh theme
+export ZSH_THEME="spaceship"
+export SPACESHIP_PACKAGE_SHOW="false"
+
+# zsh
 source $ZSH/oh-my-zsh.sh
-
-# fzf
-FZF_DEFAULT_OPTS="--reverse --inline-info"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# editor
-export EDITOR='vi'
 
 # python alias
 alias py="python"
