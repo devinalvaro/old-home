@@ -81,7 +81,7 @@ let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
 " clang_complete
-let g:clang_library_path = "/usr/lib/llvm-3.8/lib"
+let g:clang_library_path = "/usr/lib/llvm-3.8/lib/libclang-3.8.so.1"
 
 " fzf
 let g:fzf_history_dir = "~/.local/share/nvim/fzf"
