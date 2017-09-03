@@ -10,7 +10,7 @@ Plug 'roxma/nvim-cm-tern', { 'do': 'npm install' }
 Plug 'roxma/nvim-completion-manager'
 
 " file search
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-key-bindings --no-update-rc' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
