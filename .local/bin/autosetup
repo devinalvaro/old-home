@@ -32,6 +32,11 @@ sudo $install libncurses5-dev
 sudo $install libncursesw5-dev
 sudo $install libtool
 sudo $install libtool-bin
+sudo $install libc6:i386
+sudo $install libncurses5:i386
+sudo $install libstdc++6:i386
+sudo $install lib32z1
+sudo $install libbz2-1.0:i386
 
 # clang
 sudo $install clang
