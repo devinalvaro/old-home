@@ -12,3 +12,4 @@ rm ~/.mysql_history; touch $_
 rm ~/.config/nvim/.netrwhist; touch $_
 rm ~/.octave_hist; touch $_
 rm ~/.config/ranger/history; touch $_
+rm ~/.viminfo; touch $_

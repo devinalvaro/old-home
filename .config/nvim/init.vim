@@ -5,9 +5,11 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " completion
-Plug 'roxma/clang_complete'
-Plug 'roxma/nvim-cm-tern', { 'do': 'npm install' }
-Plug 'roxma/nvim-completion-manager'
+if has('nvim')
+    Plug 'roxma/clang_complete'
+    Plug 'roxma/nvim-cm-tern', { 'do': 'npm install' }
+    Plug 'roxma/nvim-completion-manager'
+endif
 
 " file search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -145,10 +147,12 @@ set splitbelow
 autocmd VimResized * wincmd =
 
 " color
-set background=dark
-set termguicolors
+if has('termguicolors')
+    set termguicolors
 
-colorscheme one
+    set background=dark
+    colorscheme one
+endif
 
 if (g:colors_name == 'one')
     highlight Normal ctermfg=none ctermfg=none
