@@ -150,15 +150,17 @@ set termguicolors
 
 colorscheme one
 
-call one#highlight('Normal', 'none', 'none', '')
-call one#highlight('Comment', '8e94a1', '', '')
-call one#highlight('LineNr', '828997', '', '')
-call one#highlight('StatusLine', '', '353940', '')
-call one#highlight('StatusLineNC', '353940', 'abb2bf', '')
-call one#highlight('vertSplit', '828997', '', '')
-call one#highlight('vimLineComment', '8e94a1', '', '')
+if (g:colors_name == 'one')
+    highlight Normal ctermfg=none ctermfg=none
+    highlight Comment guifg=#8e94a1
+    highlight LineNr guifg=#828997
+    highlight StatusLine guibg=#353940
+    highlight StatusLineNC guifg=#353940 guifg=#abb2bf
+    highlight vertSplit guifg=#828997
+    highlight vimLineComment guifg=#8e94a1
 
-highlight TagbarSignature guifg=#8e94a1
+    highlight TagbarSignature guifg=#8e94a1
+endif
 
 " compatible
 set cpoptions-=_
