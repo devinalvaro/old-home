@@ -1,4 +1,6 @@
 ﻿AccessModifierOffset: -4
+AlwaysBreakTemplateDeclarations: true
 BreakBeforeBraces: Linux
 ColumnLimit: '80'
+ReflowComments: false
 IndentWidth: 4
