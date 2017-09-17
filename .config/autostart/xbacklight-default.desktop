@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=xbacklight-default
-Exec=/usr/bin/xbacklight -set 5
-
