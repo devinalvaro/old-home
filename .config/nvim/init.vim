@@ -65,6 +65,9 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " ale
+" - stylelint: ~/.stylelintrc.json
+" - eslint: ~/.eslintrc.json
+" - pylint: ~/.pylintrc
 let g:ale_lint_on_text_changed = "normal"
 let g:ale_lint_on_insert_leave = 1
 let g:ale_linters = {
@@ -96,6 +99,8 @@ let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
 
 " neoformat
+" - clangformat: ~/.clang-format
+" - yapf: ~/.style.yapf
 let g:neoformat_enabled_c = [ "clangformat" ]
 let g:neoformat_enabled_cpp = [ "clangformat" ]
 let g:neoformat_enabled_css = [ "cssbeautify" ]
