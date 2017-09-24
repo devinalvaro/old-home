@@ -117,7 +117,7 @@ let g:signify_sign_change = "~"
 let g:signify_sign_show_count = 0
 
 " sleuth
-let g:sleuth_automatic = 0
+let g:sleuth_automatic = 1
 
 " sneak
 let g:sneak#label = 1
