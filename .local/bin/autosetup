@@ -46,6 +46,11 @@ if [ $manager == "apt" ]; then sudo $install clang-format; fi
 if [ $manager == "apt" ]; then sudo $install openjdk-8-jdk; fi
 if [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
 
+# cargo
+sudo $install cargo
+
+cargo install ripgrep
+
 # npm
 sudo $install npm
 
@@ -89,10 +94,6 @@ sudo $install vim
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# ag
-if [ $manager == "apt" ]; then sudo $install silversearcher-ag; fi
-if [ $manager == "dnf" ]; then sudo $install the_silver_searcher; fi
 
 # ranger
 sudo $install ranger

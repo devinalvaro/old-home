@@ -25,7 +25,7 @@ bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 
 # path
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 # env variables
 export NLTK_DATA=/home/devin/.nltk-data
@@ -35,6 +35,7 @@ export ZSH=/home/devin/.oh-my-zsh
 export EDITOR="vim"
 
 # fzf
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 export FZF_DEFAULT_OPTS="--reverse --inline-info"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
