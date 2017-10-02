@@ -1,6 +1,8 @@
 ﻿AccessModifierOffset: -4
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
 AlwaysBreakTemplateDeclarations: true
-BreakBeforeBraces: Linux
+BreakBeforeBraces: Attach
 ColumnLimit: '80'
-ReflowComments: false
 IndentWidth: 4
+ReflowComments: false
