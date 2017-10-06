@@ -70,17 +70,8 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_linters = {
             \ "c": [ "gcc" ],
             \ "cpp": [ "g++" ],
-            \ "css": [ "stylelint" ],
-            \ "html": [ "htmlhint" ],
-            \ "javascript": [ "eslint" ],
             \ "py": [ "pylint" ]
             \ }
-            " - gcc:
-            " - g++:
-            " - stylelint: ~/.stylelintrc.json
-            " - htmlhint:
-            " - eslint: ~/.eslintrc.json
-            " - pylint: ~/.pylintrc
 
 " delimitmate
 let g:delimitMate_matchpairs = "(:),[:],{:}"
@@ -109,16 +100,7 @@ let g:qf_loclist_window_bottom = 0
 " neoformat
 let g:neoformat_enabled_c = [ "clangformat" ]
 let g:neoformat_enabled_cpp = [ "clangformat" ]
-let g:neoformat_enabled_css = [ "cssbeautify" ]
-let g:neoformat_enabled_html = [ "htmlbeautify" ]
-let g:neoformat_enabled_javascript = [ "jsbeautify" ]
 let g:neoformat_enabled_python = [ "yapf" ]
-" - clangformat: ~/.clang-format
-" - clangformat: ~/.clang-format
-" - cssbeautify:
-" - htmlbeautify:
-" - jsbeautify:
-" - yapf: ~/.style.yapf
 
 " nvim-completion-manager
 let g:cm_refresh_length = [ [ 1, 4 ], [7, 2] ]

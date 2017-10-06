@@ -54,11 +54,6 @@ cargo install ripgrep
 # npm
 sudo $install npm
 
-sudo npm install -g eslint
-
-sudo npm install -g htmlhint
-sudo npm install -g js-beautify
-
 # pip
 sudo $install python2-pip
 sudo $install python3-pip

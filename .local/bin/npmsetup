@@ -1,5 +1,0 @@
-#!/bin/bash -v
-
-# stylelint
-npm install --save-dev stylelint
-npm install --save-dev stylelint-config-standard
