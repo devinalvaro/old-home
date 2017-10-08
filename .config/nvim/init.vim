@@ -73,14 +73,14 @@ let g:ale_linters = {
             \ "py": [ "pylint" ]
             \ }
 
+" clang_complete
+let g:clang_library_path = "/usr/lib/llvm-3.8/lib/libclang-3.8.so.1"
+
 " delimitmate
 let g:delimitMate_matchpairs = "(:),[:],{:}"
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
-
-" clang_complete
-let g:clang_library_path = "/usr/lib/llvm-3.8/lib/libclang-3.8.so.1"
 
 " fzf
 let g:fzf_history_dir = "~/.local/share/nvim/fzf"
@@ -158,7 +158,7 @@ if (g:colors_name == 'one')
     highlight Comment guifg=#8e94a1
     highlight LineNr guifg=#828997
     highlight StatusLine guibg=#353940
-    highlight StatusLineNC guifg=#353940 guifg=#abb2bf
+    highlight StatusLineNC guifg=#353940 guibg=#abb2bf
     highlight vertSplit guifg=#828997
     highlight vimLineComment guifg=#8e94a1
 
@@ -245,7 +245,7 @@ nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
-" normal/visual remap
+" normal+visual remap
 noremap c "_c
 noremap C "_C
 noremap d "_d
@@ -262,6 +262,8 @@ nnoremap ^ 0
 
 nnoremap cc "_cc
 nnoremap dd "_dd
+
+nnoremap gb :ls<CR>:b<SPACE>
 
 nnoremap <silent> <ESC> :nohlsearch<CR>
 
