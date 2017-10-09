@@ -174,8 +174,7 @@ set cpoptions-=_
 set confirm
 
 " cursor
-set guicursor=n-v-c-ci-sm:block,i-ve:ver100,r-cr-o:hor100
-            \,a:blinkwait100-blinkoff100-blinkon100
+set guicursor+=a:blinkon1
 
 " indentation
 set expandtab
@@ -239,8 +238,10 @@ nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fi :Files<CR>
 nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>ft :Tags<CR>
+
 nnoremap <leader>gb :Grepper-buffers<CR>
 nnoremap <leader>gr :Grepper<CR>
+
 nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
