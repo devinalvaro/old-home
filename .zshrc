@@ -35,8 +35,9 @@ export ZSH=/home/devin/.oh-my-zsh
 export EDITOR="vim"
 
 # fzf
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
-export FZF_DEFAULT_OPTS="--reverse --inline-info"
+export FZF_DEFAULT_OPTS="--inline-info"
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --follow -g "!{.git,node_modules,SDK}/*" -g "!tags" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

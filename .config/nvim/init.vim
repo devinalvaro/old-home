@@ -197,9 +197,6 @@ set numberwidth=2
 " redrawing
 set lazyredraw
 
-" scroll
-set scrolljump=-50
-
 " search
 set gdefault
 set ignorecase
@@ -236,11 +233,12 @@ noremap <leader>Y "+Y
 
 nnoremap <leader>r :source $MYVIMRC<CR>
 
+nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fi :Files<CR>
-nnoremap <leader>fb :BTags<CR>
+nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>ft :Tags<CR>
-nnoremap <leader>gr :Grepper<CR>
 nnoremap <leader>gb :Grepper-buffers<CR>
+nnoremap <leader>gr :Grepper<CR>
 nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
@@ -262,8 +260,6 @@ nnoremap ^ 0
 
 nnoremap cc "_cc
 nnoremap dd "_dd
-
-nnoremap gb :ls<CR>:b<SPACE>
 
 nnoremap <silent> <ESC> :nohlsearch<CR>
 
