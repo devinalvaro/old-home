@@ -5,7 +5,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " completion
-if has('nvim')
+if has('nvim') && has('python3')
     Plug 'roxma/clang_complete'
     Plug 'roxma/nvim-cm-tern', { 'do': 'npm install' }
     Plug 'roxma/nvim-completion-manager'
@@ -27,8 +27,10 @@ Plug 'w0rp/ale'
 Plug 'romainl/vim-qf'
 
 " snippet
-Plug 'sirver/ultisnips'
-Plug 'honza/vim-snippets'
+if has('python3')
+    Plug 'sirver/ultisnips'
+    Plug 'honza/vim-snippets'
+endif
 
 " tags
 Plug 'ludovicchabant/vim-gutentags'
