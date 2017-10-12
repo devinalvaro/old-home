@@ -25,4 +25,4 @@ if [ $manager == "dnf" ]; then sudo dnf clean -y all; fi
 if [ $manager == "apt" ]; then sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2); fi
 
 # clean vim plugins
-nvim -c 'PlugClean' -c 'qa!'
+vim -c 'PlugClean' -c 'qa!'

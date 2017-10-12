@@ -20,9 +20,9 @@ if [ $manager == "dnf" ]; then sudo dnf upgrade -y; fi
 # zsh
 upgrade_oh_my_zsh
 
-# neovim
-nvim -c 'PlugUpgrade' -c 'qa!'
-nvim -c 'PlugUpdate' -c 'qa!'
+# vim
+vim -c 'PlugUpgrade' -c 'qa!'
+vim -c 'PlugUpdate' -c 'qa!'
 
 # pip
 sudo -H pip2 install --upgrade pip
