@@ -7,9 +7,6 @@ cd ~
 if type "apt" > /dev/null 2>&1; then
 	manager="apt"
 	install="apt install -y"
-elif type "dnf" > /dev/null 2>&1; then
-	manager="dnf"
-	install="dnf install -y"
 fi
 
 # git
@@ -44,7 +41,6 @@ if [ $manager == "apt" ]; then sudo $install clang-format; fi
 
 # java
 if [ $manager == "apt" ]; then sudo $install openjdk-8-jdk; fi
-if [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
 
 # cargo
 sudo $install cargo
@@ -90,7 +86,6 @@ sudo $install xsel
 
 # fonts
 if [ $manager == "apt" ]; then sudo $install fonts-powerline; fi
-if [ $manager == "dnf" ]; then sudo $install powerline-fonts; fi
 
 # konsole
 sed -i -e 's/,Regular//g' .config/kdeglobals
@@ -103,9 +98,6 @@ if [ $manager == "apt" ]; then
 	sudo add-apt-repository -y ppa:twodopeshaggy/drive
 	sudo apt update -y
 	sudo $install drive
-elif [ $manager == "dnf" ]; then
-	sudo dnf copr enable -y vaughan/drive-google
-	sudo $install drive-google
 fi
 
 # universal-tags
