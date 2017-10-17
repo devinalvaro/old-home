@@ -1,4 +1,5 @@
 ﻿AccessModifierOffset: -4
+AlignTrailingComments: false
 AllowShortBlocksOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None
 AlwaysBreakTemplateDeclarations: true
