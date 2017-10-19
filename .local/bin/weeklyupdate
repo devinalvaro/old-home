@@ -6,16 +6,9 @@ if [ $(date +%u) -ne 7 ]; then
    exit 1
 fi
 
-# package managers
-if type "apt" > /dev/null 2>&1; then
-	manager="apt"
-elif type "dnf" > /dev/null 2>&1; then
-	manager="dnf"
-fi
-
 # system
-if [ $manager == "apt" ]; then sudo apt update -y; sudo apt upgrade -y; fi
-if [ $manager == "dnf" ]; then sudo dnf upgrade -y; fi
+sudo apt update -y
+sudo apt upgrade -y
 
 # zsh
 upgrade_oh_my_zsh
