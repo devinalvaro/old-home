@@ -160,7 +160,7 @@ if has('termguicolors')
     colorscheme one
 endif
 
-if (g:colors_name == 'one')
+if has('termguicolors') && g:colors_name == 'one'
     highlight Normal ctermfg=none ctermfg=none
     highlight Comment guifg=#8e94a1
     highlight LineNr guifg=#828997
@@ -179,7 +179,11 @@ set cpoptions-=_
 set confirm
 
 " cursor
-set guicursor+=a:blinkon1
+if has('nvim')
+    set guicursor+=a:blinkon1
+elseif has('gui')
+    set guicursor+=a:blinkon0
+endif
 
 " indentation
 set expandtab
@@ -195,7 +199,7 @@ set showmatch
 " messages
 set noshowcmd
 set noshowmode
-set shortmess+=cF
+set shortmess+=cFI
 
 " number
 set numberwidth=2

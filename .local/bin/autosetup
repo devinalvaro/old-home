@@ -60,7 +60,8 @@ infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
 tic $TERM.ti
 rm $TERM.ti
 
-# neovim
+# vim
+sudo add-apt-repository -y ppa:jonathonf/vim
 sudo add-apt-repository -y ppa:neovim-ppa/stable
 sudo apt update -y 
 
