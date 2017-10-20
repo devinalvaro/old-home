@@ -1,15 +1,13 @@
 #!/bin/bash
 
-rm -f ~/.local/share/nvim/undo/*
-rm -f ~/.local/share/nvim/fzf/*
+rm -f ~/.vim/fzf/*
+rm -f ~/.vim/undo/*
 
-rm ~/.local/share/nvim/shada/main.shada; touch $_
-rm ~/.lesshst; touch $_
 rm ~/.bash_history; touch $_
-rm ~/.zsh_history; touch $_
-rm ~/.python_history; touch $_
+rm ~/.lesshst; touch $_
 rm ~/.mysql_history; touch $_
-rm ~/.config/nvim/.netrwhist; touch $_
 rm ~/.octave_hist; touch $_
-rm ~/.viminfo; touch $_
 rm ~/.psql_history; touch $_
+rm ~/.python_history; touch $_
+rm ~/.viminfo; touch $_
+rm ~/.zsh_history; touch $_

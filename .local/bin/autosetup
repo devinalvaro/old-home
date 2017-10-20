@@ -36,8 +36,13 @@ sudo $install libbz2-1.0:i386
 sudo $install clang
 sudo $install clang-format
 
-# java
-sudo $install openjdk-8-jdk
+# pip
+sudo $install python2-pip
+sudo $install python3-pip
+
+pip install --user jedi
+pip install --user pylint
+pip install --user yapf
 
 # cargo
 sudo $install cargo
@@ -47,13 +52,11 @@ cargo install ripgrep
 # npm
 sudo $install npm
 
-# pip
-sudo $install python2-pip
-sudo $install python3-pip
+# composer
+sudo $install composer
 
-pip install --user jedi
-pip install --user pylint
-pip install --user yapf
+# java
+sudo $install openjdk-8-jdk
 
 # terminfo
 infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
@@ -62,14 +65,16 @@ rm $TERM.ti
 
 # vim
 sudo add-apt-repository -y ppa:jonathonf/vim
-sudo add-apt-repository -y ppa:neovim-ppa/stable
 sudo apt update -y 
 
-sudo $install neovim
+sudo $install vim
 pip install --user neovim
 
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-nvim -u NONE -U NONE -N -i NONE -c 'source .config/nvim/init.vim' -c 'PlugInstall' -c 'qa!'
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim -u NONE -U NONE -N -i NONE -c 'source .vimrc' -c 'PlugInstall' -c 'qa!'
+
+mkdir ~/.vim/{fzf,undo}
 
 # tmux
 sudo $install tmux
