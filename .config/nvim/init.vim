@@ -18,6 +18,8 @@ Plug 'mhinz/vim-grepper'
 
 " git
 Plug 'tpope/vim-fugitive'
+Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'tpope/vim-rhubarb'
 Plug 'mhinz/vim-signify'
 
 " lint
@@ -83,6 +85,9 @@ let g:delimitMate_matchpairs = "(:),[:],{:}"
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
+
+" fugitive-gitlab
+let g:fugitive_gitlab_domains = [ 'https://gitlab.com', 'http://gitlab.informatika.org' ]
 
 " fzf
 let g:fzf_history_dir = "~/.local/share/nvim/fzf"
@@ -178,10 +183,10 @@ set guicursor+=a:blinkon1
 
 " indentation
 set expandtab
+set tabstop=4
+set softtabstop=4
 set shiftround
 set shiftwidth=4
-set softtabstop=4
-set tabstop=4
 
 " matching
 set matchpairs+=<:>
