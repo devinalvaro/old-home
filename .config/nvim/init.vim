@@ -110,7 +110,7 @@ let g:neoformat_enabled_cpp = [ "clangformat" ]
 let g:neoformat_enabled_python = [ "yapf" ]
 
 " nvim-completion-manager
-let g:cm_refresh_length = [ [ 1, 4 ], [7, 2] ]
+let g:cm_refresh_length = [ [ 1, 3 ], [7, 2] ]
 
 " signify
 let g:signify_vcs_list = [ "git" ]
@@ -251,7 +251,7 @@ nnoremap <leader>n :Neoformat<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
-" normal+visual remap
+" normal + visual remap
 noremap c "_c
 noremap C "_C
 noremap d "_d
@@ -287,6 +287,10 @@ vnoremap <silent> # :<C-U>
             \ gvy?<C-R><C-R>=substitute(
             \ escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
             \ gV:call setreg('"', old_reg, old_regtype)<CR>
+
+" insert remap
+inoremap <c-c> <ESC>
+inoremap <silent> <c-f> <c-r>=cm#sources#ultisnips#trigger_or_popup("\<Plug>(ultisnips_expand)")<cr>
 
 " command remap
 cnoremap w!! w !sudo tee > /dev/null %
