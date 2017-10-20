@@ -49,19 +49,11 @@ alias xo="xdg-open"
 
 # apt alias
 alias apti="sudo apt install"
-alias apts="sudo apt update"
-alias aptu="sudo apt upgrade"
+alias apts="sudo apt search"
+alias aptu="sudo apt update; sudo apt upgrade"
 alias aptr="sudo apt remove"
 alias aptp="sudo apt purge"
 alias apta="sudo apt autoremove"
-
-# dnf alias
-alias dnfs="sudo dnf search"
-alias dnfi="sudo dnf install"
-alias dnfu="sudo dnf upgrade"
-alias dnfr="sudo dnf remove"
-alias dnfc="sudo dnf clean"
-alias dnfa="sudo dnf autoremove"
 
 # git alias
 alias gcl="git clone"
