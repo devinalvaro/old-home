@@ -263,12 +263,12 @@ let mapleader = "\<space>"
 noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
 
-noremap <leader>p "*p
-noremap <leader>P "*P
-noremap <leader>y "*y
-noremap <leader>Y "*Y
-noremap <leader>x "*x
-noremap <leader>X "*X
+noremap <leader>p "+p
+noremap <leader>P "+P
+noremap <leader>y "+y
+noremap <leader>Y "+Y
+noremap <leader>x "+x
+noremap <leader>X "+X
 
 nnoremap <leader>r :source $MYVIMRC<CR>
 
