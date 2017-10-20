@@ -30,7 +30,7 @@ then
     cnt=0 # counter
     first_obj_file=true
 
-    for files in $all_src # search for all cpp except main
+    for files in $all_src # search for all cpp
     do
         extension=$(printf "$files" | grep -o -P '\..+$') # get file extension
         filename=$(basename $files $extension) # get filename
@@ -53,21 +53,14 @@ then
             dependencies=$(printf "$includes" | grep -o -P '(?<=")[^"]+') # get all dependencies
             
             ((cnt++))
-            rules[cnt]="" # initialize as empty rule
-            first=true
-        
+            rules[cnt]="$obj_folder/$filepath_in_src$filename.o: $files" # add object code name
+            files[cnt]=$files
+            
             for dependency in $dependencies
             do
                 # Check all dependencies
                 dependency_name=$(basename $dependency ".h") # get dependency name only
                 dependency_path=$(printf "$all_header" | grep -o -P ".+(?=(?<=/)$dependency_name\.h)") # get dependency path
-                
-                if [[ $first == true ]] # if first
-                then
-                    first=false # set first as false
-                    rules[cnt]+="$obj_folder/$filepath_in_src$filename.o: $files" # add object code name
-                    files[cnt]=$files
-                fi
                 
                 rules[cnt]+=" $dependency_path$dependency_name.h" # add dependency name
             done
