@@ -10,7 +10,10 @@ if has('python3')
     Plug 'roxma/nvim-cm-tern', { 'do': 'npm install' }
     Plug 'roxma/nvim-completion-manager'
     Plug 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
-    Plug 'roxma/vim-hug-neovim-rpc'
+
+    if !has('nvim')
+        Plug 'roxma/vim-hug-neovim-rpc'
+    endif
 endif
 
 " file search

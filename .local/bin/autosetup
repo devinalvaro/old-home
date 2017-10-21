@@ -68,13 +68,21 @@ sudo add-apt-repository -y ppa:jonathonf/vim
 sudo apt update -y 
 
 sudo $install vim-gtk3
-pip install --user neovim
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim -u NONE -U NONE -N -i NONE -c 'source .vimrc' -c 'PlugInstall' -c 'qa!'
 
-mkdir ~/.vim/{fzf,undo}
+# neovim
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update -y 
+
+sudo $install neovim
+pip install --user neovim
+
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 
 # tmux
 sudo $install tmux
