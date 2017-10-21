@@ -156,14 +156,14 @@ set tabpagemax=50
 autocmd VimResized * wincmd =
 
 " color
-if has('termguicolors')
+if has('termguicolors') || has('gui_running')
     set termguicolors
 
     set background=dark
     colorscheme one
 endif
 
-if has('termguicolors') && g:colors_name == 'one'
+if has('termguicolors') || has ('gui_running') && g:colors_name == 'one'
     highlight Normal ctermfg=none ctermfg=none
     highlight Comment guifg=#8e94a1
     highlight LineNr guifg=#828997
