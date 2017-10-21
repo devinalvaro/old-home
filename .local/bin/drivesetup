@@ -1,0 +1,14 @@
+#!/bin/bash -v
+
+# init
+mkdir .drive
+cd .drive
+
+drive init
+drive pull --starred
+
+# make soft links
+ln -s /home/devin/.drive/Academic /home/devin/Documents/Academic
+ln -s /home/devin/.drive/PDFs /home/devin/Documents/PDFs
+ln -s /home/devin/.drive/Miscs /home/devin/Documents/Miscs
+ln -s /home/devin/.drive/Wallpapers /home/devin/Pictures/Wallpapers
