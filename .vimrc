@@ -98,7 +98,8 @@ let g:gutentags_project_root = [ ".betags" ]
 
 " grepper
 runtime plugin/grepper.vim
-let g:grepper.tools = ["rg", "grep", "git", "ag", "ack", "findstr", "pt", "sift"]
+
+silent! let g:grepper.tools = ["rg", "grep", "git", "ag", "ack", "findstr", "pt", "sift"]
 
 " qf
 let g:qf_window_bottom = 0
@@ -161,7 +162,7 @@ if has('termguicolors') || has('gui_running')
     set termguicolors
 
     set background=dark
-    colorscheme one
+    silent! colorscheme one
 endif
 
 if has('termguicolors') || has ('gui_running') && g:colors_name == 'one'
