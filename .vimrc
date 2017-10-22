@@ -121,7 +121,6 @@ let g:sneak#label = 1
 " tagbar
 let g:tagbar_left = 1
 let g:tagbar_width = 30
-let g:tagbar_autofocus = 1
 
 " ultisnips
 let g:UltiSnipsEditSplit = "horizontal"
