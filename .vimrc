@@ -142,7 +142,9 @@ set backspace=indent,eol,start
 
 " backup
 set nobackup
+set backupdir=.,~/.vim/backup
 set noswapfile
+set directory=~/.vim/swap//
 
 " bell
 set belloff=all
@@ -217,6 +219,7 @@ set showmatch
 set wildmenu
 
 " messages
+set noruler
 set noshowcmd
 set noshowmode
 set shortmess+=cFI
@@ -253,6 +256,9 @@ set t_8f=[38;2;%lu;%lu;%lum
 " undo
 set undofile
 set undodir=~/.vim/undo
+
+" viminfo
+set viminfo+=!
 
 " wrapping
 set breakindent
