@@ -12,4 +12,5 @@ rm ~/.octave_hist; touch $_
 rm ~/.psql_history; touch $_
 rm ~/.python_history; touch $_
 rm ~/.viminfo; touch $_
+rm ~/.vim/.netrwhist; touch $_
 rm ~/.zsh_history; touch $_
