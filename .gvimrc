@@ -1,9 +1,17 @@
+" cursor
+set guicursor+=a:blinkon0
+
 " directory
 set autochdir
 
+" font
+if has('unix')
+    set guifont=Hack\ Regular\ 17
+elseif has('win32')
+    set guifont=Consolas:h12
+endif
+
 " gui
-set guicursor+=a:blinkon0
-set guifont=Hack\ Regular\ 17
 set guioptions-=T
 set guioptions-=L
 set guioptions-=r

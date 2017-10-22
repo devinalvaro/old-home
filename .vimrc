@@ -184,6 +184,9 @@ set confirm
 " display
 set display=lastline
 
+" encoding
+set encoding=utf-8
+
 " format
 set nrformats=bin,hex
 set formatoptions=tcqj
