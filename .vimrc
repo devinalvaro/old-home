@@ -68,6 +68,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " visual
+Plug 'itchyny/lightline.vim'
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
 
@@ -101,6 +102,52 @@ runtime plugin/grepper.vim
 
 silent! let g:grepper.tools = ["rg", "grep", "git", "ag", "ack", "findstr", "pt", "sift"]
 
+" lightline
+function! LightlineFilename()
+    let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+    let modified = &modified ? ' +' : ''
+
+    return filename . modified
+endfunction
+
+function! LightlineAle()
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return printf(
+            \ '✖ %d ⚠ %d',
+            \ all_errors,
+            \ all_non_errors
+            \)
+endfunction
+
+function! LightlineGutentags()
+    return gutentags#statusline('')
+endfunction
+
+let g:lightline = {
+            \ 'colorscheme': 'One',
+            \ 'active': {
+            \   'left': [ [ 'mode' ],
+            \             [ 'filename' ] ],
+            \   'right': [ [ 'lineinfo' ],
+            \              [ 'ale' ],
+            \              [ 'gutentags' ] ]
+            \ },
+            \ 'inactive': {
+            \   'left': [ [  ],
+            \             [ 'filename' ] ],
+            \   'right': [  ]
+            \ },
+            \ 'component_function': {
+            \   'ale': 'LightlineAle',
+            \   'filename': 'LightlineFilename',
+            \   'gutentags': 'LightlineGutentags'
+            \ },
+            \ }
+
 " qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
@@ -132,23 +179,6 @@ let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
-
-""""""""""""
-" Function "
-""""""""""""
-
-function! AleStatus() abort
-    let l:counts = ale#statusline#Count(bufnr(''))
-
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
-
-    return l:counts.total == 0 ? '' : printf(
-    \   '%dx %d!',
-    \   all_errors,
-    \   all_non_errors
-    \)
-endfunction
 
 """"""""""
 " Native "
@@ -260,7 +290,6 @@ set sessionoptions-=options
 
 " statusline
 set laststatus=2
-set statusline=\ %f\ %M\ %=\ %{gutentags#statusline('...')}\ %{AleStatus()}\ %l:%v\ 
 
 " tags
 set tags=./tags;,tags

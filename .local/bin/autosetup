@@ -84,6 +84,9 @@ sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
 sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 
+# lightline
+curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/c2a185ff4f92e57c8b2877512bc0fc64940897ae/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/
+
 # tmux
 git clone https://github.com/tmux/tmux
 cd tmux
@@ -107,7 +110,7 @@ sudo $install fonts-powerline
 # konsole
 sudo $install konsole
 
-sed -i -e 's/,Regular//g' .config/kdeglobals
+sed -i -e 's/,Regular//g' ~/.config/kdeglobals
 
 # yakuake
 sudo $install yakuake
