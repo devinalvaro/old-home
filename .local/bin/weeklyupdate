@@ -24,6 +24,20 @@ sudo -H pip3 install --upgrade pip
 pip2 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip2 install --user -U
 pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install --user -U
 
+# tmux
+git clone https://github.com/tmux/tmux
+cd tmux
+
+git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+
+./autogen.sh
+./configure
+make
+sudo make install
+
+cd ..
+rm -rf tmux
+
 # universal-ctags
 git clone https://github.com/universal-ctags/ctags.git
 cd ctags

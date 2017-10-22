@@ -85,7 +85,18 @@ sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 
 # tmux
-sudo $install tmux
+git clone https://github.com/tmux/tmux
+cd tmux
+
+git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+
+./autogen.sh
+./configure
+make
+sudo make install
+
+cd ..
+rm -rf tmux
 
 # xsel
 sudo $install xsel
@@ -94,6 +105,8 @@ sudo $install xsel
 sudo $install fonts-powerline
 
 # konsole
+sudo $install konsole
+
 sed -i -e 's/,Regular//g' .config/kdeglobals
 
 # yakuake
@@ -104,8 +117,8 @@ sudo add-apt-repository -y ppa:twodopeshaggy/drive
 sudo apt update -y
 sudo $install drive
 
-# universal-tags
-git clone https://github.com/universal-ctags/ctags.git
+# universal-ctags
+git clone https://github.com/universal-ctags/ctags
 cd ctags
 
 ./autogen.sh 
