@@ -133,6 +133,23 @@ let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
 
+""""""""""""
+" Function "
+""""""""""""
+
+function! AleStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? '' : printf(
+    \   '%dx %d!',
+    \   all_errors,
+    \   all_non_errors
+    \)
+endfunction
+
 """"""""""
 " Native "
 """"""""""
@@ -243,7 +260,7 @@ set sessionoptions-=options
 
 " statusline
 set laststatus=2
-set statusline=%f\ %M\ %=\ %{gutentags#statusline('tags')}\ %{fugitive#head()}\ %l:%v
+set statusline=\ %f\ %M\ %=\ %{gutentags#statusline('...')}\ %{AleStatus()}\ %l:%v\ 
 
 " tags
 set tags=./tags;,tags
