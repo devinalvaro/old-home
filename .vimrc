@@ -380,7 +380,6 @@ vnoremap <silent> # :<C-U>
             \ gV:call setreg('"', old_reg, old_regtype)<CR>
 
 " insert remap
-inoremap <c-c> <ESC>
 inoremap <silent> <c-f> <c-r>=cm#sources#ultisnips#trigger_or_popup("\<Plug>(ultisnips_expand)")<cr>
 
 " operator remap
