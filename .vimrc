@@ -57,6 +57,7 @@ Plug 'tpope/vim-surround'
 " text navigation
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
+Plug 'chaoren/vim-wordmotion'
 
 " text objects
 Plug 'michaeljsmith/vim-indent-object'
@@ -183,6 +184,9 @@ let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
+
+" wordmotion
+let g:wordmotion_spaces = '_-'
 
 """"""""""
 " Native "
