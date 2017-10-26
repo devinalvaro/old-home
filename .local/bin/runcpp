@@ -1,4 +1,29 @@
 #!/bin/bash
 
-g++ -std=c++14 -Wall $1
-./a.out < a.in
+if [ $# -eq 2 ] || [ $# -eq 3 ]; then
+    infile=$2
+else
+    infile="a.in"
+fi
+
+if [ $# -eq 3 ]; then
+    outfile=$3
+else
+    outfile="a.out"
+fi
+
+if [ ! -f $infile ]; then
+    touch $infile.temp
+else
+    cp $infile $infile.temp
+fi
+
+if [ $# -eq 3 ]; then
+    g++ -std=c++14 -Wall $1 -o $outfile
+else
+    g++ -std=c++14 -Wall $1
+fi
+
+./$outfile < $infile.temp
+
+rm $infile.temp
