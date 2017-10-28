@@ -2,7 +2,7 @@
 	email = devin.alvaro@gmail.com
 	name = Devin Alvaro
 [core]
-	editor = nvim
+	editor = vim
 	excludesfile = /home/devin/.gitignore_global
 [push]
 	default = simple
