@@ -7,27 +7,25 @@ if which tmux >/dev/null 2>&1; then
     done
 fi
 
-# key binding
-bindkey -s '\ea' '; echo -e \"\\a\"\n'
-bindkey -s '\eh' '~\n'
-bindkey -s '\ev' 'vim\n'
-
-# path
-export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
-
-# env variables
-export NLTK_DATA=/home/devin/.nltk-data
-export ANTIGEN=/home/devin/.antigen
-
-# editor
-export EDITOR="vim"
-
 # fzf
 export FZF_DEFAULT_OPTS="--inline-info"
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --follow -g "!{.git,node_modules,SDK}/*" -g "!tags" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# editor
+export EDITOR="vim"
+
+# environment variables
+export ANTIGEN=$HOME/.antigen
+export CARGO=$HOME/.cargo
+export LOCAL=$HOME/.local
+export MINICONDA3=$HOME/.miniconda3
+export NLTK_DATA=$HOME/.nltk-data
+
+# path
+export PATH=$LOCAL/bin:$CARGO/bin:$MINICONDA3/bin:$PATH
 
 # antigen
 source $ANTIGEN/antigen.zsh
@@ -37,6 +35,11 @@ antigen bundle tarruda/zsh-autosuggestions
 antigen theme denysdovhan/spaceship-zsh-theme spaceship
 
 antigen apply
+
+# key binding
+bindkey -s '\ea' '; echo -e \"\\a\"\n'
+bindkey -s '\eh' '~\n'
+bindkey -s '\ev' 'vim\n'
 
 # python alias
 alias py="python"
