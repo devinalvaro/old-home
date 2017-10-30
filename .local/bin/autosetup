@@ -36,10 +36,14 @@ sudo $install libbz2-1.0:i386
 sudo $install clang
 sudo $install clang-format
 
-# pip
-sudo $install python2-pip
-sudo $install python3-pip
+# conda
+curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
+bash Miniconda3-latest-Linux-x86_64.sh
+
+rm Miniconda3-latest-Linux-x86_64.sh
+
+# pip
 pip install --user flake8
 pip install --user jedi
 pip install --user yapf
