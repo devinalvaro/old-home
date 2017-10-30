@@ -136,9 +136,7 @@ rm -rf ctags
 # zsh
 sudo $install zsh
 
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
-
-curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/spaceship.zsh > ~/.oh-my-zsh/themes/spaceship.zsh-theme
+mkdir ~/.antigen
+curl -L git.io/antigen > ~/.antigen/antigen.zsh
 
 chsh -s $(which zsh)

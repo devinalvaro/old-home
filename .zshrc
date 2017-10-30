@@ -17,7 +17,7 @@ export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 # env variables
 export NLTK_DATA=/home/devin/.nltk-data
-export ZSH=/home/devin/.oh-my-zsh
+export ANTIGEN=/home/devin/.antigen
 
 # editor
 export EDITOR="vim"
@@ -29,15 +29,14 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# zsh plugin
-plugins=(zsh-autosuggestions)
+# antigen
+source $ANTIGEN/antigen.zsh
 
-# zsh theme
-export ZSH_THEME="spaceship"
-export SPACESHIP_PACKAGE_SHOW="false"
+antigen use oh-my-zsh
+antigen bundle tarruda/zsh-autosuggestions
+antigen theme denysdovhan/spaceship-zsh-theme spaceship
 
-# zsh
-source $ZSH/oh-my-zsh.sh
+antigen apply
 
 # python alias
 alias py="python"
