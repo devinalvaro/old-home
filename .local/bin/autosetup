@@ -108,9 +108,6 @@ rm -rf tmux
 # xsel
 sudo $install xsel
 
-# fonts
-sudo $install fonts-powerline
-
 # konsole
 sudo $install konsole
 

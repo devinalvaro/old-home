@@ -14,6 +14,11 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# spaceship
+export SPACESHIP_PROMPT_PREFIXES_SHOW=false
+export SPACESHIP_DIR_TRUNC=0
+export SPACESHIP_GIT_SYMBOL="\0"
+
 # editor
 export EDITOR="vim"
 
