@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -f ~/.ipynb_checkpoints/*
 rm -f ~/.local/share/nvim/shada/*
 rm -f ~/.vim/fzf/*
 rm -f ~/.vim/undo/*
