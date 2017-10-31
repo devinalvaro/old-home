@@ -44,9 +44,9 @@ bash Miniconda3-latest-Linux-x86_64.sh
 rm Miniconda3-latest-Linux-x86_64.sh
 
 # pip
-pip install --user flake8
-pip install --user jedi
-pip install --user yapf
+pip install flake8
+pip install jedi
+pip install yapf
 
 # cargo
 sudo $install cargo
@@ -82,7 +82,7 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update -y 
 
 sudo $install neovim
-pip install --user neovim
+pip install neovim
 
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
 sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
