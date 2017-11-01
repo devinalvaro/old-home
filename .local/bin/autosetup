@@ -108,6 +108,9 @@ rm -rf tmux
 # xsel
 sudo $install xsel
 
+# ranger
+sudo $install ranger
+
 # konsole
 sudo $install konsole
 
