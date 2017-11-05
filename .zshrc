@@ -72,7 +72,7 @@ alias apts="sudo apt search"
 alias aptu="sudo apt update; sudo apt upgrade"
 alias aptr="sudo apt remove"
 alias aptp="sudo apt purge"
-alias apta="sudo apt autoremove"
+alias apta="sudo apt --purge autoremove"
 
 # git alias
 alias gcl="git clone"

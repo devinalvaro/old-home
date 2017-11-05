@@ -7,7 +7,7 @@ if [ $(date +%u) -ne 7 ]; then
 fi
 
 # remove orphan packages
-sudo apt autoremove -y
+sudo apt --purge autoremove -y
 
 # clean package archives
 sudo apt-get clean -y
