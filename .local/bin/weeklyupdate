@@ -14,8 +14,8 @@ sudo apt upgrade -y
 upgrade_oh_my_zsh
 
 # vim
-vim -c 'PlugUpgrade' -c 'qa!'
-vim -c 'PlugUpdate' -c 'qa!'
+vim +PlugUpgrade +qa
+vim +PlugUpdate +qa
 
 # pip
 pip install --upgrade pip
