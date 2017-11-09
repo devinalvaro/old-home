@@ -1,13 +1,11 @@
 #!/bin/bash
 
 rm -f ~/.ipynb_checkpoints/*
-rm -f ~/.local/share/nvim/shada/*
 rm -f ~/.vim/fzf/*
 rm -f ~/.vim/undo/*
 
 rm ~/.bash_history; touch $_
 rm ~/.lesshst; touch $_
-rm ~/.local/share/nvim/log; touch $_
 rm ~/.mysql_history; touch $_
 rm ~/.octave_hist; touch $_
 rm ~/.psql_history; touch $_
