@@ -72,6 +72,7 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'itchyny/lightline.vim'
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
+Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
@@ -174,6 +175,12 @@ let g:sneak#label = 1
 " tagbar
 let g:tagbar_left = 1
 let g:tagbar_width = 30
+
+" togglecursor
+let g:togglecursor_default = 'block'
+let g:togglecursor_insert = 'line'
+let g:togglecursor_leave = 'block'
+let g:togglecursor_replace = 'underline'
 
 " ultisnips
 let g:UltiSnipsEditSplit = "horizontal"

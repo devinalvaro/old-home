@@ -77,17 +77,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim --headless +PlugInstall +qa
 
-# neovim
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt update -y 
-
-sudo $install neovim
-pip install neovim
-
-sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
-sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
-sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
-
 # lightline
 curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/c2a185ff4f92e57c8b2877512bc0fc64940897ae/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/
 
