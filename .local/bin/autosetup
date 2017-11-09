@@ -75,7 +75,7 @@ sudo $install vim-gtk3
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim --headless +PlugInstall +qa
+vim +PlugInstall +qa
 
 # lightline
 curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/c2a185ff4f92e57c8b2877512bc0fc64940897ae/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/

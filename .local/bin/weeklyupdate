@@ -17,6 +17,9 @@ upgrade_oh_my_zsh
 vim +PlugUpgrade +qa
 vim +PlugUpdate +qa
 
+# conda
+conda update -y --all
+
 # pip
 pip install --upgrade pip
 

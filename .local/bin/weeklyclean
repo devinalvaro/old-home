@@ -17,4 +17,4 @@ sudo apt-get autoclean -y
 sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
 
 # clean vim plugins
-vim --headless +PlugClean +qa
+vim +PlugClean +qa
