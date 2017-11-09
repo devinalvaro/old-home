@@ -5,16 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 " completion
-if has('python3')
-    Plug 'roxma/ncm-clang'
-    Plug 'roxma/nvim-cm-tern', { 'do': 'npm install' }
-    Plug 'roxma/nvim-completion-manager'
-    Plug 'roxma/LanguageServer-php-neovim',  {'do': 'composer install && composer run-script parse-stubs'}
-
-    if !has('nvim')
-        Plug 'roxma/vim-hug-neovim-rpc'
-    endif
-endif
+Plug 'maralla/completor.vim'
 
 " file search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -88,6 +79,13 @@ let g:ale_linters = {
 autocmd Filetype c,cpp,php setlocal commentstring=//\ %s
 autocmd Filetype sql setlocal commentstring=--\ %s
 
+" completor
+let g:completor_python_binary = "/usr/bin/python3"
+let g:completor_node_binary = "/usr/bin/node"
+let g:completor_clang_binary = "/usr/bin/clang"
+let g:completor_auto_close_doc = 0
+let g:completor_min_chars = 3
+
 " delimitmate
 let g:delimitMate_matchpairs = "(:),[:],{:}"
 let g:delimitMate_expand_cr = 2
@@ -157,9 +155,6 @@ let g:lightline = {
 " qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
-
-" ncm
-let g:cm_refresh_length = [ [ 1, 3 ], [7, 2] ]
 
 " signify
 let g:signify_vcs_list = [ "git" ]
@@ -241,6 +236,8 @@ endif
 
 " completion
 set complete-=i
+set previewheight=2
+autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 " confirmation
 set confirm
