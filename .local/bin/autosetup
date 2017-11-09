@@ -78,7 +78,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim --headless +PlugInstall +qa
 
 # neovim
-sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update -y 
 
 sudo $install neovim
