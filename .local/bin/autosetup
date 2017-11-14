@@ -62,11 +62,6 @@ sudo $install composer
 # java
 sudo $install openjdk-8-jdk
 
-# terminfo
-infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
-tic $TERM.ti
-rm $TERM.ti
-
 # vim
 sudo add-apt-repository -y ppa:jonathonf/vim
 sudo apt update -y 
@@ -102,8 +97,6 @@ sudo $install ranger
 
 # konsole
 sudo $install konsole
-
-sed -i -e 's/,Regular//g' ~/.config/kdeglobals
 
 # yakuake
 sudo $install yakuake
