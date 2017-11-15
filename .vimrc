@@ -99,6 +99,7 @@ let g:fugitive_gitlab_domains = [ "https://gitlab.com", "http://gitlab.informati
 let g:fzf_history_dir = "~/.vim/fzf"
 
 " gutentags
+let g:gutentags_ctags_tagfile = ".tags"
 let g:gutentags_project_root = [ ".betags" ]
 
 " grepper
