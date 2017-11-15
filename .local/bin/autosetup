@@ -33,8 +33,9 @@ sudo $install lib32z1
 sudo $install libbz2-1.0:i386
 
 # clang
-sudo $install clang
-sudo $install clang-format
+sudo $install gcc # linter
+sudo $install clang # completor (~/.clang_complete)
+sudo $install clang-format # formatter (~/.clang-format)
 
 # conda
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -42,9 +43,9 @@ bash Miniconda3-latest-Linux-x86_64.sh
 rm Miniconda3-latest-Linux-x86_64.sh
 
 # pip
-sudo -H pip install flake8
-sudo -H pip install jedi
-sudo -H pip install yapf
+sudo -H pip install flake8 # linter (~/.config/flake8)
+sudo -H pip install jedi # completor
+sudo -H pip install yapf # formatter (~/.style.yapf)
 
 # cargo
 sudo $install cargo
@@ -54,7 +55,9 @@ cargo install ripgrep
 # npm
 sudo $install npm
 
-sudo npm -g install tern
+sudo npm -g install eslint # linter
+sudo npm -g install prettier # formatter
+sudo npm -g install tern # completor
 
 # composer
 sudo $install composer
@@ -67,7 +70,6 @@ sudo add-apt-repository -y ppa:jonathonf/vim
 sudo apt update -y 
 
 sudo $install vim-gtk3
-
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qa
