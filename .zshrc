@@ -41,7 +41,7 @@ export ANTIGEN=$HOME/.antigen
 export CARGO=$HOME/.cargo
 export LOCAL=$HOME/.local
 export MINICONDA3=$HOME/.miniconda3
-export NLTK_DATA=$HOME/.nltk-data
+export NLTK_DATA=$HOME/.nltk_data
 
 # path
 export PATH=$LOCAL/bin:$CARGO/bin:$MINICONDA3/bin:$PATH
