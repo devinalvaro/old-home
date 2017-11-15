@@ -61,13 +61,14 @@ bindkey -s '\eh' '~\n'
 bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 
+# general alias
+alias ls="ls --color=tty -v"
+alias xo="xdg-open"
+
 # python alias
 alias py="python"
 alias py2="python2"
 alias py3="python3"
-
-# xdg alias
-alias xo="xdg-open"
 
 # apt alias
 alias apti="sudo apt install"
