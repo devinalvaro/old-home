@@ -56,7 +56,7 @@ cargo install ripgrep
 sudo $install npm
 
 sudo npm -g install eslint # linter
-sudo npm -g install prettier # formatter
+sudo npm -g install js-beautify # formatter
 sudo npm -g install tern # completor
 
 # composer
