@@ -43,24 +43,20 @@ bash Miniconda3-latest-Linux-x86_64.sh
 rm Miniconda3-latest-Linux-x86_64.sh
 
 # pip
-sudo -H pip install flake8 # linter (~/.config/flake8)
-sudo -H pip install jedi # completor
-sudo -H pip install yapf # formatter (~/.style.yapf)
+pip install flake8 # linter (~/.config/flake8)
+pip install jedi # completor
+pip install yapf # formatter (~/.style.yapf)
 
-# cargo
-sudo $install cargo
+# yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update -y
 
-cargo install ripgrep
+sudo $install yarn
 
-# npm
-sudo $install npm
-
-sudo npm -g install eslint # linter
-sudo npm -g install js-beautify # formatter
-sudo npm -g install tern # completor
-
-# composer
-sudo $install composer
+yarn global add eslint # linter
+yarn global add js-beautify # formatter
+yarn global add tern # completor
 
 # java
 sudo $install openjdk-8-jdk
@@ -70,26 +66,20 @@ sudo add-apt-repository -y ppa:jonathonf/vim
 sudo apt update -y 
 
 sudo $install vim-gtk3
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qa
 
-# lightline
+# completor.vim
+cd ~/.vim/plugged/completor.vim
+
+make js
+
+cd ~
+
+# lightline.vim
 curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim
-
-# tmux
-git clone https://github.com/tmux/tmux
-cd tmux
-
-git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
-
-./autogen.sh
-./configure
-make
-sudo make install
-
-cd ..
-rm -rf tmux
 
 # xsel
 sudo $install xsel
@@ -102,6 +92,12 @@ sudo $install konsole
 
 # yakuake
 sudo $install yakuake
+
+# ripgrep
+sudo add-apt-repository ppa:x4121/ripgrep
+sudo apt update -y
+
+sudo $install ripgrep
 
 # drive
 sudo add-apt-repository -y ppa:twodopeshaggy/drive
@@ -120,6 +116,20 @@ sudo make install
 
 cd ..
 rm -rf ctags
+
+# tmux
+git clone https://github.com/tmux/tmux
+cd tmux
+
+git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+
+./autogen.sh
+./configure
+make
+sudo make install
+
+cd ..
+rm -rf tmux
 
 # zsh
 sudo $install zsh
