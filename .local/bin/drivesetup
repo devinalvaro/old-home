@@ -8,7 +8,8 @@ drive init
 drive pull --starred
 
 # make soft links
-ln -s /home/devin/.drive/Academic /home/devin/Documents/Academic
-ln -s /home/devin/.drive/PDFs /home/devin/Documents/PDFs
-ln -s /home/devin/.drive/Miscs /home/devin/Documents/Miscs
-ln -s /home/devin/.drive/Wallpapers /home/devin/Pictures/Wallpapers
+ln -s ~/.drive/Academic ~/Documents/Academic
+ln -s ~/.drive/Miscs ~/Documents/Miscs
+ln -s ~/.drive/PDFs ~/Documents/PDFs
+ln -s ~/.drive/Logos ~/Pictures/Logos
+ln -s ~/.drive/Wallpapers ~/Pictures/Wallpapers

@@ -26,7 +26,7 @@ export FZF_ALT_C_COMMAND="command find -L . -mindepth 1 \\( -name 'node_modules'
     -o \\( -path '*/\\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \\) -prune \
     -o -type d -print 2> /dev/null | cut -b3-"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
 # spaceship
 export SPACESHIP_PROMPT_PREFIXES_SHOW=false
