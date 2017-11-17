@@ -7,10 +7,11 @@ call plug#begin('~/.vim/plugged')
 " completion
 Plug 'maralla/completor.vim'
 
-" file search
+" file navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
+Plug 'tpope/vim-vinegar'
 
 " git
 Plug 'tpope/vim-fugitive'
@@ -52,6 +53,7 @@ Plug 'chaoren/vim-wordmotion'
 
 " text objects
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'coderifous/textobj-word-column.vim'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
@@ -161,9 +163,6 @@ let g:qf_loclist_window_bottom = 0
 let g:signify_vcs_list = [ "git" ]
 let g:signify_sign_change = "~"
 let g:signify_sign_show_count = 0
-
-" sleuth
-let g:sleuth_automatic = 1
 
 " sneak
 let g:sneak#label = 1
@@ -381,19 +380,16 @@ nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
 
 " visual remap
-vnoremap <silent> * :<C-U>
+vnoremap <silent> * :<C-u>
             \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-            \ gvy/<C-R><C-R>=substitute(
+            \ gvy/<C-r><C-r>=substitute(
             \ escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
             \ gV:call setreg('"', old_reg, old_regtype)<CR>
-vnoremap <silent> # :<C-U>
+vnoremap <silent> # :<C-u>
             \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-            \ gvy?<C-R><C-R>=substitute(
+            \ gvy?<C-r><C-r>=substitute(
             \ escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
             \ gV:call setreg('"', old_reg, old_regtype)<CR>
-
-" insert remap
-inoremap <silent> <c-f> <c-r>=cm#sources#ultisnips#trigger_or_popup("\<Plug>(ultisnips_expand)")<cr>
 
 " operator remap
 onoremap w :execute 'normal! '.v:count1.'w'<CR>
