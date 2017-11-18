@@ -104,7 +104,7 @@ let g:gutentags_project_root = [ ".betags" ]
 " grepper
 runtime plugin/grepper.vim
 
-let g:grepper.tools = ["rg", "ag", "ack", "grep", "git", "findstr", "pt", "sift"]
+silent! let g:grepper.tools = ["rg", "ag", "ack", "grep", "git", "findstr", "pt", "sift"]
 
 " lightline
 function! LightlineFilename()
