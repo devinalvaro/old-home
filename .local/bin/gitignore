@@ -5,6 +5,7 @@ touch .gitignore
 > .gitignore
 git status --porcelain | grep '^??' | cut -c4- >> .gitignore
 
+echo ".local/share/Trash" >> .gitignore
 echo ".vim/fzf/" >> .gitignore
 echo ".vim/undo/" >> .gitignore
 
