@@ -16,5 +16,9 @@ sudo apt-get autoclean -y
 # remove unused config files
 sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
 
+# remove terminal desktop files
+sudo rm /usr/share/application/ranger.desktop
+sudo rm /usr/share/applications/vim.desktop
+
 # clean vim plugins
 vim +PlugClean +qa
