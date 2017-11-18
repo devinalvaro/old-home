@@ -51,12 +51,16 @@ pip install yapf # formatter (~/.style.yapf)
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update -y
-
 sudo $install yarn
 
 yarn global add eslint # linter
 yarn global add js-beautify # formatter
 yarn global add tern # completor
+
+# cargo
+sudo $install cargo
+
+cargo install ripgrep
 
 # java
 sudo $install openjdk-8-jdk
@@ -64,28 +68,14 @@ sudo $install openjdk-8-jdk
 # vim
 sudo add-apt-repository -y ppa:jonathonf/vim
 sudo apt update -y 
-
 sudo $install vim-gtk3
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qa
 
-# completor.vim
-cd ~/.vim/plugged/completor.vim
-
-make js
-
-cd ~
-
-# lightline.vim
-curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim
-
 # xsel
 sudo $install xsel
-
-# ranger
-sudo $install ranger
 
 # konsole
 sudo $install konsole
@@ -93,16 +83,12 @@ sudo $install konsole
 # yakuake
 sudo $install yakuake
 
-# ripgrep
-sudo add-apt-repository ppa:x4121/ripgrep
-sudo apt update -y
-
-sudo $install ripgrep
+# ranger
+sudo $install ranger
 
 # drive
 sudo add-apt-repository -y ppa:twodopeshaggy/drive
 sudo apt update -y
-
 sudo $install drive
 
 # universal-ctags

@@ -5,17 +5,15 @@
 call plug#begin('~/.vim/plugged')
 
 " completion
-Plug 'maralla/completor.vim'
+Plug 'maralla/completor.vim', { 'do': 'make js' }
 
 " file navigation
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
 
 " git
-Plug 'tpope/vim-fugitive'
-Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'tpope/vim-fugitive' | Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'tpope/vim-rhubarb'
 Plug 'mhinz/vim-signify'
 
@@ -27,8 +25,7 @@ Plug 'romainl/vim-qf'
 
 " snippet
 if has('python3')
-    Plug 'sirver/ultisnips'
-    Plug 'honza/vim-snippets'
+    Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 endif
 
 " tags
@@ -62,7 +59,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " visual
-Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim', { 'do': 'curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim' }
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
 Plug 'jszakmeister/vim-togglecursor'
@@ -107,7 +104,7 @@ let g:gutentags_project_root = [ ".betags" ]
 " grepper
 runtime plugin/grepper.vim
 
-silent! let g:grepper.tools = ["rg", "grep", "git", "ag", "ack", "findstr", "pt", "sift"]
+let g:grepper.tools = ["rg", "ag", "ack", "grep", "git", "findstr", "pt", "sift"]
 
 " lightline
 function! LightlineFilename()
@@ -340,7 +337,10 @@ noremap <leader>Y "+Y
 noremap <leader>x "+x
 noremap <leader>X "+X
 
-nnoremap <leader>r :source $MYVIMRC<CR>
+nnoremap <leader>n :Neoformat<CR>
+nnoremap <leader>r :source $MYVIMRC<ESC><CR>
+nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fi :Files<CR>
@@ -350,16 +350,11 @@ nnoremap <leader>ft :Tags<CR>
 nnoremap <leader>gb :Grepper-buffers<CR>
 nnoremap <leader>gr :Grepper<CR>
 
-nnoremap <leader>n :Neoformat<CR>
-nnoremap <leader>t :TagbarToggle<CR>
-nnoremap <leader>u :UndotreeToggle<CR>
-
 " normal + visual remap
 noremap c "_c
 noremap C "_C
 noremap d "_d
 noremap D "_D
-
 noremap x d
 noremap X D
 
