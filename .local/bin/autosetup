@@ -6,14 +6,6 @@ cd ~
 # package manager
 install="apt install -y"
 
-# git
-sudo $install git
-
-git init
-git remote add origin https://github.com/devinalvaro/home
-git fetch
-git checkout -t origin/master
-
 # build
 sudo $install autoconf
 sudo $install automake
@@ -74,14 +66,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qa
 
+# tmux
+sudo $install tmux
+
 # xsel
 sudo $install xsel
-
-# konsole
-sudo $install konsole
-
-# yakuake
-sudo $install yakuake
 
 # ranger
 sudo $install ranger
@@ -102,20 +91,6 @@ sudo make install
 
 cd ..
 rm -rf ctags
-
-# tmux
-git clone https://github.com/tmux/tmux
-cd tmux
-
-git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
-
-./autogen.sh
-./configure
-make
-sudo make install
-
-cd ..
-rm -rf tmux
 
 # zsh
 sudo $install zsh

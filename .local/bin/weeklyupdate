@@ -39,16 +39,5 @@ sudo make install
 cd ..
 rm -rf ctags
 
-# tmux
-git clone https://github.com/tmux/tmux
-cd tmux
-
-git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
-
-./autogen.sh
-./configure
-make
-sudo make install
-
 cd ..
 rm -rf tmux
