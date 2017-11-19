@@ -67,11 +67,11 @@ Plug 'jszakmeister/vim-togglecursor'
 call plug#end()
 
 " ale
-let g:ale_lint_on_text_changed = "normal"
+let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 let g:ale_linters = {
-            \ "c": [ "gcc" ],
-            \ "cpp": [ "g++" ],
+            \ 'c': [ 'gcc' ],
+            \ 'cpp': [ 'g++' ],
             \ }
 
 " commentary
@@ -79,32 +79,32 @@ autocmd Filetype c,cpp,php setlocal commentstring=//\ %s
 autocmd Filetype sql setlocal commentstring=--\ %s
 
 " completor
-let g:completor_python_binary = "/usr/bin/python3"
-let g:completor_node_binary = "/usr/bin/node"
-let g:completor_clang_binary = "/usr/bin/clang"
+let g:completor_python_binary = '/usr/bin/python3'
+let g:completor_node_binary = '/usr/bin/node'
+let g:completor_clang_binary = '/usr/bin/clang'
 let g:completor_auto_close_doc = 0
 let g:completor_min_chars = 3
 
 " delimitmate
-let g:delimitMate_matchpairs = "(:),[:],{:}"
+let g:delimitMate_matchpairs = '(:),[:],{:}'
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
 " fugitive-gitlab
-let g:fugitive_gitlab_domains = [ "https://gitlab.com", "http://gitlab.informatika.org" ]
+let g:fugitive_gitlab_domains = [ 'https://gitlab.com', 'http://gitlab.informatika.org' ]
 
 " fzf
-let g:fzf_history_dir = "~/.vim/fzf"
+let g:fzf_history_dir = '~/.vim/fzf'
 
 " gutentags
-let g:gutentags_ctags_tagfile = ".tags"
-let g:gutentags_project_root = [ ".betags" ]
+let g:gutentags_ctags_tagfile = '.tags'
+let g:gutentags_project_root = [ '.betags' ]
 
 " grepper
 runtime plugin/grepper.vim
 
-silent! let g:grepper.tools = ["rg", "ag", "ack", "grep", "git", "findstr", "pt", "sift"]
+silent! let g:grepper.tools = ['rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift']
 
 " lightline
 function! LightlineFilename()
@@ -152,13 +152,16 @@ let g:lightline = {
             \ },
             \ }
 
+" neoformat
+let g:neoformat_enabled_javascript = [ 'standard' ]
+
 " qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
 
 " signify
-let g:signify_vcs_list = [ "git" ]
-let g:signify_sign_change = "~"
+let g:signify_vcs_list = [ 'git' ]
+let g:signify_sign_change = '~'
 let g:signify_sign_show_count = 0
 
 " sneak
@@ -175,11 +178,11 @@ let g:togglecursor_leave = 'block'
 let g:togglecursor_replace = 'underline'
 
 " ultisnips
-let g:UltiSnipsEditSplit = "horizontal"
-let g:UltiSnipsSnippetDirectories = [ "snips" ]
-let g:UltiSnipsExpandTrigger = "<c-f>"
-let g:UltiSnipsJumpForwardTrigger = "<a-f>"
-let g:UltiSnipsJumpBackwardTrigger = "<a-b>"
+let g:UltiSnipsEditSplit = 'horizontal'
+let g:UltiSnipsSnippetDirectories = [ 'snips' ]
+let g:UltiSnipsExpandTrigger = '<c-f>'
+let g:UltiSnipsJumpForwardTrigger = '<a-f>'
+let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
@@ -318,7 +321,7 @@ set viminfo+=!
 " wrapping
 set breakindent
 set linebreak
-let &showbreak = "↳ "
+let &showbreak = '↳ '
 
 """""""""
 " Remap "

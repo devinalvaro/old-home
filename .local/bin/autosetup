@@ -46,7 +46,7 @@ sudo apt update
 sudo $install yarn
 
 yarn global add eslint # linter
-yarn global add js-beautify # formatter
+yarn global add js-beautify standard # formatter
 yarn global add tern # completor
 
 # cargo
@@ -63,6 +63,8 @@ sudo $install vim-gtk3
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qa
+
+mkdir ~/.vim/undo
 
 # tmux
 sudo $install tmux
