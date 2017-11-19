@@ -12,6 +12,9 @@ sudo $install automake
 sudo $install cmake
 sudo $install pkg-config
 
+# curl
+sudo $install curl
+
 # libs
 sudo $install libevent-dev
 sudo $install libncurses5-dev
