@@ -5,6 +5,7 @@ rm -f ~/.vim/fzf/*
 rm -f ~/.vim/undo/*
 
 rm ~/.bash_history; touch $_
+rm ~/.dbshell; touch $_
 rm ~/.lesshst; touch $_
 rm ~/.mysql_history; touch $_
 rm ~/.octave_hist; touch $_
