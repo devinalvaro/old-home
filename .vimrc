@@ -362,6 +362,7 @@ nnoremap <leader>bt :BTags<CR>
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fc :Commits<CR>
 nnoremap <leader>fi :Files<CR>
+nnoremap <leader>fh :History:<CR>
 nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>ft :Tags<CR>
 
