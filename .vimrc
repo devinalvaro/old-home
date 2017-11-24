@@ -109,6 +109,9 @@ let g:gutentags_project_root = [ '.betags' ]
 " grepper
 runtime plugin/grepper.vim
 
+let g:grepper.jump = 1
+silent! let g:grepper.switch = 0
+let g:grepper.dir = 'repo,cwd'
 silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
 " lightline
@@ -350,9 +353,8 @@ noremap <leader>Y "+Y
 noremap <leader>x "+x
 noremap <leader>X "+X
 
-nnoremap <leader>r :source $MYVIMRC<CR>
-
 nnoremap <leader>n :Neoformat<CR>
+nnoremap <leader>r :source $MYVIMRC<CR>:nohlsearch<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
@@ -361,8 +363,8 @@ nnoremap <leader>bl :BLines<CR>
 nnoremap <leader>bt :BTags<CR>
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fc :Commits<CR>
-nnoremap <leader>fi :Files<CR>
 nnoremap <leader>fh :History:<CR>
+nnoremap <leader>fi :Files<CR>
 nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>ft :Tags<CR>
 
