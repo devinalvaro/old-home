@@ -65,6 +65,8 @@ cargo install ripgrep
 sudo $install openjdk-8-jdk
 
 # vim
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
 sudo $install vim-gtk3
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
