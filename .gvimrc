@@ -1,9 +1,6 @@
 " cursor
 set guicursor+=a:blinkon0
 
-" directory
-set autochdir
-
 " font
 if has('unix')
     set guifont=Hack\ Regular\ 17
@@ -14,8 +11,9 @@ endif
 " gui
 set guioptions-=T
 set guioptions-=L
+set guioptions-=e
 set guioptions-=r
 
 " window
-set lines=34
+set lines=32
 set columns=102
