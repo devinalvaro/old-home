@@ -4,9 +4,6 @@
 
 call plug#begin('~/.vim/plugged')
 
-" buffer
-Plug 'moll/vim-bbye'
-
 " completion
 Plug 'maralla/completor.vim', { 'do': 'make js' }
 
@@ -62,6 +59,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " visual
+Plug 'ap/vim-buftabline'
 Plug 'itchyny/lightline.vim', { 'do': 'curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim' }
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
@@ -76,6 +74,10 @@ let g:ale_linters = {
             \ 'c': [ 'gcc' ],
             \ 'cpp': [ 'g++' ],
             \ }
+
+" buftabline
+let g:buftabline_show = 1
+let g:buftabline_indicators = 1
 
 " commentary
 autocmd Filetype c,cpp,php setlocal commentstring=//\ %s
@@ -107,7 +109,7 @@ let g:gutentags_project_root = [ '.betags' ]
 " grepper
 runtime plugin/grepper.vim
 
-silent! let g:grepper.tools = ['rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift']
+silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
 " lightline
 function! LightlineFilename()
@@ -171,7 +173,7 @@ let g:signify_sign_show_count = 0
 let g:sneak#label = 1
 
 " tagbar
-let g:tagbar_left = 1
+let g:tagbar_autofocus = 1
 let g:tagbar_width = 30
 
 " togglecursor
@@ -233,6 +235,11 @@ if has('termguicolors') || has ('gui_running') && g:colors_name == 'one'
     highlight StatusLineNC guifg=#353940 guibg=#abb2bf
     highlight vertSplit guifg=#828997
     highlight vimLineComment guifg=#8e94a1
+
+    highlight BufTabLineCurrent guibg=#5c6370
+    highlight BufTabLineActive guibg=#3e4452
+    highlight BufTabLineHidden guibg=#2c323d
+    highlight BufTabLineFill guibg=#2c323d
 
     highlight TagbarSignature guifg=#8e94a1
 endif
@@ -343,12 +350,17 @@ noremap <leader>Y "+Y
 noremap <leader>x "+x
 noremap <leader>X "+X
 
+nnoremap <leader>r :source $MYVIMRC<CR>
+
 nnoremap <leader>n :Neoformat<CR>
-nnoremap <leader>r :source $MYVIMRC<ESC><CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 
+nnoremap <leader>bc :BCommits<CR>
+nnoremap <leader>bl :BLines<CR>
+nnoremap <leader>bt :BTags<CR>
 nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>fc :Commits<CR>
 nnoremap <leader>fi :Files<CR>
 nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>ft :Tags<CR>
