@@ -4,6 +4,9 @@
 
 call plug#begin('~/.vim/plugged')
 
+" buffer
+Plug 'moll/vim-bbye'
+
 " completion
 Plug 'maralla/completor.vim', { 'do': 'make js' }
 
