@@ -5,7 +5,14 @@
 call plug#begin('~/.vim/plugged')
 
 " completion
-Plug 'maralla/completor.vim', { 'do': 'make js' }
+if has('python3')
+    Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
+
+    Plug 'roxma/ncm-clang'
+    Plug 'roxma/nvim-cm-tern', { 'do': 'yarn install' }
+else
+    Plug 'maralla/completor.vim', { 'do': 'make js' }
+endif
 
 " file navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
@@ -96,7 +103,7 @@ let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
-" fugitive-gitlab
+" fugitive
 let g:fugitive_gitlab_domains = [ 'https://gitlab.com', 'http://gitlab.informatika.org' ]
 
 " fzf
@@ -196,7 +203,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 let g:undotree_SetFocusWhenToggle = 1
 
 " wordmotion
-let g:wordmotion_spaces = '_-'
+let g:wordmotion_spaces = '._-'
 
 """"""""""
 " Native "

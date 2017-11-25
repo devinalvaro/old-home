@@ -9,9 +9,10 @@ elseif has('win32')
 endif
 
 " gui
-set guioptions-=T
 set guioptions-=L
+set guioptions-=T
 set guioptions-=e
+set guioptions-=m
 set guioptions-=r
 
 " window
