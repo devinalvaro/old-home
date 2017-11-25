@@ -78,6 +78,13 @@ alias aptr="sudo apt remove --purge"
 alias apts="sudo apt search"
 alias aptu="sudo apt update; sudo apt upgrade"
 
+# dnf alias
+alias dnfa="sudo dnf autoremove"
+alias dnfi="sudo dnf install"
+alias dnfr="sudo dnf remove"
+alias dnfs="sudo dnf search"
+alias dnfu="sudo dnf upgrade"
+
 # git alias
 alias ga="git add"
 alias gaa="git add -A"
@@ -98,5 +105,6 @@ alias grs="git reset"
 alias gss="git status -s"
 alias gsa="git status -s -uall"
 alias grm="git rm"
+alias gsh="git stash"
 alias gsm="git submodule"
 alias gst="git subtree"

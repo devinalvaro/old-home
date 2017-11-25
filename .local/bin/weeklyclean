@@ -6,19 +6,24 @@ if [ $(date +%u) -ne 7 ]; then
    exit 1
 fi
 
+# package manager
+if type "apt" > /dev/null 2>&1; then manager="apt";
+elif type "dnf" > /dev/null 2>&1; then manager="dnf"; fi
+
 # remove orphan packages
-sudo apt --purge autoremove -y
+if [ $manager == "apt" ]; then sudo apt --purge autoremove -y;
+elif [ $manager == "dnf" ]; then sudo dnf autoremove -y; fi
 
 # clean package archives
-sudo apt-get clean -y
-sudo apt-get autoclean -y
+if [ $manager == "apt" ]; then sudo apt-get clean -y && sudo apt-get autoclean -y;
+elif [ $manager == "dnf" ]; then sudo dnf clean -y; fi
 
 # remove unused config files
-sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
+if [ $manager == "apt" ]; then sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2); fi
 
 # remove terminal desktop files
-sudo rm /usr/share/application/ranger.desktop
-sudo rm /usr/share/applications/vim.desktop
+sudo rm -f /usr/share/application/ranger.desktop
+sudo rm -f /usr/share/applications/vim.desktop
 
 # clean vim plugins
 vim +PlugClean +qa

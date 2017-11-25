@@ -4,40 +4,38 @@
 cd ~
 
 # package manager
-install="apt install -y"
+if type "apt" > /dev/null 2>&1; then
+    manager="apt"
+    install="apt install -y"
+elif type "dnf" > /dev/null 2>&1; then
+    manager="dnf"
+    install="dnf install -y"
+fi
 
 # build
 sudo $install autoconf
 sudo $install automake
 sudo $install cmake
-sudo $install pkg-config
+if [ $manager == "apt" ]; then sudo $install pkg-config;
+elif [ $manager == "dnf" ]; then sudo $install pkgconfig; fi
 
 # curl
 sudo $install curl
-
-# libs
-sudo $install libevent-dev
-sudo $install libncurses5-dev
-sudo $install libncursesw5-dev
-sudo $install libtool
-sudo $install libtool-bin
-sudo $install libc6:i386
-sudo $install libncurses5:i386
-sudo $install libstdc++6:i386
-sudo $install lib32z1
-sudo $install libbz2-1.0:i386
 
 # clang
 sudo $install gcc # linter
 sudo $install clang # completor (~/.clang_complete)
 sudo $install clang-format # formatter (~/.clang-format)
 
-# conda
+# java
+if [ $manager == "apt" ]; then sudo $install openjdk-8-jdk;
+elif [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
+
+# python
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 rm Miniconda3-latest-Linux-x86_64.sh
 
-# pip
 sudo $install python3-pip
 
 pip3 install neovim
@@ -46,32 +44,36 @@ pip install flake8 # linter (~/.config/flake8)
 pip install jedi # completor
 pip install yapf # formatter (~/.style.yapf)
 
-# node
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+# nodejs
+if [ $manager == "apt" ]; then curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -; fi
 sudo $install nodejs
 
-# yarn
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update
+if [ $manager == "apt" ]; then
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt update
+elif [ $manager=="dnf" ]; then
+    sudo wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
+fi
 sudo $install yarn
 
 yarn global add eslint # linter
 yarn global add js-beautify standard # formatter
 yarn global add tern # completor
 
-# cargo
+# rust
 sudo $install cargo
 
 cargo install ripgrep
 
-# java
-sudo $install openjdk-8-jdk
-
 # vim
-sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
-sudo $install vim-gtk3
+if [ $manager == "apt" ]; then
+    sudo add-apt-repository ppa:jonathonf/vim
+    sudo apt update
+    sudo $install vim-gtk3
+elif [ $manager == "dnf" ]; then
+    sudo $install vim
+fi
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -89,9 +91,14 @@ sudo $install xsel
 sudo $install ranger
 
 # drive
-sudo add-apt-repository -y ppa:twodopeshaggy/drive
-sudo apt update
-sudo $install drive
+if [ $manager == "apt" ]; then
+    sudo add-apt-repository -y ppa:twodopeshaggy/drive
+    sudo apt update
+    sudo $install drive
+elif [ $manager == "dnf" ]; then
+    sudo dnf copr enable -y vaughan/drive-google
+    sudo $install drive-google
+fi
 
 # universal-ctags
 git clone https://github.com/universal-ctags/ctags

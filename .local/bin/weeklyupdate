@@ -6,9 +6,13 @@ if [ $(date +%u) -ne 7 ]; then
    exit 1
 fi
 
+# package manager
+if type "apt" > /dev/null 2>&1; then manager="apt";
+elif type "dnf" > /dev/null 2>&1; then manager="dnf"; fi
+
 # system
-sudo apt update -y
-sudo apt upgrade -y
+if [ $manager == "apt" ]; then sudo apt update -y && sudo apt upgrade -y;
+elif [ $manager == "dnf" ]; then sudo dnf upgrade -y; fi
 
 # conda
 conda update -y --all
@@ -41,6 +45,3 @@ sudo make install
 
 cd ..
 rm -rf ctags
-
-cd ..
-rm -rf tmux
