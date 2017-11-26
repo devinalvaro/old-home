@@ -32,17 +32,17 @@ if [ $manager == "apt" ]; then sudo $install openjdk-8-jdk;
 elif [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
 
 # python
-curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/.miniconda3
-rm Miniconda3-latest-Linux-x86_64.sh
-
 sudo $install python3-pip
 
-pip install flake8 # linter (~/.config/flake8)
-pip install jedi # completor
-pip install yapf # formatter (~/.style.yapf)
+curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh -b -p ~/.miniconda3
+rm Miniconda3-latest-Linux-x86_64.sh
 
 pip3 install neovim
+
+pip3 install flake8 # linter (~/.config/flake8)
+pip3 install jedi # completor
+pip3 install yapf # formatter (~/.style.yapf)
 
 # nodejs
 if [ $manager == "apt" ]; then curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -; fi
