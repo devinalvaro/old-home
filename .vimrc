@@ -182,7 +182,6 @@ let g:signify_sign_show_count = 0
 let g:sneak#label = 1
 
 " tagbar
-let g:tagbar_autofocus = 1
 let g:tagbar_width = 30
 
 " togglecursor
