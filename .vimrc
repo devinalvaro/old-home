@@ -20,8 +20,7 @@ Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
 
 " git
-Plug 'tpope/vim-fugitive' | Plug 'shumphrey/fugitive-gitlab.vim'
-Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb' | Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'mhinz/vim-signify'
 
 " lint
@@ -167,7 +166,7 @@ let g:lightline = {
             \ }
 
 " neoformat
-let g:neoformat_enabled_javascript = [ 'standard' ]
+let g:neoformat_enabled_javascript = [ 'prettier', 'jsbeautify' ]
 
 " qf
 let g:qf_window_bottom = 0
