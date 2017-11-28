@@ -8,6 +8,7 @@ rm ~/.bash_history; touch $_
 rm ~/.dbshell; touch $_
 rm ~/.lesshst; touch $_
 rm ~/.mysql_history; touch $_
+rm ~/.node_repl_history; touch $_
 rm ~/.octave_hist; touch $_
 rm ~/.psql_history; touch $_
 rm ~/.python_history; touch $_
