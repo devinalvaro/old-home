@@ -10,12 +10,11 @@ if has('python3')
 
     Plug 'roxma/ncm-clang'
     Plug 'roxma/nvim-cm-tern', { 'do': 'yarn install' }
-else
-    Plug 'maralla/completor.vim', { 'do': 'make js' }
 endif
 
-" file navigation
+" file management
 Plug 'justinmk/vim-dirvish'
+Plug 'tpope/vim-eunuch'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
 
@@ -88,13 +87,6 @@ let g:buftabline_indicators = 1
 " commentary
 autocmd Filetype c,cpp,php setlocal commentstring=//\ %s
 autocmd Filetype sql setlocal commentstring=--\ %s
-
-" completor
-let g:completor_python_binary = '/usr/bin/python3'
-let g:completor_node_binary = '/usr/bin/node'
-let g:completor_clang_binary = '/usr/bin/clang'
-let g:completor_auto_close_doc = 0
-let g:completor_min_chars = 3
 
 " delimitmate
 let g:delimitMate_matchpairs = '(:),[:],{:}'
