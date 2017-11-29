@@ -166,7 +166,7 @@ let g:lightline = {
             \ }
 
 " neoformat
-let g:neoformat_enabled_javascript = [ 'prettier', 'jsbeautify' ]
+let g:neoformat_enabled_javascript = [ 'prettiereslint', 'jsbeautify' ]
 
 " qf
 let g:qf_window_bottom = 0
