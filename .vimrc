@@ -15,9 +15,9 @@ else
 endif
 
 " file navigation
+Plug 'justinmk/vim-dirvish'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-grepper'
-Plug 'tpope/vim-vinegar'
 
 " git
 Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb' | Plug 'shumphrey/fugitive-gitlab.vim'
@@ -299,6 +299,10 @@ set noruler
 set noshowcmd
 set noshowmode
 set shortmess+=cFI
+
+" netrw
+let loaded_netrw = 1
+let loaded_netrwPlugin = 1
 
 " number
 set numberwidth=2
