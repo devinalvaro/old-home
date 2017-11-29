@@ -76,15 +76,6 @@ vim +PlugInstall +qa
 
 mkdir ~/.vim/undo
 
-# tmux
-sudo $install tmux
-
-# xsel
-sudo $install xsel
-
-# ranger
-sudo $install ranger
-
 # drive
 if [ $manager == "apt" ]; then
     sudo add-apt-repository -y ppa:twodopeshaggy/drive && sudo apt update -y
@@ -105,6 +96,15 @@ sudo make install
 
 cd ..
 rm -rf ctags
+
+# tmux
+sudo $install tmux
+
+# xsel
+sudo $install xsel
+
+# ranger
+sudo $install ranger
 
 # zsh
 sudo $install zsh
