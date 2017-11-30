@@ -61,11 +61,6 @@ yarn global add eslint # linter
 yarn global add js-beautify prettier-eslint-cli # formatter
 yarn global add tern # completor
 
-# rust
-sudo $install cargo
-
-cargo install ripgrep
-
 # vim
 if [ $manager == "apt" ]; then sudo add-apt-repository ppa:jonathonf/vim && sudo apt update -y; fi
 sudo $install vim
@@ -76,14 +71,19 @@ vim +PlugInstall +qa
 
 mkdir ~/.vim/undo
 
-# drive
-if [ $manager == "apt" ]; then
-    sudo add-apt-repository -y ppa:twodopeshaggy/drive && sudo apt update -y
-    sudo $install drive
-elif [ $manager == "dnf" ]; then
-    sudo dnf copr enable -y vaughan/drive-google
-    sudo $install drive-google
-fi
+# ripgrep
+if [ $manager == "apt"]; then sudo add-apt-repository ppa:x4121/ripgrep && sudo apt-get update -y;
+elif [ $manager == "dnf" ]; then sudo dnf copr enable carlwgeorge/ripgrep; fi
+sudo $install ripgrep
+
+# tmux
+sudo $install tmux
+
+# xsel
+sudo $install xsel
+
+# ranger
+sudo $install ranger
 
 # universal-ctags
 git clone https://github.com/universal-ctags/ctags
@@ -96,15 +96,6 @@ sudo make install
 
 cd ..
 rm -rf ctags
-
-# tmux
-sudo $install tmux
-
-# xsel
-sudo $install xsel
-
-# ranger
-sudo $install ranger
 
 # zsh
 sudo $install zsh

@@ -38,14 +38,13 @@ export EDITOR="vim"
 
 # environment variables
 export ANTIGEN=$HOME/.antigen
-export CARGO=$HOME/.cargo
 export LOCAL=$HOME/.local
 export MINICONDA3=$HOME/.miniconda3
 export NLTK_DATA=$HOME/.nltk_data
 export YARN=$HOME/.yarn
 
 # path
-export PATH=$LOCAL/bin:$CARGO/bin:$MINICONDA3/bin:$YARN/bin:$PATH
+export PATH=$LOCAL/bin:$MINICONDA3/bin:$YARN/bin:$PATH
 
 # antigen
 source $ANTIGEN/antigen.zsh

@@ -27,9 +27,6 @@ pip3 install --upgrade flake8 jedi yapf
 # yarn
 yarn global upgrade
 
-# cargo
-cargo install --force ripgrep
-
 # vim
 vim +PlugUpgrade +qa
 vim +PlugUpdate +qa
