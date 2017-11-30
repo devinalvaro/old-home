@@ -19,10 +19,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegu
 Plug 'mhinz/vim-grepper'
 
 " git
-Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb' | Plug 'shumphrey/fugitive-gitlab.vim'
+Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 Plug 'mhinz/vim-signify'
 
-" lint
+" linter
 Plug 'w0rp/ale'
 
 " quickfix
@@ -49,6 +49,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
 " text navigation
+Plug 'junegunn/vim-slash'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
 Plug 'chaoren/vim-wordmotion'
@@ -93,9 +94,6 @@ let g:delimitMate_matchpairs = '(:),[:],{:}'
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
-
-" fugitive
-let g:fugitive_gitlab_domains = [ 'https://gitlab.com', 'http://gitlab.informatika.org' ]
 
 " fzf
 let g:fzf_history_dir = '~/.vim/fzf'
@@ -388,27 +386,7 @@ nnoremap ^ 0
 nnoremap cc "_cc
 nnoremap dd "_dd
 
-nnoremap <silent> <ESC> :nohlsearch<CR>
-
 nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
-
-nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'k'
-nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'j'
-
-" visual remap
-vnoremap <silent> * :<C-u>
-            \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-            \ gvy/<C-r><C-r>=substitute(
-            \ escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-            \ gV:call setreg('"', old_reg, old_regtype)<CR>
-vnoremap <silent> # :<C-u>
-            \ let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-            \ gvy?<C-r><C-r>=substitute(
-            \ escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-            \ gV:call setreg('"', old_reg, old_regtype)<CR>
 
 " operator remap
 onoremap w :execute 'normal! '.v:count1.'w'<CR>
-
-" command remap
-cnoremap w!! w !sudo tee > /dev/null %
