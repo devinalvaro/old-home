@@ -104,9 +104,9 @@ let g:gutentags_project_root = [ '.betags' ]
 " grepper
 runtime plugin/grepper.vim
 
-let g:grepper.jump = 1
+silent! let g:grepper.jump = 1
 silent! let g:grepper.switch = 0
-let g:grepper.dir = 'repo,cwd'
+silent! let g:grepper.dir = 'repo,cwd'
 silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
 " lightline
@@ -158,6 +158,7 @@ let g:lightline = {
 let g:cm_refresh_length = [ [1, 4], [7, 2] ]
 
 " neoformat
+let g:neoformat_enabled_css = [ 'csscomb', 'jsbeautify' ]
 let g:neoformat_enabled_javascript = [ 'prettiereslint', 'jsbeautify' ]
 
 " qf
@@ -220,9 +221,10 @@ autocmd VimResized * wincmd =
 " color
 if has('termguicolors') || has('gui_running')
     set termguicolors
-    set background=dark
-    silent! colorscheme one
 endif
+
+set background=dark
+silent! colorscheme one
 
 if has('termguicolors') || has ('gui_running') && g:colors_name == 'one'
     highlight Normal ctermfg=none ctermfg=none

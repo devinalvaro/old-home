@@ -60,7 +60,7 @@ fi
 sudo $install yarn
 
 yarn global add eslint # linter
-yarn global add js-beautify prettier-eslint-cli # formatter
+yarn global add csscomb js-beautify prettier-eslint-cli # formatter
 yarn global add tern # completor
 
 # --------------------------------
