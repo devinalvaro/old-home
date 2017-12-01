@@ -22,6 +22,8 @@ elif [ $manager == "dnf" ]; then sudo $install pkgconfig; fi
 # curl
 sudo $install curl
 
+# --------------------------------
+
 # clang
 sudo $install gcc # linter
 sudo $install clang # completor (~/.clang_complete)
@@ -61,6 +63,8 @@ yarn global add eslint # linter
 yarn global add js-beautify prettier-eslint-cli # formatter
 yarn global add tern # completor
 
+# --------------------------------
+
 # vim
 if [ $manager == "apt" ]; then sudo add-apt-repository ppa:jonathonf/vim && sudo apt update -y; fi
 sudo $install vim
@@ -71,6 +75,12 @@ vim +PlugInstall +qa
 
 mkdir ~/.vim/undo
 
+# bfs
+sudo $install bfs
+
+# ranger
+sudo $install ranger
+
 # ripgrep
 if [ $manager == "apt"]; then sudo add-apt-repository ppa:x4121/ripgrep && sudo apt-get update -y;
 elif [ $manager == "dnf" ]; then sudo dnf copr enable carlwgeorge/ripgrep; fi
@@ -78,12 +88,6 @@ sudo $install ripgrep
 
 # tmux
 sudo $install tmux
-
-# xsel
-sudo $install xsel
-
-# ranger
-sudo $install ranger
 
 # universal-ctags
 git clone https://github.com/universal-ctags/ctags
@@ -96,6 +100,9 @@ sudo make install
 
 cd ..
 rm -rf ctags
+
+# xsel
+sudo $install xsel
 
 # zsh
 sudo $install zsh
