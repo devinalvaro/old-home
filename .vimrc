@@ -154,6 +154,9 @@ let g:lightline = {
             \   'gutentags': 'LightlineGutentags'
             \ }}
 
+" ncm
+let g:cm_refresh_length = [ [1, 4], [7, 2] ]
+
 " neoformat
 let g:neoformat_enabled_javascript = [ 'prettiereslint', 'jsbeautify' ]
 
@@ -217,7 +220,6 @@ autocmd VimResized * wincmd =
 " color
 if has('termguicolors') || has('gui_running')
     set termguicolors
-
     set background=dark
     silent! colorscheme one
 endif
