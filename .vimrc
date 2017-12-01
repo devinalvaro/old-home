@@ -152,8 +152,7 @@ let g:lightline = {
             \   'ale': 'LightlineAle',
             \   'filename': 'LightlineFilename',
             \   'gutentags': 'LightlineGutentags'
-            \ },
-            \ }
+            \ }}
 
 " neoformat
 let g:neoformat_enabled_javascript = [ 'prettiereslint', 'jsbeautify' ]
@@ -182,7 +181,6 @@ let g:togglecursor_replace = 'underline'
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsSnippetDirectories = [ 'snips' ]
-let g:UltiSnipsExpandTrigger = '<c-f>'
 let g:UltiSnipsJumpForwardTrigger = '<a-f>'
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 
