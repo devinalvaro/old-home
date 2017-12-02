@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 " buffer
 Plug 'moll/vim-bbye'
+Plug 'ap/vim-buftabline'
 
 " completion
 if has('python3')
@@ -44,7 +45,6 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
-Plug 'tpope/vim-endwise'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
@@ -68,7 +68,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " visual
-Plug 'ap/vim-buftabline'
 Plug 'itchyny/lightline.vim', { 'do': 'curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim' }
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
@@ -110,7 +109,6 @@ let g:gutentags_project_root = [ '.betags' ]
 
 " grepper
 runtime plugin/grepper.vim
-
 silent! let g:grepper.jump = 1
 silent! let g:grepper.switch = 0
 silent! let g:grepper.dir = 'repo,cwd'
