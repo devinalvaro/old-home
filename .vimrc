@@ -4,6 +4,9 @@
 
 call plug#begin('~/.vim/plugged')
 
+" buffer
+Plug 'moll/vim-bbye'
+
 " completion
 if has('python3')
     Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
@@ -353,6 +356,7 @@ noremap <leader>Y "+Y
 noremap <leader>x "+x
 noremap <leader>X "+X
 
+nnoremap <leader>d :Bdelete<cr>
 nnoremap <leader>n :Neoformat<cr>
 nnoremap <leader>r :source $MYVIMRC<cr>:nohlsearch<cr>
 nnoremap <leader>t :TagbarToggle<cr>
