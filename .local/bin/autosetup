@@ -78,9 +78,6 @@ mkdir ~/.vim/undo
 # bfs
 sudo $install bfs
 
-# ranger
-sudo $install ranger
-
 # ripgrep
 if [ $manager == "apt"]; then sudo add-apt-repository ppa:x4121/ripgrep && sudo apt-get update -y;
 elif [ $manager == "dnf" ]; then sudo dnf copr enable carlwgeorge/ripgrep; fi

@@ -95,6 +95,10 @@ let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
+" dirvish
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+
 " fzf
 let g:fzf_history_dir = '~/.vim/fzf'
 
@@ -292,10 +296,6 @@ set noshowcmd
 set noshowmode
 set shortmess+=cFI
 
-" netrw
-let loaded_netrw = 1
-let loaded_netrwPlugin = 1
-
 " number
 set numberwidth=2
 
@@ -343,8 +343,8 @@ let &showbreak = '↳ '
 " leader remap
 let mapleader = "\<space>"
 
-noremap <leader>w :w<CR>
-noremap <leader>q :q<CR>
+noremap <leader>w :w<cr>
+noremap <leader>q :q<cr>
 
 noremap <leader>p "+p
 noremap <leader>P "+P
@@ -353,25 +353,28 @@ noremap <leader>Y "+Y
 noremap <leader>x "+x
 noremap <leader>X "+X
 
-nnoremap <leader>n :Neoformat<CR>
-nnoremap <leader>r :source $MYVIMRC<CR>:nohlsearch<CR>
-nnoremap <leader>t :TagbarToggle<CR>
-nnoremap <leader>u :UndotreeToggle<CR>
+nnoremap <leader>n :Neoformat<cr>
+nnoremap <leader>r :source $MYVIMRC<cr>:nohlsearch<cr>
+nnoremap <leader>t :TagbarToggle<cr>
+nnoremap <leader>u :UndotreeToggle<cr>
 
-nnoremap <leader>bc :BCommits<CR>
-nnoremap <leader>bl :BLines<CR>
-nnoremap <leader>bt :BTags<CR>
-nnoremap <leader>fb :Buffers<CR>
-nnoremap <leader>fc :Commits<CR>
-nnoremap <leader>fh :History:<CR>
-nnoremap <leader>fi :Files<CR>
-nnoremap <leader>fl :Lines<CR>
-nnoremap <leader>ft :Tags<CR>
+nnoremap <leader>bc :BCommits<cr>
+nnoremap <leader>bl :BLines<cr>
+nnoremap <leader>bt :BTags<cr>
+nnoremap <leader>fb :Buffers<cr>
+nnoremap <leader>fc :Commits<cr>
+nnoremap <leader>fh :History:<cr>
+nnoremap <leader>fi :Files<cr>
+nnoremap <leader>fl :Lines<cr>
+nnoremap <leader>ft :Tags<cr>
 
-nnoremap <leader>gb :Grepper-buffers<CR>
-nnoremap <leader>gr :Grepper<CR>
+nnoremap <leader>gb :Grepper-buffers<cr>
+nnoremap <leader>gr :Grepper<cr>
 
 " normal + visual remap
+noremap 0 ^
+noremap ^ 0
+
 noremap c "_c
 noremap C "_C
 noremap d "_d
@@ -382,13 +385,10 @@ noremap X D
 " normal remap
 nnoremap Y y$
 
-nnoremap 0 ^
-nnoremap ^ 0
-
 nnoremap cc "_cc
 nnoremap dd "_dd
 
 nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
 
 " operator remap
-onoremap w :execute 'normal! '.v:count1.'w'<CR>
+onoremap w :execute 'normal! '.v:count1.'w'<cr>

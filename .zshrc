@@ -7,17 +7,6 @@ if which tmux >/dev/null 2>&1; then
     done
 fi
 
-# ranger
-function ranger {
-    tempfile="$(mktemp -t tmp.XXXXXX)"
-    /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
-    test -f "$tempfile" &&
-    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
-        cd -- "$(cat "$tempfile")"
-    fi
-    rm -f -- "$tempfile"
-}
-
 # fzf
 export FZF_DEFAULT_OPTS="--inline-info"
 export FZF_DEFAULT_COMMAND="rg --files --no-ignore --follow -g '!{.git,node_modules,Sdk}/*' -g '!tags' 2> /dev/null"
@@ -58,7 +47,6 @@ antigen apply
 # key binding
 bindkey -s '\ea' '; echo -e \"\\a\"\n'
 bindkey -s '\eh' '~\n'
-bindkey -s '\er' 'ranger\n'
 bindkey -s '\ev' 'vim\n'
 
 # general alias
