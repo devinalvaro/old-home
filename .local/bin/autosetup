@@ -15,7 +15,6 @@ fi
 # build
 sudo $install autoconf
 sudo $install automake
-sudo $install cmake
 if [ $manager == "apt" ]; then sudo $install pkg-config;
 elif [ $manager == "dnf" ]; then sudo $install pkgconfig; fi
 
