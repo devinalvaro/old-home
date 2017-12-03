@@ -4,19 +4,12 @@
 cd ~
 
 # package manager
-if type "apt" > /dev/null 2>&1; then
-    manager="apt"
-    install="apt install -y"
-elif type "dnf" > /dev/null 2>&1; then
-    manager="dnf"
-    install="dnf install -y"
-fi
+install="apt install -y"
 
 # build
 sudo $install autoconf
 sudo $install automake
-if [ $manager == "apt" ]; then sudo $install pkg-config;
-elif [ $manager == "dnf" ]; then sudo $install pkgconfig; fi
+sudo $install pkg-config
 
 # curl
 sudo $install curl
@@ -29,8 +22,7 @@ sudo $install clang # completor (~/.clang_complete)
 sudo $install clang-format # formatter (~/.clang-format)
 
 # java
-if [ $manager == "apt" ]; then sudo $install openjdk-8-jdk;
-elif [ $manager == "dnf" ]; then sudo $install java-1.8.0-openjdk; fi
+sudo $install openjdk-8-jdk
 
 # python
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -46,16 +38,12 @@ pip3 install jedi # completor
 pip3 install yapf # formatter (~/.style.yapf)
 
 # nodejs
-if [ $manager == "apt" ]; then curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -; fi
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo $install nodejs
 
-if [ $manager == "apt" ]; then
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-    sudo apt update -y
-elif [ $manager=="dnf" ]; then
-    sudo wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
-fi
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update -y
 sudo $install yarn
 
 yarn global add eslint # linter
@@ -65,7 +53,7 @@ yarn global add tern # completor
 # --------------------------------
 
 # vim
-if [ $manager == "apt" ]; then sudo add-apt-repository ppa:jonathonf/vim && sudo apt update -y; fi
+sudo add-apt-repository ppa:jonathonf/vim && sudo apt update -y
 sudo $install vim
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -78,8 +66,7 @@ mkdir ~/.vim/undo
 sudo $install bfs
 
 # ripgrep
-if [ $manager == "apt"]; then sudo add-apt-repository ppa:x4121/ripgrep && sudo apt-get update -y;
-elif [ $manager == "dnf" ]; then sudo dnf copr enable carlwgeorge/ripgrep; fi
+sudo add-apt-repository ppa:x4121/ripgrep && sudo apt-get update -y
 sudo $install ripgrep
 
 # tmux

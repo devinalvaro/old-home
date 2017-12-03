@@ -4,22 +4,11 @@
 cd ~
 
 # package manager
-if type "apt" > /dev/null 2>&1; then
-    manager="apt"
-    install="apt install -y"
-elif type "dnf" > /dev/null 2>&1; then
-    manager="dnf"
-    install="dnf install -y"
-fi
+install="apt install -y"
 
 # install
-if [ $manager == "apt" ]; then
-    sudo add-apt-repository -y ppa:twodopeshaggy/drive && sudo apt update -y
-    sudo $install drive
-elif [ $manager == "dnf" ]; then
-    sudo dnf copr enable -y vaughan/drive-google
-    sudo $install drive-google
-fi
+sudo add-apt-repository -y ppa:twodopeshaggy/drive && sudo apt update -y
+sudo $install drive
 
 # init
 mkdir .drive

@@ -6,20 +6,14 @@ if [ $(date +%u) -ne 7 ]; then
    exit 1
 fi
 
-# package manager
-if type "apt" > /dev/null 2>&1; then manager="apt";
-elif type "dnf" > /dev/null 2>&1; then manager="dnf"; fi
-
 # remove orphan packages
-if [ $manager == "apt" ]; then sudo apt --purge autoremove -y;
-elif [ $manager == "dnf" ]; then sudo dnf autoremove -y; fi
+sudo apt --purge autoremove -y
 
 # clean package archives
-if [ $manager == "apt" ]; then sudo apt-get clean -y && sudo apt-get autoclean -y;
-elif [ $manager == "dnf" ]; then sudo dnf clean -y; fi
+sudo apt-get clean -y && sudo apt-get autoclean -y
 
 # remove unused config files
-if [ $manager == "apt" ]; then sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2); fi
+sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
 
 # remove terminal desktop files
 sudo rm -f /usr/share/application/ranger.desktop
