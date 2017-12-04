@@ -65,6 +65,13 @@ alias aptr="sudo apt remove --purge"
 alias apts="sudo apt search"
 alias aptu="sudo apt update; sudo apt upgrade"
 
+# pacaur alias
+alias paca="pacaur -Rns $(pacaur -Qdtq)"
+alias paci="pacaur -S --needed"
+alias pacr="pacaur -Rns"
+alias pacs="pacaur -Ss"
+alias pacu="pacaur -Syu --needed"
+
 # git alias
 alias ga="git add"
 alias gaa="git add -A"
