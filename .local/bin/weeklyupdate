@@ -1,13 +1,13 @@
 #!/bin/bash -v
 
-# check if Sunday
-if [ $(date +%u) -ne 7 ]; then
-   echo "Today's not Sunday yet. Have a good day and be productive!"
-   exit 1
-fi
+# variables
+upgrade="sudo apt update-y && sudo apt upgrade -y"
+
+# functions
+source ~/.local/bin/functions/build
 
 # system
-sudo apt update -y && sudo apt upgrade -y
+$upgrade
 
 # conda
 conda update -y --all
@@ -30,13 +30,4 @@ vim +PlugUpdate +qa
 antigen update
 
 # universal-ctags
-git clone https://github.com/universal-ctags/ctags.git
-cd ctags
-
-./autogen.sh 
-./configure
-make
-sudo make install
-
-cd ..
-rm -rf ctags
+build https://github.com/universal-ctags/ctags ctags

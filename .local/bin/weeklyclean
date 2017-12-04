@@ -1,19 +1,14 @@
 #!/bin/bash -v
 
-# check if Sunday
-if [ $(date +%u) -ne 7 ]; then
-   echo "Today's not Sunday yet. Have a good day and be productive!"
-   exit 1
-fi
+# variables
+clean="sudo apt-get clean -y && sudo apt-get autoclean -y"
+purge="sudo apt --purge autoremove -y"
 
 # remove orphan packages
-sudo apt --purge autoremove -y
+$purge
 
 # clean package archives
-sudo apt-get clean -y && sudo apt-get autoclean -y
-
-# remove unused config files
-sudo dpkg --purge $(COLUMNS=200 dpkg -l | grep "^rc" | tr -s ' ' | cut -d ' ' -f 2)
+$clean
 
 # remove terminal desktop files
 sudo rm -f /usr/share/application/ranger.desktop

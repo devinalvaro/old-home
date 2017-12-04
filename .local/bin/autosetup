@@ -1,35 +1,36 @@
 #!/bin/bash -v
 
-# home
-cd ~
+# variables
+add="sudo add-apt-repository -y"
+install="sudo apt install -y"
+update="sudo apt update -y"
 
-# package manager
-install="apt install -y"
+# functions
+source ~/.local/bin/functions/build
 
-# build
-sudo $install autoconf
-sudo $install automake
-sudo $install pkg-config
-
-# curl
-sudo $install curl
+# essentials
+$install autoconf
+$install automake
+$install curl
+$install pkg-config
 
 # --------------------------------
 
 # clang
-sudo $install gcc # linter
-sudo $install clang # completor (~/.clang_complete)
-sudo $install clang-format # formatter (~/.clang-format)
+$install gcc # linter
+$install clang # completor (~/.clang_complete)
+$install clang-format # formatter (~/.clang-format)
 
-# java
-sudo $install openjdk-8-jdk
+# jdk
+$install openjdk-8-jdk
 
-# python
+# conda
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p ~/.miniconda3
 rm Miniconda3-latest-Linux-x86_64.sh
 
-sudo $install python3-pip
+# pip
+$install python3-pip
 
 pip3 install neovim
 
@@ -39,12 +40,13 @@ pip3 install yapf # formatter (~/.style.yapf)
 
 # nodejs
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo $install nodejs
+$install nodejs
 
+# yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update -y
-sudo $install yarn
+$update
+$install yarn
 
 yarn global add eslint # linter
 yarn global add csscomb js-beautify prettier-eslint-cli # formatter
@@ -53,8 +55,8 @@ yarn global add tern # completor
 # --------------------------------
 
 # vim
-sudo add-apt-repository ppa:jonathonf/vim && sudo apt update -y
-sudo $install vim
+$add ppa:jonathonf/vim && $update
+$install vim
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -63,32 +65,23 @@ vim +PlugInstall +qa
 mkdir ~/.vim/undo
 
 # bfs
-sudo $install bfs
+$install bfs
 
 # ripgrep
-sudo add-apt-repository ppa:x4121/ripgrep && sudo apt-get update -y
-sudo $install ripgrep
+$add ppa:x4121/ripgrep && $update
+$install ripgrep
 
 # tmux
-sudo $install tmux
+$install tmux
 
-# universal-ctags
-git clone https://github.com/universal-ctags/ctags
-cd ctags
-
-./autogen.sh 
-./configure
-make
-sudo make install
-
-cd ..
-rm -rf ctags
+# ctags
+build https://github.com/universal-ctags/ctags ctags
 
 # xsel
-sudo $install xsel
+$install xsel
 
 # zsh
-sudo $install zsh
+$install zsh
 
 mkdir ~/.antigen
 curl -L git.io/antigen > ~/.antigen/antigen.zsh
