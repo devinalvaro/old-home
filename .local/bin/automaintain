@@ -2,10 +2,10 @@
 
 # arch
 if type "pacman" > /dev/null 2>&1; then
-    ~/.local/bin/requires/archsetup
+    ~/.local/bin/requires/archmaintain
 fi
 
 # ubuntu
 if type "apt" > /dev/null 2>&1; then
-    ~/.local/bin/requires/ubuntusetup
+    ~/.local/bin/requires/ubuntumaintain
 fi

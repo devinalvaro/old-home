@@ -1,0 +1,40 @@
+#!/bin/bash -v
+
+# variables
+autoclean="pacaur -Sc --noconfirm && pacaur -Scc --noconfirm"
+autoremove="pacaur -Rns --noconfirm $(pacaur -Qdtq)"
+upgrade="pacaur -Syu --needed --noconfirm --noedit"
+
+# --------------------------------
+
+# system
+$upgrade
+
+# pip
+pip install --upgrade pip
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade
+
+# yarn
+yarn global upgrade
+
+# vim
+vim +PlugUpgrade +qa
+vim +PlugUpdate +qa
+
+# antigen
+antigen update
+
+# --------------------------------
+
+# remove orphan packages
+$autoremove
+
+# clean package archives
+$autoclean
+
+# remove terminal desktop files
+sudo rm -f /usr/share/applications/nvim.desktop
+sudo rm -f /usr/share/applications/vim.desktop
+
+# clean vim plugins
+vim +PlugClean +qa
