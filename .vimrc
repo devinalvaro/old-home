@@ -71,7 +71,6 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'itchyny/lightline.vim', { 'do': 'curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim' }
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
-Plug 'jszakmeister/vim-togglecursor'
 
 call plug#end()
 
@@ -183,12 +182,6 @@ let g:sneak#label = 1
 " tagbar
 let g:tagbar_width = 30
 
-" togglecursor
-let g:togglecursor_default = 'block'
-let g:togglecursor_insert = 'line'
-let g:togglecursor_leave = 'block'
-let g:togglecursor_replace = 'underline'
-
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsSnippetDirectories = [ 'snips' ]
@@ -257,6 +250,11 @@ autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 " confirmation
 set confirm
+
+" cursor
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[0 q"
 
 " display
 set display=lastline

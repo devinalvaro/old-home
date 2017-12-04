@@ -3,7 +3,7 @@ set guicursor+=a:blinkon0
 
 " font
 if has('unix')
-    set guifont=Hack\ Regular\ 17
+    set guifont=Hack\ Regular\ 12
 elseif has('win32')
     set guifont=Consolas:h12
 endif
@@ -17,4 +17,4 @@ set guioptions-=r
 
 " window
 set lines=32
-set columns=100
+set columns=104
