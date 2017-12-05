@@ -1,15 +1,15 @@
 #!/bin/bash -v
 
 # init
-mkdir ~/.drive
+mkdir -p ~/.drive
 cd ~/.drive
 
 drive init
 drive pull --starred
 
-# make soft links
-ln -s ~/.drive/Academic ~/Documents/Academic
-ln -s ~/.drive/Miscs ~/Documents/Miscs
-ln -s ~/.drive/PDFs ~/Documents/PDFs
-ln -s ~/.drive/Logos ~/Pictures/Logos
-ln -s ~/.drive/Wallpapers ~/Pictures/Wallpapers
+# link
+ln -sfn ~/.drive/Academic ~/Documents/Academic
+ln -sfn ~/.drive/Miscs ~/Documents/Miscs
+ln -sfn ~/.drive/PDFs ~/Documents/PDFs
+ln -sfn ~/.drive/Logos ~/Pictures/Logos
+ln -sfn ~/.drive/Wallpapers ~/Pictures/Wallpapers
