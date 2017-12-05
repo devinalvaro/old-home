@@ -3,9 +3,7 @@ set guicursor+=a:blinkon0
 
 " font
 if has('unix')
-    set guifont=Hack\ Regular\ 12
-elseif has('win32')
-    set guifont=Consolas:h12
+    set guifont=Hack\ Regular\ 11.5
 endif
 
 " gui
