@@ -45,6 +45,7 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
+Plug 'junegunn/vim-easy-align'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
@@ -59,7 +60,6 @@ Plug 'chaoren/vim-wordmotion'
 
 " text objects
 Plug 'michaeljsmith/vim-indent-object'
-Plug 'coderifous/textobj-word-column.vim'
 
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
@@ -101,6 +101,9 @@ let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+
+" easy align
+noremap gl <Plug>(EasyAlign)
 
 " fzf
 let g:fzf_history_dir = '~/.vim/fzf'
@@ -159,6 +162,9 @@ let g:lightline = {
             \   'filename': 'LightlineFilename',
             \   'gutentags': 'LightlineGutentags'
             \ }}
+
+" matchit
+runtime macros/matchit.vim
 
 " ncm
 let g:cm_refresh_length = [ [1, 4], [7, 2] ]
