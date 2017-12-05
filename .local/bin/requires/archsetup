@@ -7,8 +7,8 @@ install="pacaur -S --needed --noconfirm --noedit"
 
 # clang
 $install gcc-multilib # linter
-$install clang # completor (~/.clang_complete)
-$install clang-format # formatter (~/.clang-format)
+$install clang # completor: ~/.clang_complete
+$install clang-format # formatter: ~/.clang-format
 
 # jdk
 $install jdk8-openjdk
@@ -18,9 +18,9 @@ $install python-pip
 
 $install python-neovim
 
-pip install --user flake8 # linter (~/.config/flake8)
+pip install --user flake8 # linter: ~/.config/flake8
 pip install --user jedi # completor
-pip install --user yapf # formatter (~/.style.yapf)
+pip install --user yapf # formatter: ~/.style.yapf
 
 # nodejs
 $install nodejs
@@ -28,9 +28,9 @@ $install nodejs
 # yarn
 $install yarn
 
-yarn global add eslint # linter
-yarn global add csscomb js-beautify prettier-eslint-cli # formatter
-yarn global add tern # completor
+yarn global add eslint eslint-config-airbnb # linter: ~/.eslintrc
+yarn global add tern # completor: ~/.tern-config
+yarn global add js-beautify prettier prettier-eslint-cli # formatter: ~/.jsbeautifyrc
 
 # --------------------------------
 

@@ -43,9 +43,11 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 " text editing
 Plug 'tpope/vim-abolish'
+Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
 Plug 'raimondi/delimitmate'
 Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-endwise'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
@@ -68,6 +70,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " visual
+Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim', { 'do': 'curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim' }
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
@@ -85,6 +88,9 @@ let g:ale_linters = {
 " buftabline
 let g:buftabline_show = 1
 let g:buftabline_indicators = 1
+
+" closetag
+let g:closetag_close_shortcut = '!>'
 
 " commentary
 autocmd Filetype c,cpp,php setlocal commentstring=//\ %s
@@ -110,9 +116,11 @@ let g:fzf_history_dir = '~/.vim/fzf'
 
 " gutentags
 let g:gutentags_project_root = [ '.betags' ]
+let g:gutentags_ctags_exclude = [ 'node_modules' ]
 
 " grepper
 runtime plugin/grepper.vim
+
 silent! let g:grepper.jump = 1
 silent! let g:grepper.switch = 0
 silent! let g:grepper.dir = 'repo,cwd'
@@ -167,11 +175,12 @@ let g:lightline = {
 runtime macros/matchit.vim
 
 " ncm
-let g:cm_refresh_length = [ [1, 4], [7, 2] ]
+let g:cm_refresh_length = [ [1, 4], [5, 2], [6, 3], [7, 2] ]
 
 " neoformat
-let g:neoformat_enabled_css = [ 'csscomb', 'jsbeautify' ]
-let g:neoformat_enabled_javascript = [ 'prettiereslint', 'jsbeautify' ]
+let g:neoformat_enabled_css = [ 'prettier', 'jsbeautify' ]
+let g:neoformat_enabled_javascript = [ 'prettiereslint', 'prettier', 'jsbeautify' ]
+let g:neoformat_enabled_json = [ 'prettier', 'jsbeautify' ]
 
 " qf
 let g:qf_window_bottom = 0
@@ -360,6 +369,7 @@ noremap <leader>Y "+Y
 noremap <leader>x "+x
 noremap <leader>X "+X
 
+nnoremap <leader>c :ColorToggle<cr>
 nnoremap <leader>d :Bdelete<cr>
 nnoremap <leader>n :Neoformat<cr>
 nnoremap <leader>r :source $MYVIMRC<cr>:nohlsearch<cr>

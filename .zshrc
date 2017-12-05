@@ -43,6 +43,9 @@ antigen theme denysdovhan/spaceship-zsh-theme spaceship
 
 antigen apply
 
+# function
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
 # key binding
 bindkey -s '\eh' '~\n'
 bindkey -s '\ev' 'vim\n'

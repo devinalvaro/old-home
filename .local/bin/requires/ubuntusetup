@@ -18,8 +18,8 @@ $install pkg-config
 
 # clang
 $install gcc # linter
-$install clang # completor (~/.clang_complete)
-$install clang-format # formatter (~/.clang-format)
+$install clang # completor: ~/.clang_complete
+$install clang-format # formatter: ~/.clang-format
 
 # jdk
 $install openjdk-8-jdk
@@ -29,9 +29,9 @@ $install python3-pip
 
 sudo pip3 install neovim
 
-pip3 install --user flake8 # linter (~/.config/flake8)
+pip3 install --user flake8 # linter: ~/.config/flake8
 pip3 install --user jedi # completor
-pip3 install --user yapf # formatter (~/.style.yapf)
+pip3 install --user yapf # formatter: ~/.style.yapf
 
 # nodejs
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -43,9 +43,9 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 $update
 $install yarn
 
-yarn global add eslint # linter
-yarn global add csscomb js-beautify prettier-eslint-cli # formatter
-yarn global add tern # completor
+yarn global add eslint eslint-config-airbnb # linter: ~/.eslintrc
+yarn global add tern # completor: ~/.tern-config
+yarn global add js-beautify prettier prettier-eslint-cli # formatter: ~/.jsbeautifyrc
 
 # --------------------------------
 
