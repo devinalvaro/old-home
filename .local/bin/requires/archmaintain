@@ -11,8 +11,8 @@ upgrade="pacaur -Syu --needed --noconfirm --noedit"
 $upgrade
 
 # pip
-pip install --upgrade pip
-pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade
+sudo pip freeze --local --all | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install --upgrade
+pip freeze --local --user | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade
 
 # yarn
 yarn global upgrade
