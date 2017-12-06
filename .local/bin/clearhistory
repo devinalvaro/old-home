@@ -1,17 +1,26 @@
 #!/bin/bash
 
+rm -f ~/.lesshst; touch $_
+
+# database
+rm -f ~/.dbshell; touch $_ # mongodb
+rm -f ~/.mysql_history; touch $_
+rm -f ~/.psql_history; touch $_
+
+# language
+rm -f ~/.ghc/ghci_history; touch $_
+rm -f ~/.node_repl_history; touch $_
+
+# python
 rm -f ~/.ipynb_checkpoints/*
+rm -f ~/.python_history; touch $_
+
+# shell
+rm -f ~/.bash_history; touch $_
+rm -f ~/.zsh_history; touch $_
+
+# vim
+rm -f ~/.vim/.netrwhist; touch $_
 rm -f ~/.vim/fzf/*
 rm -f ~/.vim/undo/*
-
-rm ~/.bash_history; touch $_
-rm ~/.dbshell; touch $_
-rm ~/.lesshst; touch $_
-rm ~/.mysql_history; touch $_
-rm ~/.node_repl_history; touch $_
-rm ~/.octave_hist; touch $_
-rm ~/.psql_history; touch $_
-rm ~/.python_history; touch $_
-rm ~/.viminfo; touch $_
-rm ~/.vim/.netrwhist; touch $_
-rm ~/.zsh_history; touch $_
+rm -f ~/.viminfo; touch $_
