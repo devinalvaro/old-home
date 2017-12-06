@@ -20,7 +20,6 @@ rm -f ~/.bash_history; touch $_
 rm -f ~/.zsh_history; touch $_
 
 # vim
-rm -f ~/.vim/.netrwhist; touch $_
 rm -f ~/.vim/fzf/*
 rm -f ~/.vim/undo/*
 rm -f ~/.viminfo; touch $_

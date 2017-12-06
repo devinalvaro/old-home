@@ -1,0 +1,54 @@
+" leader remap
+let mapleader = "\<space>"
+
+noremap <leader>w :w<cr>
+noremap <leader>q :q<cr>
+
+noremap <leader>p "+p
+noremap <leader>P "+P
+noremap <leader>y "+y
+noremap <leader>Y "+y$
+noremap <leader>x "+d
+noremap <leader>X "+D
+
+nnoremap <leader>c :ColorToggle<cr>
+nnoremap <leader>d :Bdelete<cr>
+nnoremap <leader>n :Neoformat<cr>
+nnoremap <leader>r :source $MYVIMRC<cr>:nohlsearch<cr>
+nnoremap <leader>t :TagbarToggle<cr>
+nnoremap <leader>u :UndotreeToggle<cr>
+
+nnoremap <leader>bc :BCommits<cr>
+nnoremap <leader>bl :BLines<cr>
+nnoremap <leader>bt :BTags<cr>
+nnoremap <leader>fb :Buffers<cr>
+nnoremap <leader>fc :Commits<cr>
+nnoremap <leader>fh :History:<cr>
+nnoremap <leader>fi :Files<cr>
+nnoremap <leader>fl :Lines<cr>
+nnoremap <leader>ft :Tags<cr>
+
+nnoremap <leader>gb :Grepper-buffers<cr>
+nnoremap <leader>gr :Grepper<cr>
+
+" normal + visual remap
+noremap 0 ^
+noremap ^ 0
+
+noremap c "_c
+noremap C "_C
+noremap d "_d
+noremap D "_D
+noremap x d
+noremap X D
+
+" normal remap
+nnoremap Y y$
+
+nnoremap cc "_cc
+nnoremap dd "_dd
+
+nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
+
+" operator remap
+onoremap w :execute 'normal! '.v:count1.'w'<cr>
