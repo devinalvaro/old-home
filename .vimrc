@@ -365,9 +365,9 @@ noremap <leader>q :q<cr>
 noremap <leader>p "+p
 noremap <leader>P "+P
 noremap <leader>y "+y
-noremap <leader>Y "+Y
-noremap <leader>x "+x
-noremap <leader>X "+X
+noremap <leader>Y "+y$
+noremap <leader>x "+d
+noremap <leader>X "+D
 
 nnoremap <leader>c :ColorToggle<cr>
 nnoremap <leader>d :Bdelete<cr>
