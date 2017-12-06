@@ -59,13 +59,6 @@ alias py='python'
 alias py2='python2'
 alias py3='python3'
 
-# apt alias
-alias apta='sudo apt autoremove --purge'
-alias apti='sudo apt install'
-alias aptr='sudo apt remove --purge'
-alias apts='sudo apt search'
-alias aptu='sudo apt update; sudo apt upgrade'
-
 # pacaur alias
 alias paca='pacaur -Rns $(pacaur -Qdtq)'
 alias paci='pacaur -S --needed'

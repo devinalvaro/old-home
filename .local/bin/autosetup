@@ -1,11 +1,72 @@
-#!/bin/bash
+#!/bin/bash -v
 
-# arch
-if type "pacman" > /dev/null 2>&1; then
-    ~/.local/bin/requires/archsetup
-fi
+# variable
+install="pacaur -S --needed --noconfirm --noedit"
 
-# ubuntu
-if type "apt" > /dev/null 2>&1; then
-    ~/.local/bin/requires/ubuntusetup
-fi
+# essential
+$install curl
+
+# --------------------------------
+
+# clang
+$install gcc-multilib # linter
+$install clang # completor: ~/.clang_complete
+$install clang-format # formatter: ~/.clang-format
+
+# java
+$install jdk8-openjdk
+
+# python
+$install python-pip
+
+$install python-neovim
+
+pip install --user flake8 # linter: ~/.config/flake8
+pip install --user jedi # completor
+pip install --user yapf # formatter: ~/.style.yapf
+
+# nodejs
+$install nodejs
+
+$install yarn
+
+yarn global add eslint eslint-config-airbnb # linter: ~/.eslintrc
+yarn global add tern # completor: ~/.tern-config
+yarn global add js-beautify prettier prettier-eslint-cli # formatter: ~/.jsbeautifyrc
+
+# --------------------------------
+
+# bfs
+$install bfs
+
+# ctags
+$install universal-ctags-git
+
+# drive
+$install drive
+
+# ripgrep
+$install ripgrep
+
+# tmux
+$install tmux
+
+# vim
+$install vim
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qa
+
+mkdir ~/.vim/undo
+
+# xsel
+$install xsel
+
+# zsh
+$install zsh
+
+mkdir ~/.antigen
+curl -L git.io/antigen > ~/.antigen/antigen.zsh
+
+chsh -s $(which zsh)
