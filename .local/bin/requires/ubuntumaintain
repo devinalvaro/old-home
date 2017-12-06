@@ -25,7 +25,7 @@ vim +PlugUpgrade +qa
 vim +PlugUpdate +qa
 
 # antigen
-antigen update
+zsh -i -c 'antigen update'
 
 # universal-ctags
 build https://github.com/universal-ctags/ctags ctags

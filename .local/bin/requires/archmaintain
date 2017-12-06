@@ -22,7 +22,7 @@ vim +PlugUpgrade +qa
 vim +PlugUpdate +qa
 
 # antigen
-antigen update
+zsh -i -c 'antigen update'
 
 # --------------------------------
 
