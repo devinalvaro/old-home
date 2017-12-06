@@ -17,14 +17,14 @@ if has('python3')
 endif
 
 " file management
-Plug 'justinmk/vim-dirvish'
-Plug 'tpope/vim-eunuch'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
+Plug 'justinmk/vim-dirvish'
 Plug 'mhinz/vim-grepper'
+Plug 'tpope/vim-eunuch'
 
 " git
-Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 
 " linter
 Plug 'w0rp/ale'
@@ -42,23 +42,23 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 
 " text editing
-Plug 'tpope/vim-abolish'
 Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-commentary'
-Plug 'raimondi/delimitmate'
 Plug 'junegunn/vim-easy-align'
-Plug 'tpope/vim-endwise'
+Plug 'raimondi/delimitmate'
 Plug 'sbdchd/neoformat'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
 " text navigation
+Plug 'chaoren/vim-wordmotion'
 Plug 'junegunn/vim-slash'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
-Plug 'chaoren/vim-wordmotion'
 
 " text objects
 Plug 'michaeljsmith/vim-indent-object'
