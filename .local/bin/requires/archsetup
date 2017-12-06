@@ -1,7 +1,10 @@
 #!/bin/bash -v
 
-# variables
+# variable
 install="pacaur -S --needed --noconfirm --noedit"
+
+# essential
+$install curl
 
 # --------------------------------
 
@@ -10,10 +13,10 @@ $install gcc-multilib # linter
 $install clang # completor: ~/.clang_complete
 $install clang-format # formatter: ~/.clang-format
 
-# jdk
+# java
 $install jdk8-openjdk
 
-# pip
+# python
 $install python-pip
 
 $install python-neovim
@@ -25,7 +28,6 @@ pip install --user yapf # formatter: ~/.style.yapf
 # nodejs
 $install nodejs
 
-# yarn
 $install yarn
 
 yarn global add eslint eslint-config-airbnb # linter: ~/.eslintrc

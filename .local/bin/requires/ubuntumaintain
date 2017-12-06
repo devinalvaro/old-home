@@ -1,11 +1,11 @@
 #!/bin/bash -v
 
-# variables
+# variable
 autoclean="sudo apt-get autoclean -y && sudo apt-get clean -y"
 autoremove="sudo apt --purge autoremove -y"
 upgrade="sudo apt update-y && sudo apt upgrade -y"
 
-# functions
+# function
 source ~/.local/bin/requires/build
 
 # --------------------------------
