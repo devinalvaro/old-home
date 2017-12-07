@@ -7,24 +7,6 @@ if which tmux >/dev/null 2>&1; then
     done
 fi
 
-# fzf
-export FZF_DEFAULT_OPTS="--inline-info"
-export FZF_DEFAULT_COMMAND="rg --files --no-ignore --follow -g '!{.git,node_modules,Sdk}/*' -g '!tags' 2> /dev/null"
-export FZF_ALT_C_COMMAND="bfs -L . -mindepth 1 \\( -name 'node_modules' -o -name 'Sdk' \\) -prune \
-    -o \\( -path '*/\\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \\) -prune \
-    -o -type d -print 2> /dev/null | cut -b3-"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
-
-# spaceship
-export SPACESHIP_PROMPT_PREFIXES_SHOW=false
-export SPACESHIP_DIR_TRUNC=0
-export SPACESHIP_GIT_SYMBOL="\0"
-
-# editor
-export EDITOR="vim"
-
 # environment variables
 export ANTIGEN=$HOME/.antigen
 export LOCAL=$HOME/.local
@@ -34,14 +16,31 @@ export YARN=$HOME/.yarn
 # path
 export PATH=$LOCAL/bin:$YARN/bin:$PATH
 
+# editor
+export EDITOR="vim"
+
+# spaceship
+export SPACESHIP_PROMPT_PREFIXES_SHOW=false
+export SPACESHIP_DIR_TRUNC=0
+export SPACESHIP_GIT_SYMBOL="\0"
+
 # antigen
-source $ANTIGEN/antigen.zsh
+[ -f $ANTIGEN/antigen.zsh ] && source $ANTIGEN/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle tarruda/zsh-autosuggestions
 antigen theme denysdovhan/spaceship-zsh-theme spaceship
-
 antigen apply
+
+# fzf
+export FZF_DEFAULT_OPTS="--inline-info"
+export FZF_DEFAULT_COMMAND="rg --files --no-ignore --follow -g '!{.git,node_modules,Sdk}/*' -g '!tags' 2> /dev/null"
+export FZF_ALT_C_COMMAND="bfs -L . -mindepth 1 \\( -name 'node_modules' -o -name 'Sdk' \\) -prune \
+    -o \\( -path '*/\\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \\) -prune \
+    -o -type d -print 2> /dev/null | cut -b3-"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
 # function
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
