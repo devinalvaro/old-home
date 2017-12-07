@@ -16,15 +16,6 @@ $install clang-format # formatter: ~/.clang-format
 # java
 $install jdk8-openjdk
 
-# python
-$install python-pip
-
-$install python-neovim
-
-pip install --user flake8 # linter: ~/.config/flake8
-pip install --user jedi # completor
-pip install --user yapf # formatter: ~/.style.yapf
-
 # nodejs
 $install nodejs
 
@@ -33,6 +24,15 @@ $install yarn
 yarn global add eslint eslint-config-airbnb # linter: ~/.eslintrc
 yarn global add tern # completor: ~/.tern-config
 yarn global add js-beautify prettier prettier-eslint-cli # formatter: ~/.jsbeautifyrc
+
+# python
+$install python-pip
+
+$install python-neovim
+
+pip install --user flake8 # linter: ~/.config/flake8
+pip install --user jedi # completor
+pip install --user yapf # formatter: ~/.style.yapf
 
 # --------------------------------
 
