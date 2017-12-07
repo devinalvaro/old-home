@@ -1,25 +1,25 @@
 #!/bin/bash
 
-rm -f ~/.lesshst; touch $_
+rm -f ~/.lesshst; touch $_ &> /dev/null
 
 # database
-rm -f ~/.dbshell; touch $_ # mongodb
-rm -f ~/.mysql_history; touch $_
-rm -f ~/.psql_history; touch $_
+rm -f ~/.dbshell; touch $_ &> /dev/null
+rm -f ~/.mysql_history; touch $_ &> /dev/null
+rm -f ~/.psql_history; touch $_ &> /dev/null
 
 # language
-rm -f ~/.ghc/ghci_history; touch $_
-rm -f ~/.node_repl_history; touch $_
+rm -f ~/.ghc/ghci_history; touch $_ &> /dev/null
+rm -f ~/.node_repl_history; touch $_ &> /dev/null
 
 # python
 rm -f ~/.ipynb_checkpoints/*
-rm -f ~/.python_history; touch $_
+rm -f ~/.python_history; touch $_ &> /dev/null
 
 # shell
-rm -f ~/.bash_history; touch $_
-rm -f ~/.zsh_history; touch $_
+rm -f ~/.bash_history; touch $_ &> /dev/null
+rm -f ~/.zsh_history; touch $_ &> /dev/null
 
 # vim
 rm -f ~/.vim/fzf/*
 rm -f ~/.vim/undo/*
-rm -f ~/.viminfo; touch $_
+rm -f ~/.viminfo; touch $_ &> /dev/null
