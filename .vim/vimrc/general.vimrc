@@ -35,11 +35,6 @@ if has('termguicolors') || has ('gui_running') && g:colors_name == 'one'
     highlight vertSplit guifg=#828997
     highlight vimLineComment guifg=#8e94a1
 
-    highlight BufTabLineCurrent guibg=#5c6370
-    highlight BufTabLineActive guibg=#3e4452
-    highlight BufTabLineHidden guibg=#2c323d
-    highlight BufTabLineFill guibg=#2c323d
-
     highlight TagbarSignature guifg=#8e94a1
 endif
 

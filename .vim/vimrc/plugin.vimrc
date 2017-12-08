@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " buffer
 Plug 'moll/vim-bbye'
-Plug 'ap/vim-buftabline'
+Plug 'mgee/lightline-bufferline'
 
 " completion
 if has('python3')
@@ -81,10 +81,6 @@ let g:ale_linters = {
             \ 'cpp': [ 'g++' ],
             \ }
 
-" buftabline
-let g:buftabline_show = 1
-let g:buftabline_indicators = 1
-
 " closetag
 let g:closetag_close_shortcut = '!>'
 
@@ -101,6 +97,7 @@ let g:delimitMate_balance_matchpairs = 1
 " dirvish
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
+
 command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
 
@@ -127,7 +124,8 @@ let g:lightline = {
             \ 'colorscheme': 'One',
             \ 'active': {
             \   'left': [ [ 'mode' ],
-            \             [ 'filename' ] ],
+            \             [  ],
+            \             [ 'buffers' ] ],
             \   'right': [ [ 'lineinfo' ],
             \              [ 'gutentags' ] ]
             \ },
@@ -136,10 +134,25 @@ let g:lightline = {
             \             [ 'filename' ] ],
             \   'right': [  ]
             \ },
+            \ 'subseparator': {
+            \   'left': '',
+            \   'right': '',
+            \ },
             \ 'component_function': {
             \   'filename': 'LightlineFilename',
             \   'gutentags': 'LightlineGutentags'
+            \ },
+            \ 'component_expand': {
+            \   'buffers': 'lightline#bufferline#buffers'
+            \ },
+            \ 'component_type': {
+            \   'buffers': 'tabsel'
             \ }}
+
+let g:lightline#bufferline#filename_modifier = ':p:~:.'
+let g:lightline#bufferline#unnamed = '[No Name]'
+
+autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
 " matchit
 runtime macros/matchit.vim
