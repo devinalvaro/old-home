@@ -84,6 +84,9 @@ let g:ale_linters = {
 " closetag
 let g:closetag_close_shortcut = '!>'
 
+" colorizer
+let g:colorizer_colornames = 0
+
 " commentary
 autocmd Filetype c,cpp,php setlocal commentstring=//\ %s
 autocmd Filetype sql setlocal commentstring=--\ %s
