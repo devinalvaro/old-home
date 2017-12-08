@@ -129,7 +129,6 @@ let g:lightline = {
             \   'left': [ [ 'mode' ],
             \             [ 'filename' ] ],
             \   'right': [ [ 'lineinfo' ],
-            \              [ 'ale' ],
             \              [ 'gutentags' ] ]
             \ },
             \ 'inactive': {
@@ -138,7 +137,6 @@ let g:lightline = {
             \   'right': [  ]
             \ },
             \ 'component_function': {
-            \   'ale': 'LightlineAle',
             \   'filename': 'LightlineFilename',
             \   'gutentags': 'LightlineGutentags'
             \ }}
