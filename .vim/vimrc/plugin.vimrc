@@ -35,7 +35,7 @@ endif
 
 " tags
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+Plug 'majutsushi/tagbar'
 
 " text editing
 Plug 'alvan/vim-closetag'
@@ -63,10 +63,10 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'christoomey/vim-tmux-navigator'
 
 " undo
-Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
+Plug 'mbbill/undotree'
 
 " visual
-Plug 'chrisbra/colorizer', { 'on': 'ColorToggle' }
+Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim', { 'do': 'curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim' }
 Plug 'rakr/vim-one'
 Plug 'sheerun/vim-polyglot'
