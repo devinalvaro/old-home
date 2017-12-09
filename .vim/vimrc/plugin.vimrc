@@ -114,14 +114,14 @@ let g:fzf_history_dir = '~/.vim/fzf'
 
 " gutentags
 let g:gutentags_project_root = [ '.betags' ]
-let g:gutentags_ctags_exclude = [ 'node_modules' ]
+let g:gutentags_generate_on_new = 0
 
 " grepper
 runtime plugin/grepper.vim
 
 silent! let g:grepper.jump = 1
 silent! let g:grepper.switch = 0
-silent! let g:grepper.dir = 'repo,cwd'
+silent! let g:grepper.dir = 'filecwd'
 silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
 " lightline
