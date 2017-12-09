@@ -50,7 +50,7 @@ bindkey -s '\eh' '~\n'
 bindkey -s '\ev' 'vim\n'
 
 # general alias
-alias ls='ls --color=tty -v'
+alias ls='ls -v --group-directories-first --color=tty'
 alias xo='xdg-open'
 
 # python alias
@@ -67,7 +67,8 @@ alias pacu='pacaur -Syu --needed'
 
 # git alias
 alias ga='git add'
-alias gaa='git add -A' alias gbr='git branch'
+alias gaa='git add -A'
+alias gbr='git branch'
 alias gcn='git clean'
 alias gcl='git clone'
 alias gco='git checkout'
