@@ -98,6 +98,8 @@ let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
 " dirvish
+let g:dirvish_mode = ':sort n'
+
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 
