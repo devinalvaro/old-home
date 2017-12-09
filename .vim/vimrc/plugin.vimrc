@@ -128,10 +128,10 @@ silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt
 let g:lightline = {
             \ 'colorscheme': 'One',
             \ 'active': {
-            \   'left': [ [ 'mode' ],
+            \   'left': [ [  ],
             \             [  ],
             \             [ 'buffers' ] ],
-            \   'right': [ [ 'lineinfo' ],
+            \   'right': [ [  ],
             \              [ 'gutentags' ] ]
             \ },
             \ 'inactive': {
