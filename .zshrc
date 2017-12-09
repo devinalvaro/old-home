@@ -50,7 +50,7 @@ bindkey -s '\eh' '~\n'
 bindkey -s '\ev' 'vim\n'
 
 # general alias
-alias ls='ls -v --group-directories-first --color=tty'
+alias ls='ls --group-directories-first --color=tty'
 alias xo='xdg-open'
 
 # python alias
