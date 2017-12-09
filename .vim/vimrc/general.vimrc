@@ -2,10 +2,10 @@
 set backspace=indent,eol,start
 
 " backup
-set nobackup
 set backupdir=.,~/.vim/backup
-set noswapfile
 set directory=~/.vim/swap//
+set nobackup
+set noswapfile
 
 " bell
 set belloff=all
@@ -16,6 +16,7 @@ set hidden
 set splitright
 set splitbelow
 set tabpagemax=50
+
 autocmd VimResized * wincmd =
 
 " color
@@ -38,9 +39,13 @@ if has('termguicolors') || has ('gui_running') && g:colors_name == 'one'
     highlight TagbarSignature guifg=#8e94a1
 endif
 
+" column
+set signcolumn=yes
+
 " completion
 set complete-=i
 set previewheight=2
+
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 " confirmation
