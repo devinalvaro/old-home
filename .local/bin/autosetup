@@ -21,9 +21,9 @@ $install nodejs
 
 $install yarn
 
-yarn global add eslint eslint-config-airbnb # linter: ~/.eslintrc
+yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # linter: ~/.eslintrc
 yarn global add tern # completor: ~/.tern-config
-yarn global add js-beautify prettier prettier-eslint-cli # formatter: ~/.jsbeautifyrc
+yarn global add js-beautify prettier{,-eslint-cli} # formatter: ~/.jsbeautifyrc
 
 # python
 $install python-pip
