@@ -3,9 +3,6 @@
 # variable
 install="pacaur -S --needed --noconfirm --noedit"
 
-# essential
-$install curl
-
 # --------------------------------
 
 # clang
@@ -48,8 +45,15 @@ $install bfs
 # ctags
 $install universal-ctags-git
 
+# curl
+$install curl
+
 # drive
 $install drive
+
+# font
+$install ttf-hack
+$install ttf-symbola
 
 # ripgrep
 $install ripgrep
