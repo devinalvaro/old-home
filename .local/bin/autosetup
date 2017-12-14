@@ -9,9 +9,15 @@ $install curl
 # --------------------------------
 
 # clang
-$install gcc-multilib # linter
-$install clang # completor: ~/.clang_complete
+$install clang # completer: ~/.clang_complete
 $install clang-format # formatter: ~/.clang-format
+$install gcc-multilib # linter
+
+# go
+$install go
+
+$install gocode-git # completer
+$install gofmt goimports-git # formatter linter
 
 # java
 $install jdk8-openjdk
@@ -21,18 +27,18 @@ $install nodejs
 
 $install yarn
 
-yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # linter: ~/.eslintrc
-yarn global add tern # completor: ~/.tern-config
+yarn global add tern # completer: ~/.tern-config
 yarn global add js-beautify prettier{,-eslint-cli} # formatter: ~/.jsbeautifyrc
+yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # linter: ~/.eslintrc
 
 # python
 $install python-pip
 
 $install python-neovim
 
-pip install --user flake8 # linter: ~/.config/flake8
-pip install --user jedi # completor
+pip install --user jedi # completer
 pip install --user yapf # formatter: ~/.style.yapf
+pip install --user flake8 # linter: ~/.config/flake8
 
 # --------------------------------
 
