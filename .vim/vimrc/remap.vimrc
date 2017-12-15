@@ -49,6 +49,3 @@ nnoremap cc "_cc
 nnoremap dd "_dd
 
 nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
-
-" operator remap
-onoremap w :execute 'normal! '.v:count1.'w'<cr>
