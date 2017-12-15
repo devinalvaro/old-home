@@ -135,8 +135,8 @@ let g:lightline = {
             \              [ 'gutentags' ] ]
             \ },
             \ 'inactive': {
-            \   'left': [ [  ],
-            \             [ 'filename' ] ],
+            \   'left': [ [ 'filename' ],
+            \             [  ] ],
             \   'right': [  ]
             \ },
             \ 'subseparator': {
