@@ -32,9 +32,5 @@ $autoremove
 # clean package archives
 $autoclean
 
-# remove terminal desktop files
-sudo rm -f /usr/share/applications/nvim.desktop
-sudo rm -f /usr/share/applications/vim.desktop
-
 # clean vim plugins
 vim +PlugClean +qa
