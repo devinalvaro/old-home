@@ -130,7 +130,7 @@ set undofile
 set undodir=~/.vim/undo
 
 " viminfo
-set viminfo+=!
+set viminfo+=!,n~/.viminfo
 
 " wrapping
 set breakindent

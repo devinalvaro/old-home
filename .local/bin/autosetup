@@ -21,7 +21,6 @@ $install jdk8-openjdk
 
 # nodejs
 $install nodejs
-
 $install yarn
 
 yarn global add tern # completer: ~/.tern-config
@@ -30,8 +29,6 @@ yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # lint
 
 # python
 $install python-pip
-
-$install python-neovim
 
 pip install --user jedi # completer
 pip install --user yapf # formatter: ~/.style.yapf
@@ -62,7 +59,8 @@ $install ripgrep
 $install tmux
 
 # vim
-$install gvim
+$install neovim
+$install python-neovim
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
