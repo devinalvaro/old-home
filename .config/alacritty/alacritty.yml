@@ -18,7 +18,7 @@ env:
 # Falls back to size specified by window manager if set to 0x0.
 # (changes require restart)
 dimensions:
-  columns: 72
+  columns: 78
   lines: 24
 
 # Adds this many blank pixels of padding around the window
@@ -73,13 +73,13 @@ font:
     # style: Italic
 
   # Point size of the font
-  size: 17.0
+  size: 16.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
     x: 0.5
-    y: 1.0
+    y: 2.0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to

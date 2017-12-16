@@ -3,7 +3,7 @@ set guicursor+=a:blinkon0
 
 " font
 if has('unix')
-    set guifont=Hack\ Regular\ 11.5
+    set guifont=Hack\ Regular\ 11
 endif
 
 " gui
