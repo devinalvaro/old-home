@@ -2,8 +2,7 @@
 --exclude=*.bak
 --exclude=*.cache
 --exclude=*.class
---exclude=*.csproj
---exclude=*.csproj.user
+--exclude=*.csproj{,.user}
 --exclude=*.dll
 --exclude=*.map
 --exclude=*.min.*
