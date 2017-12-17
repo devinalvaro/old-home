@@ -91,7 +91,7 @@ set showmatch
 " menu
 set wildmenu
 
-" messages
+" message
 set noruler
 set noshowcmd
 set noshowmode

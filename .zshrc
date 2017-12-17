@@ -1,4 +1,4 @@
-# tmux
+# launch tmux
 if which tmux >/dev/null 2>&1; then
     test -z "$TMUX" && (tmux attach || tmux new-session)
 
@@ -42,30 +42,30 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
-# function
+# functions
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-# key binding
+# key bindings
 bindkey -s '\eh' '~\n'
 bindkey -s '\ev' 'vim\n'
 
-# general alias
+# general aliases
 alias ls='ls --group-directories-first --color=tty'
 alias xo='xdg-open'
 
-# python alias
+# python aliases
 alias py='python'
 alias py2='python2'
 alias py3='python3'
 
-# pacaur alias
+# pacaur aliases
 alias paca='pacaur -Rns $(pacaur -Qdtq)'
 alias paci='pacaur -S --needed'
 alias pacr='pacaur -Rns'
 alias pacs='pacaur -Ss'
 alias pacu='pacaur -Syu --needed'
 
-# git alias
+# git aliases
 alias ga='git add'
 alias gaa='git add --all'
 alias gbr='git branch'

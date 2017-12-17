@@ -1,4 +1,4 @@
-" leader remap
+" leader remaps
 let mapleader = "\<space>"
 
 noremap <leader>w :w<cr>
@@ -31,7 +31,7 @@ nnoremap <leader>ft :Tags<cr>
 nnoremap <leader>gb :Grepper-buffers<cr>
 nnoremap <leader>gr :Grepper<cr>
 
-" normal + visual remap
+" normal + visual remaps
 noremap 0 ^
 noremap ^ 0
 
@@ -42,7 +42,7 @@ noremap D "_D
 noremap x d
 noremap X D
 
-" normal remap
+" normal remaps
 nnoremap Y y$
 
 nnoremap cc "_cc

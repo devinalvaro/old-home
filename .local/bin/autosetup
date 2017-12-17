@@ -1,6 +1,6 @@
 #!/bin/bash -v
 
-# variable
+# variables
 install="pacaur -S --needed --noconfirm --noedit"
 
 # --------------------------------
