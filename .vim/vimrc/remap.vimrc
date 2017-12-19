@@ -48,6 +48,6 @@ nnoremap Y y$
 nnoremap cc "_cc
 nnoremap dd "_dd
 
-nnoremap <esc> :nohlsearch<cr>
+nnoremap <silent> <esc> :nohlsearch<cr>
 
 nnoremap <expr> i len(getline('.')) == 0 ? "\"_cc" : 'i'
