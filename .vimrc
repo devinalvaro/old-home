@@ -1,4 +1,4 @@
-source ~/.vim/vimrc/function.vimrc
-source ~/.vim/vimrc/plugin.vimrc
-source ~/.vim/vimrc/general.vimrc
-source ~/.vim/vimrc/remap.vimrc
+source ~/.vim/vimrc/functions.vimrc
+source ~/.vim/vimrc/plugins.vimrc
+source ~/.vim/vimrc/generals.vimrc
+source ~/.vim/vimrc/remaps.vimrc
