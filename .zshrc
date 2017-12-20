@@ -45,10 +45,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # functions
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-# key bindings
-bindkey -s '\eh' '~\n'
-bindkey -s '\ev' 'vim\n'
-
 # general aliases
 alias ls='ls --group-directories-first --color=tty'
 alias xo='xdg-open'
