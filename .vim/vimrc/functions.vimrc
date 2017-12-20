@@ -1,3 +1,4 @@
+" lightline
 function! LightlineFilename()
     let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
     let modified = &modified ? ' +' : ''
