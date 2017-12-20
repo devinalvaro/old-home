@@ -13,14 +13,12 @@ if which tmux >/dev/null 2>&1 &&
     done
 fi
 
-# aliases
-[ -f $HOME/.zsh/aliases.zsh ] && source $HOME/.zsh/aliases.zsh
-
-# functions
-[ -f $HOME/.zsh/functions.zsh ] && source $HOME/.zsh/functions.zsh
+# --------------------------------
 
 # variables
 [ -f $HOME/.zsh/variables.zsh ] && source $HOME/.zsh/variables.zsh
+
+# --------------------------------
 
 # antigen
 [ -f $ANTIGEN/antigen.zsh ] && source $ANTIGEN/antigen.zsh
@@ -32,3 +30,14 @@ antigen apply
 
 # fzf
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+
+# --------------------------------
+
+# aliases
+[ -f $HOME/.zsh/aliases.zsh ] && source $HOME/.zsh/aliases.zsh
+
+# bindings
+[ -f $HOME/.zsh/bindings.zsh ] && source $HOME/.zsh/bindings.zsh
+
+# functions
+[ -f $HOME/.zsh/functions.zsh ] && source $HOME/.zsh/functions.zsh
