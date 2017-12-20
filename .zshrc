@@ -1,5 +1,13 @@
-# launch tmux
-if which tmux >/dev/null 2>&1; then
+# launch tmux on enabled terminal emulators
+declare -A terms
+
+for term in [ 'alacritty' ]
+do
+    terms[$term]=1
+done
+
+if which tmux >/dev/null 2>&1 &&
+        [[ ${terms[$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))]} ]]; then
     test -z "$TMUX" && (tmux attach || tmux new-session)
 
     while test -z "$TMUX"; do
