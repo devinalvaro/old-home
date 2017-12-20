@@ -17,12 +17,14 @@ fi
 
 # environment variables
 export ANTIGEN=$HOME/.antigen
-export LOCAL=$HOME/.local
 export NLTK_DATA=$HOME/.nltk_data
+
+export GOPATH=$HOME/.go
+export LOCAL=$HOME/.local
 export YARN=$HOME/.yarn
 
 # path
-export PATH=$LOCAL/bin:$YARN/bin:$PATH
+export PATH=$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
 
 # editor
 export EDITOR="vim"
