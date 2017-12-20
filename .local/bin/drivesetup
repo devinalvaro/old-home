@@ -11,5 +11,4 @@ drive pull --starred
 ln -sfn ~/.drive/Academic ~/Documents/Academic
 ln -sfn ~/.drive/Miscs ~/Documents/Miscs
 ln -sfn ~/.drive/PDFs ~/Documents/PDFs
-ln -sfn ~/.drive/Logos ~/Pictures/Logos
 ln -sfn ~/.drive/Wallpapers ~/Pictures/Wallpapers
