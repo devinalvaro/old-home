@@ -5,12 +5,10 @@ Plug 'moll/vim-bbye'
 Plug 'mgee/lightline-bufferline'
 
 " completion
-if has('python3')
-    Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
 
-    Plug 'roxma/ncm-clang'
-    Plug 'roxma/nvim-cm-tern', { 'do': 'yarn install' }
-endif
+Plug 'roxma/ncm-clang'
+Plug 'roxma/nvim-cm-tern', { 'do': 'yarn install' }
 
 " file management
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
