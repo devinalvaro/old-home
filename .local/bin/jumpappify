@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for entry in /usr/share/applications/*.desktop; do
+    target=~/".local/share/applications/$(basename "$entry")"
+
+    rm -f "$target"
+    jumpappify-desktop-entry "$entry" > "$target"
+
+    sed -i 's/ (Jump)//g' "$target"
+done
