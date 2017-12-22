@@ -8,7 +8,6 @@ rm -f ~/.mysql_history; touch $_ &> /dev/null
 rm -f ~/.psql_history; touch $_ &> /dev/null
 
 # language
-rm -f ~/.ghc/ghci_history; touch $_ &> /dev/null
 rm -f ~/.node_repl_history; touch $_ &> /dev/null
 
 # python
