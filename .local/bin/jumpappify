@@ -6,5 +6,5 @@ for entry in /usr/share/applications/*.desktop; do
     rm -f "$target"
     jumpappify-desktop-entry "$entry" > "$target"
 
-    sed -i 's/ (Jump)//g' "$target"
+    sed -i 's/ (Jump)//g;s/jumpapp \([^-][^p]\)/jumpapp -p \1/g' "$target"
 done
