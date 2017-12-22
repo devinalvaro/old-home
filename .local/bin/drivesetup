@@ -8,7 +8,7 @@ drive init
 drive pull --starred
 
 # link
-ln -sfn ~/.drive/Academic ~/Documents/Academic
+ln -sfn ~/.drive/Academics ~/Documents/Academics
 ln -sfn ~/.drive/Miscs ~/Documents/Miscs
 ln -sfn ~/.drive/PDFs ~/Documents/PDFs
 ln -sfn ~/.drive/Wallpapers ~/Pictures/Wallpapers
