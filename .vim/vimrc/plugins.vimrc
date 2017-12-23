@@ -19,7 +19,7 @@ Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-eunuch'
 
 " git
-Plug 'mhinz/vim-signify'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 
 " linter
@@ -173,11 +173,6 @@ let g:neoformat_enabled_json = [ 'prettier', 'jsbeautify' ]
 " qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
-
-" signify
-let g:signify_vcs_list = [ 'git' ]
-let g:signify_sign_change = '~'
-let g:signify_sign_show_count = 0
 
 " sneak
 let g:sneak#label = 1
