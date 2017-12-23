@@ -66,9 +66,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree'
 
 " visual
+Plug 'arcticicestudio/nord-vim'
 Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim'
-Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
@@ -126,7 +126,7 @@ silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt
 
 " lightline
 let g:lightline = {
-            \ 'colorscheme': 'onedark',
+            \ 'colorscheme': 'nord',
             \ 'active': {
             \   'left': [ [  ],
             \             [  ],
