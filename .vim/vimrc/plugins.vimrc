@@ -67,8 +67,8 @@ Plug 'mbbill/undotree'
 
 " visual
 Plug 'chrisbra/colorizer'
-Plug 'itchyny/lightline.vim', { 'do': 'curl -s https://gist.githubusercontent.com/devinalvaro/960d13cbb66f4716099e0febd64b392b/raw/a36349052b9d9306762d35781b82064b8e03ddd4/One.vim > ~/.vim/plugged/lightline.vim/autoload/lightline/colorscheme/One.vim' }
-Plug 'rakr/vim-one'
+Plug 'itchyny/lightline.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
@@ -126,7 +126,7 @@ silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt
 
 " lightline
 let g:lightline = {
-            \ 'colorscheme': 'One',
+            \ 'colorscheme': 'onedark',
             \ 'active': {
             \   'left': [ [  ],
             \             [  ],

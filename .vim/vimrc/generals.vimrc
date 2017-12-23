@@ -24,19 +24,15 @@ if has('termguicolors') || has('gui_running')
     set termguicolors
 endif
 
-set background=dark
-silent! colorscheme one
+silent! colorscheme onedark
 
 if has('termguicolors') || has ('gui_running') && g:colors_name == 'one'
-    highlight Normal ctermfg=none ctermfg=none
-    highlight Comment guifg=#8e94a1
-    highlight LineNr guifg=#828997
-    highlight StatusLine guibg=#353940
-    highlight StatusLineNC guifg=#353940 guibg=#abb2bf
-    highlight vertSplit guifg=#828997
-    highlight vimLineComment guifg=#8e94a1
+    highlight Comment guifg=#7c828c
+    highlight LineNr guifg=#7c828c
+    highlight vertSplit guifg=#7c828c
+    highlight vimLineComment guifg=#7c828c
 
-    highlight TagbarSignature guifg=#8e94a1
+    highlight TagbarSignature guifg=fg
 endif
 
 " column
