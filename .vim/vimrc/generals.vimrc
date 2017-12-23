@@ -24,17 +24,16 @@ if has('termguicolors') || has('gui_running')
     set termguicolors
 endif
 
-silent! colorscheme nord
+silent! colorscheme onedark
 
 if has('termguicolors') || has ('gui_running') && g:colors_name == 'nord'
-    highlight Comment guifg=#9399a5
-    highlight CursorLineNr guifg=#9399a5
-    highlight FoldColumn guifg=#9399a5
-    highlight Folded guifg=#9399a5
-    highlight LineNr guifg=#9399a5
-    highlight MatchParen guifg=none
-    highlight SpecialKey guifg=#9399a5
-    highlight xmlCdataStart guifg=#9399a5
+    highlight Comment guifg=#8c919a
+    highlight CursorLineNr guifg=#8c919a
+    highlight FoldColumn guifg=#8c919a
+    highlight Folded guifg=#8c919a
+    highlight LineNr guifg=#8c919a
+    highlight SpecialKey guifg=#8c919a
+    highlight xmlCdataStart guifg=#8c919a
 
     highlight TagbarSignature guifg=fg
 endif
