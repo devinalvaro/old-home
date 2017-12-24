@@ -6,15 +6,14 @@ install="pacaur -S --needed --noconfirm --noedit"
 # --------------------------------
 
 # clang
-$install clang # completer: ~/.clang_complete
-$install clang-format # formatter: ~/.clang-format
+$install clang # completer: ~/.clang_complete | formatter: ~/.clang-format
 $install gcc-multilib # linter
 
 # go
 $install go
 
 $install gocode-git # completer
-$install gofmt goimports-git # formatter linter
+$install gofmt goimports-git # formatter | linter
 
 # java
 $install jdk8-openjdk
