@@ -26,18 +26,6 @@ endif
 
 silent! colorscheme onedark
 
-if has('termguicolors') || has ('gui_running') && g:colors_name == 'nord'
-    highlight Comment guifg=#8c919a
-    highlight CursorLineNr guifg=#8c919a
-    highlight FoldColumn guifg=#8c919a
-    highlight Folded guifg=#8c919a
-    highlight LineNr guifg=#8c919a
-    highlight SpecialKey guifg=#8c919a
-    highlight xmlCdataStart guifg=#8c919a
-
-    highlight TagbarSignature guifg=fg
-endif
-
 " column
 set signcolumn=yes
 

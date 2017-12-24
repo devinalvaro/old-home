@@ -170,6 +170,12 @@ let g:neoformat_enabled_css = [ 'prettier', 'jsbeautify' ]
 let g:neoformat_enabled_javascript = [ 'prettiereslint', 'prettier', 'jsbeautify' ]
 let g:neoformat_enabled_json = [ 'prettier', 'jsbeautify' ]
 
+" onedark
+let g:onedark_color_overrides = {
+            \ 'comment_grey': { 'gui': '#8C919A', 'cterm': '59', 'cterm16': '15' },
+            \ 'vertsplit': { 'gui': '#8C919A', 'cterm': '59', 'cterm16': '15' }
+            \ }
+
 " qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
