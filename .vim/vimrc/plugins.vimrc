@@ -18,11 +18,7 @@ Plug 'justinmk/vim-dirvish'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-eunuch'
 
-" git
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
-
-" linter
+" lint
 Plug 'w0rp/ale'
 
 " quickfix
@@ -64,6 +60,10 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " undo
 Plug 'mbbill/undotree'
+
+" version control
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 
 " visual
 Plug 'chrisbra/colorizer'
@@ -179,6 +179,11 @@ let g:onedark_color_overrides = {
 " qf
 let g:qf_window_bottom = 0
 let g:qf_loclist_window_bottom = 0
+
+" signify
+let g:signify_vcs_list = [ 'git' ]
+let g:signify_sign_change = '~'
+let g:signify_sign_show_count = 0
 
 " sneak
 let g:sneak#label = 1
