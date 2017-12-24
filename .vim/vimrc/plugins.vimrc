@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 " buffer
 Plug 'moll/vim-bbye'
-Plug 'mgee/lightline-bufferline'
 
 " completion
 if has('python3')
@@ -67,7 +66,7 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 
 " visual
 Plug 'chrisbra/colorizer'
-Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim' | Plug 'mgee/lightline-bufferline'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 

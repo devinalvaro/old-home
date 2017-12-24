@@ -1,9 +1,6 @@
 " leader remaps
 let mapleader = "\<space>"
 
-noremap <leader>w :w<cr>
-noremap <leader>q :q<cr>
-
 noremap <leader>p "+p
 noremap <leader>P "+P
 noremap <leader>y "+y
@@ -11,8 +8,11 @@ noremap <leader>Y "+y$
 noremap <leader>x "+d
 noremap <leader>X "+D
 
+nnoremap <leader>w :write<cr>
+nnoremap <leader>q :quit<cr>
+
 nnoremap <leader>c :ColorToggle<cr>
-nnoremap <leader>d :Bdelete<cr>
+nnoremap <leader>d :Bdelete<cr>:call lightline#update()<cr>
 nnoremap <leader>n :Neoformat<cr>
 nnoremap <leader>r :source $MYVIMRC<cr>:nohlsearch<cr>
 nnoremap <leader>t :TagbarToggle<cr>
