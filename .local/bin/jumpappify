@@ -1,10 +1,10 @@
 #!/bin/bash
 
 for entry in /usr/share/applications/*.desktop; do
-    target=~/".local/share/applications/$(basename "$entry")"
+    target=~/.local/share/applications/"$(basename "$entry")"
 
     rm -f "$target"
     jumpappify-desktop-entry "$entry" > "$target"
 
-    sed -i 's/ (Jump)//g;s/jumpapp \([^-][^p]\)/jumpapp -p \1/g' "$target"
+    sed -i 's/ (Jump)//g;s/\(jumpapp\) \([^-][^p]\)/\1 -p \2/g' "$target"
 done
