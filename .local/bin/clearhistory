@@ -1,24 +1,25 @@
 #!/bin/bash
 
-rm -f ~/.lesshst; touch $_ &> /dev/null
-
 # database
-rm -f ~/.dbshell; touch $_ &> /dev/null
-rm -f ~/.mysql_history; touch $_ &> /dev/null
-rm -f ~/.psql_history; touch $_ &> /dev/null
+rm ~/.dbshell &> /dev/null && touch $_ &> /dev/null
+rm ~/.mysql_history &> /dev/null && touch $_ &> /dev/null
+rm ~/.psql_history &> /dev/null && touch $_ &> /dev/null
 
 # language
-rm -f ~/.node_repl_history; touch $_ &> /dev/null
+rm ~/.node_repl_history &> /dev/null && touch $_ &> /dev/null
+
+# less
+rm ~/.lesshst &> /dev/null && touch $_ &> /dev/null
 
 # python
-rm -f ~/.ipynb_checkpoints/*
-rm -f ~/.python_history; touch $_ &> /dev/null
+rm ~/.ipynb_checkpoints/* &> /dev/null
+rm ~/.python_history &> /dev/null && touch $_ &> /dev/null
 
 # shell
-rm -f ~/.bash_history; touch $_ &> /dev/null
-rm -f ~/.zsh_history; touch $_ &> /dev/null
+rm ~/.bash_history &> /dev/null && touch $_ &> /dev/null
+rm ~/.zsh_history &> /dev/null && touch $_ &> /dev/null
 
 # vim
-rm -f ~/.vim/fzf/*
-rm -f ~/.vim/undo/*
-rm -f ~/.viminfo; touch $_ &> /dev/null
+rm ~/.vim/fzf/* &> /dev/null
+rm ~/.vim/undo/* &> /dev/null
+rm ~/.viminfo &> /dev/null && touch $_ &> /dev/null
