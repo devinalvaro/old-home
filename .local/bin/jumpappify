@@ -8,3 +8,7 @@ for entry in /usr/share/applications/*.desktop; do
 
     sed -i 's/ (Jump)//g;s/\(jumpapp\) \([^-][^p]\)/\1 -p \2/g' "$target"
 done
+
+if hash albert 2> /dev/null; then
+    sed -i 's/\(jumpapp -p\)/env "QT_SCALE_FACTOR=1.5" \1/g' ~/.local/share/applications/albert.desktop &> /dev/null
+fi
