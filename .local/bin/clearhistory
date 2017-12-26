@@ -7,6 +7,7 @@ rm ~/.psql_history &> /dev/null && touch $_ &> /dev/null
 
 # language
 rm ~/.node_repl_history &> /dev/null && touch $_ &> /dev/null
+rm ~/.scheme_history &> /dev/null && touch $_ &> /dev/null
 
 # less
 rm ~/.lesshst &> /dev/null && touch $_ &> /dev/null

@@ -33,6 +33,10 @@ pip install --user jedi # completer
 pip install --user yapf # formatter: ~/.style.yapf
 pip install --user flake8 # linter: ~/.config/flake8
 
+# scheme
+$install mit-scheme
+$install rlwrap
+
 # --------------------------------
 
 # bfs

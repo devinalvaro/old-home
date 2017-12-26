@@ -7,6 +7,9 @@ alias py='python'
 alias py2='python2'
 alias py3='python3'
 
+# scheme aliases
+alias sch='rlwrap scheme'
+
 # pacaur aliases
 alias paca='pacaur -Rns $(pacaur -Qdtq)'
 alias paci='pacaur -S --needed'
