@@ -10,11 +10,11 @@ noremap <leader>X "+D
 
 nnoremap <leader>w :write<cr>
 nnoremap <leader>q :quit<cr>
+nnoremap <leader>r :source $MYVIMRC<cr>:call lightline#update()<cr>
 
 nnoremap <leader>c :ColorToggle<cr>
 nnoremap <leader>d :Bdelete<cr>:call lightline#update()<cr>
 nnoremap <leader>n :Neoformat<cr>
-nnoremap <leader>r :source $MYVIMRC<cr>:nohlsearch<cr>
 nnoremap <leader>t :TagbarToggle<cr>
 nnoremap <leader>u :UndotreeToggle<cr>
 
