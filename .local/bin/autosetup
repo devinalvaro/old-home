@@ -48,9 +48,6 @@ $install universal-ctags-git
 # curl
 $install curl
 
-# drive
-$install drive
-
 # font
 $install ttf-hack
 $install ttf-symbola
