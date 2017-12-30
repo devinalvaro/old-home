@@ -17,8 +17,6 @@ set splitright
 set splitbelow
 set tabpagemax=50
 
-autocmd VimResized * wincmd =
-
 " color
 if has('termguicolors') || has('gui_running')
     set termguicolors
@@ -32,8 +30,6 @@ set signcolumn=yes
 " completion
 set complete-=i
 set previewheight=2
-
-autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
 " confirmation
 set confirm

@@ -31,6 +31,9 @@ nnoremap <leader>ft :Tags<cr>
 nnoremap <leader>gb :Grepper-buffers<cr>
 nnoremap <leader>gr :Grepper<cr>
 
+" plugin remaps
+noremap gl <Plug>(EasyAlign)
+
 " normal + visual remaps
 noremap 0 ^
 noremap ^ 0
