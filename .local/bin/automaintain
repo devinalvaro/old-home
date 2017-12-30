@@ -1,7 +1,7 @@
 #!/bin/bash -v
 
 # variables
-autoclean="pacaur -Sc --noconfirm && pacaur -Scc --noconfirm"
+autoclean="pacaur -Sc --noconfirm; pacaur -Scc --noconfirm"
 autoremove="pacaur -Rns --noconfirm $(pacaur -Qdtq)"
 upgrade="pacaur -Syu --needed --noconfirm --noedit"
 
