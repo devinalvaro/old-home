@@ -13,7 +13,7 @@ $install gcc-multilib # linter
 $install go
 
 $install gocode-git # completer
-$install gofmt goimports-git # formatter | linter
+$install goimports-git # formatter | linter
 
 # java
 $install jdk8-openjdk
