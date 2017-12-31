@@ -31,6 +31,8 @@ set signcolumn=yes
 set complete-=i
 set previewheight=2
 
+autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
+
 " confirmation
 set confirm
 
@@ -114,6 +116,9 @@ set undodir=~/.vim/undo
 
 " viminfo
 set viminfo+=!,n~/.viminfo
+
+" window
+autocmd VimResized * wincmd =
 
 " wrapping
 set breakindent

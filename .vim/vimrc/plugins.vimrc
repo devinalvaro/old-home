@@ -79,17 +79,26 @@ let g:closetag_close_shortcut = '!>'
 " colorizer
 let g:colorizer_colornames = 0
 
+" commentary
+autocmd Filetype c,cpp,cs,php setlocal commentstring=//\ %s
+autocmd Filetype sql setlocal commentstring=--\ %s
+
 " delimitmate
 let g:delimitMate_matchpairs = '(:),[:],{:}'
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
+autocmd Filetype clojure,lisp,racket,scheme let g:delimitMate_expand_cr = 1
+
 " dirvish
 let g:dirvish_mode = ':sort ,^.*/,'
 
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
+
+command! -nargs=1 -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
+command! -nargs=1 -complete=dir Sexplore belowright split | silent Dirvish <args>
 
 " fzf
 let g:fzf_history_dir = '~/.vim/fzf'
@@ -117,9 +126,11 @@ let g:lightline = {
             \              [ 'gutentags' ] ]
             \ },
             \ 'inactive': {
-            \   'left': [ [ 'filename' ],
-            \             [  ] ],
-            \   'right': [  ]
+            \   'left': [ [  ],
+            \             [  ],
+            \             [ 'buffers' ] ],
+            \   'right': [ [  ],
+            \              [ 'gutentags#statusline()' ] ],
             \ },
             \ 'subseparator': {
             \   'left': '',
@@ -138,6 +149,8 @@ let g:lightline = {
 
 let g:lightline#bufferline#filename_modifier = ':p:~:.'
 let g:lightline#bufferline#unnamed = '[No Name]'
+
+autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
 " matchit
 runtime macros/matchit.vim
