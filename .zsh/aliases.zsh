@@ -10,13 +10,6 @@ alias py3='python3'
 # scheme aliases
 alias sch='rlwrap scheme'
 
-# pacman aliases
-alias paca='$PACMAN -Rns $($PACMAN -Qdtq)'
-alias paci='$PACMAN -S --needed'
-alias pacr='$PACMAN -Rns'
-alias pacs='$PACMAN -Ss'
-alias pacu='$PACMAN -Syu --needed'
-
 # git aliases
 alias ga='git add'
 alias gaa='git add --all'
