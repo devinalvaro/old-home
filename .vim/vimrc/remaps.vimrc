@@ -8,12 +8,12 @@ noremap <leader>Y "+y$
 noremap <leader>x "+d
 noremap <leader>X "+D
 
+nnoremap <leader>d :bdelete<cr>
+nnoremap <leader>r :source $MYVIMRC<cr>:call lightline#update()<cr>
 nnoremap <leader>w :write<cr>
 nnoremap <leader>q :quit<cr>
-nnoremap <leader>r :source $MYVIMRC<cr>:call lightline#update()<cr>
 
 nnoremap <leader>c :ColorToggle<cr>
-nnoremap <leader>d :Bdelete<cr>:call lightline#update()<cr>
 nnoremap <leader>n :Neoformat<cr>
 nnoremap <leader>t :TagbarToggle<cr>
 nnoremap <leader>u :UndotreeToggle<cr>
@@ -30,9 +30,6 @@ nnoremap <leader>ft :Tags<cr>
 
 nnoremap <leader>gb :Grepper-buffers<cr>
 nnoremap <leader>gr :Grepper<cr>
-
-" plugin remaps
-noremap gl <Plug>(EasyAlign)
 
 " normal + visual remaps
 noremap 0 ^

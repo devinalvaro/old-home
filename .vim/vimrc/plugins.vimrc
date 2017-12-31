@@ -1,8 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-" buffer
-Plug 'moll/vim-bbye'
-
 " completion
 if has('python3')
     Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
@@ -34,7 +31,6 @@ Plug 'majutsushi/tagbar'
 
 " text editing
 Plug 'alvan/vim-closetag'
-Plug 'junegunn/vim-easy-align'
 Plug 'raimondi/delimitmate'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-abolish'
@@ -53,9 +49,6 @@ Plug 'tpope/vim-unimpaired'
 
 " text objects
 Plug 'michaeljsmith/vim-indent-object'
-
-" tmux
-Plug 'christoomey/vim-tmux-navigator'
 
 " undo
 Plug 'mbbill/undotree'
@@ -188,4 +181,4 @@ let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 let g:undotree_SetFocusWhenToggle = 1
 
 " wordmotion
-let g:wordmotion_spaces = '._-'
+let g:wordmotion_spaces = '_-.'
