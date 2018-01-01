@@ -19,9 +19,6 @@ export FZF_ALT_C_COMMAND="bfs -L . -mindepth 1 \\( -name 'node_modules' -o -name
     -o -type d -print 2> /dev/null | cut -b3-"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# pacman
-export PACMAN=trizen
-
 # spaceship
 export SPACESHIP_PROMPT_PREFIXES_SHOW=false
 export SPACESHIP_DIR_TRUNC=0

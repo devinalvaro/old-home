@@ -1,9 +1,9 @@
 #!/bin/bash -v
 
 # variables
-autoclean="$PACMAN -Sc --noconfirm; $PACMAN -Scc --noconfirm"
-autoremove="$PACMAN -Rns --noconfirm $($PACMAN -Qdtq)"
-upgrade="$PACMAN -Syu --needed --noconfirm --noedit"
+autoclean="trizen -Sc --noconfirm; trizen -Scc --noconfirm"
+autoremove="trizen -Rns --noconfirm $(trizen -Qdtq)"
+upgrade="trizen -Syu --needed --noconfirm --noedit"
 
 # --------------------------------
 
