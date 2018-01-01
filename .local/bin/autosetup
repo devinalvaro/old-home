@@ -5,6 +5,15 @@ install="trizen -S --needed --noconfirm --noedit"
 
 # --------------------------------
 
+# trizen
+git clone https://aur.archlinux.org/trizen.git
+cd trizen && makepkg -si && cd .. && rm -rf trizen
+
+# base-devel
+$install base-devel
+
+# --------------------------------
+
 # clang
 $install clang # completer: ~/.clang_complete | formatter: ~/.clang-format
 $install gcc-multilib # linter
@@ -44,9 +53,6 @@ $install bfs
 
 # ctags
 $install universal-ctags-git
-
-# curl
-$install curl
 
 # font
 $install ttf-hack
