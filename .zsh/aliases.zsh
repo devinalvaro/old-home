@@ -8,7 +8,7 @@ alias py2='python2'
 alias py3='python3'
 
 # scheme aliases
-alias sch='rlwrap scheme'
+alias scheme='rlwrap scheme'
 
 # git aliases
 alias ga='git add'
