@@ -7,7 +7,7 @@ install="trizen -S --needed --noconfirm --noedit"
 
 # trizen
 git clone https://aur.archlinux.org/trizen.git
-cd trizen && makepkg -si && cd .. && rm -rf trizen
+cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 
 # base-devel
 $install base-devel
