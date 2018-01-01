@@ -10,9 +10,6 @@ upgrade="$PACMAN -Syu --needed --noconfirm --noedit"
 # system
 $upgrade
 
-# jumpappify
-jumpappify
-
 # pip
 sudo pip freeze --local --all | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install --upgrade
 pip freeze --local --user | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade
