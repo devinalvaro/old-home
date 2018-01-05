@@ -19,7 +19,7 @@ env:
 # (changes require restart)
 dimensions:
   columns: 78
-  lines: 24
+  lines: 26
 
 # Adds this many blank pixels of padding around the window
 # Units are physical pixels; this is not DPI aware.
