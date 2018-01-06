@@ -36,6 +36,7 @@ yarn global add js-beautify prettier{,-eslint-cli} # formatter: ~/.jsbeautifyrc
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # linter: ~/.eslintrc
 
 # python
+$install python
 $install python-pip
 
 pip install --user jedi # completer
