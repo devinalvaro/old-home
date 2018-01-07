@@ -13,10 +13,8 @@ export PATH=$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
 
 # fzf
 export FZF_DEFAULT_OPTS="--inline-info"
-export FZF_DEFAULT_COMMAND="rg --files --no-ignore --follow -g '!{.git,node_modules,Sdk}/*' -g '!tags' 2> /dev/null"
-export FZF_ALT_C_COMMAND="bfs -L . -mindepth 1 \\( -name 'node_modules' -o -name 'Sdk' \\) -prune \
-    -o \\( -path '*/\\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' \\) -prune \
-    -o -type d -print 2> /dev/null | cut -b3-"
+export FZF_DEFAULT_COMMAND="rg --follow --files --no-ignore --glob '!{node_modules/*,Sdk/*,tags}' 2> /dev/null"
+export FZF_ALT_C_COMMAND="fd --follow --type d --no-ignore --exclude '{node_modules,Sdk}' 2> /dev/null"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # spaceship

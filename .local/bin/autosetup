@@ -49,11 +49,11 @@ $install rlwrap
 
 # --------------------------------
 
-# bfs
-$install bfs
-
 # ctags
 $install universal-ctags-git
+
+# fd
+$install fd-rs
 
 # font
 $install ttf-hack
