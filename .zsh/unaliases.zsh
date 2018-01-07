@@ -1,0 +1,15 @@
+# oh-my-zsh
+unalias _
+unalias afind
+unalias d
+unalias l
+unalias la
+unalias ll
+unalias lsa
+unalias md
+unalias please
+unalias po
+unalias pu
+unalias rd
+unalias run-help
+unalias which-command

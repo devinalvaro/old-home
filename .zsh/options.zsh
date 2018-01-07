@@ -1,0 +1,2 @@
+# history
+setopt histreduceblanks
