@@ -1,14 +1,13 @@
-# general aliases
+# modifier aliases
 alias ls='ls --group-directories-first --color=tty'
-alias xo='xdg-open'
+alias scheme='rlwrap scheme'
 
-# python aliases
+# shortener aliases
+alias pac='trizen'
 alias py='python'
 alias py2='python2'
 alias py3='python3'
-
-# scheme aliases
-alias scheme='rlwrap scheme'
+alias xo='xdg-open'
 
 # git aliases
 alias ga='git add'
