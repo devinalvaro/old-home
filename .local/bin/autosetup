@@ -75,9 +75,6 @@ vim +PlugInstall +qa
 
 mkdir -p ~/.vim/{fzf,undo}
 
-# xsel
-$install xsel
-
 # zsh
 $install zsh
 
