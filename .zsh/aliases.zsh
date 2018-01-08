@@ -8,6 +8,7 @@ alias py='python'
 alias py2='python2'
 alias py3='python3'
 alias xo='xdg-open'
+alias yank='xclip -rmlastnl -selection c'
 
 # git aliases
 alias ga='git add'
