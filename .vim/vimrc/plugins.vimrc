@@ -27,7 +27,6 @@ endif
 
 " tags
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'majutsushi/tagbar'
 
 " text editing
 Plug 'alvan/vim-closetag'
@@ -180,9 +179,6 @@ let g:signify_sign_show_count = 0
 
 " sneak
 let g:sneak#label = 1
-
-" tagbar
-let g:tagbar_width = 30
 
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
