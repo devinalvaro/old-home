@@ -34,3 +34,7 @@ alias grv='git revert'
 alias gsh='git stash'
 alias gss='git status -s'
 alias gsa='git status -s -uall'
+
+# oj aliases
+alias ojd='oj d'
+alias ojt='oj test 2>&1 | less'
