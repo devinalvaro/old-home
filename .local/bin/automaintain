@@ -1,9 +1,9 @@
 #!/bin/bash -v
 
 # variables
-autoclean="trizen -Sc --noconfirm"
-autoremove="trizen -Rns --noconfirm $(trizen -Qdtq)"
-upgrade="trizen -Syu --needed --noconfirm --noedit"
+autoclean='trizen -Sc --noconfirm'
+autoremove='trizen -Rns --noconfirm '"$(trizen -Qdtq)"
+upgrade='trizen -Syu --needed --noconfirm --noedit'
 
 # --------------------------------
 

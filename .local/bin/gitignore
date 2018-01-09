@@ -6,8 +6,8 @@ touch .gitignore
 git status --porcelain | grep '^??' | cut -c4- >> .gitignore
 
 if [[ $PWD = ~ ]]; then
-    echo ".vim/fzf/" >> .gitignore
-    echo ".vim/undo/" >> .gitignore
+    echo '.vim/fzf/' >> .gitignore
+    echo '.vim/undo/' >> .gitignore
 fi
 
 sort -u .gitignore -o .gitignore
