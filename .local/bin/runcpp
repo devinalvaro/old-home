@@ -1,29 +1,19 @@
 #!/bin/bash
 
-if [ $# -eq 2 ] || [ $# -eq 3 ]; then
-    infile=$2
-else
-    infile="a.in"
+std=14
+flag="-std=c++$std -Wall"
+
+in='a.in'
+out="$(basename $1 .cpp).out"
+
+# ----------------
+
+if [ $1 -nt $out ]; then
+    g++ $flag $1 -o $out
 fi
 
-if [ $# -eq 3 ]; then
-    outfile=$3
+if [ -f $in ]; then
+    ./$out < $in
 else
-    outfile="a.out"
+    ./$out
 fi
-
-if [ ! -f $infile ]; then
-    touch $infile.temp
-else
-    cp $infile $infile.temp
-fi
-
-if [ $# -eq 3 ]; then
-    g++ -std=c++14 -Wall $1 -o $outfile
-else
-    g++ -std=c++14 -Wall $1
-fi
-
-./$outfile < $infile.temp
-
-rm $infile.temp
