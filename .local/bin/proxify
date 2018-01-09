@@ -1,9 +1,10 @@
 #!/bin/bash
-# Proxify by @nieltg
+
+# proxify by @nieltg
 
 function url_encode ()
 {
-    # Adapt from: http://stackoverflow.com/a/10660730
+    # Adapted from: http://stackoverflow.com/a/10660730
 
     local src buf len ch cv
 
