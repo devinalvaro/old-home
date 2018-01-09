@@ -4,9 +4,6 @@ alias scheme='rlwrap scheme'
 
 # shortener aliases
 alias pac='trizen'
-alias py='python'
-alias py2='python2'
-alias py3='python3'
 alias xo='xdg-open'
 alias yank='xclip -rmlastnl -selection c'
 
@@ -38,3 +35,8 @@ alias gsa='git status -s -uall'
 # oj aliases
 alias ojd='oj d'
 alias ojt='oj test 2>&1 | less'
+
+# python aliases
+alias py='python'
+alias py2='python2'
+alias py3='python3'
