@@ -12,8 +12,43 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 # base-devel
 $install base-devel
 
+# driver
+$install xf86-video-intel
+
+# xorg
+$install xorg-server
+$install xorg-xbacklight
+$install xorg-xinit
+
 # --------------------------------
 
+# alacritty
+$install alacritty-git
+
+# compton
+$install compton
+
+# dialog
+$install dialog
+
+# feh
+$install feh
+
+# i3
+$install i3-gaps
+
+# pulseaudio
+$install pulseaudio
+$install pulseaudio-alsa
+
+# polybar
+$install wireless_tools
+$install polybar
+
+# rofi
+$install rofi
+
+# --------------------------------
 # clang
 $install clang # completer: ~/.clang_complete | formatter: ~/.clang-format
 $install gcc-multilib # linter
@@ -57,6 +92,7 @@ $install fd-rs
 
 # font
 $install ttf-hack
+$install ttf-font-awesome
 $install ttf-symbola
 
 # ripgrep
