@@ -32,16 +32,16 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = fixed:pixelsize=11;0
-font-1 = unifont:size=10;0
-font-2 = siji:pixelsize=10;0
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
-font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
-font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-0 = fixed:pixelsize=10.5;0
+font-1 = unifont:size=10.5;0
+font-2 = siji:pixelsize=10.5;0
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=10.5;1"
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10.5;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=10.5;1"
 
 modules-left = i3
 modules-center =
-modules-right = volume wlan battery date powermenu
+modules-right = volume wireless battery date powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -68,25 +68,25 @@ pin-workspaces = true
 
 label-focused = %icon%
 label-focused-underline= #ffffff
-label-focused-padding = 3
+label-focused-padding = 2
 
 label-occupied = %icon%
-label-occupied-padding = 3
+label-occupied-padding = 2
 
 label-urgent = %icon%!
-label-urgent-padding = 3
+label-urgent-padding = 2
 
 label-unfocused = %icon% %index%
-label-unfocused-padding = 3
+label-unfocused-padding = 2
 
 label-empty = %icon%
 label-empty-foreground = #44ffffff
-label-empty-padding = 3
+label-empty-padding = 2
 
 [module/battery]
 type = internal/battery
 
-full-at = 100
+full-at = 99
 
 battery = BAT0
 adapter = AC0
@@ -99,9 +99,9 @@ format-full = <ramp-capacity>  <label-full>
 label-charging = %percentage%%
 label-discharging = %percentage%%
 label-full = %percentage%%
-format-charging-padding = 2
-format-discharging-padding = 2
-format-full-padding = 2
+format-charging-padding = 1
+format-discharging-padding = 1
+format-full-padding = 1
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -116,35 +116,24 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 
-[module/wlan]
+[module/wireless]
 type = internal/network
 interface = wlp2s0
 interval = 3.0
 
 format-connected =  <label-connected>
-format-connected-padding = 2
+format-connected-padding = 1
 label-connected = %essid%
 
-format-disconnected = 
-format-disconnected-padding = 2
-
-[module/eth]
-type = internal/network
-interface = enp0s20u3
-interval = 3.0
-
-format-connected =  <label-connected>
-format-connected-padding = 2
-label-connected = %local_ip%
-
-format-disconnected = 
-format-disconnected-padding = 2
+format-disconnected =  <label-disconnected>
+format-disconnected-padding = 1
+label-disconnected = no network
 
 [module/volume]
 type = internal/volume
 
 format-volume = <ramp-volume> <bar-volume>
-format-volume-padding = 2
+format-volume-padding = 1
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -168,7 +157,7 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 
 format-muted = <label-muted>
-format-muted-padding = 2
+format-muted-padding = 1
 label-muted =  muted
 
 [module/date]
@@ -182,7 +171,7 @@ time = %H:%M
 
 label = %date% %time%
 format = <label>
-format-padding = 2
+format-padding = 1
 
 [module/padding]
 type = custom/text
@@ -195,7 +184,7 @@ type = custom/menu
 
 label-open = 
 label-close = cancel
-label-open-padding = 2
+label-open-padding = 1
 label-close-padding = 1
 
 menu-0-0 = reboot
