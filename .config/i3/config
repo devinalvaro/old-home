@@ -153,15 +153,14 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#	position top
-#	font pango: Noto Sans 10
-#        status_command i3blocks
-#}
+# brightness keybindings
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 2
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 2
 
-# --------------------------------
+# pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # feh
 exec --no-startup-id $HOME/.fehbg
@@ -179,13 +178,4 @@ exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
 exec --no-startup-id unclutter -idle 3
 
 # autostart
-exec --no-startup-id i3-msg workspace 1; exec alacritty; workspace 2; exec firefox; workspace 1
-
-# brightness keybindings
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 2
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 2
-
-# pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+exec --no-startup-id i3-msg 'workspace 1; exec alacritty; workspace 2; exec firefox; workspace 1'
