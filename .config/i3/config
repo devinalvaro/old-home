@@ -11,14 +11,17 @@
 
 set $mod Mod4
 
+# border
+smart_borders on
+for_window [class="^.*"] border pixel 3
+
 # gaps
 gaps inner 30
 gaps outer 0
 new_window none
 
-# border
-smart_borders on
-for_window [class="^.*"] border pixel 3
+# focus
+focus_follows_mouse no
 
 # class                 border  backgr. text    indicator
 client.focused          #808090 #606070 #c0c0c5 #2e9ef4
@@ -68,18 +71,18 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+v split horizontal
+bindsym $mod+Shift+v split horizontal
 
 # split in vertical orientation
-bindsym $mod+s split vertical
+bindsym $mod+Shift+s split vertical
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+Shift+s layout stacking
-bindsym $mod+Shift+t layout tabbed
-bindsym $mod+t layout toggle split
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+g layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
