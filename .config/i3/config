@@ -20,6 +20,9 @@ exec --no-startup-id $HOME/.fehbg
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# i3lock
+exec --no-startup-id xautolock -time 10 -locker 'i3lock-fancy'
+
 # brightness keybindings
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2.5 increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2.5 decrease screen brightness

@@ -13,6 +13,7 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 $install wireless_tools
 
 # xorg
+$install xautolock
 $install xorg-server
 $install xorg-xbacklight
 $install xorg-xinit
@@ -27,6 +28,10 @@ $install feh
 
 # i3
 $install i3-gaps
+
+# i3lock
+$install i3lock-color-git
+$install i3lock-fancy-git
 
 # pulseaudio
 $install pulseaudio
