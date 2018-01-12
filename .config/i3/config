@@ -182,8 +182,8 @@ exec --no-startup-id unclutter -idle 3
 exec --no-startup-id i3-msg workspace 1; exec alacritty; workspace 2; exec firefox; workspace 1
 
 # brightness keybindings
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2.5 increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2.5 decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 2
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 2
 
 # pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10%
