@@ -9,9 +9,6 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 
 # --------------------------------
 
-# driver
-$install xf86-video-intel
-
 # wireless
 $install wireless_tools
 
