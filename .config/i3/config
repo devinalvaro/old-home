@@ -11,30 +11,6 @@
 
 set $mod Mod4
 
-# feh
-exec --no-startup-id $HOME/.fehbg
-
-# compton
-exec --no-startup-id /usr/bin/compton --config ~/.compton.conf
-
-# polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-# i3lock
-exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
-
-# unclutter
-exec --no-startup-id unclutter -idle 3
-
-# brightness keybindings
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2.5 increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2.5 decrease screen brightness
-
-# pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-
 # gaps
 gaps inner 30
 gaps outer 0
@@ -184,3 +160,32 @@ bindsym $mod+r mode "resize"
 #	font pango: Noto Sans 10
 #        status_command i3blocks
 #}
+
+# --------------------------------
+
+# feh
+exec --no-startup-id $HOME/.fehbg
+
+# compton
+exec --no-startup-id /usr/bin/compton --config ~/.compton.conf
+
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# i3lock
+exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
+
+# unclutter
+exec --no-startup-id unclutter -idle 3
+
+# autostart
+exec --no-startup-id i3-msg 'workspace 1; exec alacritty; workspace 2; exec firefox; workspace 1'
+
+# brightness keybindings
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2.5 increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2.5 decrease screen brightness
+
+# pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
