@@ -11,17 +11,20 @@
 
 set $mod Mod4
 
+# feh
+exec --no-startup-id $HOME/.fehbg
+
 # compton
 exec --no-startup-id /usr/bin/compton --config ~/.compton.conf
-
-# wallpaper
-exec --no-startup-id $HOME/.fehbg
 
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # i3lock
-exec --no-startup-id xautolock -time 10 -locker 'i3lock-fancy'
+exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
+
+# unclutter
+exec --no-startup-id unclutter -idle 3
 
 # brightness keybindings
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2.5 increase screen brightness
@@ -148,6 +151,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# lock i3
+bindsym Ctrl+Shift+l exec i3lock-fancy
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
