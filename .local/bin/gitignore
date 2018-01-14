@@ -1,11 +1,15 @@
 #!/bin/bash
 
-touch .gitignore
+if [ -f .gitignore ]; then
+    mv .gitignore .gitignore.old
+else
+    touch .gitignore
+fi
 
 > .gitignore
 git status --porcelain | grep '^??' | cut -c4- >> .gitignore
 
-if [[ $PWD = ~ ]]; then
+if [ $PWD = ~ ]; then
     echo '.vim/fzf/' >> .gitignore
     echo '.vim/undo/' >> .gitignore
 fi
