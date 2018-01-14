@@ -9,45 +9,6 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 
 # --------------------------------
 
-# wireless
-$install wireless_tools
-
-# xorg
-$install xorg-server
-$install xorg-xinit
-
-# --------------------------------
-
-# compton
-$install compton
-
-# feh
-$install feh
-
-# i3
-$install i3-gaps
-
-# i3lock
-$install i3lock-color-git
-$install i3lock-fancy-git
-
-# light
-$install light
-
-# pulseaudio
-$install pulseaudio
-$install pulseaudio-alsa
-
-# polybar
-$install polybar
-
-# rofi
-$install rofi
-
-# xautolock
-$install xautolock
-
-# --------------------------------
 # clang
 $install clang # completer: ~/.clang_complete | formatter: ~/.clang-format
 $install gcc-multilib # linter
@@ -91,11 +52,13 @@ $install fd-rs
 
 # font
 $install ttf-hack
-$install ttf-font-awesome
 $install ttf-symbola
 
 # ripgrep
 $install ripgrep
+
+# rofi
+$install rofi
 
 # tmux
 $install tmux
