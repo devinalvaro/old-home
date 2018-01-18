@@ -10,7 +10,7 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 # --------------------------------
 
 # clang
-$install clang # completer: ~/.clang_complete | formatter: ~/.clang-format
+$install clang # completer | formatter: ~/.clang-format
 $install gcc-multilib # linter
 
 # go
@@ -23,7 +23,7 @@ $install goimports-git # formatter | linter
 $install nodejs
 $install yarn
 
-yarn global add tern # completer: ~/.tern-config
+yarn global add tern # completer
 yarn global add js-beautify prettier{,-eslint-cli} # formatter: ~/.jsbeautifyrc
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # linter: ~/.eslintrc
 
