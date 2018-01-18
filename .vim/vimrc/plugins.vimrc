@@ -155,7 +155,7 @@ autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 runtime macros/matchit.vim
 
 " nvim-completion-manager
-let g:cm_refresh_length = [ [1, 4], [5, 3], [7, 2] ]
+let g:cm_refresh_length = [ [1, 4], [4, 3], [5, 2], [7, 3] ]
 
 " neoformat
 let g:neoformat_enabled_css = [ 'prettier', 'jsbeautify' ]
