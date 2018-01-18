@@ -27,6 +27,12 @@ yarn global add tern # completer
 yarn global add js-beautify prettier{,-eslint-cli} # formatter: ~/.jsbeautifyrc
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # linter: ~/.eslintrc
 
+# php
+$install php
+$install composer
+
+composer global require friendsofphp/php-cs-fixer # formatter
+
 # python
 $install python
 $install python-pip

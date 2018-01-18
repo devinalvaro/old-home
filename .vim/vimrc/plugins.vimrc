@@ -2,10 +2,10 @@ call plug#begin('~/.vim/plugged')
 
 " completion
 if has('python3')
-    Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
-
     Plug 'roxma/ncm-clang'
+    Plug 'roxma/ncm-phpactor' | Plug 'phpactor/phpactor',  { 'do': 'composer install' }
     Plug 'roxma/nvim-cm-tern', { 'do': 'yarn install' }
+    Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
 " file management
@@ -154,7 +154,7 @@ autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 " matchit
 runtime macros/matchit.vim
 
-" ncm
+" nvim-completion-manager
 let g:cm_refresh_length = [ [1, 4], [5, 3], [7, 2] ]
 
 " neoformat

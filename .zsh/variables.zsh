@@ -5,11 +5,12 @@ export EDITOR=vim
 export ANTIGEN=$HOME/.antigen
 export NLTK_DATA=$HOME/.nltk_data
 
+export COMPOSER_HOME=$HOME/.config/composer
 export GOPATH=$HOME/.go
 export LOCAL=$HOME/.local
 export YARN=$HOME/.yarn
 
-export PATH=$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
+export PATH=$COMPOSER_HOME/vendor/bin:$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
 
 # fzf
 export FZF_DEFAULT_OPTS=--inline-info
