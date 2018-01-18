@@ -19,9 +19,6 @@ $install go
 $install gocode-git # completer
 $install goimports-git # formatter | linter
 
-# java
-$install jdk8-openjdk
-
 # nodejs
 $install nodejs
 $install yarn
