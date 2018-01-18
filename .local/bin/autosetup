@@ -10,14 +10,14 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 # --------------------------------
 
 # clang
-$install clang # completer | formatter: ~/.clang-format
+$install clang # completer, formatter: ~/.clang-format
 $install gcc-multilib # linter
 
 # go
 $install go
 
 $install gocode-git # completer
-$install goimports-git # formatter | linter
+$install goimports-git # formatter, linter
 
 # nodejs
 $install nodejs
