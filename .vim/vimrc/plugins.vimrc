@@ -163,8 +163,8 @@ let g:neoformat_enabled_json = [ 'prettier', 'jsbeautify' ]
 
 " onedark
 let g:onedark_color_overrides = {
-            \ 'comment_grey': { 'gui': '#8C919A', 'cterm': '59', 'cterm16': '15' },
-            \ 'vertsplit': { 'gui': '#8C919A', 'cterm': '59', 'cterm16': '15' }
+            \ 'comment_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
+            \ 'vertsplit': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' }
             \ }
 
 " qf
