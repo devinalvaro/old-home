@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 " completion
 if has('python3')
     Plug 'roxma/ncm-clang'
-    Plug 'roxma/ncm-phpactor' | Plug 'phpactor/phpactor',  { 'do': 'composer install' }
     Plug 'roxma/nvim-cm-tern', { 'do': 'yarn install' }
     Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
 endif
