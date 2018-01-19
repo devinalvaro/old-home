@@ -10,36 +10,52 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 # --------------------------------
 
 # clang
-$install clang # completer, formatter: ~/.clang-format
-$install gcc-multilib # linter
+# - completer: clang
+# - formatter: clang-format (~/.clang-format)
+# - linter: gcc
+$install clang
+$install gcc-multilib
 
 # go
+# - completer: gocode
+# - formatter: gofmt, goimports
+# - linter: gofmt, goimports
 $install go
+$install gocode-git
+$install goimports-git
 
-$install gocode-git # completer
-$install goimports-git # formatter, linter
-
-# nodejs
+# html
+# - formatter: html-beautify (~/.jsbeautifyrc)
+# js
+# - completer: tern
+# - formatter: prettiereslint
+# - linter: eslint (~/.eslintrc)
+# css
+# - formatter: prettier
 $install nodejs
 $install yarn
 
-yarn global add tern # completer
-yarn global add js-beautify prettier{,-eslint-cli} # formatter: ~/.jsbeautifyrc
-yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}} # linter: ~/.eslintrc
+yarn global add js-beautify prettier{,-eslint-cli}
+yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 
 # php
+# - formatter: php-cs
+# - linter: php -l
 $install php
 $install composer
 
-composer global require friendsofphp/php-cs-fixer # formatter
+composer global require friendsofphp/php-cs-fixer
 
 # python
+# - completer: jedi
+# - formatter: yapf (~/.style.yapf)
+# - linter: flake8 (~/.config/flake8)
 $install python
 $install python-pip
 
-pip install --user jedi # completer
-pip install --user yapf # formatter: ~/.style.yapf
-pip install --user flake8 # linter: ~/.config/flake8
+pip install --user jedi
+pip install --user yapf
+pip install --user flake8
 
 # scheme
 $install mit-scheme
