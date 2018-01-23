@@ -2,9 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " completion
 if has('python3')
-    Plug 'roxma/ncm-clang'
-    Plug 'roxma/nvim-cm-tern', { 'do': 'yarn install' }
-    Plug 'roxma/nvim-completion-manager' | Plug 'roxma/vim-hug-neovim-rpc'
+    Plug 'maralla/completor.vim', { 'do': 'make js' }
 endif
 
 " file management
@@ -152,9 +150,6 @@ autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
 " matchit
 runtime macros/matchit.vim
-
-" nvim-completion-manager
-let g:cm_refresh_length = [ [1, 4], [4, 3], [5, 2], [7, 3] ]
 
 " neoformat
 let g:neoformat_enabled_css = [ 'prettier', 'jsbeautify' ]
