@@ -67,6 +67,7 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_linters = {
             \ 'c': [ 'gcc' ],
             \ 'cpp': [ 'g++' ],
+            \ 'php': [ 'php' ]
             \ }
 
 " closetag
