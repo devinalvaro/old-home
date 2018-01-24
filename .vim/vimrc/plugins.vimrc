@@ -153,9 +153,9 @@ autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 runtime macros/matchit.vim
 
 " neoformat
-let g:neoformat_enabled_css = [ 'prettier', 'jsbeautify' ]
-let g:neoformat_enabled_javascript = [ 'prettiereslint', 'prettier', 'jsbeautify' ]
-let g:neoformat_enabled_json = [ 'prettier', 'jsbeautify' ]
+let g:neoformat_enabled_css = [ 'prettier' ]
+let g:neoformat_enabled_javascript = [ 'prettiereslint' ]
+let g:neoformat_enabled_json = [ 'prettier' ]
 
 " onedark
 let g:onedark_color_overrides = {
