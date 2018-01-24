@@ -11,6 +11,14 @@ au User lsp_setup call lsp#register_server({
             \ 'whitelist': ['go'],
             \ })
 
+" javascript/typescript
+au User lsp_setup call lsp#register_server({
+            \ 'name': 'typescript-language-server',
+            \ 'cmd': { server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
+            \ 'root_uri': { server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_directory(lsp#utils#get_buffer_path(), '.git/..'))},
+            \ 'whitelist': ['typescript', 'javascript', 'javascript.jsx']
+            \ })
+
 " php
 au User lsp_setup call lsp#register_server({
             \ 'name': 'php-language-server',

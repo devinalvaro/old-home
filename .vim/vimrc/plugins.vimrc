@@ -2,11 +2,10 @@ call plug#begin('~/.vim/plugged')
 
 " completion
 if has('python3')
-    Plug 'prabirshrestha/async.vim'
     Plug 'prabirshrestha/asyncomplete-gocode.vim'
     Plug 'prabirshrestha/asyncomplete-lsp.vim'
     Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
-    Plug 'prabirshrestha/asyncomplete.vim'
+    Plug 'prabirshrestha/asyncomplete.vim' | Plug 'prabirshrestha/async.vim'
 endif
 
 " file management

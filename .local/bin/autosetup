@@ -25,6 +25,7 @@ $install goimports-git
 # html
 # - formatter: html-beautify (~/.jsbeautifyrc)
 # js
+# - completor: typescript-language-server
 # - formatter: prettiereslint
 # - linter: eslint (~/.eslintrc)
 # css
@@ -32,6 +33,7 @@ $install goimports-git
 $install nodejs
 $install yarn
 
+yarn global add typescript{,-language-server}
 yarn global add js-beautify prettier{,-eslint-cli}
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 
