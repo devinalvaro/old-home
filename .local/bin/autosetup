@@ -10,11 +10,9 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 # --------------------------------
 
 # clang
-# - completer: clang
 # - formatter: clang-format (~/.clang-format)
 # - linter: gcc
 $install clang
-$install gcc-multilib
 
 # go
 # - completer: gocode
@@ -27,7 +25,6 @@ $install goimports-git
 # html
 # - formatter: html-beautify (~/.jsbeautifyrc)
 # js
-# - completer: tern
 # - formatter: prettiereslint
 # - linter: eslint (~/.eslintrc)
 # css
@@ -39,7 +36,8 @@ yarn global add js-beautify prettier{,-eslint-cli}
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 
 # php
-# - formatter: php-cs
+# - completer: php-language-server
+# - formatter: php-cs-fixer
 # - linter: php -l
 $install php
 $install composer
@@ -47,13 +45,13 @@ $install composer
 composer global require friendsofphp/php-cs-fixer
 
 # python
-# - completer: jedi
+# - completer: python-language-server
 # - formatter: yapf (~/.style.yapf)
 # - linter: flake8 (~/.config/flake8)
 $install python
 $install python-pip
 
-pip install --user jedi
+pip install --user python-language-server
 pip install --user yapf
 pip install --user flake8
 

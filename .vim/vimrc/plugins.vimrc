@@ -2,7 +2,11 @@ call plug#begin('~/.vim/plugged')
 
 " completion
 if has('python3')
-    Plug 'maralla/completor.vim', { 'do': 'make js' }
+    Plug 'prabirshrestha/async.vim'
+    Plug 'prabirshrestha/asyncomplete-gocode.vim'
+    Plug 'prabirshrestha/asyncomplete-lsp.vim'
+    Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
+    Plug 'prabirshrestha/asyncomplete.vim'
 endif
 
 " file management
@@ -10,6 +14,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegu
 Plug 'justinmk/vim-dirvish'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-eunuch'
+
+" language server
+Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
+Plug 'prabirshrestha/vim-lsp'
 
 " lint
 Plug 'w0rp/ale'
