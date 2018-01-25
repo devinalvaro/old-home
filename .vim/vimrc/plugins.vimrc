@@ -11,7 +11,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegu
 Plug 'justinmk/vim-dirvish'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-eunuch'
-Plug 'luchermitte/alternate-lite' | Plug 'luchermitte/lh-vim-lib'
+Plug 'vim-scripts/a.vim'
 
 " language server
 Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
