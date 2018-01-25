@@ -28,7 +28,7 @@ fi
 
 antigen use oh-my-zsh
 antigen bundle tarruda/zsh-autosuggestions
-antigen theme denysdovhan/spaceship-zsh-theme spaceship
+antigen theme denysdovhan/spaceship-prompt spaceship
 antigen apply
 
 # fzf
