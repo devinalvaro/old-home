@@ -17,16 +17,20 @@ $install clang
 # go
 # - completer: gocode
 # - formatter: gofmt, goimports
+# - langserver: go-langserver
 # - linter: gofmt, goimports
 $install go
 $install gocode-git
 $install goimports-git
 
+go get -u github.com/sourcegraph/go-langserver
+
 # html
 # - formatter: html-beautify (~/.jsbeautifyrc)
 # js
-# - completor: typescript-language-server
+# - completer: typescript-language-server
 # - formatter: prettiereslint
+# - langserver: typescript-language-server
 # - linter: eslint (~/.eslintrc)
 # css
 # - formatter: prettier
@@ -40,6 +44,7 @@ yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 # php
 # - completer: php-language-server
 # - formatter: php-cs-fixer
+# - langserver: php-language-server
 # - linter: php -l
 $install php
 $install composer
@@ -49,6 +54,7 @@ composer global require friendsofphp/php-cs-fixer
 # python
 # - completer: python-language-server
 # - formatter: yapf (~/.style.yapf)
+# - langserver: python-language-server
 # - linter: flake8 (~/.config/flake8)
 $install python
 $install python-pip
