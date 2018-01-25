@@ -7,17 +7,19 @@ Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 Plug 'prabirshrestha/asyncomplete.vim' | Plug 'prabirshrestha/async.vim'
 
 " file management
+Plug 'tpope/vim-eunuch'
+
+" file navigation
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'mhinz/vim-grepper'
-Plug 'tpope/vim-eunuch'
 Plug 'vim-scripts/a.vim'
 
 " language server
 Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
 Plug 'prabirshrestha/vim-lsp'
 
-" lint
+" linting
 Plug 'w0rp/ale'
 
 " quickfix
@@ -63,6 +65,7 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim' | Plug 'mgee/lightline-bufferline'
 Plug 'joshdick/onedark.vim'
+Plug 'sevko/vim-nand2tetris-syntax'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
