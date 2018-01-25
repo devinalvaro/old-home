@@ -1,18 +1,17 @@
 call plug#begin('~/.vim/plugged')
 
 " completion
-if has('python3')
-    Plug 'prabirshrestha/asyncomplete-gocode.vim'
-    Plug 'prabirshrestha/asyncomplete-lsp.vim'
-    Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
-    Plug 'prabirshrestha/asyncomplete.vim' | Plug 'prabirshrestha/async.vim'
-endif
+Plug 'prabirshrestha/asyncomplete-gocode.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
+Plug 'prabirshrestha/asyncomplete.vim' | Plug 'prabirshrestha/async.vim'
 
 " file management
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-eunuch'
+Plug 'luchermitte/alternate-lite' | Plug 'luchermitte/lh-vim-lib'
 
 " language server
 Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
