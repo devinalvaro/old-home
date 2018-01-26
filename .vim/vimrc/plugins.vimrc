@@ -123,29 +123,30 @@ silent! let g:grepper.dir = 'filecwd'
 silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
 " lightline
+function! GutentagsStatusline()
+    return gutentags#statusline('')
+endfunction
+
 let g:lightline = {
             \ 'colorscheme': 'onedark',
             \ 'active': {
             \   'left': [ [  ],
-            \             [  ],
             \             [ 'buffers' ] ],
             \   'right': [ [  ],
-            \              [ 'gutentags' ] ]
+            \              [ 'gutentags_statusline' ] ],
             \ },
             \ 'inactive': {
             \   'left': [ [  ],
-            \             [  ],
             \             [ 'buffers' ] ],
             \   'right': [ [  ],
-            \              [ 'gutentags#statusline()' ] ],
+            \              [ 'gutentags_statusline' ] ],
             \ },
             \ 'subseparator': {
             \   'left': '',
             \   'right': '',
             \ },
             \ 'component_function': {
-            \   'filename': 'LightlineFilename',
-            \   'gutentags': 'LightlineGutentags'
+            \   'gutentags_statusline': 'GutentagsStatusline'
             \ },
             \ 'component_expand': {
             \   'buffers': 'lightline#bufferline#buffers'
