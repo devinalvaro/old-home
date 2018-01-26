@@ -6,6 +6,9 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 Plug 'prabirshrestha/asyncomplete.vim' | Plug 'prabirshrestha/async.vim'
 
+" documentation
+Plug 'powerman/vim-plugin-viewdoc'
+
 " file management
 Plug 'tpope/vim-eunuch'
 
@@ -64,8 +67,7 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim' | Plug 'mgee/lightline-bufferline'
 Plug 'joshdick/onedark.vim'
-Plug 'sevko/vim-nand2tetris-syntax'
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot' | Plug 'sevko/vim-nand2tetris-syntax'
 
 call plug#end()
 
@@ -191,6 +193,10 @@ let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
+
+" viewdoc
+let g:no_viewdoc_abbrev = [ ':doc', ':help', ':h', ':perldoc', ':godoc', ':pydoc', ':pman', ':infman', ':rdoc' ]
+let g:viewdoc_open = 'botright new'
 
 " wordmotion
 let g:wordmotion_spaces = '_-.'
