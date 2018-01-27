@@ -15,4 +15,4 @@ set guioptions-=r
 
 " window
 set lines=32
-set columns=104
+set columns=96
