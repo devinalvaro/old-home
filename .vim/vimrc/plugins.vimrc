@@ -1,10 +1,11 @@
 call plug#begin('~/.vim/plugged')
 
 " completion
+Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete-gocode.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
-Plug 'prabirshrestha/asyncomplete.vim' | Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
 
 " documentation
 Plug 'powerman/vim-plugin-viewdoc'
@@ -66,7 +67,7 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 
 " visual
 Plug 'chrisbra/colorizer'
-Plug 'itchyny/lightline.vim' | Plug 'mgee/lightline-bufferline'
+Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot' | Plug 'sevko/vim-nand2tetris-syntax'
 
@@ -124,7 +125,15 @@ silent! let g:grepper.dir = 'filecwd'
 silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
 " lightline
-function! GutentagsStatusline()
+function! LightlineFilename()
+    let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+    let modified = &modified ? ' +' : ''
+    let readonly = &readonly ? ' -' : ''
+
+    return filename . modified . readonly
+endfunction
+
+function! LightlineGutentags()
     return gutentags#statusline('')
 endfunction
 
@@ -132,34 +141,22 @@ let g:lightline = {
             \ 'colorscheme': 'onedark',
             \ 'active': {
             \   'left': [ [  ],
-            \             [ 'buffers' ] ],
+            \             [ 'lightline_filename' ] ],
             \   'right': [ [  ],
-            \              [ 'gutentags_statusline' ] ],
+            \              [ 'fileformat', 'fileencoding', 'filetype' ],
+            \              [ 'lightline_gutentags' ] ],
             \ },
             \ 'inactive': {
             \   'left': [ [  ],
-            \             [ 'buffers' ] ],
+            \             [ 'lightline_filename' ] ],
             \   'right': [ [  ],
-            \              [ 'gutentags_statusline' ] ],
-            \ },
-            \ 'subseparator': {
-            \   'left': '',
-            \   'right': '',
+            \              [  ],
+            \              [ 'fileformat', 'fileencoding', 'filetype' ] ],
             \ },
             \ 'component_function': {
-            \   'gutentags_statusline': 'GutentagsStatusline'
-            \ },
-            \ 'component_expand': {
-            \   'buffers': 'lightline#bufferline#buffers'
-            \ },
-            \ 'component_type': {
-            \   'buffers': 'tabsel'
+            \   'lightline_filename': 'LightlineFilename',
+            \   'lightline_gutentags': 'LightlineGutentags'
             \ }}
-
-let g:lightline#bufferline#filename_modifier = ':p:~:.'
-let g:lightline#bufferline#unnamed = '[No Name]'
-
-autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
 " matchit
 runtime macros/matchit.vim
