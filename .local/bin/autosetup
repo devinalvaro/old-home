@@ -82,9 +82,6 @@ $install ttf-symbola
 # ripgrep
 $install ripgrep
 
-# rofi
-$install rofi
-
 # tmux
 $install tmux
 
