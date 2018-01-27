@@ -28,12 +28,7 @@ nnoremap <leader>gr :Grepper<cr>
 noremap 0 ^
 noremap ^ 0
 
-noremap +p "+p
-noremap +P "+P
-noremap +y "+y
-noremap +Y "+y$
-noremap +x "+d
-noremap +X "+D
+noremap + "+
 
 noremap c "_c
 noremap C "_C
