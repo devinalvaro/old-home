@@ -14,10 +14,10 @@ Plug 'powerman/vim-plugin-viewdoc'
 Plug 'tpope/vim-eunuch'
 
 " file navigation
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
-Plug 'mhinz/vim-grepper'
 Plug 'kris2k/a.vim'
+Plug 'mhinz/vim-grepper'
 
 " language server
 Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }

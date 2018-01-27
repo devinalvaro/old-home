@@ -75,6 +75,9 @@ $install universal-ctags-git
 # fd
 $install fd-rs
 
+# fzf
+$install fzf
+
 # font
 $install ttf-hack
 $install ttf-symbola
