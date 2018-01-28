@@ -125,7 +125,7 @@ silent! let g:grepper.dir = 'filecwd'
 silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
 " lightline
-function! LightlineFilename()
+function! LightlineFilename() abort
     let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
     let modified = &modified ? ' +' : ''
     let readonly = &readonly ? ' -' : ''
@@ -133,7 +133,7 @@ function! LightlineFilename()
     return filename . modified . readonly
 endfunction
 
-function! LightlineGutentags()
+function! LightlineGutentags() abort
     return gutentags#statusline('')
 endfunction
 

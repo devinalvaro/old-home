@@ -1,4 +1,5 @@
-source ~/.vim/vimrc/plugins.vimrc
-source ~/.vim/vimrc/languages.vimrc
-source ~/.vim/vimrc/generals.vimrc
-source ~/.vim/vimrc/remaps.vimrc
+" ~/.vim/vimrc
+runtime vimrc/plugins.vimrc
+runtime vimrc/languages.vimrc
+runtime vimrc/generals.vimrc
+runtime vimrc/remaps.vimrc

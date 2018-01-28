@@ -48,20 +48,20 @@ set display=lastline
 set encoding=utf-8
 
 " format
-set nrformats=bin,hex
 set formatoptions=tcqj
+set nrformats=bin,hex
 
 " history
 set history=1000
 
 " indentation
-set smarttab
 set autoindent
 set expandtab
-set tabstop=4
-set softtabstop=4
 set shiftround
 set shiftwidth=4
+set smarttab
+set softtabstop=4
+set tabstop=8
 
 " list
 set listchars=tab:>\ ,trail:-,nbsp:+
