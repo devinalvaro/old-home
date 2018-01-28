@@ -4,7 +4,12 @@
 [core]
 	editor = vim
 	excludesfile = /home/devin/.gitignore_global
+	autocrlf = false
+	eol = LF
+	fileMode = false
 [push]
 	default = simple
 [credential]
 	helper = cache
+[diff]
+	renamelimit = 5000
