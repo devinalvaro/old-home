@@ -1,11 +1,13 @@
 call plug#begin('~/.vim/plugged')
 
 " completion
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete-gocode.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
+if v:version >= 800
+    Plug 'prabirshrestha/async.vim'
+    Plug 'prabirshrestha/asyncomplete-gocode.vim'
+    Plug 'prabirshrestha/asyncomplete-lsp.vim'
+    Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
+    Plug 'prabirshrestha/asyncomplete.vim'
+endif
 
 " documentation
 Plug 'powerman/vim-plugin-viewdoc'
@@ -20,8 +22,10 @@ Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 
 " language server
-Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
-Plug 'prabirshrestha/vim-lsp'
+if v:version >= 800
+    Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
+    Plug 'prabirshrestha/vim-lsp'
+endif
 
 " linting
 Plug 'w0rp/ale'
@@ -113,6 +117,10 @@ command! -nargs=1 -complete=dir Sexplore belowright split | silent Dirvish <args
 let g:fzf_history_dir = '~/.vim/fzf'
 
 " gutentags
+if !executable('ctags')
+    let g:gutentags_enabled = 0
+endif
+
 let g:gutentags_project_root = [ '.betags' ]
 let g:gutentags_generate_on_new = 0
 
