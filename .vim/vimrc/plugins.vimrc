@@ -1,13 +1,20 @@
 call plug#begin('~/.vim/plugged')
 
-" completion
+" completion & language server
 if v:version >= 800
     Plug 'prabirshrestha/async.vim'
     Plug 'prabirshrestha/asyncomplete-gocode.vim'
     Plug 'prabirshrestha/asyncomplete-lsp.vim'
     Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
     Plug 'prabirshrestha/asyncomplete.vim'
+
+    Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
+    Plug 'prabirshrestha/vim-lsp'
+
+    runtime vimrc/languages.vimrc
 endif
+
+Plug 'lifepillar/vim-mucomplete'
 
 " documentation
 Plug 'powerman/vim-plugin-viewdoc'
@@ -20,12 +27,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
-
-" language server
-if v:version >= 800
-    Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
-    Plug 'prabirshrestha/vim-lsp'
-endif
 
 " linting
 Plug 'w0rp/ale'
@@ -168,6 +169,10 @@ let g:lightline = {
 
 " matchit
 runtime macros/matchit.vim
+
+" mucomplete
+let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#no_popup_mappings = 1
 
 " neoformat
 let g:neoformat_enabled_css = [ 'prettier' ]
