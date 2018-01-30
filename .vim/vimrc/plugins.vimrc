@@ -67,7 +67,7 @@ Plug 'mbbill/undotree'
 
 " version control
 Plug 'mhinz/vim-signify'
-Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-fugitive'
 
 " visual
 Plug 'chrisbra/colorizer'
