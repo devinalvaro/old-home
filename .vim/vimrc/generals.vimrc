@@ -87,6 +87,7 @@ set numberwidth=2
 
 " performance
 set lazyredraw
+set synmaxcol=320
 set ttyfast
 
 " search
