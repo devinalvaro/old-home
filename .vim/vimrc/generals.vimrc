@@ -2,8 +2,6 @@
 set backspace=indent,eol,start
 
 " backup
-set backupdir=.,~/.vim/backup
-set directory=~/.vim/swap//
 set nobackup
 set noswapfile
 
@@ -18,18 +16,14 @@ set splitbelow
 set tabpagemax=50
 
 " color
-if has('termguicolors') || has('gui_running')
-    set termguicolors
-endif
+set termguicolors
 
 silent! colorscheme onedark
 
-" column
-set signcolumn=yes
-
 " completion
 set complete-=i
-set completeopt=menuone,noinsert,noselect,preview
+set completeopt+=menuone,noinsert,noselect
+set completeopt-=menu
 
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
@@ -42,17 +36,17 @@ let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[0 q"
 
 " display
-set display=lastline
+set display+=lastline
 
 " encoding
 set encoding=utf-8
 
 " format
-set formatoptions=tcqj
-set nrformats=bin,hex
+set formatoptions+=j
+set nrformats-=octal
 
 " history
-set history=1000
+set history=200
 
 " indentation
 set autoindent
@@ -64,13 +58,12 @@ set softtabstop=4
 set tabstop=8
 
 " list
-set listchars=tab:>\ ,trail:-,nbsp:+
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
 " map
-set langnoremap
+set nolangremap
 
 " matching
-set matchpairs+=<:>
 set showmatch
 
 " menu
@@ -90,6 +83,9 @@ set lazyredraw
 set synmaxcol=320
 set ttyfast
 
+" scrolloff
+set scrolloff=5
+
 " search
 set gdefault
 set hlsearch
@@ -104,8 +100,12 @@ set sessionoptions-=options
 set laststatus=2
 
 " tags
-set tags=./tags;,tags
+setglobal tags-=./tags tags-=./tags; tags^=./tags;
 set tagcase=match
+
+" timeout
+set ttimeout
+set ttimeoutlen=100
 
 " tmux
 set t_8b=[48;2;%lu;%lu;%lum

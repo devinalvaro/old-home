@@ -25,6 +25,8 @@ nnoremap <leader>gb :Grepper-buffers<cr>
 nnoremap <leader>gr :Grepper<cr>
 
 " normal + visual remaps
+noremap Q gq
+
 noremap 0 ^
 noremap ^ 0
 
@@ -46,4 +48,9 @@ nnoremap Y y$
 nnoremap cc "_cc
 nnoremap dd "_dd
 
+nnoremap <silent> <c-l> :nohlsearch<c-r>
+
 nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
+
+" insert remaps
+inoremap <c-u> <c-g>u<c-u>
