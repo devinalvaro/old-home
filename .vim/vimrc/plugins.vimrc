@@ -39,6 +39,7 @@ Plug 'ludovicchabant/vim-gutentags'
 
 " text editing
 Plug 'alvan/vim-closetag'
+Plug 'conradirwin/vim-bracketed-paste'
 Plug 'raimondi/delimitmate'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-abolish'
