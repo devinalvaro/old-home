@@ -20,10 +20,6 @@ if v:version >= 800
     Plug 'prabirshrestha/async.vim'
     Plug 'prabirshrestha/vim-lsp'
 
-    if executable('composer')
-        Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
-    endif
-
     runtime vimrc/languages.vimrc
 endif
 
