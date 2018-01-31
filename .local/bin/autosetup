@@ -23,6 +23,7 @@ $install go
 $install gocode-git
 $install goimports-git
 
+export GOPATH=$HOME/.go
 go get -u github.com/sourcegraph/go-langserver
 
 # html
