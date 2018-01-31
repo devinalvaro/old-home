@@ -30,7 +30,6 @@ set signcolumn=yes
 " completion
 set complete-=i
 set completeopt=menuone,noinsert,noselect,preview
-set previewheight=2
 
 autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
