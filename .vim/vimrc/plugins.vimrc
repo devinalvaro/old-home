@@ -1,19 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 " completion & language server
-if v:version >= 800
-    Plug 'prabirshrestha/async.vim'
-    Plug 'prabirshrestha/asyncomplete-gocode.vim'
-    Plug 'prabirshrestha/asyncomplete-lsp.vim'
-    Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
-    Plug 'prabirshrestha/asyncomplete.vim'
-
-    Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
-    Plug 'prabirshrestha/vim-lsp'
-
-    runtime vimrc/languages.vimrc
-endif
-
 Plug 'lifepillar/vim-mucomplete'
 
 " documentation
@@ -27,6 +14,18 @@ Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
+
+" language server
+if v:version >= 800
+    Plug 'prabirshrestha/async.vim'
+    Plug 'prabirshrestha/vim-lsp'
+
+    if executable('composer')
+        Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
+    endif
+
+    runtime vimrc/languages.vimrc
+endif
 
 " linting
 Plug 'w0rp/ale'

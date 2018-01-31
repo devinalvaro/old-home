@@ -1,10 +1,4 @@
 " go
-au user asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#gocode#get_source_options({
-            \ 'name': 'gocode',
-            \ 'whitelist': [ 'go' ],
-            \ 'completor': function('asyncomplete#sources#gocode#completor'),
-            \ }))
-
 if executable('go-langserver')
     au User lsp_setup call lsp#register_server({
                 \ 'name': 'go-langserver',
@@ -37,13 +31,4 @@ if executable('pyls')
                 \ 'cmd': { server_info->[ 'pyls' ] },
                 \ 'whitelist': [ 'python' ],
                 \ })
-endif
-
-" ultisnips
-if has('python3')
-    au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#ultisnips#get_source_options({
-                \ 'name': 'ultisnips',
-                \ 'whitelist': [ '*' ],
-                \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
-                \ }))
 endif
