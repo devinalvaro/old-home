@@ -41,3 +41,8 @@ Thumbs.db
 ########
 .tags
 tags
+
+# Gitignore #
+#############
+.gitignore.old
+.gitignore.tmp

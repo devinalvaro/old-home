@@ -1,9 +1,7 @@
 #!/bin/bash
 
 if [ -f .gitignore ]; then
-    mv .gitignore .gitignore.old
-else
-    touch .gitignore
+    mv .gitignore .gitignore.tmp
 fi
 
 > .gitignore
@@ -15,3 +13,9 @@ if [ $PWD = ~ ]; then
 fi
 
 sort -u .gitignore -o .gitignore
+
+if cmp -s .gitignore .gitignore.tmp; then
+    mv .gitignore.tmp .gitignore 2> /dev/null
+else
+    mv .gitignore.tmp .gitignore.old 2> /dev/null
+fi
