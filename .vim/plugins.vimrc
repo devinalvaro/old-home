@@ -17,8 +17,7 @@ Plug 'mhinz/vim-grepper'
 
 " language server
 if v:version >= 800
-    Plug 'prabirshrestha/async.vim'
-    Plug 'prabirshrestha/vim-lsp'
+    Plug 'prabirshrestha/vim-lsp' | Plug 'prabirshrestha/async.vim'
 
     runtime languages.vimrc
 endif
@@ -51,7 +50,6 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
 " text navigation
-Plug 'chaoren/vim-wordmotion'
 Plug 'junegunn/vim-slash'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
@@ -70,7 +68,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot' | Plug 'sevko/vim-nand2tetris-syntax'
+Plug 'sevko/vim-nand2tetris-syntax'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -214,6 +213,3 @@ let g:undotree_SetFocusWhenToggle = 1
 " viewdoc
 let g:no_viewdoc_abbrev = [ ':doc', ':help', ':h', ':perldoc', ':godoc', ':pydoc', ':pman', ':infman', ':rdoc' ]
 let g:viewdoc_open = 'botright new'
-
-" wordmotion
-let g:wordmotion_spaces = '_-.'
