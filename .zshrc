@@ -15,9 +15,6 @@ fi
 
 # --------------------------------
 
-# options
-[ -f $HOME/.zsh/options.zsh ] && source $HOME/.zsh/options.zsh
-
 # variables
 [ -f $HOME/.zsh/variables.zsh ] && source $HOME/.zsh/variables.zsh
 
@@ -44,6 +41,9 @@ antigen apply
 
 # functions
 [ -f $HOME/.zsh/functions.zsh ] && source $HOME/.zsh/functions.zsh
+
+# options
+[ -f $HOME/.zsh/options.zsh ] && source $HOME/.zsh/options.zsh
 
 # unaliases
 [ -f $HOME/.zsh/unaliases.zsh ] && source $HOME/.zsh/unaliases.zsh
