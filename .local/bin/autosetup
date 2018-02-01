@@ -52,10 +52,6 @@ pip install --user python-language-server
 pip install --user yapf
 pip install --user flake8
 
-# scheme
-$install mit-scheme
-$install rlwrap
-
 # --------------------------------
 
 # ctags
