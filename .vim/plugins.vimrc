@@ -20,7 +20,7 @@ if v:version >= 800
     Plug 'prabirshrestha/async.vim'
     Plug 'prabirshrestha/vim-lsp'
 
-    runtime vimrc/languages.vimrc
+    runtime languages.vimrc
 endif
 
 " linting
