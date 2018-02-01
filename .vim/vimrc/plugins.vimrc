@@ -138,6 +138,10 @@ function! LightlineFilename() abort
     return filename . modified . readonly
 endfunction
 
+function! LightlineFugitive() abort
+    return fugitive#head()
+endfunction
+
 function! LightlineGutentags() abort
     return gutentags#statusline('')
 endfunction
@@ -146,20 +150,21 @@ let g:lightline = {
             \ 'colorscheme': 'onedark',
             \ 'active': {
             \   'left': [ [  ],
-            \             [ 'lightline_filename' ] ],
+            \             [ 'lightline_filename', 'lightline_fugitive' ] ],
             \   'right': [ [  ],
             \              [ 'fileformat', 'fileencoding', 'filetype' ],
             \              [ 'lightline_gutentags' ] ],
             \ },
             \ 'inactive': {
             \   'left': [ [  ],
-            \             [ 'lightline_filename' ] ],
+            \             [ 'lightline_filename', 'lightline_fugitive' ] ],
             \   'right': [ [  ],
             \              [  ],
-            \              [ 'fileformat', 'fileencoding', 'filetype' ] ],
+            \              [ 'filetype' ] ],
             \ },
             \ 'component_function': {
             \   'lightline_filename': 'LightlineFilename',
+            \   'lightline_fugitive': 'LightlineFugitive',
             \   'lightline_gutentags': 'LightlineGutentags'
             \ }}
 
