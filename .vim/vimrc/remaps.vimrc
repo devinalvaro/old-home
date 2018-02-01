@@ -48,7 +48,7 @@ nnoremap Y y$
 nnoremap cc "_cc
 nnoremap dd "_dd
 
-nnoremap <silent> <c-l> :nohlsearch<c-r>
+nnoremap <silent> <c-l> :nohlsearch<cr>
 
 nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
 
