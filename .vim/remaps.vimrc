@@ -24,6 +24,16 @@ nnoremap <leader>ft :Tags<cr>
 nnoremap <leader>gb :Grepper-buffers<cr>
 nnoremap <leader>gr :Grepper<cr>
 
+nnoremap <leader>ld :LspDefinition<cr>
+nnoremap <leader>le :LspReferences<cr>
+nnoremap <leader>lfd :LspDocumentFormat<cr>
+nnoremap <leader>lfr :LspDocumentRangeFormat<cr>
+nnoremap <leader>lg :LspDocumentDiagnostics<cr>
+nnoremap <leader>lh :LspHover<cr>
+nnoremap <leader>lr :LspRename<cr>
+nnoremap <leader>lsd :LspDocumentSymbol<cr>
+nnoremap <leader>lsw :LspWorkspaceSymbol<cr>
+
 " normal + visual remaps
 noremap Q gq
 
