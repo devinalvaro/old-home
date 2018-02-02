@@ -20,6 +20,10 @@ if v:version >= 800
     Plug 'prabirshrestha/vim-lsp' | Plug 'prabirshrestha/async.vim'
 endif
 
+" languages
+Plug 'fatih/vim-go'
+Plug 'rip-rip/clang_complete'
+
 " linting
 Plug 'w0rp/ale'
 

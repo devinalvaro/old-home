@@ -10,6 +10,7 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 # --------------------------------
 
 # clang
+# - completer: clang
 # - formatter: clang-format (~/.clang-format)
 # - linter: gcc
 $install clang
