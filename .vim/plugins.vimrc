@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-" completion & language server
+" completion
 Plug 'lifepillar/vim-mucomplete'
 
 " documentation
@@ -18,8 +18,6 @@ Plug 'mhinz/vim-grepper'
 " language server
 if v:version >= 800
     Plug 'prabirshrestha/vim-lsp' | Plug 'prabirshrestha/async.vim'
-
-    runtime languages.vimrc
 endif
 
 " linting
@@ -166,6 +164,11 @@ let g:lightline = {
             \   'lightline_fugitive': 'LightlineFugitive',
             \   'lightline_gutentags': 'LightlineGutentags'
             \ }}
+
+" lsp
+if v:version >= 800
+    runtime languages.vimrc
+endif
 
 " matchit
 runtime macros/matchit.vim

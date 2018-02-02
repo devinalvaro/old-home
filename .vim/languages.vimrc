@@ -7,8 +7,6 @@ if executable('go-langserver')
                 \ })
 endif
 
-autocmd FileType go setlocal omnifunc=lsp#complete
-
 " javascript/typescript
 if executable('flow-language-server')
     au User lsp_setup call lsp#register_server({
@@ -27,8 +25,6 @@ if executable('typescript-language-server')
                 \ 'whitelist': [ 'typescript' ]
                 \ })
 endif
-
-autocmd FileType typescript, javascript, javascript.jsx setlocal omnifunc=lsp#complete
 
 " python
 if executable('pyls')
