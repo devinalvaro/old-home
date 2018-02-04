@@ -3,8 +3,6 @@ call plug#begin('~/.vim/plugged')
 " completion
 if v:version >= 800
     Plug 'maralla/completor.vim'
-else
-    Plug 'lifepillar/vim-mucomplete'
 endif
 
 " documentation
@@ -179,14 +177,6 @@ endif
 
 " matchit
 runtime macros/matchit.vim
-
-" mucomplete
-let g:mucomplete#chains = {
-            \ 'default': [ 'path', 'omni', 'user', 'tags', 'keyn', 'ulti', 'dict', 'uspl' ],
-            \ 'vim': [ 'path', 'cmd', 'keyn', 'ulti' ]
-            \ }
-let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#no_popup_mappings = 1
 
 " neoformat
 let g:neoformat_enabled_css = [ 'prettier' ]
