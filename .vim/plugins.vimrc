@@ -1,7 +1,11 @@
 call plug#begin('~/.vim/plugged')
 
 " completion
-Plug 'lifepillar/vim-mucomplete'
+if v:version >= 800
+    Plug 'maralla/completor.vim'
+else
+    Plug 'lifepillar/vim-mucomplete'
+endif
 
 " documentation
 Plug 'powerman/vim-plugin-viewdoc'
@@ -22,7 +26,6 @@ endif
 
 " languages
 Plug 'fatih/vim-go'
-Plug 'rip-rip/clang_complete'
 
 " linting
 Plug 'w0rp/ale'
