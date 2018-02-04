@@ -4,6 +4,10 @@ alias scheme='rlwrap scheme'
 
 # shortener aliases
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 alias ~='cd ~'
 alias pac='trizen'
 alias xo='xdg-open'
