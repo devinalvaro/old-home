@@ -2,6 +2,7 @@
 unalias _
 unalias afind
 unalias d
+unalias history
 unalias l
 unalias la
 unalias ll
