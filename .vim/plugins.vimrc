@@ -95,6 +95,9 @@ let g:colorizer_colornames = 0
 autocmd Filetype c,cpp,cs,php setlocal commentstring=//\ %s
 autocmd Filetype sql setlocal commentstring=--\ %s
 
+" completor
+let g:completor_auto_close_doc = 0
+
 " delimitmate
 let g:delimitMate_matchpairs = '(:),[:],{:}'
 let g:delimitMate_expand_cr = 2
