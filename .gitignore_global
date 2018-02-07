@@ -46,3 +46,7 @@ tags
 #############
 .gitignore.old
 .gitignore.tmp
+
+# Python #
+##########
+.ropeproject
