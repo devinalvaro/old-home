@@ -14,8 +14,8 @@ export PATH=$COMPOSER_HOME/vendor/bin:$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
 
 # fzf
 export FZF_DEFAULT_OPTS=--inline-info
-export FZF_DEFAULT_COMMAND='rg --follow --files --no-ignore --maxdepth 8 --glob "!{node_modules/*,Sdk/*,tags}" 2> /dev/null'
-export FZF_ALT_C_COMMAND='fd --follow --type d --no-ignore --max-depth 8 --exclude "{node_modules,Sdk}" 2> /dev/null'
+export FZF_DEFAULT_COMMAND='rg --follow --files --no-ignore --maxdepth 8 --glob "!{__pycache__/*,node_modules/*,Sdk/*,tags}" 2> /dev/null'
+export FZF_ALT_C_COMMAND='fd --follow --type d --no-ignore --max-depth 8 --exclude "{__pycache__,node_modules,Sdk}" 2> /dev/null'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 # lc
