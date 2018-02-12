@@ -1,6 +1,6 @@
 # launch tmux
 declare -A terms
-for term in 'alacritty', 'kitty'; do
+for term in "$(which kitty)"; do
     terms[$term]=1
 done
 
