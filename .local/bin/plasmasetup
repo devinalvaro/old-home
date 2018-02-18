@@ -14,5 +14,8 @@ $install sddm
 
 sudo systemctl enable sddm.service
 
-sed -i s/Current=$/Current=breeze/ sddm.conf
-sed -i s/CursorTheme=$/CursorTheme=breeze/ sddm.conf
+sudo mkdir /etc/sddm.conf.d
+sudo cp /usr/lib/sddm/sddm.conf.d/sddm.conf /etc/sddm.conf.d/sddm.conf
+
+sudo sed -i s/Current=$/Current=breeze/ /etc/sddm.conf.d/sddm.conf
+sudo sed -i s/CursorTheme=$/CursorTheme=breeze/ /etc/sddm.conf.d/sddm.conf
