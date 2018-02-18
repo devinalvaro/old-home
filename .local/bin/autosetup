@@ -61,7 +61,7 @@ pip install --user flake8
 $install universal-ctags-git
 
 # fd
-$install fd-rs
+$install fd
 
 # fzf
 $install fzf
