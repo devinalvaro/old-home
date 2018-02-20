@@ -14,6 +14,7 @@ nnoremap <leader>u :UndotreeToggle<cr>
 nnoremap <leader>bc :BCommits<cr>
 nnoremap <leader>bl :BLines<cr>
 nnoremap <leader>bt :BTags<cr>
+
 nnoremap <leader>fb :Buffers<cr>
 nnoremap <leader>fc :Commits<cr>
 nnoremap <leader>fh :History:<cr>
