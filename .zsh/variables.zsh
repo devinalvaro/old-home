@@ -13,8 +13,8 @@ export YARN=$HOME/.yarn
 export PATH=$COMPOSER_HOME/vendor/bin:$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
 
 # fzf
-FZF_IGNORE_DIRS="__pycache__,node_modules,Sdk"
-FZF_IGNORE_FILES="$FZF_IGNORE_DIRS,tags"
+export FZF_IGNORE_DIRS="__pycache__,node_modules,Sdk"
+export FZF_IGNORE_FILES="$FZF_IGNORE_DIRS,tags"
 
 export FZF_DEFAULT_OPTS=--inline-info
 export FZF_DEFAULT_COMMAND='rg --follow --files --no-ignore --maxdepth 8 --glob "!{$FZF_IGNORE_FILES}" 2> /dev/null'
