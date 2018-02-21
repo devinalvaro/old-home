@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " completion
 if v:version >= 800
-    Plug 'maralla/completor.vim'
+    Plug 'maralla/completor.vim', { 'do': 'make js' }
 endif
 
 " documentation

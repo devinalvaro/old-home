@@ -30,16 +30,14 @@ go get -u github.com/sourcegraph/go-langserver
 # html
 # - formatter: html-beautify (~/.jsbeautifyrc)
 # javascript/typescript
-# - completer: typescript-language-server
+# - completer: tern
 # - formatter: prettiereslint
-# - langserver: typescript-language-server
 # - linter: eslint (~/.eslintrc)
 # css
 # - formatter: prettier
 $install nodejs
 $install yarn
 
-yarn global add typescript{,-language-server}
 yarn global add js-beautify prettier{,-eslint-cli}
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 
