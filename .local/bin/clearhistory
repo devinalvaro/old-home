@@ -5,16 +5,18 @@
 [ -s ~/.mysql_history ] && rm ~/.mysql_history && touch $_
 [ -s ~/.psql_history ] && rm ~/.psql_history && touch $_
 
-# language
-[ -s ~/.node_repl_history ] && rm ~/.node_repl_history && touch $_
-[ -s ~/.scheme_history ] && rm ~/.scheme_history && touch $_
-
 # less
 [ -s ~/.lesshst ] && rm ~/.lesshst && touch $_
+
+# node
+[ -s ~/.node_repl_history ] && rm ~/.node_repl_history && touch $_
 
 # python
 [ -d ~/.ipynb_checkpoints ] && rm -f ~/.ipynb_checkpoints/*
 [ -s ~/.python_history ] && rm ~/.python_history && touch $_
+
+# racket
+[ -s ~/.racket/racket-prefs.rktd ] && rm ~/.racket/racket-prefs.rktd && touch $_
 
 # shell
 [ -s ~/.bash_history ] && rm ~/.bash_history && touch $_
