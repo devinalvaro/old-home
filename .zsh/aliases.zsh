@@ -1,7 +1,6 @@
 # modifier aliases
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias ls='ls --group-directories-first --color=tty'
-alias scheme='rlwrap scheme'
 
 # shortener aliases
 alias ..='cd ..'
