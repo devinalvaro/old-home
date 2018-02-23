@@ -71,7 +71,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'sevko/vim-nand2tetris-syntax'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
