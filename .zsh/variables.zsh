@@ -5,12 +5,11 @@ export EDITOR=vim
 export ANTIGEN=$HOME/.antigen
 export NLTK_DATA=$HOME/.nltk_data
 
-export AZURE=$HOME/.azure
 export GOPATH=$HOME/.go
 export LOCAL=$HOME/.local
 export YARN=$HOME/.yarn
 
-export PATH=$AZURE/bin:$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
+export PATH=$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
 
 # fzf
 export FZF_IGNORE_DIRS="__pycache__,node_modules,Sdk"
