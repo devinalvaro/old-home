@@ -91,8 +91,11 @@ let g:closetag_close_shortcut = '!>'
 let g:colorizer_colornames = 0
 
 " commentary
-autocmd Filetype c,cpp,cs,php setlocal commentstring=//\ %s
-autocmd Filetype sql setlocal commentstring=--\ %s
+augroup Commentary
+    autocmd!
+    autocmd Filetype c,cpp,cs,php setlocal commentstring=//\ %s
+    autocmd Filetype sql setlocal commentstring=--\ %s
+augroup END
 
 " completor
 let g:completor_auto_close_doc = 0
@@ -103,7 +106,10 @@ let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
-autocmd Filetype clojure,lisp,racket,scheme let g:delimitMate_expand_cr = 1
+augroup Delimitmate
+    autocmd!
+    autocmd Filetype clojure,lisp,racket,scheme let g:delimitMate_expand_cr = 1
+augroup END
 
 " dirvish
 let g:dirvish_mode = ':sort ,^.*/,'

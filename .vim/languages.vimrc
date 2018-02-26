@@ -16,4 +16,7 @@ if executable('pyls')
                 \ })
 endif
 
-autocmd FileType python setlocal omnifunc=lsp#complete
+augroup LspComplete
+    autocmd!
+    autocmd FileType python setlocal omnifunc=lsp#complete
+augroup END

@@ -25,7 +25,10 @@ set complete-=i
 set completeopt+=menuone,noinsert,noselect
 set completeopt-=menu
 
-autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
+augroup Completion
+    autocmd!
+    autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
+augroup END
 
 " confirmation
 set confirm
@@ -119,7 +122,10 @@ set undodir=~/.vim/undo
 set viminfo+=!,n~/.viminfo
 
 " window
-autocmd VimResized * wincmd =
+augroup Window
+    autocmd!
+    autocmd VimResized * wincmd =
+augroup END
 
 " wrapping
 set breakindent
