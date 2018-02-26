@@ -18,14 +18,10 @@ $install clang
 # go
 # - completer: gocode
 # - formatter: gofmt, goimports
-# - langserver: go-langserver
 # - linter: gofmt, goimports
 $install go
 $install gocode-git
 $install goimports-git
-
-export GOPATH=$HOME/.go
-go get -u github.com/sourcegraph/go-langserver
 
 # html
 # - formatter: html-beautify (~/.jsbeautifyrc)
@@ -42,14 +38,13 @@ yarn global add js-beautify prettier{,-eslint-cli}
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 
 # python
-# - completer: python-language-server
+# - completer: jedi
 # - formatter: yapf (~/.style.yapf)
-# - langserver: python-language-server
 # - linter: flake8 (~/.config/flake8)
 $install python
 $install python-pip
 
-pip install --user python-language-server
+pip install --user jedi
 pip install --user yapf
 pip install --user flake8
 

@@ -17,11 +17,6 @@ Plug 'justinmk/vim-dirvish'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 
-" language server
-if v:version >= 800
-    Plug 'prabirshrestha/vim-lsp' | Plug 'prabirshrestha/async.vim'
-endif
-
 " languages
 Plug 'fatih/vim-go'
 
@@ -179,11 +174,6 @@ let g:lightline = {
             \   'lightline_fugitive': 'LightlineFugitive',
             \   'lightline_gutentags': 'LightlineGutentags'
             \ }}
-
-" lsp
-if v:version >= 800
-    runtime languages.vimrc
-endif
 
 " matchit
 runtime macros/matchit.vim
