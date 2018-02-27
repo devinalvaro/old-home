@@ -63,6 +63,9 @@ $install fzf
 $install ttf-hack
 $install ttf-symbola
 
+# httpie
+$install httpie
+
 # ripgrep
 $install ripgrep
 

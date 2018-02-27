@@ -1,5 +1,6 @@
 # modifier aliases
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+alias http='http --style=bw'
 alias ls='ls --group-directories-first --color=tty'
 
 # shortener aliases
