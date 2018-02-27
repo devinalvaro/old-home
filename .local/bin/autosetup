@@ -78,6 +78,9 @@ vim +PlugInstall +qa
 
 mkdir -p ~/.vim/{fzf,tags,undo}
 
+# xclip
+$install xclip
+
 # zsh
 $install zsh
 
