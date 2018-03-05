@@ -3,13 +3,12 @@ export EDITOR=vim
 
 # paths
 export ANTIGEN=$HOME/.antigen
+export GOPATH=$HOME/.go
 export NLTK_DATA=$HOME/.nltk_data
 
-export GOPATH=$HOME/.go
-export LOCAL=$HOME/.local
-export YARN=$HOME/.yarn
-
-export PATH=$GOPATH/bin:$LOCAL/bin:$YARN/bin:$PATH
+export PATH=$PATH:$HOME/.go/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.yarn/bin
 
 # fzf
 export FZF_IGNORE_DIRS="__pycache__,node_modules,Sdk"
