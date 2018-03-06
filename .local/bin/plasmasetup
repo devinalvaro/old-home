@@ -6,6 +6,9 @@ install='trizen -S --needed --noconfirm --noedit'
 # plasma
 $install plasma-desktop plasma-nm plasma-pa plasma5-applets-redshift-control powerdevil
 
+# kwallet
+$install kwallet-pam
+
 # gtk
 $install breeze-gtk kde-gtk-config
 
