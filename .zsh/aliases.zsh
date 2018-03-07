@@ -40,8 +40,10 @@ alias gss='git status -s'
 alias gsa='git status -s -uall'
 
 # oj aliases
-alias ojd='oj d'
+alias ojc='rm -rf a.out test'
+alias ojd='oj download'
 alias ojt='oj test 2>&1 | less'
+alias ojs='oj submit'
 
 # python aliases
 alias py='python'
