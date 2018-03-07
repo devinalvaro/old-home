@@ -1,6 +1,6 @@
 # modifier aliases
 alias http='http --style=bw'
-alias ls='ls --color=tty'
+alias ls='ls --color=auto'
 
 # shortener aliases
 alias g='git'
