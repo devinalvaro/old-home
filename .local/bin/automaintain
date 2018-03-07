@@ -7,8 +7,11 @@ upgrade='trizen -Syu --needed --noconfirm --noedit'
 
 # --------------------------------
 
-# system
+# pacman
 $upgrade
+
+# pip
+pip freeze --local --user | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade --user
 
 # yarn
 yarn global upgrade
