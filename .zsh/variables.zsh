@@ -6,9 +6,9 @@ export ANTIGEN=$HOME/.antigen
 export GOPATH=$HOME/.go
 export NLTK_DATA=$HOME/.nltk_data
 
-export PATH=$PATH:$HOME/.go/bin
-export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:$HOME/.yarn/bin
+export PATH=$HOME/.go/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.yarn/bin:$PATH
 
 # fzf
 export FZF_IGNORE_DIRS="__pycache__,node_modules,Sdk"
