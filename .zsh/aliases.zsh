@@ -4,17 +4,22 @@ alias http='http --style=bw'
 alias ls='ls --group-directories-first --color=tty'
 
 # shortener aliases
+alias pac='trizen'
+alias paste='xclip -o -selection clipboard'
+alias xo='xdg-open'
+alias yank='xclip -i -selection clipboard -rmlastnl'
+
+# navigation aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias ~='cd ~'
-alias pac='trizen'
-alias xo='xdg-open'
-alias yank='xclip -rmlastnl -selection c'
 
-# git aliases
+## alias groups ##
+
+# git
 alias ga='git add'
 alias gaa='git add --all'
 alias gbr='git branch'
@@ -39,13 +44,13 @@ alias gsh='git stash'
 alias gss='git status -s'
 alias gsa='git status -s -uall'
 
-# oj aliases
+# online-judge-tools
 alias ojc='rm -rf a.out test'
 alias ojd='oj download'
 alias ojt='oj test 2>&1 | less'
 alias ojs='oj submit'
 
-# python aliases
+# python
 alias py='python'
 alias py2='python2'
 alias py3='python3'
