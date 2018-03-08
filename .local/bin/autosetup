@@ -20,6 +20,7 @@ $install clang
 # - formatter: gofmt, goimports
 # - linter: gofmt, goimports
 $install go
+
 $install gocode-git
 $install goimports-git
 
@@ -31,8 +32,7 @@ $install goimports-git
 # - linter: eslint (~/.eslintrc)
 # css
 # - formatter: prettier
-$install nodejs
-$install yarn
+$install nodejs yarn
 
 yarn global add js-beautify prettier{,-eslint-cli}
 yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
@@ -41,7 +41,7 @@ yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 # - completer: jedi
 # - formatter: yapf (~/.style.yapf)
 # - linter: flake8 (~/.config/flake8)
-$install python
+$install python python-pip
 
 $intall python-jedi
 $install yapf
@@ -59,8 +59,7 @@ $install fd
 $install fzf
 
 # font
-$install ttf-hack
-$install ttf-symbola
+$install ttf-hack ttf-symbola
 
 # httpie
 $install httpie
