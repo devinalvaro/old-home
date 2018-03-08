@@ -14,5 +14,5 @@ set guioptions-=m
 set guioptions-=r
 
 " window
-set lines=32
-set columns=96
+set lines=30
+set columns=90
