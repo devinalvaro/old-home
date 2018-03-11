@@ -20,6 +20,7 @@
 --exclude=.idea
 --exclude=.svn
 --exclude=.tmp
+--exclude=Makefile
 --exclude=bower_components
 --exclude=build
 --exclude=cscope.*
