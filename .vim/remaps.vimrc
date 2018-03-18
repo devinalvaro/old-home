@@ -4,7 +4,7 @@ let mapleader = "\<space>"
 nnoremap <leader>d :bdelete<cr>
 nnoremap <leader>r :source $MYVIMRC<cr>
 nnoremap <leader>w :write<cr>
-nnoremap <leader>q :quit<cr>
+nnoremap <leader>q :qall<cr>
 
 nnoremap <leader>c :ColorToggle<cr>
 nnoremap <leader>n :Neoformat<cr>
