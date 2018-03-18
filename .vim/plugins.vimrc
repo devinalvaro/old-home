@@ -46,6 +46,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
+Plug 'wellle/targets.vim'
 
 " text navigation
 Plug 'andymass/vim-matchup'
