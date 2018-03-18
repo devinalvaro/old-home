@@ -46,6 +46,9 @@ nmap gl <leader>fl
 
 nnoremap Y y$
 
+nnoremap c* *Ncgn
+nnoremap c# #NcgN
+
 nnoremap cc "_cc
 nnoremap dd "_dd
 
