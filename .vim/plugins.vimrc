@@ -23,9 +23,6 @@ Plug 'fatih/vim-go'
 " linting
 Plug 'w0rp/ale'
 
-" quickfix
-Plug 'romainl/vim-qf'
-
 " snippet
 if has('python3')
     Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
@@ -187,10 +184,6 @@ let g:onedark_color_overrides = {
             \ 'comment_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
             \ 'vertsplit': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' }
             \ }
-
-" qf
-let g:qf_window_bottom = 0
-let g:qf_loclist_window_bottom = 0
 
 " signify
 let g:signify_vcs_list = [ 'git' ]
