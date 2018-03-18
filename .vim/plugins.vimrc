@@ -35,13 +35,13 @@ endif
 Plug 'ludovicchabant/vim-gutentags'
 
 " text editing
-Plug 'alvan/vim-closetag'
 Plug 'conradirwin/vim-bracketed-paste'
 Plug 'raimondi/delimitmate'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
@@ -79,9 +79,6 @@ let g:ale_linters = {
             \ 'cpp': [ 'g++' ],
             \ 'php': [ 'php' ]
             \ }
-
-" closetag
-let g:closetag_close_shortcut = '!>'
 
 " colorizer
 let g:colorizer_colornames = 0
