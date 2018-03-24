@@ -22,3 +22,4 @@ sudo cp /usr/lib/sddm/sddm.conf.d/sddm.conf /etc/sddm.conf.d/sddm.conf
 
 sudo sed -i s/Current=$/Current=breeze/ /etc/sddm.conf.d/sddm.conf
 sudo sed -i s/CursorTheme=$/CursorTheme=breeze/ /etc/sddm.conf.d/sddm.conf
+sudo sed -i s/EnableHiDPI=\.\*/EnableHiDPI=true/ /etc/sddm.conf.d/sddm.conf
