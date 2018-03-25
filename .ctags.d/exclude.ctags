@@ -12,6 +12,7 @@
 --exclude=*.sln
 --exclude=*.swp
 --exclude=*.tar.*
+--exclude=*.txt
 --exclude=*bundle.*
 --exclude=.DS_Store
 --exclude=.cvs
