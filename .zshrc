@@ -1,11 +1,8 @@
 # launch tmux
-declare -A terms
-for term in "$(which kitty)"; do
-    terms[$term]=1
-done
+terms=("$(which kitty)")
 
 if which tmux >/dev/null 2>&1 &&
-        [[ ${terms[$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))]} ]]; then
+        [[ ${terms[*]} =~ $(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)) ]]; then
     test -z "$TMUX" && (tmux attach || tmux new-session)
 
     while test -z "$TMUX"; do
