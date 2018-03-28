@@ -22,6 +22,9 @@
 [ -s ~/.bash_history ] && rm ~/.bash_history && touch $_
 [ -s ~/.zsh_history ] && rm ~/.zsh_history && touch $_
 
+# tig
+[ -s ~/.tig_history ] && rm ~/.tig_history && touch $_
+
 # vim
 [ -d ~/.vim/fzf ] && rm -f ~/.vim/fzf/*
 [ -d ~/.vim/undo ] && rm -f ~/.vim/undo/*
