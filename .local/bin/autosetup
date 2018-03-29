@@ -49,23 +49,16 @@ $install flake8
 
 # --------------------------------
 
-# ctags
-$install universal-ctags-git
-
-# fd
-$install fd
-
-# fzf
-$install fzf
-
-# font
+# monospace fonts
 $install ttf-hack ttf-symbola
 
-# httpie
-$install httpie
+# pattern matchers
+$install fd fzf ripgrep universal-ctags-git
 
-# ripgrep
-$install ripgrep
+# commandline interfaces
+$install httpie ranger tig xclip
+
+# --------------------------------
 
 # tmux
 $install tmux
@@ -78,9 +71,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugInstall +qa
 
 mkdir -p ~/.vim/{fzf,tags,undo}
-
-# xclip
-$install xclip
 
 # zsh
 $install zsh
