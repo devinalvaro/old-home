@@ -3,7 +3,9 @@ export EDITOR=vim
 
 # paths
 export ANTIGEN=$HOME/.antigen
+export CUDA=/opt/cuda
 export GOPATH=$HOME/.go
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64
 export NLTK_DATA=$HOME/.nltk_data
 
 export PATH=$HOME/.go/bin:$PATH
