@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if type "xclip" > /dev/null 2>&1; then
-    xclip -out -selection clipboard
-elif type"xsel" > /dev/null 2>&1; then
-    xsel --output --clipboard
-fi
-
