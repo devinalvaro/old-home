@@ -8,12 +8,6 @@ alias pac='trizen'
 alias py='python'
 alias xo='xdg-open'
 
-# navigation aliases
-alias ...='../..'
-alias ....='../../..'
-alias .....='../../../..'
-alias ......='../../../../..'
-
 # git aliases
 alias ga='git add'
 alias gaa='git add --all'

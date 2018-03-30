@@ -4,6 +4,14 @@ function adbrestart() {
     sudo adb start-server
 }
 
+# cd
+function up() {
+  for _ in $(seq 1 $1);
+     do 
+       cd ..
+     done
+}
+
 # clipboard
 function paste() {
     if type "xclip" > /dev/null 2>&1; then
