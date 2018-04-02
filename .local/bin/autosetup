@@ -39,7 +39,7 @@ yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
 
 # python
 # - completer: jedi
-# - formatter: yapf (~/.style.yapf)
+# - formatter: yapf
 # - linter: flake8 (~/.config/flake8)
 $install python python-pip
 
