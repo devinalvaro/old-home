@@ -20,6 +20,9 @@ set termguicolors
 
 silent! colorscheme onedark
 
+" column
+set signcolumn=yes
+
 " completion
 set complete-=i
 set completeopt+=menuone,noinsert,noselect
