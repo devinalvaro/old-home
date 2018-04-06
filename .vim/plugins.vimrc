@@ -46,9 +46,7 @@ Plug 'tpope/vim-surround'
 Plug 'wellle/targets.vim'
 
 " text navigation
-Plug 'andymass/vim-matchup'
 Plug 'junegunn/vim-slash'
-Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-unimpaired'
 
 " text objects
@@ -171,8 +169,8 @@ let g:lightline = {
             \   'lightline_gutentags': 'LightlineGutentags'
             \ }}
 
-" matchup
-let g:matchup_matchparen_enabled = 0
+" matchit
+runtime! macros/matchit.vim
 
 " neoformat
 let g:neoformat_enabled_css = [ 'prettier' ]
