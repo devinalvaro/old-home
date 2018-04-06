@@ -5,9 +5,6 @@ if v:version >= 800
     Plug 'maralla/completor.vim', { 'do': 'make js' }
 endif
 
-" documentation
-Plug 'powerman/vim-plugin-viewdoc'
-
 " file management
 Plug 'tpope/vim-eunuch'
 
@@ -22,6 +19,9 @@ Plug 'fatih/vim-go'
 
 " linting
 Plug 'w0rp/ale'
+
+" list
+Plug 'romainl/vim-qf'
 
 " snippet
 if has('python3')
@@ -47,7 +47,6 @@ Plug 'wellle/targets.vim'
 
 " text navigation
 Plug 'junegunn/vim-slash'
-Plug 'romainl/vim-qf'
 Plug 'tpope/vim-unimpaired'
 
 " text objects
@@ -89,6 +88,7 @@ augroup END
 
 " completor
 let g:completor_auto_close_doc = 0
+let g:completor_set_options = 0
 
 " delimitmate
 let g:delimitMate_matchpairs = '(:),[:],{:}'
@@ -111,6 +111,7 @@ command! -nargs=1 -complete=dir Vexplore leftabove vsplit | silent Dirvish <args
 command! -nargs=1 -complete=dir Sexplore belowright split | silent Dirvish <args>
 
 " fzf
+let g:fzf_layout = { 'down': '10' }
 let g:fzf_history_dir = '~/.vim/fzf'
 
 " gutentags
@@ -197,7 +198,3 @@ let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
-
-" viewdoc
-let g:no_viewdoc_abbrev = [ ':doc', ':help', ':h', ':perldoc', ':godoc', ':pydoc', ':pman', ':infman', ':rdoc' ]
-let g:viewdoc_open = 'botright new'
