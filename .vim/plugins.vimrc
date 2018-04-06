@@ -47,6 +47,7 @@ Plug 'wellle/targets.vim'
 
 " text navigation
 Plug 'junegunn/vim-slash'
+Plug 'romainl/vim-qf'
 Plug 'tpope/vim-unimpaired'
 
 " text objects
@@ -187,9 +188,6 @@ let g:onedark_color_overrides = {
 let g:signify_vcs_list = [ 'git' ]
 let g:signify_sign_change = '~'
 let g:signify_sign_show_count = 0
-
-" sneak
-let g:sneak#label = 1
 
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
