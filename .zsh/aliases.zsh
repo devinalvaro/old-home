@@ -4,9 +4,10 @@ alias ls='ls --color=auto'
 
 # shortener aliases
 alias g='git'
-alias pac='trizen'
+alias pac='pacman'
 alias py='python'
 alias xo='xdg-open'
+alias zen='trizen'
 
 # git aliases
 alias ga='git add'
