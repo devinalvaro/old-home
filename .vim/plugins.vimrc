@@ -10,9 +10,9 @@ Plug 'tpope/vim-eunuch'
 
 " file navigation
 Plug 'junegunn/fzf.vim'
-Plug 'justinmk/vim-dirvish'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
+Plug 'tpope/vim-vinegar'
 
 " languages
 Plug 'fatih/vim-go'
@@ -28,6 +28,9 @@ if has('python3')
     Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 endif
 
+" session
+Plug 'tpope/vim-obsession'
+
 " tags
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -42,6 +45,7 @@ Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'wellle/targets.vim'
 
@@ -100,15 +104,6 @@ augroup Delimitmate
     autocmd!
     autocmd Filetype clojure,lisp,racket,scheme let g:delimitMate_expand_cr = 1
 augroup END
-
-" dirvish
-let g:dirvish_mode = ':sort ,^.*/,'
-
-let g:loaded_netrw = 1
-let g:loaded_netrwPlugin = 1
-
-command! -nargs=1 -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
-command! -nargs=1 -complete=dir Sexplore belowright split | silent Dirvish <args>
 
 " fzf
 let g:fzf_layout = { 'down': '10' }
@@ -182,6 +177,7 @@ let g:neoformat_enabled_json = [ 'prettier' ]
 " onedark
 let g:onedark_color_overrides = {
             \ 'comment_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
+            \ 'gutter_fg_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
             \ 'vertsplit': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' }
             \ }
 

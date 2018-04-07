@@ -13,7 +13,6 @@ set autoread
 set hidden
 set splitright
 set splitbelow
-set tabpagemax=50
 
 " color
 set termguicolors
@@ -52,7 +51,7 @@ set formatoptions+=j
 set nrformats-=octal
 
 " history
-set history=200
+set history=1000
 
 " indentation
 set autoindent
@@ -86,7 +85,7 @@ set numberwidth=2
 
 " performance
 set lazyredraw
-set synmaxcol=320
+set synmaxcol=200
 set ttyfast
 
 " scrolloff
@@ -95,8 +94,8 @@ set scrolloff=5
 " search
 set gdefault
 set hlsearch
-set incsearch
 set ignorecase
+set incsearch
 set smartcase
 
 " session
@@ -105,9 +104,12 @@ set sessionoptions-=options
 " statusline
 set laststatus=2
 
+" tab
+set tabpagemax=50
+
 " tags
-setglobal tags-=./tags tags-=./tags; tags^=./tags;
 set tagcase=match
+setglobal tags-=./tags tags-=./tags; tags^=./tags;
 
 " timeout
 set ttimeout
@@ -133,4 +135,5 @@ augroup END
 " wrapping
 set breakindent
 set linebreak
+
 let &showbreak = '↳ '
