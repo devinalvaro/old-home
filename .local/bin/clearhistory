@@ -1,31 +1,33 @@
 #!/bin/bash
 
+function clearhistory() {
+    [ -f $1 ] && [ -s $1 ] && rm $1 && touch $1
+    [ -d $1 ] && rm -f $1/*
+}
+
 # database
-[ -s ~/.dbshell ] && rm ~/.dbshell && touch $_
-[ -s ~/.mysql_history ] && rm ~/.mysql_history && touch $_
-[ -s ~/.psql_history ] && rm ~/.psql_history && touch $_
+clearhistory ~/.dbshell
+clearhistory ~/.mysql_history
+clearhistory ~/.psql_history
 
 # less
-[ -s ~/.lesshst ] && rm ~/.lesshst && touch $_
+clearhistory ~/.lesshst
 
 # node
-[ -s ~/.node_repl_history ] && rm ~/.node_repl_history && touch $_
+clearhistory ~/.node_repl_history
 
 # python
-[ -d ~/.ipynb_checkpoints ] && rm -f ~/.ipynb_checkpoints/*
-[ -s ~/.python_history ] && rm ~/.python_history && touch $_
-
-# racket
-[ -s ~/.racket/racket-prefs.rktd ] && rm ~/.racket/racket-prefs.rktd && touch $_
+clearhistory ~/.python_history
 
 # shell
-[ -s ~/.bash_history ] && rm ~/.bash_history && touch $_
-[ -s ~/.zsh_history ] && rm ~/.zsh_history && touch $_
+clearhistory ~/.bash_history
+clearhistory ~/.zsh_history
 
 # tig
-[ -s ~/.tig_history ] && rm ~/.tig_history && touch $_
+clearhistory ~/.tig_history
 
 # vim
-[ -d ~/.vim/fzf ] && rm -f ~/.vim/fzf/*
-[ -d ~/.vim/undo ] && rm -f ~/.vim/undo/*
-[ -s ~/.viminfo ] && rm ~/.viminfo && touch $_
+clearhistory ~/.vim/fzf
+clearhistory ~/.vim/undo
+clearhistory ~/.vim/.netrwhist
+clearhistory ~/.viminfo
