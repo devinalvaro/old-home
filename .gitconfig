@@ -1,15 +1,50 @@
 [user]
 	email = devin.alvaro@gmail.com
 	name = Devin Alvaro
+
 [core]
 	editor = vim
 	excludesfile = /home/devin/.gitignore_global
 	autocrlf = false
 	eol = LF
 	fileMode = false
+
 [push]
 	default = simple
+
 [credential]
 	helper = cache
+
 [diff]
 	renamelimit = 5000
+
+[alias]
+	a = add
+	aa = add --all
+	ap = add --patch
+
+	cm = commit
+	ca = commit --amend
+
+	df = diff
+	dc = diff --cached
+
+	ss = status --short
+	sa = status --short -uall
+
+	br = branch
+	cl = clone
+	cn = clean
+	co = checkout
+	fe = fetch
+	fl = reflog
+	lg = log
+	mr = merge
+	mv = mv
+	p = push
+	pl = pull
+	rb = rebase
+	rm = rm
+	rs = reset
+	rv = revert
+	sh = stash
