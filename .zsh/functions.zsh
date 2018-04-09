@@ -32,6 +32,15 @@ function yank() {
 # gitignore.io
 function gi() { curl -L -s https://www.gitignore.io/api/$@; }
 
+# pacman
+function pac() {
+  pacman $@
+
+  if [ $? -ne 0 ]; then
+    sudo pacman $@
+  fi
+}
+
 # truecolor
 function truecolor() {
     awk 'BEGIN{
