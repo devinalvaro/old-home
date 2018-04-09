@@ -29,6 +29,7 @@
 	df = diff
 	dc = diff --cached
 
+	st = status
 	ss = status --short
 	sa = status --short -uall
 
