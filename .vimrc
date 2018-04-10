@@ -1,4 +1,4 @@
 " ~/.vim
-runtime plugins.vimrc
-runtime generals.vimrc
-runtime bindings.vimrc
+runtime plugin.vimrc
+runtime general.vimrc
+runtime binding.vimrc

@@ -1,2 +1,2 @@
-source ~/.vim/generals.vimrc
-source ~/.vim/remaps.vimrc
+source ~/.vim/general.vimrc
+source ~/.vim/binding.vimrc
