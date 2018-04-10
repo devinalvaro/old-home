@@ -36,7 +36,6 @@ noremap X D
 
 " normal remaps
 nmap gb <leader>fb
-nmap gl <leader>fl
 
 nnoremap Y y$
 
