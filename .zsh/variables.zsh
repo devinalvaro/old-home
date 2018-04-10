@@ -14,8 +14,8 @@ export FZF_IGNORE_DIRS="__pycache__,node_modules"
 export FZF_IGNORE_FILES="$FZF_IGNORE_DIRS,tags"
 
 export FZF_DEFAULT_OPTS='--inline-info --height 10'
-export FZF_DEFAULT_COMMAND='rg --follow --files --no-ignore --glob "!{$FZF_IGNORE_FILES}" 2> /dev/null | head -n 8192'
-export FZF_ALT_C_COMMAND='fd --follow --type d --no-ignore --exclude "{$FZF_IGNORE_DIRS}" 2> /dev/null | head -n 4096'
+export FZF_DEFAULT_COMMAND='rg --follow --files --no-ignore --glob "!{$FZF_IGNORE_FILES}" 2> /dev/null | head -n 8000'
+export FZF_ALT_C_COMMAND='fd --follow --type d --no-ignore --exclude "{$FZF_IGNORE_DIRS}" 2> /dev/null | head -n 4000'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 # lc
