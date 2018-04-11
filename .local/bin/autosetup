@@ -21,7 +21,7 @@ $install clang
 # - linter: gofmt, goimports
 $install go
 
-$install gocode-bin
+$install gocode-git
 $install goimports-git
 
 # html
