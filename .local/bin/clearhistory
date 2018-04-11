@@ -23,9 +23,6 @@ clearhistory ~/.python_history
 clearhistory ~/.bash_history
 clearhistory ~/.zsh_history
 
-# tig
-clearhistory ~/.tig_history
-
 # vim
 clearhistory ~/.vim/fzf
 clearhistory ~/.vim/undo
