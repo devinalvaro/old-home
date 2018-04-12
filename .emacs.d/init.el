@@ -62,5 +62,17 @@
     :config
     (global-evil-visualstar-mode)))
 
+(use-package helm
+  :ensure t
+  :config
+  (helm-mode)
+  :bind (("M-x" . helm-M-x)
+         ("C-x C-f" . helm-find-files)))
+
 (use-package magit
   :ensure t)
+
+;; Variables
+(setq undo-tree-auto-save-history t
+      undo-tree-history-directory-alist `(("." . ,(concat user-emacs-directory "undo"))))
+(setq visible-bell nil)
