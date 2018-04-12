@@ -10,13 +10,6 @@ clearhistory ~/.dbshell
 clearhistory ~/.mysql_history
 clearhistory ~/.psql_history
 
-# emacs
-clearhistory ~/.emacs.d/auto-save-list
-clearhistory ~/.emacs.d/backups
-clearhistory ~/.emacs.d/ido.last
-clearhistory ~/.emacs.d/recentf
-clearhistory ~/.emacs.d/undo
-
 # less
 clearhistory ~/.lesshst
 
