@@ -2,13 +2,20 @@
 
 function clearhistory() {
     [ -f $1 ] && [ -s $1 ] && rm $1 && touch $1
-    [ -d $1 ] && rm -f $1/*
+    [ -d $1 ] && rm -f $1/* && rm -f $1/.[^.]*
 }
 
 # database
 clearhistory ~/.dbshell
 clearhistory ~/.mysql_history
 clearhistory ~/.psql_history
+
+# emacs
+clearhistory ~/.emacs.d/auto-save-list
+clearhistory ~/.emacs.d/backups
+clearhistory ~/.emacs.d/ido.last
+clearhistory ~/.emacs.d/recentf
+clearhistory ~/.emacs.d/undo
 
 # less
 clearhistory ~/.lesshst
