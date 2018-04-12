@@ -48,7 +48,7 @@ set showmatch
 set noruler
 set noshowcmd
 set noshowmode
-set shortmess+=cFI
+set shortmess+=cF
 
 " number
 set numberwidth=2
