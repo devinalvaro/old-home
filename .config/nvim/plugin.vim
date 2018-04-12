@@ -1,5 +1,13 @@
 call plug#begin()
 
+" completion
+if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+    Plug 'zchee/deoplete-clang'
+    Plug 'zchee/deoplete-jedi'
+endif
+
 " file management
 Plug 'tpope/vim-eunuch'
 
@@ -93,6 +101,9 @@ augroup Delimitmate
     autocmd!
     autocmd Filetype clojure,lisp,racket,scheme let g:delimitMate_expand_cr = 1
 augroup END
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
 " fzf
 let g:fzf_layout = { 'down': '10' }
