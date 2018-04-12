@@ -10,15 +10,9 @@ upgrade='trizen -Syu --needed --noconfirm --noedit'
 # pacman
 $upgrade
 
-# pip
-pip freeze --local --user | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade --user
-
-# yarn
-yarn global upgrade
-
 # vim
-vim +PlugUpgrade +qa
-vim +PlugUpdate +qa
+nvim +PlugUpgrade +qa
+nvim +PlugUpdate +qa
 
 # zsh
 zsh -i -c 'antigen update'
@@ -32,4 +26,4 @@ $autoremove
 $autoclean
 
 # clean vim plugins
-vim +PlugClean +qa
+nvim +PlugClean +qa

@@ -9,9 +9,6 @@ Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
 
-" languages
-Plug 'fatih/vim-go'
-
 " linting
 Plug 'w0rp/ale'
 
@@ -74,7 +71,6 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_linters = {
             \ 'c': [ 'gcc' ],
             \ 'cpp': [ 'g++' ],
-            \ 'php': [ 'php' ]
             \ }
 
 " colorizer
@@ -161,11 +157,6 @@ let g:lightline = {
 
 " matchit
 runtime! macros/matchit.vim
-
-" neoformat
-let g:neoformat_enabled_css = [ 'prettier' ]
-let g:neoformat_enabled_javascript = [ 'prettiereslint' ]
-let g:neoformat_enabled_json = [ 'prettier' ]
 
 " onedark
 let g:onedark_color_overrides = {

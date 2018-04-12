@@ -15,28 +15,6 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 # - linter: gcc
 $install clang
 
-# go
-# - completer: gocode
-# - formatter: gofmt, goimports
-# - linter: gofmt, goimports
-$install go
-
-$install gocode-git
-$install goimports-git
-
-# html
-# - formatter: html-beautify (~/.jsbeautifyrc)
-# javascript/typescript
-# - completer: tern
-# - formatter: prettiereslint
-# - linter: eslint (~/.eslintrc)
-# css
-# - formatter: prettier
-$install nodejs yarn
-
-yarn global add js-beautify prettier{,-eslint-cli}
-yarn global add eslint{,-config-airbnb,-plugin{-import,-jsx-a11y,-react}}
-
 # python
 # - completer: jedi
 # - formatter: yapf
@@ -64,7 +42,7 @@ $install httpie xclip
 $install tmux
 
 # vim
-$install neovim
+$install neovim python-neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
