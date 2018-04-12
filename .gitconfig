@@ -3,10 +3,9 @@
 	name = Devin Alvaro
 
 [core]
-	editor = vim
-	excludesfile = /home/devin/.gitignore_global
 	autocrlf = false
 	eol = LF
+	excludesfile = ~/.gitignore_global
 	fileMode = false
 
 [push]
@@ -14,9 +13,6 @@
 
 [credential]
 	helper = cache
-
-[diff]
-	renamelimit = 5000
 
 [alias]
 	a = add

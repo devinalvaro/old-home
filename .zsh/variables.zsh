@@ -1,5 +1,5 @@
 # editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # paths
 export ANTIGEN=$HOME/.antigen

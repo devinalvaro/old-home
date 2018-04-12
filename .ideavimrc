@@ -1,2 +1,2 @@
-source ~/.vim/general.vimrc
-source ~/.vim/binding.vimrc
+source ~/.config/nvim/general.vim
+source ~/.config/nvim/binding.vim

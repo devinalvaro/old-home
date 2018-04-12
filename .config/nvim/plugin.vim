@@ -1,15 +1,10 @@
-call plug#begin('~/.vim/plugged')
-
-" completion
-if v:version >= 800
-    Plug 'maralla/completor.vim', { 'do': 'make js' }
-endif
+call plug#begin()
 
 " file management
 Plug 'tpope/vim-eunuch'
 
 " file navigation
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
@@ -92,10 +87,6 @@ augroup Commentary
     autocmd Filetype sql setlocal commentstring=--\ %s
 augroup END
 
-" completor
-let g:completor_auto_close_doc = 0
-let g:completor_set_options = 0
-
 " delimitmate
 let g:delimitMate_matchpairs = '(:),[:],{:}'
 let g:delimitMate_expand_cr = 2
@@ -109,7 +100,7 @@ augroup END
 
 " fzf
 let g:fzf_layout = { 'down': '10' }
-let g:fzf_history_dir = '~/.vim/fzf'
+let g:fzf_history_dir = '~/.local/share/nvim/fzf'
 
 " gutentags
 if !executable('ctags')
@@ -119,7 +110,7 @@ endif
 let g:gutentags_project_root = [ '.betags' ]
 let g:gutentags_generate_on_write = 0
 let g:gutentags_generate_on_empty_buffer = 1
-let g:gutentags_cache_dir = '~/.vim/tags'
+let g:gutentags_cache_dir = '~/.local/share/nvim/tags'
 
 " grepper
 runtime plugin/grepper.vim
