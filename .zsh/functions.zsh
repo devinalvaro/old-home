@@ -34,9 +34,10 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@; }
 
 # pacman
 function pac() {
-  pacman $@
+  output=$(pacman $@ 2>&1)
+  echo $output
 
-  if [ $? -ne 0 ]; then
+  if [[ $output = *"unless you are root"* ]]; then
     sudo pacman $@
   fi
 }
