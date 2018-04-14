@@ -21,9 +21,7 @@ $install clang
 # - linter: flake8 (~/.config/flake8)
 $install python python-pip
 
-$install python-jedi
-$install yapf
-$install flake8
+$install flake8 python-jedi yapf
 
 # --------------------------------
 
