@@ -23,7 +23,7 @@ clearhistory ~/.python_history
 clearhistory ~/.bash_history
 clearhistory ~/.zsh_history
 
-# vim
+# neovim
 clearhistory ~/.config/nvim/.netrwhist
 clearhistory ~/.local/share/nvim/fzf
 clearhistory ~/.local/share/nvim/shada/main.shada
