@@ -39,6 +39,11 @@ $install httpie xclip
 # tmux
 $install tmux
 
+# emacs
+$install emacs
+
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
 # vim
 $install neovim python-neovim
 
