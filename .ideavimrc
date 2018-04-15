@@ -1,2 +1,10 @@
+" general
 source ~/.config/nvim/general.vim
-source ~/.config/nvim/binding.vim
+
+" binding
+noremap 0 ^
+noremap ^ 0
+
+noremap + "+
+
+nnoremap Y y$

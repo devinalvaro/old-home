@@ -20,8 +20,6 @@ nnoremap <leader>gb :Grepper-buffers<cr>
 nnoremap <leader>gr :Grepper<cr>
 
 " normal + visual remaps
-noremap Q gq
-
 noremap 0 ^
 noremap ^ 0
 
