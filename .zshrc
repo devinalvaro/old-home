@@ -27,7 +27,7 @@ antigen theme denysdovhan/spaceship-prompt spaceship
 antigen apply
 
 # fzf
-[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+[ -f $HOME/.zsh/fzf.zsh ] && source $HOME/.zsh/fzf.zsh
 
 # --------------------------------
 
