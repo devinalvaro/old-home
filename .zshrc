@@ -1,4 +1,4 @@
-# launch tmux
+# tmux
 terms=("$(which kitty)")
 
 if which tmux >/dev/null 2>&1 &&
@@ -31,6 +31,11 @@ antigen apply
 
 # --------------------------------
 
+# unaliases
+[ -f $HOME/.zsh/unaliases.zsh ] && source $HOME/.zsh/unaliases.zsh
+
+# --------------------------------
+
 # aliases
 [ -f $HOME/.zsh/aliases.zsh ] && source $HOME/.zsh/aliases.zsh
 
@@ -42,6 +47,3 @@ antigen apply
 
 # options
 [ -f $HOME/.zsh/options.zsh ] && source $HOME/.zsh/options.zsh
-
-# unaliases
-[ -f $HOME/.zsh/unaliases.zsh ] && source $HOME/.zsh/unaliases.zsh
