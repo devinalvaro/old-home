@@ -5,11 +5,6 @@ function clearhistory() {
     [ -d $1 ] && rm -f $1/* && rm -f $1/.[^.]* && touch $1/.gitignore
 }
 
-# database
-clearhistory ~/.dbshell
-clearhistory ~/.mysql_history
-clearhistory ~/.psql_history
-
 # less
 clearhistory ~/.lesshst
 
