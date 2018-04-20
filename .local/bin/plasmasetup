@@ -3,6 +3,8 @@
 # variables
 install='sudo pacman -S --needed --noconfirm'
 
+# --------------------------------
+
 # plasma
 $install plasma-desktop plasma-nm plasma-pa plasma5-applets-redshift-control powerdevil
 

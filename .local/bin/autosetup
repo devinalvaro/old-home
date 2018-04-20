@@ -9,30 +9,6 @@ cd trizen && makepkg -si --needed --noconfirm && cd .. && rm -rf trizen
 
 # --------------------------------
 
-# clang
-# - completer: clang
-# - formatter: clang-format (~/.clang-format)
-# - linter: gcc
-$install clang
-
-# python
-# - completer: jedi
-# - formatter: yapf
-# - linter: flake8 (~/.config/flake8)
-$install python python-pip
-
-$install flake8 python-jedi yapf
-
-# go
-# - completer: gocode
-# - formatter: goimports
-# - linter: goimports
-$install go
-
-$install go-tools gocode-daemon
-
-# --------------------------------
-
 # monospace fonts
 $install ttf-hack ttf-symbola
 
