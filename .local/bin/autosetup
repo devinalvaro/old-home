@@ -23,6 +23,14 @@ $install python python-pip
 
 $install flake8 python-jedi yapf
 
+# go
+# - completer: gocode
+# - formatter: goimports
+# - linter: goimports
+$install go
+
+$install go-tools gocode-daemon
+
 # --------------------------------
 
 # monospace fonts

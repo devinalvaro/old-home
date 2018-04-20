@@ -5,6 +5,7 @@ if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
     Plug 'zchee/deoplete-clang'
+    Plug 'zchee/deoplete-go', {' do': 'make' }
     Plug 'zchee/deoplete-jedi'
 endif
 
@@ -16,6 +17,9 @@ Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
+
+" languages
+Plug 'fatih/vim-go'
 
 " linting
 Plug 'w0rp/ale'
