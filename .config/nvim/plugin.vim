@@ -1,9 +1,10 @@
 call plug#begin()
 
-" completion
+" completion + language server protocol
 if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
+    Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-clang'
     Plug 'zchee/deoplete-go', {' do': 'make' }
     Plug 'zchee/deoplete-jedi'
