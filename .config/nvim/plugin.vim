@@ -2,12 +2,12 @@ call plug#begin()
 
 " completion + language server protocol
 if has('nvim')
-    Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-
     Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-clang'
     Plug 'zchee/deoplete-go', {' do': 'make' }
     Plug 'zchee/deoplete-jedi'
+
+    Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 endif
 
 " file management
@@ -137,6 +137,28 @@ let g:LanguageClient_serverCommands = {
             \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
             \ }
+let g:LanguageClient_diagnosticsDisplay = {
+            \ 1: {
+            \   "name": "Error",
+            \   "signText": ">>",
+            \   "signTexthl": "red",
+            \ },
+            \ 2: {
+            \   "name": "Warning",
+            \   "signText": "--",
+            \   "signTexthl": "purple",
+            \ },
+            \ 3: {
+            \   "name": "Information",
+            \   "signText": "--",
+            \   "signTexthl": "purple",
+            \ },
+            \ 4: {
+            \   "name": "Hint",
+            \   "signText": "--",
+            \   "signTexthl": "purple",
+            \ }}
+let g:LanguageClient_diagnosticList = "Location"
 
 " lightline
 function! LightlineFilename() abort
