@@ -132,6 +132,11 @@ silent! let g:grepper.switch = 0
 silent! let g:grepper.dir = 'filecwd'
 silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
 
+" language client
+let g:LanguageClient_serverCommands = {
+            \ 'javascript': [ 'javascript-typescript-stdio' ],
+            \ }
+
 " lightline
 function! LightlineFilename() abort
     let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
@@ -168,7 +173,7 @@ let g:lightline = {
             \ 'component_function': {
             \   'lightline_filename': 'LightlineFilename',
             \   'lightline_fugitive': 'LightlineFugitive',
-            \   'lightline_gutentags': 'LightlineGutentags'
+            \   'lightline_gutentags': 'LightlineGutentags',
             \ }}
 
 " matchit
@@ -178,8 +183,11 @@ runtime! macros/matchit.vim
 let g:onedark_color_overrides = {
             \ 'comment_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
             \ 'gutter_fg_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
-            \ 'vertsplit': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' }
+            \ 'vertsplit': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
             \ }
+
+" polyglot
+let g:jsx_ext_required = 1
 
 " signify
 let g:signify_vcs_list = [ 'git' ]
