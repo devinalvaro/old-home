@@ -12,11 +12,9 @@ install='trizen -S --needed --noconfirm --noedit'
 $install clang
 
 # python
-# - completer: jedi
-# - formatter: yapf
-# - linter: flake8 (~/.config/flake8)
+# - langserver: pyls
 $install python python-pip
-$install flake8 python-jedi yapf
+pip install --user pycodestyle python-language-server
 
 # go
 # - completer: gocode

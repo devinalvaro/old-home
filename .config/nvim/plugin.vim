@@ -135,6 +135,7 @@ silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt
 " language client
 let g:LanguageClient_serverCommands = {
             \ 'javascript': [ 'javascript-typescript-stdio' ],
+            \ 'python': [ 'pyls' ],
             \ }
 
 " lightline
