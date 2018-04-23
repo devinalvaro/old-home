@@ -141,22 +141,18 @@ let g:LanguageClient_diagnosticsDisplay = {
             \ 1: {
             \   "name": "Error",
             \   "signText": ">>",
-            \   "signTexthl": "red",
             \ },
             \ 2: {
             \   "name": "Warning",
             \   "signText": "--",
-            \   "signTexthl": "purple",
             \ },
             \ 3: {
             \   "name": "Information",
             \   "signText": "--",
-            \   "signTexthl": "purple",
             \ },
             \ 4: {
             \   "name": "Hint",
             \   "signText": "--",
-            \   "signTexthl": "purple",
             \ }}
 let g:LanguageClient_diagnosticList = "Location"
 
