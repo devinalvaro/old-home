@@ -14,10 +14,9 @@ $install clang
 # python
 # - completer: jedi
 # - formatter: yapf
-# - langserver: pyls
 # - linter: flake8 (~/.config/flake8)
 $install python python-pip
-pip install --user flake8 jedi python-language-server yapf
+$install flake8 jedi yapf
 
 # go
 # - completer: gocode
@@ -27,6 +26,6 @@ $install go
 $install go-tools gocode-daemon
 
 # javascript
-# - langserver: javascript-typescript-langserver
+# - langserver: js-ts-langserver
 $install node yarn
 yarn global add javascript-typescript-langserver

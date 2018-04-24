@@ -1,13 +1,11 @@
 call plug#begin()
 
-" completion + language server protocol
+" completion
 if has('nvim')
     Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-clang'
     Plug 'zchee/deoplete-go', {' do': 'make' }
     Plug 'zchee/deoplete-jedi'
-
-    Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 endif
 
 " file management
@@ -21,6 +19,11 @@ Plug 'tpope/vim-vinegar'
 
 " languages
 Plug 'fatih/vim-go'
+
+" language server protocol
+if has('nvim')
+    Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+endif
 
 " linting
 Plug 'w0rp/ale'
@@ -125,36 +128,37 @@ let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_cache_dir = '~/.local/share/nvim/tags'
 
 " grepper
-runtime plugin/grepper.vim
+let g:grepper = {
+            \ 'jump': 1,
+            \ 'switch': 0,
+            \ 'dir': 'filecwd',
+            \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
+            \ }
 
-silent! let g:grepper.jump = 1
-silent! let g:grepper.switch = 0
-silent! let g:grepper.dir = 'filecwd'
-silent! let g:grepper.tools = [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
-
-" language client
+" LanguageClient-neovim
 let g:LanguageClient_serverCommands = {
             \ 'javascript': [ 'javascript-typescript-stdio' ],
-            \ 'python': [ 'pyls' ],
             \ }
+
 let g:LanguageClient_diagnosticsDisplay = {
             \ 1: {
-            \   "name": "Error",
-            \   "signText": ">>",
+            \   'name': 'Error',
+            \   'signText': '>>',
             \ },
             \ 2: {
-            \   "name": "Warning",
-            \   "signText": "--",
+            \   'name': 'Warning',
+            \   'signText': '--',
             \ },
             \ 3: {
-            \   "name": "Information",
-            \   "signText": "--",
+            \   'name': 'Information',
+            \   'signText': '--',
             \ },
             \ 4: {
-            \   "name": "Hint",
-            \   "signText": "--",
+            \   'name': 'Hint',
+            \   'signText': '--',
             \ }}
-let g:LanguageClient_diagnosticList = "Location"
+
+let g:LanguageClient_diagnosticList = 'Location'
 
 " lightline
 function! LightlineFilename() abort
