@@ -5,6 +5,11 @@ function clearhistory() {
     [ -d $1 ] && rm -f $1/* && rm -f $1/.[^.]* && touch $1/.gitignore
 }
 
+# emacs
+clearhistory ~/.emacs.d/auto-save-list
+clearhistory ~/.emacs.d/backups
+clearhistory ~/.emacs.d/smex-items
+
 # less
 clearhistory ~/.lesshst
 
