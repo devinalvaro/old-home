@@ -1,7 +1,7 @@
 #!/bin/bash -v
 
 # variables
-install='trizen -S --needed --noconfirm --noedit'
+install='yay -S --needed --noconfirm --answeredit none'
 
 # --------------------------------
 
