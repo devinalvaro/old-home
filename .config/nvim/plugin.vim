@@ -20,6 +20,11 @@ Plug 'tpope/vim-vinegar'
 " languages
 Plug 'fatih/vim-go'
 
+" language server protocol
+if has('nvim')
+    Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+endif
+
 " linting
 Plug 'w0rp/ale'
 
@@ -129,6 +134,31 @@ let g:grepper = {
             \ 'dir': 'filecwd',
             \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
             \ }
+
+" languageclient-neovim
+let g:LanguageClient_serverCommands = {
+            \ 'cpp': [ 'cquery'  ],
+            \ 'python': [ 'pyls' ],
+            \ }
+let g:LanguageClient_diagnosticsDisplay = {
+            \ 1: {
+            \   'name': 'Error',
+            \   'signText': '>>',
+            \ },
+            \ 2: {
+            \   'name': 'Warning',
+            \   'signText': '--',
+            \ },
+            \ 3: {
+            \   'name': 'Information',
+            \   'signText': '--',
+            \ },
+            \ 4: {
+            \   'name': 'Hint',
+            \   'signText': '--',
+            \ }}
+let g:LanguageClient_diagnosticsList = 'Location'
+let g:LanguageClient_settingsPath = '/home/devin/.config/nvim/langclient.json'
 
 " lightline
 function! LightlineFilename() abort

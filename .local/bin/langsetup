@@ -6,21 +6,13 @@ install='trizen -S --needed --noconfirm --noedit'
 # --------------------------------
 
 # clang
-# - completer: clang
-# - formatter: clang-format (~/.clang-format)
-# - linter: gcc
 $install clang
+$install cquery
 
 # python
-# - completer: jedi
-# - formatter: yapf
-# - linter: flake8 (~/.config/flake8)
 $install python python-pip
-$install flake8 jedi yapf
+pip install --user 'python-language-server[all]'
 
 # go
-# - completer: gocode
-# - formatter: goimports
-# - linter: goimports
 $install go
 $install go-tools gocode-daemon
