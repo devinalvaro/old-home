@@ -158,7 +158,7 @@ let g:LanguageClient_diagnosticsDisplay = {
             \   'signText': '--',
             \ }}
 let g:LanguageClient_diagnosticsList = 'Location'
-let g:LanguageClient_settingsPath = '/home/devin/.config/nvim/langclient.json'
+let g:LanguageClient_settingsPath = $HOME . '/.config/nvim/langclient.json'
 
 " lightline
 function! LightlineFilename() abort
