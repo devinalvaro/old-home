@@ -24,8 +24,3 @@ $install flake8 jedi yapf
 # - linter: goimports
 $install go
 $install go-tools gocode-daemon
-
-# javascript
-# - langserver: js-ts-langserver
-$install node yarn
-yarn global add javascript-typescript-langserver

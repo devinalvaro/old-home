@@ -10,9 +10,6 @@ upgrade='trizen -Syu --needed --noconfirm --noedit'
 # pacman
 $upgrade
 
-# yarn
-yarn global upgrade
-
 # vim
 nvim +PlugUpgrade +qa
 nvim +PlugUpdate +qa
