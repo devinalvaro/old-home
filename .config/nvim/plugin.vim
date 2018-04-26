@@ -12,6 +12,7 @@ endif
 Plug 'tpope/vim-eunuch'
 
 " file navigation
+Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
