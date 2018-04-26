@@ -17,6 +17,7 @@ set signcolumn=yes
 " completion
 set completeopt+=menuone,noinsert,noselect
 set completeopt-=menu
+set pumheight=10
 
 augroup Completion
     autocmd!
