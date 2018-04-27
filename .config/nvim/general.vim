@@ -3,8 +3,6 @@ set nobackup
 
 " buffer
 set hidden
-set splitright
-set splitbelow
 
 " color
 set termguicolors
@@ -13,6 +11,7 @@ silent! colorscheme onedark
 
 " column
 set signcolumn=yes
+set numberwidth=2
 
 " completion
 set completeopt+=menuone,noinsert,noselect
@@ -28,6 +27,8 @@ augroup END
 set confirm
 
 " cursor
+set nostartofline
+
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[0 q"
@@ -51,14 +52,11 @@ set noshowcmd
 set noshowmode
 set shortmess+=cF
 
-" number
-set numberwidth=2
-
 " performance
 set lazyredraw
 set synmaxcol=200
 
-" scrolloff
+" scroll
 set scrolloff=5
 
 " search
@@ -80,6 +78,9 @@ set ttimeoutlen=100
 set undofile
 
 " window
+set splitright
+set splitbelow
+
 augroup Window
     autocmd!
     autocmd VimResized * wincmd =
