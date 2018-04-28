@@ -34,13 +34,14 @@
 	cn = clean
 	co = checkout
 	fe = fetch
-	fl = reflog
 	lg = log
 	mr = merge
 	mv = mv
 	p = push
 	pl = pull
 	rb = rebase
+	re = remote
+	rf = reflog
 	rm = rm
 	rs = reset
 	rv = revert
