@@ -16,8 +16,11 @@ nnoremap <leader>fi :Files<cr>
 nnoremap <leader>fl :Lines<cr>
 nnoremap <leader>ft :Tags<cr>
 
-nnoremap <leader>gb :Grepper-buffers<cr>
-nnoremap <leader>gr :Grepper<cr>
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gc :Gcommit<cr>
+
+nnoremap <leader>rb :Grepper-buffers<cr>
+nnoremap <leader>rg :Grepper<cr>
 
 " normal + visual remaps
 noremap 0 ^
