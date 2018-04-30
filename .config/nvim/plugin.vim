@@ -20,6 +20,7 @@ Plug 'tpope/vim-vinegar'
 
 " languages
 Plug 'fatih/vim-go'
+Plug 'jparise/vim-graphql'
 
 " language server protocol
 if has('nvim')
