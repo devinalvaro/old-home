@@ -5,19 +5,25 @@ nnoremap <leader>c :ColorToggle<cr>
 nnoremap <leader>n :Neoformat<cr>
 nnoremap <leader>u :UndotreeToggle<cr>
 
+nnoremap <leader>b/ :BLines<cr>
 nnoremap <leader>bc :BCommits<cr>
-nnoremap <leader>bl :BLines<cr>
 nnoremap <leader>bt :BTags<cr>
 
+nnoremap <leader>f/ :Lines<cr>
+nnoremap <leader>f: :Commands<cr>
 nnoremap <leader>fb :Buffers<cr>
 nnoremap <leader>fc :Commits<cr>
-nnoremap <leader>fh :History:<cr>
 nnoremap <leader>fi :Files<cr>
-nnoremap <leader>fl :Lines<cr>
+nnoremap <leader>fr :Rg<cr>
 nnoremap <leader>ft :Tags<cr>
 
-nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>h/ :History/<cr>
+nnoremap <leader>h: :History:<cr>
+nnoremap <leader>hi :History<cr>
+
 nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gf :GFiles<cr>
+nnoremap <leader>gs :Gstatus<cr>
 
 nnoremap <leader>rb :Grepper-buffers<cr>
 nnoremap <leader>rg :Grepper<cr>
@@ -29,6 +35,8 @@ noremap ^ 0
 noremap + "+
 
 " normal remaps
+nmap g/ <leader>b/
+nmap g: <leader>f:
 nmap gb <leader>fb
 
 nnoremap Y y$

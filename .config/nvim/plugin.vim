@@ -118,6 +118,13 @@ let g:deoplete#enable_at_startup = 1
 let g:fzf_layout = { 'down': '10' }
 let g:fzf_history_dir = '~/.local/share/nvim/fzf'
 
+command! -bang -nargs=* Rg
+            \ call fzf#vim#grep(
+            \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+            \   <bang>0 ? fzf#vim#with_preview('up:60%')
+            \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+            \   <bang>0)
+
 " gutentags
 if !executable('ctags')
     let g:gutentags_enabled = 0
