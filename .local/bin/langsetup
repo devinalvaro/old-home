@@ -9,10 +9,14 @@ install='yay -S --needed --noconfirm --answeredit none'
 $install clang
 $install cquery
 
+# go
+$install go
+$install go-tools gocode-daemon go-langserver-git
+
+# javascript
+$install node yarn
+yarn global add javascript-typescript-langserver
+
 # python
 $install python python-pip
 pip install --user 'python-language-server[all]'
-
-# go
-$install go
-$install go-tools gocode-daemon

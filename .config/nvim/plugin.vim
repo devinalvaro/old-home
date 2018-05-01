@@ -147,6 +147,8 @@ let g:grepper = {
 " languageclient-neovim
 let g:LanguageClient_serverCommands = {
             \ 'cpp': [ 'cquery'  ],
+            \ 'go': [ 'go-langserver'  ],
+            \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
             \ }
 let g:LanguageClient_diagnosticsDisplay = {

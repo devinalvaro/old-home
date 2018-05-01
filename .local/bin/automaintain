@@ -17,6 +17,14 @@ nvim +PlugUpdate +qa
 # zsh
 zsh -i -c 'antigen update'
 
+# ----------------
+
+# pip
+pip install --upgrade --upgrade-strategy only-if-needed 'python-language-server[all]'
+
+# yarn
+yarn global upgrade
+
 # --------------------------------
 
 # remove orphan packages
