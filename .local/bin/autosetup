@@ -9,14 +9,14 @@ cd yay && makepkg -si --needed --noconfirm && cd .. && rm -rf yay
 
 # --------------------------------
 
-# monospace fonts
-$install ttf-hack ttf-symbola
+# command line interfaces
+$install xclip
 
-# pattern matchers
+# command line utilities
 $install fd fzf ripgrep universal-ctags-git
 
-# commandline interfaces
-$install httpie xclip
+# fonts
+$install ttf-hack ttf-symbola
 
 # --------------------------------
 
