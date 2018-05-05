@@ -23,5 +23,4 @@ unalias please
 unalias po
 unalias pu
 unalias rd
-unalias run-help
 unalias which-command
