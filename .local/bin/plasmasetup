@@ -10,8 +10,8 @@ $install plasma-desktop plasma-nm plasma-pa plasma5-applets-redshift-control pow
 
 sudo systemctl enable NetworkManager.service
 
-# kwallet
-$install kwallet-pam
+# kde applications
+$install kscreen kwallet-pam
 
 # gtk
 $install breeze-gtk kde-gtk-config
