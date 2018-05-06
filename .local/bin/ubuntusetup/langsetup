@@ -1,0 +1,26 @@
+#!/bin/bash -v
+
+# variables
+install='sudo apt-get -y install'
+
+# --------------------------------
+
+# clang
+$install clang clang-format
+# $install cquery
+
+# go
+$install go
+$install golang-golang-x-tools gocode && go get -u github.com/sourcegraph/go-langserver
+
+# javascript
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
+    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
+    && sudo apt-get update
+
+$install node yarn
+yarn global add javascript-typescript-langserver
+
+# python
+$install python python-pip
+pip install --user 'python-language-server[all]'
