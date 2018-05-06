@@ -10,7 +10,7 @@ if which tmux >/dev/null 2>&1 &&
     done
 fi
 
-if [ -n $TMUX ]; then
+if [[ -n $TMUX ]]; then
     tmux source-file ~/.tmux.conf
 fi
 
