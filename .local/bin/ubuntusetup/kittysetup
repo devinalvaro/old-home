@@ -4,14 +4,29 @@
 install='sudo apt-get -y install'
 remove='sudo apt-get -y remove'
 
-install_dir=/usr/local/share/kitty
+install_path=/usr/local/share/kitty
 bin_path=/usr/local/bin/kitty
+desktop_path=/usr/share/applications/kitty.desktop
 
-kitty_bin=
-"#!/usr/bin/env python3
+read -d '' kitty_bin << EOF
+#!/usr/bin/env python3
 
 import runpy
-runpy.run_path('/usr/local/share/kitty', run_name='__main__')"
+runpy.run_path('/usr/local/share/kitty', run_name='__main__')
+EOF
+
+read -d '' kitty_desktop << EOF
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=kitty
+GenericName=Terminal emulator
+Comment=A modern, hackable, featureful, OpenGL based terminal emulator
+TryExec=kitty
+Exec=kitty
+Icon=terminal
+Categories=System;TerminalEmulator;
+EOF
 
 # --------------------------------
 
@@ -32,14 +47,16 @@ $install build-essential \
 # make
 make && cd ..
 
-# remove dependencies
+# remove build dependencies
 $remove build-essential \
     pkg-config \
     libxkbcommon-x11-dev \
     xorg-dev
 
 # install
-sudo mv kitty $install_dir
+sudo mv kitty $install_path
 
-echo $kitty_bin > $bin_path
+echo "$kitty_bin" > $bin_path
 sudo chmod +x $bin_path
+
+echo "$kitty_desktop" > $desktop_path
