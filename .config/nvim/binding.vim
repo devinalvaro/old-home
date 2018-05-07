@@ -49,6 +49,8 @@ nnoremap <silent> <c-l> :nohlsearch<cr>
 nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
 
 " insert remaps
-imap <c-x><c-f> <plug>(fzf-complete-path)
+if executable('fzf')
+    imap <c-x><c-f> <plug>(fzf-complete-path)
+endif
 
 inoremap <c-u> <c-g>u<c-u>
