@@ -1,5 +1,5 @@
 # tmux
-terms=("$(which kitty)")
+terms=("$(which kitty)" "python3 $(which kitty)")
 
 if which tmux > /dev/null 2>&1 &&
         [[ ${terms[*]} =~ $(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)) ]]; then
