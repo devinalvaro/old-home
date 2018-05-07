@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -v
+#!/usr/bin/env bash
+set -v
 
 # variables
 if type apt-get > /dev/null 2>&1; then
