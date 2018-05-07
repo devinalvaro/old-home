@@ -6,7 +6,7 @@ install='sudo apt-get -y install'
 # --------------------------------
 
 # command line interfaces
-$install xclip
+$install curl xclip
 
 # command line utilities
 # $install fd fzf ripgrep universal-ctags-git
