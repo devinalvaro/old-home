@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function clearhistory() {
     [ -f $1 ] && [ -s $1 ] && rm $1 && touch $1
