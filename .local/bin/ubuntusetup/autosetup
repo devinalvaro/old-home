@@ -10,7 +10,7 @@ install='sudo apt-get -y install'
 $install curl xclip
 
 # command line utilities
-# $install fd fzf ripgrep universal-ctags-git
+# $install fd fzf ripgrep universal-ctags
 
 # fonts
 $install fonts-hack fonts-symbola
