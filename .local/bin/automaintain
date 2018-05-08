@@ -5,7 +5,7 @@ set -v
 if type apt-get > /dev/null 2>&1; then
     autoclean='sudo apt-get -y autoclean'
     autoremove='sudo apt-get -y autoremove'
-    upgrade='sudo apt-get -y update && sudo apt-get -y upgrade'
+    upgrade='eval sudo apt-get -y update && sudo apt-get -y upgrade'
 elif type pacman > /dev/null 2>&1; then
     autoclean='yay -Sc --noconfirm'
     autoremove='yay -Rns --noconfirm '"$(yay -Qdtq)"
@@ -14,7 +14,7 @@ fi
 
 # --------------------------------
 
-# pacman
+# system
 $upgrade
 
 # vim
