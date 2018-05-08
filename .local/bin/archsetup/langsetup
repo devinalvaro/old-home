@@ -12,7 +12,7 @@ $install cquery
 
 # go
 $install go
-$install go-tools gocode-daemon go-langserver-git
+go get -u -v github.com/nsf/gocode github.com/sourcegraph/go-langserver golang.org/x/tools/...
 
 # javascript
 $install node yarn

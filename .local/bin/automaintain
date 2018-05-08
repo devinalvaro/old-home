@@ -26,6 +26,9 @@ zsh -i -c 'antigen update'
 
 # ----------------
 
+# go
+go get -u all
+
 # pip
 pip install -U --upgrade-strategy only-if-needed 'python-language-server[all]'
 
