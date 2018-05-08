@@ -1,5 +1,8 @@
 # tmux
-terms=("$(which kitty)" "python3 $(which kitty)")
+terms=(
+    /usr/lib/gnome-terminal/gnome-terminal-server # gnome-terminal
+    "$(which kitty)" "python3 $(which kitty)" # kitty
+)
 
 if which tmux > /dev/null 2>&1 &&
         [[ ${terms[*]} =~ $(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)) ]]; then
