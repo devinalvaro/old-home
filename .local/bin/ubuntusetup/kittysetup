@@ -39,4 +39,4 @@ sudo cp -r lib/* /usr/lib/
 sudo cp -r share/* /usr/share/
 
 sudo install -d /usr/share/pixmaps/
-sudo mv /usr/share/icons/hicolor/256x256/apps/kitty.png /usr/share/pixmaps/
+sudo cp /usr/share/icons/hicolor/256x256/apps/kitty.png /usr/share/pixmaps/
