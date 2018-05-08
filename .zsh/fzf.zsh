@@ -1,7 +1,7 @@
 # Setup fzf
 # ---------
-if [[ ! $PATH == *$HOME/.config/nvim/plugged/fzf/bin* ]]; then
-  export PATH=$PATH:$HOME/.config/nvim/plugged/fzf/bin
+if [[ ! $PATH == *$HOME/.fzf/bin* ]]; then
+  export PATH=$PATH:$HOME/.fzf/bin
 fi
 
 # Key bindings
