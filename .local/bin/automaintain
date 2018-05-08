@@ -18,8 +18,8 @@ fi
 $upgrade
 
 # vim
-nvim +PlugUpgrade +qa
-nvim +PlugUpdate +qa
+nvim +PlugUpgrade +qall
+nvim +PlugUpdate +qall
 
 # zsh
 zsh -i -c 'antigen update'
@@ -27,7 +27,7 @@ zsh -i -c 'antigen update'
 # ----------------
 
 # pip
-pip install --upgrade --upgrade-strategy only-if-needed 'python-language-server[all]'
+pip install -U --upgrade-strategy only-if-needed 'python-language-server[all]'
 
 # yarn
 yarn global upgrade
@@ -41,4 +41,4 @@ $autoremove
 $autoclean
 
 # clean vim plugins
-nvim +PlugClean +qa
+nvim +PlugClean +qall
