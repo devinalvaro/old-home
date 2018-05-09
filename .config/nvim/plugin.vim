@@ -217,6 +217,9 @@ let g:onedark_color_overrides = {
 " polyglot
 let g:jsx_ext_required = 1
 
+" rooter
+let g:rooter_manual_only = 1
+
 " signify
 let g:signify_vcs_list = [ 'git' ]
 let g:signify_sign_change = '~'
