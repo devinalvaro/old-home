@@ -8,7 +8,7 @@ install='sudo apt-get -y install'
 
 # clang
 $install clang clang-format
-# $install cquery
+# $install bear cquery
 
 # go
 $install go
