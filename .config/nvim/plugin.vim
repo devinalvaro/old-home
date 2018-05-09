@@ -224,6 +224,9 @@ let g:signify_vcs_list = [ 'git' ]
 let g:signify_sign_change = '~'
 let g:signify_sign_show_count = 0
 
+" sleuth
+let g:sleuth_automatic = 0
+
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsSnippetDirectories = [ 'snips' ]
