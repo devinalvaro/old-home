@@ -17,7 +17,7 @@ $install curl xclip
 $install fd fzf ripgrep universal-ctags-git
 
 # fonts
-$install ttf-hack ttf-symbola
+$install ttf-hack noto-fonts-emoji
 
 # --------------------------------
 
