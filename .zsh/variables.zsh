@@ -4,11 +4,13 @@ export EDITOR=nvim
 # paths
 export ANTIGEN=$HOME/.antigen
 export GOPATH=$HOME/.go
+export PYTHONUSERBASE=$HOME/.pip
 
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/.go/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.yarn/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH # cargo
+export PATH=$HOME/.go/bin:$PATH    # go
+export PATH=$HOME/.local/bin:$PATH # .local
+export PATH=$HOME/.pip/bin:$PATH   # pip
+export PATH=$HOME/.yarn/bin:$PATH  # yarn
 
 # fzf
 export FZF_DEFAULT_OPTS='--inline-info --height 10'
