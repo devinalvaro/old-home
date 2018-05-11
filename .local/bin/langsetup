@@ -12,7 +12,7 @@ $install bear cquery
 
 # go
 $install go
-go get -u -v github.com/nsf/gocode github.com/sourcegraph/go-langserver golang.org/x/tools/...
+nvim +GoInstallBinaries +qall; go get -u -v github.com/sourcegraph/go-langserver
 
 # javascript
 $install node yarn
