@@ -2,7 +2,7 @@
 set -v
 
 # variables
-install='sudo pacman -S --needed --noconfirm'
+install='yay -S --needed --noconfirm --answeredit none'
 
 # --------------------------------
 
