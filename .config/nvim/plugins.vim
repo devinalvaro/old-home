@@ -168,7 +168,7 @@ let g:LanguageClient_diagnosticsDisplay = {
             \   'signText': '--',
             \ }}
 let g:LanguageClient_diagnosticsList = 'Location'
-let g:LanguageClient_settingsPath = $HOME . '/.config/nvim/langclient.json'
+let g:LanguageClient_settingsPath = $HOME . '/.config/nvim/configs/langclient.json'
 
 " lightline
 function! LightlineFilename() abort
@@ -229,7 +229,7 @@ let g:sleuth_automatic = 0
 
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
-let g:UltiSnipsSnippetDirectories = [ 'snips' ]
+let g:UltiSnipsSnippetDirectories = [ 'snip' ]
 let g:UltiSnipsJumpForwardTrigger = '<a-f>'
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 
