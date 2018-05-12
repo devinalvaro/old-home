@@ -1,6 +1,6 @@
 # modifier aliases
 alias http='http --style=bw'
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 
 # shortener aliases
 alias d='docker'
