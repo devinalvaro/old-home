@@ -5,7 +5,6 @@ if has('nvim')
     Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-clang'
     Plug 'zchee/deoplete-go', {' do': 'make' }
-    Plug 'zchee/deoplete-jedi'
 endif
 
 " file management
