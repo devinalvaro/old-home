@@ -36,16 +36,12 @@ if has('python3')
     Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 endif
 
-" session
-Plug 'tpope/vim-obsession'
-
 " tags
 Plug 'ludovicchabant/vim-gutentags'
 
 " text editing
 Plug 'conradirwin/vim-bracketed-paste'
 Plug 'raimondi/delimitmate'
-Plug 'sbdchd/neoformat'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -57,6 +53,9 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'wellle/targets.vim'
+
+" text formatting
+Plug 'sbdchd/neoformat'
 
 " text navigation
 Plug 'junegunn/vim-slash'
@@ -149,22 +148,11 @@ let g:LanguageClient_serverCommands = {
             \ 'python': [ 'pyls' ],
             \ }
 let g:LanguageClient_diagnosticsDisplay = {
-            \ 1: {
-            \   'name': 'Error',
-            \   'signText': '>>',
-            \ },
-            \ 2: {
-            \   'name': 'Warning',
-            \   'signText': '--',
-            \ },
-            \ 3: {
-            \   'name': 'Information',
-            \   'signText': '--',
-            \ },
-            \ 4: {
-            \   'name': 'Hint',
-            \   'signText': '--',
-            \ }}
+            \ 1: { 'name': 'Error', 'signText': '>>' },
+            \ 2: { 'name': 'Warning', 'signText': '--' },
+            \ 3: { 'name': 'Information', 'signText': '--' },
+            \ 4: { 'name': 'Hint', 'signText': '--' },
+            \ }
 let g:LanguageClient_diagnosticsList = 'Location'
 let g:LanguageClient_settingsPath = $HOME . '/.config/nvim/configs/langclient.json'
 
@@ -173,7 +161,6 @@ function! LightlineFilename() abort
     let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
     let modified = &modified ? ' +' : ''
     let readonly = &readonly ? ' -' : ''
-
     return filename . modified . readonly
 endfunction
 
@@ -184,17 +171,12 @@ endfunction
 let g:lightline = {
             \ 'colorscheme': 'onedark',
             \ 'active': {
-            \   'left': [ [  ],
-            \             [ 'lightline_filename', 'lightline_fugitive' ] ],
-            \   'right': [ [  ],
-            \              [ 'fileformat', 'fileencoding', 'filetype' ] ],
+            \   'left': [ [  ], [ 'lightline_filename', 'lightline_fugitive' ] ],
+            \   'right': [ [  ], [ 'fileformat', 'fileencoding', 'filetype' ] ],
             \ },
             \ 'inactive': {
-            \   'left': [ [  ],
-            \             [ 'lightline_filename'  ] ],
-            \   'right': [ [  ],
-            \              [  ],
-            \              [ 'filetype' ] ],
+            \   'left': [ [  ], [ 'lightline_filename'  ] ],
+            \   'right': [ [  ], [  ], [ 'filetype' ] ],
             \ },
             \ 'component_function': {
             \   'lightline_filename': 'LightlineFilename',
@@ -206,9 +188,9 @@ runtime! macros/matchit.vim
 
 " onedark
 let g:onedark_color_overrides = {
-            \ 'comment_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
-            \ 'gutter_fg_grey': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
-            \ 'vertsplit': { 'gui': '#8c919a', 'cterm': '59', 'cterm16': '15' },
+            \ 'comment_grey': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
+            \ 'gutter_fg_grey': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
+            \ 'vertsplit': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
             \ }
 
 " polyglot

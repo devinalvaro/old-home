@@ -13,8 +13,8 @@ nnoremap <leader>f/ :Lines<cr>
 nnoremap <leader>f: :Commands<cr>
 nnoremap <leader>fb :Buffers<cr>
 nnoremap <leader>fc :Commits<cr>
+nnoremap <leader>fg :GFiles<cr>
 nnoremap <leader>fi :Files<cr>
-nnoremap <leader>fr :Rg<cr>
 nnoremap <leader>ft :Tags<cr>
 
 nnoremap <leader>h/ :History/<cr>
@@ -22,7 +22,6 @@ nnoremap <leader>h: :History:<cr>
 nnoremap <leader>hi :History<cr>
 
 nnoremap <leader>gc :Gcommit<cr>
-nnoremap <leader>gf :GFiles<cr>
 nnoremap <leader>gs :Gstatus<cr>
 
 nnoremap <leader>rb :Grepper-buffers<cr>
@@ -35,7 +34,7 @@ noremap ^ 0
 noremap + "+
 
 " normal remaps
-nmap g/ <leader>b/
+nmap g/ <leader>f/
 nmap g: <leader>f:
 nmap gb <leader>fb
 
