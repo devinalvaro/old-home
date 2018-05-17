@@ -68,7 +68,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'mbbill/undotree'
 
 " version control
-Plug 'mhinz/vim-signify'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 
 " visual
@@ -116,12 +116,19 @@ let g:deoplete#enable_at_startup = 1
 let g:fzf_layout = { 'down': '10' }
 let g:fzf_history_dir = '~/.local/share/nvim/fzf'
 
-command! -bang -nargs=* Rg
-            \ call fzf#vim#grep(
-            \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
-            \   <bang>0 ? fzf#vim#with_preview('up:60%')
-            \           : fzf#vim#with_preview('right:50%:hidden', '?'),
-            \   <bang>0)
+if executable('rg')
+    command! -bang -nargs=* Rg
+                \ call fzf#vim#grep(
+                \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+                \   <bang>0 ? fzf#vim#with_preview('up:60%')
+                \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+                \   <bang>0)
+endif
+
+" gitgutter
+if executable('rg')
+    let g:gitgutter_grep = 'rg'
+endif
 
 " gutentags
 if !executable('ctags')
@@ -198,11 +205,6 @@ let g:jsx_ext_required = 1
 
 " rooter
 let g:rooter_manual_only = 1
-
-" signify
-let g:signify_vcs_list = [ 'git' ]
-let g:signify_sign_change = '~'
-let g:signify_sign_show_count = 0
 
 " sleuth
 let g:sleuth_automatic = 0

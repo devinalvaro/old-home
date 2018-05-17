@@ -46,9 +46,6 @@ set noshowcmd
 set noshowmode
 set shortmess+=cF
 
-" performance
-set lazyredraw
-
 " scroll
 set scrolloff=1
 set sidescrolloff=5
@@ -63,6 +60,10 @@ set noswapfile
 
 " undo
 set undofile
+
+" update
+set lazyredraw
+set updatetime=150
 
 " window
 set splitright
