@@ -227,7 +227,7 @@ let g:sleuth_automatic = 0
 
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
-let g:UltiSnipsSnippetDirectories = [ 'snip' ]
+let g:UltiSnipsSnippetDirectories = [ 'snips' ]
 let g:UltiSnipsJumpForwardTrigger = '<a-f>'
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 
