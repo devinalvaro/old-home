@@ -171,23 +171,18 @@ function! LightlineFilename() abort
     return filename . modified . readonly
 endfunction
 
-function! LightlineFugitive() abort
-    return fugitive#head()
-endfunction
-
 let g:lightline = {
             \ 'colorscheme': 'onedark',
             \ 'active': {
-            \   'left': [ [  ], [ 'lightline_filename', 'lightline_fugitive' ] ],
-            \   'right': [ [  ], [ 'fileformat', 'fileencoding', 'filetype' ] ],
+            \   'left': [ [  ], [ 'lightline_filename', 'filetype' ] ],
+            \   'right': [ [  ], [ 'fileformat', 'fileencoding' ] ],
             \ },
             \ 'inactive': {
             \   'left': [ [  ], [ 'lightline_filename'  ] ],
-            \   'right': [ [  ], [  ], [ 'filetype' ] ],
+            \   'right': [  ],
             \ },
             \ 'component_function': {
             \   'lightline_filename': 'LightlineFilename',
-            \   'lightline_fugitive': 'LightlineFugitive',
             \ }}
 
 " matchit
