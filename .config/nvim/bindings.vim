@@ -21,8 +21,15 @@ nnoremap <leader>h/ :History/<cr>
 nnoremap <leader>h: :History:<cr>
 nnoremap <leader>hi :History<cr>
 
-nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>ge :Gedit<cr>
+nnoremap <leader>gg :Git<space>
+nnoremap <leader>gl :Glog<cr>
+nnoremap <leader>gm :Gmerge<cr>
+nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gw :Gwrite<cr>
 
 nnoremap <leader>rb :Grepper-buffers<cr>
 nnoremap <leader>rg :Grepper<cr>
