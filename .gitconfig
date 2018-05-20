@@ -7,7 +7,7 @@
 	eol = LF
 	excludesfile = ~/.config/gitignore_global
 	fileMode = false
-	pager = less -x1,5
+    pager = less --tabs=1,5
 
 [push]
 	default = simple
