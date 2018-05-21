@@ -3,7 +3,6 @@ call plug#begin()
 " completion
 if has('nvim')
     Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'zchee/deoplete-clang'
     Plug 'zchee/deoplete-go', {' do': 'make' }
 endif
 
