@@ -1,11 +1,3 @@
-# tmux
-[ -f $HOME/.zsh/tmux.zsh ] && source $HOME/.zsh/tmux.zsh
-
-# variables
-[ -f $HOME/.zsh/variables.zsh ] && source $HOME/.zsh/variables.zsh
-
-# --------------------------------
-
 # antigen
 [ -f $ANTIGEN/antigen.zsh ] && source $ANTIGEN/antigen.zsh
 
@@ -18,13 +10,8 @@ antigen apply
 # fzf
 [ -f $HOME/.zsh/fzf.zsh ] && source $HOME/.zsh/fzf.zsh
 
-# --------------------------------
-
-# nvm
-[ -f /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh
-
-# rvm
-[ -f /usr/share/rvm/scripts/rvm ] && source /usr/share/rvm/scripts/rvm
+# tmux
+[ -f $HOME/.zsh/tmux.zsh ] && source $HOME/.zsh/tmux.zsh
 
 # --------------------------------
 
@@ -36,6 +23,9 @@ antigen apply
 
 # functions
 [ -f $HOME/.zsh/functions.zsh ] && source $HOME/.zsh/functions.zsh
+
+# loadings
+[ -f $HOME/.zsh/loadings.zsh ] && source $HOME/.zsh/loadings.zsh
 
 # options
 [ -f $HOME/.zsh/options.zsh ] && source $HOME/.zsh/options.zsh

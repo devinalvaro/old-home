@@ -10,7 +10,6 @@ export PATH=$HOME/.cargo/bin:$PATH # cargo
 export PATH=$HOME/.go/bin:$PATH    # go
 export PATH=$HOME/.local/bin:$PATH # .local
 export PATH=$HOME/.pip/bin:$PATH   # pip
-export PATH=$HOME/.rvm/bin:$PATH   # rvm
 export PATH=$HOME/.yarn/bin:$PATH  # yarn
 
 # fzf
