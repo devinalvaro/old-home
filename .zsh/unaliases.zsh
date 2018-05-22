@@ -11,7 +11,7 @@ unalias 8
 unalias 9
 unalias _
 unalias afind
-unalias d
+# unalias d
 unalias grep
 unalias history
 unalias l

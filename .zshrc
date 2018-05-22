@@ -1,8 +1,6 @@
 # tmux
 [ -f $HOME/.zsh/tmux.zsh ] && source $HOME/.zsh/tmux.zsh
 
-# --------------------------------
-
 # variables
 [ -f $HOME/.zsh/variables.zsh ] && source $HOME/.zsh/variables.zsh
 
@@ -22,8 +20,11 @@ antigen apply
 
 # --------------------------------
 
-# unaliases
-[ -f $HOME/.zsh/unaliases.zsh ] && source $HOME/.zsh/unaliases.zsh
+# nvm
+[ -f /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh
+
+# rvm
+[ -f /usr/share/rvm/scripts/rvm ] && source /usr/share/rvm/scripts/rvm
 
 # --------------------------------
 
@@ -38,3 +39,6 @@ antigen apply
 
 # options
 [ -f $HOME/.zsh/options.zsh ] && source $HOME/.zsh/options.zsh
+
+# unaliases
+[ -f $HOME/.zsh/unaliases.zsh ] && source $HOME/.zsh/unaliases.zsh
