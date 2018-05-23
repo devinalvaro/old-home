@@ -20,37 +20,40 @@ export LC_COLLATE='C'
 
 # spaceship
 export SPACESHIP_PROMPT_ORDER=(
-  time
+  # time
   # user
   dir
-  host
+  # host
+
   git
   # hg
-  package
-  node
-  # ruby
-  # elixir
-  # xcode
-  # swift
-  golang
-  php
-  # rust
-  haskell
-  # julia
-  docker
+
   # aws
-  venv
-  conda
-  pyenv
+  # conda
+  # docker
   # dotnet
+  # elixir
   # ember
+  # golang
+  # haskell
+  # julia
   # kubecontext
+  # node
+  # package
+  # php
+  # pyenv
+  # ruby
+  # rust
+  # swift
+  venv
+  # xcode
+
   exec_time
   line_sep
   # battery
   # vi_mode
   jobs
-  exit_code
+  # exit_code
   char
 )
 export SPACESHIP_PROMPT_PREFIXES_SHOW=false
