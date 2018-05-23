@@ -25,7 +25,7 @@ function group_lazy_load() {
 }
 
 # nvm
-group_lazy_load /usr/share/nvm/init-nvm.sh nvm node npm truffle
+group_lazy_load /usr/share/nvm/init-nvm.sh node npm nvm truffle yarn
 
 # rvm
-group_lazy_load /usr/share/rvm/scripts/rvm rvm irb rake rails
+group_lazy_load /usr/share/rvm/scripts/rvm irb rails rake ruby rvm
