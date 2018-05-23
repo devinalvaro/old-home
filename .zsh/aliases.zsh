@@ -4,6 +4,7 @@ alias less='less --tabs=4'
 alias ls='ls --color=auto --group-directories-first'
 
 # shortener aliases
+alias cg="cd $GOPATH"
 alias d='docker'
 alias dc='docker-compose'
 alias g='git'
