@@ -14,6 +14,9 @@ clearhistory ~/.node_repl_history
 # python
 clearhistory ~/.python_history
 
+# ruby
+clearhistory ~/.pry_history
+
 # shell
 clearhistory ~/.bash_history
 clearhistory ~/.zsh_history
