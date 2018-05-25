@@ -19,7 +19,7 @@ Plug 'tpope/vim-vinegar'
 " languages
 Plug 'fatih/vim-go'
 
-" language server protocol
+" language server protocols
 if has('nvim')
     Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 endif
