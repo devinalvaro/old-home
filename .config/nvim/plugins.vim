@@ -6,6 +6,9 @@ if has('nvim')
     Plug 'zchee/deoplete-go', {' do': 'make' }
 endif
 
+" documentations
+Plug 'rhysd/devdocs.vim'
+
 " file management
 Plug 'tpope/vim-eunuch'
 
@@ -110,6 +113,9 @@ augroup END
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
+" devdocs
+let g:devdocs_url = 'http://localhost:9292'
 
 " fzf
 let g:fzf_layout = { 'down': '10' }

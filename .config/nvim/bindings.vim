@@ -9,6 +9,9 @@ nnoremap <leader>b/ :BLines<cr>
 nnoremap <leader>bc :BCommits<cr>
 nnoremap <leader>bt :BTags<cr>
 
+nnoremap <leader>dd :DevDocs<space>
+nnoremap <leader>dc :DevDocsUnderCursor<cr>
+
 nnoremap <leader>f/ :Lines<cr>
 nnoremap <leader>f: :Commands<cr>
 nnoremap <leader>fb :Buffers<cr>

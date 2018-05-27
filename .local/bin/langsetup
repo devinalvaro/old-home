@@ -21,3 +21,8 @@ yarn global add javascript-typescript-langserver
 # python
 $install python python-pip
 pip install --user 'python-language-server[all]'
+
+# --------------------------------
+
+# devdocs
+docker run -d --restart always -p 9292:9292 --name devdocs devdocs/devdocs
