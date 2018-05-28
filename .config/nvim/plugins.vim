@@ -145,6 +145,12 @@ let g:gutentags_generate_on_write = 0
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_tagfile = '.tags'
 
+" go
+augroup Go
+    autocmd!
+    autocmd Filetype go cnoreabbrev A GoAlternate
+augroup END
+
 " grepper
 let g:grepper = {
             \ 'jump': 1,
