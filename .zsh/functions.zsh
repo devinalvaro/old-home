@@ -32,6 +32,13 @@ function yank() {
 # gitignore.io
 function gi() { curl -L -s https://www.gitignore.io/api/$@; }
 
+# markdown
+function md() {
+    filename="${1%%.*}"
+    markdown $1 > /tmp/$filename.html \
+        && xdg-open /tmp/$filename.html
+}
+
 # truecolor
 function truecolor() {
     awk 'BEGIN{
