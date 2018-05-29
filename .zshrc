@@ -2,7 +2,6 @@
 [ -f $ANTIGEN/antigen.zsh ] && source $ANTIGEN/antigen.zsh
 
 antigen use oh-my-zsh
-antigen bundle hlissner/zsh-autopair
 antigen bundle tarruda/zsh-autosuggestions
 antigen theme denysdovhan/spaceship-prompt spaceship
 antigen apply
