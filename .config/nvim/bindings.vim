@@ -53,8 +53,6 @@ nnoremap Y y$
 nnoremap c* *Ncgn
 nnoremap c# #NcgN
 
-nnoremap <silent> <c-l> :nohlsearch<cr>
-
 nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
 
 " insert remaps
