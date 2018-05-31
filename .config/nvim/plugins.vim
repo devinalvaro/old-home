@@ -14,7 +14,7 @@ Plug 'tpope/vim-eunuch'
 
 " file navigation
 Plug 'airblade/vim-rooter'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': $HOME . '/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
@@ -119,7 +119,7 @@ let g:devdocs_url = 'http://localhost:9292'
 
 " fzf
 let g:fzf_layout = { 'down': '10' }
-let g:fzf_history_dir = '~/.local/share/nvim/fzf'
+let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
 
 if executable('rg')
     command! -bang -nargs=* Rg
