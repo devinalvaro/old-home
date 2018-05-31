@@ -44,7 +44,11 @@ noremap ^ 0
 noremap + "+
 
 " normal remaps
-nmap gb <leader>fb
+if executable('fzf')
+    nmap gb :Buffers<cr>
+else
+    nnoremap gb :ls<cr>:b<space>
+endif
 
 nnoremap Y y$
 
