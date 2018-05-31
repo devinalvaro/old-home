@@ -1,3 +1,2 @@
-# map caps to ctrl/esc
+# map caps to ctrl
 setxkbmap -option ctrl:nocaps
-xcape -e 'Control_L=Escape'
