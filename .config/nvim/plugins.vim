@@ -14,10 +14,12 @@ Plug 'tpope/vim-eunuch'
 
 " file navigation
 Plug 'airblade/vim-rooter'
-Plug 'junegunn/fzf', { 'dir': $HOME . '/.fzf', 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
+
+" fzf
+Plug 'junegunn/fzf', { 'dir': $HOME . '/.fzf' } | Plug 'junegunn/fzf.vim'
 
 " languages
 Plug 'fatih/vim-go'
@@ -77,7 +79,6 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 Plug 'chrisbra/colorizer'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'markonm/traces.vim'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
