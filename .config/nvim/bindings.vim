@@ -44,8 +44,6 @@ noremap ^ 0
 noremap + "+
 
 " normal remaps
-nmap g/ <leader>f/
-nmap g: <leader>f:
 nmap gb <leader>fb
 
 nnoremap Y y$
