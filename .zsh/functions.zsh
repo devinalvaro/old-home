@@ -1,9 +1,3 @@
-# adb
-function adbrestart() {
-    adb kill-server
-    sudo adb start-server
-}
-
 # cd
 function up() {
   for _ in $(seq 1 $1);
