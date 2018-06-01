@@ -19,7 +19,7 @@ Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
 
 " fzf
-Plug 'junegunn/fzf', { 'dir': $HOME . '/.fzf' } | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf' } | Plug 'junegunn/fzf.vim'
 
 " languages
 Plug 'fatih/vim-go'
@@ -120,7 +120,7 @@ let g:devdocs_url = 'http://localhost:9292'
 
 " fzf
 let g:fzf_layout = { 'down': '10' }
-let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
+let g:fzf_history_dir = '~/.local/share/nvim/fzf'
 
 if executable('rg')
     command! -bang -nargs=* Rg
@@ -173,7 +173,7 @@ let g:LanguageClient_diagnosticsDisplay = {
             \ 4: { 'name': 'Hint', 'signText': '--' },
             \ }
 let g:LanguageClient_diagnosticsList = 'Location'
-let g:LanguageClient_settingsPath = $HOME . '/.config/nvim/configs/langclient.json'
+let g:LanguageClient_settingsPath = '~/.config/nvim/configs/langclient.json'
 
 " lightline
 function! LightlineFilename() abort
