@@ -208,7 +208,7 @@ runtime! macros/matchit.vim
 " neoformat
 augroup Neoformat
     autocmd!
-    autocmd BufWritePre * undojoin | Neoformat
+    autocmd BufWritePre * Neoformat
 augroup END
 
 " onedark
