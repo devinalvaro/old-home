@@ -27,7 +27,7 @@ zsh -i -c 'antigen update'
 # ----------------
 
 # go
-go get -u -v all
+nvim +GoUpdateBinaries +qall
 
 # pip
 pip install -U --upgrade-strategy only-if-needed 'python-language-server[all]'
