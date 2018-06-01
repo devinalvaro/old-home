@@ -17,7 +17,7 @@ $install universal-ctags-git
 $install xclip
 
 # fonts
-$install ttf-hack noto-fonts-emoji
+$install ttf-fira-code noto-fonts-emoji
 
 # --------------------------------
 
