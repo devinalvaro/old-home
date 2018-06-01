@@ -205,6 +205,12 @@ let g:lightline = {
 " matchit
 runtime! macros/matchit.vim
 
+" neoformat
+augroup Neoformat
+    autocmd!
+    autocmd BufWritePre * undojoin | Neoformat
+augroup END
+
 " onedark
 let g:onedark_color_overrides = {
             \ 'comment_grey': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
