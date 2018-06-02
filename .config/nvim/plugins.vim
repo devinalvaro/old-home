@@ -149,7 +149,7 @@ let g:gutentags_ctags_tagfile = '.tags'
 " go
 augroup Go
     autocmd!
-    autocmd Filetype go cnoreabbrev A GoAlternate
+    autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 augroup END
 
 " grepper

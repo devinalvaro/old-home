@@ -5,11 +5,8 @@ noremap 0 ^
 noremap ^ 0
 
 " normal remaps
-if executable('fzf')
-    nmap gb :Buffers<cr>
-else
-    nnoremap gb :ls<cr>:b<space>
-endif
+nnoremap g: :Commands<cr>
+nnoremap gb :Buffers<cr>
 
 nnoremap Y y$
 
@@ -34,12 +31,10 @@ nnoremap <leader>u :UndotreeToggle<cr>
 nnoremap <leader>dd :DevDocs<space>
 nnoremap <leader>dc :DevDocsUnderCursor<cr>
 
-nnoremap <leader>f/ :Lines<cr>
-nnoremap <leader>f: :Commands<cr>
-nnoremap <leader>fb :Buffers<cr>
 nnoremap <leader>fc :Commits<cr>
 nnoremap <leader>fg :GFiles<cr>
 nnoremap <leader>fi :Files<cr>
+nnoremap <leader>fl :Lines<cr>
 nnoremap <leader>ft :Tags<cr>
 
 nnoremap <leader>gb :Gblame<cr>
