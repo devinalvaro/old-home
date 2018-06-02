@@ -115,11 +115,6 @@ augroup END
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
-function! s:deoplete_cr() abort
-    return deoplete#close_popup() . "\<cr>"
-endfunction
-inoremap <silent> <cr> <c-r>=<sid>deoplete_cr()<cr>
-
 " devdocs
 let g:devdocs_url = 'http://localhost:9292'
 
