@@ -13,6 +13,7 @@ cd yay && makepkg -si --needed --noconfirm && cd .. && rm -rf yay
 # command line interfaces
 $install curl httpie
 $install fd fzf ripgrep
+$install marked
 $install xclip
 
 # monospace fonts

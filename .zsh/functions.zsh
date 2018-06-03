@@ -29,8 +29,9 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@; }
 # markdown
 function md() {
     filename="${1%%.*}"
-    markdown $1 > /tmp/$filename.html \
-        && xdg-open /tmp/$filename.html
+    marked $1 > /tmp/$filename.html
+    echo '<meta charset="UTF-8">' >> /tmp/$filename.html
+    xdg-open /tmp/$filename.html
 }
 
 # truecolor
