@@ -142,8 +142,6 @@ if !executable('ctags')
 endif
 
 let g:gutentags_project_root = [ '.betags' ]
-let g:gutentags_generate_on_write = 0
-let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_ctags_tagfile = '.tags'
 
 " go
