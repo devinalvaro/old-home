@@ -26,6 +26,7 @@ inoremap <c-u> <c-g>u<c-u>
 let mapleader = "\<space>"
 
 nnoremap <leader>c :ColorToggle<cr>
+nnoremap <leader>n :Neoformat<cr>
 nnoremap <leader>u :UndotreeToggle<cr>
 
 nnoremap <leader>dd :DevDocs<space>
