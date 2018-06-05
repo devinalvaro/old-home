@@ -36,6 +36,13 @@ set shiftround
 set shiftwidth=4
 set tabstop=4
 
+" markdown
+augroup Markdown
+    autocmd!
+    autocmd Filetype markdown command! -bang MD !md %
+    autocmd Filetype markdown autocmd BufWritePost <buffer> silent !md -u %
+augroup END
+
 " matching
 set showmatch
 
