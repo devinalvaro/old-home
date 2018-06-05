@@ -72,6 +72,12 @@ set undofile
 set lazyredraw
 set updatetime=150
 
+" whitespace
+highlight ExtraWhitespace ctermbg=red guibg=#e06c75
+match ExtraWhitespace /\s\+$/
+
+command! -bang StripWhitespace :%s/\s\+$//e
+
 " window
 set splitright
 set splitbelow
