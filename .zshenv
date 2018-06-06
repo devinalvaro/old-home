@@ -6,7 +6,6 @@ export ANTIGEN=$HOME/.antigen
 export GOPATH=$HOME/.go
 export PYTHONUSERBASE=$HOME/.pip
 
-export PATH=$HOME/.cargo/bin:$PATH # cargo
 export PATH=$HOME/.go/bin:$PATH    # go
 export PATH=$HOME/.local/bin:$PATH # .local
 export PATH=$HOME/.pip/bin:$PATH   # pip
@@ -64,5 +63,3 @@ export SPACESHIP_DIR_TRUNC_REPO=false
 export SPACESHIP_GIT_SYMBOL='\0'
 export SPACESHIP_GIT_STATUS_PREFIX=' '
 export SPACESHIP_GIT_STATUS_SUFFIX='\0'
-
-export SPACESHIP_VENV_SYMBOL='🐍 '

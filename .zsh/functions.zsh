@@ -1,7 +1,7 @@
 # cd
 function up() {
   for _ in $(seq 1 $1);
-     do 
+     do
        cd ..
      done
 }
