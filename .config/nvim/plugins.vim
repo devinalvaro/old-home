@@ -144,6 +144,8 @@ endif
 let g:gutentags_project_root = [ '.betags' ]
 
 " go
+let g:go_fmt_command = "goimports"
+
 augroup Go
     autocmd!
     autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
