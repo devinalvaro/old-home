@@ -39,8 +39,9 @@ set tabstop=4
 " markdown
 augroup Markdown
     autocmd!
-    autocmd Filetype markdown command! -bang MD !md %
-    autocmd Filetype markdown autocmd BufWritePost <buffer> silent !md -u %
+    if executable('md')
+        autocmd Filetype markdown autocmd BufWritePost <buffer> silent !md -u %
+    endif
 augroup END
 
 " matching
