@@ -60,7 +60,7 @@ set sidescrolloff=5
 " search
 set gdefault
 set ignorecase
-silent! set inccommand=nosplit
+set inccommand=nosplit
 set smartcase
 
 " swap

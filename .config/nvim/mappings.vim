@@ -42,7 +42,7 @@ nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>ge :Gedit<cr>
 nnoremap <leader>gg :Git<space>
-nnoremap <leader>gl :Glog<cr>
+nnoremap <leader>gl :silent! Glog<cr>
 nnoremap <leader>gm :Gmerge<cr>
 nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>gs :Gstatus<cr>
