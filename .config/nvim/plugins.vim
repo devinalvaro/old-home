@@ -77,7 +77,6 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 
 " visual
 Plug 'chrisbra/colorizer'
-Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
@@ -173,28 +172,6 @@ let g:LanguageClient_diagnosticsDisplay = {
             \ }
 let g:LanguageClient_diagnosticsList = 'Location'
 let g:LanguageClient_settingsPath = '~/.config/nvim/configs/langclient.json'
-
-" lightline
-function! LightlineFilename() abort
-    let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
-    let modified = &modified ? ' +' : ''
-    let readonly = &readonly ? ' -' : ''
-    return filename . modified . readonly
-endfunction
-
-let g:lightline = {
-            \ 'colorscheme': 'onedark',
-            \ 'active': {
-            \   'left': [ [  ], [ 'lightline_filename', 'filetype' ] ],
-            \   'right': [ [  ], [ 'fileformat', 'fileencoding' ] ],
-            \ },
-            \ 'inactive': {
-            \   'left': [ [  ], [ 'lightline_filename'  ] ],
-            \   'right': [  ],
-            \ },
-            \ 'component_function': {
-            \   'lightline_filename': 'LightlineFilename',
-            \ }}
 
 " matchit
 runtime! macros/matchit.vim

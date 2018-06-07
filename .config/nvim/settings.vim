@@ -66,6 +66,15 @@ set smartcase
 " swap
 set noswapfile
 
+" statusline
+set statusline=
+      \\ %{&filetype!=#''?&filetype:'none'}
+      \\ %{&readonly\|\|!&modifiable?&modified?'%*':'%%':&modified?'**':'--'}
+      \\ %{expand('%:~:.')!=#''?expand('%:~:.'):'[No\ Name]'}
+      \%=
+      \%l/%L%1(%)
+      \%p%%%1(%)
+
 " undo
 set undofile
 
