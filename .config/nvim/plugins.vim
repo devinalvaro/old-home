@@ -116,7 +116,7 @@ augroup END
 let g:deoplete#enable_at_startup = 1
 
 " devdocs
-let g:devdocs_url = 'http://localhost:9292'
+let g:devdocs_url = 'localhost:9292'
 
 " fzf
 let g:fzf_layout = { 'down': '10' }
