@@ -83,10 +83,10 @@ set lazyredraw
 set updatetime=150
 
 " whitespace
-highlight ExtraWhitespace ctermbg=red guibg=#e06c75
-match ExtraWhitespace /\s\+$/
+highlight TrailingWhitespace ctermbg=red guibg=#e06c75
+match TrailingWhitespace /\s\+$/
 
-command! -bang StripWhitespace :%s/\s\+$//e
+command! -bang StripTrailingWhitespace :%s/\s\+$//e
 
 " window
 set splitright
