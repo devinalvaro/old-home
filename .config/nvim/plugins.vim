@@ -14,7 +14,6 @@ Plug 'tpope/vim-eunuch'
 
 " file navigation
 Plug 'airblade/vim-rooter'
-Plug 'kris2k/a.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
 
@@ -44,7 +43,6 @@ endif
 Plug 'ludovicchabant/vim-gutentags'
 
 " text editing
-Plug 'conradirwin/vim-bracketed-paste'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
