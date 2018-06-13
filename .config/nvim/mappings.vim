@@ -1,13 +1,10 @@
-" normal + visual remaps
+" normal + visual mappings
 noremap + "+
 
 noremap 0 ^
 noremap ^ 0
 
-" normal remaps
-nnoremap g: :Commands<cr>
-nnoremap gb :Buffers<cr>
-
+" normal mappings
 nnoremap Y y$
 
 nnoremap c* *Ncgn
@@ -15,14 +12,20 @@ nnoremap c# #NcgN
 
 nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
 
-" insert remaps
+" insert mappings
 if executable('fzf')
     imap <c-x><c-f> <plug>(fzf-complete-path)
 endif
 
 inoremap <c-u> <c-g>u<c-u>
 
-" leader remaps
+" g mappings
+nnoremap g: :Commands<cr>
+nnoremap gb :Buffers<cr>
+map      gs <plug>(GrepperOperator)
+noremap  go :Go
+
+" leader mappings
 let mapleader = "\<space>"
 
 nnoremap <leader>c  :ColorToggle<cr>
