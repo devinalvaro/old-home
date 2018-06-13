@@ -177,6 +177,7 @@ runtime! macros/matchit.vim
 let g:onedark_color_overrides = {
             \ 'comment_grey': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
             \ 'gutter_fg_grey': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
+            \ 'special_grey': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
             \ 'vertsplit': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
             \ }
 
