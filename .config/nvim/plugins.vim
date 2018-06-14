@@ -12,11 +12,12 @@ Plug 'tpope/vim-eunuch'
 
 " file navigation
 Plug 'airblade/vim-rooter'
+Plug 'ericcurtin/curtineincsw.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-vinegar'
 
 " fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf' } | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 
 " languages
 Plug 'fatih/vim-go'
@@ -89,8 +90,14 @@ let g:colorizer_colornames = 0
 " commentary
 augroup Commentary
     autocmd!
-    autocmd Filetype c,cpp,cs,php setlocal commentstring=//\ %s
-    autocmd Filetype sql setlocal commentstring=--\ %s
+    autocmd Filetype c,cpp setlocal commentstring=//%s
+    autocmd Filetype sql setlocal commentstring=--%s
+augroup END
+
+" curtineincsw
+augroup CurtineIncSw
+    autocmd!
+    autocmd Filetype c,cpp command! -bang A call CurtineIncSw()
 augroup END
 
 " delimitmate
