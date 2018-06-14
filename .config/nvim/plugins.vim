@@ -1,10 +1,8 @@
 call plug#begin()
 
 " completion
-if has('nvim')
-    Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'zchee/deoplete-go', {' do': 'make' }
-endif
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-go', {' do': 'make' }
 
 " documentations
 Plug 'rhysd/devdocs.vim'
@@ -24,9 +22,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf' } | Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go'
 
 " language server protocols
-if has('nvim')
-    Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-endif
+Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
 " linting
 Plug 'w0rp/ale'
