@@ -33,15 +33,15 @@ export SPACESHIP_PROMPT_ORDER=(
   # dotnet
   # elixir
   # ember
-  # golang
+  golang
   # haskell
   # julia
   # kubecontext
-  # node
+  node
   # package
   # php
   # pyenv
-  # ruby
+  ruby
   # rust
   # swift
   venv
