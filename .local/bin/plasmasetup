@@ -7,12 +7,13 @@ install='yay -S --needed --noconfirm --answeredit none'
 # --------------------------------
 
 # plasma
-$install plasma-desktop plasma-nm plasma-pa plasma5-applets-redshift-control powerdevil
+$install plasma-browser-integration plasma-desktop plasma-nm plasma-pa plasma5-applets-redshift-control
+$install powerdevil
 
 sudo systemctl enable NetworkManager.service
 
 # kde applications
-$install kscreen kwallet-pam
+$install kdeconnect kscreen kwallet-pam
 
 # gtk
 $install breeze-gtk kde-gtk-config
