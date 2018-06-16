@@ -190,9 +190,6 @@ let g:jsx_ext_required = 1
 " rooter
 let g:rooter_manual_only = 1
 
-" sleuth
-let g:sleuth_automatic = 0
-
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsSnippetDirectories = [ 'snips' ]
