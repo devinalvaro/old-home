@@ -6,10 +6,11 @@ export ANTIGEN=$HOME/.antigen
 export GOPATH=$HOME/.go
 export PYTHONUSERBASE=$HOME/.pip
 
-export PATH=$HOME/.go/bin:$PATH    # go
-export PATH=$HOME/.local/bin:$PATH # user
-export PATH=$HOME/.pip/bin:$PATH   # pip
-export PATH=$HOME/.yarn/bin:$PATH  # yarn
+export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH # gem
+export PATH=$HOME/.go/bin:$PATH             # go
+export PATH=$HOME/.local/bin:$PATH          # user
+export PATH=$HOME/.pip/bin:$PATH            # pip
+export PATH=$HOME/.yarn/bin:$PATH           # yarn
 
 # fzf
 export FZF_DEFAULT_OPTS='--inline-info --height 10'

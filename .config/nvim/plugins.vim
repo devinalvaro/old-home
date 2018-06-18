@@ -21,6 +21,7 @@ Plug 'junegunn/fzf.vim'
 
 " languages
 Plug 'fatih/vim-go'
+Plug 'tpope/vim-rails'
 
 " language server protocols
 Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }

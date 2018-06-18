@@ -20,3 +20,7 @@ yarn global add javascript-typescript-langserver
 # python
 $install python python-pip
 $install python-{language-server,mccabe,pycodestyle,pydocstyle,pyflakes,rope} yapf
+
+# python
+$install ruby rubygems
+$install ruby-solargraph

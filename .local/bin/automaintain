@@ -26,6 +26,9 @@ zsh -i -c 'antigen update'
 
 # ----------------
 
+# gem
+gem update
+
 # go
 nvim +GoUpdateBinaries +qall
 
