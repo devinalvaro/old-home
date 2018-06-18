@@ -19,4 +19,4 @@ yarn global add javascript-typescript-langserver
 
 # python
 $install python python-pip
-pip install --user 'python-language-server[all]'
+$install python-{language-server,mccabe,pycodestyle,pydocstyle,pyflakes,rope} yapf

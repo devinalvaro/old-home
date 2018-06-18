@@ -30,7 +30,7 @@ zsh -i -c 'antigen update'
 nvim +GoUpdateBinaries +qall
 
 # pip
-pip install -U --upgrade-strategy only-if-needed 'python-language-server[all]'
+pip freeze --user | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 
 # yarn
 yarn global upgrade
