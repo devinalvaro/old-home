@@ -79,10 +79,6 @@ call plug#end()
 " ale
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
-let g:ale_linters = {
-            \ 'c': [ 'gcc' ],
-            \ 'cpp': [ 'g++' ],
-            \ }
 
 " colorizer
 let g:colorizer_colornames = 0
@@ -160,7 +156,8 @@ let g:grepper = {
 
 " languageclient-neovim
 let g:LanguageClient_serverCommands = {
-            \ 'cpp': [ 'cquery' ],
+            \ 'c': [ 'clangd' ],
+            \ 'cpp': [ 'clangd' ],
             \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
             \ }
@@ -171,7 +168,6 @@ let g:LanguageClient_diagnosticsDisplay = {
             \ 4: { 'name': 'Hint', 'signText': '--' },
             \ }
 let g:LanguageClient_diagnosticsList = 'Location'
-let g:LanguageClient_settingsPath = '~/.config/nvim/configs/langclient.json'
 
 " matchit
 runtime! macros/matchit.vim

@@ -8,7 +8,6 @@ install='yay -S --needed --noconfirm --answeredit none'
 
 # clang
 $install clang
-$install bear cquery
 
 # go
 $install go
