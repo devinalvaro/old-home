@@ -68,7 +68,7 @@ Plug 'mbbill/undotree'
 
 " version control
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb' | Plug 'shumphrey/fugitive-gitlab.vim'
 
 " visual
 Plug 'chrisbra/colorizer'
