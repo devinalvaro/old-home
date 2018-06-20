@@ -152,13 +152,7 @@ let g:grepper = {
             \ }
 
 " languageclient
-let g:LanguageClient_serverCommands = {
-            \ 'c': [ 'clangd' ],
-            \ 'cpp': [ 'clangd' ],
-            \ 'javascript': [ 'javascript-typescript-stdio' ],
-            \ 'python': [ 'pyls' ],
-            \ 'ruby': [ 'tcp://localhost:7658' ],
-            \ }
+let g:LanguageClient_autoStop = 0
 let g:LanguageClient_diagnosticsDisplay = {
             \ 1: { 'name': 'Error', 'signText': '>>' },
             \ 2: { 'name': 'Warning', 'signText': '--' },
@@ -166,11 +160,13 @@ let g:LanguageClient_diagnosticsDisplay = {
             \ 4: { 'name': 'Hint', 'signText': '--' },
             \ }
 let g:LanguageClient_diagnosticsList = 'Location'
-
-augroup LanguageClient
-    autocmd!
-    autocmd Filetype ruby let g:LanguageClient_autoStop = 0
-augroup END
+let g:LanguageClient_serverCommands = {
+            \ 'c': [ 'clangd' ],
+            \ 'cpp': [ 'clangd' ],
+            \ 'javascript': [ 'javascript-typescript-stdio' ],
+            \ 'python': [ 'pyls' ],
+            \ 'ruby': [ 'tcp://localhost:7658' ],
+            \ }
 
 " matchit
 runtime! macros/matchit.vim
