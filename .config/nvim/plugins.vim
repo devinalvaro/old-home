@@ -29,9 +29,6 @@ Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.s
 " linting
 Plug 'w0rp/ale'
 
-" list
-Plug 'romainl/vim-qf'
-
 " snippet
 if has('python3')
     Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
@@ -41,6 +38,7 @@ endif
 Plug 'ludovicchabant/vim-gutentags'
 
 " text editing
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
@@ -58,10 +56,8 @@ Plug 'sbdchd/neoformat'
 
 " text navigation
 Plug 'junegunn/vim-slash'
+Plug 'romainl/vim-qf'
 Plug 'tpope/vim-unimpaired'
-
-" text objects
-Plug 'michaeljsmith/vim-indent-object'
 
 " undo
 Plug 'mbbill/undotree'
@@ -155,12 +151,13 @@ let g:grepper = {
             \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
             \ }
 
-" languageclient-neovim
+" languageclient
 let g:LanguageClient_serverCommands = {
             \ 'c': [ 'clangd' ],
             \ 'cpp': [ 'clangd' ],
             \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
+            \ 'ruby': [ 'tcp://localhost:7658' ],
             \ }
 let g:LanguageClient_diagnosticsDisplay = {
             \ 1: { 'name': 'Error', 'signText': '>>' },
@@ -169,6 +166,11 @@ let g:LanguageClient_diagnosticsDisplay = {
             \ 4: { 'name': 'Hint', 'signText': '--' },
             \ }
 let g:LanguageClient_diagnosticsList = 'Location'
+
+augroup LanguageClient
+    autocmd!
+    autocmd Filetype ruby let g:LanguageClient_autoStop = 0
+augroup END
 
 " matchit
 runtime! macros/matchit.vim
