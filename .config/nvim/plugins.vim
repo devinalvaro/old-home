@@ -107,9 +107,6 @@ augroup END
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
-" devdocs
-let g:devdocs_url = 'localhost:9292'
-
 " fzf
 let g:fzf_layout = { 'down': '10' }
 let g:fzf_history_dir = '~/.local/share/nvim/fzf'
