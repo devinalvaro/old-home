@@ -26,14 +26,8 @@ zsh -i -c 'antigen update'
 
 # ----------------
 
-# gem
-gem update solargraph
-
 # go
 nvim +GoUpdateBinaries +qall
-
-# pip
-pip install -U 'python-language-server[all]'
 
 # yarn
 yarn global upgrade
