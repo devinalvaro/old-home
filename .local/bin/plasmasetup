@@ -7,16 +7,20 @@ install='yay -S --needed --noconfirm --answeredit none'
 # --------------------------------
 
 # plasma
-$install plasma-browser-integration plasma-desktop plasma-nm plasma-pa plasma5-applets-redshift-control
-$install powerdevil
+$install plasma-desktop
+$install --asdeps plasma-browser-integration plasma-nm plasma-pa plasma5-applets-redshift-control
 
 sudo systemctl enable NetworkManager.service
 
-# kde applications
-$install kdeconnect kscreen kwallet-pam
+# decorations
+$install sierrabreeze-kwin-decoration-git
 
 # gtk
-$install breeze-gtk kde-gtk-config
+$install --asdeps breeze-gtk kde-gtk-config
+
+# kde
+$install ark dolphin kdeconnect kscreen ktorrent powerdevil spectacle
+$install --asdeps kwallet-pam
 
 # sddm
 $install sddm
@@ -31,4 +35,4 @@ sudo sed -i s/CursorTheme=$/CursorTheme=breeze/ /etc/sddm.conf.d/sddm.conf
 sudo sed -i s/EnableHiDPI=\.\*/EnableHiDPI=true/ /etc/sddm.conf.d/sddm.conf
 
 # libraries
-$install libdbusmenu-glib
+$install libdbusmenu-glib ntfs-3g
