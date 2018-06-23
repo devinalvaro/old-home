@@ -4,72 +4,68 @@ call plug#begin()
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', {' do': 'make' }
 
-" documentations
+" color
+Plug 'chrisbra/colorizer'
+Plug 'joshdick/onedark.vim'
+
+" ctags
+Plug 'ludovicchabant/vim-gutentags'
+
+" documentation
 Plug 'rhysd/devdocs.vim'
-
-" file management
-Plug 'tpope/vim-eunuch'
-
-" file navigation
-Plug 'airblade/vim-rooter'
-Plug 'ericcurtin/curtineincsw.vim'
-Plug 'mhinz/vim-grepper'
-Plug 'tpope/vim-vinegar'
 
 " fzf
 Plug 'junegunn/fzf.vim'
 
-" languages
-Plug 'fatih/vim-go'
-Plug 'tpope/vim-rails'
+" git
+Plug 'airblade/vim-gitgutter'
 
-" language server protocols
+" language support
+Plug 'fatih/vim-go'
+Plug 'sheerun/vim-polyglot'
+
+" language server protocol
 Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
-" linting
+" linting & formatting
+Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
 
-" snippet
-if has('python3')
-    Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
-endif
+" navigation
+Plug 'ericcurtin/curtineincsw.vim'
+Plug 'airblade/vim-rooter'
 
-" tags
-Plug 'ludovicchabant/vim-gutentags'
+" quickfix & loclist
+Plug 'romainl/vim-qf'
+
+" search
+Plug 'junegunn/vim-slash'
+Plug 'mhinz/vim-grepper'
+
+" snippet
+Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 
 " text editing
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
+Plug 'wellle/targets.vim'
+
+" tpope
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
-Plug 'wellle/targets.vim'
-
-" text formatting
-Plug 'sbdchd/neoformat'
-
-" text navigation
-Plug 'junegunn/vim-slash'
-Plug 'romainl/vim-qf'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
 
 " undo
 Plug 'mbbill/undotree'
-
-" version control
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb' | Plug 'shumphrey/fugitive-gitlab.vim'
-
-" visual
-Plug 'chrisbra/colorizer'
-Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -94,12 +90,11 @@ augroup CurtineIncSw
 augroup END
 
 " delimitmate
-let g:delimitMate_matchpairs = '(:),[:],{:}'
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 let g:delimitMate_balance_matchpairs = 1
 
-augroup Delimitmate
+augroup DelimitMate
     autocmd!
     autocmd Filetype clojure,lisp,racket,scheme let g:delimitMate_expand_cr = 1
 augroup END
