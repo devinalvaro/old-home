@@ -74,6 +74,11 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 let g:ale_set_quickfix = 1
 
+let g:ale_linters = {
+            \ "c": [],
+            \ "cpp": [],
+            \ }
+
 " colorizer
 let g:colorizer_colornames = 0
 
@@ -122,11 +127,11 @@ if executable('rg')
 endif
 
 " gutentags
+let g:gutentags_project_root = [ '.betags' ]
+
 if !executable('ctags')
     let g:gutentags_enabled = 0
 endif
-
-let g:gutentags_project_root = [ '.betags' ]
 
 " go
 let g:go_fmt_command = "goimports"
@@ -142,11 +147,12 @@ let g:grepper = {
             \ 'jump': 1,
             \ 'quickfix': 0,
             \ 'switch': 0,
-            \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ]
+            \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ],
             \ }
 
 " languageclient
 let g:LanguageClient_autoStop = 0
+
 let g:LanguageClient_serverCommands = {
             \ 'c': [ 'clangd' ],
             \ 'cpp': [ 'clangd' ],
