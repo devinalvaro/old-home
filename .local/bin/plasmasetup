@@ -7,24 +7,19 @@ install='yay -S --needed --noconfirm --answeredit none'
 # --------------------------------
 
 # plasma
-$install plasma-desktop
-$install --asdeps plasma-browser-integration plasma-nm plasma-pa plasma5-applets-redshift-control
+$install plasma-meta plasma5-applets-redshift-control
+$install --asdeps kde-gtk-config
 
+# kde applications
+$install ark dolphin kdeconnect spectacle
+
+# libraries
+$install libdbusmenu-glib ntfs-3g
+
+# NetworkManager
 sudo systemctl enable NetworkManager.service
 
-# decorations
-$install sierrabreeze-kwin-decoration-git
-
-# gtk
-$install --asdeps breeze-gtk kde-gtk-config
-
-# kde
-$install ark dolphin kdeconnect kscreen ktorrent powerdevil spectacle
-$install --asdeps kwallet-pam
-
 # sddm
-$install sddm
-
 sudo systemctl enable sddm.service
 
 sudo mkdir -p /etc/sddm.conf.d
@@ -33,6 +28,4 @@ sudo cp /usr/lib/sddm/sddm.conf.d/sddm.conf /etc/sddm.conf.d/sddm.conf
 sudo sed -i s/Current=$/Current=breeze/ /etc/sddm.conf.d/sddm.conf
 sudo sed -i s/CursorTheme=$/CursorTheme=breeze/ /etc/sddm.conf.d/sddm.conf
 sudo sed -i s/EnableHiDPI=\.\*/EnableHiDPI=true/ /etc/sddm.conf.d/sddm.conf
-
-# libraries
-$install libdbusmenu-glib ntfs-3g
+sudo sed -i s/ServerArguments=\.\*/ServerArguments=-nolisten\ tcp\ -dpi\ 144/ /etc/sddm.conf.d/sddm.conf
