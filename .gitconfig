@@ -3,11 +3,8 @@
 	name = Devin Alvaro
 
 [core]
-	autocrlf = false
-	eol = LF
 	excludesfile = ~/.config/git/gitignore
-	fileMode = false
-    pager = less --tabs=1,5
+	pager = less --tabs=1,5
 
 [push]
 	default = simple
