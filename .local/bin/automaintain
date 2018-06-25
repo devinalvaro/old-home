@@ -18,8 +18,7 @@ fi
 $upgrade
 
 # vim
-nvim +PlugUpgrade +qall
-nvim +PlugUpdate +qall
+nvim +PlugUpgrade +PlugUpdate +qall
 
 # zsh
 zsh -i -c 'antigen update'
