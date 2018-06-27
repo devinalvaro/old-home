@@ -108,7 +108,7 @@ augroup END
 let g:deoplete#enable_at_startup = 1
 
 " fzf
-let g:fzf_history_dir = '~/.local/share/nvim/fzf'
+let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
 let g:fzf_layout = { 'down': '10' }
 
 if executable('rg')

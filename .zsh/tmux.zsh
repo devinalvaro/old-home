@@ -16,5 +16,5 @@ fi
 
 # reload config
 if [[ -n $TMUX ]]; then
-    tmux source-file ~/.tmux.conf
+    tmux source-file $HOME/.tmux.conf
 fi
