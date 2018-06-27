@@ -7,12 +7,11 @@ set termguicolors
 silent! colorscheme onedark
 
 " column
-set signcolumn=yes
 set numberwidth=2
+set signcolumn=yes
 
 " completion
 set completeopt+=menuone,noinsert,noselect
-set completeopt-=menu
 set pumheight=10
 
 augroup Completion
@@ -85,8 +84,8 @@ match TrailingWhitespace /\s\+$/
 command! -bang StripTrailingWhitespace :%s/\s\+$//e
 
 " window
-set splitright
 set splitbelow
+set splitright
 
 augroup Window
     autocmd!

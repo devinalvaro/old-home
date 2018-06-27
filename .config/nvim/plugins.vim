@@ -70,8 +70,8 @@ Plug 'mbbill/undotree'
 call plug#end()
 
 " ale
-let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_text_changed = 'normal'
 let g:ale_set_quickfix = 1
 
 let g:ale_linters = {
@@ -96,9 +96,9 @@ augroup CurtineIncSw
 augroup END
 
 " delimitmate
+let g:delimitMate_balance_matchpairs = 1
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
-let g:delimitMate_balance_matchpairs = 1
 
 augroup DelimitMate
     autocmd!
@@ -109,8 +109,8 @@ augroup END
 let g:deoplete#enable_at_startup = 1
 
 " fzf
-let g:fzf_layout = { 'down': '10' }
 let g:fzf_history_dir = '~/.local/share/nvim/fzf'
+let g:fzf_layout = { 'down': '10' }
 
 if executable('rg')
     command! -bang -nargs=* Rg
@@ -180,9 +180,9 @@ let g:rooter_manual_only = 1
 
 " ultisnips
 let g:UltiSnipsEditSplit = 'horizontal'
-let g:UltiSnipsSnippetDirectories = [ 'snips' ]
-let g:UltiSnipsJumpForwardTrigger = '<a-f>'
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
+let g:UltiSnipsJumpForwardTrigger = '<a-f>'
+let g:UltiSnipsSnippetDirectories = [ 'snips' ]
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
