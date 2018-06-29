@@ -7,26 +7,25 @@ noremap ^ 0
 " normal mappings
 nnoremap Y y$
 
-nnoremap c* *Ncgn
-nnoremap c# #NcgN
-
 nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
 
 " insert mappings
+inoremap <c-u> <c-g>u<c-u>
+
 if executable('fzf')
     imap <c-x><c-f> <plug>(fzf-complete-path)
 endif
 
-inoremap <c-u> <c-g>u<c-u>
-
 " g mappings
 nnoremap g: :Commands<cr>
 nnoremap gb :Buffers<cr>
+noremap  go :go
 map      gs <plug>(GrepperOperator)
-noremap  go :Go
 
 " leader mappings
 let mapleader = "\<space>"
+
+nnoremap <leader><leader> :
 
 nnoremap <leader>c  :ColorToggle<cr>
 nnoremap <leader>n  :Neoformat<cr>
