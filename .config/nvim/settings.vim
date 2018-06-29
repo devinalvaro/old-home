@@ -14,11 +14,6 @@ set signcolumn=yes
 set completeopt+=menuone,noinsert,noselect
 set pumheight=10
 
-augroup Completion
-    autocmd!
-    autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
-augroup END
-
 " confirmation
 set confirm
 
@@ -30,14 +25,6 @@ set expandtab
 set shiftround
 set shiftwidth=4
 set tabstop=4
-
-" markdown
-augroup Markdown
-    autocmd!
-    if executable('md')
-        autocmd Filetype markdown autocmd BufWritePost <buffer> silent !md -u %
-    endif
-augroup END
 
 " matching
 set showmatch
@@ -81,16 +68,9 @@ set updatetime=150
 highlight TrailingWhitespace ctermbg=red guibg=#e06c75
 match TrailingWhitespace /\s\+$/
 
-command! -bang StripTrailingWhitespace :%s/\s\+$//e
-
 " window
 set splitbelow
 set splitright
-
-augroup Window
-    autocmd!
-    autocmd VimResized * wincmd =
-augroup END
 
 " wrapping
 set breakindent

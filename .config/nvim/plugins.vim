@@ -82,28 +82,10 @@ let g:ale_linters = {
 " colorizer
 let g:colorizer_colornames = 0
 
-" commentary
-augroup Commentary
-    autocmd!
-    autocmd Filetype c,cpp setlocal commentstring=//%s
-    autocmd Filetype sql setlocal commentstring=--%s
-augroup END
-
-" curtineincsw
-augroup CurtineIncSw
-    autocmd!
-    autocmd Filetype c,cpp command! -bang A call CurtineIncSw()
-augroup END
-
 " delimitmate
 let g:delimitMate_balance_matchpairs = 1
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
-
-augroup DelimitMate
-    autocmd!
-    autocmd Filetype clojure,lisp,racket,scheme let g:delimitMate_expand_cr = 1
-augroup END
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -111,15 +93,6 @@ let g:deoplete#enable_at_startup = 1
 " fzf
 let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
 let g:fzf_layout = { 'down': '10' }
-
-if executable('rg')
-    command! -bang -nargs=* Rg
-                \ call fzf#vim#grep(
-                \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
-                \   <bang>0 ? fzf#vim#with_preview('up:60%')
-                \           : fzf#vim#with_preview('right:50%:hidden', '?'),
-                \   <bang>0)
-endif
 
 " gitgutter
 if executable('rg')
@@ -135,11 +108,6 @@ endif
 
 " go
 let g:go_fmt_command = "goimports"
-
-augroup Go
-    autocmd!
-    autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
-augroup END
 
 " grepper
 let g:grepper = {

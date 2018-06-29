@@ -1,4 +1,8 @@
 " init
 runtime plugins.vim
-runtime settings.vim
+
+runtime augroups.vim
+runtime commands.vim
 runtime mappings.vim
+
+runtime settings.vim
