@@ -1,5 +1,5 @@
 # cd
-function up() {
+function ..() {
   for _ in $(seq 1 $1);
      do
        cd ..
