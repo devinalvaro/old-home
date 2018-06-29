@@ -72,6 +72,7 @@ call plug#end()
 " ale
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
+let g:ale_set_quickfix = 1
 
 let g:ale_linters = {
             \ "c": [],
@@ -144,13 +145,13 @@ augroup END
 let g:grepper = {
             \ 'dir': 'filecwd',
             \ 'jump': 1,
+            \ 'quickfix': 0,
             \ 'switch': 0,
             \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ],
             \ }
 
 " languageclient
 let g:LanguageClient_autoStop = 0
-let g:LanguageClient_diagnosticsList = 'Location'
 
 let g:LanguageClient_serverCommands = {
             \ 'c': [ 'clangd' ],
