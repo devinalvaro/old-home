@@ -126,7 +126,7 @@ let g:LanguageClient_serverCommands = {
             \ 'cpp': [ 'clangd' ],
             \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
-            \ 'ruby': [ 'tcp://localhost:7658' ],
+            \ 'ruby': [ 'solargraph stdio' ],
             \ }
 
 " matchit
