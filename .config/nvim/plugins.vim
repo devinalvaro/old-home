@@ -72,12 +72,8 @@ call plug#end()
 " ale
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
+let g:ale_pattern_options = { '\.c\(pp\)*$': { 'ale_enabled': 0 } }
 let g:ale_set_quickfix = 1
-
-let g:ale_linters = {
-            \ "c": [],
-            \ "cpp": [],
-            \ }
 
 " colorizer
 let g:colorizer_colornames = 0
@@ -100,8 +96,6 @@ if executable('rg')
 endif
 
 " gutentags
-let g:gutentags_project_root = [ '.betags' ]
-
 if !executable('ctags')
     let g:gutentags_enabled = 0
 endif
@@ -120,7 +114,6 @@ let g:grepper = {
 
 " languageclient
 let g:LanguageClient_autoStop = 0
-
 let g:LanguageClient_serverCommands = {
             \ 'c': [ 'clangd' ],
             \ 'cpp': [ 'clangd' ],
@@ -147,7 +140,6 @@ let g:jsx_ext_required = 1
 let g:rooter_manual_only = 1
 
 " ultisnips
-let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 let g:UltiSnipsJumpForwardTrigger = '<a-f>'
 let g:UltiSnipsSnippetDirectories = [ 'snips' ]
