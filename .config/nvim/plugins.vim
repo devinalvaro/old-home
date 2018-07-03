@@ -32,8 +32,9 @@ Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
 
 " navigation
-Plug 'ericcurtin/curtineincsw.vim'
 Plug 'airblade/vim-rooter'
+Plug 'ericcurtin/curtineincsw.vim'
+Plug 'justinmk/vim-dirvish'
 
 " quickfix & loclist
 Plug 'romainl/vim-qf'
@@ -62,7 +63,6 @@ Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-vinegar'
 
 " undo
 Plug 'mbbill/undotree'
@@ -85,6 +85,14 @@ let g:delimitMate_expand_space = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
+" dirvish
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
+
+command! -nargs=? -complete=dir Explore silent Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 " fzf
 let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
