@@ -72,7 +72,6 @@ call plug#end()
 " ale
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
-let g:ale_pattern_options = { '\.c\(pp\)*$': { 'ale_enabled': 0 } }
 let g:ale_set_quickfix = 1
 
 " colorizer
@@ -121,7 +120,6 @@ let g:grepper = {
             \ }
 
 " languageclient
-let g:LanguageClient_autoStop = 0
 let g:LanguageClient_serverCommands = {
             \ 'c': [ 'clangd' ],
             \ 'cpp': [ 'clangd' ],
@@ -143,6 +141,9 @@ let g:onedark_color_overrides = {
 
 " polyglot
 let g:jsx_ext_required = 1
+
+" qf
+let g:qf_auto_open_quickfix = 0
 
 " rooter
 let g:rooter_manual_only = 1
