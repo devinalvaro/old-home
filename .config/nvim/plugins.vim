@@ -86,12 +86,9 @@ let g:delimitMate_expand_space = 1
 let g:deoplete#enable_at_startup = 1
 
 " dirvish
+let g:dirvish_relative_paths = 1
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
-
-command! -nargs=? -complete=dir Explore silent Dirvish <args>
-command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
-command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 " fzf
 let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'

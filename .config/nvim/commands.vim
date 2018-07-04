@@ -1,3 +1,8 @@
+" dirvish
+command! -nargs=? -complete=dir Explore silent Dirvish <args>
+command! -nargs=? -complete=dir Sexplore split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore vsplit | silent Dirvish <args>
+
 " fzf
 if executable('rg')
     command! -bang -nargs=* Rg
