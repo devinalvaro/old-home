@@ -4,11 +4,6 @@ augroup Settings
     " completion
     autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
 
-    " markdown
-    if executable('md')
-        autocmd Filetype markdown autocmd BufWritePost <buffer> silent !md -u %
-    endif
-
     " window
     autocmd VimResized * wincmd =
 augroup END
