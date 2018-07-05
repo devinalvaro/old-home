@@ -4,7 +4,7 @@ command! -nargs=? -complete=dir Sexplore split | silent Dirvish <args>
 command! -nargs=? -complete=dir Vexplore vsplit | silent Dirvish <args>
 
 " fzf
-if executable('rg')
+if executable('fzf') && executable('rg')
     command! -bang -nargs=* Rg
                 \ call fzf#vim#grep(
                 \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,

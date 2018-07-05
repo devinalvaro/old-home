@@ -3,7 +3,6 @@ set hidden
 
 " color
 set termguicolors
-
 silent! colorscheme onedark
 
 " column
@@ -75,5 +74,4 @@ set splitright
 " wrapping
 set breakindent
 set linebreak
-
 let &showbreak = '↳ '
