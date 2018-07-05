@@ -125,9 +125,6 @@ let g:LanguageClient_serverCommands = {
             \ 'ruby': [ 'solargraph stdio' ],
             \ }
 
-" matchit
-runtime! macros/matchit.vim
-
 " onedark
 let g:onedark_color_overrides = {
             \ 'comment_grey': { 'gui': '#828997', 'cterm': '59', 'cterm16': '15' },
