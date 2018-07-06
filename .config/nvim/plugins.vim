@@ -119,7 +119,8 @@ if !executable('ctags')
 endif
 
 " go
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = 'goimports'
+let g:go_term_mode = 'split'
 
 " grepper
 let g:grepper = {
