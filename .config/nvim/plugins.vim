@@ -122,7 +122,7 @@ let g:LanguageClient_serverCommands = {
             \ 'cpp': [ 'clangd' ],
             \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
-            \ 'ruby': [ 'solargraph stdio' ],
+            \ 'ruby': [ 'solargraph',  'stdio' ],
             \ }
 
 " onedark
