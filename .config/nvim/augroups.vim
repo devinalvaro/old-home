@@ -3,9 +3,6 @@ augroup Settings
 
     " completion
     autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
-
-    " window
-    autocmd VimResized * wincmd =
 augroup END
 
 augroup Plugins
@@ -20,9 +17,6 @@ augroup Plugins
 
     " curtineincsw
     autocmd Filetype c,cpp command! -bang A call CurtineIncSw()
-
-    " delimitmate
-    autocmd Filetype clojure,lisp,racket,scheme let b:delimitMate_expand_cr = 1
 
     " go
     autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
