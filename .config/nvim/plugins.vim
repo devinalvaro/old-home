@@ -95,9 +95,18 @@ let g:dirvish_relative_paths = 1
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 
+command! -nargs=? -complete=dir Explore silent Dirvish <args>
+command! -nargs=? -complete=dir Sexplore split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore vsplit | silent Dirvish <args>
+
 " fzf
 let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
 let g:fzf_layout = { 'down': '10' }
+
+command! -bang -nargs=* Rg
+            \ call fzf#vim#grep(
+            \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+            \   <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%:hidden', '?'), <bang>0)
 
 " gitgutter
 if executable('rg')
