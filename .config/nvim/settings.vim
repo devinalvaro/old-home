@@ -63,10 +63,6 @@ set undofile
 set lazyredraw
 set updatetime=150
 
-" whitespace
-highlight TrailingWhitespace ctermbg=red guibg=#e06c75
-match TrailingWhitespace /\s\+$/
-
 " window
 set splitbelow
 set splitright

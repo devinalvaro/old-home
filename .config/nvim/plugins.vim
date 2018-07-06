@@ -48,6 +48,7 @@ Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 
 " text editing
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
 Plug 'wellle/targets.vim'
@@ -73,6 +74,10 @@ call plug#end()
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_set_quickfix = 1
+
+" better whitespace
+let g:better_whitespace_enabled = 1
+let g:better_whitespace_guicolor = '#e06c75'
 
 " colorizer
 let g:colorizer_colornames = 0
