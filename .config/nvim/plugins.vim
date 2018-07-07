@@ -47,6 +47,7 @@ Plug 'mhinz/vim-grepper'
 Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 
 " text editing
+Plug 'chaoren/vim-wordmotion'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'raimondi/delimitmate'
@@ -164,3 +165,6 @@ let g:UltiSnipsSnippetDirectories = [ 'snips' ]
 
 " undotree
 let g:undotree_SetFocusWhenToggle = 1
+
+" wordmotion
+let g:wordmotion_spaces = '_-.'
