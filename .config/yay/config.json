@@ -1,25 +1,3 @@
 {
-	"buildDir": "/tmp/yay/",
-	"editor": "",
-	"editorflags": "",
-	"makepkgbin": "makepkg",
-	"pacmanbin": "pacman",
-	"pacmanconf": "/etc/pacman.conf",
-	"tarbin": "bsdtar",
-	"redownload": "no",
-	"rebuild": "no",
-	"answerclean": "",
-	"answeredit": "",
-	"answerupgrade": "",
-	"gitbin": "git",
-	"gpgbin": "gpg",
-	"gpgflags": "",
-	"mflags": "",
-	"sortby": "votes",
-	"requestsplitn": 150,
-	"sortmode": 0,
-	"sudoloop": true,
-	"timeupdate": false,
-	"devel": false,
-	"cleanAfter": false
+	"sudoloop": true
 }
