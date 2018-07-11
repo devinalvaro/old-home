@@ -114,6 +114,13 @@ if executable('rg')
     let g:gitgutter_grep = 'rg'
 endif
 
+" go
+let g:go_highlight_functions = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_types = 1
+let g:go_highlight_variable_assignments = 1
+let g:go_highlight_variable_declarations = 1
+
 " gutentags
 if !executable('ctags')
     let g:gutentags_enabled = 0
