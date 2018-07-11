@@ -4,9 +4,9 @@ export EDITOR=nvim
 # paths
 export ANTIGEN=$HOME/.antigen
 export GOPATH=$HOME/.go
+export NVM_DIR=$HOME/.nvm
 export PYTHONUSERBASE=$HOME/.pip
 
-export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH # gem
 export PATH=$HOME/.go/bin:$PATH             # go
 export PATH=$HOME/.local/bin:$PATH          # user
 export PATH=$HOME/.pip/bin:$PATH            # pip

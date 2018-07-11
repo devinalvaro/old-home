@@ -23,6 +23,9 @@ antigen apply
 # functions
 [ -f $HOME/.zsh/functions.zsh ] && source $HOME/.zsh/functions.zsh
 
+# loadings
+[ -f $HOME/.zsh/loadings.zsh ] && source $HOME/.zsh/loadings.zsh
+
 # options
 [ -f $HOME/.zsh/options.zsh ] && source $HOME/.zsh/options.zsh
 
