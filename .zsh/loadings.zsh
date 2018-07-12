@@ -8,22 +8,24 @@ function lazy_load() {
     unalias "${names[@]}"
 
     . $2 && . $3
-
     shift 3
-    $*
+
+    if [ $# -gt 1 ]; then
+        $*
+    fi
 }
 
-function group_lazy_load() {
-    local script=$1
-    local completion=$2
+function alias_lazy_load() {
+    local script=$1 completion=$2
     shift 1
+
     for cmd in "$@"; do
         alias $cmd="lazy_load \"$*\" $script $completion $cmd"
     done
 }
 
 # nvm
-group_lazy_load "$HOME/.nvm/nvm.sh" "$HOME/.nvm/bash_completion" nvm
+alias_lazy_load "$HOME/.nvm/nvm.sh" "$HOME/.nvm/bash_completion" nvm
 
 # rvm
-group_lazy_load "$HOME/.rvm/scripts/rvm" "$HOME/.rvm/scripts/completion" rvm
+alias_lazy_load "$HOME/.rvm/scripts/rvm" "$HOME/.rvm/scripts/completion" rvm
