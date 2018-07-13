@@ -42,3 +42,6 @@ nnoremap <leader>gw :Gwrite<cr>
 
 nnoremap <leader>rb :Grepper-buffers<cr>
 nnoremap <leader>rg :Grepper<cr>
+
+nnoremap <leader>tb :GutentagsUpdate<cr>
+nnoremap <leader>tu :GutentagsUpdate!<cr>
