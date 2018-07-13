@@ -41,7 +41,7 @@ export SPACESHIP_PROMPT_ORDER=(
   # haskell
   # julia
   # kubecontext
-  node
+  # node
   # package
   # php
   # pyenv
