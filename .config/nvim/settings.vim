@@ -3,7 +3,6 @@ set hidden
 
 " color
 set termguicolors
-silent! colorscheme onedark
 
 " column
 set numberwidth=2
@@ -24,6 +23,9 @@ set expandtab
 set shiftround
 set shiftwidth=4
 set tabstop=4
+
+" leader
+let mapleader = "\<space>"
 
 " matching
 set showmatch
@@ -49,12 +51,12 @@ set noswapfile
 
 " statusline
 set statusline=
-      \\ %{&filetype!=#''?&filetype:'none'}
-      \\ %{&readonly\|\|!&modifiable?&modified?'%*':'%%':&modified?'**':'--'}
-      \\ %{expand('%:~:.')!=#''?expand('%:~:.'):'[No\ Name]'}
-      \%=
-      \%l/%L%1(%)
-      \%p%%%1(%)
+                  \\ %{&filetype!=#''?&filetype:'none'}
+                  \\ %{&readonly\|\|!&modifiable?&modified?'%*':'%%':&modified?'**':'--'}
+                  \\ %{expand('%:~:.')!=#''?expand('%:~:.'):'[No\ Name]'}
+                  \%=
+                  \%l/%L%1(%)
+                  \%p%%%1(%)
 
 " undo
 set undofile

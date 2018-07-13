@@ -101,11 +101,6 @@ command! -nargs=? -complete=dir Vexplore vsplit | silent Dirvish <args>
 let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
 let g:fzf_layout = { 'down': '10' }
 
-" gitgutter
-if executable('rg')
-    let g:gitgutter_grep = 'rg'
-endif
-
 " go
 let g:go_highlight_functions = 1
 let g:go_highlight_operators = 1
@@ -147,6 +142,8 @@ let g:onedark_color_overrides = {
             \ 'special_grey': { 'gui': '#7f848e', 'cterm': '238', 'cterm16': '15' },
             \ 'vertsplit': { 'gui': '#515a6b', 'cterm': '59', 'cterm16': '15' },
             \ }
+
+silent! colorscheme onedark
 
 " polyglot
 let g:jsx_ext_required = 1

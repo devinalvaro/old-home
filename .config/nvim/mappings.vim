@@ -1,30 +1,22 @@
-" normal + visual mappings
+" normal + visual
 noremap + "+
-
 noremap \ :
-
 noremap 0 ^
 noremap ^ 0
 
-" normal mappings
+" normal
 nnoremap Y y$
-
 nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
 
-" insert mappings
+" insert
+imap     <c-x><c-f> <plug>(fzf-complete-path)
 inoremap <c-u> <c-g>u<c-u>
 
-if executable('fzf')
-    imap <c-x><c-f> <plug>(fzf-complete-path)
-endif
-
-" g mappings
-nnoremap gb :Buffers<cr>
+" g
 map      gs <plug>(GrepperOperator)
+nnoremap gb :Buffers<cr>
 
-" leader mappings
-let mapleader = "\<space>"
-
+" leader
 nnoremap <leader>c  :ColorToggle<cr>
 nnoremap <leader>n  :Neoformat<cr>
 nnoremap <leader>s  :StripWhitespace<cr>
