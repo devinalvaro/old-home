@@ -32,8 +32,6 @@ Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
 
 " navigation
-Plug 'airblade/vim-rooter'
-Plug 'ericcurtin/curtineincsw.vim'
 Plug 'justinmk/vim-dirvish'
 
 " quickfix & loclist
@@ -77,7 +75,6 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_set_quickfix = 1
 
 " better whitespace
-let g:better_whitespace_enabled = 1
 let g:better_whitespace_guicolor = '#e06c75'
 
 " colorizer
@@ -103,11 +100,6 @@ command! -nargs=? -complete=dir Vexplore vsplit | silent Dirvish <args>
 " fzf
 let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
 let g:fzf_layout = { 'down': '10' }
-
-command! -bang -nargs=* Rg
-            \ call fzf#vim#grep(
-            \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
-            \   <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%:hidden', '?'), <bang>0)
 
 " gitgutter
 if executable('rg')
@@ -161,9 +153,6 @@ let g:jsx_ext_required = 1
 
 " qf
 let g:qf_auto_open_quickfix = 0
-
-" rooter
-let g:rooter_manual_only = 1
 
 " ultisnips
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'

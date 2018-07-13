@@ -15,12 +15,6 @@ augroup Plugins
     autocmd Filetype c,cpp setlocal commentstring=//%s
     autocmd Filetype sql setlocal commentstring=--%s
 
-    " curtineincsw
-    autocmd Filetype c,cpp command! -bang A call CurtineIncSw()
-
-    " go
-    autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
-
     " onedark
     autocmd ColorScheme * call onedark#extend_highlight("Keyword", { "fg": { "gui": "#c678dd" }})
     autocmd ColorScheme * call onedark#extend_highlight("Operator", { "fg": { "gui": "#e5c07b" } })
