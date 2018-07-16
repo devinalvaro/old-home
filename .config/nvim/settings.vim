@@ -63,7 +63,7 @@ set undofile
 
 " update
 set lazyredraw
-set updatetime=150
+set updatetime=100
 
 " window
 set splitbelow
