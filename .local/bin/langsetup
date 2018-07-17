@@ -10,7 +10,7 @@ install='yay -S --needed --noconfirm --answeredit none'
 $install clang
 
 # go
-$install dep go
+$install go
 nvim +GoInstallBinaries +qall
 
 # javascript
@@ -18,8 +18,8 @@ $install node yarn
 yarn global add javascript-typescript-langserver
 
 # python
-$install python python-pip python-language-server
+$install python python-language-server
 $install --asdeps python-{mccabe,pycodestyle,pydocstyle,pyflakes,rope} yapf
 
 # ruby
-$install ruby rubygems ruby-solargraph
+$install ruby ruby-solargraph
