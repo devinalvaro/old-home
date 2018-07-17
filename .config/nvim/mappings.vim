@@ -22,9 +22,6 @@ nnoremap <leader>n  :Neoformat<cr>
 nnoremap <leader>s  :StripWhitespace<cr>
 nnoremap <leader>u  :UndotreeToggle<cr>
 
-nnoremap <leader>dd :DevDocs<space>
-nnoremap <leader>dc :DevDocsUnderCursor<cr>
-
 nnoremap <leader>fg :GFiles<cr>
 nnoremap <leader>fi :Files<cr>
 nnoremap <leader>fl :Lines<cr>

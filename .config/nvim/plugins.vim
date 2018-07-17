@@ -11,9 +11,6 @@ Plug 'joshdick/onedark.vim'
 " ctags
 Plug 'ludovicchabant/vim-gutentags'
 
-" documentation
-Plug 'rhysd/devdocs.vim'
-
 " fzf
 Plug 'junegunn/fzf.vim'
 
