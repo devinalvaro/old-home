@@ -11,7 +11,7 @@ $install plasma-meta plasma5-applets-redshift-control
 $install --asdeps kde-gtk-config
 
 # kde applications
-$install ark dolphin kdeconnect spectacle
+$install ark dolphin kdeconnect ktorrent okular spectacle
 
 # libraries
 $install libdbusmenu-glib ntfs-3g
