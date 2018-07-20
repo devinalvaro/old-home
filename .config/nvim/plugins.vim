@@ -5,8 +5,8 @@ Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', {' do': 'make' }
 
 " color
+Plug 'arcticicestudio/nord-vim'
 Plug 'chrisbra/colorizer'
-Plug 'joshdick/onedark.vim'
 
 " ctags
 Plug 'ludovicchabant/vim-gutentags'
@@ -72,7 +72,7 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_set_quickfix = 1
 
 " better whitespace
-let g:better_whitespace_guicolor = '#e06c75'
+let g:better_whitespace_guicolor = '#bf616a'
 
 " colorizer
 let g:colorizer_colornames = 0
@@ -99,17 +99,14 @@ let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
 let g:fzf_layout = { 'down': '10' }
 
 " go
+let g:go_highlight_function_calls = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_operators = 1
-let g:go_highlight_types = 1
-let g:go_highlight_variable_assignments = 1
-let g:go_highlight_variable_declarations = 1
 
 " gutentags
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_generate_on_new = 0
 let g:gutentags_generate_on_write = 0
-
 set statusline+=%{gutentags#statusline()}
 
 " go
@@ -135,14 +132,8 @@ let g:LanguageClient_serverCommands = {
             \ }
 
 " onedark
-let g:onedark_color_overrides = {
-            \ 'comment_grey': { 'gui': '#7f848e', 'cterm': '59', 'cterm16': '15' },
-            \ 'gutter_fg_grey': { 'gui': '#515a6b', 'cterm': '238', 'cterm16': '15' },
-            \ 'special_grey': { 'gui': '#7f848e', 'cterm': '238', 'cterm16': '15' },
-            \ 'vertsplit': { 'gui': '#515a6b', 'cterm': '59', 'cterm16': '15' },
-            \ }
-
-silent! colorscheme onedark
+let g:nord_comment_brightness = 16
+silent! colorscheme nord
 
 " polyglot
 let g:jsx_ext_required = 1
