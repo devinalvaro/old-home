@@ -22,4 +22,5 @@ $install python python-language-server
 $install --asdeps python-{mccabe,pycodestyle,pydocstyle,pyflakes,rope} yapf
 
 # ruby
-$install ruby ruby-solargraph
+$install ruby
+gem install solargraph
