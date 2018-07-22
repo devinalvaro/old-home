@@ -69,6 +69,7 @@ call plug#end()
 " ale
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
+let g:ale_set_highlights = 0
 let g:ale_set_quickfix = 1
 
 " better whitespace
@@ -84,6 +85,7 @@ let g:delimitMate_expand_space = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('min_pattern_length', 1)
 
 " dirvish
 let g:dirvish_relative_paths = 1
@@ -124,8 +126,7 @@ let g:grepper = {
 
 " languageclient
 let g:LanguageClient_serverCommands = {
-            \ 'c': [ 'clangd' ],
-            \ 'cpp': [ 'clangd' ],
+            \ 'c': [ 'clangd' ], 'cpp': [ 'clangd' ],
             \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
             \ 'ruby': [ 'solargraph',  'stdio' ],
