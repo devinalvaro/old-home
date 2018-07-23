@@ -7,11 +7,11 @@ export GOPATH=$HOME/.go
 export NVM_DIR=$HOME/.nvm
 export PYTHONUSERBASE=$HOME/.pip
 
-export PATH=$(gem env gempath):$PATH # ruby
-export PATH=$HOME/.go/bin:$PATH      # go
-export PATH=$HOME/.local/bin:$PATH   # user
-export PATH=$HOME/.pip/bin:$PATH     # pip
-export PATH=$HOME/.yarn/bin:$PATH    # yarn
+export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH # ruby
+export PATH=$HOME/.go/bin:$PATH             # go
+export PATH=$HOME/.local/bin:$PATH          # user
+export PATH=$HOME/.pip/bin:$PATH            # pip
+export PATH=$HOME/.yarn/bin:$PATH           # yarn
 
 # fzf
 export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
