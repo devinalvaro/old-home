@@ -6,7 +6,7 @@ noremap ^ 0
 
 " normal
 nnoremap Y y$
-nnoremap <expr> i len(getline('.')) == 0 ? '"_cc' : 'i'
+nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
 
 " insert
 imap     <c-x><c-f> <plug>(fzf-complete-path)
