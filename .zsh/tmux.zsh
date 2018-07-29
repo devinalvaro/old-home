@@ -1,7 +1,6 @@
 # enabled terminals
 terms=(
-    /usr/lib/gnome-terminal/gnome-terminal-server # gnome-terminal
-    "$(which kitty)" "python3 $(which kitty)" # kitty
+    "$(which kitty)" # kitty
 )
 
 # attach/detach
