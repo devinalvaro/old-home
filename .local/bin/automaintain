@@ -28,9 +28,6 @@ zsh -i -c 'antigen update'
 # go
 nvim +GoUpdateBinaries +qall
 
-# ruby
-gem update solargraph
-
 # yarn
 yarn global upgrade
 
