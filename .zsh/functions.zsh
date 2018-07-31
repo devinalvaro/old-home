@@ -23,6 +23,12 @@ function yank() {
     fi
 }
 
+# competitive programming
+function cpprun() {
+    ([ ! -f "a.out" ] || [ "$1.cpp" -nt "a.out" ]) && g++ "$1.cpp"
+    ./a.out
+}
+
 # gitignore.io
 function gi() { curl -L -s https://www.gitignore.io/api/$@; }
 
