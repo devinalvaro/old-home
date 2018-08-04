@@ -17,6 +17,9 @@
 	aa = add --all
 	ap = add --patch
 
+	ch = cherry
+	cp = cherry-pick
+
 	cm = commit
 	ca = commit --amend
 
