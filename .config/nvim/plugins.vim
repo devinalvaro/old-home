@@ -85,7 +85,7 @@ let g:delimitMate_expand_space = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('min_pattern_length', 1)
+silent! call deoplete#custom#option('min_pattern_length', 1)
 
 " dirvish
 let g:dirvish_relative_paths = 1

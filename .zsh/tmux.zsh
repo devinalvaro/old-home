@@ -1,6 +1,6 @@
 # enabled terminals
 terms=(
-    "$(which kitty)" # kitty
+    "$(which kitty 2> /dev/null)" # kitty
 )
 
 # attach/detach
