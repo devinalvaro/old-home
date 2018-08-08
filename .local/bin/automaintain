@@ -27,7 +27,7 @@ zsh -i -c 'antigen update'
 # ----------------
 
 # go
-nvim +GoUpdateBinaries +qall
+[ $(date +%u) -eq 7 ] && nvim +GoUpdateBinaries +qall
 
 # yarn
 yarn global upgrade
