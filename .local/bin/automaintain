@@ -29,6 +29,9 @@ zsh -i -c 'antigen update'
 # go
 [ $(date +%u) -eq 7 ] && nvim +GoUpdateBinaries +qall
 
+# pip
+pip install --user -U 'python-language-server[all]'
+
 # yarn
 yarn global upgrade
 
