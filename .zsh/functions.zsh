@@ -26,7 +26,7 @@ function yank() {
 # competitive programming
 function cpprun() {
     ([ ! -f "a.out" ] || [ "$1.cpp" -nt "a.out" ]) && g++ "$1.cpp"
-    ./a.out
+    [ -f "a.out" ] && ./a.out
 }
 
 # gitignore.io
