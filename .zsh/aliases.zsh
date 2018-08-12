@@ -7,6 +7,7 @@ alias ls='ls --color=auto --group-directories-first'
 alias cg="cd $GOPATH"
 alias d='docker'
 alias dc='docker-compose'
+alias dx='docker-compose exec'
 alias g='git'
 alias py='python'
 alias rb='ruby'
