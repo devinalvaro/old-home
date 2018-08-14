@@ -12,7 +12,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'ludovicchabant/vim-gutentags'
 
 " fzf
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 
 " git
 Plug 'airblade/vim-gitgutter'
