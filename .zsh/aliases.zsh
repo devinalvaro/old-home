@@ -4,10 +4,10 @@ alias less='less --tabs=4'
 alias ls='ls --color=auto --group-directories-first'
 
 # shortener aliases
-alias cg="cd $GOPATH"
+alias c='docker-compose'
+alias cx='docker-compose exec'
 alias d='docker'
-alias dc='docker-compose'
-alias dx='docker-compose exec'
+alias dx='docker exec'
 alias g='git'
 alias py='python'
 alias rb='ruby'
