@@ -37,6 +37,7 @@ Plug 'romainl/vim-qf'
 
 " search
 Plug 'junegunn/vim-slash'
+Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-grepper'
 
 " snippet
@@ -155,6 +156,9 @@ let g:qf_auto_open_quickfix = 0
 " rooter
 let g:rooter_resolve_links = 1
 let g:rooter_use_lcd = 1
+
+" sneak
+let g:sneak#label = 1
 
 " ultisnips
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
