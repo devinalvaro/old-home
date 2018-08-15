@@ -99,7 +99,7 @@ command! -nargs=? -complete=dir Sexplore split | silent Dirvish <args>
 command! -nargs=? -complete=dir Vexplore vsplit | silent Dirvish <args>
 
 " fzf
-let g:fzf_history_dir = $HOME . '/.local/share/nvim/fzf'
+let g:fzf_history_dir = '~/.local/share/nvim/fzf'
 let g:fzf_layout = { 'down': '10' }
 
 " go
