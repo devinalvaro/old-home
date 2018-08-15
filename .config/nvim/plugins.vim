@@ -29,6 +29,7 @@ Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
 
 " navigation
+Plug 'airblade/vim-rooter'
 Plug 'justinmk/vim-dirvish'
 
 " quickfix & loclist
@@ -150,6 +151,10 @@ let g:jsx_ext_required = 1
 
 " qf
 let g:qf_auto_open_quickfix = 0
+
+" rooter
+let g:rooter_resolve_links = 1
+let g:rooter_use_lcd = 1
 
 " ultisnips
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
