@@ -110,7 +110,6 @@ let g:go_term_mode = 'split'
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_generate_on_new = 0
 let g:gutentags_generate_on_write = 0
-set statusline+=%{gutentags#statusline()}
 
 " grepper
 let g:grepper = {
