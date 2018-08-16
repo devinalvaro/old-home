@@ -19,9 +19,6 @@ $install ttf-fira-code noto-fonts-emoji
 # programming utilities
 $install universal-ctags-git
 
-# text user interfaces
-$install htop
-
 # --------------------------------
 
 # tmux
