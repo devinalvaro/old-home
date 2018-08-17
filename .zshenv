@@ -27,7 +27,7 @@ export SPACESHIP_PROMPT_ORDER=(
   # time
   # user
   dir
-  # host
+  host
 
   git
   # hg
