@@ -1,4 +1,8 @@
 # oh-my-zsh
+unalias '...'
+unalias '....'
+unalias '.....'
+unalias '......'
 unalias -- -
 unalias 1
 unalias 2
