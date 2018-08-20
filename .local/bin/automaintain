@@ -2,13 +2,13 @@
 set -v
 
 # variables
-if type apt-get > /dev/null 2>&1; then
+if type apt-get &> /dev/null; then
     autoremove='sudo apt-get -y autoremove'
     upgrade='eval sudo apt-get -y update && sudo apt-get -y upgrade'
-elif type dnf > /dev/null 2>&1; then
+elif type dnf &> /dev/null; then
     autoremove='sudo dnf -y autoremove'
     upgrade='sudo dnf -y upgrade'
-elif type pacman > /dev/null 2>&1; then
+elif type pacman &> /dev/null; then
     autoremove='yay -Rns --noconfirm '"$(yay -Qdtq)"
     upgrade='yay -Syu --needed --noconfirm --answeredit none'
 fi

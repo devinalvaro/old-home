@@ -10,14 +10,11 @@ cd yay && makepkg -si --needed --noconfirm && cd .. && rm -rf yay
 
 # --------------------------------
 
-# command line interfaces
-$install curl fd fzf httpie ripgrep xclip
+# utilities
+$install curl xclip
 
-# monospace fonts
+# fonts
 $install ttf-fira-code noto-fonts-emoji
-
-# programming utilities
-$install universal-ctags-git
 
 # --------------------------------
 

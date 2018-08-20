@@ -13,11 +13,13 @@ export PATH=$HOME/.pip/bin:$PATH   # pip
 export PATH=$HOME/.yarn/bin:$PATH  # yarn
 
 # fzf
-export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
 export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
-
-export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+if [ -x "$(command -v fd)" ]; then
+  export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
+  export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
+fi
 
 # lc
 export LC_COLLATE='C'
