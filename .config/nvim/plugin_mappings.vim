@@ -1,14 +1,5 @@
-" normal + visual
-noremap + "+
-noremap \ :
-
-" normal
-nnoremap Y y$
-nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
-
 " insert
-imap     <c-x><c-f> <plug>(fzf-complete-path)
-inoremap <c-u> <c-g>u<c-u>
+imap <c-x><c-f> <plug>(fzf-complete-path)
 
 " g
 map      gs <plug>(GrepperOperator)

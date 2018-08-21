@@ -1,7 +1,9 @@
-" init
-runtime settings.vim
+" natives
+runtime natives.vim
+runtime native_augroups.vim
+runtime native_mappings.vim
 
-runtime augroups.vim
-runtime mappings.vim
-
+" plugins
 runtime plugins.vim
+runtime plugin_augroups.vim
+runtime plugin_mappings.vim

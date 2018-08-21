@@ -1,10 +1,3 @@
-augroup Settings
-    autocmd!
-
-    " completion
-    autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
-augroup END
-
 augroup Plugins
     autocmd!
 
