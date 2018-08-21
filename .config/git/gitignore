@@ -1,36 +1,31 @@
-# Compiled source #
-###################
-*.com
+# Compiled source
 *.class
+*.com
 *.dll
 *.exe
 *.o
 *.out
 *.so
 
-# Gitignore #
-#############
+# Gitignore
 .gitignore.old
 .gitignore.tmp
 
-# Logs and databases #
-######################
+# Logs and databases
 *.log
 *.sql
 *.sqlite
 
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 .DS_Store?
-._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
+._*
 Thumbs.db
+ehthumbs.db
 
-# Packages #
-############
+# Packages
 *.7z
 *.dmg
 *.gz
@@ -40,14 +35,11 @@ Thumbs.db
 *.tar
 *.zip
 
-# Python #
-##########
+# Python
 .ropeproject
 
-# Tags #
-########
+# Tags
 tags
 
-# VSCode #
-##########
+# VSCode
 .vscode
