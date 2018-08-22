@@ -24,6 +24,9 @@ fi
 # lc
 export LC_COLLATE='C'
 
+# oh-my-zsh
+export DISABLE_AUTO_TITLE=true
+
 # spaceship
 export SPACESHIP_PROMPT_ORDER=(
   # time
