@@ -30,7 +30,7 @@ zsh -i -c 'antigen update'
 [ $(date +%u) -eq 7 ] && nvim +GoUpdateBinaries +qall
 
 # node
-yarn global upgrade
+yarn global add --latest javascript-typescript-langserver
 
 # python
 pip install --user -U 'python-language-server[all]'
