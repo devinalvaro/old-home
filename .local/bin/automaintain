@@ -27,7 +27,7 @@ zsh -i -c 'antigen update'
 # ----------------
 
 # go
-[ $(date +%u) -eq 7 ] && nvim +GoUpdateBinaries +qall
+nvim +GoUpdateBinaries +qall
 
 # node
 yarn global add --latest javascript-typescript-langserver
