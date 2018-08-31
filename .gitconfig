@@ -1,16 +1,16 @@
-[user]
-	email = devin.alvaro@gmail.com
-	name = Devin Alvaro
-
 [core]
 	excludesfile = ~/.config/git/gitignore
-	pager = less --tabs=1,5
+	pager = less --tabs=1,5 -FRX
+
+[credential]
+	helper = cache
 
 [push]
 	default = simple
 
-[credential]
-	helper = cache
+[user]
+	email = devin.alvaro@gmail.com
+	name = Devin Alvaro
 
 [alias]
 	a = add
