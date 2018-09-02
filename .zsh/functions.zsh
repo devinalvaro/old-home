@@ -6,23 +6,6 @@ function ..() {
      done
 }
 
-# clipboard
-function paste() {
-    if type "xclip" > /dev/null 2>&1; then
-        xclip -out -selection clipboard
-    elif type"xsel" > /dev/null 2>&1; then
-        xsel --output --clipboard
-    fi
-}
-
-function yank() {
-    if type "xclip" > /dev/null 2>&1; then
-        xclip -in -selection clipboard
-    elif type"xsel" > /dev/null 2>&1; then
-        xsel --input --clipboard
-    fi
-}
-
 # competitive programming
 function cpprun() {
     ([ ! -f "a.out" ] || [ "$1.cpp" -nt "a.out" ]) && g++ "$1.cpp"
