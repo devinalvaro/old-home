@@ -1,12 +1,9 @@
-# cd
+# ..
 function ..() {
-  for _ in $(seq 1 $1);
-     do
-       cd ..
-     done
+    cd $(printf "%0.s../" $(seq 1 $1 ))
 }
 
-# competitive programming
+# cpprun
 function cpprun() {
     ([ ! -f "a.out" ] || [ "$1.cpp" -nt "a.out" ]) && g++ "$1.cpp"
     bash -c "{ ./a.out; }"
