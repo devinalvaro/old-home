@@ -12,6 +12,19 @@ function cpprun() {
     bash -c "{ ./a.out; }"
 }
 
+# fancy-ctrl-z
+function fancy-ctrl-z () {
+    if [[ $#BUFFER -eq 0 ]]; then
+        BUFFER="fg"
+        zle accept-line
+    else
+        zle push-input
+        zle clear-screen
+    fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
 # gitignore.io
 function gi() { curl -L -s https://www.gitignore.io/api/$@; }
 
