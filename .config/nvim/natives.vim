@@ -29,6 +29,7 @@ let mapleader = "\<space>"
 
 " matching
 set showmatch
+set suffixes-=.h
 
 " message
 set noruler
@@ -46,9 +47,6 @@ set ignorecase
 set inccommand=nosplit
 set smartcase
 
-" swap
-set noswapfile
-
 " statusline
 set statusline=
                   \\ %{&filetype!=#''?&filetype:'none'}
@@ -57,6 +55,9 @@ set statusline=
                   \%=
                   \%l/%L%1(%)
                   \%p%%%1(%)
+
+" swap
+set noswapfile
 
 " undo
 set undofile
