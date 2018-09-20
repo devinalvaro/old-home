@@ -5,6 +5,13 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 map      gs <plug>(GrepperOperator)
 nnoremap gb :Buffers<cr>
 
+" deoplete
+inoremap <silent> <cr> <c-r>=<sid>deoplete_cr()<cr>
+
+function! s:deoplete_cr()
+  return (deoplete#mappings#close_popup() . "\<CR>")
+endfunction
+
 " leader
 nnoremap <leader>c  :ColorToggle<cr>
 nnoremap <leader>n  :Neoformat<cr>
