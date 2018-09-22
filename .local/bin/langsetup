@@ -14,7 +14,7 @@ $install go
 nvim +GoInstallBinaries +qall
 
 # javascript
-$install node yarn
+$install nodejs yarn
 yarn global add javascript-typescript-langserver
 
 # python
