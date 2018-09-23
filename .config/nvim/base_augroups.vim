@@ -1,4 +1,4 @@
-augroup Natives
+augroup Bases
     autocmd!
 
     " completion

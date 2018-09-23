@@ -1,7 +1,7 @@
-" natives
-runtime natives.vim
-runtime native_augroups.vim
-runtime native_mappings.vim
+" bases
+runtime bases.vim
+runtime base_augroups.vim
+runtime base_mappings.vim
 
 " plugins
 runtime plugins.vim
