@@ -22,9 +22,6 @@ function fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-# gitignore.io
-function gitignore.io() { curl -L -s https://www.gitignore.io/api/$@; }
-
 # truecolor
 function truecolor() {
     awk 'BEGIN{
