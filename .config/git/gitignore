@@ -41,5 +41,13 @@ ehthumbs.db
 # Tags
 tags
 
+# Virtualenv
+.env/
+.venv/
+env.bak/
+env/
+venv.bak/
+venv/
+
 # VSCode
 .vscode
