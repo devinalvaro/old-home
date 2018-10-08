@@ -1,16 +1,16 @@
-" insert
-imap <c-x><c-f> <plug>(fzf-complete-path)
+" delimitmate + deoplete
+imap <expr> <cr> <sid>magic_cr()
 
-" g
-map      gs <plug>(GrepperOperator)
+function! s:magic_cr()
+  return delimitMate#WithinEmptyPair() ? "\<plug>delimitMateCR" : deoplete#mappings#close_popup() . "\<cr>"
+endfunction
+
+" fzf
+imap     <c-x><c-f> <plug>(fzf-complete-path)
 nnoremap gb :Buffers<cr>
 
-" deoplete
-inoremap <silent> <cr> <c-r>=<sid>deoplete_cr()<cr>
-
-function! s:deoplete_cr()
-  return (deoplete#mappings#close_popup() . "\<CR>")
-endfunction
+" grepper
+map      gs <plug>(GrepperOperator)
 
 " leader
 nnoremap <leader>c  :ColorToggle<cr>
