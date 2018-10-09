@@ -2,7 +2,7 @@ augroup Plugins
     autocmd!
 
     " ale
-    autocmd Filetype c,cpp let b:ale_enabled = 0
+    autocmd Filetype c,cpp let b:ale_linters = ['clang', 'gcc']
 
     " commentary
     autocmd Filetype c,cpp setlocal commentstring=//%s
