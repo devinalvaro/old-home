@@ -9,7 +9,7 @@ augroup Plugins
     autocmd Filetype sql setlocal commentstring=--%s
 
     " onedark
-    autocmd ColorScheme * call onedark#extend_highlight("Keyword", { "fg": { "gui": "#c678dd" }})
-    autocmd ColorScheme * call onedark#extend_highlight("Operator", { "fg": { "gui": "#e5c07b" } })
-    autocmd ColorScheme * call onedark#extend_highlight("Special", { "fg": { "gui": "#e06c75" } })
+    autocmd ColorScheme * call onedark#extend_highlight('Keyword', { 'fg': { 'gui': '#c678dd' }})
+    autocmd ColorScheme * call onedark#extend_highlight('Operator', { 'fg': { 'gui': '#e5c07b' } })
+    autocmd ColorScheme * call onedark#extend_highlight('Special', { 'fg': { 'gui': '#e06c75' } })
 augroup END
