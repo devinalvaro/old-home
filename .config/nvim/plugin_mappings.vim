@@ -2,7 +2,7 @@
 imap <expr> <cr> <sid>magic_cr()
 
 function! s:magic_cr()
-  return delimitMate#WithinEmptyPair() ? "\<plug>delimitMateCR" : deoplete#mappings#close_popup() . "\<cr>"
+  return delimitMate#WithinEmptyPair() ? "\<plug>delimitMateCR" : (pumvisible() ? "\<c-y>\<cr>" : "\<cr>")
 endfunction
 
 " fzf

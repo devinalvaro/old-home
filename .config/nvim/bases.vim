@@ -9,7 +9,7 @@ set numberwidth=2
 set signcolumn=yes
 
 " completion
-set completeopt=menuone,noinsert,noselect,preview
+set completeopt=menuone,noinsert,noselect
 set pumheight=10
 
 " confirmation

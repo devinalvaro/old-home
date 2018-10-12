@@ -1,8 +1,11 @@
 call plug#begin()
 
 " completion
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-go', {' do': 'make' }
+Plug 'ncm2/ncm2' | Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-go'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-pyclang'
 
 " color
 Plug 'chrisbra/colorizer'
@@ -83,10 +86,6 @@ let g:colorizer_colornames = 0
 let g:delimitMate_balance_matchpairs = 1
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
-silent! call deoplete#custom#option('min_pattern_length', 1)
 
 " dirvish
 let g:dirvish_relative_paths = 1
