@@ -6,6 +6,7 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-go'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-pyclang'
+Plug 'ncm2/ncm2-vim-lsp'
 
 " color
 Plug 'chrisbra/colorizer'
@@ -24,8 +25,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
 Plug 'sheerun/vim-polyglot'
 
-" language server protocol
-Plug 'autozimu/languageclient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+" language server
+Plug 'prabirshrestha/vim-lsp' | Plug 'prabirshrestha/async.vim'
 
 " linting & formatting
 Plug 'sbdchd/neoformat'
@@ -120,12 +121,6 @@ let g:grepper = {
             \ 'quickfix': 0,
             \ 'switch': 0,
             \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ],
-            \ }
-
-" languageclient
-let g:LanguageClient_serverCommands = {
-            \ 'python': [ 'pyls' ],
-            \ 'ruby': [ 'solargraph',  'stdio' ],
             \ }
 
 " onedark
