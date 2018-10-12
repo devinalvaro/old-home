@@ -13,10 +13,6 @@ $install clang
 $install go
 nvim +GoInstallBinaries +qall
 
-# javascript
-$install nodejs yarn
-yarn global add javascript-typescript-langserver
-
 # python
 $install python python-pip
 pip install --user 'python-language-server[all]'

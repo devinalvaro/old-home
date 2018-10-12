@@ -125,7 +125,6 @@ let g:grepper = {
 
 " languageclient
 let g:LanguageClient_serverCommands = {
-            \ 'javascript': [ 'javascript-typescript-stdio' ],
             \ 'python': [ 'pyls' ],
             \ 'ruby': [ 'solargraph',  'stdio' ],
             \ }
