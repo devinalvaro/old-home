@@ -28,6 +28,9 @@ Plug 'sheerun/vim-polyglot'
 " language server
 Plug 'prabirshrestha/vim-lsp' | Plug 'prabirshrestha/async.vim'
 
+" latex
+Plug 'lervag/vimtex'
+
 " linting & formatting
 Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
@@ -133,6 +136,9 @@ let g:onedark_color_overrides = {
             \ }
 
 silent! colorscheme onedark
+
+" polyglot
+let g:polyglot_disabled = ['latex']
 
 " polyglot - go
 let g:go_highlight_function_calls = 1
