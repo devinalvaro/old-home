@@ -28,7 +28,7 @@ augroup Plugins
     endif
 
     " ncm2
-    autocmd BufEnter * call ncm2#enable_for_buffer()
+    autocmd BufEnter * silent! call ncm2#enable_for_buffer()
 
     " onedark
     autocmd ColorScheme * call onedark#extend_highlight('Keyword', { 'fg': { 'gui': '#c678dd' }})
