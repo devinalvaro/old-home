@@ -1,3 +1,3 @@
-source ~/.config/nvim/natives.vim
-source ~/.config/nvim/native_augroups.vim
-source ~/.config/nvim/native_mappings.vim
+source ~/.config/nvim/bases.vim
+source ~/.config/nvim/base_augroups.vim
+source ~/.config/nvim/base_mappings.vim
