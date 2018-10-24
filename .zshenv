@@ -16,8 +16,8 @@ export PATH=$HOME/.yarn/bin:$PATH  # yarn
 export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
 
 if [ -x "$(command -v fd)" ]; then
-  export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
-  export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
+    export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
+    export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
 fi
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
@@ -29,41 +29,41 @@ export DISABLE_AUTO_TITLE=true
 
 # spaceship
 export SPACESHIP_PROMPT_ORDER=(
-  # time
-  # user
-  dir
-  host
+    # time
+    # user
+    dir
+    host
 
-  git
-  # hg
+    git
+    # hg
 
-  # aws
-  # conda
-  # docker
-  # dotnet
-  # elixir
-  # ember
-  golang
-  # haskell
-  # julia
-  # kubecontext
-  # node
-  # package
-  # php
-  # pyenv
-  ruby
-  # rust
-  # swift
-  venv
-  # xcode
+    # aws
+    # conda
+    # docker
+    # dotnet
+    # elixir
+    # ember
+    golang
+    # haskell
+    # julia
+    # kubecontext
+    # node
+    # package
+    # php
+    # pyenv
+    ruby
+    # rust
+    # swift
+    venv
+    # xcode
 
-  exec_time
-  line_sep
-  # battery
-  # vi_mode
-  jobs
-  # exit_code
-  char
+    exec_time
+    line_sep
+    # battery
+    # vi_mode
+    jobs
+    # exit_code
+    char
 )
 export SPACESHIP_PROMPT_PREFIXES_SHOW=false
 
