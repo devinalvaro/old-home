@@ -66,7 +66,7 @@ bind -T copy-mode-vi 'y'   send-keys -X copy-pipe $yank
 bind 'R' source-file ~/.tmux.conf \; display-message 'Sourced .tmux.conf'
 
 # new bindings
-bind 'h' new-window -a -c '~'
+bind 'T' new-window -a -c '~'
 bind 't' new-window -a -c '#{pane_current_path}'
 
 # kill bindings
@@ -85,33 +85,33 @@ bind -r 'K' resize-pane -U 4
 bind -r 'L' resize-pane -R 8
 
 # pane movement bindings
-bind -n 'M-h' select-pane -L
-bind -n 'M-j' select-pane -D
-bind -n 'M-k' select-pane -U
-bind -n 'M-l' select-pane -R
+bind 'h' select-pane -L
+bind 'j' select-pane -D
+bind 'k' select-pane -U
+bind 'l' select-pane -R
 
 # window movement bindings
 bind -r 'p' previous-window
 bind -r 'n' next-window
 
-bind -n 'M-0' last-window
-bind -n 'M-1' select-window -t 1
-bind -n 'M-2' select-window -t 2
-bind -n 'M-3' select-window -t 3
-bind -n 'M-4' select-window -t 4
-bind -n 'M-5' select-window -t 5
-bind -n 'M-6' select-window -t 6
-bind -n 'M-7' select-window -t 7
-bind -n 'M-8' select-window -t 8
-bind -n 'M-9' select-window -t 9
+bind '0' last-window
+bind '1' select-window -t 1
+bind '2' select-window -t 2
+bind '3' select-window -t 3
+bind '4' select-window -t 4
+bind '5' select-window -t 5
+bind '6' select-window -t 6
+bind '7' select-window -t 7
+bind '8' select-window -t 8
+bind '9' select-window -t 9
 
 # window swap bindings
-bind 'M-1' swap-window -t 1
-bind 'M-2' swap-window -t 2
-bind 'M-3' swap-window -t 3
-bind 'M-4' swap-window -t 4
-bind 'M-5' swap-window -t 5
-bind 'M-6' swap-window -t 6
-bind 'M-7' swap-window -t 7
-bind 'M-8' swap-window -t 8
-bind 'M-9' swap-window -t 9
+bind '!' swap-window -t 1
+bind '@' swap-window -t 2
+bind '#' swap-window -t 3
+bind '$' swap-window -t 4
+bind '%' swap-window -t 5
+bind '^' swap-window -t 6
+bind '&' swap-window -t 7
+bind '*' swap-window -t 8
+bind '(' swap-window -t 9
