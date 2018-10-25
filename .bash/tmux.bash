@@ -1,14 +1,8 @@
-# enabled terminals
-terms=(
-    "$(which kitty 2> /dev/null)" # kitty
-)
-
 # config file
-conf=$HOME/.tmux/tmux.conf
+conf=$HOME/.tmux/tmux.conf.remote
 
 # attach/detach
-if which tmux > /dev/null 2>&1 &&
-        [[ ${terms[*]} =~ $(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)) ]]; then
+if which tmux > /dev/null 2>&1; then
     test -z "$TMUX" && (tmux -f $conf attach || tmux -f $conf new-session)
 
     while test -z "$TMUX"; do
