@@ -37,6 +37,9 @@ source "$BASH_IT"/bash_it.sh
 
 # --------------------------------
 
+# env
+[ -f $HOME/.env ] && export $(grep -v '^#' $HOME/.env | xargs -d '\n')
+
 # variables
 [ -f $HOME/.bash/variables.bash ] && source $HOME/.bash/variables.bash
 
