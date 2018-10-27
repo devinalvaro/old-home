@@ -30,7 +30,7 @@ function truecolor() {
 function activate() {
     dir=$1
 
-    venv_dirs=('.env' '.venv' 'env' 'venv' 'ENV' 'env.bak' 'venv.bak')
+    venv_dirs=('.env' '.venv' 'env' 'venv' 'ENV' )
     for venv_dir in ${venv_dirs}; do
         if [ -z $dir ] && [ -d $venv_dir ]; then
             dir=$venv_dir
