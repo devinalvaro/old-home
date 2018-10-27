@@ -26,5 +26,8 @@ antigen apply
 # options
 [ -f $HOME/.zsh/options.zsh ] && source $HOME/.zsh/options.zsh
 
+# sources
+[ -f $HOME/.zsh/sources.zsh ] && source $HOME/.zsh/sources.zsh
+
 # unaliases
 [ -f $HOME/.zsh/unaliases.zsh ] && source $HOME/.zsh/unaliases.zsh

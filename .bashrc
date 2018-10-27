@@ -62,5 +62,8 @@ source "$BASH_IT"/bash_it.sh
 # options
 [ -f $HOME/.bash/options.bash ] && source $HOME/.bash/options.bash
 
+# sources
+[ -f $HOME/.zsh/sources.zsh ] && source $HOME/.zsh/sources.zsh
+
 # unaliases
 [ -f $HOME/.bash/unaliases.bash ] && source $HOME/.bash/unaliases.bash
