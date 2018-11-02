@@ -26,8 +26,7 @@
 	df = diff
 	dc = diff --cached
 
-	st = status
-	ss = status --short
+	st = status --short
 	sa = status --short -uall
 
 	br = branch
