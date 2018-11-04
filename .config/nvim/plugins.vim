@@ -77,7 +77,6 @@ call plug#end()
 " ale
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
-let g:ale_set_highlights = 0
 let g:ale_set_quickfix = 1
 
 " better whitespace
