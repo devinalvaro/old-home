@@ -1,5 +1,5 @@
 # config file
-conf=$HOME/.tmux/tmux.conf.remote
+conf=$HOME/.tmux/tmux.conf.ssh
 
 # attach/detach
 if which tmux > /dev/null 2>&1; then
