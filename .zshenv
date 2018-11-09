@@ -1,5 +1,7 @@
-# editor
-export EDITOR=nvim
+# env
+if [ -f $HOME/.env ]; then
+    export $(grep -v '^#' $HOME/.env | xargs -d '\n')
+fi
 
 # paths
 export ANTIGEN=$HOME/.antigen
@@ -11,6 +13,9 @@ export PATH=$HOME/.go/bin:$PATH    # go
 export PATH=$HOME/.local/bin:$PATH # user
 export PATH=$HOME/.pip/bin:$PATH   # pip
 export PATH=$HOME/.yarn/bin:$PATH  # yarn
+
+# editor
+export EDITOR=nvim
 
 # fzf
 export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
