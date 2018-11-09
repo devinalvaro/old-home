@@ -1,7 +1,9 @@
 call plug#begin()
 
 " completion
-Plug 'ncm2/ncm2' | Plug 'roxma/nvim-yarp'
+if has('python3')
+    Plug 'ncm2/ncm2' | Plug 'roxma/nvim-yarp'
+endif
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-go'
 Plug 'ncm2/ncm2-path'
@@ -47,7 +49,9 @@ Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-grepper'
 
 " snippet
-Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
+if has('python2') || has('python3')
+    Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
+endif
 
 " text editing
 Plug 'chaoren/vim-wordmotion'
@@ -102,7 +106,6 @@ let g:go_term_mode = 'split'
 if !executable('ctags')
     let g:gutentags_enabled = 0
 endif
-
 let g:gutentags_generate_on_empty_buffer = 1
 let g:gutentags_generate_on_new = 0
 let g:gutentags_generate_on_write = 0
