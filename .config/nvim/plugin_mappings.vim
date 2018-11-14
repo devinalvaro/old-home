@@ -33,8 +33,11 @@ nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gw :Gwrite<cr>
 
-nnoremap <leader>rb :Grepper-buffers<cr>
-nnoremap <leader>rg :Grepper<cr>
+if executable('pyls')
+    nnoremap <leader>rg :GrepperRg<space>
+else
+    nnoremap <leader>rg :GrepperGrep<space>
+endif
 
 nnoremap <leader>tb :GutentagsUpdate<cr>
 nnoremap <leader>tu :GutentagsUpdate!<cr>
