@@ -33,7 +33,7 @@ export SHORT_USER=${USER:0:8}
 export SHORT_TERM_LINE=true
 
 # Load Bash It
-source "$BASH_IT"/bash_it.sh
+[ -d $BASH_IT ] && source $BASH_IT/bash_it.sh
 
 # --------------------------------
 
@@ -41,29 +41,29 @@ source "$BASH_IT"/bash_it.sh
 [ -f $HOME/.env ] && export $(grep -v '^#' $HOME/.env | xargs -d '\n')
 
 # variables
-[ -f $HOME/.bash/variables.bash ] && source $HOME/.bash/variables.bash
+source $HOME/.bash/variables.bash
 
 # --------------------------------
 
 # fzf
-[ -f $HOME/.bash/fzf.bash ] && source $HOME/.bash/fzf.bash
+[ -x "$(command -v fzf)" ] && source $HOME/.bash/fzf.bash
 
 # tmux
-[ -f $HOME/.bash/tmux.bash ] && source $HOME/.bash/tmux.bash
+source $HOME/.bash/tmux.bash
 
 # --------------------------------
 
 # aliases
-[ -f $HOME/.bash/aliases.bash ] && source $HOME/.bash/aliases.bash
+source $HOME/.bash/aliases.bash
 
 # functions
-[ -f $HOME/.bash/functions.bash ] && source $HOME/.bash/functions.bash
+source $HOME/.bash/functions.bash
 
 # options
-[ -f $HOME/.bash/options.bash ] && source $HOME/.bash/options.bash
+source $HOME/.bash/options.bash
 
 # sources
-[ -f $HOME/.bash/sources.bash ] && source $HOME/.bash/sources.bash
+source $HOME/.bash/sources.bash
 
 # unaliases
-[ -f $HOME/.bash/unaliases.bash ] && source $HOME/.bash/unaliases.bash
+source $HOME/.bash/unaliases.bash

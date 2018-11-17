@@ -15,7 +15,13 @@ export PATH=$HOME/.pip/bin:$PATH   # pip
 export PATH=$HOME/.yarn/bin:$PATH  # yarn
 
 # editor
-export EDITOR=nvim
+if [ -x "$(command -v nvim)" ]; then
+    export EDITOR=nvim
+elif [ -x "$(command -v vim)" ]; then
+    export EDITOR=vim
+else
+    export EDITOR=vi
+fi
 
 # fzf
 export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
