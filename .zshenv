@@ -15,9 +15,9 @@ export PATH=$HOME/.pip/bin:$PATH   # pip
 export PATH=$HOME/.yarn/bin:$PATH  # yarn
 
 # editor
-if [ -x "$(command -v nvim)" ]; then
+if [ -x $(command -v nvim) ]; then
     export EDITOR=nvim
-elif [ -x "$(command -v vim)" ]; then
+elif [ -x $(command -v vim) ]; then
     export EDITOR=vim
 else
     export EDITOR=vi
@@ -26,7 +26,7 @@ fi
 # fzf
 export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
 
-if [ -x "$(command -v fd)" ]; then
+if [ -x $(command -v fd) ]; then
     export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
     export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
 fi

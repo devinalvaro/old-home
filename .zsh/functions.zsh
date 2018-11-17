@@ -5,7 +5,7 @@ function ..() {
 
 # cpprun
 function cpprun() {
-    ([ ! -f "a.out" ] || [ "$1.cpp" -nt "a.out" ]) && g++ "$1.cpp"
+    ([ ! -f a.out ] || [ $1.cpp -nt a.out ]) && g++ $1.cpp
     bash -c "{ ./a.out; }"
 }
 
@@ -43,8 +43,8 @@ function truecolor() {
 function activate() {
     dir=$1
 
-    venv_dirs=('.env' '.venv' 'env' 'venv' 'ENV' )
-    for venv_dir in ${venv_dirs}; do
+    venv_dirs=( '.env' '.venv' 'env' 'venv' 'ENV' )
+    for venv_dir in ${venv_dirs[@]}; do
         if [ -z $dir ] && [ -d $venv_dir ]; then
             dir=$venv_dir
         fi

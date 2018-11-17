@@ -38,32 +38,32 @@ export SHORT_TERM_LINE=true
 # --------------------------------
 
 # env
-[ -f $HOME/.env ] && export $(grep -v '^#' $HOME/.env | xargs -d '\n')
+[ -f "$HOME/.env" ] && export "$(grep -v '^#' $HOME/.env | xargs -d '\n')"
 
 # variables
-source $HOME/.bash/variables.bash
+source "$HOME/.bash/env.bash"
 
 # --------------------------------
 
 # fzf
-[ -x "$(command -v fzf)" ] && source $HOME/.bash/fzf.bash
+[ -x "$(command -v fzf)" ] && source "$HOME/.bash/fzf.bash"
 
 # tmux
-source $HOME/.bash/tmux.bash
+source "$HOME/.bash/tmux.bash"
 
 # --------------------------------
 
 # aliases
-source $HOME/.bash/aliases.bash
+source "$HOME/.bash/aliases.bash"
 
 # functions
-source $HOME/.bash/functions.bash
+source "$HOME/.bash/functions.bash"
 
 # options
-source $HOME/.bash/options.bash
+source "$HOME/.bash/options.bash"
 
 # sources
-source $HOME/.bash/sources.bash
+source "$HOME/.bash/sources.bash"
 
 # unaliases
-source $HOME/.bash/unaliases.bash
+source "$HOME/.bash/unaliases.bash"

@@ -10,8 +10,8 @@ alias g='git'
 alias k='kubectl'
 alias py='python'
 alias rb='ruby'
-alias vi="$EDITOR"
-alias vim="$EDITOR"
+alias vi=$EDITOR
+alias vim=$EDITOR
 alias xo='xdg-open'
 
 alias paste='xclip -out -selection clipboard'

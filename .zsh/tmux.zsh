@@ -1,6 +1,6 @@
 # enabled terminals
 terms=(
-    "$(which kitty 2> /dev/null)" # kitty
+    $(which kitty 2> /dev/null) # kitty
 )
 
 # config file
