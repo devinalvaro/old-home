@@ -49,7 +49,7 @@ source "$HOME/.bash/env.bash"
 [ -x "$(command -v fzf)" ] && source "$HOME/.bash/fzf.bash"
 
 # tmux
-source "$HOME/.bash/tmux.bash"
+[ -x "$(command -v tmux)" ] && source "$HOME/.bash/tmux.bash"
 
 # --------------------------------
 

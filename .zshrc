@@ -10,7 +10,7 @@ antigen apply
 [ -x $(command -v fzf) ] && source $HOME/.zsh/fzf.zsh
 
 # tmux
-source $HOME/.zsh/tmux.zsh
+[ -x $(command -v tmux) ] && source $HOME/.zsh/tmux.zsh
 
 # --------------------------------
 

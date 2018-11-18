@@ -7,8 +7,7 @@ terms=(
 conf=$HOME/.tmux/tmux.conf
 
 # attach/detach
-if which tmux > /dev/null 2>&1 &&
-        [[ ${terms[*]} =~ $(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)) ]]; then
+if [[ ${terms[*]} =~ $(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)) ]]; then
     test -z "$TMUX" && (tmux -f $conf attach || tmux -f $conf new-session)
 
     while test -z "$TMUX"; do
