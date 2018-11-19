@@ -4,7 +4,7 @@ terms=(
 )
 
 # config file
-conf=$HOME/.tmux/tmux.conf
+conf=$HOME/.tmux/tmux.zsh.conf
 
 # attach/detach
 if [[ ${terms[*]} =~ $(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$)) ]]; then

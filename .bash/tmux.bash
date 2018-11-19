@@ -1,5 +1,5 @@
 # config file
-conf=$HOME/.tmux/tmux.conf.ssh
+conf=$HOME/.tmux/tmux.bash.conf
 
 # attach/detach
 test -z $TMUX && (tmux -f $conf attach || tmux -f $conf new-session)
