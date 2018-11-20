@@ -116,7 +116,6 @@ let g:grepper = {
             \ 'jump': 1,
             \ 'quickfix': 0,
             \ 'switch': 0,
-            \ 'tools': [ 'rg', 'ag', 'ack', 'grep', 'git', 'findstr', 'pt', 'sift' ],
             \ }
 
 " onedark
