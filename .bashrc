@@ -38,7 +38,7 @@ export SHORT_TERM_LINE=true
 # --------------------------------
 
 # env
-[ -f "$HOME/.env" ] && export "$(grep -v '^#' $HOME/.env | xargs -d '\n')"
+[ -f "$HOME/.env" ] && export $(grep -v '^#' $HOME/.env | xargs -d '\n')
 
 # variables
 source "$HOME/.bash/env.bash"
