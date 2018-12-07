@@ -7,10 +7,10 @@ antigen theme denysdovhan/spaceship-prompt spaceship
 antigen apply
 
 # fzf
-[ -x $(command -v fzf) ] && source $HOME/.zsh/fzf.zsh
+[ -x "$(command -v fzf)" ] && source $HOME/.zsh/fzf.zsh
 
 # tmux
-[ -x $(command -v tmux) ] && source $HOME/.zsh/tmux.zsh
+[ -x "$(command -v tmux)" ] && source $HOME/.zsh/tmux.zsh
 
 # --------------------------------
 

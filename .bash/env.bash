@@ -11,6 +11,7 @@ fi
 export GOPATH=$HOME/.go
 export PYTHONUSERBASE=$HOME/.pip
 
+export PATH=$HOME/.fzf/bin:$PATH   # fzf
 export PATH=$HOME/.gem/bin:$PATH   # ruby
 export PATH=$HOME/.go/bin:$PATH    # go
 export PATH=$HOME/.local/bin:$PATH # user
