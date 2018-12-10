@@ -101,6 +101,7 @@ let g:fzf_layout = { 'down': '10' }
 " go
 let g:go_fmt_command = 'goimports'
 let g:go_term_mode = 'split'
+let g:go_version_warning = 0
 
 " gutentags
 if !executable('ctags')
