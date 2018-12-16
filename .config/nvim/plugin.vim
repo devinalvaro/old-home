@@ -143,6 +143,9 @@ highlight default link goFunctionCall Constant
 " polyglot - jsx
 let g:jsx_ext_required = 1
 
+" qf
+let g:qf_auto_open_quickfix = 0
+
 " rooter
 let g:rooter_manual_only = 1
 let g:rooter_resolve_links = 1
