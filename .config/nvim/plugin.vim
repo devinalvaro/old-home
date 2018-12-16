@@ -7,7 +7,6 @@ endif
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-go'
 Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-pyclang'
 Plug 'ncm2/ncm2-vim-lsp'
 
 " color

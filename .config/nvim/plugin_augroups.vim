@@ -10,6 +10,14 @@ augroup Plugins
     autocmd Filetype sql setlocal commentstring=--%s
 
     " lsp
+    if executable('clangd')
+        au User lsp_setup call lsp#register_server({
+                    \ 'name': 'clangd',
+                    \ 'cmd': {server_info->['clangd']},
+                    \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
+                    \ })
+    endif
+
     if executable('pyls')
         au User lsp_setup call lsp#register_server({
                     \ 'name': 'pyls',
