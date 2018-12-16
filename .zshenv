@@ -1,6 +1,6 @@
 # env
 if [ -f $HOME/.env ]; then
-    export $(grep -v '^#' $HOME/.env | xargs -d '\n')
+    source $HOME/.env
 fi
 
 # paths
