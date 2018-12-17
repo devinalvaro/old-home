@@ -2,21 +2,21 @@
 set -v
 
 # variables
-install='yay -S --needed --noconfirm --answeredit none'
+install='sudo apt install -y'
 
 # --------------------------------
 
 # clang
-$install clang
+$install clang clang-tools
 
 # go
-$install go
+$install golang
 nvim +GoInstallBinaries +qall
 
 # python
-$install python python-pip
-pip install --user 'python-language-server[all]'
+$install python python3 python-pip python3-pip
+pip3 install --user 'python-language-server[all]'
 
 # ruby
-$install ruby
+$install ruby-full gem
 gem install solargraph

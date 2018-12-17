@@ -2,11 +2,7 @@
 set -v
 
 # variables
-install='yay -S --needed --noconfirm --answeredit none'
-
-# yay
-git clone https://aur.archlinux.org/yay.git
-cd yay && makepkg -si --needed --noconfirm && cd .. && rm -rf yay
+install='sudo apt install -y'
 
 # --------------------------------
 
@@ -14,7 +10,7 @@ cd yay && makepkg -si --needed --noconfirm && cd .. && rm -rf yay
 $install curl xclip
 
 # fonts
-$install ttf-fira-code noto-fonts-emoji
+$install fonts-firacode
 
 # --------------------------------
 
@@ -23,7 +19,6 @@ $install tmux
 
 # vim
 $install neovim
-$install --asdeps python-neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

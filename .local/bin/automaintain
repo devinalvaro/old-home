@@ -2,16 +2,8 @@
 set -v
 
 # variables
-if type apt-get &> /dev/null; then
-    autoremove='sudo apt-get -y autoremove'
-    upgrade='eval sudo apt-get -y update && sudo apt-get -y upgrade'
-elif type dnf &> /dev/null; then
-    autoremove='sudo dnf -y autoremove'
-    upgrade='sudo dnf -y upgrade'
-elif type pacman &> /dev/null; then
-    autoremove='yay -Rns --noconfirm '"$(yay -Qdtq)"
-    upgrade='yay -Syu --needed --noconfirm --answeredit none'
-fi
+autoremove='sudo apt-get -y autoremove'
+upgrade='eval sudo apt-get -y update && sudo apt-get -y upgrade'
 
 # --------------------------------
 
@@ -28,9 +20,6 @@ zsh -i -c 'antigen update'
 
 # go
 nvim +GoUpdateBinaries +qall
-
-# node
-yarn global add --latest javascript-typescript-langserver
 
 # python
 pip install --user -U 'python-language-server[all]'
