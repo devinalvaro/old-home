@@ -1,9 +1,7 @@
 call plug#begin()
 
 " completion
-if has('python3')
-    Plug 'ncm2/ncm2' | Plug 'roxma/nvim-yarp'
-endif
+Plug 'ncm2/ncm2' | Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-go'
 Plug 'ncm2/ncm2-path'
@@ -48,9 +46,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-grepper'
 
 " snippet
-if has('python2') || has('python3')
-    Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
-endif
+Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 
 " text editing
 Plug 'chaoren/vim-wordmotion'
@@ -78,6 +74,7 @@ Plug 'mbbill/undotree'
 call plug#end()
 
 " ale
+let g:ale_echo_msg_format = '%linter%: %s'
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_set_quickfix = 1

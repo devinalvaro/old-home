@@ -3,6 +3,7 @@ augroup Plugins
 
     " ale
     autocmd Filetype c,cpp let b:ale_linters = ['clang', 'gcc']
+    autocmd Filetype python let b:ale_linters = ['pycodestyle', 'pydocstyle', 'pyflakes']
     autocmd Filetype tex let b:ale_enabled = 0
 
     " commentary
