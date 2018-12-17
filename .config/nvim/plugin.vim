@@ -158,6 +158,9 @@ let g:sleuth_automatic = 0
 " sneak
 let g:sneak#label = 1
 
+" tex
+let g:vimtex_quickfix_mode = 0
+
 " ultisnips
 let g:UltiSnipsJumpBackwardTrigger = '<a-b>'
 let g:UltiSnipsJumpForwardTrigger = '<a-f>'
