@@ -147,6 +147,9 @@ let g:jsx_ext_required = 1
 " qf
 let g:qf_auto_open_quickfix = 0
 
+" vimtex
+let g:vimtex_compiler_progname = 'nvr'
+
 " rooter
 let g:rooter_manual_only = 1
 let g:rooter_resolve_links = 1
