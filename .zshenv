@@ -1,13 +1,3 @@
-# env
-if [ -f $HOME/.env ]; then
-    source $HOME/.env
-fi
-
-# virtualenv
-if [[ -n $VIRTUAL_ENV && -e ${VIRTUAL_ENV}/bin/activate ]]; then
-    source ${VIRTUAL_ENV}/bin/activate
-fi
-
 # paths
 export ANTIGEN=$HOME/.antigen
 export GOPATH=$HOME/.go

@@ -14,6 +14,13 @@ antigen apply
 
 # --------------------------------
 
+# env
+if [ -f $HOME/.env ]; then
+    source $HOME/.env
+fi
+
+# --------------------------------
+
 # aliases
 source $HOME/.zsh/aliases.zsh
 
