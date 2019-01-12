@@ -1,5 +1,5 @@
 # antigen
-[ -d $ANTIGEN ] && source $ANTIGEN/antigen.zsh
+[ -d "$ANTIGEN" ] && source "$ANTIGEN/antigen.zsh"
 
 antigen use oh-my-zsh
 antigen bundle tarruda/zsh-autosuggestions
@@ -7,34 +7,34 @@ antigen theme denysdovhan/spaceship-prompt spaceship
 antigen apply
 
 # fzf
-[ -x "$(command -v fzf)" ] && source $HOME/.zsh/fzf.zsh
+[ -x "$(command -v fzf)" ] && source "$HOME/.zsh/fzf.zsh"
 
 # tmux
-[ -x "$(command -v tmux)" ] && source $HOME/.zsh/tmux.zsh
+[ -x "$(command -v tmux)" ] && source "$HOME/.zsh/tmux.zsh"
 
 # --------------------------------
 
 # env
-if [ -f $HOME/.env ]; then
-    source $HOME/.env
+if [ -f "$HOME/.env" ]; then
+    source "$HOME/.env"
 fi
 
 # --------------------------------
 
 # aliases
-source $HOME/.zsh/aliases.zsh
+source "$HOME/.zsh/aliases.zsh"
 
 # bindings
-source $HOME/.zsh/bindings.zsh
+source "$HOME/.zsh/bindings.zsh"
 
 # functions
-source $HOME/.zsh/functions.zsh
+source "$HOME/.zsh/functions.zsh"
 
 # options
-source $HOME/.zsh/options.zsh
+source "$HOME/.zsh/options.zsh"
 
 # sources
-source $HOME/.zsh/sources.zsh
+source "$HOME/.zsh/sources.zsh"
 
 # unaliases
-source $HOME/.zsh/unaliases.zsh
+source "$HOME/.zsh/unaliases.zsh"

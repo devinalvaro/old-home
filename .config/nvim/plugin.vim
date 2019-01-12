@@ -15,7 +15,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'ludovicchabant/vim-gutentags'
 
 " fzf
-Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf', { 'dir': $FZF, 'do': './install --bin' }
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -91,7 +91,7 @@ let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
 " fzf
-let g:fzf_history_dir = '~/.local/share/nvim/fzf'
+let g:fzf_history_dir = $FZF_HISTORY_DIR
 let g:fzf_layout = { 'down': '10' }
 
 " go

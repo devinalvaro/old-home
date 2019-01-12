@@ -8,6 +8,7 @@ else
 fi
 
 # paths
+export FZF="$HOME/.fzf"
 export GOPATH=$HOME/.go
 export PYTHONUSERBASE=$HOME/.pip
 
@@ -29,3 +30,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # lc
 export LC_COLLATE='C'
+
+# nvim
+export FZF_HISTORY_DIR="$HOME/.local/share/nvim/fzf"
+export PYTHON3_HOST_PROG="$HOME/.virtualenvs/neovim-python3/bin/python"
+export PYTHON_HOST_PROG="$HOME/.virtualenvs/neovim-python2/bin/python"

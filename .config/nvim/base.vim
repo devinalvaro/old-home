@@ -38,8 +38,8 @@ set noshowmode
 set shortmess+=cF
 
 " python
-let g:python_host_prog = $HOME . '/.virtualenvs/neovim-python2/bin/python'
-let g:python3_host_prog = $HOME . '/.virtualenvs/neovim-python3/bin/python'
+let g:python_host_prog = $PYTHON_HOST_PROG
+let g:python3_host_prog = $PYTHON3_HOST_PROG
 
 " scroll
 set scrolloff=1
