@@ -152,9 +152,6 @@ let g:rooter_manual_only = 1
 let g:rooter_resolve_links = 1
 let g:rooter_use_lcd = 1
 
-" sleuth
-let g:sleuth_automatic = 0
-
 " sneak
 let g:sneak#label = 1
 
