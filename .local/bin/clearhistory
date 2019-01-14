@@ -8,6 +8,12 @@ function clearhistory() {
 # less
 clearhistory ~/.lesshst
 
+# neovim
+clearhistory ~/.config/nvim/.netrwhist
+clearhistory ~/.local/share/nvim/fzf
+clearhistory ~/.local/share/nvim/shada/main.shada
+clearhistory ~/.local/share/nvim/undo
+
 # node
 clearhistory ~/.node_repl_history
 
@@ -25,8 +31,5 @@ clearhistory ~/.pry_history
 clearhistory ~/.bash_history
 clearhistory ~/.zsh_history
 
-# neovim
-clearhistory ~/.config/nvim/.netrwhist
-clearhistory ~/.local/share/nvim/fzf
-clearhistory ~/.local/share/nvim/shada/main.shada
-clearhistory ~/.local/share/nvim/undo
+# tig
+clearhistory ~/.tig_history
