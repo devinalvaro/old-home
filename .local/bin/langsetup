@@ -13,6 +13,10 @@ $install clang clang-tools
 $install golang
 nvim +GoInstallBinaries +qall
 
+# javascript
+$install nodejs yarn
+yarn global add flow-bin
+
 # python
 $install python python3 python-pip python3-pip
 pip3 install --user 'python-language-server[all]'

@@ -19,6 +19,15 @@ augroup Plugins
                     \ })
     endif
 
+    if executable('flow')
+        au User lsp_setup call lsp#register_server({
+                    \ 'name': 'flow',
+                    \ 'cmd': {server_info->['flow', 'lsp']},
+                    \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), '.flowconfig'))},
+                    \ 'whitelist': ['javascript', 'javascript.jsx'],
+                    \ })
+    endif
+
     if executable('pyls')
         au User lsp_setup call lsp#register_server({
                     \ 'name': 'pyls',
