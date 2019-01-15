@@ -8,6 +8,7 @@ alias c='docker-compose'
 alias d='docker'
 alias g='git'
 alias k='kubectl'
+alias pe='pipenv'
 alias py='python'
 alias rb='ruby'
 alias vi=$EDITOR
