@@ -31,5 +31,8 @@ clearhistory ~/.pry_history
 clearhistory ~/.bash_history
 clearhistory ~/.zsh_history
 
+# sqlite
+clearhistory ~/.sqlite_history
+
 # tig
 clearhistory ~/.tig_history
