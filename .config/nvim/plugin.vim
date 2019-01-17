@@ -118,7 +118,6 @@ let g:grepper = {
 
 " onedark
 let g:onedark_color_overrides = {
-            \ 'black': { 'gui': '#202020', 'cterm': '235', 'cterm16': '0' },
             \ 'comment_grey': { 'gui': '#7f848e', 'cterm': '59', 'cterm16': '15' },
             \ 'gutter_fg_grey': { 'gui': '#515a6b', 'cterm': '238', 'cterm16': '15' },
             \ 'special_grey': { 'gui': '#7f848e', 'cterm': '238', 'cterm16': '15' },
