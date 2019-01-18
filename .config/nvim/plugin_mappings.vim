@@ -33,7 +33,7 @@ nnoremap <leader>gr :Gread<cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gw :Gwrite<cr>
 
-if executable('pyls')
+if executable('rg')
     nnoremap <leader>rg :GrepperRg<space>
 else
     nnoremap <leader>rg :GrepperGrep<space>
