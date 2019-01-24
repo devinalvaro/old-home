@@ -23,6 +23,5 @@ unalias la
 unalias ll
 unalias lsa
 unalias md
-unalias please
 unalias rd
 unalias which-command
