@@ -16,17 +16,6 @@ nvim +PlugUpgrade +qall && nvim +PlugUpdate +qall
 # zsh
 zsh -i -c 'antigen update'
 
-# ----------------
-
-# go
-nvim +GoUpdateBinaries +qall
-
-# python
-pip install --user -U 'python-language-server[all]'
-
-# ruby
-gem update solargraph
-
 # --------------------------------
 
 # remove orphan packages

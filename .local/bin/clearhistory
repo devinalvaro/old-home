@@ -10,7 +10,6 @@ clearhistory ~/.lesshst
 
 # neovim
 clearhistory ~/.config/nvim/.netrwhist
-clearhistory ~/.local/share/nvim/fzf
 clearhistory ~/.local/share/nvim/shada/main.shada
 clearhistory ~/.local/share/nvim/undo
 

@@ -32,11 +32,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # lc
 export LC_COLLATE='C'
 
-# nvim
-export FZF_HISTORY_DIR="$HOME/.local/share/nvim/fzf"
-export PYTHON3_HOST_PROG="$HOME/.virtualenvs/neovim-python3/bin/python"
-export PYTHON_HOST_PROG="$HOME/.virtualenvs/neovim-python2/bin/python"
-
 # oh-my-zsh
 export DISABLE_AUTO_TITLE=true
 

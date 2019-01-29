@@ -1,10 +1,3 @@
-" delimitmate + deoplete
-imap <expr> <cr> <sid>magic_cr()
-
-function! s:magic_cr()
-    return delimitMate#WithinEmptyPair() ? "\<plug>delimitMateCR" : (pumvisible() ? "\<c-y>\<cr>" : "\<cr>")
-endfunction
-
 " fzf
 imap     <c-x><c-f> <plug>(fzf-complete-path)
 nnoremap gb :Buffers<cr>
@@ -13,8 +6,6 @@ nnoremap gb :Buffers<cr>
 map      gs <plug>(GrepperOperator)
 
 " leader
-nnoremap <leader>c  :ColorToggle<cr>
-nnoremap <leader>n  :Neoformat<cr>
 nnoremap <leader>s  :StripWhitespace<cr>
 nnoremap <leader>u  :UndotreeToggle<cr>
 
@@ -38,6 +29,3 @@ if executable('rg')
 else
     nnoremap <leader>rg :GrepperGrep<space>
 endif
-
-nnoremap <leader>tb :GutentagsUpdate<cr>
-nnoremap <leader>tu :GutentagsUpdate!<cr>

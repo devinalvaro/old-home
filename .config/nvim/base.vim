@@ -37,10 +37,6 @@ set noshowcmd
 set noshowmode
 set shortmess+=cF
 
-" python
-let g:python_host_prog = $PYTHON_HOST_PROG
-let g:python3_host_prog = $PYTHON3_HOST_PROG
-
 " scroll
 set scrolloff=1
 set sidescrolloff=5
