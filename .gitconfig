@@ -13,7 +13,7 @@
 	name = Devin Alvaro
 
 [alias]
-	a = add
+	a  = add
 	aa = add --all
 	ap = add --patch
 
@@ -37,12 +37,13 @@
 	lg = log
 	mr = merge
 	mv = mv
-	p = push
+	p  = push
 	pl = pull
 	rb = rebase
 	re = remote
 	rf = reflog
 	rm = rm
 	rs = reset
+	rt = rev-parse --show-toplevel
 	rv = revert
 	sh = stash
