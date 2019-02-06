@@ -12,6 +12,11 @@ set signcolumn=yes
 set completeopt=menuone,noinsert,noselect
 set pumheight=10
 
+augroup Completions
+    autocmd!
+    autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
+augroup END
+
 " confirmation
 set confirm
 

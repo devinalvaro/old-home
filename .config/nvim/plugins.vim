@@ -14,7 +14,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-slash'
 Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-grepper'
-Plug 'romainl/vim-qf'
 
 " text editing
 Plug 'ntpeters/vim-better-whitespace'
@@ -26,7 +25,6 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
@@ -41,6 +39,13 @@ call plug#end()
 
 " better whitespace
 let g:better_whitespace_guicolor = '#e06c75'
+
+" commentary
+augroup Commentary
+    autocmd!
+    autocmd Filetype c,cpp setlocal commentstring=//%s
+    autocmd Filetype sql setlocal commentstring=--%s
+augroup END
 
 " delimitmate
 let g:delimitMate_balance_matchpairs = 1
@@ -71,6 +76,13 @@ let g:onedark_color_overrides = {
             \ 'vertsplit': { 'gui': '#515a6b', 'cterm': '59', 'cterm16': '15' },
             \ }
 
+augroup OneDark
+    autocmd!
+    autocmd ColorScheme * call onedark#extend_highlight('Keyword', { 'fg': { 'gui': '#c678dd' }})
+    autocmd ColorScheme * call onedark#extend_highlight('Operator', { 'fg': { 'gui': '#e5c07b' } })
+    autocmd ColorScheme * call onedark#extend_highlight('Special', { 'fg': { 'gui': '#e06c75' } })
+augroup END
+
 silent! colorscheme onedark
 
 " polyglot - go
@@ -80,9 +92,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_types = 1
 
 highlight default link goFunctionCall Constant
-
-" qf
-let g:qf_auto_open_quickfix = 0
 
 " sneak
 let g:sneak#label = 1
