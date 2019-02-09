@@ -35,3 +35,6 @@ clearhistory ~/.sqlite_history
 
 # tig
 clearhistory ~/.tig_history
+
+# vscode
+find ~/.config/Code/User/workspaceStorage -name 'state.vscdb*' -exec rm {} \;
