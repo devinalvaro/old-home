@@ -4,29 +4,22 @@ call plug#begin()
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
-" fzf
-Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf', { 'dir': $FZF, 'do': './install --bin' }
-
 " git
 Plug 'airblade/vim-gitgutter'
 
 " search
-Plug 'junegunn/vim-slash'
 Plug 'justinmk/vim-sneak'
-Plug 'mhinz/vim-grepper'
 
 " text editing
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
-Plug 'wellle/targets.vim'
 
 " tpope
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -59,14 +52,6 @@ let g:fzf_layout = { 'down': '10' }
 let g:go_fmt_command = 'goimports'
 let g:go_term_mode = 'split'
 let g:go_version_warning = 0
-
-" grepper
-let g:grepper = {
-            \ 'dir': 'filecwd',
-            \ 'jump': 1,
-            \ 'quickfix': 0,
-            \ 'switch': 0,
-            \ }
 
 " onedark
 let g:onedark_color_overrides = {
