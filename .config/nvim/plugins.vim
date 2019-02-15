@@ -14,6 +14,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
+Plug 'wellle/targets.vim'
 
 " tpope
 Plug 'tpope/vim-abolish'
