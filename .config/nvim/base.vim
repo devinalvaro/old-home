@@ -9,8 +9,8 @@ set numberwidth=2
 set signcolumn=yes
 
 " completion
-set completeopt=menuone,noinsert,noselect
-set pumheight=10
+set completeopt=menuone,preview,noinsert,noselect
+set pumheight=8
 
 augroup Completions
     autocmd!
@@ -42,10 +42,6 @@ set noshowcmd
 set noshowmode
 set shortmess+=cF
 
-" scroll
-set scrolloff=1
-set sidescrolloff=5
-
 " search
 set gdefault
 set ignorecase
@@ -66,10 +62,6 @@ set noswapfile
 
 " undo
 set undofile
-
-" update
-set lazyredraw
-set updatetime=100
 
 " window
 set splitbelow
