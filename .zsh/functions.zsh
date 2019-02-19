@@ -3,14 +3,8 @@ function ..() {
     cd $(printf "%0.s../" $(seq 1 $1 ))
 }
 
-# cpprun
-function cpprun() {
-    ([ ! -f a.out ] || [ $1.cpp -nt a.out ]) && g++ $1.cpp
-    bash -c "{ ./a.out; }"
-}
-
-# fancy-ctrl-z
-function fancy-ctrl-z () {
+# ctrl-z
+function ctrl-z () {
     if [[ $#BUFFER -eq 0 ]]; then
         BUFFER="fg"
         zle accept-line
@@ -19,8 +13,14 @@ function fancy-ctrl-z () {
         zle clear-screen
     fi
 }
-zle -N fancy-ctrl-z
-bindkey '^Z' fancy-ctrl-z
+zle -N ctrl-z
+bindkey '^Z' ctrl-z
+
+# cpprun
+function cpprun() {
+    ([ ! -f a.out ] || [ $1.cpp -nt a.out ]) && g++ $1.cpp
+    bash -c "{ ./a.out; }"
+}
 
 # truecolor
 function truecolor() {
