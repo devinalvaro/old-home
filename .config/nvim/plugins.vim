@@ -74,14 +74,6 @@ augroup END
 
 silent! colorscheme onedark
 
-" polyglot - go
-let g:go_highlight_function_calls = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_types = 1
-
-highlight default link goFunctionCall Constant
-
 " sneak
 let g:sneak#label = 1
 
