@@ -1,5 +1,6 @@
 " normal + visual
 noremap + "+
+noremap <cr> :
 
 " normal
 nnoremap Y y$

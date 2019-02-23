@@ -49,14 +49,6 @@ let g:delimitMate_balance_matchpairs = 1
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
-" fzf
-let g:fzf_layout = { 'down': '10' }
-
-" go
-let g:go_fmt_command = 'goimports'
-let g:go_term_mode = 'split'
-let g:go_version_warning = 0
-
 " onedark
 let g:onedark_color_overrides = {
             \ 'comment_grey': { 'gui': '#7f848e', 'cterm': '59', 'cterm16': '15' },
