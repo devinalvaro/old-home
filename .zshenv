@@ -9,7 +9,6 @@ fi
 
 # paths
 export ANTIGEN="$HOME/.antigen"
-export FZF="$HOME/.fzf"
 export GOPATH="$HOME/.go"
 export PYTHONUSERBASE="$HOME/.pip"
 
