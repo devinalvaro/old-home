@@ -32,6 +32,16 @@ set tabstop=4
 " leader
 let mapleader = "\<space>"
 
+" mappings: normal + visual
+noremap + "+
+noremap <cr> :
+
+" mappings: normal
+nnoremap Y y$
+nnoremap ga <c-^>
+nnoremap gb :buffers<cr>:buffer<space>
+nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
+
 " matching
 set showmatch
 set suffixes-=.h
