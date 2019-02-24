@@ -38,6 +38,9 @@ export NVIM_FZF_HISTORY_DIR="$HOME/.local/share/nvim/fzf"
 # oh-my-zsh
 export DISABLE_AUTO_TITLE=true
 
+# zsh-autosuggestions
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=15'
+
 # spaceship
 export SPACESHIP_PROMPT_ORDER=(
     # time
