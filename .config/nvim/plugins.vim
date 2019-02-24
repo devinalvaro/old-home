@@ -1,3 +1,5 @@
+" ---- plugins ---- "
+
 call plug#begin()
 
 " editing
@@ -38,10 +40,15 @@ Plug 'mbbill/undotree'
 
 call plug#end()
 
-runtime plugins/better_whitespace.vim
-runtime plugins/coc.vim
-runtime plugins/commentary.vim
-runtime plugins/delimitemate.vim
-runtime plugins/onedark.vim
-runtime plugins/undotree.vim
-runtime plugins/vsearch.vim
+" ---- components ---- "
+
+runtime components/better_whitespace.vim
+runtime components/coc.vim
+runtime components/commentary.vim
+runtime components/delimitemate.vim
+runtime components/fzf.vim
+runtime components/onedark.vim
+runtime components/sneak.vim
+runtime components/undotree.vim
+runtime components/vinegar.vim
+runtime components/vsearch.vim

@@ -1,3 +1,5 @@
+" ---- options ---- "
+
 " buffer
 set hidden
 
@@ -11,11 +13,6 @@ set signcolumn=yes
 " completion
 set completeopt=menuone,preview,noinsert,noselect
 set pumheight=8
-
-augroup Completions
-    autocmd!
-    autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
-augroup END
 
 " confirmation
 set confirm
@@ -31,16 +28,6 @@ set tabstop=4
 
 " leader
 let mapleader = "\<space>"
-
-" mappings: normal + visual
-noremap + "+
-noremap <cr> :
-
-" mappings: normal
-nnoremap Y y$
-nnoremap ga <c-^>
-nnoremap gb :buffers<cr>:buffer<space>
-nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
 
 " matching
 set showmatch
@@ -81,3 +68,21 @@ set splitright
 set breakindent
 set linebreak
 let &showbreak = '↳ '
+
+" ---- autocmds ---- "
+
+augroup Completions
+    autocmd!
+    autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
+augroup END
+
+" ---- mappings ---- "
+
+" normal + visual
+noremap + "+
+noremap <cr> :
+
+" normal
+nnoremap Y y$
+nnoremap ga <c-^>
+nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
