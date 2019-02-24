@@ -32,6 +32,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # lc
 export LC_COLLATE='C'
 
+# nvim
+export NVIM_FZF_HISTORY_DIR="$HOME/.local/share/nvim/fzf"
+
 # oh-my-zsh
 export DISABLE_AUTO_TITLE=true
 

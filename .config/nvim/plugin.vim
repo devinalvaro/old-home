@@ -1,6 +1,7 @@
 call plug#begin()
 
 " editing
+Plug 'justinmk/vim-sneak'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
@@ -13,7 +14,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
 " search
-Plug 'justinmk/vim-sneak'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 
 " highligting
 Plug 'joshdick/onedark.vim'

@@ -12,6 +12,7 @@ clearhistory ~/.lesshst
 clearhistory ~/.config/nvim/.netrwhist
 clearhistory ~/.local/share/nvim/shada/main.shada
 clearhistory ~/.local/share/nvim/undo
+clearhistory $NVIM_FZF_HISTORY_DIR
 
 # node
 clearhistory ~/.node_repl_history
