@@ -9,6 +9,9 @@ Plug 'wellle/targets.vim'
 " git
 Plug 'airblade/vim-gitgutter'
 
+" language
+Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+
 " search
 Plug 'justinmk/vim-sneak'
 
