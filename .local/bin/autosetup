@@ -17,7 +17,7 @@ $install fonts-firacode
 # tmux
 $install tmux
 
-# vim
+# nvim
 $install neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \

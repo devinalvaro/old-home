@@ -8,7 +8,7 @@ function clearhistory() {
 # less
 clearhistory ~/.lesshst
 
-# neovim
+# nvim
 clearhistory ~/.config/nvim/.netrwhist
 clearhistory ~/.local/share/nvim/shada/main.shada
 clearhistory ~/.local/share/nvim/undo
