@@ -23,6 +23,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
+" term
+Plug 'kassio/neoterm'
+
 " tpope
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -51,12 +54,12 @@ runtime components/coc.vim
 runtime components/commentary.vim
 runtime components/delimitemate.vim
 runtime components/fzf.vim
-runtime components/neoterm.vim
 runtime components/onedark.vim
 runtime components/sneak.vim
 runtime components/undotree.vim
 runtime components/vinegar.vim
 runtime components/which_key.vim
+runtime components/neoterm.vim
 
 " non-plugins
 runtime components/vsearch.vim
