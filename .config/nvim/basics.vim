@@ -26,9 +26,6 @@ set shiftround
 set shiftwidth=4
 set tabstop=4
 
-" leader
-let mapleader = "\<space>"
-
 " matching
 set showmatch
 set suffixes-=.h
@@ -57,6 +54,10 @@ set statusline=
 " swap
 set noswapfile
 
+" time
+set updatetime=100
+set timeoutlen=500
+
 " undo
 set undofile
 
@@ -77,6 +78,9 @@ augroup Completions
 augroup END
 
 " ---- mappings ---- "
+
+" leader
+let mapleader = "\<space>"
 
 " normal + visual
 noremap + "+

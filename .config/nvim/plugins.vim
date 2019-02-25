@@ -38,6 +38,9 @@ Plug 'tpope/vim-vinegar'
 " undo
 Plug 'mbbill/undotree'
 
+" visual
+Plug 'liuchengxu/vim-which-key'
+
 call plug#end()
 
 " ---- components ---- "
@@ -50,5 +53,6 @@ runtime components/fzf.vim
 runtime components/onedark.vim
 runtime components/sneak.vim
 runtime components/undotree.vim
+runtime components/which_key.vim
 runtime components/vinegar.vim
 runtime components/vsearch.vim
