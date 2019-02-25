@@ -1,2 +1,2 @@
 runtime basics.vim
-runtime plugins.vim
+runtime extras.vim

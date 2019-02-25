@@ -45,14 +45,18 @@ call plug#end()
 
 " ---- components ---- "
 
+" plugins
 runtime components/better_whitespace.vim
 runtime components/coc.vim
 runtime components/commentary.vim
 runtime components/delimitemate.vim
 runtime components/fzf.vim
+runtime components/neoterm.vim
 runtime components/onedark.vim
 runtime components/sneak.vim
 runtime components/undotree.vim
-runtime components/which_key.vim
 runtime components/vinegar.vim
+runtime components/which_key.vim
+
+" non-plugins
 runtime components/vsearch.vim
