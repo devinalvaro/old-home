@@ -3,11 +3,11 @@ let g:neoterm_default_mod = ':belowright'
 let g:neoterm_term_per_tab = 1
 
 " mappings
-nnoremap <leader>tc :Tclose<cr>
-nnoremap <leader>te :Texec<space>
-nnoremap <leader>tg :Ttoggle<cr>
-nnoremap <leader>tk :Tkill<cr>
-nnoremap <leader>tl :Tclear<cr>
-nnoremap <leader>tn :Tnew<cr>
-nnoremap <leader>to :Topen<cr>
-nnoremap <leader>tt :T<space>
+nnoremap <leader>tc  :<c-u>exec v:count.'Tclose'<cr>
+nnoremap <leader>te  :<c-u>exec v:count.'Texec'<space>
+nnoremap <leader>tg  :<c-u>exec v:count.'Ttoggle'<cr>
+nnoremap <leader>tk  :<c-u>exec v:count.'Tkill'<cr>
+nnoremap <leader>tl  :<c-u>exec v:count.'Tclear'<cr>
+nnoremap <leader>tn  :<c-u>Tnew<cr>
+nnoremap <leader>to  :<c-u>exec v:count.'Topen'<cr>
+nnoremap <leader>tt  :<c-u>exec v:count.'T'<space>
