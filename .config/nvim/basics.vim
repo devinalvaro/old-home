@@ -82,11 +82,15 @@ augroup END
 " leader
 let mapleader = "\<space>"
 
-" normal + visual
-noremap + "+
+" buffer
+nnoremap ga <c-^>
+
+" cmdline
 noremap <cr> :
 
-" normal
-nnoremap Y y$
-nnoremap ga <c-^>
+" indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
+
+" yanking
+noremap + "+
+nnoremap Y y$
