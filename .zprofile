@@ -42,43 +42,6 @@ export DISABLE_AUTO_TITLE=true
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=15'
 
 # spaceship
-export SPACESHIP_PROMPT_ORDER=(
-    # time
-    # user
-    dir
-    host
-
-    git
-    # hg
-
-    # aws
-    # conda
-    # docker
-    # dotnet
-    # elixir
-    # ember
-    golang
-    # haskell
-    # julia
-    # kubecontext
-    # node
-    # package
-    # php
-    # pyenv
-    ruby
-    # rust
-    # swift
-    venv
-    # xcode
-
-    exec_time
-    line_sep
-    # battery
-    # vi_mode
-    jobs
-    # exit_code
-    char
-)
 export SPACESHIP_PROMPT_PREFIXES_SHOW=false
 
 export SPACESHIP_DIR_TRUNC=0
