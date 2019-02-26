@@ -40,9 +40,6 @@ export SHORT_TERM_LINE=true
 # env
 [ -f "$HOME/.env" ] && source "$HOME/.env"
 
-# variables
-source "$HOME/.bash/env.bash"
-
 # --------------------------------
 
 # fzf
