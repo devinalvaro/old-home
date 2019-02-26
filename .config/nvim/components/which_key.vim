@@ -21,6 +21,13 @@ let g:which_key_map.f = {
             \ 't': 'fzf-tags',
             \ }
 
+let g:which_key_map.h = {
+            \ 'name': '+gitgutter',
+            \ 'p': 'gitgutter-preview',
+            \ 's': 'gitgutter-stage',
+            \ 'u': 'gitgutter-undo',
+            \ }
+
 let g:which_key_map.t = {
             \ 'name': '+neoterm',
             \ 'c': 'neoterm-close',
@@ -36,5 +43,5 @@ let g:which_key_map.t = {
 call which_key#register('<space>', 'g:which_key_map')
 
 " mappings
-nnoremap <silent> <leader> :<c-u>WhichKey '<space>'<cr>
-vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<space>'<cr>
+nnoremap <silent> <leader> :WhichKey '<space>'<cr>
+vnoremap <silent> <leader> :WhichKeyVisual '<space>'<cr>
