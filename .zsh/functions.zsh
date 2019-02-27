@@ -16,12 +16,6 @@ function ctrl-z () {
 zle -N ctrl-z
 bindkey '^Z' ctrl-z
 
-# cpprun
-function cpprun() {
-    ([ ! -f a.out ] || [ $1.cpp -nt a.out ]) && g++ $1.cpp
-    bash -c "{ ./a.out; }"
-}
-
 # truecolor
 function truecolor() {
     awk 'BEGIN{

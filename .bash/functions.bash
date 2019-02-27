@@ -3,12 +3,6 @@ function ..() {
     cd $(printf "%0.s../" $(seq 1 $1 ))
 }
 
-# cpprun
-function cpprun() {
-    ([ ! -f a.out ] || [ $1.cpp -nt a.out ]) && g++ $1.cpp
-    bash -c "{ ./a.out; }"
-}
-
 # truecolor
 function truecolor() {
     awk 'BEGIN{

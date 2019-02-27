@@ -1,23 +1,23 @@
 # editor
 if [ -x "$(command -v nvim)" ]; then
-    export EDITOR=nvim
+    export EDITOR='nvim'
 elif [ -x "$(command -v vim)" ]; then
-    export EDITOR=vim
+    export EDITOR='vim'
 else
-    export EDITOR=vi
+    export EDITOR='vi'
 fi
 
 # paths
-export FZF="$HOME/.fzf"
-export GOPATH=$HOME/.go
-export PYTHONUSERBASE=$HOME/.pip
+export GOPATH="$HOME/.go"
+export PYTHONUSERBASE="$HOME/.pip"
 
-export PATH=$HOME/.fzf/bin:$PATH   # fzf
-export PATH=$HOME/.gem/bin:$PATH   # ruby
-export PATH=$HOME/.go/bin:$PATH    # go
-export PATH=$HOME/.local/bin:$PATH # user
-export PATH=$HOME/.pip/bin:$PATH   # pip
-export PATH=$HOME/.yarn/bin:$PATH  # yarn
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.fzf/bin:$PATH"
+export PATH="$HOME/.gem/bin:$PATH"
+export PATH="$HOME/.go/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.pip/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
 
 # fzf
 export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
