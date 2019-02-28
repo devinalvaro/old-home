@@ -20,9 +20,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
-" term
-Plug 'kassio/neoterm'
-
 " tpope
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -55,7 +52,6 @@ runtime components/plugins/sneak.vim
 runtime components/plugins/undotree.vim
 runtime components/plugins/vinegar.vim
 runtime components/plugins/which_key.vim
-runtime components/plugins/neoterm.vim
 
 " others
 runtime components/vsearch.vim
