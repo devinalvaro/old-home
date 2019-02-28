@@ -12,9 +12,6 @@ Plug 'wellle/targets.vim'
 " git
 Plug 'airblade/vim-gitgutter'
 
-" language
-Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
-
 " search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
@@ -50,7 +47,6 @@ call plug#end()
 
 " plugins
 runtime components/plugins/better_whitespace.vim
-runtime components/plugins/coc.vim
 runtime components/plugins/commentary.vim
 runtime components/plugins/delimitemate.vim
 runtime components/plugins/fzf.vim
