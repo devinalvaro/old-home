@@ -38,6 +38,8 @@ export SHORT_TERM_LINE=true
 # --------------------------------
 
 # env
+source "$HOME/.bash/variables.bash"
+
 [ -f "$HOME/.env" ] && source "$HOME/.env"
 
 # --------------------------------
@@ -61,6 +63,3 @@ source "$HOME/.bash/options.bash"
 
 # sources
 source "$HOME/.bash/sources.bash"
-
-# unaliases
-source "$HOME/.bash/unaliases.bash"

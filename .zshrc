@@ -1,3 +1,10 @@
+# env
+source "$HOME/.zsh/variables.zsh"
+
+[ -f "$HOME/.env" ] && source "$HOME/.env"
+
+# --------------------------------
+
 # antigen
 [ -d "$ANTIGEN" ] && source "$ANTIGEN/antigen.zsh"
 
@@ -11,11 +18,6 @@ antigen apply
 
 # tmux
 [ -x "$(command -v tmux)" ] && source "$HOME/.zsh/tmux.zsh"
-
-# --------------------------------
-
-# env
-[ -f "$HOME/.env" ] && source "$HOME/.env"
 
 # --------------------------------
 
