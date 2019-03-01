@@ -4,7 +4,6 @@ let g:fzf_history_dir = $NVIM_FZF_HISTORY_DIR
 
 " mappings
 nnoremap g:    :Commands<cr>
-nnoremap g<cr> :Commands<cr>
 nnoremap gb    :Buffers<cr>
 
 nnoremap <leader>fbl :BLines<cr>

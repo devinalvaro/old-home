@@ -85,9 +85,6 @@ let mapleader = "\<space>"
 " buffer
 nnoremap ga <c-^>
 
-" cmdline
-noremap <cr> :
-
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
 
