@@ -10,16 +10,20 @@ upgrade='eval sudo apt-get -y update && sudo apt-get -y upgrade'
 # system
 $upgrade
 
-# vim
+# neovim
 nvim +PlugUpgrade +qall && nvim +PlugUpdate +qall
 
-# zsh
-zsh -i -c 'antigen update'
+# shell
+if [ "$SHELL" == "$(which bash)" ]; then
+    bash-it update
+elif [ "$SHELL" == "$(which zsh)" ]; then
+    zsh -i -c 'antigen update'
+fi
 
 # --------------------------------
 
 # remove orphan packages
 $autoremove
 
-# clean vim plugins
+# clean neovim plugins
 nvim +PlugClean +qall
