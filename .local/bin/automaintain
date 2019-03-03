@@ -15,7 +15,7 @@ nvim +PlugUpgrade +qall && nvim +PlugUpdate +qall
 
 # shell
 if [ "$SHELL" == "$(which bash)" ]; then
-    bash-it update
+    bash -i -c 'bash-it update'
 elif [ "$SHELL" == "$(which zsh)" ]; then
     zsh -i -c 'antigen update'
 fi
