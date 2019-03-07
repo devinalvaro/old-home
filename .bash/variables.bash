@@ -33,3 +33,6 @@ export LC_COLLATE='C'
 
 # nvim
 export NVIM_FZF_HISTORY_DIR="$HOME/.local/share/nvim/fzf"
+
+# virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON="$(which python3)"

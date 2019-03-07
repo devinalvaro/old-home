@@ -38,9 +38,6 @@ export NVIM_FZF_HISTORY_DIR="$HOME/.local/share/nvim/fzf"
 # oh-my-zsh
 export DISABLE_AUTO_TITLE=true
 
-# zsh-autosuggestions
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=15'
-
 # spaceship
 export SPACESHIP_PROMPT_PREFIXES_SHOW=false
 
@@ -52,3 +49,9 @@ export SPACESHIP_GIT_STATUS_PREFIX=' '
 export SPACESHIP_GIT_STATUS_SUFFIX='\0'
 
 export SPACESHIP_VENV_SYMBOL='🐍 '
+
+# virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON="$(which python3)"
+
+# zsh-autosuggestions
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=15'
