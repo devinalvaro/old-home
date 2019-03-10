@@ -1,8 +1,3 @@
-# ..
-function ..() {
-    cd $(printf "%0.s../" $(seq 1 $1 ))
-}
-
 # ctrl-z
 function ctrl-z () {
     if [[ $#BUFFER -eq 0 ]]; then

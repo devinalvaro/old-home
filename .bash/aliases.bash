@@ -7,11 +7,8 @@ alias ls='ls --color=auto --group-directories-first'
 alias c='docker-compose'
 alias d='docker'
 alias g='git'
-alias k='kubectl'
-alias p='pipenv'
 alias py='python'
 alias rb='ruby'
-alias v="$EDITOR"
 alias xo='xdg-open'
 
 alias paste='xclip -out -selection clipboard'

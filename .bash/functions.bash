@@ -1,8 +1,3 @@
-# ..
-function ..() {
-    cd $(printf "%0.s../" $(seq 1 $1 ))
-}
-
 # truecolor
 function truecolor() {
     awk 'BEGIN{
