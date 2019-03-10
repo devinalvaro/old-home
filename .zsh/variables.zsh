@@ -17,19 +17,15 @@ export PATH="$HOME/.pip/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 
 # fzf
-export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
-
 if [ -x "$(command -v fd)" ]; then
     export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
     export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
 fi
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
 
 # lc
 export LC_COLLATE='C'
-
-# nvim
-export NVIM_FZF_HISTORY_DIR="$HOME/.local/share/nvim/fzf"
 
 # oh-my-zsh
 export DISABLE_AUTO_TITLE=true

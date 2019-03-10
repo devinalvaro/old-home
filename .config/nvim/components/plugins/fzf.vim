@@ -1,6 +1,5 @@
 " options
 let g:fzf_buffers_jump = 1
-let g:fzf_history_dir = $NVIM_FZF_HISTORY_DIR
 
 " mappings
 nnoremap g:    :Commands<cr>
