@@ -82,9 +82,6 @@ augroup END
 " leader
 let mapleader = "\<space>"
 
-" buffer
-nnoremap ga <c-^>
-
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
 
