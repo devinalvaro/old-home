@@ -31,6 +31,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
+" search
+Plug 'romainl/vim-cool'
+
 " undo
 Plug 'mbbill/undotree'
 
@@ -44,6 +47,7 @@ call plug#end()
 " plugins
 runtime components/plugins/better_whitespace.vim
 runtime components/plugins/commentary.vim
+runtime components/plugins/cool.vim
 runtime components/plugins/delimitemate.vim
 runtime components/plugins/fzf.vim
 runtime components/plugins/onedark.vim
