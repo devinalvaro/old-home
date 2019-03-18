@@ -20,6 +20,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-vinegar'
 
 " git
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " fzf
