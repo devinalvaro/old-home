@@ -4,15 +4,25 @@ call plug#begin()
 
 " editing
 Plug 'justinmk/vim-sneak'
-Plug 'ntpeters/vim-better-whitespace'
 Plug 'raimondi/delimitmate'
 Plug 'tommcdo/vim-lion'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 Plug 'wellle/targets.vim'
+
+" file
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-vinegar'
 
 " git
 Plug 'airblade/vim-gitgutter'
 
-" search
+" fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
@@ -20,19 +30,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 
-" tpope
-Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-vinegar'
-
 " undo
 Plug 'mbbill/undotree'
+
+" whitespace
+Plug 'ntpeters/vim-better-whitespace'
 
 call plug#end()
 
