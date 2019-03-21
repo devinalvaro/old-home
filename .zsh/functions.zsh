@@ -1,6 +1,6 @@
 # ctrl-z
 function ctrl-z () {
-    if [[ $#BUFFER -eq 0 ]]; then
+    if [[ "$#BUFFER" -eq 0 ]]; then
         BUFFER="fg"
         zle accept-line
     else
@@ -30,17 +30,17 @@ function truecolor() {
 
 # virtualenv
 function activate() {
-    dir=$1
+    dir="$1"
 
     venv_dirs=( '.env' '.venv' 'env' 'venv' 'ENV' )
-    for venv_dir in ${venv_dirs[@]}; do
-        if [ -z $dir ] && [ -d $venv_dir ]; then
-            dir=$venv_dir
+    for venv_dir in "${venv_dirs[@]}"; do
+        if [ -z "$dir" ] && [ -d "$venv_dir" ]; then
+            dir="$venv_dir"
         fi
     done
 
-    if [ ! -z $dir ]; then
-        source $dir/bin/activate;
+    if [ ! -z "$dir" ]; then
+        source "$dir/bin/activate"
     else
         echo "No virtualenv directory detected."
     fi

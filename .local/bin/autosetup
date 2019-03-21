@@ -26,4 +26,4 @@ $install tmux
 $install zsh
 
 curl -fLo ~/.antigen/antigen.zsh --create-dirs git.io/antigen
-chsh -s $(which zsh)
+chsh -s "$(which zsh)"

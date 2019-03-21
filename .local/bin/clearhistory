@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 function clearhistory() {
-    [ -f $1 ] && [ -s $1 ] && rm $1 && touch $1
-    [ -d $1 ] && rm -f $1/* && rm -f $1/.[^.]* && touch $1/.gitignore
+    [ -f "$1" ] && [ -s "$1" ] && rm "$1" && touch "$1"
+    [ -d "$1" ] && rm -f "$1/*" && rm -f "$1/.[^.]*" && touch "$1/.gitignore"
 }
 
 # less
