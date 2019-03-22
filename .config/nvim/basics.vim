@@ -69,13 +69,6 @@ set breakindent
 set linebreak
 let &showbreak = '↳ '
 
-" ---- autocmds ---- "
-
-augroup Completions
-    autocmd!
-    autocmd InsertLeave * if pumvisible() == 0 | pclose | endif
-augroup END
-
 " ---- mappings ---- "
 
 " leader

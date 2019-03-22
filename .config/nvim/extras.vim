@@ -22,6 +22,9 @@ Plug 'tpope/vim-vinegar'
 " git
 Plug 'airblade/vim-gitgutter'
 
+" langauge
+Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
@@ -48,6 +51,7 @@ call plug#end()
 
 " plugins
 runtime components/plugins/better_whitespace.vim
+runtime components/plugins/coc.vim
 runtime components/plugins/commentary.vim
 runtime components/plugins/cool.vim
 runtime components/plugins/delimitemate.vim
