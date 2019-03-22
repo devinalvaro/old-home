@@ -55,8 +55,7 @@ set statusline=
 set noswapfile
 
 " time
-set updatetime=100
-set timeoutlen=300
+set updatetime=200
 
 " undo
 set undofile
@@ -81,6 +80,9 @@ augroup END
 
 " leader
 let mapleader = "\<space>"
+
+noremap <leader><space> :
+noremap <leader><tab>   :buffer#<cr>
 
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'

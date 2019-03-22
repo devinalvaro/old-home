@@ -36,6 +36,9 @@ Plug 'romainl/vim-cool'
 " undo
 Plug 'mbbill/undotree'
 
+" visual
+Plug 'liuchengxu/vim-which-key'
+
 " whitespace
 Plug 'ntpeters/vim-better-whitespace'
 
@@ -53,6 +56,7 @@ runtime components/plugins/onedark.vim
 runtime components/plugins/sneak.vim
 runtime components/plugins/undotree.vim
 runtime components/plugins/vinegar.vim
+runtime components/plugins/which_key.vim
 
 " others
 runtime components/vsearch.vim
