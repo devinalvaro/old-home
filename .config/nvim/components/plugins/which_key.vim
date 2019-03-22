@@ -12,7 +12,7 @@ let g:which_key_map['b'] = {
 let g:which_key_map['f'] = {
             \ 'name': '+files',
             \ 'f': ['Files', 'list-files'],
-            \ 'r': ['refresh', 'refresh-file'],
+            \ 'r': ['edit', 'refresh-file'],
             \ 's': ['write', 'save-file'],
             \ }
 
@@ -50,5 +50,5 @@ let g:which_key_map['w'] = {
 call which_key#register('<space>', 'g:which_key_map')
 
 " mappings
-nnoremap <silent> <leader> :WhichKey '<space>'<cr>
-vnoremap <silent> <leader> :WhichKeyVisual '<space>'<cr>
+nnoremap <silent> <leader> :<c-u>WhichKey '<space>'<cr>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<space>'<cr>

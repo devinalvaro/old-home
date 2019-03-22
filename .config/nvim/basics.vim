@@ -74,8 +74,8 @@ let &showbreak = '↳ '
 " leader
 let mapleader = "\<space>"
 
-noremap <leader><space> :
-noremap <leader><tab>   :buffer#<cr>
+noremap          <leader><space> :
+noremap <silent> <leader><tab>   :buffer#<cr>
 
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
