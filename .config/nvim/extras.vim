@@ -53,19 +53,19 @@ call plug#end()
 " ---- components ---- "
 
 " plugins
-runtime components/plugins/better_whitespace.vim
-runtime components/plugins/coc.vim
-runtime components/plugins/commentary.vim
-runtime components/plugins/cool.vim
-runtime components/plugins/delimitemate.vim
-runtime components/plugins/fzf.vim
-runtime components/plugins/gitgutter.vim
-runtime components/plugins/neoterm.vim
-runtime components/plugins/onedark.vim
-runtime components/plugins/sneak.vim
-runtime components/plugins/undotree.vim
-runtime components/plugins/vinegar.vim
-runtime components/plugins/which_key.vim
+runtime plugins/better_whitespace.vim
+runtime plugins/coc.vim
+runtime plugins/commentary.vim
+runtime plugins/cool.vim
+runtime plugins/delimitemate.vim
+runtime plugins/fzf.vim
+runtime plugins/gitgutter.vim
+runtime plugins/neoterm.vim
+runtime plugins/onedark.vim
+runtime plugins/sneak.vim
+runtime plugins/undotree.vim
+runtime plugins/vinegar.vim
+runtime plugins/which_key.vim
 
 " others
-runtime components/vsearch.vim
+runtime plugins/vsearch.vim
