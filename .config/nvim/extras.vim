@@ -22,7 +22,10 @@ Plug 'tpope/vim-vinegar'
 " git
 Plug 'airblade/vim-gitgutter'
 
-" langauge
+" linting
+Plug 'w0rp/ale'
+
+" lsp
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
 " fzf
@@ -53,6 +56,7 @@ call plug#end()
 " ---- components ---- "
 
 " plugins
+runtime plugins/ale.vim
 runtime plugins/better_whitespace.vim
 runtime plugins/coc.vim
 runtime plugins/commentary.vim
