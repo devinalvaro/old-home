@@ -52,10 +52,6 @@ let g:which_key_map['w'] = {
             \ 's' : ['<C-W>s', 'split-window-below'],
             \ 'v' : ['<C-W>v', 'split-window-right'],
             \ 'w' : ['<C-W>w', 'other-window'],
-            \ 'H' : ['<C-W>5<', 'expand-window-left'],
-            \ 'J' : ['resize +5', 'expand-window-below'],
-            \ 'K' : ['resize -5', 'expand-window-up'],
-            \ 'L' : ['<C-W>5>', 'expand-window-right'],
             \ '=' : ['<C-W>=', 'balance-window'],
             \ }
 
