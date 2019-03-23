@@ -55,7 +55,8 @@ set statusline=
 set noswapfile
 
 " time
-set updatetime=200
+set updatetime=100
+set timeoutlen=300
 
 " undo
 set undofile
@@ -72,7 +73,7 @@ let &showbreak = '↳ '
 " ---- mappings ---- "
 
 " leader
-let mapleader = "\<space>"
+let g:mapleader = "\<space>"
 
 noremap          <leader><space> :
 noremap <silent> <leader><tab>   :buffer#<cr>
