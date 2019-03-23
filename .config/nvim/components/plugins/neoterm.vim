@@ -12,3 +12,12 @@ nnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
 nnoremap <leader>tn :<c-u>Tnew<cr>
 nnoremap <leader>to :<c-u>exec v:count.'Topen'<cr>
 nnoremap <leader>tt :<c-u>exec v:count.'T<space>
+
+xnoremap <leader>tc :<c-u>exec v:count.'Tclose'<cr>
+xnoremap <leader>te :<c-u>exec v:count.'Texec<space>
+xnoremap <leader>tg :<c-u>exec v:count.'Ttoggle'<cr>
+xnoremap <leader>tk :<c-u>exec v:count.'Tkill'<cr>
+xnoremap <leader>tl :<c-u>exec v:count.'Tclear'<cr>
+xnoremap <leader>tn :<c-u>Tnew<cr>
+xnoremap <leader>to :<c-u>exec v:count.'Topen'<cr>
+xnoremap <leader>tt :<c-u>exec v:count.'T<space>

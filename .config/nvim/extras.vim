@@ -60,6 +60,7 @@ runtime components/plugins/commentary.vim
 runtime components/plugins/cool.vim
 runtime components/plugins/delimitemate.vim
 runtime components/plugins/fzf.vim
+runtime components/plugins/gitgutter.vim
 runtime components/plugins/neoterm.vim
 runtime components/plugins/onedark.vim
 runtime components/plugins/sneak.vim

@@ -5,23 +5,23 @@ let g:which_key_map['<Tab>'] = 'last-buffer'
 
 let g:which_key_map['b'] = {
             \ 'name': '+buffers',
-            \ 'b': ['Buffers', 'list-buffers'],
+            \ 'b': 'list-buffers',
             \ 'd': ['bdelete', 'delete-buffer'],
             \ }
 
 let g:which_key_map['f'] = {
             \ 'name': '+files',
-            \ 'f': ['Files', 'list-files'],
+            \ 'f': 'list-files',
             \ 'r': ['edit', 'refresh-file'],
             \ 's': ['write', 'save-file'],
             \ }
 
 let g:which_key_map['g'] = {
             \ 'name': '+git',
-            \ 'f': ['GFiles', 'list-git-files'],
-            \ 'p': ['GitGutterPreviewHunk', 'gitgutter-preview'],
-            \ 's': ['GitGutterStageHunk', 'gitgutter-stage'],
-            \ 'u': ['GitGutterUndoHunk', 'gitgutter-undo'],
+            \ 'f': 'list-git-files',
+            \ 'p': 'gitgutter-preview',
+            \ 's': 'gitgutter-stage',
+            \ 'u': 'gitgutter-undo',
             \ }
 
 let g:which_key_map['q'] = {
@@ -63,4 +63,4 @@ call which_key#register('<space>', 'g:which_key_map')
 
 " mappings
 nnoremap <silent> <leader> :<c-u>WhichKey '<space>'<cr>
-vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<space>'<cr>
+xnoremap <silent> <leader> :<c-u>WhichKeyVisual '<space>'<cr>
