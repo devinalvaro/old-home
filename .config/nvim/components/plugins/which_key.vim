@@ -29,6 +29,18 @@ let g:which_key_map['q'] = {
             \ 'q': ['quitall', 'quit-all'],
             \ }
 
+let g:which_key_map.t = {
+            \ 'name': '+term',
+            \ 'c': 'neoterm-close',
+            \ 'e': 'neoterm-exec',
+            \ 'g': 'neoterm-toggle',
+            \ 'k': 'neoterm-kill',
+            \ 'l': 'neoterm-clear',
+            \ 'n': 'neoterm-new',
+            \ 'o': 'neoterm-open',
+            \ 't': 'neoterm-t',
+            \ }
+
 let g:which_key_map['w'] = {
             \ 'name': '+windows',
             \ 'd' : ['<C-W>c', 'delete-window'],

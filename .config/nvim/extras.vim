@@ -37,6 +37,9 @@ Plug 'sheerun/vim-polyglot'
 " search
 Plug 'romainl/vim-cool'
 
+" term
+Plug 'kassio/neoterm'
+
 " undo
 Plug 'mbbill/undotree'
 
@@ -57,6 +60,7 @@ runtime components/plugins/commentary.vim
 runtime components/plugins/cool.vim
 runtime components/plugins/delimitemate.vim
 runtime components/plugins/fzf.vim
+runtime components/plugins/neoterm.vim
 runtime components/plugins/onedark.vim
 runtime components/plugins/sneak.vim
 runtime components/plugins/undotree.vim
