@@ -1,4 +1,4 @@
-" data
+" options
 let g:which_key_map = {}
 
 let g:which_key_map['<Tab>'] = 'last-buffer'
@@ -24,12 +24,17 @@ let g:which_key_map['g'] = {
             \ 'u': 'gitgutter-undo',
             \ }
 
+let g:which_key_map['m'] = {
+            \ 'name': '+mode',
+            \ '=': 'format-buffer',
+            \ }
+
 let g:which_key_map['q'] = {
             \ 'name': '+quit',
             \ 'q': ['quitall', 'quit-all'],
             \ }
 
-let g:which_key_map.t = {
+let g:which_key_map['t'] = {
             \ 'name': '+term',
             \ 'c': 'neoterm-close',
             \ 'e': 'neoterm-exec',

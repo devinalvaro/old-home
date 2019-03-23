@@ -19,6 +19,9 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-vinegar'
 
+" formatting
+Plug 'sbdchd/neoformat'
+
 " git
 Plug 'airblade/vim-gitgutter'
 
@@ -64,6 +67,7 @@ runtime plugins/cool.vim
 runtime plugins/delimitemate.vim
 runtime plugins/fzf.vim
 runtime plugins/gitgutter.vim
+runtime plugins/neoformat.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim
 runtime plugins/sneak.vim
