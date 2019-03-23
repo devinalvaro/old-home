@@ -19,9 +19,6 @@ clearhistory ~/.node_repl_history
 # python
 clearhistory ~/.python_history
 
-# R
-clearhistory ~/.Rhistory
-
 # ruby
 clearhistory ~/.irb_history
 clearhistory ~/.pry_history
