@@ -23,7 +23,6 @@ Plug 'tpope/vim-vinegar'
 Plug 'airblade/vim-gitgutter'
 
 " langauge
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
 " fzf
