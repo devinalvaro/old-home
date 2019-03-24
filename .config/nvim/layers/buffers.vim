@@ -1,11 +1,14 @@
 " options
+let g:which_key_map['<tab>'] = 'last-buffer'
+
 let g:which_key_map['b'] = {
             \ 'name': '+buffers',
             \ 'b': 'list-buffers',
-            \ 'd': ['bdelete', 'delete-buffer'],
+            \ 'd': 'delete-buffer',
             \ }
 
 " mappings
 nnoremap <silent> <leader><tab> :buffer#<cr>
 
-nnoremap <silent> <leader>bb :<c-u>Buffers<cr>
+nnoremap <silent> <leader>bb :Buffers<cr>
+nnoremap <silent> <leader>bd :bdelete<cr>

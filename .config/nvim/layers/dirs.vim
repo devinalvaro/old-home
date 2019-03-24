@@ -9,4 +9,4 @@ let g:which_key_map['d'] = {
 " mappings
 nnoremap <silent> <leader>d. :cd %:p:h<cr>
 nnoremap <silent> <leader>dh :cd ~<cr>
-nnoremap <silent> <leader>dr :Rooter<cr>
+nnoremap <silent> <leader>dp :Rooter<cr>

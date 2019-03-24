@@ -2,13 +2,13 @@
 let g:which_key_map['g'] = {
             \ 'name': '+git',
             \ 'f': 'list-git-files',
-            \ 'p': 'gitgutter-preview',
-            \ 's': 'gitgutter-stage',
-            \ 'u': 'gitgutter-undo',
+            \ 'p': 'preview-hunk',
+            \ 's': 'stage-hunk',
+            \ 'u': 'undo-hunk',
             \ }
 
 " mappings
-nnoremap <silent> <leader>gf :<c-u>GFiles<cr>
-nnoremap <silent> <leader>gp :<c-u>GitGutterPreviewHunk<cr>
-nnoremap <silent> <leader>gs :<c-u>GitGutterStageHunk<cr>
-nnoremap <silent> <leader>gu :<c-u>GitGutterUndoHunk<cr>
+nnoremap <silent> <leader>gf :GFiles<cr>
+nnoremap <silent> <leader>gp :GitGutterPreviewHunk<cr>
+nnoremap <silent> <leader>gs :GitGutterStageHunk<cr>
+nnoremap <silent> <leader>gu :GitGutterUndoHunk<cr>
