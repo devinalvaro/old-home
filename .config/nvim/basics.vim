@@ -56,7 +56,7 @@ set noswapfile
 
 " time
 set updatetime=100
-set timeoutlen=300
+set timeoutlen=400
 
 " undo
 set undofile
