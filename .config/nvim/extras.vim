@@ -45,6 +45,9 @@ Plug 'sheerun/vim-polyglot'
 " search
 Plug 'romainl/vim-cool'
 
+" tags
+Plug 'ludovicchabant/vim-gutentags'
+
 " term
 Plug 'kassio/neoterm'
 
@@ -74,6 +77,7 @@ runtime plugins/neoformat.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim
 runtime plugins/sneak.vim
+runtime plugins/gutentags.vim
 runtime plugins/undotree.vim
 runtime plugins/vinegar.vim
 runtime plugins/which_key.vim
@@ -86,5 +90,6 @@ runtime layers/files.vim
 runtime layers/git.vim
 runtime layers/mode.vim
 runtime layers/quit.vim
+runtime layers/search.vim
 runtime layers/term.vim
 runtime layers/windows.vim
