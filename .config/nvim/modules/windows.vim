@@ -3,6 +3,7 @@ let g:which_key_map['w'] = {
             \ 'name': '+windows',
             \ '=' : 'balance-window',
             \ 'c' : 'close-window',
+            \ 'f' : 'goto-file-new-window',
             \ 'h' : 'window-left',
             \ 'j' : 'window-below',
             \ 'k' : 'window-up',
@@ -13,13 +14,14 @@ let g:which_key_map['w'] = {
             \ 'w' : 'other-window',
             \ }
 
-nnoremap <silent> <leader>w= <C-W>=
-nnoremap          <leader>wc <C-W>c
-nnoremap <silent> <leader>wh <C-W>h
-nnoremap <silent> <leader>wj <C-W>j
-nnoremap <silent> <leader>wk <C-W>k
-nnoremap <silent> <leader>wl <C-W>l
-nnoremap <silent> <leader>wo <C-W>o
-nnoremap          <leader>ws <C-W>s
-nnoremap          <leader>wv <C-W>v
-nnoremap          <leader>ww <C-W>w
+nnoremap <leader>w= <c-w>=
+nnoremap <leader>wc <c-w>c
+nnoremap <leader>wf <c-w>f
+nnoremap <leader>wh <c-w>h
+nnoremap <leader>wj <c-w>j
+nnoremap <leader>wk <c-w>k
+nnoremap <leader>wl <c-w>l
+nnoremap <leader>wo <c-w>o
+nnoremap <leader>ws <c-w>s
+nnoremap <leader>wv <c-w>v
+nnoremap <leader>ww <c-w>w
