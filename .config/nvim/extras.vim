@@ -74,6 +74,13 @@ runtime plugins/sneak.vim
 runtime plugins/undotree.vim
 runtime plugins/vinegar.vim
 runtime plugins/which_key.vim
-
-" others
 runtime plugins/vsearch.vim
+
+" layers
+runtime layers/buffers.vim
+runtime layers/files.vim
+runtime layers/git.vim
+runtime layers/mode.vim
+runtime layers/quit.vim
+runtime layers/term.vim
+runtime layers/windows.vim
