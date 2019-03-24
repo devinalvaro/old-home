@@ -15,6 +15,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'wellle/targets.vim'
 
+" dir
+Plug 'airblade/vim-rooter'
+
 " file
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-vinegar'
@@ -78,6 +81,7 @@ runtime plugins/vsearch.vim
 
 " layers
 runtime layers/buffers.vim
+runtime layers/dirs.vim
 runtime layers/files.vim
 runtime layers/git.vim
 runtime layers/mode.vim
