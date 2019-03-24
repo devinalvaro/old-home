@@ -1,5 +1,5 @@
 " options
-let g:which_key_map['<tab>'] = 'last-buffer'
+let g:which_key_map['<Tab>'] = 'last-buffer'
 
 let g:which_key_map['b'] = {
             \ 'name': '+buffers',
