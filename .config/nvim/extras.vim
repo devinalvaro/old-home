@@ -28,6 +28,9 @@ Plug 'sbdchd/neoformat'
 " git
 Plug 'airblade/vim-gitgutter'
 
+" languages
+Plug 'lervag/vimtex'
+
 " linting
 Plug 'w0rp/ale'
 
@@ -79,6 +82,7 @@ runtime plugins/onedark.vim
 runtime plugins/rooter.vim
 runtime plugins/sneak.vim
 runtime plugins/undotree.vim
+runtime plugins/vimtex.vim
 runtime plugins/vinegar.vim
 runtime plugins/vsearch.vim
 runtime plugins/which_key.vim
