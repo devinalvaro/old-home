@@ -22,7 +22,7 @@ if [ -x "$(command -v fd)" ]; then
     export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
 fi
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
+export FZF_DEFAULT_OPTS='--ansi --exact --inline-info'
 
 # lc
 export LC_COLLATE='C'
