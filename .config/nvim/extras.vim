@@ -76,6 +76,7 @@ runtime plugins/cool.vim
 runtime plugins/delimitemate.vim
 runtime plugins/eunuch.vim
 runtime plugins/fzf.vim
+runtime plugins/gitgutter.vim
 runtime plugins/gutentags.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim

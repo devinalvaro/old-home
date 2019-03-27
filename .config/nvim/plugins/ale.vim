@@ -7,5 +7,5 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_linters_explicit = 1
 
 " mappings
-nmap <silent> [d <Plug>(ale_previous_wrap)
-nmap <silent> ]d <Plug>(ale_next_wrap)
+nmap [d <Plug>(ale_previous_wrap)
+nmap ]d <Plug>(ale_next_wrap)

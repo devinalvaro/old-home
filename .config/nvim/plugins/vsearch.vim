@@ -8,5 +8,5 @@ function! s:visual_star_search()
 endfunction
 
 " mappings
-vnoremap * :<C-u>call <SID>visual_star_search()<CR>/<CR>
-vnoremap # :<C-u>call <SID>visual_star_search()<CR>?<CR>
+vnoremap * :<c-u>call <sid>visual_star_search()<cr>/<cr>
+vnoremap # :<c-u>call <sid>visual_star_search()<cr>?<cr>

@@ -7,5 +7,5 @@ let g:coc_global_extensions = [
             \ ]
 
 " mappings
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-references)
+nmap gd <plug>(coc-definition)
+nmap gr <Plug>(coc-references)

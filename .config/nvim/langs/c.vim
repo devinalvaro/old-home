@@ -1,0 +1,2 @@
+" autocmds
+setlocal commentstring=//%s
