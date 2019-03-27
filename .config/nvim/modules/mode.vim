@@ -1,8 +1,5 @@
 " options
-let g:which_key_map['m'] = {
-            \ 'name': '+mode',
-            \ '=': 'format-buffer',
-            \ }
+let g:which_key_local_map['='] = 'format-buffer'
 
 " mappings
-nnoremap <silent> <leader>m= :Neoformat<cr>
+nnoremap <silent> <localleader>= :Neoformat<cr>

@@ -76,6 +76,9 @@ let &showbreak = '↳ '
 
 " ---- mappings ---- "
 
+" buffer
+nnoremap <tab> <c-^>
+
 " command
 nnoremap ; :
 xnoremap ; :
