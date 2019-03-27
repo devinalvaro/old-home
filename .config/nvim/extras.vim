@@ -15,9 +15,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'wellle/targets.vim'
 
-" dir
-Plug 'airblade/vim-rooter'
-
 " file
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-eunuch'
@@ -27,6 +24,7 @@ Plug 'sbdchd/neoformat'
 
 " git
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " languages
 Plug 'lervag/vimtex'
@@ -81,7 +79,6 @@ runtime plugins/gitgutter.vim
 runtime plugins/gutentags.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim
-runtime plugins/rooter.vim
 runtime plugins/undotree.vim
 runtime plugins/vimtex.vim
 runtime plugins/vsearch.vim
