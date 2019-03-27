@@ -47,7 +47,7 @@ set statusline=
                   \\ %{expand('%:~:.')!=#''?expand('%:~:.'):'[No\ Name]'}
                   \%=
                   \%l/%L%1(%)
-                  \%p%%%1(%)
+                  \%c%1(%)
 
 " swap
 set noswapfile
