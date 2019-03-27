@@ -1,7 +1,8 @@
 # editor
-[ -x "$(command -v vi)" ]   && export EDITOR='vi'
-[ -x "$(command -v vim)" ]  && export EDITOR='vim'
+[ -x "$(command -v vi)"   ] && export EDITOR='vi'
+[ -x "$(command -v vim)"  ] && export EDITOR='vim'
 [ -x "$(command -v nvim)" ] && export EDITOR='nvim'
+[ -x "$(command -v nvr)"  ] && [ "$NVIM_LISTEN_ADDRESS" ] && export EDITOR='nvr'
 
 # paths
 export ANTIGEN="$HOME/.antigen"
@@ -16,6 +17,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.pip/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# lc
+export LC_COLLATE='C'
+
 # fzf
 if [ -x "$(command -v fd)" ]; then
     export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
@@ -23,9 +27,6 @@ if [ -x "$(command -v fd)" ]; then
 fi
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--ansi --exact --inline-info'
-
-# lc
-export LC_COLLATE='C'
 
 # oh-my-zsh
 export DISABLE_AUTO_TITLE=true

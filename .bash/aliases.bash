@@ -1,3 +1,9 @@
+# editor aliases
+alias v="$EDITOR"
+alias vi="$EDITOR"
+alias vim="$EDITOR"
+alias nvim="$EDITOR"
+
 # modifier aliases
 alias http='http --style=bw'
 alias less='less --tabs=4'
