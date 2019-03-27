@@ -28,4 +28,5 @@ augroup OneDark
     autocmd ColorScheme * call onedark#extend_highlight('Special', { 'fg': { 'gui': s:red } })
 augroup END
 
+" others
 silent! colorscheme onedark

@@ -34,12 +34,6 @@ let maplocalleader = ','
 set showmatch
 set suffixes-=.h
 
-" message
-set noruler
-set noshowcmd
-set noshowmode
-set shortmess+=cF
-
 " search
 set gdefault
 set ignorecase
@@ -64,6 +58,12 @@ set timeoutlen=400
 
 " undo
 set undofile
+
+" verbosity
+set noruler
+set noshowcmd
+set noshowmode
+set shortmess+=cF
 
 " window
 set splitbelow
