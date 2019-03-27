@@ -1,8 +1,8 @@
 # config file
-conf="$HOME/.tmux/tmux.bash.conf"
+TMUX_CONF="$HOME/.tmux/tmux.bash.conf"
 
 # attach/detach
-test -z "$TMUX" && (tmux -f "$conf" attach || tmux -f "$conf" new-session)
+test -z "$TMUX" && (tmux -f "$TMUX_CONF" attach || tmux -f "$TMUX_CONF" new-session)
 
 while test -z "$TMUX"; do
     exit
@@ -10,5 +10,5 @@ done
 
 # reload config
 if [ -n "$TMUX" ]; then
-    tmux source-file "$conf"
+    tmux source-file "$TMUX_CONF"
 fi

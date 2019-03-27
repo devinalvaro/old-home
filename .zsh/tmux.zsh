@@ -1,14 +1,14 @@
 # enabled terminals
-terms=(
+TMUX_TERMS=(
     "$(which kitty 2> /dev/null)" # kitty
 )
 
 # config file
-conf="$HOME/.tmux/tmux.zsh.conf"
+TMUX_CONF="$HOME/.tmux/tmux.zsh.conf"
 
 # attach/detach
-if [[ "${terms[*]}" =~ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" ]]; then
-    test -z "$TMUX" && (tmux -f "$conf" attach || tmux -f "$conf" new-session)
+if [[ "${TMUX_TERMS[*]}" =~ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" ]]; then
+    test -z "$TMUX" && (tmux -f "$TMUX_CONF" attach || tmux -f "$TMUX_CONF" new-session)
 
     while test -z "$TMUX"; do
         exit
@@ -17,5 +17,5 @@ fi
 
 # reload config
 if [ -n "$TMUX" ]; then
-    tmux source-file "$conf"
+    tmux source-file "$TMUX_CONF"
 fi
