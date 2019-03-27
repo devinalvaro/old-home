@@ -19,8 +19,8 @@ Plug 'wellle/targets.vim'
 Plug 'airblade/vim-rooter'
 
 " file
+Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-vinegar'
 
 " formatting
 Plug 'sbdchd/neoformat'
@@ -74,6 +74,7 @@ runtime plugins/coc.vim
 runtime plugins/commentary.vim
 runtime plugins/cool.vim
 runtime plugins/delimitemate.vim
+runtime plugins/dirvish.vim
 runtime plugins/eunuch.vim
 runtime plugins/fzf.vim
 runtime plugins/gitgutter.vim
@@ -83,7 +84,6 @@ runtime plugins/onedark.vim
 runtime plugins/rooter.vim
 runtime plugins/undotree.vim
 runtime plugins/vimtex.vim
-runtime plugins/vinegar.vim
 runtime plugins/vsearch.vim
 runtime plugins/which_key.vim
 
