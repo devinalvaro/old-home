@@ -16,6 +16,9 @@ antigen apply
 # fzf
 [ -x "$(command -v fzf)" ] && source "$HOME/.zsh/fzf.zsh"
 
+# nvim
+[ -x "$(command -v nvim)" ] && source "$HOME/.zsh/nvim.zsh"
+
 # tmux
 [ -x "$(command -v tmux)" ] && source "$HOME/.zsh/tmux.zsh"
 

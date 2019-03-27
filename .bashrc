@@ -47,6 +47,9 @@ source "$HOME/.bash/variables.bash"
 # fzf
 [ -x "$(command -v fzf)" ] && source "$HOME/.bash/fzf.bash"
 
+# nvim
+[ -x "$(command -v nvim)" ] && source "$HOME/.bash/nvim.bash"
+
 # tmux
 [ -x "$(command -v tmux)" ] && source "$HOME/.bash/tmux.bash"
 
