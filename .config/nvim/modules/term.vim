@@ -17,13 +17,13 @@ let g:which_key_map['t'] = {
 tnoremap <esc> <c-\><c-n>
 tnoremap <c-v><esc> <esc>
 
-nnoremap <silent> <leader>tc :execute v:count . 'Tclose'<cr>
-nnoremap <silent> <leader>te :execute v:count . 'Texec<space>
-nnoremap <silent> <leader>tf :execute v:count . 'TREPLSendFile'<cr>
-nnoremap <silent> <leader>tg :execute v:count . 'Ttoggle'<cr>
-nnoremap <silent> <leader>tk :execute v:count . 'Tkill'<cr>
-nnoremap <silent> <leader>tl :execute v:count . 'Tclear'<cr>
-nnoremap <silent> <leader>to :execute v:count . 'Topen'<cr>
-nnoremap <silent> <leader>ts :split Tnew<cr>
-nnoremap <silent> <leader>tt :execute v:count . 'T<space>
+nnoremap <silent> <leader>tc :<c-u>execute v:count . 'Tclose'<cr>
+nnoremap <silent> <leader>te :<c-u>execute v:count . 'Texec<space>
+nnoremap <silent> <leader>tf :<c-u>execute v:count . 'TREPLSendFile'<cr>
+nnoremap <silent> <leader>tg :<c-u>execute v:count . 'Ttoggle'<cr>
+nnoremap <silent> <leader>tk :<c-u>execute v:count . 'Tkill'<cr>
+nnoremap <silent> <leader>tl :<c-u>execute v:count . 'Tclear'<cr>
+nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
+nnoremap <silent> <leader>ts :belowright Tnew<cr>
+nnoremap <silent> <leader>tt :<c-u>execute v:count . 'T<space>
 nnoremap <silent> <leader>tv :vertical Tnew<cr>
