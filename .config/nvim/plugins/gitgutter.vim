@@ -2,10 +2,10 @@
 let g:gitgutter_map_keys = 0
 
 " mappings
-nmap [h <Plug>GitGutterPrevHunk
-nmap ]h <Plug>GitGutterNextHunk
+nmap [c <Plug>GitGutterPrevHunk
+nmap ]c <Plug>GitGutterNextHunk
 
-omap ih <Plug>GitGutterTextObjectInnerPending
-xmap ih <Plug>GitGutterTextObjectInnerVisual
-omap ah <Plug>GitGutterTextObjectOuterPending
-xmap ah <Plug>GitGutterTextObjectOuterVisual
+omap ic <Plug>GitGutterTextObjectInnerPending
+xmap ic <Plug>GitGutterTextObjectInnerVisual
+omap ac <Plug>GitGutterTextObjectOuterPending
+xmap ac <Plug>GitGutterTextObjectOuterVisual
