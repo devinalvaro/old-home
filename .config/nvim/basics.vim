@@ -26,6 +26,10 @@ set shiftround
 set shiftwidth=4
 set tabstop=4
 
+" leader
+let mapleader = "\<space>"
+let maplocalleader = ','
+
 " matching
 set showmatch
 set suffixes-=.h
@@ -72,13 +76,15 @@ let &showbreak = '↳ '
 
 " ---- mappings ---- "
 
-" leader
-let mapleader = "\<space>"
-noremap <leader><leader> :
+" command
+nnoremap ; :
+xnoremap ; :
 
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
 
 " yanking
-noremap + "+
+nnoremap + "+
+xnoremap + "+
 nnoremap Y y$
+xnoremap Y y$

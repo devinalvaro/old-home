@@ -3,8 +3,8 @@
 call plug#begin()
 
 " editing
-Plug 'justinmk/vim-sneak'
 Plug 'raimondi/delimitmate'
+Plug 'rhysd/clever-f.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -80,7 +80,6 @@ runtime plugins/gutentags.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim
 runtime plugins/rooter.vim
-runtime plugins/sneak.vim
 runtime plugins/undotree.vim
 runtime plugins/vimtex.vim
 runtime plugins/vinegar.vim
