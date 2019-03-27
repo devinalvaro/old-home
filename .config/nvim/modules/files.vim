@@ -10,3 +10,5 @@ let g:which_key_map['f'] = {
 nnoremap          <leader>fe :edit<space>
 nnoremap <silent> <leader>ff :Files<cr>
 nnoremap <silent> <leader>fs :write<cr>
+
+xnoremap <silent> <leader>fs :write<cr>

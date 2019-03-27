@@ -88,6 +88,6 @@ nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
 
 " yanking
 nnoremap + "+
-xnoremap + "+
 nnoremap Y y$
+xnoremap + "+
 xnoremap Y y$

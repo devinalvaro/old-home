@@ -1,5 +1,5 @@
 " functions
-function! s:delimite_mate_cr()
+function! s:DelimiteMateCR()
     return delimitMate#WithinEmptyPair() ? "\<plug>delimitMateCR" : (pumvisible() ? "\<c-y>\<cr>" : "\<cr>")
 endfunction
 
@@ -9,4 +9,4 @@ let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
 
 " mappings
-imap <expr> <cr> <sid>delimite_mate_cr()
+imap <expr> <cr> <sid>DelimiteMateCR()

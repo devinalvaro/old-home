@@ -1,5 +1,5 @@
 " functions
-function! s:visual_star_search()
+function! s:VisualStarSearch()
     let temp = @@
     norm! gvy
     let @/ = '\V' . substitute(escape(@@, '\'), '\_s\+', '\\_s\\+', 'g')
@@ -8,5 +8,5 @@ function! s:visual_star_search()
 endfunction
 
 " mappings
-vnoremap * :<c-u>call <sid>visual_star_search()<cr>/<cr>
-vnoremap # :<c-u>call <sid>visual_star_search()<cr>?<cr>
+xnoremap * :<c-u>call <sid>VisualStarSearch()<cr>/<cr>
+xnoremap # :<c-u>call <sid>VisualStarSearch()<cr>?<cr>

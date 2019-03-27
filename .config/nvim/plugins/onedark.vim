@@ -21,7 +21,7 @@ let g:onedark_color_overrides = {
             \ }
 
 " autocmds
-augroup OneDark
+augroup one_dark
     autocmd!
     autocmd ColorScheme * call onedark#extend_highlight('Keyword', { 'fg': { 'gui': s:magenta }})
     autocmd ColorScheme * call onedark#extend_highlight('Operator', { 'fg': { 'gui': s:yellow } })

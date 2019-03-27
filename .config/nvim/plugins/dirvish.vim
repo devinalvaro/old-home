@@ -2,7 +2,7 @@
 let g:dirvish_mode = ':sort ,^.*[\/],'
 
 " autocmds
-augroup Dirvish
+augroup dirvish
     autocmd!
     autocmd FileType dirvish
                 \ nnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR> |

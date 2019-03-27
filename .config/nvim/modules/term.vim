@@ -15,7 +15,7 @@ let g:which_key_map['t'] = {
 
 " mappings
 tnoremap <esc> <c-\><c-n>
-tnoremap <c-v><esc> <esc>
+tnoremap <c-\><c-n> <esc>
 
 nnoremap <silent> <leader>tc :<c-u>execute v:count . 'Tclose'<cr>
 nnoremap <silent> <leader>te :<c-u>execute v:count . 'Texec<space>

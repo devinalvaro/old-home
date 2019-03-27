@@ -19,7 +19,7 @@ let g:which_key_map['g'] = {
             \ }
 
 " functions
-function! s:git_llog()
+function! s:GitLog()
     let s:range = a:firstline != a:lastline ?
                 \ join([a:firstline, a:lastline], ',') : ''
 
@@ -38,9 +38,9 @@ nnoremap <silent> <leader>gg  :Git<space>
 nnoremap <silent> <leader>ghp :GitGutterPreviewHunk<cr>
 nnoremap <silent> <leader>ghs :GitGutterStageHunk<cr>
 nnoremap <silent> <leader>ghu :GitGutterUndoHunk<cr>
-nnoremap <silent> <leader>gl  :call <sid>git_llog()<cr>
+nnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
 nnoremap <silent> <leader>gr  :Gread<cr>
 nnoremap <silent> <leader>gs  :vert Gstatus<cr>
 
-xnoremap <silent> <leader>gl  :call <sid>git_llog()<cr>
+xnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
 xnoremap <silent> <leader>gr  :Gread<cr>
