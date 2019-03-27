@@ -1,8 +1,9 @@
 " options
 let g:which_key_map['w'] = {
             \ 'name': '+windows',
+            \ '/' : 'list-windows',
             \ '=' : 'balance-window',
-            \ 'c' : 'close-window',
+            \ 'd' : 'delete-window',
             \ 'f' : 'goto-file-new-window',
             \ 'h' : 'window-left',
             \ 'j' : 'window-below',
@@ -14,8 +15,10 @@ let g:which_key_map['w'] = {
             \ 'w' : 'other-window',
             \ }
 
+" mappings
+nnoremap <leader>w/ :Windows<cr>
 nnoremap <leader>w= <c-w>=
-nnoremap <leader>wc <c-w>c
+nnoremap <leader>wd <c-w>c
 nnoremap <leader>wf <c-w>f
 nnoremap <leader>wh <c-w>h
 nnoremap <leader>wj <c-w>j
@@ -24,4 +27,4 @@ nnoremap <leader>wl <c-w>l
 nnoremap <leader>wo <c-w>o
 nnoremap <leader>ws <c-w>s
 nnoremap <leader>wv <c-w>v
-nnoremap <leader>ww <c-w>w
+nnoremap <leader>ww <c-w><c-p>
