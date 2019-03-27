@@ -16,6 +16,6 @@ if [[ "${terms[*]}" =~ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" ]]; then
 fi
 
 # reload config
-if [[ -n "$TMUX" ]]; then
+if [ -n "$TMUX" ]; then
     tmux source-file "$conf"
 fi

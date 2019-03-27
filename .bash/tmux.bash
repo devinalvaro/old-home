@@ -9,6 +9,6 @@ while test -z "$TMUX"; do
 done
 
 # reload config
-if [[ -n "$TMUX" ]]; then
+if [ -n "$TMUX" ]; then
     tmux source-file "$conf"
 fi

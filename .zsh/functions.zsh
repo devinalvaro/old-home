@@ -1,6 +1,6 @@
 # ctrl-z
 function ctrl-z () {
-    if [[ "$#BUFFER" -eq 0 ]]; then
+    if [ "$#BUFFER" -eq 0 ]; then
         BUFFER="fg"
         zle accept-line
     else

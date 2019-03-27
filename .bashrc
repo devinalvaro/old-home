@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Skips everything in non-interactive shell
-[[ "$-" != *i* ]] && return
+[ "$-" != "*i*" ] && return
 
 # --------------------------------
 
