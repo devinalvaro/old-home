@@ -16,6 +16,11 @@ let g:which_key_map['w'] = {
             \ }
 
 " mappings
+nnoremap <m-h> <c-w>h
+nnoremap <m-j> <c-w>j
+nnoremap <m-k> <c-w>k
+nnoremap <m-l> <c-w>l
+
 nnoremap <leader>w/ :Windows<cr>
 nnoremap <leader>w= <c-w>=
 nnoremap <leader>wd <c-w>c
