@@ -1,4 +1,4 @@
-" options
+" data
 let g:which_key_map['g'] = {
             \ 'name': '+git',
             \ 'c': 'list-git-commits',

@@ -1,4 +1,4 @@
-" options
+" data
 let g:which_key_map['d'] = {
             \ 'name': '+dirs',
             \ '.': 'cd-file-dir',
