@@ -17,6 +17,11 @@ let g:which_key_map['t'] = {
 tnoremap <esc> <c-\><c-n>
 tnoremap <c-\><c-n> <esc>
 
+tnoremap <m-h> <c-\><c-n><c-w>h
+tnoremap <m-j> <c-\><c-n><c-w>j
+tnoremap <m-k> <c-\><c-n><c-w>k
+tnoremap <m-l> <c-\><c-n><c-w>l
+
 nnoremap <silent> <leader>tc :<c-u>execute v:count . 'Tclose'<cr>
 nnoremap <silent> <leader>te :<c-u>execute v:count . 'Texec<space>
 nnoremap <silent> <leader>tf :<c-u>execute v:count . 'TREPLSendFile'<cr>
@@ -27,3 +32,9 @@ nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
 nnoremap <silent> <leader>ts :belowright Tnew<cr>
 nnoremap <silent> <leader>tt :<c-u>execute v:count . 'T<space>
 nnoremap <silent> <leader>tv :vertical Tnew<cr>
+
+" autocmds
+augroup term
+    autocmd!
+    autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
+augroup END
