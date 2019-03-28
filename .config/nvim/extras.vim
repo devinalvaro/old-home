@@ -85,10 +85,10 @@ runtime plugins/vsearch.vim
 runtime plugins/which_key.vim
 
 " modules
-runtime modules/buffers.vim
-runtime modules/dirs.vim
-runtime modules/files.vim
+runtime modules/buffer.vim
+runtime modules/dir.vim
+runtime modules/file.vim
 runtime modules/git.vim
 runtime modules/search.vim
 runtime modules/term.vim
-runtime modules/windows.vim
+runtime modules/window.vim

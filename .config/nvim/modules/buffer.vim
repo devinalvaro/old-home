@@ -1,6 +1,6 @@
 " data
 let g:which_key_map['b'] = {
-            \ 'name': '+buffers',
+            \ 'name': '+buffer',
             \ '=': 'format-buffer',
             \ 'b': 'list-buffers',
             \ 'r': 'refresh-buffer',

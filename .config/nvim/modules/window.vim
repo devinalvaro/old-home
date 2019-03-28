@@ -1,6 +1,6 @@
 " data
 let g:which_key_map['w'] = {
-            \ 'name': '+windows',
+            \ 'name': '+window',
             \ '/' : 'list-windows',
             \ '=' : 'balance-window',
             \ 'd' : 'delete-window',

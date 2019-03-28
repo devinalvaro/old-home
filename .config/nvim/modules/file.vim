@@ -1,6 +1,6 @@
 " data
 let g:which_key_map['f'] = {
-            \ 'name': '+files',
+            \ 'name': '+file',
             \ 'e': 'edit-file',
             \ 'f': 'list-files',
             \ 's': 'save-file',

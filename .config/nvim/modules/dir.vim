@@ -1,6 +1,6 @@
 " data
 let g:which_key_map['d'] = {
-            \ 'name': '+dirs',
+            \ 'name': '+dir',
             \ '.': 'cd-file-dir',
             \ 'c': 'cd-vimconfig',
             \ 'h': 'cd-home',
