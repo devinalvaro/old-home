@@ -3,12 +3,9 @@ TMUX_TERMS=(
     "$(which kitty 2> /dev/null)" # kitty
 )
 
-# config file
-TMUX_CONF="$HOME/.tmux/tmux.zsh.conf"
-
 # attach/detach
 if [[ "${TMUX_TERMS[*]}" =~ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" ]]; then
-    test -z "$TMUX" && (tmux -f "$TMUX_CONF" attach || tmux -f "$TMUX_CONF" new-session)
+    test -z "$TMUX" && (tmux attach || tmux new-session)
 
     while test -z "$TMUX"; do
         exit

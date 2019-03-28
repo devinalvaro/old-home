@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
 # Skips everything in non-interactive shell
-[ "$-" != "*i*" ] && return
+[[ "$-" != *i* ]] && return
+
+# --------------------------------
+
+# env
+source "$HOME/.bash/variables.bash"
+
+[ -f "$HOME/.env" ] && source "$HOME/.env"
 
 # --------------------------------
 
@@ -37,21 +44,8 @@ export SHORT_TERM_LINE=true
 
 # --------------------------------
 
-# env
-source "$HOME/.bash/variables.bash"
-
-[ -f "$HOME/.env" ] && source "$HOME/.env"
-
-# --------------------------------
-
 # fzf
 [ -x "$(command -v fzf)" ] && source "$HOME/.bash/fzf.bash"
-
-# nvim
-[ -x "$(command -v nvim)" ] && source "$HOME/.bash/nvim.bash"
-
-# tmux
-[ -x "$(command -v tmux)" ] && source "$HOME/.bash/tmux.bash"
 
 # --------------------------------
 
