@@ -8,12 +8,20 @@ let g:which_key_map['g'] = {
             \ 'f': 'list-git-files',
             \ 'g': 'git-command',
             \ 'h': {
-            \     'name': '+hunks',
+            \     'name': '+hunk',
             \     'p': 'preview-hunk',
             \     's': 'stage-hunk',
             \     'u': 'undo-hunk',
             \     },
             \ 'l': 'git-log',
+            \ 'm': {
+            \     'name': '+merge',
+            \     'f': 'git-fetch',
+            \     'l': 'git-pull',
+            \     'm': 'git-merge',
+            \     'p': 'git-push',
+            \     'r': 'git-rebase',
+            \     },
             \ 'r': 'git-read',
             \ 's': 'git-status',
             \ }
@@ -41,6 +49,11 @@ nnoremap <silent> <leader>ghu :GitGutterUndoHunk<cr>
 nnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
 nnoremap <silent> <leader>gr  :Gread<cr>
 nnoremap <silent> <leader>gs  :vert Gstatus<cr>
+nnoremap <silent> <leader>gmf :Gfetch<cr>
+nnoremap <silent> <leader>gml :Gpull<cr>
+nnoremap <silent> <leader>gmm :Gmerge<cr>
+nnoremap <silent> <leader>gmp :Gpush<cr>
+nnoremap <silent> <leader>gmr :Grebase<cr>
 
 xnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
 xnoremap <silent> <leader>gr  :Gread<cr>
