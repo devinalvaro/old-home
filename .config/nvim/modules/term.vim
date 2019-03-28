@@ -32,9 +32,3 @@ nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
 nnoremap <silent> <leader>ts :belowright Tnew<cr>
 nnoremap <silent> <leader>tt :<c-u>execute v:count . 'T<space>
 nnoremap <silent> <leader>tv :vertical Tnew<cr>
-
-" autocmds
-augroup term
-    autocmd!
-    autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
-augroup END
