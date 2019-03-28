@@ -1,8 +1,6 @@
 # editor aliases
 alias v="$EDITOR"
-alias vi="$EDITOR"
-alias vim="$EDITOR"
-alias nvim="$EDITOR"
+alias v.="$EDITOR ."
 
 # modifier aliases
 alias http='http --style=bw'

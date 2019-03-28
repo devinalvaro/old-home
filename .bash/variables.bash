@@ -2,7 +2,6 @@
 [ -x "$(command -v vi)"   ] && export EDITOR='vi'
 [ -x "$(command -v vim)"  ] && export EDITOR='vim'
 [ -x "$(command -v nvim)" ] && export EDITOR='nvim'
-[ -x "$(command -v nvr)"  ] && [ "$NVIM_LISTEN_ADDRESS" ] && export EDITOR='nvr'
 
 # paths
 export GOPATH="$HOME/.go"
