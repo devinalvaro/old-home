@@ -1,6 +1,5 @@
 # editor aliases
 alias v="$EDITOR"
-alias v.="$EDITOR ."
 
 # modifier aliases
 alias http='http --style=bw'
@@ -15,5 +14,6 @@ alias py='python'
 alias rb='ruby'
 alias xo='xdg-open'
 
+# yanking aliases
 alias paste='xclip -out -selection clipboard'
 alias yank='xclip -in -selection clipboard'

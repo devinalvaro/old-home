@@ -1,6 +1,5 @@
 # editor aliases
 alias v="$EDITOR"
-alias v.="$EDITOR ."
 
 # modifier aliases
 alias http='http --style=bw'
