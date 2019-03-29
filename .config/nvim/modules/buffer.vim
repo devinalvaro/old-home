@@ -1,7 +1,6 @@
 " data
 let g:which_key_map['b'] = {
             \ 'name': '+buffer',
-            \ '=': 'format-buffer',
             \ 'b': 'list-buffers',
             \ 'r': 'refresh-buffer',
             \ 'd': 'delete-buffer',
@@ -9,7 +8,6 @@ let g:which_key_map['b'] = {
             \ }
 
 " mappings
-nnoremap <silent> <leader>b= :Neoformat<cr>
 nnoremap <silent> <leader>bb :Buffers<cr>
 nnoremap <silent> <leader>bd :bdelete<cr>
 nnoremap <silent> <leader>br :edit<cr>

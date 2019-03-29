@@ -1,2 +1,2 @@
-" autocmds
+" settings
 setlocal commentstring=//%s

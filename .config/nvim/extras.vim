@@ -19,9 +19,6 @@ Plug 'wellle/targets.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-eunuch'
 
-" formatting
-Plug 'sbdchd/neoformat'
-
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
