@@ -19,12 +19,18 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export LC_COLLATE='C'
 
 # fzf
+export FZF_DEFAULT_OPTS='--ansi --exact --inline-info --bind=alt-p:toggle-preview'
+
+if [ -x "$(command -v bat)" ]; then
+    export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview='bat --color=always --style=plain {}' --preview-window=hidden"
+fi
+
 if [ -x "$(command -v fd)" ]; then
     export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
     export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
 fi
+
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_DEFAULT_OPTS='--ansi --inline-info --height 10'
 
 # virtualenvwrapper
 export VIRTUALENVWRAPPER_PYTHON="$(which python3)"

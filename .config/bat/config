@@ -1,0 +1,5 @@
+# Set the theme to "OneHalfDark"
+--theme="OneHalfDark"
+
+# Show Git modifications
+--style="changes"
