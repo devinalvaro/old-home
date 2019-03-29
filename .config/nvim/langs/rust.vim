@@ -1,15 +1,18 @@
 " data
 let b:which_key_local_map = {
             \ '=': 'coc-format',
-            \ 'f': 'coc-fix-current',
-            \ 'i': 'coc-diagnostic-info',
+            \ 'd': {
+            \   'name': '+diagnostic',
+            \   'f': 'coc-fix-current',
+            \   'i': 'coc-diagnostic-info',
+            \   },
             \ 'j': {
-            \     'name': '+jump',
-            \     'd': 'coc-declaration',
-            \     'i': 'coc-implementation',
-            \     'r': 'coc-references',
-            \     't': 'coc-type-definition',
-            \     },
+            \   'name': '+jump',
+            \   'd': 'coc-declaration',
+            \   'i': 'coc-implementation',
+            \   'r': 'coc-references',
+            \   't': 'coc-type-definition',
+            \   },
             \ 'r': 'coc-rename',
             \ }
 
@@ -19,8 +22,8 @@ xmap <buffer> g= <Plug>(coc-format-selected)
 nmap <buffer> gd <Plug>(coc-definition)
 
 nmap <buffer> <localleader>=  <Plug>(coc-format)
-nmap <buffer> <localleader>f  <Plug>(coc-fix-current)
-nmap <buffer> <localleader>i  <Plug>(coc-diagnostic-info)
+nmap <buffer> <localleader>df <Plug>(coc-fix-current)
+nmap <buffer> <localleader>di <Plug>(coc-diagnostic-info)
 nmap <buffer> <localleader>jd <Plug>(coc-declaration)
 nmap <buffer> <localleader>ji <Plug>(coc-implementation)
 nmap <buffer> <localleader>jr <Plug>(coc-references)

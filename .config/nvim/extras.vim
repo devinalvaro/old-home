@@ -23,6 +23,9 @@ Plug 'tpope/vim-eunuch'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+" formatting
+Plug 'sbdchd/neoformat'
+
 " languages
 Plug 'lervag/vimtex'
 
