@@ -29,4 +29,4 @@ augroup one_dark
 augroup END
 
 " others
-silent! colorscheme onedark
+colorscheme onedark
