@@ -42,9 +42,9 @@ set smartcase
 
 " statusline
 set statusline=
-                  \\ %{&filetype!=#''?&filetype:'none'}
+                  \\ %{&filetype==#''?'none':&filetype}
                   \\ %{&readonly\|\|!&modifiable?&modified?'%*':'%%':&modified?'**':'--'}
-                  \\ %{expand('%:~:.')!=#''?expand('%:~:.'):'[No\ Name]'}
+                  \\ %{&buftype==#'terminal'?getcwd():expand('%:~:.')==#''?'[No\ Name]':expand('%:~:.')}
                   \%=
                   \%l/%L%1(%)
                   \%c%1(%)
