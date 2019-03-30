@@ -42,12 +42,12 @@ set smartcase
 
 " statusline
 set statusline=
-                  \\ %{&filetype==#''?'none':&filetype}
-                  \\ %{&readonly\|\|!&modifiable?&modified?'%*':'%%':&modified?'**':'--'}
-                  \\ %{&buftype==#'terminal'?getcwd():expand('%:~:.')==#''?'[No\ Name]':expand('%:~:.')}
-                  \%=
-                  \%l/%L%1(%)
-                  \%c%1(%)
+            \\ %{&filetype==#''?'none':&filetype}
+            \\ %{&readonly\|\|!&modifiable?&modified?'%*':'%%':&modified?'**':'--'}
+            \\ %{&buftype==#'terminal'?getcwd():expand('%:~:.')==#''?'[No\ Name]':expand('%:~:.')}
+            \%=
+            \%l/%L%1(%)
+            \%c%1(%)
 
 " swap
 set noswapfile

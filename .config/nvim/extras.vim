@@ -89,6 +89,7 @@ runtime modules/buffer.vim
 runtime modules/dir.vim
 runtime modules/file.vim
 runtime modules/git.vim
+runtime modules/other.vim
 runtime modules/search.vim
 runtime modules/term.vim
 runtime modules/window.vim
