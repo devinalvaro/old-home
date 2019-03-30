@@ -28,5 +28,5 @@ nnoremap <silent> <leader>tk :<c-u>execute v:count . 'Tkill'<cr>
 nnoremap <silent> <leader>tl :<c-u>execute v:count . 'Tclear'<cr>
 nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
 nnoremap <silent> <leader>ts :belowright Tnew<cr>
-nnoremap <silent> <leader>tt :<c-u>execute v:count . 'T<space>
+nnoremap          <leader>tt :<c-u>execute v:count . 'T<space>
 nnoremap <silent> <leader>tv :vertical Tnew<cr>
