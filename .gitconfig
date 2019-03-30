@@ -1,5 +1,4 @@
 [core]
-	excludesfile = ~/.config/git/gitignore
 	pager = less --tabs=1,5 -FRX
 
 [credential]
