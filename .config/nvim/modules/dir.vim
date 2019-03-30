@@ -16,9 +16,7 @@ function! s:CdPwd(count)
 endfunction
 
 function! s:CdTerm(count)
-    if &buftype == 'terminal' && executable('nvr')
-        :execute a:count . 'T nvr . -c "cd \%:p:h" -c "bd"'
-    endif
+    :execute a:count . 'T nvr . -c "cd \%:p:h" -c "bd"'
 endfunction
 
 " mappings
