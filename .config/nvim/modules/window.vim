@@ -9,6 +9,7 @@ let g:which_key_map['w'] = {
             \ 's' : 'split-window-below',
             \ 'v' : 'split-window-right',
             \ 'w' : 'other-window',
+            \ 'z' : 'close-preview-window',
             \ }
 
 " mappings
@@ -25,3 +26,4 @@ nnoremap <leader>wo <c-w>o
 nnoremap <leader>ws <c-w>s
 nnoremap <leader>wv <c-w>v
 nnoremap <leader>ww <c-w><c-p>
+nnoremap <leader>wz <c-w>z
