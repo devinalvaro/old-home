@@ -48,6 +48,7 @@ Plug 'romainl/vim-cool'
 
 " tags
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'majutsushi/tagbar'
 
 " term
 Plug 'kassio/neoterm'
