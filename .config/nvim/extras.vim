@@ -2,6 +2,9 @@
 
 call plug#begin()
 
+" default
+Plug 'tpope/vim-sensible'
+
 " editing
 Plug 'raimondi/delimitmate'
 Plug 'rhysd/clever-f.vim'
@@ -9,7 +12,6 @@ Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -26,7 +28,7 @@ Plug 'tpope/vim-fugitive'
 " formatting
 Plug 'sbdchd/neoformat'
 
-" languages
+" language
 Plug 'lervag/vimtex'
 
 " linting
@@ -42,6 +44,9 @@ Plug 'junegunn/fzf.vim'
 " highligting
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
+
+" quickfix
+Plug 'romainl/vim-qf'
 
 " search
 Plug 'romainl/vim-cool'
@@ -80,6 +85,7 @@ runtime plugins/gitgutter.vim
 runtime plugins/gutentags.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim
+runtime plugins/qf.vim
 runtime plugins/undotree.vim
 runtime plugins/vimtex.vim
 runtime plugins/vsearch.vim
