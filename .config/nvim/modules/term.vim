@@ -6,6 +6,7 @@ let g:which_key_map['t'] = {
             \ 'g': 'toggle-term',
             \ 'k': 'term-kill',
             \ 'l': 'term-clear',
+            \ 'n': 'new-term',
             \ 'o': 'open-term',
             \ 's': 'split-term',
             \ 't': 'term-t',
@@ -26,6 +27,7 @@ nnoremap <silent> <leader>tf :<c-u>execute v:count . 'TREPLSendFile'<cr>
 nnoremap <silent> <leader>tg :<c-u>execute v:count . 'Ttoggle'<cr>
 nnoremap <silent> <leader>tk :<c-u>execute v:count . 'Tkill'<cr>
 nnoremap <silent> <leader>tl :<c-u>execute v:count . 'Tclear'<cr>
+nnoremap <silent> <leader>tn :Tnew<cr>
 nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
 nnoremap <silent> <leader>ts :belowright Tnew<cr>
 nnoremap          <leader>tt :<c-u>execute v:count . 'T<space>
