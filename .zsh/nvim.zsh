@@ -8,6 +8,6 @@ if [ -n "$TMUX" ]; then
             alias nvrcwd='nvr . -c "cd %:p:h" -c "bd"'
         fi
     else
-        nvim +startinsert +Topen
+        nvim +Topen
     fi
 fi
