@@ -32,3 +32,10 @@ nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
 nnoremap <silent> <leader>ts :belowright Tnew<cr>
 nnoremap          <leader>tt :<c-u>execute v:count . 'T<space>
 nnoremap <silent> <leader>tv :vertical Tnew<cr>
+
+" augroup
+augroup term
+    autocmd!
+    autocmd VimEnter,BufEnter * if &buftype ==# 'terminal' | setlocal showmode | endif
+    autocmd VimLeave,BufLeave * if &buftype ==# 'terminal' | setlocal noshowmode | endif
+augroup END
