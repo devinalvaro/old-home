@@ -16,7 +16,7 @@ function! s:CdPwd(count)
 endfunction
 
 function! s:CdTerm(count)
-    :execute a:count . 'T nvr . -c "cd \%:p:h" -c "bd"'
+    :execute a:count . 'T nvr . -c "cd \%:p:h" -c "buffer#"'
 endfunction
 
 " mappings
