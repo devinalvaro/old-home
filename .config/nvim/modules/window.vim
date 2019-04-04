@@ -7,11 +7,12 @@ let g:which_key_map['w'] = {
             \ '<' : 'decrease-window-width',
             \ '=' : 'balance-window',
             \ '>' : 'increase-window-width',
+            \ ']' : 'jump-to-tag-on-new-window',
             \ 'R' : 'rotate-windows-up-left',
             \ 'T' : 'move-window-to-tab',
             \ 'b' : 'bottom-right-window',
             \ 'd' : 'delete-window',
-            \ 'f' : 'goto-file-new-window',
+            \ 'f' : 'go-to-file-on-new-window',
             \ 'h' : 'move-window-to-left',
             \ 'j' : 'move-window-to-bottom',
             \ 'k' : 'move-window-to-top',
@@ -39,6 +40,7 @@ nnoremap <leader>w/ :Windows<cr>
 nnoremap <leader>w< <c-w><
 nnoremap <leader>w= <c-w>=
 nnoremap <leader>w> <c-w>>
+nnoremap <leader>w] <c-w>]
 nnoremap <leader>wR <c-w>R
 nnoremap <leader>wT <c-w>T
 nnoremap <leader>wb <c-w>b
