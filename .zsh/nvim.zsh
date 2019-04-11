@@ -6,6 +6,6 @@ if [ -n "$TMUX" ]; then
             export GIT_EDITOR="$EDITOR --remote-wait"
         fi
     else
-        nvim
+        nvim +Topen
     fi
 fi
