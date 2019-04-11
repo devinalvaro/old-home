@@ -7,12 +7,6 @@ let g:which_key_map['g'] = {
             \ 'e': 'git-edit',
             \ 'f': 'list-git-files',
             \ 'g': 'git-command',
-            \ 'h': {
-            \   'name': '+hunk',
-            \   'p': 'preview-hunk',
-            \   's': 'stage-hunk',
-            \   'u': 'undo-hunk',
-            \   },
             \ 'l': 'git-log',
             \ 'm': {
             \   'name': '+merge',
@@ -24,6 +18,13 @@ let g:which_key_map['g'] = {
             \   },
             \ 'r': 'git-read',
             \ 's': 'git-status',
+            \ }
+
+let g:which_key_map['h'] = {
+            \ 'name': '+hunk',
+            \ 'p': 'preview-hunk',
+            \ 's': 'stage-hunk',
+            \ 'u': 'undo-hunk',
             \ }
 
 " functions
@@ -43,9 +44,6 @@ nnoremap <silent> <leader>gd  :Gdiff<cr>
 nnoremap <silent> <leader>ge  :Gedit<cr>
 nnoremap <silent> <leader>gf  :GFiles<cr>
 nnoremap <silent> <leader>gg  :Git<space>
-nnoremap <silent> <leader>ghp :GitGutterPreviewHunk<cr>
-nnoremap <silent> <leader>ghs :GitGutterStageHunk<cr>
-nnoremap <silent> <leader>ghu :GitGutterUndoHunk<cr>
 nnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
 nnoremap <silent> <leader>gr  :Gread<cr>
 nnoremap <silent> <leader>gs  :vert Gstatus<cr>
@@ -54,6 +52,9 @@ nnoremap <silent> <leader>gml :Gpull<cr>
 nnoremap <silent> <leader>gmm :Gmerge<cr>
 nnoremap <silent> <leader>gmp :Gpush<cr>
 nnoremap <silent> <leader>gmr :Grebase<cr>
+nnoremap <silent> <leader>hp  :GitGutterPreviewHunk<cr>
+nnoremap <silent> <leader>hs  :GitGutterStageHunk<cr>
+nnoremap <silent> <leader>hu  :GitGutterUndoHunk<cr>
 
 xnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
 xnoremap <silent> <leader>gr  :Gread<cr>
