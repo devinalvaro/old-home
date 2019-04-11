@@ -1,6 +1,5 @@
 " options
-let g:neoterm_autoscroll = 1
-let g:neoterm_term_per_tab = 1
+let g:neoterm_autojump = 1
 
 " mappings
 nmap gx  <Plug>(neoterm-repl-send)
