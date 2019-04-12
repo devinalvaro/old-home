@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -f .gitignore ]; then
-    mv .gitignore .gitignore.tmp
+    mv .gitignore /tmp/.gitignore
 fi
 
 > .gitignore
@@ -10,8 +10,6 @@ git status --porcelain | grep '^??' | cut -c4- >> .gitignore
 find . -mindepth 1 -maxdepth 1 -type d -not -path '*/\.*' | cut -c 3- | sed 's/$/\//' >> .gitignore
 sort -u .gitignore -o .gitignore
 
-if cmp -s .gitignore .gitignore.tmp; then
-    mv .gitignore.tmp .gitignore 2> /dev/null
-else
-    mv .gitignore.tmp .gitignore.old 2> /dev/null
+if cmp -s .gitignore /tmp/.gitignore; then
+    mv /tmp/.gitignore .gitignore 2> /dev/null
 fi
