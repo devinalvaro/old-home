@@ -21,6 +21,7 @@ export LC_COLLATE='C'
 
 # fzf
 export FZF_DEFAULT_OPTS='--ansi --exact --inline-info --bind=alt-p:toggle-preview'
+export FZF_TMUX=1
 
 if [ -x "$(command -v bat)" ]; then
     export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview='bat --color=always --style=plain {}' --preview-window=hidden"
@@ -31,8 +32,6 @@ if [ -x "$(command -v fd)" ]; then
     export FZF_ALT_C_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
     export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
-
-export FZF_TMUX=1
 
 # oh-my-zsh
 export DISABLE_AUTO_TITLE=true
