@@ -10,7 +10,6 @@ export PYTHONUSERBASE="$HOME/.pip"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.fzf/bin:$PATH"
-export PATH="$HOME/.gem/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.pip/bin:$PATH"

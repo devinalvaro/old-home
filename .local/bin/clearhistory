@@ -13,22 +13,12 @@ clearhistory ~/.config/nvim/.netrwhist
 clearhistory ~/.local/share/nvim/shada/main.shada
 clearhistory ~/.local/share/nvim/undo
 
-# node
-clearhistory ~/.node_repl_history
-
 # python
 clearhistory ~/.python_history
-
-# ruby
-clearhistory ~/.irb_history
-clearhistory ~/.pry_history
 
 # shell
 clearhistory ~/.bash_history
 clearhistory ~/.zsh_history
-
-# sqlite
-clearhistory ~/.sqlite_history
 
 # vscode
 [ -d ~/.config/Code/User/workspaceStorage ] && \
