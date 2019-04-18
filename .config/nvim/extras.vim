@@ -50,6 +50,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'romainl/vim-qf'
 
 " search
+Plug 'haya14busa/vim-asterisk'
 Plug 'justinmk/vim-sneak'
 Plug 'romainl/vim-cool'
 
@@ -75,6 +76,7 @@ call plug#end()
 
 " plugins
 runtime plugins/ale.vim
+runtime plugins/asterisk.vim
 runtime plugins/better_whitespace.vim
 runtime plugins/clever_f.vim
 runtime plugins/coc.vim
@@ -92,7 +94,6 @@ runtime plugins/qf.vim
 runtime plugins/sneak.vim
 runtime plugins/undotree.vim
 runtime plugins/vimtex.vim
-runtime plugins/vsearch.vim
 runtime plugins/which_key.vim
 
 " modules
