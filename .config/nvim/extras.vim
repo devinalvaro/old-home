@@ -50,6 +50,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'romainl/vim-qf'
 
 " search
+Plug 'justinmk/vim-sneak'
 Plug 'romainl/vim-cool'
 
 " tags
@@ -75,6 +76,7 @@ call plug#end()
 " plugins
 runtime plugins/ale.vim
 runtime plugins/better_whitespace.vim
+runtime plugins/clever_f.vim
 runtime plugins/coc.vim
 runtime plugins/commentary.vim
 runtime plugins/cool.vim
@@ -87,6 +89,7 @@ runtime plugins/gutentags.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim
 runtime plugins/qf.vim
+runtime plugins/sneak.vim
 runtime plugins/undotree.vim
 runtime plugins/vimtex.vim
 runtime plugins/vsearch.vim
