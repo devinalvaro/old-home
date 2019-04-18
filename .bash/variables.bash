@@ -13,7 +13,7 @@ export PATH="$HOME/.gem/bin:$PATH"
 export PATH="$HOME/.go/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.pip/bin:$PATH"
-export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 
 # lc
 export LC_COLLATE='C'
