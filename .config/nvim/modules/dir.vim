@@ -10,11 +10,6 @@ let g:which_key_map['d'] = {
             \ 'p': 'cd-pwd',
             \ }
 
-" functions
-function! s:CdPwd(count)
-    :execute a:count . 'T cd ' . getcwd()
-endfunction
-
 " commands
 command! Dirs call fzf#run(fzf#wrap({
                 \ 'source': empty($FZF_ALT_C_COMMAND) ? 'find * -type d' : $FZF_ALT_C_COMMAND,
@@ -28,4 +23,4 @@ nnoremap <silent> <leader>dd :Dirs<cr>
 nnoremap <silent> <leader>dh :cd ~<cr>
 nnoremap <silent> <leader>dg :Gcd<cr>
 nnoremap <silent> <leader>do :execute 'Dirvish ' . getcwd()<cr>
-nnoremap <silent> <leader>dp :call <sid>CdPwd(v:count)<cr>
+nnoremap <silent> <leader>dp :<c-u>execute v:count . 'T cd ' . getcwd()<cr>

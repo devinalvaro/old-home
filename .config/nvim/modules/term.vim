@@ -24,13 +24,10 @@ tnoremap <m-l> <c-\><c-n><c-w>l
 
 nnoremap <silent> <leader>tD :TcloseAll!<cr>
 nnoremap <silent> <leader>td :<c-u>execute v:count . 'Tclose!'<cr>
-nnoremap <silent> <leader>tk :<c-u>execute v:count . 'Tkill'<cr>
-nnoremap <silent> <leader>tl :<c-u>execute v:count . 'Tclear'<cr>
 nnoremap <silent> <leader>tn :enew<cr>:Tnew<cr>i
 nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
 nnoremap <silent> <leader>tr :<c-u>execute v:count . 'TREPLSendLine'<cr>
 nnoremap <silent> <leader>ts :belowright Tnew<cr>i
-nnoremap          <leader>tt :<c-u>execute v:count . 'T<space>
 nnoremap <silent> <leader>tv :vertical Tnew<cr>i
 
 xnoremap <silent> <leader>tr :<c-u>execute v:count . 'TREPLSendSelection'<cr>
