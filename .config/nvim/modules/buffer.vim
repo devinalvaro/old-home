@@ -15,7 +15,7 @@ nnoremap <silent> <leader>bb :Buffers<cr>
 nnoremap <silent> <leader>bd :bdelete<cr>
 nnoremap <silent> <leader>bn :enew<cr>
 nnoremap <silent> <leader>br :edit<cr>
-nnoremap <silent> <leader>bs :new<cr>
+nnoremap <silent> <leader>bs :split new<cr>
 nnoremap <silent> <leader>bv :vertical new<cr>
 nnoremap <silent> <leader>bw :StripWhitespace<cr>
 
