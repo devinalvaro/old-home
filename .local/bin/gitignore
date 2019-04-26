@@ -5,9 +5,9 @@ if [ -f .gitignore ]; then
 fi
 
 > .gitignore
-git status --porcelain | grep '^??' | cut -c4- >> .gitignore
+git status --porcelain | grep '^??' | cut -c4- | sed 's/^/\//' >> .gitignore
 
-find . -mindepth 1 -maxdepth 1 -type d -not -path '*/\.*' | cut -c 3- | sed 's/$/\//' >> .gitignore
+find . -mindepth 1 -maxdepth 1 -type d -not -path '*/\.*' | cut -c 3- | sed 's/^/\//' | sed 's/$/\//' >> .gitignore
 sort -u .gitignore -o .gitignore
 
 if cmp -s .gitignore /tmp/.gitignore; then
