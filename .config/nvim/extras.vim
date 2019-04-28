@@ -36,7 +36,9 @@ Plug 'lervag/vimtex'
 Plug 'w0rp/ale'
 
 " lsp
-Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+if executable('yarn')
+    Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+endif
 
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
