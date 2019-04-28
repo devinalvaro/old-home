@@ -13,9 +13,6 @@ antigen bundle tarruda/zsh-autosuggestions
 antigen theme denysdovhan/spaceship-prompt spaceship
 antigen apply
 
-# fzf
-[ -x "$(command -v fzf)" ] && source "$HOME/.zsh/fzf.zsh"
-
 # nvim
 [ -x "$(command -v nvim)" ] && source "$HOME/.zsh/nvim.zsh"
 

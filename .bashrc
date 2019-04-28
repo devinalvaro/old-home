@@ -44,11 +44,6 @@ export SHORT_TERM_LINE=true
 
 # --------------------------------
 
-# fzf
-[ -x "$(command -v fzf)" ] && source "$HOME/.bash/fzf.bash"
-
-# --------------------------------
-
 # aliases
 source "$HOME/.bash/aliases.bash"
 

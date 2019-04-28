@@ -41,7 +41,7 @@ if executable('yarn')
 endif
 
 " fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 " highligting
