@@ -26,6 +26,7 @@ fi
 
 if [ -x "$(command -v fd)" ]; then
     export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
+    export FZF_DIRECTORY_COMMAND='fd --type=directory --color=always --follow --no-ignore-vcs'
 fi
 
 # oh-my-zsh

@@ -12,7 +12,7 @@ let g:which_key_map['d'] = {
 
 " commands
 command! Dirs call fzf#run(fzf#wrap({
-                \ 'source': empty($FZF_ALT_C_COMMAND) ? 'find * -type d' : $FZF_ALT_C_COMMAND,
+                \ 'source': empty($FZF_DIRECTORY_COMMAND) ? 'find * -type d' : $FZF_DIRECTORY_COMMAND,
                 \ 'sink': 'cd',
                 \ }))
 
