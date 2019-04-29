@@ -11,7 +11,6 @@ alias c='docker-compose'
 alias d='docker'
 alias g='git'
 alias py='python'
-alias rb='ruby'
 alias xo='xdg-open'
 
 # yanking alises
