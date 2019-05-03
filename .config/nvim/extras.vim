@@ -38,7 +38,7 @@ Plug 'w0rp/ale'
 
 " lsp
 if executable('yarn')
-    Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
+    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 endif
 
 " fzf
