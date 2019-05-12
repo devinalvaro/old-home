@@ -11,6 +11,7 @@ set numberwidth=2
 set signcolumn=yes
 
 " completion
+set complete-=t
 set completeopt=menuone,preview,noinsert,noselect
 set pumheight=8
 
@@ -83,11 +84,27 @@ nnoremap <tab> <c-^>
 nnoremap ; :
 xnoremap ; :
 
+cnoremap <c-n>  <down>
+cnoremap <c-p>  <up>
+
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
 
+" redraw
+nnoremap <c-l> :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
+
+" search
+nnoremap <expr> n  'Nn'[v:searchforward]
+xnoremap <expr> n  'Nn'[v:searchforward]
+onoremap <expr> n  'Nn'[v:searchforward]
+
+nnoremap <expr> N  'nN'[v:searchforward]
+xnoremap <expr> N  'nN'[v:searchforward]
+onoremap <expr> N  'nN'[v:searchforward]
+
 " yanking
 nnoremap + "+
-nnoremap Y y$
 xnoremap + "+
+
+nnoremap Y y$
 xnoremap Y y$
