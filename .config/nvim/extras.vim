@@ -37,9 +37,7 @@ Plug 'lervag/vimtex'
 Plug 'w0rp/ale'
 
 " lsp
-if executable('yarn')
-    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-endif
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 " fzf
 Plug 'junegunn/fzf'
