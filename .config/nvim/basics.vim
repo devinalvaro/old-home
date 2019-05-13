@@ -87,8 +87,10 @@ nnoremap <tab> <c-^>
 nnoremap ; :
 xnoremap ; :
 
-cnoremap <c-n>  <down>
-cnoremap <c-p>  <up>
+cnoremap <c-g> <c-u><backspace>
+
+cnoremap <c-n> <down>
+cnoremap <c-p> <up>
 
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
