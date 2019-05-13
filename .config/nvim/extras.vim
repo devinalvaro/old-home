@@ -2,6 +2,9 @@
 
 call plug#begin()
 
+" buffer
+Plug 'moll/vim-bbye'
+
 " default
 Plug 'tpope/vim-sensible'
 

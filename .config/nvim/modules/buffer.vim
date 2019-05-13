@@ -12,7 +12,7 @@ let g:which_key_map['b'] = {
 
 " mappings
 nnoremap <silent> <leader>bb :Buffers<cr>
-nnoremap <silent> <leader>bd :bdelete<cr>
+nnoremap <silent> <leader>bd :Bdelete<cr>
 nnoremap <silent> <leader>bn :enew<cr>
 nnoremap <silent> <leader>br :edit<cr>
 nnoremap <silent> <leader>bs :belowright new<cr>
