@@ -21,6 +21,9 @@ set confirm
 " cursor
 set nostartofline
 
+" editing
+set virtualedit=block
+
 " indentation
 set expandtab
 set shiftround
