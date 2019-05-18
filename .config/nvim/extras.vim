@@ -33,14 +33,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'sbdchd/neoformat'
 
 " language
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'tag': 'v1.20', 'do': ':GoUpdateBinaries' }
 Plug 'lervag/vimtex'
 
 " linting
-Plug 'w0rp/ale'
+Plug 'w0rp/ale', { 'tag': 'v2.4.0' }
 
 " lsp
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.67', 'do': 'yarn install --frozen-lockfile' }
 
 " fzf
 Plug 'junegunn/fzf'
