@@ -8,15 +8,19 @@ let g:which_key_map['w'] = {
             \ '=' : 'balance-window',
             \ '>' : 'increase-window-width',
             \ ']' : 'jump-to-tag-on-new-window',
+            \ 'H' : 'move-window-to-left',
+            \ 'J' : 'move-window-to-bottom',
+            \ 'K' : 'move-window-to-top',
+            \ 'L' : 'move-window-to-right',
             \ 'R' : 'rotate-windows-up-left',
             \ 'T' : 'move-window-to-tab',
             \ 'b' : 'bottom-right-window',
             \ 'd' : 'delete-window',
             \ 'f' : 'go-to-file-on-new-window',
-            \ 'h' : 'move-window-to-left',
-            \ 'j' : 'move-window-to-bottom',
-            \ 'k' : 'move-window-to-top',
-            \ 'l' : 'move-window-to-right',
+            \ 'h' : 'move-to-left-window',
+            \ 'j' : 'move-to-bottom-window',
+            \ 'k' : 'move-to-top-window',
+            \ 'l' : 'move-to-right-window',
             \ 'o' : 'only-window',
             \ 'p' : 'preview-window',
             \ 'r' : 'rotate-windows-down-right',
@@ -41,15 +45,19 @@ nnoremap <leader>w< <c-w><
 nnoremap <leader>w= <c-w>=
 nnoremap <leader>w> <c-w>>
 nnoremap <leader>w] <c-w>]
+nnoremap <leader>wH <c-w>H
+nnoremap <leader>wJ <c-w>J
+nnoremap <leader>wK <c-w>K
+nnoremap <leader>wL <c-w>L
 nnoremap <leader>wR <c-w>R
 nnoremap <leader>wT <c-w>T
 nnoremap <leader>wb <c-w>b
 nnoremap <leader>wd <c-w>c
 nnoremap <leader>wf <c-w>f
-nnoremap <leader>wh <c-w>H
-nnoremap <leader>wj <c-w>J
-nnoremap <leader>wk <c-w>K
-nnoremap <leader>wl <c-w>L
+nnoremap <leader>wh <c-w>h
+nnoremap <leader>wj <c-w>j
+nnoremap <leader>wk <c-w>k
+nnoremap <leader>wl <c-w>l
 nnoremap <leader>wo <c-w>o
 nnoremap <leader>wp <c-w>P
 nnoremap <leader>wr <c-w>r
