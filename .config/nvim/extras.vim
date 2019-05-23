@@ -109,3 +109,7 @@ runtime modules/other.vim
 runtime modules/search.vim
 runtime modules/term.vim
 runtime modules/window.vim
+
+" ---- colorscheme ---- "
+
+colorscheme onedark
