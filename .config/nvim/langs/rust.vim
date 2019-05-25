@@ -17,6 +17,10 @@ let b:which_key_local_map = {
             \ 'r': 'coc-rename',
             \ }
 
+" options
+let g:rustfmt_autosave = 1
+let g:rustfmt_fail_silently = 1
+
 " mappings
 nmap <buffer> gd <Plug>(coc-definition)
 
