@@ -18,11 +18,8 @@ export PATH="$HOME/.pip/bin:$PATH"
 export LC_COLLATE='C'
 
 # fzf
-export FZF_DEFAULT_OPTS='--ansi --exact --inline-info --bind=alt-p:toggle-preview'
-
-if [ -x "$(command -v bat)" ]; then
-    export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview='bat --color=always --style=plain {}' --preview-window=hidden"
-fi
+export FZF_DEFAULT_OPTS='--ansi --exact --inline-info'
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview='cat {}' --preview-window=hidden --bind=alt-p:toggle-preview"
 
 if [ -x "$(command -v fd)" ]; then
     export FZF_DEFAULT_COMMAND='fd --type=file --color=always --follow --hidden'
