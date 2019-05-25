@@ -11,8 +11,3 @@ if [[ "${TMUX_TERMS[*]}" =~ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" ]]; then
         exit
     done
 fi
-
-# reload config
-if [ -n "$TMUX" ]; then
-    tmux source-file "$TMUX_CONF"
-fi
