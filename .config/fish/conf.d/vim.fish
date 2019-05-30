@@ -7,6 +7,6 @@ if set -q TMUX;
         set -x EDITOR 'nvr'
         set -x GIT_EDITOR "$EDITOR --remote-wait"
     else
-        nvim
+        $EDITOR
     end
 end
