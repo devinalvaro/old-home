@@ -1,0 +1,1 @@
+set -x SPACEFISH_VENV_SYMBOL '🐍 '
