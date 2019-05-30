@@ -40,7 +40,7 @@ Plug 'lervag/vimtex'
 Plug 'w0rp/ale', { 'tag': 'v2.4.0' }
 
 " lsp
-Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.67', 'do': 'yarn install --frozen-lockfile' }
+Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.68', 'do': 'yarn install --frozen-lockfile' }
 
 " fzf
 Plug 'junegunn/fzf'
