@@ -37,7 +37,7 @@ Plug 'fatih/vim-go', { 'tag': 'v1.20', 'do': ':GoUpdateBinaries' }
 Plug 'lervag/vimtex'
 
 " linting
-Plug 'w0rp/ale', { 'tag': 'v2.4.0' }
+Plug 'w0rp/ale', { 'tag': 'v2.4.1' }
 
 " lsp
 Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.68', 'do': 'yarn install --frozen-lockfile' }
