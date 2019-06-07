@@ -5,10 +5,16 @@ abbr -a c cargo
 abbr -a d docker
 abbr -a g git
 abbr -a p python
+abbr -a s sudo
 abbr -a v "$EDITOR"
 
 abbr -a dc docker-compose
 abbr -a xo xdg-open
+
+if type -q xclip;
+    abbr -a paste 'xclip -out -selection clipboard'
+    abbr -a yank 'xclip -in -selection clipboard'
+end
 
 # path
 set -x GOPATH "$HOME/.go"
