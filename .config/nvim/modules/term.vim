@@ -1,14 +1,10 @@
 " data
 let g:which_key_map['t'] = {
             \ 'name': '+term',
-            \ 'D': 'delete-all-term',
-            \ 'T': 'toggle-all-term',
-            \ 'd': 'delete-term',
             \ 'n': 'new-term',
-            \ 'o': 'open-term',
-            \ 's': 'split-term',
-            \ 't': 'toggle-term',
-            \ 'v': 'vert-term',
+            \ 's': 'new-term-below',
+            \ 't': 'list-buffers',
+            \ 'v': 'new-term-right',
             \ }
 
 " mappings
@@ -20,18 +16,7 @@ tnoremap <m-j> <c-\><c-n><c-w>j
 tnoremap <m-k> <c-\><c-n><c-w>k
 tnoremap <m-l> <c-\><c-n><c-w>l
 
-nnoremap <silent> <leader>tD :TcloseAll!<cr>
-nnoremap <silent> <leader>tT :TtoggleAll<cr>
-nnoremap <silent> <leader>td :<c-u>execute v:count . 'Tclose!'<cr>
-nnoremap <silent> <leader>tn :enew<cr>:Tnew<cr>i
-nnoremap <silent> <leader>to :<c-u>execute v:count . 'Topen'<cr>
-nnoremap <silent> <leader>ts :belowright Tnew<cr>i
-nnoremap <silent> <leader>tt :<c-u>execute v:count . 'Ttoggle'<cr>
-nnoremap <silent> <leader>tv :vertical Tnew<cr>i
-
-" augroup
-augroup term
-    autocmd!
-    autocmd VimEnter,BufEnter * if &buftype ==# 'terminal' | setlocal showmode | endif
-    autocmd VimLeave,BufLeave * if &buftype ==# 'terminal' | setlocal noshowmode | endif
-augroup END
+nnoremap <silent> <leader>tn :terminal<cr>i
+nnoremap <silent> <leader>ts :split<cr>:terminal<cr>i
+nnoremap <silent> <leader>tt :Buffers term://<cr>
+nnoremap <silent> <leader>tv :vsplit<cr>:terminal<cr>i

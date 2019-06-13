@@ -17,7 +17,7 @@ nnoremap <silent> <leader>bd :Bdelete<cr>
 nnoremap <silent> <leader>bk :Bdelete!<cr>
 nnoremap <silent> <leader>bn :enew<cr>
 nnoremap <silent> <leader>br :edit<cr>
-nnoremap <silent> <leader>bs :belowright new<cr>
+nnoremap <silent> <leader>bs :new<cr>
 nnoremap <silent> <leader>bv :vertical new<cr>
 nnoremap <silent> <leader>bw :StripWhitespace<cr>
 

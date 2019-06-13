@@ -62,9 +62,6 @@ Plug 'romainl/vim-cool'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 
-" term
-Plug 'kassio/neoterm'
-
 " undo
 Plug 'mbbill/undotree'
 
