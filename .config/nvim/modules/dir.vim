@@ -24,5 +24,5 @@ nnoremap <silent> <leader>dd :Dirs<cr>
 nnoremap <silent> <leader>dh :cd ~<cr>
 nnoremap <silent> <leader>dg :Gcd<cr>
 nnoremap <silent> <leader>do :execute 'Dirvish ' . getcwd()<cr>
-nnoremap <silent> <leader>dp :let @" = 'cd ' . getcwd()<cr>p:startinsert<cr>
+nnoremap <silent> <leader>dp :let @" = 'cd ' . getcwd()<cr>
 nnoremap <silent> <leader>dv :cd $VIMCONFIG<cr>
