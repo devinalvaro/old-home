@@ -8,6 +8,7 @@ let g:which_key_map['d'] = {
             \ 'g': 'cd-git-root',
             \ 'o': 'open-dir',
             \ 'p': 'cd-pwd',
+            \ 'u': 'cd-up',
             \ 'v': 'cd-vimconfig',
             \ }
 
@@ -25,4 +26,5 @@ nnoremap <silent> <leader>dh :cd ~<cr>
 nnoremap <silent> <leader>dg :Gcd<cr>
 nnoremap <silent> <leader>do :execute 'Dirvish ' . getcwd()<cr>
 nnoremap <silent> <leader>dp :let @" = 'cd ' . getcwd()<cr>
+nnoremap <silent> <leader>du :cd ..<cr>
 nnoremap <silent> <leader>dv :cd $VIMCONFIG<cr>
