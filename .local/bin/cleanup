@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+rm ~/.local/share/fzf/fzf_history/*
+
+rm ~/.local/share/nvim/shada/main.shada
+rm ~/.local/share/nvim/undo/*
+rm ~/.local/share/nvim/view/*
