@@ -11,6 +11,8 @@ let g:which_key_map['b'] = {
             \ 'w': 'strip-buffer-whitespace',
             \ }
 
+let g:last_buf_nr = 1
+
 " mappings
 nnoremap <silent> <leader>bD :Bdelete!<cr>
 nnoremap <silent> <leader>bb :Buffers<cr>
@@ -22,3 +24,11 @@ nnoremap <silent> <leader>bv :vertical new<cr>
 nnoremap <silent> <leader>bw :StripWhitespace<cr>
 
 xnoremap <silent> <leader>bw :StripWhitespace<cr>
+
+nnoremap <silent> <tab> :exec 'bnext ' . g:last_buf_nr<cr>
+
+" autocmds
+augroup tab
+    autocmd!
+    autocmd BufLeave * let g:last_buf_nr = bufnr()
+augroup END
