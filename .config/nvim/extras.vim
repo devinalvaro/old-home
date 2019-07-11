@@ -110,4 +110,4 @@ runtime modules/window.vim
 
 " ---- colorscheme ---- "
 
-colorscheme onedark
+silent! colorscheme onedark
