@@ -16,6 +16,11 @@ if type -q xclip;
     abbr -a yank 'xclip -in -selection clipboard'
 end
 
+# locale
+set -x LANG "en_US.UTF-8"
+set -x LANGUAGE "en_US.UTF-8"
+set -x LC_ALL "en_US.UTF-8"
+
 # path
 set -x GOPATH "$HOME/.go"
 set -x PYTHONUSERBASE "$HOME/.pip"
