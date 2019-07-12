@@ -48,6 +48,7 @@ Plug 'junegunn/fzf.vim'
 
 " highligting
 Plug 'joshdick/onedark.vim'
+Plug 'justinmk/vim-syntax-extra'
 Plug 'sheerun/vim-polyglot'
 
 " quickfix
