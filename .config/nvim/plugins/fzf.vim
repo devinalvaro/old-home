@@ -11,7 +11,7 @@ endif
 " autocmds
 augroup fzf
     autocmd!
-    autocmd BufEnter * if &filetype ==# 'fzf' | startinsert
+    autocmd BufEnter * if &filetype ==# 'fzf' | startinsert | endif
     autocmd FileType fzf
                 \ tnoremap <buffer> <esc> <c-g> |
                 \ tnoremap <buffer> <c-\><c-n> <c-\><c-n>
