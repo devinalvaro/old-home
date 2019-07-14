@@ -81,13 +81,11 @@ let &showbreak = '↳ '
 " ---- mappings ---- "
 
 " buffer
-nnoremap <tab> <c-^>
+nnoremap <bslash> <c-^>
 
 " command
 nnoremap ; :
 xnoremap ; :
-
-cnoremap <c-g> <c-u><backspace>
 
 cnoremap <c-n> <down>
 cnoremap <c-p> <up>
