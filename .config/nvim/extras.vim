@@ -57,6 +57,7 @@ Plug 'romainl/vim-qf'
 " search
 Plug 'haya14busa/vim-asterisk'
 Plug 'justinmk/vim-sneak'
+Plug 'mhinz/vim-grepper'
 Plug 'romainl/vim-cool'
 
 " tags
@@ -89,6 +90,7 @@ runtime plugins/dirvish.vim
 runtime plugins/eunuch.vim
 runtime plugins/fzf.vim
 runtime plugins/gitgutter.vim
+runtime plugins/grepper.vim
 runtime plugins/gutentags.vim
 runtime plugins/neoterm.vim
 runtime plugins/onedark.vim
