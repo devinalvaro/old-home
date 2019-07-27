@@ -77,39 +77,8 @@ call plug#end()
 
 " ---- components ---- "
 
-" plugins
-runtime plugins/ale.vim
-runtime plugins/asterisk.vim
-runtime plugins/better_whitespace.vim
-runtime plugins/clever_f.vim
-runtime plugins/coc.vim
-runtime plugins/commentary.vim
-runtime plugins/cool.vim
-runtime plugins/delimitemate.vim
-runtime plugins/dirvish.vim
-runtime plugins/eunuch.vim
-runtime plugins/fzf.vim
-runtime plugins/gitgutter.vim
-runtime plugins/grepper.vim
-runtime plugins/gutentags.vim
-runtime plugins/neoterm.vim
-runtime plugins/onedark.vim
-runtime plugins/qf.vim
-runtime plugins/sneak.vim
-runtime plugins/undotree.vim
-runtime plugins/vimtex.vim
-runtime plugins/which_key.vim
-
-" modules
-runtime modules/buffer.vim
-runtime modules/dir.vim
-runtime modules/file.vim
-runtime modules/git.vim
-runtime modules/other.vim
-runtime modules/search.vim
-runtime modules/tab.vim
-runtime modules/term.vim
-runtime modules/window.vim
+runtime! plugins/*.vim
+runtime! modules/*.vim
 
 " ---- colorscheme ---- "
 
