@@ -46,3 +46,6 @@
 	rt = rev-parse --show-toplevel
 	rv = revert
 	sh = stash
+
+[url "gitlab@git.garena.com:2222"]
+	insteadOf = https://git.garena.com
