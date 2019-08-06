@@ -33,7 +33,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'sbdchd/neoformat'
 
 " language
-Plug 'fatih/vim-go', { 'tag': 'v1.20', 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'tag': 'v1.20', 'do': ':GoInstallBinaries' }
 Plug 'lervag/vimtex'
 
 " linting
