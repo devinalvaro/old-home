@@ -38,6 +38,9 @@ let maplocalleader = ','
 set showmatch
 set suffixes-=.h
 
+" mouse
+set mouse=a
+
 " search
 set gdefault
 set ignorecase
