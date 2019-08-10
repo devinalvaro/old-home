@@ -32,6 +32,8 @@ sudo apt-get install -qq \
     ripgrep \
     --no-install-recommends
 
+# ...
+
 # docker
 
 if [ $(groups $USER | grep -q docker) ]; then
@@ -71,6 +73,16 @@ if [ ! -d "${NVIM_FTPLUGIN}" ]; then
     ln -sfn ~/.config/nvim/langs ${NVIM_FTPLUGIN}
 fi
 
+# ...
+
+# node
+
+if ! [ -x "$(command -v node)" ]; then
+    echo "==> Installing node"
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+fi
+
 # go
 
 GO_VERSION="1.12.7"
@@ -83,7 +95,7 @@ fi
 
 GO_BIN="/usr/local/bin/go"
 if [ ! -f "${GO_BIN}" ]; then
-    echo "==> Linking fd-find to fd"
+    echo "==> Linking go to /usr/local/bin"
     sudo ln -sfn /usr/local/go/bin/go ${GO_BIN}
 fi
 
