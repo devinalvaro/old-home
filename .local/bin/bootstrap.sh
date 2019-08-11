@@ -112,8 +112,7 @@ pip3 install --user \
     virtualfish
 
 echo "==> Setting python environment"
-pip3 install --user 'python-language-server[rope,pycodestyle,pyflakes]'
-pip3 install --user black
+pip3 install --user 'python-language-server[rope,pycodestyle,pyflakes,yapf]'
 
 # rust
 
