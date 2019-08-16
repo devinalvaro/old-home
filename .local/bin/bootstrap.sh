@@ -26,9 +26,7 @@ sudo apt-get install -qq \
     mosh \
     neovim \
     python3 \
-    python3-dev \
     python3-pip \
-    python3-setuptools \
     ripgrep \
     --no-install-recommends
 
