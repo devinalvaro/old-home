@@ -47,5 +47,5 @@
 	rv = revert
 	sh = stash
 
-[url "gitlab@git.garena.com:2222"]
-	insteadOf = https://git.garena.com
+[url "ssh://gitlab@git.garena.com:2222/"]
+	insteadOf = https://git.garena.com/
