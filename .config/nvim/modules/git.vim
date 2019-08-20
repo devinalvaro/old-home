@@ -44,7 +44,7 @@ nnoremap <silent> <leader>gd  :Gdiff<cr>
 nnoremap <silent> <leader>ge  :Gedit<cr>
 nnoremap <silent> <leader>gf  :GFiles<cr>
 nnoremap <silent> <leader>gg  :Git<space>
-nnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
+nnoremap <silent> <leader>gl  :Gllog<cr>
 nnoremap <silent> <leader>gr  :Gread<cr>
 nnoremap <silent> <leader>gs  :vert Gstatus<cr>
 nnoremap <silent> <leader>gmf :Gfetch<cr>
