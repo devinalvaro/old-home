@@ -9,6 +9,6 @@ COPY home /home
 WORKDIR /home
 ENV HOME /home
 
-RUN .local/bin/bootstrap-ubuntu.sh
+RUN .bootstrap/bootstrap-ubuntu-docker.sh
 
 CMD ["fish"]
