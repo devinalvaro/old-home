@@ -34,7 +34,6 @@ Plug 'sbdchd/neoformat'
 
 " language
 Plug 'fatih/vim-go', { 'tag': 'v1.20' }
-Plug 'lervag/vimtex'
 
 " linting
 Plug 'w0rp/ale', { 'tag': 'v2.5.0' }
