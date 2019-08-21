@@ -49,8 +49,8 @@ if [ ! -f "${FISHER_FILE}" ]; then
     fish -c fisher
 fi
 
-echo " ==> setting fish as the default shell"
-sudo chsh -s "$(which fish)" $user
+echo " ==> Setting fish as the default shell"
+chsh -s "$(which fish)"
 
 # nvim
 
