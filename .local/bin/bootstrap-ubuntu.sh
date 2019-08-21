@@ -58,6 +58,9 @@ if [ ! -f "${FISHER_FILE}" ]; then
     fish -c fisher
 fi
 
+echo " ==> setting fish as the default shell"
+sudo chsh -s "$(which fish)" $user
+
 # nvim
 
 VIM_PLUG_FILE="${HOME}/.local/share/nvim/site/autoload/plug.vim"
