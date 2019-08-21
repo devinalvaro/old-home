@@ -8,12 +8,12 @@ UPGRADE_PACKAGES=${1:-none}
 
 if [ "${UPGRADE_PACKAGES}" != "none" ]; then
     echo "==> Updating and upgrading packages"
-    sudo apt-get update
-    sudo apt-get upgrade -y
+    apt-get update
+    apt-get upgrade -y
 fi
 
 echo "==> Installing packages"
-sudo apt-get install -qq \
+apt-get install -qq \
     build-essential \
     ctags \
     curl \
@@ -37,7 +37,7 @@ sudo apt-get install -qq \
 FD_BIN="/usr/local/bin/fd"
 if [ ! -f "${FD_BIN}" ]; then
     echo "==> Linking fdfind to fd"
-    sudo ln -sfn "$(which fdfind)" ${FD_BIN}
+    ln -sfn "$(which fdfind)" ${FD_BIN}
 fi
 
 # fish
@@ -72,8 +72,8 @@ fi
 
 if ! [ -x "$(command -v node)" ]; then
     echo "==> Installing node"
-    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-    sudo apt-get install -y nodejs
+    curl -sL https://deb.nodesource.com/setup_12.x | bash -
+    apt-get install -y nodejs
 fi
 
 # go
@@ -82,14 +82,14 @@ GO_VERSION="1.12.7"
 if ! [ -x "$(command -v go)" ]; then
     echo "==> Installing go"
     wget -c "https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz"
-    sudo tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz"
+    tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz"
     rm -f "go${GO_VERSION}.linux-amd64.tar.gz"
 fi
 
 GO_BIN="/usr/local/bin/go"
 if [ ! -f "${GO_BIN}" ]; then
     echo "==> Linking go to /usr/local/bin"
-    sudo ln -sfn /usr/local/go/bin/go ${GO_BIN}
+    ln -sfn /usr/local/go/bin/go ${GO_BIN}
 fi
 
 # python
