@@ -36,9 +36,9 @@ sudo apt-get install -qq \
 
 # docker
 
-if [ $(groups $USER | grep -q docker) ]; then
+if [ "$(groups ${USER} | grep -q docker)" ]; then
     echo "==> Adding user to docker group"
-    sudo gpasswd -a $USER docker
+    sudo gpasswd -a ${USER} docker
 fi
 
 # fd
@@ -73,7 +73,7 @@ fi
 NVIM_FTPLUGIN="${HOME}/.local/share/nvim/site/ftplugin"
 if [ ! -d "${NVIM_FTPLUGIN}" ]; then
     echo "==> Linking nvim/langs to nvim/site/ftplugin"
-    ln -sfn ~/.config/nvim/langs ${NVIM_FTPLUGIN}
+    ln -sfn "${HOME}/.config/nvim/langs" ${NVIM_FTPLUGIN}
 fi
 
 # ...
@@ -88,7 +88,7 @@ fi
 
 # go
 
-GO_VERSION="1.12.7"
+GO_VERSION="1.12.9"
 if ! [ -x "$(command -v go)" ]; then
     echo "==> Installing go"
     wget -c "https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz"
@@ -103,13 +103,13 @@ if [ ! -f "${GO_BIN}" ]; then
 fi
 
 echo "==> Setting go environment"
-export GOPATH="$HOME/.go"
+export GOPATH="${HOME}/.go"
 nvim +GoInstallBinaries +qall
 
 # python
 
 echo "==> Installing pip packages"
-export PYTHONUSERBASE="$HOME/.pip"
+export PYTHONUSERBASE="${HOME}/.pip"
 pip3 install --user \
     neovim-remote \
     virtualfish
@@ -121,8 +121,8 @@ pip3 install --user 'python-language-server[rope,pycodestyle,pyflakes,yapf]'
 
 if ! [ -x "$(command -v rustup)" ]; then
     echo "==> Setting rust environment"
+    export PATH="${HOME}/.cargo/bin:$PATH"
     curl https://sh.rustup.rs -sSf | sh -s -- -y
-    export PATH="$HOME/.cargo/bin:$PATH"
     rustup component add rls rust-analysis rust-src
     rustup component add rustfmt
 fi
