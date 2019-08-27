@@ -1,6 +1,5 @@
 FROM ubuntu:19.04
 
-COPY home /home
 WORKDIR /home
 ENV HOME /home
 

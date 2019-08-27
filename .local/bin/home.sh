@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -it -v $HOME:/home home
+docker run --rm -it -v $HOME:/home devinalvaro/home
