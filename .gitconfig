@@ -25,6 +25,9 @@
 	df = diff
 	dc = diff --cached
 
+	lg = log
+	lo = log --oneline
+
 	st = status --short
 	sa = status --short -uall
 
@@ -33,7 +36,6 @@
 	cn = clean
 	co = checkout
 	fe = fetch
-	lg = log
 	mr = merge
 	mv = mv
 	p  = push
