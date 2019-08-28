@@ -7,6 +7,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
             build-essential \
             ctags \
             curl \
+            docker-compose \
+            docker.io \
             fd-find \
             fish \
             fzf \
@@ -14,7 +16,9 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
             lastpass-cli \
             neovim \
             python3 \
+            python3-dev \
             python3-pip \
+            python3-setuptools \
             ripgrep \
             wget \
             --no-install-recommends \
