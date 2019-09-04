@@ -77,6 +77,13 @@ if [ ! -d "${NVIM_FTPLUGIN}" ]; then
     ln -sfn "${HOME}/.config/nvim/langs" ${NVIM_FTPLUGIN}
 fi
 
+# pip
+
+echo "==> Installing pip packages"
+export PYTHONUSERBASE="${HOME}/.pip"
+pip3 install --user \
+    neovim-remote
+
 # ...
 
 # node
@@ -108,12 +115,6 @@ export GOPATH="${HOME}/.go"
 nvim +GoInstallBinaries +qall
 
 # python
-
-echo "==> Installing pip packages"
-export PYTHONUSERBASE="${HOME}/.pip"
-pip3 install --user \
-    neovim-remote \
-    virtualfish
 
 echo "==> Setting python environment"
 pip3 install --user 'python-language-server[rope,pycodestyle,pyflakes,yapf]'
