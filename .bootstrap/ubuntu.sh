@@ -15,7 +15,6 @@ fi
 echo "==> Installing packages"
 sudo apt-get install -qq \
     build-essential \
-    ctags \
     curl \
     docker-compose \
     docker.io \

@@ -59,10 +59,6 @@ Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-grepper'
 Plug 'romainl/vim-cool'
 
-" tags
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'majutsushi/tagbar'
-
 " undo
 Plug 'mbbill/undotree'
 
