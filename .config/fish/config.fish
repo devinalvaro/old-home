@@ -4,6 +4,7 @@ set fish_greeting
 abbr -a c cargo
 abbr -a d docker
 abbr -a g git
+abbr -a l 'ls -l'
 abbr -a p python
 abbr -a s sudo
 abbr -a v "$EDITOR"
