@@ -47,9 +47,6 @@ set ignorecase
 set inccommand=nosplit
 set smartcase
 
-" screen
-set lazyredraw
-
 " statusline
 set statusline=
             \\ %{&filetype==#''?'none':&filetype}
