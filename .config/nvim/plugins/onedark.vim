@@ -25,5 +25,6 @@ augroup one_dark
     autocmd!
     autocmd ColorScheme * call onedark#extend_highlight('Keyword', { 'fg': { 'gui': s:magenta }})
     autocmd ColorScheme * call onedark#extend_highlight('Operator', { 'fg': { 'gui': s:yellow } })
+    autocmd ColorScheme * call onedark#extend_highlight('Search', { 'fg': { 'gui': s:black } })
     autocmd ColorScheme * call onedark#extend_highlight('Special', { 'fg': { 'gui': s:red } })
 augroup END
