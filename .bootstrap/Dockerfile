@@ -31,9 +31,9 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
             && apt-get install -y nodejs
 
 # go
-RUN wget -c https://dl.google.com/go/go1.12.9.linux-amd64.tar.gz \
-            && tar -C /usr/local -xzf go1.12.9.linux-amd64.tar.gz \
-            && rm -f go1.12.9.linux-amd64.tar.gz \
+RUN wget -c https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz \
+            && tar -C /usr/local -xzf go1.13.1.linux-amd64.tar.gz \
+            && rm -f go1.13.1.linux-amd64.tar.gz \
             && ln -sfn /usr/local/go/bin/go /usr/local/bin/go
 
 CMD ["fish"]
