@@ -19,6 +19,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
             python3-pip \
             python3-setuptools \
             ripgrep \
+            ssh \
             wget \
             --no-install-recommends \
             && rm -rf /var/lib/apt/lists/*
