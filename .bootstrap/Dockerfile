@@ -37,4 +37,7 @@ RUN wget -c https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz \
             && rm -f go1.13.1.linux-amd64.tar.gz \
             && ln -sfn /usr/local/go/bin/go /usr/local/bin/go
 
+# path
+ENV PATH "/usr/local/go/bin:${PATH}"
+
 CMD ["fish"]
