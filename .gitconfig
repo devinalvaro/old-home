@@ -42,7 +42,7 @@
 	pl = pull
 	rb = rebase
 	re = remote
-	rf = reflog
+	rl = reflog
 	rm = rm
 	rs = reset
 	rt = rev-parse --show-toplevel
