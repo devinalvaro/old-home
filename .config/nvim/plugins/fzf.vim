@@ -2,11 +2,6 @@
 let g:fzf_files_options = ['--delimiter', '/', '--nth', '-1,..']
 let g:fzf_history_dir = '~/.local/share/fzf/fzf_history'
 
-" mappings
-if has('fzf')
-    nnoremap <silent> : :Commands<cr>
-endif
-
 " autocmds
 augroup fzf
     autocmd!

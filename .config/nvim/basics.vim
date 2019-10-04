@@ -87,6 +87,9 @@ let &showbreak = '↳ '
 nnoremap <bslash> <c-^>
 
 " command
+nnoremap : <nop>
+xnoremap : <nop>
+
 nnoremap ; :
 xnoremap ; :
 
