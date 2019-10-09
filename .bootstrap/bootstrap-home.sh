@@ -22,8 +22,9 @@ sudo apt-get install -qq \
     fish \
     fzf \
     git \
-    lastpass-cli \
     neovim \
+    nodejs \
+    npm \
     python3 \
     python3-dev \
     python3-pip \
@@ -85,16 +86,9 @@ pip3 install --user \
 
 # ...
 
-# node
-
-if ! [ -x "$(command -v node)" ]; then
-    echo "==> Installing node"
-    sudo apt-get install -y nodejs npm
-fi
-
 # go
 
-GO_VERSION="1.12.9"
+GO_VERSION="1.13.1"
 if ! [ -x "$(command -v go)" ]; then
     echo "==> Installing go"
     wget -c "https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz"

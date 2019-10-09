@@ -1,8 +1,17 @@
 #!/bin/bash
 
-cmd='fish'
-if [ $# -ne 0 ]; then
-    cmd="${@:1}"
+img='home'
+if [ $# -gt 0 ]; then
+    img="$1"
 fi
 
-docker run --rm -it -v $HOME:/home devinalvaro/home /bin/fish -c "cd $(dirs); $cmd"
+cmd='fish'
+if [ $# -gt 1 ]; then
+    cmd="${@:2}"
+fi
+
+docker run \
+    --rm -it \
+    -v "$HOME:/home" \
+    "devinalvaro/$img" \
+    /bin/fish -c "cd $(dirs); $cmd"
