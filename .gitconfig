@@ -1,5 +1,6 @@
 [core]
 	pager = less --tabs=1,5 -FRX
+	hooksPath = ~/.config/git/hooks
 
 [credential]
 	helper = cache
