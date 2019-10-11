@@ -22,6 +22,7 @@ sudo apt-get install -qq \
     fish \
     fzf \
     git \
+    golang \
     neovim \
     nodejs \
     npm \
@@ -87,20 +88,6 @@ pip3 install --user \
 # ...
 
 # go
-
-GO_VERSION="1.13.1"
-if ! [ -x "$(command -v go)" ]; then
-    echo "==> Installing go"
-    wget -c "https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz"
-    sudo tar -C /usr/local -xzf "go${GO_VERSION}.linux-amd64.tar.gz"
-    rm -f "go${GO_VERSION}.linux-amd64.tar.gz"
-fi
-
-GO_BIN="/usr/local/bin/go"
-if [ ! -f "${GO_BIN}" ]; then
-    echo "==> Linking go to /usr/local/bin"
-    sudo ln -sfn /usr/local/go/bin/go ${GO_BIN}
-fi
 
 echo "==> Setting go environment"
 export GOPATH="${HOME}/.go"

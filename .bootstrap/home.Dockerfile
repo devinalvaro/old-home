@@ -1,4 +1,4 @@
-FROM ubuntu:19.04
+FROM ubuntu:19.10
 
 WORKDIR /home
 ENV HOME /home
@@ -12,6 +12,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
                 fish \
                 fzf \
                 git \
+                golang \
                 neovim \
                 nodejs \
                 npm \
@@ -25,13 +26,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 # fd
 RUN ln -sfn /usr/bin/fdfind /usr/local/bin/fd
-
-# go
-ENV PATH "/usr/local/go/bin:${PATH}"
-RUN wget -c https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz \
-                && tar -C /usr/local -xzf go1.13.1.linux-amd64.tar.gz \
-                && rm -f go1.13.1.linux-amd64.tar.gz \
-                && ln -sfn /usr/local/go/bin/go /usr/local/bin/go
 
 # rust
 ENV PATH "${HOME}/.cargo/bin:${PATH}"
