@@ -1,6 +1,0 @@
-#!/bin/sh
-
-if [[ `grep 'develop'` ]]; then
-  echo "You really don't want to push to develop branch. Aborting."
-  exit 1
-fi
