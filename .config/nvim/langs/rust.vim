@@ -15,6 +15,7 @@ let b:which_key_local_map = {
             \   't': 'coc-type-definition',
             \   },
             \ 'r': 'coc-rename',
+            \ 't': 'rust-test',
             \ }
 
 " options
@@ -33,5 +34,6 @@ nmap     <buffer>          <localleader>ji <Plug>(coc-implementation)
 nmap     <buffer>          <localleader>jr <Plug>(coc-references)
 nmap     <buffer>          <localleader>jt <Plug>(coc-type-definition)
 nmap     <buffer>          <localleader>r  <Plug>(coc-rename)
+nnoremap <buffer> <silent> <localleader>t  :RustTest<cr>
 
 xnoremap <buffer> <silent> <localleader>=  :RustFmtRange<cr>
