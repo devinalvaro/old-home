@@ -13,7 +13,7 @@ let b:ale_linters = ['gopls']
 nnoremap <buffer> <silent> <localleader>=  :Neoformat<cr>
 nnoremap <buffer> <silent> <localleader>i  :GoImports<cr>
 nnoremap <buffer> <silent> <localleader>r  :GoRename<cr>
-nnoremap <buffer> <silent> <localleader>r  :GoTest<cr>
+nnoremap <buffer> <silent> <localleader>t  :GoTest<cr>
 
 xnoremap <buffer> <silent> <localleader>=  :Neoformat<cr>
 
