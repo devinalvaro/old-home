@@ -2,8 +2,8 @@
 let g:which_key_map['d'] = {
             \ 'name': '+dir',
             \ '.': 'cd-file-dir',
-            \ 'c': 'cd',
             \ 'd': 'list-dirs',
+            \ 'e': 'cd-dir',
             \ 'h': 'cd-home',
             \ 'g': 'cd-git-root',
             \ 'o': 'open-dir',
@@ -20,8 +20,8 @@ command! Dirs call fzf#run(fzf#wrap({
 
 " mappings
 nnoremap <silent> <leader>d. :cd %:p:h<cr>
-nnoremap          <leader>dc :cd<space>
 nnoremap <silent> <leader>dd :Dirs<cr>
+nnoremap          <leader>de :cd<space>
 nnoremap <silent> <leader>dh :cd ~<cr>
 nnoremap <silent> <leader>dg :Gcd<cr>
 nnoremap <silent> <leader>do :execute 'Dirvish ' . getcwd()<cr>
