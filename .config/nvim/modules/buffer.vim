@@ -22,3 +22,9 @@ nnoremap <silent> <leader>bv :vertical new<cr>
 nnoremap <silent> <leader>bw :StripWhitespace<cr>
 
 xnoremap <silent> <leader>bw :StripWhitespace<cr>
+
+" autocmds
+augroup buffer
+    autocmd!
+    autocmd BufHidden * if expand('%:~:.') ==# '' | bunload | endif
+augroup END
