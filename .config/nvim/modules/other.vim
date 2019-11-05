@@ -14,7 +14,6 @@ let g:which_key_map['o'] = {
             \ 't': {
             \   'name': '+tags',
             \   't': 'toggle-tagbar',
-            \   'u': 'update-tags',
             \   },
             \ 'u': {
             \   'name': '+undo',
@@ -25,8 +24,10 @@ let g:which_key_map['o'] = {
 " mappings
 nmap              <leader>olj <Plug>(qf_qf_switch)
 nmap              <leader>olt <Plug>(qf_loc_toggle)
+
 nmap              <leader>oqj <Plug>(qf_qf_switch)
 nmap              <leader>oqt <Plug>(qf_qf_toggle)
+
 nnoremap <silent> <leader>ott :TagbarToggle<cr>
-nnoremap <silent> <leader>otu :GutentagsUpdate<cr>
+
 nnoremap <silent> <leader>out :UndotreeToggle<cr>
