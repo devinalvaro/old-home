@@ -23,6 +23,9 @@ nnoremap <silent> <leader>bw :StripWhitespace<cr>
 
 xnoremap <silent> <leader>bw :StripWhitespace<cr>
 
+" abbrevs
+cnoreabbrev bdo bufdo
+
 " autocmds
 augroup buffer
     autocmd!
