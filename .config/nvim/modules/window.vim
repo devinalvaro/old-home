@@ -17,10 +17,6 @@ let g:which_key_map['w'] = {
             \ 'b' : 'bottom-right-window',
             \ 'd' : 'delete-window',
             \ 'f' : 'go-to-file-on-new-window',
-            \ 'h' : 'move-to-left-window',
-            \ 'j' : 'move-to-bottom-window',
-            \ 'k' : 'move-to-top-window',
-            \ 'l' : 'move-to-right-window',
             \ 'o' : 'only-window',
             \ 'p' : 'preview-window',
             \ 'r' : 'rotate-windows-down-right',
@@ -52,12 +48,8 @@ nnoremap          <leader>wL <c-w>L
 nnoremap          <leader>wR <c-w>R
 nnoremap          <leader>wT <c-w>T
 nnoremap          <leader>wb <c-w>b
-nnoremap          <leader>wd <c-w>c
+nnoremap          <leader>wd <c-w>q
 nnoremap          <leader>wf <c-w>f
-nnoremap          <leader>wh <c-w>h
-nnoremap          <leader>wj <c-w>j
-nnoremap          <leader>wk <c-w>k
-nnoremap          <leader>wl <c-w>l
 nnoremap          <leader>wo <c-w>o
 nnoremap          <leader>wp <c-w>P
 nnoremap          <leader>wr <c-w>r
