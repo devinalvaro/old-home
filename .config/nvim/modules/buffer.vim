@@ -29,5 +29,5 @@ cnoreabbrev bdo bufdo
 " autocmds
 augroup buffer
     autocmd!
-    autocmd BufHidden * if expand('%:~:.') ==# '' | bunload | endif
+    autocmd BufHidden * if expand('<afile>:~:.') ==# '' | bunload | endif
 augroup END
