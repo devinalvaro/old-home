@@ -15,6 +15,9 @@ nnoremap <silent> <leader>ad :tabclose<cr>
 nnoremap <silent> <leader>an :tab split<cr>
 nnoremap <silent> <leader>ao :tabonly<cr>
 
+" abbrevs
+cnoreabbrev tm tabmove
+
 " autocmds
 augroup tab
     autocmd!
