@@ -3,6 +3,10 @@
 " buffer
 set hidden
 
+" backup
+set noswapfile
+set nowritebackup
+
 " color
 set termguicolors
 
@@ -56,11 +60,8 @@ set statusline=
             \%l/%L%1(%)
             \%c%1(%)
 
-" swap
-set noswapfile
-
 " time
-set updatetime=100
+set updatetime=200
 set timeoutlen=400
 
 " undo
