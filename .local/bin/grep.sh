@@ -11,7 +11,7 @@ PATTERN="$2"
 n=$(( $(smc -e live services show merlion-main-live-sg | wc -l) - 4))
 echo "Grepping $PATTERN on $n $SERVICE tasks ..."
 
-UUID=($(openssl rand -base64 12))
+UUID=$(openssl rand -base64 12)
 mkdir -p /tmp/grep/$UUID
 echo "Storing results on /tmp/grep/$UUID/..."
 
