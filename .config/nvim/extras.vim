@@ -33,7 +33,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'sbdchd/neoformat'
 
 " language
-Plug 'fatih/vim-go', { 'tag': 'v1.20' }
+Plug 'fatih/vim-go', { 'tag': 'v1.21' }
+Plug 'hashivim/vim-terraform'
 
 " linting
 Plug 'w0rp/ale', { 'tag': 'v2.5.0' }
