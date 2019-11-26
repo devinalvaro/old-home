@@ -9,5 +9,5 @@ nnoremap <silent> <localleader> :silent! WhichKey ','<cr>
 xnoremap <silent> <localleader> :silent! WhichKeyVisual ','<cr>
 
 " others
-call which_key#register('<space>', 'g:which_key_map')
-call which_key#register(',', 'b:which_key_local_map')
+silent! call which_key#register('<space>', 'g:which_key_map')
+silent! call which_key#register(',', 'b:which_key_local_map')
