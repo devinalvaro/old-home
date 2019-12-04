@@ -8,8 +8,8 @@ abbr -a l 'ls -l'
 abbr -a p python
 abbr -a s sudo
 abbr -a v "$EDITOR"
+abbr -a z zypper
 
-abbr -a dc docker-compose
 abbr -a xo xdg-open
 
 if type -q xclip;
