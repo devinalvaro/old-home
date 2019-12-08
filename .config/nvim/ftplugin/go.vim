@@ -16,9 +16,3 @@ nnoremap <buffer> <silent> <localleader>r  :GoRename<cr>
 nnoremap <buffer> <silent> <localleader>t  :GoTest<cr>
 
 xnoremap <buffer> <silent> <localleader>=  :Neoformat<cr>
-
-" autocmds
-augroup go
-    autocmd!
-    autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
-augroup END
