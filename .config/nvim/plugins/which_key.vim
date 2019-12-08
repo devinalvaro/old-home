@@ -1,6 +1,5 @@
 " data
 let g:which_key_map = {}
-let g:which_key_run_map_on_popup = 1
 
 " mappings
 nnoremap <silent> <leader>      :WhichKey '<space>'<cr>
