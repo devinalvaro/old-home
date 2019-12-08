@@ -10,12 +10,15 @@ let g:which_key_map['a'] = {
 let g:previous_tab_nr = 1
 
 " mappings
-nnoremap <m-J>           gT
-nnoremap <m-K>           gt
-inoremap <m-J>      <esc>gT
-inoremap <m-K>      <esc>gt
-tnoremap <m-J> <c-\><c-n>gT
-tnoremap <m-K> <c-\><c-n>gt
+nnoremap <m-\|>           :exec 'tabnext ' . g:previous_tab_nr<cr>
+nnoremap <m-J>            gT
+nnoremap <m-K>            gt
+inoremap <m-\|>      <esc>:exec 'tabnext ' . g:previous_tab_nr<cr>
+inoremap <m-J>       <esc>gT
+inoremap <m-K>       <esc>gt
+tnoremap <m-\|> <c-\><c-n>:exec 'tabnext ' . g:previous_tab_nr<cr>
+tnoremap <m-J>  <c-\><c-n>gT
+tnoremap <m-K>  <c-\><c-n>gt
 
 nnoremap <silent> <leader>ad :tabclose<cr>
 nnoremap <silent> <leader>an :tab split<cr>
