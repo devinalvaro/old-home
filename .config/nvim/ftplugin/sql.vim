@@ -1,2 +1,0 @@
-" settings
-setlocal commentstring=//%s

@@ -1,8 +1,8 @@
 " data
 let b:which_key_local_map = {
-            \ '=': 'go-imports',
-            \ 'r': 'go-rename',
-            \ 't': 'go-test',
+            \ '=': 'format',
+            \ 'r': 'rename',
+            \ 't': 'test',
             \ }
 
 " options
