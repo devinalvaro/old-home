@@ -7,6 +7,4 @@ augroup dirvish
     autocmd FileType dirvish
                 \ nnoremap <buffer> <silent> t :call dirvish#open('tabedit', 0)<CR> |
                 \ xnoremap <buffer> <silent> t :call dirvish#open('tabedit', 0)<CR>
-    autocmd FileType dirvish
-                \ nnoremap <buffer> <silent> gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
 augroup END
