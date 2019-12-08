@@ -1,7 +1,6 @@
 " data
 let b:which_key_local_map = {
-            \ '=': 'neoformat',
-            \ 'i': 'go-imports',
+            \ '=': 'go-imports',
             \ 'r': 'go-rename',
             \ 't': 'go-test',
             \ }
@@ -10,9 +9,6 @@ let b:which_key_local_map = {
 let b:ale_linters = ['gopls']
 
 " mappings
-nnoremap <buffer> <silent> <localleader>=  :Neoformat<cr>
-nnoremap <buffer> <silent> <localleader>i  :GoImports<cr>
+nnoremap <buffer> <silent> <localleader>=  :GoImports<cr>
 nnoremap <buffer> <silent> <localleader>r  :GoRename<cr>
 nnoremap <buffer> <silent> <localleader>t  :GoTest<cr>
-
-xnoremap <buffer> <silent> <localleader>=  :Neoformat<cr>
