@@ -37,7 +37,7 @@ Plug 'fatih/vim-go', { 'tag': 'v1.21' }
 Plug 'hashivim/vim-terraform'
 
 " linting
-Plug 'w0rp/ale', { 'tag': 'v2.5.0' }
+Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
 
 " lsp
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
