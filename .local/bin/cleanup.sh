@@ -3,9 +3,9 @@
 set -eu
 
 # fzf
-rm -f ~/.local/share/fzf/fzf_history/*
+rm -f "$HOME/.local/share/fzf/fzf_history/*"
 
 # neovim
-rm -f ~/.local/share/nvim/shada/main.shada
-rm -f ~/.local/share/nvim/undo/*
-rm -f ~/.local/share/nvim/view/*
+rm -f "$HOME/.local/share/nvim/shada/main.shada"
+rm -f "$HOME/.local/share/nvim/undo/*"
+rm -f "$HOME/.local/share/nvim/view/*"
