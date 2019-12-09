@@ -1,14 +1,14 @@
 " data
 let b:which_key_local_map = {
-            \ '=': 'format',
             \ 'r': 'rename',
             \ 't': 'test',
             \ }
 
 " options
 let b:ale_linters = ['gopls']
+let b:go_fmt_command = "goimports"
+let b:go_fmt_fail_silently = 1
 
 " mappings
-nnoremap <buffer> <silent> <localleader>=  :GoImports<cr>
-nnoremap <buffer> <silent> <localleader>r  :GoRename<cr>
-nnoremap <buffer> <silent> <localleader>t  :GoTest<cr>
+nnoremap <buffer> <silent> <localleader>r :GoRename<cr>
+nnoremap <buffer> <silent> <localleader>t :GoTest<cr>
