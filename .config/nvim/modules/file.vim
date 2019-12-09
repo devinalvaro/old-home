@@ -16,5 +16,3 @@ nnoremap          <leader>fe :edit<space>
 nnoremap          <leader>fr :Rename<space>
 nnoremap <silent> <leader>fs :write<cr>
 nnoremap          <leader>fw :write<space>
-
-xnoremap <silent> <leader>fs :write<cr>

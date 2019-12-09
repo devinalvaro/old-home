@@ -21,7 +21,5 @@ nnoremap <silent> <leader>bs :new<cr>
 nnoremap <silent> <leader>bv :vertical new<cr>
 nnoremap <silent> <leader>bw :StripWhitespace<cr>
 
-xnoremap <silent> <leader>bw :StripWhitespace<cr>
-
 " abbrevs
 cnoreabbrev bdo bufdo

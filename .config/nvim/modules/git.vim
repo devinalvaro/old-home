@@ -55,6 +55,3 @@ nnoremap <silent> <leader>gmr :Grebase<cr>
 nnoremap <silent> <leader>hp  :GitGutterPreviewHunk<cr>
 nnoremap <silent> <leader>hs  :GitGutterStageHunk<cr>
 nnoremap <silent> <leader>hu  :GitGutterUndoHunk<cr>
-
-xnoremap <silent> <leader>gl  :call <sid>GitLog()<cr>
-xnoremap <silent> <leader>gr  :Gread<cr>
