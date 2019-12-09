@@ -11,10 +11,6 @@ let g:which_key_map['o'] = {
             \   'j': 'jump-to-from-quickfix',
             \   't': 'toggle-quickfix',
             \   },
-            \ 't': {
-            \   'name': '+tags',
-            \   't': 'toggle-tagbar',
-            \   },
             \ 'u': {
             \   'name': '+undo',
             \   't': 'toggle-undotree',
@@ -27,7 +23,5 @@ nmap              <leader>olt <Plug>(qf_loc_toggle)
 
 nmap              <leader>oqj <Plug>(qf_qf_switch)
 nmap              <leader>oqt <Plug>(qf_qf_toggle)
-
-nnoremap <silent> <leader>ott :TagbarToggle<cr>
 
 nnoremap <silent> <leader>out :UndotreeToggle<cr>
