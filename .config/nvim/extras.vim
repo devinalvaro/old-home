@@ -29,9 +29,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" formatting
-Plug 'sbdchd/neoformat'
-
 " language
 Plug 'fatih/vim-go', { 'tag': 'v1.21' }
 

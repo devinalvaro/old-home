@@ -7,5 +7,5 @@ let b:which_key_local_map = {
 " mappings
 nmap <buffer> gd <Plug>(coc-definition)
 
-nnoremap <buffer> <silent> <localleader>=  :Neoformat<cr>
-nmap     <buffer>          <localleader>r  <Plug>(coc-rename)
+nmap <buffer> <silent> <localleader>= <Plug>(coc-format)
+nmap <buffer>          <localleader>r <Plug>(coc-rename)
