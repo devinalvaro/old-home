@@ -25,9 +25,3 @@ xnoremap <silent> <leader>bw :StripWhitespace<cr>
 
 " abbrevs
 cnoreabbrev bdo bufdo
-
-" autocmds
-augroup buffer
-    autocmd!
-    autocmd BufHidden * if expand('<afile>:~:.') ==# '' | bunload | endif
-augroup END
