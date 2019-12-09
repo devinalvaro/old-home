@@ -54,6 +54,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'romainl/vim-qf'
 
 " search
+Plug 'google/vim-searchindex'
 Plug 'haya14busa/vim-asterisk'
 Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-grepper'
