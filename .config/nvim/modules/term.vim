@@ -20,6 +20,7 @@ nnoremap <silent> <leader>tv :vsplit<cr>:terminal<cr>i
 
 " autocmds
 augroup term
-    autocmd BufEnter,TermOpen,WinEnter * if &buftype ==# 'terminal' | setlocal showmode | endif
-    autocmd BufLeave,TermClose,WinLeave * if &buftype ==# 'terminal' | setlocal noshowmode | endif
+    autocmd!
+    autocmd BufEnter,TermOpen * if &buftype ==# 'terminal' | setlocal showmode | endif
+    autocmd BufLeave,TermClose * if &buftype ==# 'terminal' | setlocal noshowmode | endif
 augroup END
