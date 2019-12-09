@@ -9,7 +9,7 @@ Plug 'moll/vim-bbye'
 Plug 'tpope/vim-sensible'
 
 " editing
-Plug 'raimondi/delimitmate'
+Plug 'jiangmiao/auto-pairs'
 Plug 'rhysd/clever-f.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
