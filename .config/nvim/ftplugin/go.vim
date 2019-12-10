@@ -6,8 +6,8 @@ let b:which_key_local_map = {
 
 " options
 let b:ale_linters = ['gopls']
-let b:go_fmt_command = "goimports"
-let b:go_fmt_fail_silently = 1
+let g:go_fmt_command = "goimports"
+let g:go_fmt_fail_silently = 1
 
 " mappings
 nnoremap <buffer> <silent> <localleader>r :GoRename<cr>
