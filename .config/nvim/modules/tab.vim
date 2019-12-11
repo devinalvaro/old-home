@@ -9,6 +9,9 @@ let g:which_key_map['a'] = {
 
 let g:previous_tab_nr = 1
 
+" abbrevs
+cnoreabbrev tm tabmove
+
 " mappings
 nnoremap <m-\|>           :exec 'tabnext ' . g:previous_tab_nr<cr>
 nnoremap <m-J>            gT
@@ -24,9 +27,6 @@ nnoremap <silent> <leader>ad :tabclose<cr>
 nnoremap <silent> <leader>an :tab split<cr>
 nnoremap <silent> <leader>ao :tabonly<cr>
 nnoremap <silent> <leader>ap :exec 'tabnext ' . g:previous_tab_nr<cr>
-
-" abbrevs
-cnoreabbrev tm tabmove
 
 " autocmds
 augroup tab
