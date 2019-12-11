@@ -27,6 +27,11 @@ let g:which_key_map['h'] = {
             \ 'u': 'undo-hunk',
             \ }
 
+" variables
+if executable('nvr')
+    let $GIT_EDITOR = 'nvr --remote-wait-silent'
+end
+
 " functions
 function! s:GitLog()
     let s:range = a:firstline != a:lastline ?

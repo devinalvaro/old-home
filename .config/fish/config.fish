@@ -1,28 +1,31 @@
 set fish_greeting
 
-# abbr
+# abbreviations
 abbr -a c cargo
 abbr -a d docker
+abbr -a e edit
 abbr -a g git
 abbr -a l 'ls -l'
 abbr -a p python
 abbr -a s sudo
-abbr -a v "$EDITOR"
+abbr -a x xdg-open
 abbr -a z zypper
 
-abbr -a xo xdg-open
-
 if type -q xclip;
-    abbr -a paste 'xclip -out -selection clipboard'
     abbr -a yank 'xclip -in -selection clipboard'
+    abbr -a paste 'xclip -out -selection clipboard'
 end
 
-# locale
-set -x LANG "en_US.UTF-8"
-set -x LANGUAGE "en_US.UTF-8"
-set -x LC_ALL "en_US.UTF-8"
+# functions
+function edit
+    if type -q nvr && set -q NVIM_LISTEN_ADDRESS;
+        nvr
+    else
+        $EDITOR
+    end
+end
 
-# path
+# paths
 set -x GOPATH "$HOME/.go"
 set -x PYTHONUSERBASE "$HOME/.pip"
 
@@ -31,3 +34,12 @@ set -x PATH "$HOME/.fzf/bin:$PATH"
 set -x PATH "$HOME/.go/bin:$PATH"
 set -x PATH "$HOME/.local/bin:$PATH"
 set -x PATH "$HOME/.pip/bin:$PATH"
+
+# variables
+set -x LANG "en_US.UTF-8"
+set -x LANGUAGE "en_US.UTF-8"
+set -x LC_ALL "en_US.UTF-8"
+
+if type -q nvim;
+    set -x EDITOR 'nvim'
+end
