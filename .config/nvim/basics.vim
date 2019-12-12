@@ -19,9 +19,6 @@ set complete-=t
 set completeopt=menuone,preview,noinsert,noselect
 set pumheight=8
 
-" confirmation
-set confirm
-
 " cursor
 set nostartofline
 
@@ -38,12 +35,8 @@ set tabstop=4
 let mapleader = "\<space>"
 let maplocalleader = ','
 
-" matching
-set showmatch
-set suffixes-=.h
-
-" mouse
-set mouse=a
+" prompt
+set confirm
 
 " search
 set gdefault
