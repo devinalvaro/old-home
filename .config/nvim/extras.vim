@@ -31,6 +31,7 @@ Plug 'tpope/vim-fugitive'
 
 " language
 Plug 'fatih/vim-go', { 'tag': 'v1.21' }
+Plug 'olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile' }
 
 " linting
 Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
