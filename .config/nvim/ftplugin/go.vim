@@ -12,4 +12,4 @@ let g:go_fmt_fail_silently = 1
 
 " mappings
 nnoremap <buffer> <silent> <localleader>r :GoRename<cr>
-nnoremap <buffer> <silent> <localleader>t :GoTest<cr>
+nnoremap <buffer> <silent> <localleader>t :GoTestFunc<cr>
