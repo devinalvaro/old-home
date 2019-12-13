@@ -19,9 +19,9 @@ end
 # functions
 function edit
     if type -q nvr && set -q NVIM_LISTEN_ADDRESS;
-        nvr
+        nvr $argv
     else
-        $EDITOR
+        $EDITOR $argv
     end
 end
 
