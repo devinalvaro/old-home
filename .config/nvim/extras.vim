@@ -20,6 +20,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'wellle/targets.vim'
+Plug 'guns/vim-sexp' | Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 " file
 Plug 'justinmk/vim-dirvish'
@@ -40,8 +41,7 @@ Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " fzf
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf'
 
 " highligting
 Plug 'joshdick/onedark.vim'
