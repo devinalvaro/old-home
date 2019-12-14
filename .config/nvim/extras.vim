@@ -31,11 +31,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " language
-Plug 'fatih/vim-go', { 'tag': 'v1.21' }
-Plug 'olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile' }
+Plug 'fatih/vim-go'
+Plug 'olical/conjure', { 'do': 'bin/compile' }
 
 " linting
-Plug 'dense-analysis/ale', { 'tag': 'v2.6.0' }
+Plug 'dense-analysis/ale'
 
 " lsp
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
