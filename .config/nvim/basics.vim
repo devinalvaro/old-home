@@ -21,6 +21,7 @@ set pumheight=8
 
 " cursor
 set nostartofline
+set mouse=a
 
 " editing
 set virtualedit=block
