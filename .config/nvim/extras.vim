@@ -10,7 +10,6 @@ Plug 'tpope/vim-sensible'
 
 " editing
 Plug 'jiangmiao/auto-pairs'
-Plug 'rhysd/clever-f.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -26,6 +25,9 @@ Plug 'guns/vim-sexp'
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-eunuch'
 
+" fzf
+Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf'
+
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -40,12 +42,14 @@ Plug 'dense-analysis/ale'
 " lsp
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
-" fzf
-Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf'
-
 " highligting
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
+
+" movement
+Plug 'chaoren/vim-wordmotion'
+Plug 'justinmk/vim-sneak'
+Plug 'rhysd/clever-f.vim'
 
 " quickfix
 Plug 'romainl/vim-qf'
@@ -53,7 +57,6 @@ Plug 'romainl/vim-qf'
 " search
 Plug 'google/vim-searchindex'
 Plug 'haya14busa/vim-asterisk'
-Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-grepper'
 Plug 'romainl/vim-cool'
 
