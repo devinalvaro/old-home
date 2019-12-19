@@ -1,7 +1,6 @@
 " options
 let g:grepper = {}
 let g:grepper.dir = 'filecwd'
-let g:grepper.jump = 1
 let g:grepper.prompt_quote = 2
 let g:grepper.prompt_text = '$t> '
 let g:grepper.searchreg = 1
