@@ -11,7 +11,6 @@ let b:which_key_local_map = {
             \   'b': 'eval-buffer',
             \   'e': 'eval',
             \   'r': 'eval-root',
-            \   'w': 'eval-word',
             \   },
             \ 't': 'test',
             \ }
@@ -27,8 +26,6 @@ nnoremap <buffer> <silent> <localleader>cu :ConjureUp<cr>
 nnoremap <buffer> <silent> <localleader>eb :ConjureEvalBuffer<cr>
 nnoremap <buffer> <silent> <localleader>ee :ConjureEvalCurrentForm<cr>
 nnoremap <buffer> <silent> <localleader>er :ConjureEvalRootForm<cr>
-nnoremap <buffer> <silent> <localleader>ew :ConjureEval<cr>
 xnoremap <buffer> <silent> <localleader>ee :ConjureEvalSelection<cr>
-
 
 nnoremap <buffer> <silent> <localleader>t  :ConjureRunTests<cr>
