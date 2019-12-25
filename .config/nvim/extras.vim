@@ -64,6 +64,7 @@ Plug 'romainl/vim-cool'
 Plug 'mbbill/undotree'
 
 " visual
+Plug 'itchyny/lightline.vim'
 Plug 'liuchengxu/vim-which-key'
 
 " whitespace
