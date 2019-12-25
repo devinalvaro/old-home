@@ -43,7 +43,7 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " highligting
-Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'sheerun/vim-polyglot'
 
 " movement
@@ -78,4 +78,4 @@ runtime! modules/*.vim
 
 " ---- colorscheme ---- "
 
-silent! colorscheme onedark
+silent! colorscheme nord
