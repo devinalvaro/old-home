@@ -30,9 +30,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Xrandr
-exec --no-startup-id xrandr --output Virtual1 --mode 1680x1050
-
 # layout
 workspace_layout tabbed
 
