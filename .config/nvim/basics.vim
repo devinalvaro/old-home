@@ -54,6 +54,9 @@ set statusline=
             \%l/%L%1(%)
             \%c%1(%)
 
+" tabline
+set showtabline=2
+
 " time
 set updatetime=200
 set timeoutlen=400
