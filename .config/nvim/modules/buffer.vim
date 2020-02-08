@@ -4,7 +4,6 @@ let g:which_key_map['b'] = {
             \ '/': 'list-buffers',
             \ 'd': 'delete-buffer',
             \ 'r': 'refresh-buffer',
-            \ 's': 'scratch-buffer',
             \ 'w': 'strip-buffer-whitespace',
             \ }
 
@@ -15,5 +14,4 @@ cnoreabbrev bdo bufdo
 nnoremap <silent> <leader>b/ :Buffers<cr>
 nnoremap <silent> <leader>bd :Bdelete!<cr>
 nnoremap <silent> <leader>br :edit<cr>
-nnoremap <silent> <leader>bs :edit /tmp/scratch.clj<cr>
 nnoremap <silent> <leader>bw :StripWhitespace<cr>

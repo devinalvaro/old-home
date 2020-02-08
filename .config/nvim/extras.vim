@@ -34,7 +34,7 @@ Plug 'tpope/vim-fugitive'
 
 " language
 Plug 'fatih/vim-go'
-Plug 'olical/conjure', { 'do': 'bin/compile' }
+Plug 'liquidz/vim-iced' | Plug 'liquidz/vim-iced-coc-source'
 
 " linting
 Plug 'dense-analysis/ale'
