@@ -57,6 +57,3 @@ nnoremap <silent> <leader>gml :Gpull<cr>
 nnoremap <silent> <leader>gmm :Gmerge<cr>
 nnoremap <silent> <leader>gmp :Gpush<cr>
 nnoremap <silent> <leader>gmr :Grebase<cr>
-nnoremap <silent> <leader>hp  :GitGutterPreviewHunk<cr>
-nnoremap <silent> <leader>hs  :GitGutterStageHunk<cr>
-nnoremap <silent> <leader>hu  :GitGutterUndoHunk<cr>
