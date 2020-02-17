@@ -1,5 +1,4 @@
 {
-    "coc.source.iced.enable": true,
     "diagnostic.displayByAle": true,
     "languageserver": {
         "golang": {
