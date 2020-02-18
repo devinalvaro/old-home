@@ -26,7 +26,7 @@ let g:lightline = {
             \   'filepath': 'Filepath',
             \ },
             \ 'active': {
-            \   'left': [ [ 'dirname' ], [ 'filepath' ] ],
+            \   'left': [ [], [ 'dirname' ], [ 'filepath' ] ],
             \ },
             \ 'inactive': {
             \   'left': [ [], [ 'filepath' ] ],
