@@ -19,6 +19,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'wellle/targets.vim'
+Plug 'guns/vim-sexp'
 
 " file
 Plug 'justinmk/vim-dirvish'
@@ -33,6 +34,7 @@ Plug 'tpope/vim-fugitive'
 
 " language
 Plug 'fatih/vim-go'
+Plug 'liquidz/vim-iced' | Plug 'liquidz/vim-iced-coc-source'
 
 " linting
 Plug 'dense-analysis/ale'
