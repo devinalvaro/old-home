@@ -6,8 +6,8 @@ let g:which_key_exit = ["\<esc>", "\<c-g>"]
 let g:which_key_use_floating_win = 0
 
 " mappings
-nnoremap <silent> <leader> :WhichKey '<space>'<cr>
-nnoremap <buffer> <silent> <localleader> :silent! WhichKey ','<cr>
+nnoremap <silent> <leader>      :WhichKey '<space>'<cr>
+nnoremap <silent> <localleader> :silent! WhichKey ','<cr>
 
 
 " others
