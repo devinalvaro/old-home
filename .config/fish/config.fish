@@ -35,6 +35,7 @@ set -x PATH "$HOME/.go/bin:$PATH"
 set -x PATH "$HOME/.lein/bin:$PATH"
 set -x PATH "$HOME/.local/bin:$PATH"
 set -x PATH "$HOME/.pip/bin:$PATH"
+set -x PATH "$HOME/.yarn/bin:$PATH"
 
 # variables
 set -x LANG "en_US.UTF-8"
