@@ -3,7 +3,8 @@
     "languageserver": {
         "golang": {
             "command": "gopls",
-            "rootPatterns": ["go.mod", "Gopkg.toml"],
+            "rootPatterns": ["go.mod"],
+            "disableWorkspaceFolders": true,
             "filetypes": ["go"]
         }
     }

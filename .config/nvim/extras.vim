@@ -32,7 +32,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " language
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'tag': 'v1.22' }
 
 " linting
 Plug 'dense-analysis/ale'
