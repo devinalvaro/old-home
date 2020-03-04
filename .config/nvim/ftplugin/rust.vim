@@ -5,7 +5,8 @@ let b:which_key_local_map = {
             \ }
 
 " options
-let b:ale_linters = ['rls']
+let g:rustfmt_autosave = 1
+let g:rustfmt_fail_silently = 1
 
 " mappings
 nmap <buffer> =G <Plug>(coc-format)
