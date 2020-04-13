@@ -15,3 +15,6 @@ rm "$HOME/.mysql_history" 2> /dev/null && touch "$_"
 rm -f "$HOME/.local/share/nvim/shada/main.shada"
 rm -f "$HOME/.local/share/nvim/undo/"*
 rm -f "$HOME/.local/share/nvim/view/"*
+
+# redis
+rm "$HOME/.rediscli_history" 2> /dev/null && touch "$_"
