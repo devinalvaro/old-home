@@ -9,7 +9,7 @@ Plug 'moll/vim-bbye'
 Plug 'tpope/vim-sensible'
 
 " editing
-Plug 'jiangmiao/auto-pairs'
+Plug 'cohama/lexima.vim'
 Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
