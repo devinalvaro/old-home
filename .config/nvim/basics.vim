@@ -20,7 +20,6 @@ set completeopt=menuone,preview,noinsert,noselect
 set pumheight=8
 
 " cursor
-set nostartofline
 set mouse=a
 
 " editing
