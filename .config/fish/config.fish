@@ -6,15 +6,9 @@ abbr -a d docker
 abbr -a e edit
 abbr -a g git
 abbr -a l 'ls -l'
+abbr -a o open
 abbr -a p python
-abbr -a s sudo
-abbr -a x xdg-open
-abbr -a z zypper
-
-if type -q xclip;
-    abbr -a yank 'xclip -in -selection clipboard'
-    abbr -a paste 'xclip -out -selection clipboard'
-end
+abbr -a s stack
 
 # functions
 function edit
