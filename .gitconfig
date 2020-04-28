@@ -1,10 +1,13 @@
 [core]
 	hooksPath = ~/.config/git/hooks
 	ignorecase = false
-	pager = less --tabs=1,5 -FRX
+	pager = delta --dark --theme 'Nord'
 
 [credential]
 	helper = cache
+
+[interactive]
+	diffFilter = delta --dark --theme 'Nord' --color-only
 
 [push]
 	default = simple
