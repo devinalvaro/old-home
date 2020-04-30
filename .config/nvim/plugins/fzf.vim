@@ -1,3 +1,18 @@
+" functions
+function! Float()
+    let width = float2nr(&columns * 0.8)
+    let height = float2nr(&lines * 0.6)
+    let opts = {
+                \ 'relative': 'editor',
+                \ 'row': (&lines - height) / 2,
+                \ 'col': (&columns - width) / 2,
+                \ 'width': width,
+                \ 'height': height,
+                \ }
+
+    call nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
+endfunction
+
 " commands
 command! -bang -nargs=* Rg call fzf#vim#grep(
             \ "rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>),
@@ -7,6 +22,7 @@ command! -bang -nargs=* Rg call fzf#vim#grep(
 
 " options
 let g:fzf_history_dir = '~/.local/share/fzf/fzf_history'
+let g:fzf_layout = { 'window': 'call Float()' }
 
 " autocmds
 augroup fzf
