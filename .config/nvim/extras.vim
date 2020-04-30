@@ -47,7 +47,6 @@ Plug 'sheerun/vim-polyglot'
 " movement
 Plug 'chaoren/vim-wordmotion'
 Plug 'justinmk/vim-sneak'
-Plug 'rhysd/clever-f.vim'
 
 " quickfix
 Plug 'romainl/vim-qf'
