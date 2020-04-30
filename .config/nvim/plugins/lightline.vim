@@ -1,11 +1,11 @@
 " functions
 function! Dirname()
   if getcwd() == '/'
-    return '/'
+    return 'ROOT'
   elseif getcwd() == $HOME
-    return '~'
+    return 'HOME'
   else
-    return fnamemodify(getcwd(), ':t')
+    return toupper(fnamemodify(getcwd(), ':t'))
   end
 endfunction
 
@@ -21,16 +21,19 @@ endfunction
 " options
 let g:lightline = {
             \ 'colorscheme': 'nord',
+            \ 'component': {
+            \   'lineinfo': '%3l:%-2v%<',
+            \ },
             \ 'component_function': {
             \   'dirname': 'Dirname',
             \   'filepath': 'Filepath',
             \ },
             \ 'active': {
-            \   'left': [ [], [ 'dirname' ], [ 'filepath' ] ],
+            \   'left': [ [ 'dirname' ], [ 'filepath' ] ],
+            \   'right': [ [ 'lineinfo' ] ],
             \ },
             \ 'inactive': {
-            \   'left': [ [], [ 'filepath' ] ],
+            \   'left': [ [], [ 'dirname', 'filepath' ] ],
+            \   'right': [ [ 'lineinfo' ] ],
             \ },
-            \ 'tabline_separator': { 'left': '', 'right': '' },
-            \ 'tabline_subseparator': { 'left': '', 'right': '' },
             \ }
