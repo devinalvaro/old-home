@@ -13,15 +13,15 @@ let g:previous_tab_nr = 1
 cnoreabbrev tm tabmove
 
 " mappings
-nnoremap <m-\|>           :exec 'tabnext ' . g:previous_tab_nr<cr>
-nnoremap <m-J>            gT
-nnoremap <m-K>            gt
-inoremap <m-\|>      <esc>:exec 'tabnext ' . g:previous_tab_nr<cr>
-inoremap <m-J>       <esc>gT
-inoremap <m-K>       <esc>gt
-tnoremap <m-\|> <c-\><c-n>:exec 'tabnext ' . g:previous_tab_nr<cr>
-tnoremap <m-J>  <c-\><c-n>gT
-tnoremap <m-K>  <c-\><c-n>gt
+nnoremap <m-s-tab>           :exec 'tabnext ' . g:previous_tab_nr<cr>
+nnoremap <m-s-j>             gT
+nnoremap <m-s-k>             gt
+inoremap <m-s-tab>      <esc>:exec 'tabnext ' . g:previous_tab_nr<cr>
+inoremap <m-s-j>        <esc>gT
+inoremap <m-s-k>        <esc>gt
+tnoremap <m-s-tab> <c-\><c-n>:exec 'tabnext ' . g:previous_tab_nr<cr>
+tnoremap <m-s-j>   <c-\><c-n>gT
+tnoremap <m-s-k>   <c-\><c-n>gt
 
 nnoremap <silent> <leader>ad :tabclose<cr>
 nnoremap <silent> <leader>an :tab split<cr>

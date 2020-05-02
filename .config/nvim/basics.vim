@@ -72,7 +72,7 @@ let &showbreak = '↳ '
 " ---- mappings ---- "
 
 " buffer
-nnoremap <bslash> <c-^>
+nnoremap <tab> <c-^>
 
 " command
 nnoremap : <nop>
@@ -98,6 +98,9 @@ onoremap <expr> n  'Nn'[v:searchforward]
 nnoremap <expr> N  'nN'[v:searchforward]
 xnoremap <expr> N  'nN'[v:searchforward]
 onoremap <expr> N  'nN'[v:searchforward]
+
+" window
+nnoremap <bslash> <c-w>
 
 " yanking
 nnoremap + "+
