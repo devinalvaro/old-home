@@ -16,3 +16,4 @@ tnoremap <m-k>   <c-\><c-n><c-w>k
 tnoremap <m-l>   <c-\><c-n><c-w>l
 
 nnoremap <silent> <c-w>/ :Windows<cr>
+nnoremap <silent> <bslash>/ :Windows<cr>

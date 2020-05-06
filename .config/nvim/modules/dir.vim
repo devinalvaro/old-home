@@ -17,8 +17,9 @@ command! Dirs call fzf#run(fzf#wrap({
                 \ }))
 
 " mappings
+nnoremap <silent> \| :Dirs<cr>
+
 nnoremap <silent> <leader>d. :cd %:p:h<cr>
-nnoremap <silent> <leader>d/ :Dirs<cr>
 nnoremap          <leader>de :cd<space>
 nnoremap <silent> <leader>dh :cd ~<cr>
 nnoremap <silent> <leader>do :execute 'Dirvish ' . getcwd()<cr>

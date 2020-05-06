@@ -75,14 +75,17 @@ let &showbreak = '↳ '
 nnoremap <tab> <c-^>
 
 " command
-nnoremap : <nop>
-xnoremap : <nop>
+nnoremap <silent> : :edit<cr>
+xnoremap          : <nop>
 
 nnoremap ; :
 xnoremap ; :
 
 cnoremap <c-n> <down>
 cnoremap <c-p> <up>
+
+" file
+nnoremap <silent> <cr> :update<cr>
 
 " indentation
 nnoremap <expr> i &modifiable && len(getline('.')) == 0 ? '"_cc' : 'i'
@@ -100,7 +103,7 @@ xnoremap <expr> N  'nN'[v:searchforward]
 onoremap <expr> N  'nN'[v:searchforward]
 
 " window
-nnoremap <bslash> <c-w>
+nnoremap \ <c-w>
 
 " yanking
 nnoremap + "+
