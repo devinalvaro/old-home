@@ -1,10 +1,3 @@
-" data
-let b:which_key_local_map = {
-            \ 'a': 'alternate',
-            \ 'r': 'rename',
-            \ 't': 'test',
-            \ }
-
 " options
 let b:ale_linters = ['gopls']
 let g:go_fmt_command = "goimports"

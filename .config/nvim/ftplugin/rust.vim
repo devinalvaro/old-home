@@ -1,9 +1,3 @@
-" data
-let b:which_key_local_map = {
-            \ 'r': 'rename',
-            \ 't': 'test',
-            \ }
-
 " options
 let g:rustfmt_autosave = 1
 let g:rustfmt_fail_silently = 1

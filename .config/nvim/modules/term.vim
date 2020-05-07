@@ -1,13 +1,3 @@
-" data
-let g:which_key_map['t'] = {
-            \ 'name': '+term',
-            \ '/': 'list-buffers',
-            \ 'a': 'new-term-tab',
-            \ 'n': 'new-term',
-            \ 's': 'new-term-below',
-            \ 'v': 'new-term-right',
-            \ }
-
 " mappings
 tnoremap <esc> <c-\><c-n>
 tnoremap <c-\><c-n> <esc>

@@ -1,12 +1,4 @@
 " data
-let g:which_key_map['a'] = {
-            \ 'name': '+tab',
-            \ 'd': 'delete-tab',
-            \ 'n': 'new-tab',
-            \ 'o': 'only-tab',
-            \ 'p': 'previous-tab',
-            \ }
-
 let g:previous_tab_nr = 1
 
 " abbrevs

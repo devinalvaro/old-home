@@ -1,10 +1,3 @@
-" data
-let g:which_key_map['b'] = {
-            \ 'name': '+buffer',
-            \ 'd': 'delete-buffer',
-            \ 'w': 'strip-buffer-whitespace',
-            \ }
-
 " abbrevs
 cnoreabbrev bdo bufdo
 

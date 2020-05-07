@@ -62,7 +62,6 @@ Plug 'mbbill/undotree'
 
 " visual
 Plug 'itchyny/lightline.vim'
-Plug 'liuchengxu/vim-which-key'
 
 " whitespace
 Plug 'ntpeters/vim-better-whitespace'

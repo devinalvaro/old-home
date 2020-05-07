@@ -1,32 +1,3 @@
-" data
-let g:which_key_map['g'] = {
-            \ 'name': '+git',
-            \ 'b': 'git-blame',
-            \ 'c': 'list-git-commits',
-            \ 'd': 'git-diff',
-            \ 'e': 'git-edit',
-            \ 'f': 'list-git-files',
-            \ 'g': 'git-command',
-            \ 'l': 'git-log',
-            \ 'm': {
-            \   'name': '+merge',
-            \   'f': 'git-fetch',
-            \   'l': 'git-pull',
-            \   'm': 'git-merge',
-            \   'p': 'git-push',
-            \   'r': 'git-rebase',
-            \   },
-            \ 'r': 'git-read',
-            \ 's': 'git-status',
-            \ }
-
-let g:which_key_map['h'] = {
-            \ 'name': '+hunk',
-            \ 'p': 'preview-hunk',
-            \ 's': 'stage-hunk',
-            \ 'u': 'undo-hunk',
-            \ }
-
 " variables
 if executable('nvr')
     let $GIT_EDITOR = 'nvr --remote-wait-silent'

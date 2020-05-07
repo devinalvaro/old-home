@@ -1,15 +1,3 @@
-" data
-let g:which_key_map['d'] = {
-            \ 'name': '+dir',
-            \ '.': 'cd-file-dir',
-            \ '/': 'list-dirs',
-            \ 'e': 'cd-dir',
-            \ 'h': 'cd-home',
-            \ 'o': 'open-dir',
-            \ 'p': 'cd-project',
-            \ 'u': 'cd-up',
-            \ }
-
 " commands
 command! Dirs call fzf#run(fzf#wrap({
                 \ 'source': empty($FZF_DIRECTORY_COMMAND) ? 'find * -type d' : $FZF_DIRECTORY_COMMAND,
