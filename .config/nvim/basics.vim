@@ -75,7 +75,7 @@ let &showbreak = '↳ '
 nnoremap <tab> <c-^>
 
 " command
-nnoremap <silent> : :edit<cr>
+nnoremap <silent> : :set nostartofline<cr>:edit<cr>:set startofline<cr>
 xnoremap          : <nop>
 
 nnoremap ; :
