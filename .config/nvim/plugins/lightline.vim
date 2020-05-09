@@ -27,13 +27,14 @@ let g:lightline = {
             \ 'component_function': {
             \   'dirname': 'Dirname',
             \   'filepath': 'Filepath',
+            \   'gitbranch': 'FugitiveHead',
             \ },
             \ 'active': {
             \   'left': [ [ 'dirname' ], [ 'filepath' ] ],
-            \   'right': [ [ 'lineinfo' ] ],
+            \   'right': [ [ 'gitbranch', 'lineinfo' ] ],
             \ },
             \ 'inactive': {
             \   'left': [ [], [ 'dirname', 'filepath' ] ],
-            \   'right': [ [ 'lineinfo' ] ],
+            \   'right': [ [ 'gitbranch', 'lineinfo' ] ],
             \ },
             \ }
