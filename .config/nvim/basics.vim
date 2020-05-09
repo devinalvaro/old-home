@@ -22,6 +22,9 @@ set pumheight=8
 " cursor
 set mouse=a
 
+" diff
+set diffopt+=vertical
+
 " editing
 set virtualedit=block
 
