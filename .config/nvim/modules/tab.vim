@@ -2,7 +2,8 @@
 let g:previous_tab_nr = 1
 
 " abbrevs
-cnoreabbrev tm tabmove
+cnoreabbrev tdo tabdo
+cnoreabbrev tm  tabmove
 
 " mappings
 nnoremap <m-s-tab>           :exec 'tabnext ' . g:previous_tab_nr<cr>

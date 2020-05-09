@@ -1,3 +1,6 @@
+" abbrevs
+cnoreabbrev wdo windo
+
 " mappings
 nnoremap <m-tab>           <c-w>p
 nnoremap <m-h>             <c-w>h
