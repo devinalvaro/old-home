@@ -1,30 +1,27 @@
+" abbrevs
+cnoreabbrev G  Git
+cnoreabbrev Gp Git --paginate
+
 " variables
 if executable('nvr')
     let $GIT_EDITOR = 'nvr --remote-wait-silent'
 end
 
-" functions
-function! s:GitLog()
-    let s:range = a:firstline != a:lastline ?
-                \ join([a:firstline, a:lastline], ',') : ''
-
-    :execute 'silent ' . s:range . 'Gllog'
-    :lopen
-    :wincmd p
-endfunction
-
 " mappings
-nnoremap <silent> <leader>gb  :Gblame<cr>
 nnoremap <silent> <leader>gc  :Commits<cr>
-nnoremap <silent> <leader>gd  :Gdiff<cr>
-nnoremap <silent> <leader>ge  :Gedit<cr>
 nnoremap <silent> <leader>gf  :GFiles<cr>
-nnoremap <silent> <leader>gg  :Git<space>
+
+nnoremap <silent> <leader>gb  :Git blame<cr>
+nnoremap <silent> <leader>gd  :Gdiffsplit<cr>
+nnoremap          <leader>ge  :Gedit<space>
+nnoremap          <leader>gg  :Ggrep<space>
 nnoremap <silent> <leader>gl  :Gllog<cr>
 nnoremap <silent> <leader>gr  :Gread<cr>
-nnoremap <silent> <leader>gs  :vert Gstatus<cr>
-nnoremap <silent> <leader>gmf :Gfetch<cr>
-nnoremap <silent> <leader>gml :Gpull<cr>
-nnoremap <silent> <leader>gmm :Gmerge<cr>
-nnoremap <silent> <leader>gmp :Gpush<cr>
-nnoremap <silent> <leader>gmr :Grebase<cr>
+nnoremap <silent> <leader>gs  :Git<cr>
+nnoremap <silent> <leader>gw  :Gwrite<cr>
+
+" autocmds
+augroup tab
+    autocmd!
+    autocmd BufReadPost fugitive://* set bufhidden=delete
+augroup END
