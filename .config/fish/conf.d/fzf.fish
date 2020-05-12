@@ -1,4 +1,4 @@
-set -x FZF_DEFAULT_OPTS '--ansi --exact --inline-info'
+set -x FZF_DEFAULT_OPTS '--ansi --inline-info'
 
 if type -q fd;
     set -x FZF_DEFAULT_COMMAND 'fd --type=file --color=always --follow --hidden'
