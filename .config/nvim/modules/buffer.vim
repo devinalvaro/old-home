@@ -1,7 +1,8 @@
 " abbrevs
+cnoreabbrev bd  Bdelete
 cnoreabbrev bdo bufdo
 
 " mappings
-nnoremap <silent> <s-tab> :Buffers<cr>
+nnoremap <silent> <s-tab> :Buffers !^term://<cr><space>
 
 nnoremap <silent> <leader>bd :Bdelete!<cr>

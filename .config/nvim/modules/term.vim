@@ -1,6 +1,7 @@
 " mappings
-tnoremap <esc> <c-\><c-n>
 tnoremap <c-\><c-n> <esc>
+tnoremap <esc> <c-\><c-n>
+tnoremap <c-d> <c-\><c-n>:Bdelete<cr>
 
 nnoremap <silent> <leader>t/ :Buffers term://<cr>
 nnoremap <silent> <leader>ta :tab split \| terminal<cr>i
