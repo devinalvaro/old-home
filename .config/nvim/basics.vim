@@ -80,9 +80,11 @@ nnoremap <silent> <tab> :set nostartofline<cr><c-^>:set startofline<cr>
 " command
 nnoremap <silent> : :set nostartofline<cr>:edit<cr>:set startofline<cr>
 xnoremap          : <nop>
+onoremap          : <nop>
 
 nnoremap ; :
 xnoremap ; :
+onoremap ; :
 
 cnoremap <c-n> <down>
 cnoremap <c-p> <up>
