@@ -1,5 +1,8 @@
 set fish_greeting
 
+# bindings
+bind \cd delete-char
+
 # functions
 function edit
     if type -q nvr; and set -q NVIM_LISTEN_ADDRESS;
