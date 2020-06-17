@@ -16,11 +16,17 @@
 	aa = add --all
 	ap = add --patch
 
-	ch = cherry
-	cp = cherry-pick
+	br  = branch
+	bd  = branch --delete
+	bm  = branch --merged
+	bdm = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
 
 	cm = commit
 	ca = commit --amend
+	ce = commit --allow-empty-message
+
+	ch = cherry
+	cp = cherry-pick
 
 	df = diff
 	dc = diff --cached
@@ -28,26 +34,32 @@
 	lg = log
 	lo = log --oneline
 
+	mr  = merge
+	mra = merge --abort
+
+	rb  = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+
+	sh = stash
+	shk = stash --keep-index
+
 	st = status --short
 	sa = status --short -uall
 
-	br = branch
 	cl = clone
 	cn = clean
 	co = checkout
 	fe = fetch
-	mr = merge
 	mv = mv
 	p  = push
 	pl = pull
-	rb = rebase
 	re = remote
 	rl = reflog
 	rm = rm
 	rs = reset
-	rt = rev-parse --show-toplevel
 	rv = revert
-	sh = stash
 
 [url "ssh://gitlab@git.garena.com:2222/"]
 	insteadOf = https://git.garena.com/
