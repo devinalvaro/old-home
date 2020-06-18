@@ -46,3 +46,8 @@ set -x LC_ALL "en_US.UTF-8"
 if type -q nvim;
     set -x EDITOR 'nvim'
 end
+
+# sources
+if test -e "$HOME/.config/fish/extra.fish"
+    source "$HOME/.config/fish/extra.fish"
+end
