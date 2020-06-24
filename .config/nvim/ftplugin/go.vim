@@ -13,3 +13,10 @@ nmap <buffer> gd <Plug>(coc-definition)
 nnoremap <buffer> <silent> <localleader>a :GoAlternate<cr>
 nmap     <buffer>          <localleader>r <Plug>(coc-rename)
 nnoremap <buffer> <silent> <localleader>t :GoTestFunc<cr>
+
+" autocmds
+augroup color
+    autocmd!
+    autocmd BufEnter,BufWritePost *.go syntax region Comment start="^\s*\(defer\)\?\s*\<logger\>" end="$"
+    autocmd BufEnter,BufWritePost *.go syntax region Comment start="^\s*\(defer\)\?\s*\<splog\>" end="$"
+augroup END
