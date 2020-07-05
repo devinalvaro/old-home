@@ -1,3 +1,11 @@
+# Window
+window:
+  startup_mode: Maximized
+
+# Font
+font:
+  size: 8.5
+
 # Colors (Nord)
 colors:
   # Default colors
@@ -31,3 +39,9 @@ colors:
     magenta: '0xB48EAD'
     cyan: '0x8FBCBB'
     white: '0xECEFF4'
+
+# Key Bindings
+key_bindings:
+  - { key: N,      mods: Control|Shift, action: SpawnNewInstance }
+  - { key: Q,      mods: Control|Shift, action: Quit }
+  - { key: Return, mods: Shift,   chars: "\x1b[13;2u" }
