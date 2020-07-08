@@ -21,7 +21,7 @@ nnoremap <silent> <leader>gs  :Git<cr>
 nnoremap <silent> <leader>gw  :Gwrite<cr>
 
 " autocmds
-augroup tab
+augroup git
     autocmd!
-    autocmd BufReadPost fugitive://* set bufhidden=delete
+    autocmd BufEnter * silent! Glcd
 augroup END
