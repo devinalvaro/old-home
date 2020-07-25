@@ -20,7 +20,7 @@ abbr -a g git
 abbr -a l 'ls -l'
 abbr -a o open
 abbr -a p python
-abbr -a s stack
+abbr -a s sudo
 
 if type -q exa;
     abbr -a l 'exa -l'
