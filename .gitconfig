@@ -16,41 +16,45 @@
 	aa = add --all
 	ap = add --patch
 
-	br  = branch
-	bd  = branch --delete
-	bm  = branch --merged
-	bdm = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
+	b  = branch
+	bd = branch --delete
+	bm = branch --merged
+	bx = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
 
-	cm = commit
+	c  = commit
 	ca = commit --amend
 	ce = commit --allow-empty-message
 
-	ch = cherry
-	cp = cherry-pick
-
-	df = diff
+	d  = diff
 	dc = diff --cached
 
-	lg = log
+	h  = stash
+	hd = stash drop
+	hk = stash --keep-index
+	hp = stash pop
+	hu = stash --include-untracked
+
+	l  = log
 	lo = log --oneline
 
-	mr  = merge
-	mra = merge --abort
+	m  = merge
+	ma = merge --abort
 
-	rb  = rebase
-	rba = rebase --abort
-	rbc = rebase --continue
-	rbs = rebase --skip
+	o  = checkout
+	ob = checkout -B
 
-	sh = stash
-	shk = stash --keep-index
+	r  = rebase
+	ra = rebase --abort
+	rc = rebase --continue
+	ri = rebase --interactive
+	rs = rebase --skip
 
-	st = status --short
+	s  = status --short
 	sa = status --short -uall
 
 	cl = clone
 	cn = clean
-	co = checkout
+	cp = cherry-pick
 	fe = fetch
 	mv = mv
 	p  = push
