@@ -19,9 +19,3 @@ nnoremap <silent> <leader>gl  :Gllog<cr>
 nnoremap <silent> <leader>gr  :Gread<cr>
 nnoremap <silent> <leader>gs  :Git<cr>
 nnoremap <silent> <leader>gw  :Gwrite<cr>
-
-" autocmds
-augroup git
-    autocmd!
-    autocmd BufEnter * silent! Glcd
-augroup END
