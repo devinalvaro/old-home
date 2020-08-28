@@ -7,6 +7,9 @@
 [push]
 	default = simple
 
+[pull]
+	rebase = false
+
 [user]
 	email = devin.alvaro@gmail.com
 	name = Devin Alvaro
