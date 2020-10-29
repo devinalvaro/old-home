@@ -30,11 +30,13 @@
 
 	d  = diff
 	dc = diff --cached
+	dh = diff HEAD^
 
 	h  = stash
 	hd = stash drop
 	hk = stash --keep-index
 	hp = stash pop
+	hs = stash show -v
 	hu = stash --include-untracked
 
 	l  = log
