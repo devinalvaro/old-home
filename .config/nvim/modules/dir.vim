@@ -10,6 +10,5 @@ nnoremap <silent> \| :Dirs<cr>
 nnoremap <silent> <leader>d. :cd %:p:h<cr>
 nnoremap          <leader>de :cd<space>
 nnoremap <silent> <leader>dh :cd ~<cr>
-nnoremap <silent> <leader>do :execute 'Dirvish ' . getcwd()<cr>
 nnoremap <silent> <leader>dp :Gcd<cr>
 nnoremap <silent> <leader>du :cd ..<cr>
