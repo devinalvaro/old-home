@@ -66,9 +66,6 @@ Plug 'itchyny/lightline.vim'
 " whitespace
 Plug 'ntpeters/vim-better-whitespace'
 
-" window
-Plug 'camspiers/lens.vim'
-
 call plug#end()
 
 " ---- components ---- "
