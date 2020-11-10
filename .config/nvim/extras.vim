@@ -10,7 +10,6 @@ Plug 'tpope/vim-sensible'
 
 " editing
 Plug 'cohama/lexima.vim'
-Plug 'tommcdo/vim-lion'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
