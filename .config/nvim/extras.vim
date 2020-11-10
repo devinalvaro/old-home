@@ -52,7 +52,6 @@ Plug 'romainl/vim-qf'
 
 " search
 Plug 'haya14busa/vim-asterisk'
-Plug 'mhinz/vim-grepper'
 
 " undo
 Plug 'mbbill/undotree'
