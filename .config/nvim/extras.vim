@@ -51,7 +51,6 @@ Plug 'justinmk/vim-sneak'
 Plug 'romainl/vim-qf'
 
 " search
-Plug 'google/vim-searchindex'
 Plug 'haya14busa/vim-asterisk'
 Plug 'mhinz/vim-grepper'
 Plug 'romainl/vim-cool'
