@@ -1,8 +1,8 @@
-" options
-let g:rustfmt_autosave = 1
-let g:rustfmt_fail_silently = 1
-
 " mappings
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
@@ -16,3 +16,9 @@ nmap <buffer> <silent> gt <Plug>(coc-type-definition)
 
 nmap <buffer> =G <Plug>(coc-format)
 nnoremap <buffer> <silent> K :call CocActionAsync('doHover')<CR>
+
+" autocmds
+augroup rust
+    autocmd!
+    autocmd BufWritePre *.rs :call CocActionAsync('format')
+augroup END
