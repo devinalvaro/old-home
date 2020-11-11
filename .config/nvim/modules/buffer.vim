@@ -1,5 +1,4 @@
 " abbrevs
-cnoreabbrev bd  Bdelete
 cnoreabbrev bdo bufdo
 
 " mappings

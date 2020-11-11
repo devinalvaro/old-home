@@ -8,9 +8,7 @@ if executable('nvr')
 end
 
 " mappings
-nnoremap <silent> <leader>gc  :Commits<cr>
-nnoremap <silent> <leader>gf  :GFiles<cr>
-
+nnoremap <silent> <leader>g/  :Commits<cr>
 nnoremap <silent> <leader>gb  :Git blame<cr>
 nnoremap <silent> <leader>gd  :Gdiffsplit<cr>
 nnoremap          <leader>ge  :Gedit<space>

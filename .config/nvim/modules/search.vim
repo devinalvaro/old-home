@@ -1,4 +1,3 @@
 " mappings
+nnoremap <silent> <leader>s. :BLines<cr>
 nnoremap <silent> <leader>s/ :Rg<cr>
-nnoremap <silent> <leader>sb :Lines<cr>
-nnoremap <silent> <leader>ss :BLines<cr>
