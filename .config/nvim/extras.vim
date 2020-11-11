@@ -30,9 +30,6 @@ Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" language
-Plug 'fatih/vim-go'
-
 " linting
 Plug 'dense-analysis/ale'
 

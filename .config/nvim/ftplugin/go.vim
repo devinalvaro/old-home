@@ -1,7 +1,3 @@
-" options
-let g:go_fmt_command = "goimports"
-let g:go_fmt_fail_silently = 1
-
 " mappings
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
