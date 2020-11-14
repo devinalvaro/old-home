@@ -15,60 +15,7 @@
 	name = Devin Alvaro
 
 [alias]
-	a  = add
-	aa = add --all
-	ap = add --patch
-
-	b  = branch
-	bd = branch --delete
-	bm = branch --merged
-	bx = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
-
-	c  = commit
-	ca = commit --amend
-	ce = commit --allow-empty-message
-
-	d  = diff
-	dc = diff --cached
-	dh = diff HEAD^
-
-	h  = stash
-	hd = stash drop
-	hk = stash --keep-index
-	hp = stash pop
-	hs = stash show -v
-	hu = stash --include-untracked
-
-	l  = log
-	lo = log --oneline
-
-	m  = merge
-	ma = merge --abort
-
-	o  = checkout
-	ob = checkout -B
-
-	r  = rebase
-	ra = rebase --abort
-	rc = rebase --continue
-	ri = rebase --interactive
-	rs = rebase --skip
-
-	s  = status --short
-	sa = status --short -uall
-
-	cl = clone
-	cn = clean
-	cp = cherry-pick
-	fe = fetch
-	mv = mv
-	p  = push
-	pl = pull
-	re = remote
-	rl = reflog
-	rm = rm
-	rs = reset
-	rv = revert
+	branch-purge = "!git branch --merged | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
 
 [url "ssh://gitlab@git.garena.com:2222/"]
 	insteadOf = https://git.garena.com/
