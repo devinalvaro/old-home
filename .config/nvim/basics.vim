@@ -77,6 +77,8 @@ let &showbreak = '↳ '
 " buffer
 nnoremap <silent> <tab> :set nostartofline<cr><c-^>:set startofline<cr>
 
+nnoremap <c-k> <tab>
+
 " command
 nnoremap <silent> : :set nostartofline<cr>:edit<cr>:set startofline<cr>
 xnoremap          : <nop>
