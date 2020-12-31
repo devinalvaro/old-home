@@ -20,5 +20,5 @@ nnoremap <buffer> <silent> K :call CocActionAsync('doHover')<CR>
 " autocmds
 augroup go
     autocmd!
-    autocmd BufWritePre *.go :call CocAction('organizeImport') | call CocActionAsync('format')
+    autocmd BufWritePre *.go :call CocAction('organizeImport') | call CocAction('format')
 augroup END

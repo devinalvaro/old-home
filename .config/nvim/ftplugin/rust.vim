@@ -20,5 +20,5 @@ nnoremap <buffer> <silent> K :call CocActionAsync('doHover')<CR>
 " autocmds
 augroup rust
     autocmd!
-    autocmd BufWritePre *.rs :call CocActionAsync('format')
+    autocmd BufWritePre *.rs :call CocAction('format')
 augroup END
