@@ -1,8 +1,19 @@
+" functions
+function! Status()
+    if &buftype ==# 'terminal'
+        split .git/index
+    else
+        Git
+    endif
+endfunction
+
+
 " abbrevs
 cnoreabbrev G  Git
 
 " mappings
-nnoremap <silent> <leader>g.  :Git<cr>
+nnoremap <silent> gs :call Status()<cr>
+
 nnoremap <silent> <leader>g/  :Commits<cr>
 nnoremap <silent> <leader>gb  :Git blame<cr>
 nnoremap <silent> <leader>gd  :Git difftool<cr>
