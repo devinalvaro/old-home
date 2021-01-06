@@ -75,9 +75,10 @@ let &showbreak = '↳ '
 " ---- mappings ---- "
 
 " buffer
-nnoremap <silent> <tab> :set nostartofline<cr><c-^>:set startofline<cr>
+nnoremap <silent> <c-i> :set nostartofline<cr><c-^>:set startofline<cr>
 
-nnoremap <c-k> <tab>
+nnoremap <c-j> <c-o>
+nnoremap <c-k> <c-i>
 
 " command
 nnoremap <silent> : :set nostartofline<cr>:edit<cr>:set startofline<cr>
@@ -108,6 +109,8 @@ onoremap <expr> n  'Nn'[v:searchforward]
 nnoremap <expr> N  'nN'[v:searchforward]
 xnoremap <expr> N  'nN'[v:searchforward]
 onoremap <expr> N  'nN'[v:searchforward]
+
+nnoremap <silent> <c-o> :let @/ = ''<cr>
 
 " window
 nnoremap \ <c-w>
