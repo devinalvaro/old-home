@@ -12,13 +12,13 @@ endfunction
 cnoreabbrev G  Git
 
 " mappings
+nnoremap <silent> gl :Git log<cr>
 nnoremap <silent> gs :call Status()<cr>
 
 nnoremap <silent> <leader>g/  :Commits<cr>
 nnoremap <silent> <leader>gb  :Git blame<cr>
 nnoremap <silent> <leader>gd  :Git difftool<cr>
 nnoremap          <leader>ge  :Gedit<space>
-nnoremap <silent> <leader>gl  :Git log<cr>
 nnoremap <silent> <leader>gm  :Git mergetool<cr>
 nnoremap          <leader>gp  :Git push<space>
 nnoremap          <leader>gr  :Gread<space>
