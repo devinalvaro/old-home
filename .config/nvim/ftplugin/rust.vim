@@ -14,6 +14,11 @@ nmap <buffer> <silent> gr <Plug>(coc-rename)
 nmap <buffer> =G <Plug>(coc-format)
 nnoremap <buffer> <silent> K :call CocActionAsync('doHover')<CR>
 
+nmap <silent> <localleader>* <Plug>(coc-references)<cr>
+nmap <silent> <localleader>f <Plug>(coc-fix-current)<cr>
+nmap <silent> <localleader>i <Plug>(coc-implementation)<cr>
+nmap <silent> <localleader>t <Plug>(coc-type-definition)<cr>
+
 " autocmds
 augroup rust
     autocmd!
