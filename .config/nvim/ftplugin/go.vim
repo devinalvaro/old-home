@@ -8,16 +8,18 @@ omap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
 omap af <Plug>(coc-funcobj-a)
 
-nmap <buffer> <silent> gd <Plug>(coc-definition)
-nmap <buffer> <silent> gr <Plug>(coc-rename)
+nmap <buffer> gd <Plug>(coc-definition)
+nmap <buffer> gr <Plug>(coc-rename)
 
 nmap <buffer> =G <Plug>(coc-format)
 nnoremap <buffer> <silent> K :call CocActionAsync('doHover')<CR>
 
-nmap <silent> <localleader>* <Plug>(coc-references)<cr>
-nmap <silent> <localleader>f <Plug>(coc-fix-current)<cr>
-nmap <silent> <localleader>i <Plug>(coc-implementation)<cr>
-nmap <silent> <localleader>t <Plug>(coc-type-definition)<cr>
+nnoremap <silent> <localleader>. :CocList outline<cr>
+nnoremap <silent> <localleader>/ :CocList symbols<cr>
+nmap              <localleader>* <Plug>(coc-references)<cr>
+nmap              <localleader>f <Plug>(coc-fix-current)<cr>
+nmap              <localleader>i <Plug>(coc-implementation)<cr>
+nmap              <localleader>t <Plug>(coc-type-definition)<cr>
 
 " autocmds
 augroup go
