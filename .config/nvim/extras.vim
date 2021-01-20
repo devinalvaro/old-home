@@ -30,6 +30,9 @@ Plug 'junegunn/fzf.vim' | Plug 'junegunn/fzf'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+" interface
+Plug 'itchyny/lightline.vim'
+
 " linting
 Plug 'dense-analysis/ale'
 
@@ -38,6 +41,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " highligting
 Plug 'arcticicestudio/nord-vim'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'sheerun/vim-polyglot'
 
 " movement
@@ -52,9 +56,6 @@ Plug 'haya14busa/vim-asterisk'
 
 " undo
 Plug 'mbbill/undotree'
-
-" visual
-Plug 'itchyny/lightline.vim'
 
 " whitespace
 Plug 'ntpeters/vim-better-whitespace'
