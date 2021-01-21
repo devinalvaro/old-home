@@ -28,6 +28,9 @@ set mouse=a
 " diff
 set diffopt+=vertical
 
+" folding
+set nofoldenable
+
 " editing
 set virtualedit+=block
 
