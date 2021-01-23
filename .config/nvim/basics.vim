@@ -14,6 +14,9 @@ set termguicolors
 set numberwidth=2
 set signcolumn=yes
 
+" command
+set confirm
+
 " completion
 set complete-=t
 set completeopt=menuone,preview,noinsert,noselect
@@ -26,9 +29,9 @@ set mouse=a
 set diffopt+=vertical
 
 " editing
-set virtualedit=block
+set virtualedit+=block
 
-" indentation
+" indent
 set expandtab
 set shiftround
 set shiftwidth=4
@@ -38,21 +41,22 @@ set tabstop=4
 let mapleader = "\<space>"
 let maplocalleader = ','
 
-" prompt
-set confirm
-
 " search
 set gdefault
 set ignorecase
 set inccommand=nosplit
 set smartcase
 
-" tabline
+" split
+set splitbelow
+set splitright
+
+" tab
 set showtabline=2
 
 " time
-set updatetime=200
 set timeoutlen=400
+set updatetime=200
 
 " undo
 set undofile
@@ -62,10 +66,6 @@ set noruler
 set noshowcmd
 set noshowmode
 set shortmess+=cF
-
-" window
-set splitbelow
-set splitright
 
 " wrapping
 set breakindent
