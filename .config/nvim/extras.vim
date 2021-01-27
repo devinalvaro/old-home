@@ -41,7 +41,9 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " highligting
 Plug 'arcticicestudio/nord-vim'
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+if has('nvim-0.5')
+    Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+endif
 Plug 'sheerun/vim-polyglot'
 
 " movement
@@ -65,6 +67,9 @@ call plug#end()
 " ---- components ---- "
 
 runtime! plugins/*.vim
+if has('nvim-0.5')
+    runtime! plugins/*.vim.nightly
+endif
 runtime! modules/*.vim
 
 " ---- colorscheme ---- "
