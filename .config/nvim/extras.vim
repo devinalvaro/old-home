@@ -42,9 +42,10 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 " highligting
 Plug 'arcticicestudio/nord-vim'
 if has('nvim-0.5')
-    Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+    Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSInstall all \| TSUpdate' }
+else
+    Plug 'sheerun/vim-polyglot'
 endif
-Plug 'sheerun/vim-polyglot'
 
 " movement
 Plug 'chaoren/vim-wordmotion'
