@@ -1,6 +1,9 @@
 " calls
 call CocMaps()
 
+" mappings
+nnoremap <buffer> <silent> <localleader><localleader>t :CocCommand rust-analyzer.toggleInlayHints<cr>
+
 " autocmds
 augroup rust
     autocmd!

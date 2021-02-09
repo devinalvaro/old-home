@@ -3,7 +3,6 @@
     "rust-analyzer": {
         "diagnostics.disabled": [
             "unresolved-proc-macro"
-        ],
-        "inlayHints.chainingHints": false
+        ]
     }
 }
