@@ -33,6 +33,9 @@ Plug 'tpope/vim-fugitive'
 " interface
 Plug 'itchyny/lightline.vim'
 
+" language
+Plug 'elixir-editors/vim-elixir'
+
 " linting
 Plug 'dense-analysis/ale'
 

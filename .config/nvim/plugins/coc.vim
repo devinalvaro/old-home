@@ -1,5 +1,6 @@
 " options
 let g:coc_global_extensions = [
+            \ 'coc-elixir',
             \ 'coc-go',
             \ 'coc-rust-analyzer',
             \ 'coc-tsserver',
