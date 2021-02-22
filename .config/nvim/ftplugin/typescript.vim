@@ -4,6 +4,5 @@ call CocMaps()
 " autocmds
 augroup typescript
     autocmd!
-    autocmd BufWritePre *.ts :call CocAction('format')
+    autocmd BufWritePre *.{ts,x} :call CocAction('format')
 augroup END
-
