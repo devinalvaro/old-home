@@ -9,8 +9,10 @@
         }
     },
     "rust-analyzer": {
-        "diagnostics.disabled": [
-            "unresolved-proc-macro"
-        ]
+        "diagnostics": {
+            "disabled": [
+                "unresolved-proc-macro"
+            ]
+        }
     }
 }
