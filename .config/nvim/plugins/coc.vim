@@ -2,6 +2,7 @@
 let g:coc_global_extensions = [
             \ 'coc-elixir',
             \ 'coc-go',
+            \ 'coc-pyright',
             \ 'coc-rust-analyzer',
             \ 'coc-tsserver',
             \ ]
