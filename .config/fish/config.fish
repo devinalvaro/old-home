@@ -17,6 +17,7 @@ abbr -a c cargo
 abbr -a d docker
 abbr -a e edit
 abbr -a g git
+abbr -a h ghci
 abbr -a l 'ls -l'
 abbr -a o open
 abbr -a s sudo
