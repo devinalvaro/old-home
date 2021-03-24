@@ -21,8 +21,29 @@ abbr -a l 'ls -l'
 abbr -a o open
 abbr -a s sudo
 
+if type -q bat;
+    abbr -a cat bat
+end
+
+if type -q diff;
+    abbr -a diff delta
+end
+
 if type -q exa;
     abbr -a l 'exa -l'
+    abbr -a ls exa
+end
+
+if type -q find;
+    abbr -a find fd
+end
+
+if type -q grep;
+    abbr -a grep rg
+end
+
+if type -q sd;
+    abbr -a sed sd
 end
 
 # paths
