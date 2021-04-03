@@ -26,7 +26,7 @@ if type -q bat;
     abbr -a cat bat
 end
 
-if type -q diff;
+if type -q delta;
     abbr -a diff delta
 end
 
@@ -35,11 +35,11 @@ if type -q exa;
     abbr -a ls exa
 end
 
-if type -q find;
+if type -q fd;
     abbr -a find fd
 end
 
-if type -q grep;
+if type -q rg;
     abbr -a grep rg
 end
 
