@@ -35,6 +35,7 @@ Plug 'itchyny/lightline.vim'
 
 " language
 Plug 'elixir-editors/vim-elixir'
+Plug 'neovimhaskell/haskell-vim'
 
 " linting
 Plug 'dense-analysis/ale'
