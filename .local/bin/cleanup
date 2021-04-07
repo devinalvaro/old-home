@@ -5,7 +5,16 @@ set -eu
 # fzf
 rm -f "$HOME/.local/share/fzf/fzf_history/"*
 
+# haskell
+rm -f "$HOME/.ghc/ghci_history"
+
+# less
+rm -f "$HOME/.lesshst"
+
 # neovim
 rm -f "$HOME/.local/share/nvim/shada/main.shada"
 rm -f "$HOME/.local/share/nvim/undo/"*
 rm -f "$HOME/.local/share/nvim/view/"*
+
+# python
+rm -f "$HOME/.python_history"
